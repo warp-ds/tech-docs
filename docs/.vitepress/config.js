@@ -11,6 +11,17 @@ export default defineConfig({
   themeConfig: {
     logo: '/warp-logo-small.svg',
     outline: 'deep',
+    nav: [
+      { text: 'Warp CSS', link: 'https://warp-ds.github.io/css-docs' },
+      {
+        text: 'Implementations',
+        items: [
+          { text: 'React', link: 'https://github.com/warp-ds' },
+          { text: 'Vue', link: 'https://github.com/warp-ds' },
+          { text: 'Elements', link: 'https://github.com/warp-ds' },
+        ]
+      }
+    ],
     sidebar: {
       '/': [
         {
