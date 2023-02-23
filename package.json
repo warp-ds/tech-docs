@@ -1,0 +1,21 @@
+{
+  "name": "tech-docs",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.45",
+    "vue": "^3.2.47"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "vite"
+      ]
+    }
+  }
+}
