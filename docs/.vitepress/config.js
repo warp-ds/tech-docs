@@ -18,6 +18,7 @@ export default defineConfig({
           collabsible: true,
           items: [
             { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Migrating from Fabric', link: '/migrating' },
           ]
         }
       ]
