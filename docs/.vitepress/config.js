@@ -11,6 +11,13 @@ export default defineConfig({
   themeConfig: {
     logo: '/warp-logo-small.svg',
     outline: 'deep',
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/warp-ds' }
+    ],
+    footer: {
+      message: 'Released under the Apache 2.0 License.',
+      copyright: 'Copyright © 2023-present Schibsted'
+    },
     nav: [
       { text: 'Warp CSS', link: 'https://warp-ds.github.io/css-docs' },
       {
