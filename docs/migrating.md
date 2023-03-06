@@ -29,3 +29,23 @@ export default defineConfig({
   ]
 })
 ```
+
+## Component changes
+
+### Validation messages
+
+In Fabric, both hints and errors would be displayed at the same time, and were concatenated with a `,`.
+
+For example, when the hint was "Please fill out your 11-digit SSN"; and the error was "This field must be filled out".
+
+> This field must be filled out, Please fill out your 11-digit SSN
+
+This was suboptimal because it required managing of capitalization, and also messages could become quite long and at times unclear to the user.
+
+In Warp, errors will show when the field is invalid, otherwise the hint will show. This means your errors may need editing to ensure they are clear to the user.
+
+Using the previous example's error as an example, it should be rewritten (f.ex) as
+
+> This field must be filled out with your 11-digit SSN
+
+and the hint can remain the same.
