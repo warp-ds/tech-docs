@@ -46,7 +46,7 @@ export default defineConfig({
         {
           text: 'Components',
           collabsible: true,
-          items: [{ text: 'Buttons', link: 'buttons' }],
+          items: [{ text: 'Buttons', link: './buttons/buttons' }],
         },
       ],
     },
