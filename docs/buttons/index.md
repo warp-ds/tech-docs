@@ -4,6 +4,10 @@ import { Button } from '../src';
 
 Buttons are used to perform actions, with different visuals for different needs.
 
+### Example
+
+<button-example></button-example>
+
 ## Import
 
 ```js

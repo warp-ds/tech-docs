@@ -1,4 +1,4 @@
 import { buildWc } from './ex-base.js';
-import Button from '../button/Example.vue';
+import Button from '../buttons/Example.vue';
 
 buildWc('button-example', Button);

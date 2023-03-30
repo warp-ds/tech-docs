@@ -7,14 +7,19 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.63",
+    "@warp-ds/component-classes": "1.0.0-alpha.6",
+    "@warp-ds/elements": "^1.0.0-alpha.3",
+    "@warp-ds/react": "^1.0.0-alpha.5",
+    "markdown-it": "^13.0.1",
+    "react": "^18.2.0",
+    "vite": "^4.2.1",
+    "vitepress": "1.0.0-alpha.64",
     "vue": "^3.2.47"
   },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "@algolia/client-search",
-        "vite"
+        "@algolia/client-search"
       ]
     }
   }
