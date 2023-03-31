@@ -1,12 +1,11 @@
 import DefaultTheme from 'vitepress/theme'
-import CompHead from '../CompHead.vue'
-import ApiTable from '../ApiTable.vue'
 import '../bootExamples.js'
 import './custom.css'
 
 export default {
   ...DefaultTheme,
   enhanceApp(ctx) {
+    console.log({ctx})
     DefaultTheme.enhanceApp(ctx)
   }
 }

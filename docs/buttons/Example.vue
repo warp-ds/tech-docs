@@ -2,26 +2,43 @@
     import '@warp-ds/elements';
 </script>
 
+<script>
+
+export default {
+  data() {
+    return {
+      toggleTheme: 'finn-no',
+    };
+  },
+  methods: {
+    toggle(theme) {
+        console.log({theme})
+        window.theme = theme;
+        this.toggleTheme = theme;
+    },
+  },
+};
+
+</script>
+
 <template>
-  <div class="space-x-8">
-    <!-- <Alert type="negative" show>
-        This is "negative" variant of the alert element
-        </Alert> -->
-     <!-- <w-alert variant="info" show="">
-  <p>This is "info" variant of the alert element</p>
-</w-alert> -->
 
-        <w-button primary>Hello Fabric</w-button>
-        <w-button>Hello Fabric</w-button>
-        <w-button quiet>Hello Fabric</w-button>
-        <w-button quiet small>Hello Fabric</w-button>
-        <!-- <f-alert variant="info" show=""> -->
-  <!-- <p>This is "info" variant of the alert element</p> -->
-<!-- </f-alert> -->
-
-        <!-- <f-button primary>Hello Fabric</f-button>
-        <f-button>Hello Fabric</f-button>
-        <f-button quiet>Hello Fabric</f-button>
-        <f-button quiet small>Hello Fabric</f-button> -->
+<div class="ui buttons big">
+  <button
+    class="ui button toggle"
+    @click="toggle('finn-no',$event)"
+  >Finn no</button>
+  <button
+    class="ui button toggle"
+    @click="toggle('blocket-se',$event)"
+  >Blocket</button>
+</div>  
+<div class="space-x-8">
+    <w-button variant="primary">Hello Fabric</w-button>
+    <w-button>Hello Fabric</w-button>
+    <w-button quiet="true">Hello Fabric</w-button>
+    <w-button quiet small="true">Hello Fabric</w-button>
+    <w-button variant="negative">Negative button</w-button>
+    <w-button variant="negative" small="true">Negative button small</w-button>
   </div>
 </template>

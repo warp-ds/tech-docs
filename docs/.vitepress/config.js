@@ -3,9 +3,11 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'Fabric Technology',
-  description: 'Tech docs for Fabric design system',
+  title: 'Warp Tech',
+  description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
+  cleanUrls: true,
+  base: '/tech-docs/',
   markdown: { theme: 'nord' },
   vue: {
     template: {
@@ -14,29 +16,42 @@ export default defineConfig({
       }
     }
   },
-//   vite: {
-//     plugins: [
-//         uno({
-//           presets: [
-//             presetWarp({ usePreflight: true })
-//           ],
-//           mode: 'shadow-dom',
-//           safelist: buttonSafelist,
-//         }),
-//       ],
-// },
   head: [
     ['link', { rel: 'preload', as: 'style', href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' }],
     ['link', { rel: 'preload', as: 'font', type: 'font/woff2', href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2' }],
     ['link', { rel: 'preload', as: 'font', type: 'font/woff2', href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2' }]
   ],
   themeConfig: {
+    logo: '/warp-logo-small.svg',
+    outline: 'deep',
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/warp-ds' }
+    ],
+    footer: {
+      message: 'Released under the Apache 2.0 License.',
+      copyright: 'Copyright © 2023-present Schibsted'
+    },
     nav: [
-      { text: 'Getting Started', link: '/introduction' },
-      { text: 'Fabric Design', link: 'https://www.fabric-ds.io' },
+      { text: 'Warp CSS', link: 'https://warp-ds.github.io/css-docs' },
+      {
+        text: 'Implementations',
+        items: [
+          { text: 'React', link: 'https://github.com/warp-ds' },
+          { text: 'Vue', link: 'https://github.com/warp-ds' },
+          { text: 'Elements', link: 'https://github.com/warp-ds' },
+        ]
+      }
     ],
     sidebar: {
       '/': [
+        {
+          text: 'Introduction',
+          collabsible: true,
+          items: [            
+            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Migrating from Fabric', link: '/migrating' },
+          ]
+        },
         {
           text: 'Actions',
           collapsible: true,
@@ -77,18 +92,6 @@ export default defineConfig({
             { text: 'Tabs', link: '/tabs/' },
           ]
         },
-        {
-          text: 'Foundations',
-          collapsible: true,
-          items: [
-            { text: 'Icons', link: '/icons/' },
-            { text: 'Spinner', link: '/spinner/' },
-            { text: 'Ribbon', link: '/ribbon/' },
-            { text: 'Clickable', link: '/clickable/' },
-            { text: 'Dead Toggle', link: '/dead-toggle/' },
-            { text: 'Toggle Item', link: '/toggle-item/' },
-          ]
-        }
       ]
     }
   }
