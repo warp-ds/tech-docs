@@ -1,0 +1,139 @@
+<!-- import { Alert } from '../src';
+import { Button } from '../../button/src'; -->
+
+# Alert
+
+Alert is an inline component used for displaying different types of messages.
+
+## Import
+
+```js
+import { Alert } from '@warp-ds/react';
+```
+
+## Visual Options
+
+### Expandable behaviour
+
+```jsx example
+function ExpandableAlert() {
+  const [show, setShow] = React.useState(true);
+
+  return (
+    <>
+      <Button
+        className="mb-16"
+        small
+        primary
+        onClick={() => {
+          setShow(false);
+          setTimeout(() => setShow(true), 500);
+        }}
+        aria-controls="example-alert"
+        aria-expanded={show}
+      >
+        Hide and show "info" variant of the alert
+      </Button>
+
+      <Alert id="example-alert" type="info" show={show}>
+        <p className="font-bold">This is "info" variant of the alert element</p>
+        <p>With an additional description</p>
+        <a>And a link to more information</a>
+        <div className="mt-8 space-x-8">
+          <Button small>Primary button</Button>
+          <Button small secondary quiet>
+            Secondary button
+          </Button>
+        </div>
+      </Alert>
+    </>
+  );
+}
+```
+
+### Negative
+
+```jsx example
+<Alert type="negative" show>
+  This is "negative" variant of the alert element
+</Alert>
+```
+
+### Positive
+
+```jsx example
+<Alert type="positive" show>
+  This is "positive" variant of the alert element
+</Alert>
+```
+
+### Warning
+
+```jsx example
+<Alert type="warning" show>
+  This is "warning" variant of the alert element
+</Alert>
+```
+
+### Info
+
+```jsx example
+<Alert type="info" show>
+  This is "info" variant of the alert element
+</Alert>
+```
+
+## Accessibility
+
+Use the ARIA live region `role` attribute to provide meaning to the alert
+element (defaults to "alert"). If you want to remove the role from the alert and
+assign it to its particular child (e.g. title), you can do so by setting `role`
+property of the `Alert` component to an empty string and assigning a respective
+`role` attribute on the child element. Read more about live region `role`
+attribute on
+[MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#roles_with_implicit_live_region_attributes).
+
+### Alert with "alert" role on a descendand element
+
+```jsx example
+function ExpandableAlertWithOverriddenRole() {
+  const [show, setShow] = React.useState(true);
+
+  return (
+    <>
+      <Button
+        className="mb-16"
+        small
+        primary
+        onClick={() => {
+          setShow(false);
+          setTimeout(() => setShow(true), 500);
+        }}
+        aria-controls="example2-alert"
+        aria-expanded={show}
+      >
+        Hide and show alert
+      </Button>
+      <Alert id="example2-alert" type="info" show={show} role="">
+        <p role="alert" className="font-bold">
+          This is "info" variant of the alert element
+        </p>
+        <p>With an additional description</p>
+        <a>And a link to more information</a>
+        <div className="mt-8 space-x-8">
+          <Button small>Primary button</Button>
+          <Button small secondary quiet>
+            Secondary button
+          </Button>
+        </div>
+      </Alert>
+    </>
+  );
+}
+```
+
+## Props
+
+```props packages/alert/src/component.tsx
+
+```
