@@ -4,6 +4,7 @@ specifiers:
   '@warp-ds/component-classes': 1.0.0-alpha.6
   '@warp-ds/elements': ^1.0.0-alpha.8
   '@warp-ds/react': ^1.0.0-alpha.5
+  '@warp-ds/vue': ^1.0.0-alpha.1
   markdown-it: ^13.0.1
   react: ^18.2.0
   vite: ^4.2.1
@@ -14,6 +15,7 @@ devDependencies:
   '@warp-ds/component-classes': 1.0.0-alpha.6
   '@warp-ds/elements': 1.0.0-alpha.8
   '@warp-ds/react': 1.0.0-alpha.5_react@18.2.0
+  '@warp-ds/vue': 1.0.0-alpha.1
   markdown-it: 13.0.1
   react: 18.2.0
   vite: 4.2.1
@@ -430,6 +432,18 @@ packages:
     resolution: {integrity: sha512-26SKdM4uvDWlY8/OOOxSB1AqQWeBosCX3wRYUZO7enTAj03CtVxIiCimYVG2WpULcyV51qapK4qTovwkUr5Mlw==}
     dependencies:
       '@types/chai': 4.3.4
+    dev: true
+
+  /@fabric-ds/core/0.0.15:
+    resolution: {integrity: sha512-PUr5/bAunIO+o5X8D3uDGiApX8+4p9yUvXCija457bfw/lh43dkPMjlPtSltC02KK74/v3eVFt0x1oJs9n0uZA==}
+    dependencies:
+      '@floating-ui/dom': 0.5.4
+    dev: true
+
+  /@fabric-ds/css/1.2.0:
+    resolution: {integrity: sha512-2qtju85xQRxaHmuc6nEmWaQUUYLNZGR/nQAYTvONNv7InJYHfLmKc/LTG6V0E/BPxGT3BBnBuuHBoxBghAqDVw==}
+    dependencies:
+      lit-html: 2.7.0
     dev: true
 
   /@fabric-ds/icons/0.6.7:
@@ -893,6 +907,19 @@ packages:
       - '@types/react'
     dev: true
 
+  /@warp-ds/vue/1.0.0-alpha.1:
+    resolution: {integrity: sha512-cSaowMOwxa3nEpo4F2ZPPf6iyGCyxB9R7P660nipJwRT43I6fNa1jx9jfW5bPsdERmHHJsus/ajNFJJb/sC+kw==}
+    dependencies:
+      '@fabric-ds/core': 0.0.15
+      '@fabric-ds/css': 1.2.0
+      '@floating-ui/dom': 0.5.4
+      create-v-model: 2.2.0
+      dom-focus-lock: 1.1.0
+      element-collapse: 1.1.0
+      femtobounce: 1.0.0
+      scroll-doctor: 1.0.1
+    dev: true
+
   /@web/browser-logs/0.2.5:
     resolution: {integrity: sha512-Qxo1wY/L7yILQqg0jjAaueh+tzdORXnZtxQgWH23SsTCunz9iq9FvsZa8Q5XlpjnZ3vLIsFEuEsCMqFeohJnEg==}
     engines: {node: '>=10.0.0'}
@@ -1215,6 +1242,10 @@ packages:
       keygrip: 1.1.0
     dev: true
 
+  /create-v-model/2.2.0:
+    resolution: {integrity: sha512-YaNLZ5Z7pCYfu/IwtthkK0mSOjXABkXts00ZpHTmk/lbn5DXdbkaaYpejJaBEhxP86puF5MgrYXfmwDJNEU+wg==}
+    dev: true
+
   /csstype/2.6.21:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
     dev: true
@@ -1290,8 +1321,18 @@ packages:
       path-type: 4.0.0
     dev: true
 
+  /dom-focus-lock/1.1.0:
+    resolution: {integrity: sha512-KDJb48vxT2XmyETTFUobMizW4uRA6Riyr8nwdcAApnhl8UsY5QkpCq8f+3EDQX8REyddLtUaj0Tsx9rMJiW+CQ==}
+    dependencies:
+      focus-lock: 0.11.6
+    dev: true
+
   /ee-first/1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
+    dev: true
+
+  /element-collapse/1.1.0:
+    resolution: {integrity: sha512-jgwpetB8NlM/Z7DI1y3/zw0rWEQqxKc3rzooBtzzCwaEVlUzPquoxvE3J2r6cJahYjMXUAm/KKBD6lpyzva4+Q==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -1379,6 +1420,10 @@ packages:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
     dependencies:
       reusify: 1.0.4
+    dev: true
+
+  /femtobounce/1.0.0:
+    resolution: {integrity: sha512-VgkBeW7GCsE2J60bIjtD9pllYpGG3fsN1OHVoqbARcC8nIP+VBBiZvfJsJsoj9dWmpFIKLqzOziffUMuoCeLFA==}
     dev: true
 
   /fill-range/7.0.1:

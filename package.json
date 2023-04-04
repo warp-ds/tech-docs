@@ -10,6 +10,7 @@
     "@warp-ds/component-classes": "1.0.0-alpha.6",
     "@warp-ds/elements": "^1.0.0-alpha.8",
     "@warp-ds/react": "^1.0.0-alpha.5",
+    "@warp-ds/vue": "^1.0.0-alpha.1",
     "markdown-it": "^13.0.1",
     "react": "^18.2.0",
     "vite": "^4.2.1",

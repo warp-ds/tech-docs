@@ -10,6 +10,8 @@ import { Alert } from "@warp-ds/react";
 
 ## Example
 
+<alert-example></alert-example>
+
 ```jsx example
 <Alert type="info" show>
   This is "info" variant of the alert element
