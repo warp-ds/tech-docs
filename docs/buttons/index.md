@@ -1,5 +1,3 @@
-import { Button } from '../src';
-
 # Button
 
 Buttons are used to perform actions, with different visuals for different needs.
@@ -112,8 +110,6 @@ Disabled is an anti-pattern and is not supported. There will ALWAYS be users who
 don't understand why an element is disabled, or users who can't even see that it
 is disabled because of poor lighting conditions or other reasons.
 
-## Props
+### Props
 
-```props packages/button/src/component.tsx
-
-```
+<api-table react component="ButtonVariants" />
