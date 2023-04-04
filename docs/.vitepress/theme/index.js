@@ -1,11 +1,12 @@
 import DefaultTheme from 'vitepress/theme'
+import ApiTable from '../ApiTable.vue'
 import '../bootExamples.js'
 import './custom.css'
 
+
 export default {
   ...DefaultTheme,
-  enhanceApp(ctx) {
-    console.log({ctx})
-    DefaultTheme.enhanceApp(ctx)
+  enhanceApp({ app }) {
+    app.component('ApiTable', ApiTable)
   }
 }

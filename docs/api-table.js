@@ -1,4 +1,25 @@
 export const react = {
+  Button: {
+    required: [],
+    props: [
+      ['label', 'string', '', 'Interchangable with the default slot for labelling'],
+      ['href', 'string', '', 'When set, an anchor tag will be used instead of a button'],
+      ['type', 'string', 'button', "Controls the button's type, unused when `href` is present"],
+    ],
+    slots: [
+      ['default', 'can be used instead of the label prop for button content']
+    ],
+  },
+  ButtonVariants: {
+    titles: ['variant', 'modifiers'],
+    rows: [
+      ['primary', 'negative, quiet, small, loading'],
+      ['secondary', 'quiet, small, loading'],
+      ['link', 'small'],
+      ['utility', 'small, loading'],
+      ['pill', ''],
+    ]
+  },
 }
 
 export const vue = {
