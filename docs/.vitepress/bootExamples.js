@@ -4,3 +4,4 @@ import Alert from '../alert/Example.vue';
 
 buildWc('button-example', Button);
 buildWc('alert-example', Alert)
+

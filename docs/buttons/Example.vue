@@ -1,22 +1,21 @@
 <script setup>
-    import '@warp-ds/elements';
+    import { wButton } from '@warp-ds/vue';
 </script>
 
 <script>
 
 export default {
-  data() {
-    return {
-      toggleTheme: 'finn-no',
-    };
-  },
-  methods: {
-    toggle(theme) {
-        console.log({theme})
-        window.theme = theme;
-        this.toggleTheme = theme;
+    data() {
+        return {
+            toggleTheme: "finn-no",
+        };
     },
-  },
+    methods: {
+        toggle(theme) {
+            window.theme = theme;
+            this.toggleTheme = theme;
+        },
+    },
 };
 
 </script>
@@ -34,11 +33,11 @@ export default {
   >Blocket</button>
 </div>  
 <div class="space-x-8">
-    <w-button variant="primary">Hello Fabric</w-button>
-    <w-button>Hello Fabric</w-button>
-    <w-button quiet="true">Hello Fabric</w-button>
-    <w-button quiet small="true">Hello Fabric</w-button>
-    <w-button variant="negative">Negative button</w-button>
-    <w-button variant="negative" small="true">Negative button small</w-button>
+    <w-button primary>Click me</w-button>
+    <w-button>Click me</w-button>
+    <w-button quiet="true">Click me</w-button>
+    <w-button quiet small="true">Click me</w-button>
+    <w-button variant="negative">Click me</w-button>
+    <w-button variant="primary" loading="true">Click me</w-button>
   </div>
 </template>

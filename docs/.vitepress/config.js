@@ -4,6 +4,7 @@ import uno from 'unocss/vite'
 import { classes } from '@warp-ds/component-classes/classes';
 
 
+
 export default defineConfig({
   lang: 'en-US',
   title: 'Warp Tech',
@@ -15,17 +16,9 @@ export default defineConfig({
   vue: {
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => tag.includes('-example') // || tag.includes('w-')
+        isCustomElement: (tag) => tag.includes('-example')
       }
     }
-  },
-  vite: {
-    plugins: [
-       uno({
-          presets: [presetWarp({ development: true })],
-          safelist: classes,
-        }),
-    ]
   },
   head: [
     ['link', { rel: 'preload', as: 'style', href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' }],
