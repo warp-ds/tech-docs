@@ -26,24 +26,21 @@ export const vue = {
   Alert: {
     required: [],
     props: [
-      ['v-model', 'boolean', undefined, `Controls when the alert shows`],
-      ['title', 'string', undefined, `The title for the alert`],
+      ['v-model', 'boolean', 'undefined', `Controls when the alert shows`],
+      ['title', 'string', 'undefined', `The title for the alert`],
       ['role', 'string', 'alert', `The aria role for the alert`],
-      ['negative', 'boolean', undefined, `Creates a negative alert`],
-      ['positive', 'boolean', undefined, `Creates a positive alert`],
-      ['warning', 'boolean', undefined, `Creates a warning alert`],
-      ['info', 'boolean', undefined, `Creates an info alert`],
-    ],
-    slots: [
-      ['default', 'the alert content']
+      ['negative', 'boolean', 'undefined', `Creates a negative alert`],
+      ['positive', 'boolean', 'undefined', `Creates a positive alert`],
+      ['warning', 'boolean', 'undefined', `Creates a warning alert`],
+      ['info', 'boolean', 'undefined', `Creates an info alert`],
     ]
   },
   Pill: {
     required: [],
     props: [
-      ['label', 'string', undefined, `The pill's label`],
-      ['canClose', 'boolean', false, 'If the pill should be removeable'],
-      ['suggestion', 'boolean', false, `If the pill should have suggestion-styling`],
+      ['label', 'string', 'undefined', `The pill's label`],
+      ['canClose', 'boolean', 'false', 'If the pill should be removeable'],
+      ['suggestion', 'boolean', 'false', `If the pill should have suggestion-styling`],
     ],
     events: [
       ['close', 'the close button is pressed']

@@ -40,8 +40,6 @@ attribute on
 </Alert>
 ```
 
-## Props
+##
 
-```props packages/alert/src/component.tsx
-
-```
+<api-table vue component="Alert" />
