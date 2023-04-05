@@ -8,7 +8,7 @@ defineProps({ props: Array })
   <table class="docs-table">
     <thead>
       <tr>
-        <th>prop</th>
+        <th>name</th>
         <th>type</th>
         <th>default</th>
         <th>notes</th>

@@ -19,8 +19,12 @@ const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.componen
 
 <template>
   <div class="space-children">
+    <div v-if="data.required?.length">
+      <component :is="`h${headerLevel}`">Required props</component>
+      <other-table :headers="['name', 'type', 'default', 'notes']" :data="data.required" />
+    </div>
     <div v-if="data.props?.length">
-      <component :is="`h${headerLevel}`">Props</component>
+      <component :is="`h${headerLevel}`">Optional Props</component>
       <props-table v-bind="data" />
     </div>
     <div v-if="data.slots?.length">
