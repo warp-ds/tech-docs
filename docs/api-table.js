@@ -3,9 +3,9 @@ export const react = {
     required: [['type', '\'negative\' | \'positive\' | \'warning\' | \'info\'', 'undefined', `Type of Alert`]],
     props: [
       ['show', 'boolean', 'undefined', `Controls when the alert shows`],
-      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
-      ['className', 'string', 'alert', `Additional classes to include`],
-      ['style', 'string', 'alert', `Additional CSS styles for the container`],
+      ['role', 'string', 'undefined', `ARIA live region "role" attribute value`],
+      ['className', 'string', 'undefined', `Additional classes to include`],
+      ['style', 'string', 'undefined', `Additional CSS styles for the container`],
     ]
   },
   Button: {
