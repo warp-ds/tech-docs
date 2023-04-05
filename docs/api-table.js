@@ -1,4 +1,16 @@
 export const react = {
+  Alert: {
+    required: [],
+    props: [
+      ['v-model', 'boolean', 'undefined', `Controls when the alert shows`],
+      ['title', 'string', 'undefined', `The title for the alert`],
+      ['role', 'string', 'alert', `The aria role for the alert`],
+      ['negative', 'boolean', 'undefined', `Creates a negative alert`],
+      ['positive', 'boolean', 'undefined', `Creates a positive alert`],
+      ['warning', 'boolean', 'undefined', `Creates a warning alert`],
+      ['info', 'boolean', 'undefined', `Creates an info alert`],
+    ]
+  },
   Button: {
     required: [],
     props: [
