@@ -31,6 +31,10 @@ export default {
     class="ui button toggle"
     @click="toggle('blocket-se',$event)"
   >Blocket</button>
+  <button
+    class="ui button toggle"
+    @click="toggle('tori-fi',$event)"
+  >Tori</button>
 </div>  
 <div class="space-x-8">
     <w-button primary>Click me</w-button>

@@ -14,7 +14,7 @@ export const buildWc = (elementName, baseVueComponent) => {
       this.shadow.addEventListener("click", () => {
         if (window.theme) {
           const stylesheets = this.shadow.querySelectorAll('link');
-          stylesheets.forEach(stylesheet => stylesheet.href =`https://assets.finn.no/pkg/@warp-ds/tokens/v1/${window.theme}.css`);
+          stylesheets[0].href =`https://assets.finn.no/pkg/@warp-ds/tokens/v1/${window.theme}.css`;
         }
       });
     }
