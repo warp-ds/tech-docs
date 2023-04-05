@@ -2,7 +2,7 @@ export const react = {
   Button: {
     required: [],
     props: [
-      ['label', 'string', '', 'Interchangable with the default slot for labelling'],
+      ['label', 'string', '', 'Interchangeable with the default slot for labelling'],
       ['href', 'string', '', 'When set, an anchor tag will be used instead of a button'],
       ['type', 'string', 'button', "Controls the button's type, unused when `href` is present"],
     ],
@@ -52,7 +52,7 @@ export const vue = {
   Button: {
     required: [],
     props: [
-      ['label', 'string', '', 'Interchangable with the default slot for labelling'],
+      ['label', 'string', '', 'Interchangeable with the default slot for labelling'],
       ['href', 'string', '', 'When set, an anchor tag will be used instead of a button'],
       ['type', 'string', 'button', "Controls the button's type, unused when `href` is present"],
     ],
@@ -95,7 +95,7 @@ export const vue = {
     props: [
       ['as', 'string', 'div', 'The DOM element to emit'],
       ['bleed', 'boolean', '', 'Will make a box full-width on sm-size'],
-      ['clickable', 'boolean', '', 'Applies styling to indicate clickability, does NOT add clickaability to the box itself (see `fClickable` for that)'],
+      ['clickable', 'boolean', '', 'Applies styling to indicate clickability, does NOT add clickability to the box itself (see `fClickable` for that)'],
       ['bordered', 'boolean', '', 'Adds a lovely border'],
       ['info', 'boolean', '', 'Will style the box with light-blue colors'],
       ['neutral', 'boolean', '', 'Will style the box with light-gray colors'],
