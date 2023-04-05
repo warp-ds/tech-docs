@@ -1,5 +1,5 @@
 <script setup>
-import ButtonTabs from './ButtonTabs.vue'
+import ButtonTabs from './ButtonTabs.vue';
 </script>
 
 
@@ -9,6 +9,6 @@ Buttons are used to perform actions, with different visuals for different needs.
 
 ### Example
 
-<button-example></button-example>
+<button-example />
 
 <button-tabs />
