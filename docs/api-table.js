@@ -3,7 +3,7 @@ export const react = {
     required: [['type', '\'negative\' | \'positive\' | \'warning\' | \'info\'', 'undefined', `Type of Alert`]],
     props: [
       ['show', 'boolean', 'undefined', `Controls when the alert shows`],
-      ['role', 'string', 'undefined', `ARIA live region "role" attribute value`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
       ['className', 'string', 'undefined', `Additional classes to include`],
       ['style', 'string', 'undefined', `Additional CSS styles for the container`],
     ]
@@ -118,3 +118,12 @@ export const vue = {
   },
 }
 
+export const elements = {
+  Alert: {
+    required: [['variant', '\'negative\' | \'positive\' | \'warning\' | \'info\'', 'undefined', `Variant of the alert`]],
+    props: [
+      ['show', 'boolean', 'false', `Controls when the alert shows`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+    ]
+  },
+}

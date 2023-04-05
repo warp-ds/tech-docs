@@ -14,7 +14,7 @@ const props = defineProps({
   }
 })
 
-const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.component])
+const data = computed(() => apiTable[props.vue ? 'vue' : props.react ? 'react' : 'elements'][props.component])
 </script>
 
 <template>

@@ -4,7 +4,9 @@
 import { Alert } from "@warp-ds/react";
 ```
 
-```jsx example
+## Usage
+
+```js
 <Alert type="info" show>
   This is "info" variant of the alert element
 </Alert>
@@ -22,8 +24,8 @@ attribute on
 
 ### Alert with "alert" role on a descendand element
 
-```jsx example
-<Alert id="example2-alert" type="info" show={show} role="">
+```js
+<Alert type="info" show={show} role="">
   <p role="alert" className="font-bold">
     This is "info" variant of the alert element
   </p>
@@ -32,6 +34,6 @@ attribute on
 </Alert>
 ```
 
-##
+## Props
 
 <api-table react component="Alert" />
