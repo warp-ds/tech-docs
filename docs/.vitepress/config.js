@@ -12,7 +12,7 @@ export default defineConfig({
   vue: {
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => tag.includes('-example') || tag.includes('w-')
+        isCustomElement: (tag) => tag.includes('-example')
       }
     }
   },
