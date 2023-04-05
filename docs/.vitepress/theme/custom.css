@@ -1,24 +1,66 @@
+@font-face{font-family:Finntype;font-style:normal;font-weight:400;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2") format("woff2")}
+@font-face{font-family:Finntype;font-style:normal;font-weight:700;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2") format("woff2")}
 :root {
-  --vp-code-block-bg: #2e3440ff !important;
-  --vp-code-line-highlight-color: #39455a !important;
-  --vp-c-brand: #198BA1 !important;
-  --vp-c-brand-light: #74B9CB !important;
-  --vp-c-brand-lighter: #3EA4BA !important;
-  --vp-c-brand-dark: #277181 !important;
-  --vp-c-brand-darker: #1b4c56 !important;
-  /* --vp-home-hero-name-color: var(--vp-c-brand); */
-  --vp-home-hero-name-background: linear-gradient(135deg, rgba(0,85,102,1) 0%, rgba(117,82,135,1) 100%) !important;
---vp-home-hero-name-background: linear-gradient(135deg, rgba(4,121,144,1) 0%, rgba(138,105,156,1) 100%) !important;
-  --vp-home-hero-name-color: transparent !important;
-  --vp-font-family-base: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif !important;
+  --vp-c-brand: #2b7eff;
+  --vp-c-brand-dark: #0063fb;
+  --vp-home-hero-name-color: #195FAB;
+  --vp-c-brand-darker: #004abc;
+  --vp-c-brand-light: #5e9cfd;
+  --vp-c-brand-lighter: #9ac1fe;
 }
-
-.dark .VPHero .image-bg {
-  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(4,121,144, 0.25) 0%, rgba(138,105,156, 0.25) 100%);
+body {
+  --vp-c-brand: #2b7eff;
+  --vp-c-brand-dark: #0063fb;
+  --vp-home-hero-name-color: #195FAB;
+  --vp-c-brand-darker: #004abc;
+  --vp-c-brand-light: #5e9cfd;
+  --vp-c-brand-lighter: #9ac1fe;
+  --vp-font-family-base: Finntype, Inter, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: auto;
+}
+.VPHero .image-bg {
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #195FAB44 30%, #4AB1E444);
   --vp-home-hero-image-filter: blur(32px);
 }
-
-.vp-doc blockquote > p {
-  font-size: 0.8rem !important;
+html.dark body {
+  --vp-home-hero-name-color: #4AB1E4;
+}
+/* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
+.VPNavBarMenuLink {
+  font-weight: 700 !important;
+}
+/* padding-top was waaaaay too much, make the border stand out a touch more */
+.vp-doc h2 {
+  padding-top: 8px;
+  border-width: 2px;
+}
+/* wasn't enough breathing room here, add some more */
+.vp-doc h3 {
+  margin: 48px 0 0;
+}
+/* wasn't enough breathing room here, add some more */
+.vp-doc h4 {
+  margin: 24px 0 0;
+}
+/* 16px is too big for tech docs, line-height was comically large */
+.vp-doc p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
+/* change sidebar active-page highlighting a bit */
+.VPSidebar .link {
+  transition: border-color 0.2s linear !important;
+  border-left: 1px solid transparent;
+}
+.VPSidebar .link * {
+  transition: padding-left 0.3s ease, color 0.1s linear !important;
+}
+.link.active {
+  border-color: var(--vp-c-brand);
+}
+.VPSidebar .link.active .link-text {
+  padding-left: 0.6rem;
+}
