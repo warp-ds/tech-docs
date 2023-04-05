@@ -20,6 +20,14 @@ export default defineConfig({
       }
     }
   },
+  vite: {
+    plugins: [
+       uno({
+          presets: [presetWarp({ usePreflight: true })],
+          safelist: classes,
+        }),
+    ]
+  },
   head: [
     ['link', { rel: 'preload', as: 'style', href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' }],
     ['link', { rel: 'preload', as: 'font', type: 'font/woff2', href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2' }],

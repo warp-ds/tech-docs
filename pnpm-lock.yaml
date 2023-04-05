@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@warp-ds/component-classes': 1.0.0-alpha.13
+  '@warp-ds/component-classes': 1.0.0-alpha.15
   '@warp-ds/elements': ^1.0.0-alpha.8
-  '@warp-ds/react': ^1.0.0-alpha.5
-  '@warp-ds/uno': ^0.0.15
-  '@warp-ds/vue': ^1.0.0-alpha.2
+  '@warp-ds/react': ^1.0.0-alpha.9
+  '@warp-ds/uno': ^1.0.0-alpha.5
+  '@warp-ds/vue': ^1.0.0-alpha.3
   markdown-it: ^13.0.1
   react: ^18.2.0
   unocss: ^0.50.1
@@ -14,11 +14,11 @@ specifiers:
   vue: ^3.2.47
 
 devDependencies:
-  '@warp-ds/component-classes': 1.0.0-alpha.13
+  '@warp-ds/component-classes': 1.0.0-alpha.15
   '@warp-ds/elements': 1.0.0-alpha.9
-  '@warp-ds/react': 1.0.0-alpha.8_react@18.2.0
-  '@warp-ds/uno': 0.0.15
-  '@warp-ds/vue': 1.0.0-alpha.2
+  '@warp-ds/react': 1.0.0-alpha.9_react@18.2.0
+  '@warp-ds/uno': 1.0.0-alpha.5
+  '@warp-ds/vue': 1.0.0-alpha.3
   markdown-it: 13.0.1
   react: 18.2.0
   unocss: 0.50.6_vite@4.2.1
@@ -868,10 +868,6 @@ packages:
       unconfig: 0.3.7
     dev: true
 
-  /@unocss/core/0.49.8:
-    resolution: {integrity: sha512-00BXRcMn6ERIkWHM64g6Uv6YZ3GUR8HjrMAzJZdd+04WcG2xCOyen8k+yDCxslqL0YsLqXYyLsgFSunHfYWy8w==}
-    dev: true
-
   /@unocss/core/0.50.6:
     resolution: {integrity: sha512-WMIp8xr7YSlID2whqfRGLwagp59e6u4ckPACEpoDOW8sTeSPRZm54hxPhuWXD1SQuqcwHPMtM9nzGD8UOnqQxA==}
     dev: true
@@ -909,12 +905,6 @@ packages:
       ofetch: 1.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@unocss/preset-mini/0.49.8:
-    resolution: {integrity: sha512-iJEbunr8sPdvZkp/ncHL3853LobfMtn5l1yE+6MDr7kjiS9Teiopt+FkR2xSmv8nCcCp39gFT3mKtJ/sZVG61Q==}
-    dependencies:
-      '@unocss/core': 0.49.8
     dev: true
 
   /@unocss/preset-mini/0.50.6:
@@ -1134,8 +1124,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes/1.0.0-alpha.13:
-    resolution: {integrity: sha512-p2TVRzhObUE/iTDtMx5WPfX7BXleNRbjSKwTD/kTgn6uv+/AdQkoXUV+4PxmZZaVgQdQ8TwlEnuOrzFkKmvxLg==}
+  /@warp-ds/component-classes/1.0.0-alpha.15:
+    resolution: {integrity: sha512-bNxvVRDd6vRdhRABeCXH+O21Cb85RUUajg5CMVFoYnBlgEx9wjHrozHAW+oCYsOk+OspTGjJZw6V/U1dCJj3tw==}
     dev: true
 
   /@warp-ds/component-classes/1.0.0-alpha.7:
@@ -1170,13 +1160,13 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@warp-ds/react/1.0.0-alpha.8_react@18.2.0:
-    resolution: {integrity: sha512-Emc7p+QhytSsm7YCM59ECYI3kMTdjUxFr7KjnWyLpvE31lefjsc5R1+eZEuXsfeGr4ca++amucyhNKKxwu6vHw==}
+  /@warp-ds/react/1.0.0-alpha.9_react@18.2.0:
+    resolution: {integrity: sha512-/Io5cN1U4/UBLEPrrQLIsrtl18/fH8dLFMJhtBgxJMclw7N7RPNxoQoDgGoWCx/TzVoFmulraUZyBmtLk+5LUw==}
     peerDependencies:
       react: 17.0.2
     dependencies:
       '@chbphone55/classnames': 2.0.0
-      '@warp-ds/component-classes': 1.0.0-alpha.13
+      '@warp-ds/component-classes': 1.0.0-alpha.15
       '@warp-ds/core': 1.0.0
       react: 18.2.0
       react-focus-lock: 2.9.4_react@18.2.0
@@ -1186,15 +1176,15 @@ packages:
       - '@types/react'
     dev: true
 
-  /@warp-ds/uno/0.0.15:
-    resolution: {integrity: sha512-zYzR08gl3KNr0lSMf8wfU9l1au1pfTWdLBC7s9O0H10IxP/cyiCYxYiAxfUik4lr2L/sdiL+eS6Dp0JIIdXQng==}
+  /@warp-ds/uno/1.0.0-alpha.5:
+    resolution: {integrity: sha512-8V6VuRmYujceUfYkbRkkQsu1EuLLQyRWfbLn9ehz962DXA+oJ4kSnjK12tdc2tNI/8EKs14Tl4c3X4e/d+1S/w==}
     dependencies:
-      '@unocss/core': 0.49.8
-      '@unocss/preset-mini': 0.49.8
+      '@unocss/core': 0.50.6
+      '@unocss/preset-mini': 0.50.6
     dev: true
 
-  /@warp-ds/vue/1.0.0-alpha.2:
-    resolution: {integrity: sha512-EcMAPSD3juvBq0FeSv9s3LBlTBuC2/d7LcTfvcNN3JHTEKS8gLHGi6VW0suckDKG7A4Lc3ZnbEOh8YT+RnDa5g==}
+  /@warp-ds/vue/1.0.0-alpha.3:
+    resolution: {integrity: sha512-WiUTlcR1EPyYwMR7XVjegOkjuBGl/xVyxf0xoC16Uyxq9naH2D10W61fK4HjHh1+RZtu6LhFSNJRcNYMHUyuSA==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
