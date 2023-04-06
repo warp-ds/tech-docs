@@ -1,8 +1,8 @@
 <script setup>
-import * as apiTable from '../api-table.js'
-import PropsTable from './PropsTable.vue'
-import OtherTable from './OtherTable.vue'
-import { computed } from 'vue'
+import * as apiTable from '../api-table.js';
+import PropsTable from './PropsTable.vue';
+import OtherTable from './OtherTable.vue';
+import { computed } from 'vue';
 
 const props = defineProps({
   vue: Boolean,
@@ -12,13 +12,13 @@ const props = defineProps({
     type: Number,
     default: 4
   }
-})
+});
 
-const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.component])
+const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.component]);
 </script>
 
 <template>
-  <div class="space-children">
+  <div class="api-table">
     <div v-if="data.props?.length">
       <component :is="`h${headerLevel}`">Props</component>
       <props-table v-bind="data" />
@@ -35,70 +35,79 @@ const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.componen
   </div>
 </template>
 
-<style scoped>
-h5 {
-  font-size: 14px;
-  margin-top: 16px;
-}
-</style>
-
-<style>
-.space-children>*~* {
-  margin-top: 32px;
-}
-.vp-doc .docs-table {
-  width: 100%;
-  display: table;
-}
-@media (max-width: 640px) {
-  .vp-doc .docs-table {
-    display: block;
+<style lang="scss">
+.api-table {
+  & > * ~ * {
+    margin-top: 32px;
   }
-}
-/* we emit p tags because of markdown, for now we just nuke the margin instead of clean
-ing up the tag */
-.vp-doc .docs-table p {
-  margin: 0;
-}
-.docs-table th,
-.docs-table td,
-.docs-table tr {
-  border: none;
-}
-.docs-table thead {
-  border-bottom: 1px solid var(--vp-c-divider-light);
-}
-.docs-table thead th {
-  font-size: 12px;
-  padding: 8px 24px;
-}
-.docs-table thead tr {
-  text-transform: uppercase;
-  text-align: left;
-  color: var(--vp-c-text-2);
-}
-.docs-table th {
-  background: none !important;
-}
-.docs-table tr {
-  font-size: 14px;
-}
-.docs-table tbody {
-  vertical-align: top;
-}
-.docs-table tbody td {
-  padding: 16px 24px;
-  vertical-align: baseline;
-}
-.annotation {
-  font-size: 10px;
-  margin-top: 4px;
-}
-.docs-table tbody tr td:first-of-type {
-  font-weight: bold;
-}
-.text-12,
-.text-12 * {
-  font-size: 12px !important;
+
+  h5 {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .docs-table {
+    width: 100%;
+    display: table;
+
+    @media (max-width: 640px) {
+      display: block;
+    }
+
+    /* we emit p tags because of markdown, for now we just nuke the margin instead of cleaning up the tag */
+    p {
+      margin: 0;
+    }
+
+    tr, th, td {
+      border: none;
+    }
+
+    thead {
+      border-bottom: 1px solid var(--vp-c-divider-light);
+
+      tr {
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--vp-c-text-2);
+      }
+
+      th {
+        font-size: 12px;
+        padding: 8px 24px;
+      }
+    }
+
+    tbody {
+      vertical-align: top;
+
+      td {
+        padding: 16px 24px;
+        vertical-align: baseline;
+
+        &:first-of-type {
+          font-weight: bold;
+        }
+      }
+    }
+    tr {
+      font-size: 14px;
+    }
+    th {
+      background: none;
+    }
+  }
+
+  .annotation {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .text-12 {
+    &,
+    * {
+      font-size: 12px;
+    }
+  }
 }
 </style>

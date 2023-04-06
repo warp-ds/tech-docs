@@ -1,3 +1,16 @@
+<script setup>
+import { ref } from 'vue';
+
+const props = defineProps({
+  initialTab: String,
+  tabs: Array
+});
+const activeTab = ref(props.initialTab);
+const switchTab = (tab) => {
+  activeTab.value = tab;
+};
+</script>
+
 <template>
   <div class="tab">
     <header class="tab-header">
@@ -7,7 +20,7 @@
           v-for="tab in tabs"
           :key="tab"
           :class="{
-            'tab-head--active': state.activeTab === tab
+            'tab-head--active': activeTab === tab
           }"
           @click="switchTab(tab);"
         >
@@ -16,29 +29,13 @@
       </ul>
     </header>
     <main class="tab-body">
-      <div class="tab-panel"> 
-      <slot :name="`tab-panel-${state.activeTab}`"></slot></div>
+      <div class="tab-panel">
+      <slot :name="`tab-panel-${activeTab}`"></slot></div>
     </main>
-    
   </div>
 </template>
 
-<script setup>
-  import { reactive} from 'vue';
-
-  const props = defineProps({
-    initialTab: String,
-    tabs: Array
-  })
-  const state = reactive({activeTab: props.initialTab});
-  function switchTab(tab) {
-    state.activeTab = tab;
-  };
-
-</script>
-
-<style scoped> 
-
+<style lang="scss" scoped>
 .tab {
   margin-top: 24px;
 }
@@ -61,11 +58,10 @@
   margin-top: 8px;
   padding-right: 18px;
   position: relative;
-}
 
-.tab-head--active {
-  text-decoration: underline;
-  color: var(--vp-c-text-1);
+  &--active {
+    text-decoration: underline;
+    color: var(--vp-c-text-1);
+  }
 }
-
 </style>

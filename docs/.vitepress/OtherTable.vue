@@ -1,7 +1,7 @@
 <script setup>
-import { processMarkdown } from './ApiTableUtil.js'
+import { processMarkdown } from './ApiTableUtil.js';
 
-defineProps({ data: Array, headers: Array })
+defineProps({ data: Array, headers: Array });
 </script>
 
 <template>
