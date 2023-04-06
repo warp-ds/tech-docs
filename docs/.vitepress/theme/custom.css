@@ -34,7 +34,7 @@ html.dark body {
 /* padding-top was waaaaay too much, make the border stand out a touch more */
 .vp-doc h2 {
   padding-top: 8px;
-  border-width: 2px;
+  border-top-width: 2px;
 }
 /* wasn't enough breathing room here, add some more */
 .vp-doc h3 {

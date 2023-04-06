@@ -1,4 +1,13 @@
 export const react = {
+  Alert: {
+    required: [['type', '\'negative\' | \'positive\' | \'warning\' | \'info\'', 'undefined', `Type of Alert`]],
+    props: [
+      ['show', 'boolean', 'undefined', `Controls when the alert shows`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+      ['className', 'string', 'undefined', `Additional classes to include`],
+      ['style', 'string', 'undefined', `Additional CSS styles for the container`],
+    ]
+  },
   Button: {
     required: [],
     props: [
@@ -26,24 +35,21 @@ export const vue = {
   Alert: {
     required: [],
     props: [
-      ['v-model', 'boolean', undefined, `Controls when the alert shows`],
-      ['title', 'string', undefined, `The title for the alert`],
+      ['v-model', 'boolean', 'undefined', `Controls when the alert shows`],
+      ['title', 'string', 'undefined', `The title for the alert`],
       ['role', 'string', 'alert', `The aria role for the alert`],
-      ['negative', 'boolean', undefined, `Creates a negative alert`],
-      ['positive', 'boolean', undefined, `Creates a positive alert`],
-      ['warning', 'boolean', undefined, `Creates a warning alert`],
-      ['info', 'boolean', undefined, `Creates an info alert`],
-    ],
-    slots: [
-      ['default', 'the alert content']
+      ['negative', 'boolean', 'undefined', `Creates a negative alert`],
+      ['positive', 'boolean', 'undefined', `Creates a positive alert`],
+      ['warning', 'boolean', 'undefined', `Creates a warning alert`],
+      ['info', 'boolean', 'undefined', `Creates an info alert`],
     ]
   },
   Pill: {
     required: [],
     props: [
-      ['label', 'string', undefined, `The pill's label`],
-      ['canClose', 'boolean', false, 'If the pill should be removeable'],
-      ['suggestion', 'boolean', false, `If the pill should have suggestion-styling`],
+      ['label', 'string', 'undefined', `The pill's label`],
+      ['canClose', 'boolean', 'false', 'If the pill should be removeable'],
+      ['suggestion', 'boolean', 'false', `If the pill should have suggestion-styling`],
     ],
     events: [
       ['close', 'the close button is pressed']
@@ -112,3 +118,12 @@ export const vue = {
   },
 }
 
+export const elements = {
+  Alert: {
+    required: [['variant', '\'negative\' | \'positive\' | \'warning\' | \'info\'', 'undefined', `Variant of the alert`]],
+    props: [
+      ['show', 'boolean', 'false', `Controls when the alert shows`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+    ]
+  },
+}

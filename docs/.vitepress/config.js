@@ -1,4 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { presetWarp } from '@warp-ds/uno'
+import uno from 'unocss/vite'
+import { classes } from '@warp-ds/component-classes/classes';
+
 
 
 export default defineConfig({
@@ -15,6 +19,14 @@ export default defineConfig({
         isCustomElement: (tag) => tag.includes('-example')
       }
     }
+  },
+  vite: {
+    plugins: [
+       uno({
+          presets: [presetWarp({ usePreflight: true })],
+          safelist: classes,
+        }),
+    ]
   },
   head: [
     ['link', { rel: 'preload', as: 'style', href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' }],
