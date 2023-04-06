@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@warp-ds/component-classes': 1.0.0-alpha.15
+  '@warp-ds/component-classes': 1.0.0-alpha.17
   '@warp-ds/elements': ^1.0.0-alpha.8
   '@warp-ds/react': ^1.0.0-alpha.9
   '@warp-ds/uno': ^1.0.0-alpha.5
@@ -14,7 +14,7 @@ specifiers:
   vue: ^3.2.47
 
 devDependencies:
-  '@warp-ds/component-classes': 1.0.0-alpha.15
+  '@warp-ds/component-classes': 1.0.0-alpha.17
   '@warp-ds/elements': 1.0.0-alpha.9
   '@warp-ds/react': 1.0.0-alpha.9_react@18.2.0
   '@warp-ds/uno': 1.0.0-alpha.5
@@ -1124,8 +1124,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes/1.0.0-alpha.15:
-    resolution: {integrity: sha512-bNxvVRDd6vRdhRABeCXH+O21Cb85RUUajg5CMVFoYnBlgEx9wjHrozHAW+oCYsOk+OspTGjJZw6V/U1dCJj3tw==}
+  /@warp-ds/component-classes/1.0.0-alpha.17:
+    resolution: {integrity: sha512-Njpa/ywo59xjZYjmcdXmG4a8zRKxGOzrHnn2GWw6QzNIJJxwNlm0r6mzFgNXhZGoKAI0UriunOP7MykONuLkgg==}
     dev: true
 
   /@warp-ds/component-classes/1.0.0-alpha.7:
@@ -1166,7 +1166,7 @@ packages:
       react: 17.0.2
     dependencies:
       '@chbphone55/classnames': 2.0.0
-      '@warp-ds/component-classes': 1.0.0-alpha.15
+      '@warp-ds/component-classes': 1.0.0-alpha.17
       '@warp-ds/core': 1.0.0
       react: 18.2.0
       react-focus-lock: 2.9.4_react@18.2.0
