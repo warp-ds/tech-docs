@@ -8,6 +8,8 @@ Alert is an inline component used for displaying different types of messages.
 
 ## Example
 
+<theme-switcher />
+
 <alert-example></alert-example>
 
 <alert-tabs />
