@@ -4,10 +4,11 @@
 
 ```js
 import { Alert } from "@warp-ds/vue";
-app.use(Alert)
+app.use(Alert);
 ```
 
 #### Use in one component and special imports
+
 ```js
 import { wAlert } from "@warp-ds/vue";
 ```
@@ -15,9 +16,9 @@ import { wAlert } from "@warp-ds/vue";
 ## Usage
 
 ```js
-<f-alert v-model="showAlert" info title="I am a title">
+<w-alert v-model="showAlert" info title="I am a title">
   <p>I am an excellent message for the user.</p>
-</f-alert>
+</w-alert>
 ```
 
 ## Props

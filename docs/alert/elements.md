@@ -1,10 +1,10 @@
 ### Usage
 
 ```js
-<f-alert variant="info" show="">
+<w-alert variant="info" show="">
   <p class="font-bold">This is "info" variant of the alert element</p>
   <p>With an additional description</p>
-</f-alert>
+</w-alert>
 ```
 
 ## Accessibility

@@ -10,7 +10,7 @@
     <p>I am an excellent message for the user.</p>
   </w-alert>
   <h3>Positive</h3>
-  <w-alert v-model="showAlert" positive info title="This is the positive variant of the alert element">
+  <w-alert v-model="showAlert" positive title="This is the positive variant of the alert element">
     <p>With an additional description</p>
   </w-alert>
   <h3>Negative</h3>
