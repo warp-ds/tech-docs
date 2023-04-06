@@ -18,21 +18,21 @@ const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.componen
 </script>
 
 <template>
-<div class="api-table">
-  <div v-if="data.props?.length">
-    <component :is="`h${headerLevel}`">Props</component>
-    <props-table v-bind="data" />
+  <div class="api-table">
+    <div v-if="data.props?.length">
+      <component :is="`h${headerLevel}`">Props</component>
+      <props-table v-bind="data" />
+    </div>
+    <div v-if="data.slots?.length">
+      <component :is="`h${headerLevel}`">Slots</component>
+      <other-table :headers="['name', 'use']" :data="data.slots" />
+    </div>
+    <div v-if="data.events?.length">
+      <component :is="`h${headerLevel}`">Events</component>
+      <other-table :headers="['name', 'when']" :data="data.events" />
+    </div>
+    <other-table v-else-if="data.titles" :headers="data.titles" :data="data.rows" />
   </div>
-  <div v-if="data.slots?.length">
-    <component :is="`h${headerLevel}`">Slots</component>
-    <other-table :headers="['name', 'use']" :data="data.slots" />
-  </div>
-  <div v-if="data.events?.length">
-    <component :is="`h${headerLevel}`">Events</component>
-    <other-table :headers="['name', 'when']" :data="data.events" />
-  </div>
-  <other-table v-else-if="data.titles" :headers="data.titles" :data="data.rows" />
-</div>
 </template>
 
 <style lang="scss">

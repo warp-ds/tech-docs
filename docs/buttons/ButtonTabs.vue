@@ -9,25 +9,25 @@ const tabs = ['react', 'vue', 'elements'];
 </script>
 
 <template>
-<Tabs :tabs="tabs" :initialTab="initialTab">
-  <template v-slot:tab-head-react>
-    React
-  </template>
-  <template v-slot:tab-panel-react>
-    <react />
-  </template>
-  <template v-slot:tab-head-vue>
-    Vue
-  </template>
-  <template v-slot:tab-panel-vue>
-    <vue />
-  </template>
-  <template v-slot:tab-head-elements>
-    Elements
-  </template>
-  <template v-slot:tab-panel-elements>
-    <elements />
-  </template>
-</Tabs>
+  <Tabs :tabs="tabs" :initialTab="initialTab">
+    <template v-slot:tab-head-react>
+      React
+    </template>
+    <template v-slot:tab-panel-react>
+      <react />
+    </template>
+    <template v-slot:tab-head-vue>
+      Vue
+    </template>
+    <template v-slot:tab-panel-vue>
+      <vue />
+    </template>
+    <template v-slot:tab-head-elements>
+      Elements
+    </template>
+    <template v-slot:tab-panel-elements>
+      <elements />
+    </template>
+  </Tabs>
 </template>
 

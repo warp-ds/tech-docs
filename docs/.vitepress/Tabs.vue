@@ -12,27 +12,27 @@ const switchTab = (tab) => {
 </script>
 
 <template>
-<div class="tab">
-  <header class="tab-header">
-    <ul class="tab-heads">
-      <li
-        class="tab-head"
-        v-for="tab in tabs"
-        :key="tab"
-        :class="{
-          'tab-head--active': activeTab === tab
-        }"
-        @click="switchTab(tab);"
-      >
-        <slot :name="`tab-head-${tab}`"></slot>
-      </li>
-    </ul>
-  </header>
-  <main class="tab-body">
-    <div class="tab-panel">
-    <slot :name="`tab-panel-${activeTab}`"></slot></div>
-  </main>
-</div>
+  <div class="tab">
+    <header class="tab-header">
+      <ul class="tab-heads">
+        <li
+          class="tab-head"
+          v-for="tab in tabs"
+          :key="tab"
+          :class="{
+            'tab-head--active': activeTab === tab
+          }"
+          @click="switchTab(tab);"
+        >
+          <slot :name="`tab-head-${tab}`"></slot>
+        </li>
+      </ul>
+    </header>
+    <main class="tab-body">
+      <div class="tab-panel">
+      <slot :name="`tab-panel-${activeTab}`"></slot></div>
+    </main>
+  </div>
 </template>
 
 <style lang="scss" scoped>
