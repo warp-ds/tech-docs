@@ -1,51 +1,56 @@
 <script setup>
-  import { ref } from 'vue';
+import { computed } from 'vue';
 
-  const toggleTheme = ref('finn-no');
-  const toggle = (event) => {
-    window.theme = event.target.value;
-    toggleTheme.value = event.target.value;
-  };
+const themes = {
+  'Finn': 'finn-no',
+  'Blocket': 'blocket-se',
+  'Tori': 'tori-fi'
+};
+
+window.theme = themes.Finn;
+
+const selectedTheme = computed({
+  get: () => window.theme,
+  set: (value) => { window.theme = value; }
+});
 </script>
 
 <template>
   <div class="select">
-    <select name="themes" id="themes" @change="toggle($event)">
-      <option value="finn-no">Finn</option>
-      <option value="blocket-se">Blocket</option>
-      <option value="tori-fi">Tori</option>
+    <select v-model="selectedTheme" name="themes">
+      <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
     </select>
   </div>  
 </template>
 
 <style lang="scss" scoped>
-  .select {
-    height: 30px;
-    margin-top: 24px;
-    display: grid;
-    grid-template-areas: "select";
-    align-items: center;
-    position: relative;
+.select {
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 30px;
+  margin-top: 24px;
+  padding: 4px 8px;
 
-    select,
-    &::after {
-      grid-area: select;
-    }
-    width: 300px;
-    padding: 4px 8px;
-
-    &::after {
-      content: "";
-      justify-self: end;
-      width: 8px;
-      height: 8px;
-      background-color: var(--vp-code-block-bg);
-      clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-    }
+  select,
+  &::after {
+    grid-area: select;
   }
 
-  .select:focus-within  {
+  &::after {
+    content: "";
+    justify-self: end;
+    width: 8px;
+    height: 5px;
+    background-color: var(--vp-code-block-bg);
+    clip-path: polygon(100% 0%, 0 0, 50% 100%);
+  }
+
+  &:focus-within {
     border: 2px solid var(--vp-c-brand);
+    padding: 3px 7px;
   }
-
+}
 </style>
