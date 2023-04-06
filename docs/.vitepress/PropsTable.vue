@@ -1,7 +1,7 @@
 <script setup>
-import { processMarkdown } from './ApiTableUtil.js'
+import { processMarkdown } from './ApiTableUtil.js';
 
-defineProps({ props: Array })
+defineProps({ props: Array });
 </script>
 
 <template>
@@ -16,7 +16,7 @@ defineProps({ props: Array })
     </thead>
     <tbody>
       <tr v-for="row in props" :key="row[0]">
-        <td v-for="(e, i) in row" :key="e" :class="{ 'text-12': i == 3 }" v-html="processMarkdown(e)" />
+        <td v-for="(e, i) in row" :key="e" :class="{ 'text-12': i === 3 }" v-html="processMarkdown(e)" />
       </tr>
     </tbody>
   </table>
