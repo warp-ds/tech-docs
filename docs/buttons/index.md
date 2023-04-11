@@ -7,6 +7,7 @@ import ButtonTabs from './ButtonTabs.vue';
 Buttons are used to perform actions, with different visuals for different needs.
 
 ### Example
+<theme-switcher />
 
 <button-example />
 

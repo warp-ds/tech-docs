@@ -10,16 +10,19 @@ export const buildWc = (elementName, baseVueComponent) => {
       this.shadow = this.attachShadow({ mode: 'open' })
       this.shadow.innerHTML = warp + uno + target    
       createApp(baseVueComponent).mount(this.appEl)
-
-      this.shadow.addEventListener("click", () => {
+      document.addEventListener("change", () => {
         if (window.theme) {
           const stylesheets = this.shadow.querySelectorAll('link');
-          stylesheets[0].href =`https://assets.finn.no/pkg/@warp-ds/tokens/v1/${window.theme}.css`;
+          stylesheets.forEach(s => {
+            if (s.getAttribute('href').includes('@warp-ds/tokens')) {
+              s.setAttribute('href', `https://assets.finn.no/pkg/@warp-ds/tokens/v1/${theme}.css`);
+            }
+          });
         }
-      });
+      });  
     }
     get appEl() {
-      return this.shadow.querySelector('#app')
+      return this.shadow.querySelector('#app');
     }
   })
 }
