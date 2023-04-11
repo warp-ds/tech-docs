@@ -36,4 +36,4 @@ attribute on
 
 ## Props
 
-<api-table react component="Alert" />
+<api-table type=react component="Alert" />

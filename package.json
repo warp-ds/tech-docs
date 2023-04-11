@@ -8,10 +8,12 @@
   },
   "devDependencies": {
     "@warp-ds/component-classes": "1.0.0-alpha.20",
+    "@warp-ds/uno": "^1.0.0-alpha.5",
     "@warp-ds/vue": "^1.0.0-alpha.4",
     "markdown-it": "^13.0.1",
     "react": "^18.2.0",
     "sass": "^1.60.0",
+    "unocss": "^0.51.3",
     "vite": "^4.2.1",
     "vitepress": "1.0.0-alpha.64",
     "vue": "^3.2.47"

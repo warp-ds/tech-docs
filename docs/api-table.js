@@ -61,13 +61,7 @@ export const vue = {
       ['href', 'string', '', 'When set, an anchor tag will be used instead of a button'],
       ['type', 'string', 'button', "Controls the button's type, unused when `href` is present"],
     ],
-    slots: [
-      ['default', 'can be used instead of the label prop for button content']
-    ],
-  },
-  ButtonVariants: {
-    titles: ['variant', 'modifiers'],
-    rows: [
+    variants: [
       ['primary', 'negative, quiet, small, loading'],
       ['secondary', 'quiet, small, loading'],
       ['link', 'small'],
@@ -124,5 +118,18 @@ export const elements = {
       ['show', 'boolean', 'false', `Controls when the alert shows`],
       ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
     ]
+  },
+  Button: {
+    required: [],
+    props: [
+      ['type', '"button"|"submit"|"reset"', 'button', "Button type, only applied when href is not set."],
+      ['variant', '"primary" | "secondary" | "negative" | "utility" | "link" | "pill"', 'secondary', ''],
+      ['quiet', 'boolean', 'false', ''],
+      ['small', 'boolean', 'false', ''],
+      ['loading', 'boolean', 'false', ''],
+      ['href', 'string', '', 'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation.'],
+      ['target', 'string', '', 'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.'],
+      ['rel', 'string', '', 'The relationship of the linked URL.'],
+    ],
   },
 }

@@ -23,4 +23,4 @@ import { wAlert } from "@warp-ds/vue";
 
 ## Props
 
-<api-table vue component="Alert" />
+<api-table type=vue component="Alert" />
