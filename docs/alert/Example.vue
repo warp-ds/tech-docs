@@ -1,7 +1,8 @@
 <script setup>
   import { wAlert } from '@warp-ds/vue';
+  import { ref } from 'vue';
 
-  const showAlert = true;
+  const showAlert = ref(true);
 </script>
 
 <template>

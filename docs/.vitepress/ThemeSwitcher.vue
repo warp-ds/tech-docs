@@ -7,7 +7,9 @@ const themes = {
   'Tori': 'tori-fi'
 };
 
-window.theme = themes.Finn;
+if (typeof window !== 'undefined') {
+  window.theme = themes.Finn;
+}
 
 const selectedTheme = computed({
   get: () => window.theme,
