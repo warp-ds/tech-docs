@@ -105,4 +105,4 @@ is disabled because of poor lighting conditions or other reasons.
 
 ### Props
 
-<api-table react component="Button" />
+<api-table type=react component="Button" />

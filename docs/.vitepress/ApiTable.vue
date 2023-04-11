@@ -4,17 +4,16 @@ import PropsTable from './PropsTable.vue';
 import OtherTable from './OtherTable.vue';
 import { computed } from 'vue';
 
+
 const props = defineProps({
-  vue: Boolean,
-  react: Boolean,
+  type: 'vue' | 'react' | 'elements',
   component: String,
   headerLevel: {
     type: Number,
     default: 4
   }
 });
-
-const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.component]);
+const data = computed(() => apiTable[props.type || 'react'][props.component]);
 </script>
 
 <template>
@@ -26,6 +25,10 @@ const data = computed(() => apiTable[props.vue ? 'vue' : 'react'][props.componen
     <div v-if="data.props?.length">
       <component :is="`h${headerLevel}`">Optional Props</component>
       <props-table v-bind="data" />
+    </div>
+    <div v-if="data.variants?.length">
+      <component :is="`h${headerLevel}`">Variants</component>
+      <other-table :headers="['main', 'combination']" :data="data.variants" />
     </div>
     <div v-if="data.slots?.length">
       <component :is="`h${headerLevel}`">Slots</component>

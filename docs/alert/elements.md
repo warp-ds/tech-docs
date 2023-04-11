@@ -31,4 +31,4 @@ attribute on
 
 ## Props
 
-<api-table elements component="Alert" />
+<api-table type=elements component="Alert" />
