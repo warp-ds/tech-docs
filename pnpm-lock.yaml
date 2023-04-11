@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@warp-ds/component-classes': 1.0.0-alpha.20
-  '@warp-ds/vue': ^1.0.0-alpha.3
+  '@warp-ds/vue': ^1.0.0-alpha.4
   markdown-it: ^13.0.1
   react: ^18.2.0
   sass: ^1.60.0
@@ -12,7 +12,7 @@ specifiers:
 
 devDependencies:
   '@warp-ds/component-classes': 1.0.0-alpha.20
-  '@warp-ds/vue': 1.0.0-alpha.3
+  '@warp-ds/vue': 1.0.0-alpha.4
   markdown-it: 13.0.1
   react: 18.2.0
   sass: 1.60.0
@@ -556,8 +556,8 @@ packages:
     resolution: {integrity: sha512-vNNW2MFOkP+GPsQ3WfZh8jRhPjXk0jYHSb+aKAcWwlgQLm1DKn3P6yJEKiK/THKInzYpqms/SxmZfZtRk+9fZA==}
     dev: true
 
-  /@warp-ds/vue/1.0.0-alpha.3:
-    resolution: {integrity: sha512-WiUTlcR1EPyYwMR7XVjegOkjuBGl/xVyxf0xoC16Uyxq9naH2D10W61fK4HjHh1+RZtu6LhFSNJRcNYMHUyuSA==}
+  /@warp-ds/vue/1.0.0-alpha.4:
+    resolution: {integrity: sha512-FNQS6ObQjp5eB+t0QJg4IUony7d4bR6g++sE+Ri3VamwAAn3VjvtK5H2SgQWHDF9MT656NlvxAq4nH+teNferw==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
