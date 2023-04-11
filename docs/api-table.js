@@ -12,9 +12,8 @@ export const react = {
     required: [],
     props: [
       ['className', 'string', '', 'Additional classes to include'],
-      ['onClick', '(e: MouseEvent<HTMLButtonElement, MouseEvent>) => void', '', 'Action to be called when the component is clicked'],
       ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
-      ['type', '|"button"|"submit"|"reset"', 'button', "Button type, only applied when href is not set."],
+      ['type', '"button"|"submit"|"reset"', 'button', "Button type, only applied when href is not set."],
       ['primary', 'boolean', 'false', 'Set the button to be a primary, call to action button. Can be combined with `small`.'],
       ['secondary', 'boolean', 'true', 'Set the button to be a secondary, flat style button. Can be combined with `quiet` and `small`.'],
       ['negative', 'boolean', 'false', 'Set the button to be a negative, destructive style button. Can be combined with `quiet` and `small`.'],
