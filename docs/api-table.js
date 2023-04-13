@@ -109,6 +109,17 @@ export const vue = {
       ['checkbox', 'boolean', '', 'Will create a checkbox toggle with label and input elements'],
     ]
   },
+  Expandable: {
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['title', 'string', '', 'The title for the expandable'],
+      ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
+      ['box', 'boolean', '', 'Will make the expandable a Box'],
+      ['animated', 'boolean', '', 'Will animate the expansion/collapse']
+      ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
+    ]
+  }
 }
 
 export const elements = {
