@@ -1,5 +1,6 @@
 @font-face{font-family:Finntype;font-style:normal;font-weight:400;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2") format("woff2")}
 @font-face{font-family:Finntype;font-style:normal;font-weight:700;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2") format("woff2")}
+@unocss-placeholder
 :root {
   --vp-c-brand: #2b7eff;
   --vp-c-brand-dark: #0063fb;
