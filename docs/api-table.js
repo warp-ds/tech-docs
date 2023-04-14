@@ -46,8 +46,6 @@ export const react = {
       ['min', 'string|number', '', 'Standard `input` min attribute, to be used with `type="number"`. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefminlength).'],
       ['maxLength', 'number', '', 'The maximum number of characters supported by the input. See MDN.'],
       ['minLength', 'number', '', 'The minimum number of characters supported by the input. See MDN.'],
-
-
       ['name', 'string', '', 'The name of the input element, used when submitting an HTML form. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname).'],
       ['pattern', 'string', '', 'Regex pattern that the value of the input must match to be valid. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern).'],
       ['placeholder', 'string', '', 'Text hint that occupies the text input when it is empty.'],
@@ -149,7 +147,32 @@ export const vue = {
       ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ]
-  }
+  },
+  Input: {
+    required: [],
+    props: [
+      ['type', 'string', 'text', ''],
+      ['autocomplete', 'string', 'off', ''],
+      ['mask', 'object', '', 'See the Masking section below for more information'],
+    ],
+  },
+  InputAttributes: {
+    titles: ['attribute', 'type', 'notes'],
+    rows: [
+      ['valid', 'boolean', '', 'Whether or not to treat the form element as valid'],
+      ['hint', 'string', '', 'The hint to show when this result is triggered'],
+      ['always', 'boolean', '', `If true, will show the status/hint even if the form element hasn't been touched yet - normally validation is only shown after blur`],
+    ]
+  },
+  InputValidation: {
+    titles: ['prop', 'type', 'default', 'notes'],
+    rows: [
+      ['v-model', 'boolean', '', 'True when all descendants are valid'],
+      ['v-model:completed', 'boolean', '', 'True when all descendants are completed - passing their required rule'],
+      ['should-validate', 'boolean', '', 'Can be used to instruct all descendants to immediately validate. Note that this will not update if the should-validate logic is updated elsewhere.'],
+      ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
+    ]
+  },
 }
 
 export const elements = {
