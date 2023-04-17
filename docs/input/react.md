@@ -10,13 +10,6 @@ import { TextField } from '@warp-ds/react';
 <TextField label="Name" />
 ```
 
-## Migrating from Troika
-
-
-- You should no longer include or import any Troika input CSS.
-- `error` has been deprecated. Use invalid instead.
-- *BREAKING*: `appendAddon` from Troika is currently unsupported.
-
 ## Value
 
 A TextField's value is empty by default, but an initial, uncontrolled, value can be provided using the `defaultValue` prop. Alternatively, a controlled value can be provided using the `value` prop.

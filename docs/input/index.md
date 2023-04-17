@@ -1,15 +1,23 @@
 <script setup>
-  import InputTabs from './InputTabs.vue'
+  import Vue from './vue.md';
+  import React from './react.md';
 </script>
 
-# input
+# TextField
 
-input is an inline component used for displaying different types of messages.
+A single-line text input component.
 
 ## Example
 
 <theme-switcher />
 
-<input-example></input-example>
+<input-example />
 
-<input-tabs />
+<tabs-content> 
+  <template v-slot:react>
+   <react />
+  </template>
+  <template v-slot:vue>
+    <vue />
+  </template>
+</tabs-content>
