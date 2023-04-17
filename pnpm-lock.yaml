@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@warp-ds/component-classes': 1.0.0-alpha.35
+  '@warp-ds/component-classes': 1.0.0-alpha.33
   '@warp-ds/uno': ^1.0.0-alpha.6
   '@warp-ds/vue': ^1.0.0-alpha.6
   markdown-it: ^13.0.1
@@ -13,7 +13,7 @@ specifiers:
   vue: ^3.2.47
 
 devDependencies:
-  '@warp-ds/component-classes': 1.0.0-alpha.35
+  '@warp-ds/component-classes': 1.0.0-alpha.33
   '@warp-ds/uno': 1.0.0-alpha.6
   '@warp-ds/vue': 1.0.0-alpha.6
   markdown-it: 13.0.1
@@ -870,8 +870,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes/1.0.0-alpha.35:
-    resolution: {integrity: sha512-4EpnQxSHU6GoeDFx7omBqVxxC/NnYq5w1Iq1Cyhgwya4Cs1m/RyTP0gby8hRNUr1GdFGsxv7NMCoLiPkLuXcLg==}
+  /@warp-ds/component-classes/1.0.0-alpha.33:
+    resolution: {integrity: sha512-cvLH2ilA8bkevycgfU6973P9GbXSN0ejnNmKnugXWnBRXJmK1wDOot7hU/fxSFzqNkOXiFu9NY3Pk8qkVDlYbA==}
     dev: true
 
   /@warp-ds/uno/1.0.0-alpha.6:
