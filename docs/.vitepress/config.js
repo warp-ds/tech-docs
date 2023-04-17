@@ -59,7 +59,7 @@ export default defineConfig({
           text: 'Introduction',
           collabsible: true,
           items: [            
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Getting Started', link: '/getting-started/' },
             { text: 'Migrating from Fabric', link: '/migrating' },
           ]
         },
