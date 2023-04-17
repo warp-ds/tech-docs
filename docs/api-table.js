@@ -148,6 +148,15 @@ export const vue = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ]
   },
+  Field: {
+    required: [],
+    props: [
+      ['label', 'string', '', ''],
+      ['hint', 'string', '', 'The string can contain HTML.'],
+      ['invalid', 'boolean', '', ''],
+      ['label-level', 'number', '', 'Useable on toggles, will make the emitted legend element into a heading for accessibility.'],
+    ],
+  },
   Input: {
     required: [],
     props: [

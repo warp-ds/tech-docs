@@ -21,7 +21,7 @@ import { wInput } from '@warp-ds/vue'
 
 ## Props
 
-The props documented below have defaults set or are unique to this component, all typical HTML5 attributes are valid props. See Field for additional props.
+The props documented below have defaults set or are unique to this component, all typical HTML5 attributes are valid props.
 
 <api-table type=vue component="Input"/>
 
@@ -79,3 +79,12 @@ If the form element is marked required, a special rule will be inserted before a
 
 The required prop can accept a function that will be used as the required-rule.
 
+## FIELD Usage 
+
+```js
+<w-field label="I can be anything!" hint="Isn't that neat?">
+  <your-custom-element />
+<w-field>
+```
+
+<api-table type=vue component="Field"/>
