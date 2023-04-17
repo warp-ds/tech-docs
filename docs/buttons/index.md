@@ -1,8 +1,8 @@
 <script setup>
+  import Usage from './usage.md';
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
-  import Usage from './usage.md';
 </script>
 
 # Button

@@ -10,6 +10,10 @@ import { TextField } from '@warp-ds/react';
 <TextArea label="Description" />
 ```
 
+## Props
+
+<api-table type=react component="TextArea" />
+
 ## Value
 
 A TextArea's value is empty by default, but an initial, uncontrolled, value can be provided using the `defaultValue` prop. Alternatively, a controlled value can be provided using the `value` prop.
@@ -36,10 +40,6 @@ function Example() {
 ## Labeling
 
 A visual label should be provided for the TextArea using the `label` prop.
-
-### Accessibility
-
-If a visible label isn't specified, an `aria-label` must be provided to the TextArea for accessibility. If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
 
 ### Optional
 
@@ -122,7 +122,3 @@ The `maximumRows` prop sets the maximum number of text rows the TextArea should 
   defaultValue={'Lorem\nipsum\ndolor\nsit\namet'}
 />
 ```
-
-## Props
-
-<api-table type=react component="TextArea" />
