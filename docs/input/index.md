@@ -1,18 +1,17 @@
 <script setup>
   import Vue from './vue.md';
-  import Elements from './elements.md';
   import React from './react.md';
 </script>
 
-# Alert
+# TextField
 
-Alert is an inline component used for displaying different types of messages.
+A single-line text input component.
 
 ## Example
 
 <theme-switcher />
 
-<alert-example></alert-example>
+<input-example />
 
 <tabs-content> 
   <template v-slot:react>
@@ -20,8 +19,5 @@ Alert is an inline component used for displaying different types of messages.
   </template>
   <template v-slot:vue>
     <vue />
-  </template>
-  <template v-slot:elements>
-    <elements />
   </template>
 </tabs-content>

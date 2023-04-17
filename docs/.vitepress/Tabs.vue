@@ -12,56 +12,49 @@ const switchTab = (tab) => {
 </script>
 
 <template>
-  <div class="tab">
-    <header class="tab-header">
-      <ul class="tab-heads">
-        <li
-          class="tab-head"
-          v-for="tab in tabs"
-          :key="tab"
-          :class="{
-            'tab-head--active': activeTab === tab
-          }"
-          @click="switchTab(tab);"
-        >
-          <slot :name="`tab-head-${tab}`"></slot>
-        </li>
-      </ul>
-    </header>
-    <main class="tab-body">
-      <div class="tab-panel">
-      <slot :name="`tab-panel-${activeTab}`"></slot></div>
-    </main>
+  <div class="tablist" role="tablist">
+    <button 
+      v-for="tab in tabs"
+      :key="tab" role="tab"
+      :id="`tab-${tab}`"
+      :href="`#panel-${tab}`"
+      :class="{
+        'tab': true,
+        'tab-head--active': activeTab === tab
+      }"
+      :aria-selected="`${activeTab === tab}`"
+      @click="switchTab(tab);"
+    >
+      <slot :name="`tab-head-${tab}`"></slot>
+    </button>
+  </div>
+  <div class="tab-body">
+    <section role="tabpanel" :id="`panel-${activeTab}`" :aria-labelledby="`tab-${activeTab}`" class="tab-panel">
+      <slot :name="`tab-panel-${activeTab}`"></slot>
+    </section>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.tab {
-  margin-top: 24px;
-}
-
-.tab-header {
+.tablist {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.tab-heads {
-  display: flex;
-  margin: 0;
-  padding-left: 8px;
+  margin: 24px 0 0;
+  padding-left: 0px;
   list-style: none;
 }
-
-.tab-head {
+.tab {
   cursor: pointer;
-  margin-top: 8px;
+  margin: 8px 4px 0 0;
   padding-right: 18px;
   position: relative;
+}
+.tab:focus-visible {
+  border-radius: 2px;
+  outline: 0.2em solid royalblue;
+}
 
-  &--active {
-    text-decoration: underline;
-    color: var(--vp-c-text-1);
-  }
+.tab[aria-selected="true"] {
+  text-decoration: underline;
+  color: var(--vp-c-text-1);
 }
 </style>
