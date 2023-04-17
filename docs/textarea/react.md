@@ -125,4 +125,4 @@ The `maximumRows` prop sets the maximum number of text rows the TextArea should 
 
 ## Props
 
-<!-- <api-table type=react component="Input" /> -->
+<api-table type=react component="TextArea" />

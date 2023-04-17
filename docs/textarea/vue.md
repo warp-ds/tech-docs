@@ -25,7 +25,7 @@ All typical HTML5 attributes are valid props for textarea.
 
 Below are some additional props documented.
 
-<!-- <api-table type=vue component="Field"/> -->
+<api-table type=vue component="Field"/>
 
 ## Validation
 
@@ -62,7 +62,3 @@ The wField component can provide access to programatic validation beyond what wF
 If the form element is marked required, a special rule will be inserted before any user-defined rules.
 
 The required prop can accept a function that will be used as the required-rule.
-
-## Props
-
-<!-- <api-table type=vue component="Input"/> -->
