@@ -28,6 +28,24 @@ export const react = {
       ['rel', 'string', '', 'The relationship of the linked URL.'],
     ],
   },
+  Expandable: {
+    required: [['title', 'string', '', 'The title for the expandable']],
+    props: [
+      ['className', 'string', '', 'Additional classes to include'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+      ['info', 'boolean', 'false', 'Styles the box with a color'],
+      ['expanded', 'boolean', 'false', 'The state of the component, either true for expanded or false for closed'],
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
+      ['box', 'boolean', '', 'Will make the expandable a Box'],
+      ['buttonClass', 'string', '', 'Additional CSS classes to include on the button part of the component'],
+      ['contentClass', 'string', '', 'Additional CSS classes to include on the content part of the component'],
+      ['animated', 'boolean', '', 'Will animate the expansion/collapse'],
+      // ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
+      ['headingLevel', 'HeadingLevel', '', 'Wrap the toggle button in a heading element with the specified level. If headingLevel is not specified, the button will not be wrapped by a heading element'],
+    ],
+  },
 }
 
 export const vue = {
@@ -110,16 +128,23 @@ export const vue = {
     ]
   },
   Expandable: {
+    required: [['title', 'string', '', 'The title for the expandable']],
     props: [
+      ['className', 'string', '', 'Additional classes to include'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+      ['info', 'boolean', 'false', 'Styles the box with a color'],
+      ['expanded', 'boolean', 'false', 'The state of the component, either true for expanded or false for closed'],
       ['as', 'string', 'div', 'The DOM element to emit'],
-      ['title', 'string', '', 'The title for the expandable'],
       ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
       ['box', 'boolean', '', 'Will make the expandable a Box'],
-      ['animated', 'boolean', '', 'Will animate the expansion/collapse']
-      ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
+      ['buttonClass', 'string', '', 'Additional CSS classes to include on the button part of the component'],
+      ['contentClass', 'string', '', 'Additional CSS classes to include on the content part of the component'],
+      ['animated', 'boolean', '', 'Will animate the expansion/collapse'],
+      // ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
-    ]
-  }
+      ['headingLevel', 'HeadingLevel', '', 'Wrap the toggle button in a heading element with the specified level. If headingLevel is not specified, the button will not be wrapped by a heading element'],
+    ],
+  },
 }
 
 export const elements = {
@@ -141,6 +166,17 @@ export const elements = {
       ['href', 'string', '', 'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation.'],
       ['target', 'string', '', 'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.'],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+    ],
+  },
+  Expandable: {
+    required: [['title', 'string', '', 'The title for the expandable']],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
+      ['box', 'boolean', '', 'Will make the expandable a Box'],
+      ['animated', 'boolean', '', 'Will animate the expansion/collapse'],
+      ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
 }
