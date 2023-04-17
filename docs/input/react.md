@@ -10,6 +10,10 @@ import { TextField } from '@warp-ds/react';
 <TextField label="Name" />
 ```
 
+## Props
+
+<api-table type=react component="Input" />
+
 ## Value
 
 A TextField's value is empty by default, but an initial, uncontrolled, value can be provided using the `defaultValue` prop. Alternatively, a controlled value can be provided using the `value` prop.
@@ -35,10 +39,6 @@ function Example() {
 ## Labeling
 
 A visual label should be provided for the TextField using the `label` prop.
-
-### Accessibility
-
-If a visible label isn't specified, an `aria-label` must be provided to the TextField for accessibility. If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
 
 ### Optional
 
@@ -142,7 +142,3 @@ The readOnly boolean prop makes the TextField's text content immutable. Unlike d
   <TextField label="E-post" readOnly />
 </div>
 ```
-
-## Props
-
-<api-table type=react component="Input" />

@@ -1,4 +1,5 @@
 <script setup>
+  import Usage from './usage.md';
   import Vue from './vue.md';
   import React from './react.md';
 </script>
@@ -14,6 +15,9 @@ A single-line text input component.
 <input-example />
 
 <tabs-content> 
+  <template #usage>
+   <usage />
+  </template>
   <template #react>
    <react />
   </template>
