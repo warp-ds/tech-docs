@@ -1,11 +1,9 @@
-### Usage
+## Import
 
 ```js
-<w-button variant="primary">Primary button</w-button>
-<w-button variant="primary" small>Primary button small</w-button>
+import { Button } from '@warp-ds/elements';
 ```
 
-# Visual Options
 ## Variants
 
 ### Primary
@@ -73,16 +71,9 @@ To show the user that the action they triggered has begun, buttons have an in pr
 <w-button variant="primary" loading="">Primary button loading</w-button>
 ```
 
-
-
 ## Disabled state
 
 Disabled is an anti-pattern and is not supported. There will ALWAYS be users who don't understand why an element is disabled, or users who can't even see that it is disabled because of poor lighting conditions or other reasons.
-
-## Accessibility
-
-If the button doesn't have visible text content, such as when used with only an icon, an `aria-label` prop must be provided for accessibility.
-
 
 ## Props
 

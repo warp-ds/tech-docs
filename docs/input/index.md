@@ -14,10 +14,10 @@ A single-line text input component.
 <input-example />
 
 <tabs-content> 
-  <template v-slot:react>
+  <template #react>
    <react />
   </template>
-  <template v-slot:vue>
+  <template #vue>
     <vue />
   </template>
 </tabs-content>
