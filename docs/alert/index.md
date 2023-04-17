@@ -15,13 +15,13 @@ Alert is an inline component used for displaying different types of messages.
 <alert-example></alert-example>
 
 <tabs-content> 
-  <template v-slot:react>
+  <template #react>
    <react />
   </template>
-  <template v-slot:vue>
+  <template #vue>
     <vue />
   </template>
-  <template v-slot:elements>
+  <template #elements>
     <elements />
   </template>
 </tabs-content>

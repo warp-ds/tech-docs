@@ -2,6 +2,7 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import Usage from './usage.md';
 </script>
 
 # Button
@@ -14,13 +15,16 @@ Buttons are used to perform actions, with different visuals for different needs.
 <button-example />
 
 <tabs-content> 
-  <template v-slot:react>
+  <template #usage>
+   <usage />
+  </template>
+  <template #react>
    <react />
   </template>
-  <template v-slot:vue>
+  <template #vue>
     <vue />
   </template>
-  <template v-slot:elements>
+  <template #elements>
     <elements />
   </template>
 </tabs-content>
