@@ -690,10 +690,6 @@ export const elements = {
         '',
         'The type of input to render. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdeftype).',
       ],
-      //    ['autoFocus', 'boolean', '', 'Whether the element should receive focus on render.'],
-      //    ['className', 'string', '', 'Additional classes to include.'],
-      //    ['style', 'CSSProperties', '', 'Additional CSS styles for the container.'],
-      //    ['defaultValue', 'string & (string|number|readonly string[])', '', "The default value (uncontrolled)."],
       ['disabled', 'boolean', '', 'Whether the input is disabled.'],
       [
         'invalid',
@@ -762,9 +758,7 @@ export const elements = {
         '',
         'Whether user input is required on the input before form submission.',
       ],
-      //    ['children', 'ReactNode', '', 'For affix use.'],
       ['value', 'string', '', 'The current value (controlled).'],
-      //    ['optional', 'boolean', '', 'The current value (controlled).'],
       [
         'aria-label',
         'string',
