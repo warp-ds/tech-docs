@@ -1,20 +1,21 @@
 <script setup>
   import Usage from './usage.md';
   import Vue from './vue.md';
-  import Elements from './elements.md';
   import React from './react.md';
+  import Elements from './elements.md';
 </script>
 
-# Button
+# TextField
 
-Buttons are used to perform actions, with different visuals for different needs.
+A single-line text input component.
 
-### Example
+## Example
+
 <theme-switcher />
 
-<button-example />
+<textfield-example />
 
-<tabs-content> 
+<tabs-content>
   <template #usage>
    <usage />
   </template>

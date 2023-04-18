@@ -10,25 +10,6 @@ import { Button } from '@warp-ds/react';
 <Button>Save</Button>
 ```
 
-## Migrating from Troika
-
-- You should no longer include or import any Troika button CSS.
-- The variants are no longer different named exports. Use component properties
-  instead.
-- There is now a single button component for all cases. As a quick guide:
-  - `<CallToAction>` should be migrated to `<Button primary>`.
-  - `<DestructiveButton>` should be migrated to `<Button negative>`.
-  - `<DestructiveFlatButton>` should be migrated to `<Button negative>`.
-  - `<FlatButton>` should be migrated to `<Button>`.
-  - `<LinkButton>` should be migrated to `<Button href="...">`.
-- The `inProgress` property should be changed to `loading`.
-- The `disabled` has been removed as it is an anti-pattern (see below).
-
-## Accessibility
-
-If the button doesn't have visible text content, such as when used with only an
-icon, an `aria-label` prop must be provided for accessibility.
-
 ## Visual options
 
 ### Primary
