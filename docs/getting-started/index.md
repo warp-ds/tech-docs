@@ -79,14 +79,14 @@ In case of apps using Vite where Warp components are used inside Shadow DOM, the
 
 ## 2. Apply theme
 
-In order for components to apply your application's theme, a respective theme stylesheet should be added to the document. Theme specific stylesheets are vailable via our Eik CDN server:
+In order for components to apply your application's theme, a respective theme stylesheet should be added to the document. Theme specific stylesheets are available via our Eik CDN server:
 * Finn: https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css
 * Tori: https://assets.finn.no/pkg/@warp-ds/tokens/v1/tori-fi.css
 * Blocket: https://assets.finn.no/pkg/@warp-ds/tokens/v1/blocket-se.css
 
 Add this to your `index.html`:
 
-```js
+```html
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css">
 ```
 

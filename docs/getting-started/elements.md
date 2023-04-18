@@ -16,12 +16,12 @@ pnpm add @warp-ds/elements
 
 Once installed, components can be used in your HTML markup.
 
-```js
-<f-breadcrumbs class="mt-10">
-  <a href="#/url/1">Eiendom</a>
-  <a href="#/url/2">Bolig til salgs</a>
-  <a href="#/url/3" aria-current="page"> Oslo </a>
-</f-breadcrumbs>
+```html
+<w-breadcrumbs class="mt-10">
+  <a href="#/url/1">Page 1</a>
+  <a href="#/url/2">Page 2</a>
+  <a href="#/url/3" aria-current="page">Current Page</a>
+</w-breadcrumbs>
 ```
 
 ### Importing from the NPM package
