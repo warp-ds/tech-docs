@@ -4,7 +4,7 @@
 import { Select } from '@warp-ds/react';
 ```
 
-## Example
+## React syntax
 
 ```jsx example
 <Select label="Berries">

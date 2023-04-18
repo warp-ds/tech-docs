@@ -11,6 +11,8 @@ app.use(Forms)
 import { fSelect } from '@fabric-ds/vue'
 ```
 
+## Vue syntax
+
 ```html
 <f-select v-model="model" label="A label">
   <option disabled selected value="">Pick something</option>
