@@ -6,7 +6,17 @@ export const buildWc = (elementName, baseVueComponent) => {
     connectedCallback() {
       const warp = `<link rel="stylesheet" type="text/css" href='https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' />`
       const target = `<div id="app" class="mt-16"></div>`
-      const shadowUnoStyle = `<style>@unocss-placeholder</style>`
+      const shadowUnoStyle = `<style>
+        @unocss-placeholder
+        h3 {
+          font-weight: bold;
+        }
+        .component {
+          padding: 16px;
+          border: 3px solid rgb(246, 248, 250);
+          margin-bottom: 8px;
+        }
+      </style>`
       
       this.shadow = this.attachShadow({ mode: 'open' })
       this.shadow.innerHTML = warp + shadowUnoStyle + target    
