@@ -182,22 +182,24 @@ export const vue = {
     ]
   },
   Expandable: {
-    required: [['title', 'string', '', 'The title for the expandable']],
     props: [
-      ['className', 'string', '', 'Additional classes to include'],
-      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
-      ['info', 'boolean', 'false', 'Styles the box with a color'],
-      ['expanded', 'boolean', 'false', 'The state of the component, either true for expanded or false for closed'],
+      ['v-model', 'boolean', 'false', 'If not provided, the component will use an internal value that starts the expandable \'closed\''],
       ['as', 'string', 'div', 'The DOM element to emit'],
-      ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
       ['box', 'boolean', '', 'Will make the expandable a Box'],
+      ['bleed', 'boolean', '', 'Will make the expandable full-width on sm-size'],
+      ['info', 'boolean', 'false', 'Styles the box with a color'],
       ['buttonClass', 'string', '', 'Additional CSS classes to include on the button part of the component'],
       ['contentClass', 'string', '', 'Additional CSS classes to include on the content part of the component'],
-      ['animated', 'boolean', '', 'Will animate the expansion/collapse'],
-      // ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
-      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
-      ['headingLevel', 'HeadingLevel', '', 'Wrap the toggle button in a heading element with the specified level. If headingLevel is not specified, the button will not be wrapped by a heading element'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility']
     ],
+    slots: [
+      ['title', 'string', '', 'The title for the expandable'],
+      ['default', 'string', '', 'Content that should be displayed when expanded']
+    ],
+    events: [
+      ['expand', 'boolean', '', 'Content inside the expandable has been mounted and can be targeted - will fire after any opening animations are complete'],
+      ['collapse', 'boolean', '', 'Content inside the expandable has been fully torn down or hidden']
+    ]
   },
   Field: {
     required: [],
