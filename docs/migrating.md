@@ -12,7 +12,7 @@ There is a plugin available that will detect all deprecated CSS classes and prov
 #### Install the plugin
 
 ```shell
-pnpm add -D @warp-ds/migrate
+pnpm add -D @warp-ds/preset-migrate
 ```
 
 #### Use the plugin in your Uno config
@@ -20,7 +20,7 @@ pnpm add -D @warp-ds/migrate
 ```js
 import { defineConfig } from 'unocss'
 import { presetWarp } from '@warp-ds/uno'
-import { presetMigrate } from '@warp-ds/migrate'
+import { presetMigrate } from '@warp-ds/preset-migrate'
 
 export default defineConfig({
   presets: [

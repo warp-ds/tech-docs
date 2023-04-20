@@ -2,6 +2,7 @@
   import Usage from './usage.md';
   import Vue from './vue.md';
   import React from './react.md';
+  import Elements from './elements.md';
 </script>
 
 # TextField
@@ -12,9 +13,9 @@ A single-line text input component.
 
 <theme-switcher />
 
-<input-example />
+<textfield-example />
 
-<tabs-content> 
+<tabs-content>
   <template #usage>
    <usage />
   </template>
@@ -23,5 +24,8 @@ A single-line text input component.
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
+    <elements />
   </template>
 </tabs-content>
