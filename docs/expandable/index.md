@@ -2,11 +2,11 @@
   import ExpandableTabs from './ExpandableTabs.vue'
 </script>
 
-# expandable
+# Expandable
 
-expandable is an inline component used for displaying different types of messages.
+Expandable is a layout component used for creating expandable content areas on a page.
 
-## Example
+## Examples
 
 <theme-switcher />
 
