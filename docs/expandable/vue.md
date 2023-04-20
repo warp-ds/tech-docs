@@ -39,14 +39,6 @@ import { wExpandable, wExpandTransition, wWillExpand } from "@warp-ds/vue";
 </w-expandable>
 ```
 
-#### Expandable animated box
-
-```js
-<w-expandable title="I am expandable" box animated>
-  <p>Hello there I am some informative content</p>
-</w-expandable>
-```
-
 ## Animation
 
 #### You should only use this feature under careful supervision of your friendly local UXer.
