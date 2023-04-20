@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@warp-ds/component-classes': 1.0.0-alpha.33
   '@warp-ds/uno': ^1.0.0-alpha.6
-  '@warp-ds/vue': ^1.0.0-alpha.6
+  '@warp-ds/vue': ^1.0.0-alpha.11
   markdown-it: ^13.0.1
   react: ^18.2.0
   sass: ^1.60.0
@@ -15,7 +15,7 @@ specifiers:
 devDependencies:
   '@warp-ds/component-classes': 1.0.0-alpha.33
   '@warp-ds/uno': 1.0.0-alpha.6
-  '@warp-ds/vue': 1.0.0-alpha.6
+  '@warp-ds/vue': 1.0.0-alpha.11
   markdown-it: 13.0.1
   react: 18.2.0
   sass: 1.60.0
@@ -881,8 +881,8 @@ packages:
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue/1.0.0-alpha.6:
-    resolution: {integrity: sha512-SOoF9OoOmklDzBf/Ejk+5+EKYALHUOUX1ix2t2KcmTkCrFy5TQrg+OvqCCMIldPhaWuhDDrRhwPG38ylYSBMZA==}
+  /@warp-ds/vue/1.0.0-alpha.11:
+    resolution: {integrity: sha512-IrwYVBWQJ08JLxePDMaWCcoM0j5bXeDM4fB95fh7ZRnC5X0N1zeWW3VegN0YdMUQ4UzC8TtWYJ2dn40URlpHiQ==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
