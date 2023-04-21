@@ -14,10 +14,10 @@ import { fSelect } from '@fabric-ds/vue'
 ## Vue syntax
 
 ```html
-<f-select v-model="model" label="A label">
+<w-select v-model="model" label="A label">
   <option disabled selected value="">Pick something</option>
   <option value="foo">Foo</option>
-</f-select>
+</w-select>
 ```
 
 ## Props
@@ -33,30 +33,20 @@ Every form element accepts a prop rules which takes an array of functions. These
 
 The function has one argument, the current value of the form element — and can either return true or an object with attributes described below
 
-| ATTRIBUTE | TYPE    |                                                                                                                                    |
-| --------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| valid     | boolean | Whether or not to treat the form element as valid                                                                                  |
-| hint      | string  | The hint to show when this result is triggered                                                                                     |
-| always    | boolean | If true, will show the status/hint even if the form element hasn't been touched yet - normally validation is only shown after blur |
+<api-table type=vue component="InputAttributes"/>
 
+### Collecting Validation from wForm
+The wForm component registers element descendants at any level, and provides the aggregate validation status.
 
-### Collecting Validation from fForm
-The fForm component registers element descendants at any level, and provides the aggregate validation status.
-
-| PROP              | TYPE                                                                                                                                                       | DEFAULT |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| v-model           | boolean True when all descendants are valid                                                                                                                |         |
-| v-model:completed | boolean True when all descendants are completed - passing their required rule                                                                              |         |
-| should-validate   | boolean Can be used to instruct all descendants to immediately validate. Note that this will not update if the should-validate logic is updated elsewhere. |         |
-| as                | string The DOM element to emit for the wrapper                                                                                                             | form    |
+<api-table type=vue component="InputValidation"/>
 
 ### Programatic validation
-The fField component can provide access to programatic validation beyond what fForm's props can. For information on which methods are available, see the documentation on Field.
+The wField component can provide access to programatic validation beyond what wForm's props can. For information on which methods are available, see the documentation on Field.
 
 ```html
-<f-field #control="{ form }">
+<w-field #control="{ form }">
   <button @click="submit(form)">Submit</button>
-</f-field>
+</w-field>
 ```
 
 ### Validation and required Form Elements
