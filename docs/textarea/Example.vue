@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <w-textarea label="A label" hint="A hint" v-model="model" />
   <h3>Standard with hint</h3>
   <div class="component">
     <w-textarea label="A label" hint="A hint" />

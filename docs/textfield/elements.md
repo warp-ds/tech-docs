@@ -1,3 +1,6 @@
+# Textfield
+A single line text input element.
+
 ## Textfield Attributes
 <api-table type=elements component="TextField" />
 
