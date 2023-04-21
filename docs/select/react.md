@@ -14,6 +14,10 @@ import { Select } from '@warp-ds/react';
 </Select>
 ```
 
+## Props
+
+<api-table type=react component="Select" />
+
 ## Value
 
 An initial, uncontrolled, value can be provided using the `defaultValue` prop.
@@ -99,9 +103,3 @@ Using disabled is considered an anti-pattern and is therefore not supported.
 There will ALWAYS be users who don't understand why an element is disabled, or
 users who can't even see that it is disabled because of poor lighting conditions
 or other reasons. Please consider more informative alternatives.
-
-## Props
-
-```props packages/select/src/component.tsx
-
-```
