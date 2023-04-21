@@ -11,9 +11,9 @@ A dropdown component for selecting a single value. Selects (sometimes known as "
 ## Example
 
 <theme-switcher />
-<!--
-<textfield-example />
--->
+
+<select-example />
+
 <tabs-content>
   <template #usage>
    <usage />
