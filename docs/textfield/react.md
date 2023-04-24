@@ -42,7 +42,7 @@ A visual label should be provided for the TextField using the `label` prop.
 
 ### Optional
 
-Add the optional prop to indicate that the textfield is not required.
+Add the `optional` prop to indicate that the textfield is not required.
 
 ```js
 <TextField label="Telefonnummer" optional />

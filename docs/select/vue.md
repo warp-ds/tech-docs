@@ -2,13 +2,13 @@
 
 > Use in entire app
 ```js
-import { Forms } from '@fabric-ds/vue'
+import { Forms } from '@warp-ds/vue'
 app.use(Forms)
 ```
 
 > Use in one component and special imports
 ```js
-import { fSelect } from '@fabric-ds/vue'
+import { fSelect } from '@warp-ds/vue'
 ```
 
 ## Vue syntax
@@ -21,7 +21,11 @@ import { fSelect } from '@fabric-ds/vue'
 ```
 
 ## Props
-All typical HTML5 attributes are valid props for select, see Field for additional props.
+All typical HTML5 attributes are valid props for select.
+
+Below are some additional props documented.
+
+<api-table type=vue component="Field"/>
 
 ## Validation
 ### Validating Elements

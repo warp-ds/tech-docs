@@ -56,7 +56,7 @@ A visual label should be provided for the Select using the `label` prop.
 
 ### Optional
 
-Add the optional prop to indicate that the select is not required.
+Add the `optional` prop to indicate that the select is not required.
 
 ```jsx example
 <Select label="Berries" optional>
