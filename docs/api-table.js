@@ -35,6 +35,37 @@ export const react = {
       ],
     ],
   },
+  Box: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'bleed',
+        'boolean',
+        'false',
+        'Will make a box full-width on sm-size',
+      ],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
+      [
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
+      ],
+      [
+        '~~clickable~~',
+        'boolean',
+        'false',
+        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
+      ],
+    ],
+  },
   Button: {
     required: [],
     props: [
@@ -390,6 +421,37 @@ export const vue = {
       ['info', 'boolean', 'undefined', `Creates an info alert`],
     ],
   },
+  Box: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'bleed',
+        'boolean',
+        'false',
+        'Will make a box full-width on sm-size',
+      ],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
+      [
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
+      ],
+      [
+        '~~clickable~~',
+        'boolean',
+        'false',
+        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
+      ],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -464,37 +526,6 @@ export const vue = {
       ],
     ],
     slots: [['default', 'button content']],
-  },
-  Box: {
-    required: [],
-    props: [
-      ['as', 'string', 'div', 'The DOM element to emit'],
-      [
-        'bleed',
-        'boolean',
-        '',
-        'Will make a box full-width on sm-size',
-      ],
-      [
-        'clickable',
-        'boolean',
-        '',
-        'Applies styling to indicate clickability, does NOT add clickability to the box itself (see `fClickable` for that)',
-      ],
-      ['bordered', 'boolean', '', 'Adds a lovely border'],
-      [
-        'info',
-        'boolean',
-        '',
-        'Will style the box with light-blue colors',
-      ],
-      [
-        'neutral',
-        'boolean',
-        '',
-        'Will style the box with light-gray colors',
-      ],
-    ],
   },
   Clickable: {
     required: [],
@@ -645,6 +676,30 @@ export const elements = {
         'string',
         'alert',
         `ARIA live region "role" attribute value`,
+      ],
+    ],
+  },
+  Box: {
+    required: [],
+    props: [
+      [
+        'bleed',
+        'boolean',
+        'false',
+        'Will make a box full-width on sm-size',
+      ],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
+      [
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
       ],
     ],
   },
