@@ -66,6 +66,24 @@ export const react = {
       ],
     ],
   },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      [
+        'aria-label',
+        'string',
+        'Her er du',
+        'Defines a string value that labels the affix element.',
+      ],
+      ['className', 'string', '', 'Additional classes to include'],
+      [
+        'style',
+        'CSSProperties',
+        '',
+        'CSS styles to inline on the component',
+      ],
+    ],
+  },
   Button: {
     required: [],
     props: [
@@ -528,6 +546,12 @@ export const vue = {
       ],
     ],
   },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      ['aria-label', 'string', 'Her er du', 'Defines a string value that labels the current element.'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -777,6 +801,12 @@ export const elements = {
         'false',
         'Will style the box in a neutral fashion',
       ],
+    ],
+  },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      ['aria-label', 'string', 'Her er du', 'Defines a string value that labels the current element.'],
     ],
   },
   Button: {

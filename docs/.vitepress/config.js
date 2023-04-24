@@ -130,6 +130,13 @@ export default defineConfig({
             { text: 'Tabs', link: '/tabs/' },
           ],
         },
+        {
+          text: 'Navigation',
+          collapsible: true,
+          items: [
+            { text: 'Breadcrumbs', link: '/breadcrumbs/' },
+          ],
+        },
       ],
     },
   },
