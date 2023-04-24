@@ -1,5 +1,4 @@
 <script setup>
-  import ExpandableTabs from './ExpandableTabs.vue'
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';

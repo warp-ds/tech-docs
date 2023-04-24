@@ -1,16 +1,16 @@
 ## Import
 
-#### Use in entire app
+### Use in entire app
 
 ```js
-import { Expandable } from "@warp-ds/vue";
+import { Expandable } from '@warp-ds/vue';
 app.use(Expandable);
 ```
 
-#### Use in one component and special imports
+### Use in one component and special imports
 
 ```js
-import { wExpandable, wExpandTransition, wWillExpand } from "@warp-ds/vue";
+import { wExpandable, wExpandTransition, wWillExpand } from '@warp-ds/vue';
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ import { wExpandable, wExpandTransition, wWillExpand } from "@warp-ds/vue";
 
 ## Visual options
 
-#### Default
+### Default
 
 ```js
 <w-expandable title="I am expandable">
@@ -31,7 +31,7 @@ import { wExpandable, wExpandTransition, wWillExpand } from "@warp-ds/vue";
 </w-expandable>
 ```
 
-#### Expandable box
+### Expandable box
 
 ```js
 <w-expandable title="I am expandable" box>
@@ -41,7 +41,7 @@ import { wExpandable, wExpandTransition, wWillExpand } from "@warp-ds/vue";
 
 ## Animation
 
-#### You should only use this feature under careful supervision of your friendly local UXer.
+### You should only use this feature under careful supervision of your friendly local UXer.
 
 The w-expandable component can be animated using the animated prop.
 

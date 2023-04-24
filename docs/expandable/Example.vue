@@ -1,5 +1,5 @@
 <script setup>
-import { wExpandable } from "@warp-ds/vue";
+import { wExpandable } from '@warp-ds/vue';
 </script>
 
 <template>
