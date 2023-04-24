@@ -1,6 +1,3 @@
-# Textfield
-A single line text input element.
-
 ## Textfield Attributes
 <api-table type=elements component="TextField" />
 
@@ -37,7 +34,7 @@ informative alternatives before choosing to use disabled on an element.
 ```
 
 ### Affix
-If you wish to use an affix you must first use the f-affix element in conjunction with
+If you wish to use an affix you must first use the w-affix element in conjunction with
 w-textfield. Include the affix as a child of w-textfield and set the appropiate attributes.
 You must specify which slot to set the affix into (either prefix or suffix).
 
@@ -45,7 +42,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 
 ```html
 <w-textfield label="Price" placeholder="1 000 000">
-  <f-affix slot="suffix" label="kr"></f-affix>
+  <w-affix slot="suffix" label="kr"></w-affix>
 </w-textfield>
 ```
 
@@ -53,7 +50,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 
 ```html
 <w-textfield label="Price" placeholder="1 000 000">
-  <f-affix slot="prefix" label="kr"></f-affix>
+  <w-affix slot="prefix" label="kr"></w-affix>
 </w-textfield>
 ```
 
@@ -61,8 +58,8 @@ You must specify which slot to set the affix into (either prefix or suffix).
 
 ```html
 <w-textfield label="Price" placeholder="1 000 000">
-  <f-affix slot="prefix" label="kr"></f-affix>
-  <f-affix slot="suffix" search></f-affix>
+  <w-affix slot="prefix" label="kr"></w-affix>
+  <w-affix slot="suffix" search></w-affix>
 </w-textfield>
 ```
 

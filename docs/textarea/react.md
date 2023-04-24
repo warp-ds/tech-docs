@@ -43,7 +43,7 @@ A visual label should be provided for the TextArea using the `label` prop.
 
 ### Optional
 
-Add the optional prop to indicate that the textarea is not required.
+Add the `optional` prop to indicate that the textarea is not required.
 
 ```js
 <TextArea label="Description" optional />

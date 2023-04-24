@@ -1,6 +1,13 @@
 <script setup>
+  import { ref } from 'vue'
   import { wInput } from '@warp-ds/vue';
   import { wAffix } from '@warp-ds/vue';
+
+  const inputModel = ref('');
+
+  const handleClear = () => {
+    inputModel.value = '';
+  }
 
 </script>
 
@@ -23,14 +30,14 @@
   </div>
   <h3>Invalid</h3>
   <div class="component">
-    <w-input label="A label" #suffix invalid required >
-      <w-affix suffix clear />
+    <w-input label="A label" #suffix invalid required v-model="inputModel">
+      <w-affix suffix clear @click="handleClear" />
     </w-input>
   </div>
   <h3>Suffix + Prefix</h3>
   <div class="component">
-    <w-input label="A label" #prefix #suffix  >
-      <w-affix suffix clear />
+    <w-input label="A label" #prefix #suffix v-model="inputModel">
+      <w-affix suffix clear @click="handleClear" />
       <w-affix prefix label="kr" />
     </w-input>
   </div>
