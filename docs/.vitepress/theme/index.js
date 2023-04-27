@@ -11,5 +11,5 @@ export default {
     app.component('ApiTable', ApiTable);
     app.component('ThemeSwitcher', ThemeSwitcher);
     app.component('TabsContent', TabsContent);
-  }
-}
+  },
+};
