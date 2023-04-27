@@ -1,10 +1,10 @@
 import { buildWc } from './ex-base.js';
-import Alert from '../alert/Example.vue';
-import Box from '../box/Example.vue';
-import Button from '../buttons/Example.vue';
-import TextArea from '../textarea/Example.vue';
-import Select from '../select/Example.vue';
-import TextField from '../textfield/Example.vue';
+import Alert from '../components/alert/Example.vue';
+import Box from '../components/box/Example.vue';
+import Button from '../components/buttons/Example.vue';
+import TextArea from '../components/textarea/Example.vue';
+import Select from '../components/select/Example.vue';
+import TextField from '../components/textfield/Example.vue';
 
 buildWc('alert-example', Alert);
 buildWc('box-example', Box);
