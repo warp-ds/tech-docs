@@ -102,14 +102,14 @@ export default defineConfig({
         {
           text: 'Forms',
           collapsible: true,
-          collapsed: true,
           items: [
             { text: 'Select', link: '/select/' },
             { text: 'Slider', link: '/slider/' },
             { text: 'Switch', link: '/switch/' },
             { text: 'Textarea', link: '/textarea/' },
             { text: 'Textfield', link: '/textfield/' },
-            { text: 'Toggle', link: '/toggle/' },
+            { text: 'Checkbox', link: '/checkbox/' },
+            { text: 'Radio', link: '/radio/' },
           ],
         },
         {
