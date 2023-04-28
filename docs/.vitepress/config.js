@@ -171,6 +171,13 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: 'Navigation',
+          collapsible: true,
+          items: [
+            { text: 'Breadcrumbs', link: '/breadcrumbs/' },
+          ],
+        },
       ],
     },
   },
