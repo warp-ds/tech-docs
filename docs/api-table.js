@@ -56,12 +56,7 @@ export const react = {
         'Defines a string value that labels the affix element.',
       ],
       ['className', 'string', '', 'Additional classes to include'],
-      [
-        'style',
-        'CSSProperties',
-        '',
-        'CSS styles to inline on the component',
-      ],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
     ],
   },
   Button: {
@@ -479,6 +474,23 @@ export const react = {
       ],
     ],
   },
+  Step: {
+    required: [
+      ['children', 'Element | Element[]', '', `Contents of Step component`],
+    ],
+    props: [
+      ['active', 'boolean', 'false', `Step is active`],
+      ['completed', 'boolean', 'false', `Step is completed`],
+    ],
+  },
+  Steps: {
+    required: [['children', 'Element[]', '', `Two or more Step components`]],
+    props: [
+      ['horizontal', 'boolean', 'false', `Direction of steps`],
+      ['right', 'boolean', 'false', `Align steps to the right`],
+      ['className', 'string', '', `Additional CSS class for the container`],
+    ],
+  },
 };
 
 export const vue = {
@@ -523,7 +535,12 @@ export const vue = {
   Breadcrumbs: {
     required: [],
     props: [
-      ['aria-label', 'string', 'Her er du', 'Defines a string value that labels the current element.'],
+      [
+        'aria-label',
+        'string',
+        'Her er du',
+        'Defines a string value that labels the current element.',
+      ],
     ],
   },
   Pill: {
@@ -739,6 +756,20 @@ export const vue = {
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
     ],
   },
+  Step: {
+    required: [],
+    props: [
+      ['active', 'boolean', 'false', `Step is active`],
+      ['completed', 'boolean', 'false', `Step is completed`],
+    ],
+  },
+  Steps: {
+    required: [],
+    props: [
+      ['horizontal', 'boolean', 'false', `Direction of steps`],
+      ['right', 'boolean', 'false', `Align steps to the right`],
+    ],
+  },
 };
 
 export const elements = {
@@ -778,7 +809,12 @@ export const elements = {
   Breadcrumbs: {
     required: [],
     props: [
-      ['aria-label', 'string', 'Her er du', 'Defines a string value that labels the current element.'],
+      [
+        'aria-label',
+        'string',
+        'Her er du',
+        'Defines a string value that labels the current element.',
+      ],
     ],
   },
   Button: {
