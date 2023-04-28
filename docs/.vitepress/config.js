@@ -100,11 +100,6 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Button', link: '/components/buttons/' },
-                {
-                  text: 'Button Group',
-                  link: '/components/button-group/',
-                },
-                { text: 'Pill', link: '/components/pill/' },
               ],
             },
             {
@@ -112,32 +107,24 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Select', link: '/components/select/' },
-                { text: 'Slider', link: '/components/slider/' },
-                { text: 'Switch', link: '/components/switch/' },
                 { text: 'Textarea', link: '/components/textarea/' },
                 { text: 'Textfield', link: '/components/textfield/' },
-                { text: 'Toggle', link: '/components/toggle/' },
               ],
             },
             {
               text: 'Feedback',
               collapsible: true,
-              items: [
-                { text: 'Alert', link: '/components/alert/' },
-                { text: 'Steps', link: '/components/steps/' },
-              ],
+              items: [{ text: 'Alert', link: '/components/alert/' }],
             },
             {
               text: 'Layout',
               collapsible: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
-                { text: 'Card', link: '/components/card/' },
                 {
                   text: 'Expandable',
                   link: '/components/expandable/',
                 },
-                { text: 'Tabs', link: '/components/tabs/' },
               ],
             },
             {
