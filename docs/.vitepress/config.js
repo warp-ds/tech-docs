@@ -6,8 +6,7 @@ import { classes } from '@warp-ds/component-classes/classes';
 export default defineConfig({
   lang: 'en-US',
   title: 'Warp Tech',
-  description:
-    'Documentation for Warp Design System technical platform',
+  description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
   cleanUrls: true,
   base: '/tech-docs/',
@@ -59,9 +58,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/warp-logo-small.svg',
     outline: 'deep',
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/warp-ds' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     footer: {
       message: 'Released under the Apache 2.0 License.',
       copyright: 'Copyright © 2023-present Schibsted',
@@ -98,9 +95,7 @@ export default defineConfig({
             {
               text: 'Actions',
               collapsible: true,
-              items: [
-                { text: 'Button', link: '/components/buttons/' },
-              ],
+              items: [{ text: 'Button', link: '/components/buttons/' }],
             },
             {
               text: 'Forms',
@@ -114,7 +109,10 @@ export default defineConfig({
             {
               text: 'Feedback',
               collapsible: true,
-              items: [{ text: 'Alert', link: '/components/alert/' }],
+              items: [
+                { text: 'Alert', link: '/components/alert/' },
+                { text: 'Steps', link: '/components/steps/' },
+              ],
             },
             {
               text: 'Layout',
