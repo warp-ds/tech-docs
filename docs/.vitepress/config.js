@@ -140,6 +140,16 @@ export default defineConfig({
                 { text: 'Tabs', link: '/components/tabs/' },
               ],
             },
+            {
+              text: 'Navigation',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Breadcrumbs',
+                  link: '/components/breadcrumbs/',
+                },
+              ],
+            },
           ],
         },
         {
@@ -169,13 +179,6 @@ export default defineConfig({
                 },
               ],
             },
-          ],
-        },
-        {
-          text: 'Navigation',
-          collapsible: true,
-          items: [
-            { text: 'Breadcrumbs', link: '/breadcrumbs/' },
           ],
         },
       ],
