@@ -29,6 +29,40 @@ import { wSteps, wStep } from '@warp-ds/vue';
 </w-steps>
 ```
 
+### Interactive usage
+
+```js
+<script setup>
+import { ref } from 'vue';
+import { wButton, wSteps, wStep } from '@warp-ds/vue';
+
+const currentStep = ref(1);
+
+const handleClick = () => {
+  if (currentStep.value < 4) currentStep.value += 1;
+  else currentStep.value = 1;
+};
+</script>
+
+<template>
+  <w-steps>
+    <w-step :active="currentStep === 1" :complete="currentStep > 1">
+      <p class="font-bold">Step 1</p>
+      <p>Describing text</p>
+    </w-step>
+    <w-step :active="currentStep === 2" :complete="currentStep > 2">
+      <p class="font-bold">Step 2</p>
+      <p>Describing text</p>
+    </w-step>
+    <w-step :active="currentStep === 3" :complete="currentStep > 3">
+      <p class="font-bold">Step 3</p>
+      <p>Describing text</p>
+    </w-step>
+  </w-steps>
+  <w-button primary v-on:click="handleClick">Next step</w-button>
+</template>
+```
+
 ## Props
 
 ### Steps
