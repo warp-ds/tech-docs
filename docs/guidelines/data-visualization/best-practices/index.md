@@ -1,13 +1,7 @@
 # Best Practices
 
-::: code-group
-
-``` Tabnavn1
-Innhold tab1
-```
-
-``` Tabnavn2
-Innhold tab2
-```
-
-:::
+This page will provide best practice for data visualisation related to
+- Understandability
+- Visual accessibility
+- Keyboard navigation
+- Screen reader
