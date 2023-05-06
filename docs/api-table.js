@@ -306,6 +306,20 @@ export const react = {
       ['label', 'string', '', 'Displays a string.'],
     ],
   },
+  Pill: {
+    required: [],
+    props: [
+      ['label', 'string', 'undefined', `The pill's label`],
+      ['canClose', 'boolean', 'false', 'If the pill should be removable'],
+      [
+        'suggestion',
+        'boolean',
+        'false',
+        `If the pill should have suggestion-styling`,
+      ],
+    ],
+    events: [['close', 'the close button is pressed']],
+  },
   TextArea: {
     required: [],
     props: [
@@ -543,20 +557,6 @@ export const vue = {
       ],
     ],
   },
-  Pill: {
-    required: [],
-    props: [
-      ['label', 'string', 'undefined', `The pill's label`],
-      ['canClose', 'boolean', 'false', 'If the pill should be removeable'],
-      [
-        'suggestion',
-        'boolean',
-        'false',
-        `If the pill should have suggestion-styling`,
-      ],
-    ],
-    events: [['close', 'the close button is pressed']],
-  },
   Button: {
     required: [],
     props: [
@@ -755,6 +755,20 @@ export const vue = {
       ],
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
     ],
+  },
+  Pill: {
+    required: [],
+    props: [
+      ['label', 'string', 'undefined', `The pill's label`],
+      ['canClose', 'boolean', 'false', 'If the pill should be removable'],
+      [
+        'suggestion',
+        'boolean',
+        'false',
+        `If the pill should have suggestion-styling`,
+      ],
+    ],
+    events: [['close', 'the close button is pressed']],
   },
   Step: {
     required: [],
