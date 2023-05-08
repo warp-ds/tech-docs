@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import Control from './Control.vue';
+import Controls from './Controls.vue';
 
 export const buildWc = (elementName, baseVueComponent) => {
   if (typeof window === 'undefined') return;
@@ -31,7 +33,10 @@ export const buildWc = (elementName, baseVueComponent) => {
 
           this.shadow = this.attachShadow({ mode: 'open' });
           this.shadow.innerHTML = shadowUnoStyle + warp + target;
-          createApp(baseVueComponent).mount(this.appEl);
+          createApp(baseVueComponent)
+          .component('demo-control', Control)
+          .component('demo-controls', Controls)
+          .mount(this.appEl);
           document.addEventListener('change', () => {
             if (window.theme) {
               const stylesheets = this.shadow.querySelectorAll('link');
