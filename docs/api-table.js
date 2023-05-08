@@ -9,24 +9,9 @@ export const react = {
       ],
     ],
     props: [
-      [
-        'show',
-        'boolean',
-        'undefined',
-        `Controls when the alert shows`,
-      ],
-      [
-        'role',
-        'string',
-        'alert',
-        `ARIA live region "role" attribute value`,
-      ],
-      [
-        'className',
-        'string',
-        'undefined',
-        `Additional classes to include`,
-      ],
+      ['show', 'boolean', 'undefined', `Controls when the alert shows`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+      ['className', 'string', 'undefined', `Additional classes to include`],
       [
         'style',
         'string',
@@ -35,16 +20,50 @@ export const react = {
       ],
     ],
   },
+  Box: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['bleed', 'boolean', 'false', 'Will make a box full-width on sm-size'],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
+      [
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
+      ],
+      [
+        '~~clickable~~',
+        'boolean',
+        'false',
+        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
+      ],
+    ],
+  },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      [
+        'aria-label',
+        'string',
+        'Her er du',
+        'Defines a string value that labels the affix element.',
+      ],
+      ['className', 'string', '', 'Additional classes to include'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+    ],
+  },
   Button: {
     required: [],
     props: [
       ['className', 'string', '', 'Additional classes to include'],
-      [
-        'style',
-        'CSSProperties',
-        '',
-        'CSS styles to inline on the component',
-      ],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
       [
         'type',
         '"button"|"submit"|"reset"',
@@ -120,6 +139,55 @@ export const react = {
       ['rel', 'string', '', 'The relationship of the linked URL.'],
     ],
   },
+  Expandable: {
+    required: [['title', 'string', '', 'The title for the expandable']],
+    props: [
+      ['className', 'string', '', 'Additional classes to include'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+      ['info', 'boolean', 'false', 'Styles the box with a color'],
+      [
+        'expanded',
+        'boolean',
+        'false',
+        'The state of the component, either true for expanded or false for closed',
+      ],
+      [
+        'bleed',
+        'boolean',
+        '',
+        'Will make the expandable full-width on sm-size',
+      ],
+      ['box', 'boolean', '', 'Will make the expandable a Box'],
+      [
+        'buttonClass',
+        'string',
+        '',
+        'Additional CSS classes to include on the button part of the component',
+      ],
+      [
+        'contentClass',
+        'string',
+        '',
+        'Additional CSS classes to include on the content part of the component',
+      ],
+      ['animated', 'boolean', '', 'Will animate the expansion/collapse'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
+      [
+        'headingLevel',
+        'HeadingLevel',
+        '',
+        'Wrap the toggle button in a heading element with the specified level. If headingLevel is not specified, the button will not be wrapped by a heading element',
+      ],
+    ],
+    events: [
+      [
+        'onChange',
+        '(state: boolean) => void',
+        '',
+        'Event function to be called any time the component is expanded or closed. Function will be passed a boolean with a value of true if the component is now expanded or false if it is now closed.',
+      ],
+    ],
+  },
   Input: {
     required: [],
     props: [
@@ -161,24 +229,14 @@ export const react = {
         '',
         'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error.',
       ],
-      [
-        'helpText',
-        'ReactNode',
-        '',
-        'The content to display as the help text.',
-      ],
+      ['helpText', 'ReactNode', '', 'The content to display as the help text.'],
       [
         'id',
         'string',
         '',
         `The element's unique identifier. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id).`,
       ],
-      [
-        'label',
-        'ReactNode',
-        '',
-        'The content to display as the label.',
-      ],
+      ['label', 'ReactNode', '', 'The content to display as the label.'],
       [
         'max',
         'string|number',
@@ -283,24 +341,14 @@ export const react = {
         '',
         'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error.',
       ],
-      [
-        'helpText',
-        'ReactNode',
-        '',
-        'The content to display as the help text.',
-      ],
+      ['helpText', 'ReactNode', '', 'The content to display as the help text.'],
       [
         'id',
         'string',
         '',
         `The element's unique identifier. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id).`,
       ],
-      [
-        'label',
-        'ReactNode',
-        '',
-        'The content to display as the label.',
-      ],
+      ['label', 'ReactNode', '', 'The content to display as the label.'],
       [
         'max',
         'string|number',
@@ -360,46 +408,146 @@ export const react = {
       ['optional', 'boolean', '', 'The current value (controlled).'],
     ],
   },
+  Select: {
+    required: [],
+    props: [
+      [
+        'id',
+        'string',
+        '',
+        `The element's unique identifier. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id).`,
+      ],
+      [
+        'name',
+        'string',
+        '',
+        'The name of the input element, used when submitting an HTML form. See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefname).',
+      ],
+      [
+        'defaultValue',
+        'string & (string|number|readonly string[])',
+        '',
+        'The default value (uncontrolled).',
+      ],
+      ['value', 'string', '', 'The current value (controlled).'],
+      ['label', 'ReactNode', '', 'The content to display as the label.'],
+      ['optional', 'boolean', '', 'Whether to show optional text.'],
+      ['hint', 'ReactNode', '', 'The content to display as the help text.'],
+      ['always', 'boolean', '', 'Whether to always show hint.'],
+      [
+        'invalid',
+        'boolean',
+        '',
+        'Renders the field in an invalid state. Often paired together with `hint` to provide feedback about the error.',
+      ],
+      ['disabled', 'boolean', '', 'Whether the input is disabled.'],
+      [
+        'readOnly',
+        'boolean',
+        '',
+        'Whether the input can be selected but not changed by the user.',
+      ],
+      [
+        'required',
+        'boolean',
+        '',
+        'Whether user input is required on the input before form submission.',
+      ],
+      [
+        'children',
+        'ReactNode',
+        '',
+        'The `option` elements to populate the select with.',
+      ],
+      ['className', 'string', '', 'Additional classes to include.'],
+      [
+        'style',
+        'CSSProperties',
+        '',
+        'Additional CSS styles for the container.',
+      ],
+      [
+        'autoFocus',
+        'boolean',
+        '',
+        'Whether the element should receive focus on render.',
+      ],
+    ],
+  },
+  Step: {
+    required: [
+      ['children', 'Element | Element[]', '', `Contents of Step component`],
+    ],
+    props: [
+      ['active', 'boolean', 'false', `Step is active`],
+      ['completed', 'boolean', 'false', `Step is completed`],
+    ],
+  },
+  Steps: {
+    required: [['children', 'Element[]', '', `Two or more Step components`]],
+    props: [
+      ['horizontal', 'boolean', 'false', `Direction of steps`],
+      ['right', 'boolean', 'false', `Align steps to the right`],
+      ['className', 'string', '', `Additional CSS class for the container`],
+    ],
+  },
 };
 
 export const vue = {
   Alert: {
     required: [],
     props: [
-      [
-        'v-model',
-        'boolean',
-        'undefined',
-        `Controls when the alert shows`,
-      ],
+      ['v-model', 'boolean', 'undefined', `Controls when the alert shows`],
       ['title', 'string', 'undefined', `The title for the alert`],
       ['role', 'string', 'alert', `The aria role for the alert`],
-      [
-        'negative',
-        'boolean',
-        'undefined',
-        `Creates a negative alert`,
-      ],
-      [
-        'positive',
-        'boolean',
-        'undefined',
-        `Creates a positive alert`,
-      ],
+      ['negative', 'boolean', 'undefined', `Creates a negative alert`],
+      ['positive', 'boolean', 'undefined', `Creates a positive alert`],
       ['warning', 'boolean', 'undefined', `Creates a warning alert`],
       ['info', 'boolean', 'undefined', `Creates an info alert`],
+    ],
+  },
+  Box: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['bleed', 'boolean', 'false', 'Will make a box full-width on sm-size'],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
+      [
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
+      ],
+      [
+        '~~clickable~~',
+        'boolean',
+        'false',
+        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
+      ],
+    ],
+  },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      [
+        'aria-label',
+        'string',
+        'Her er du',
+        'Defines a string value that labels the current element.',
+      ],
     ],
   },
   Pill: {
     required: [],
     props: [
       ['label', 'string', 'undefined', `The pill's label`],
-      [
-        'canClose',
-        'boolean',
-        'false',
-        'If the pill should be removeable',
-      ],
+      ['canClose', 'boolean', 'false', 'If the pill should be removeable'],
       [
         'suggestion',
         'boolean',
@@ -444,12 +592,7 @@ export const vue = {
     props: [
       ['outlined', 'boolean', '', 'Outlines the button-group'],
       ['raised', 'boolean', '', 'Adds shadow to the button-group'],
-      [
-        'vertical',
-        'boolean',
-        '',
-        'Changes the orientation to vertical',
-      ],
+      ['vertical', 'boolean', '', 'Changes the orientation to vertical'],
     ],
     slots: [['default', 'where all the buttons go']],
   },
@@ -464,37 +607,6 @@ export const vue = {
       ],
     ],
     slots: [['default', 'button content']],
-  },
-  Box: {
-    required: [],
-    props: [
-      ['as', 'string', 'div', 'The DOM element to emit'],
-      [
-        'bleed',
-        'boolean',
-        '',
-        'Will make a box full-width on sm-size',
-      ],
-      [
-        'clickable',
-        'boolean',
-        '',
-        'Applies styling to indicate clickability, does NOT add clickability to the box itself (see `fClickable` for that)',
-      ],
-      ['bordered', 'boolean', '', 'Adds a lovely border'],
-      [
-        'info',
-        'boolean',
-        '',
-        'Will style the box with light-blue colors',
-      ],
-      [
-        'neutral',
-        'boolean',
-        '',
-        'Will style the box with light-gray colors',
-      ],
-    ],
   },
   Clickable: {
     required: [],
@@ -527,24 +639,57 @@ export const vue = {
   },
   Expandable: {
     props: [
+      [
+        'v-model',
+        'boolean',
+        'false',
+        "If not provided, the component will use an internal value that starts the expandable 'closed'",
+      ],
       ['as', 'string', 'div', 'The DOM element to emit'],
-      ['title', 'string', '', 'The title for the expandable'],
+      ['box', 'boolean', '', 'Will make the expandable a Box'],
       [
         'bleed',
         'boolean',
         '',
         'Will make the expandable full-width on sm-size',
       ],
-      ['box', 'boolean', '', 'Will make the expandable a Box'],
+      ['info', 'boolean', 'false', 'Styles the box with a color'],
       [
-        'animated',
-        'boolean',
+        'buttonClass',
+        'string',
         '',
-        'Will animate the expansion/collapse',
-      ][
-        ('v-model', 'boolean', '', 'Controls the expansion/collapse')
+        'Additional CSS classes to include on the button part of the component',
+      ],
+      [
+        'contentClass',
+        'string',
+        '',
+        'Additional CSS classes to include on the content part of the component',
       ],
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
+    ],
+    slots: [
+      ['title', 'string', '', 'The title for the expandable'],
+      [
+        'default',
+        'string',
+        '',
+        'Content that should be displayed when expanded',
+      ],
+    ],
+    events: [
+      [
+        'expand',
+        'boolean',
+        '',
+        'Content inside the expandable has been mounted and can be targeted - will fire after any opening animations are complete',
+      ],
+      [
+        'collapse',
+        'boolean',
+        '',
+        'Content inside the expandable has been fully torn down or hidden',
+      ],
     ],
   },
   Field: {
@@ -583,12 +728,7 @@ export const vue = {
         '',
         'Whether or not to treat the form element as valid',
       ],
-      [
-        'hint',
-        'string',
-        '',
-        'The hint to show when this result is triggered',
-      ],
+      ['hint', 'string', '', 'The hint to show when this result is triggered'],
       [
         'always',
         'boolean',
@@ -600,12 +740,7 @@ export const vue = {
   InputValidation: {
     titles: ['prop', 'type', 'default', 'notes'],
     rows: [
-      [
-        'v-model',
-        'boolean',
-        '',
-        'True when all descendants are valid',
-      ],
+      ['v-model', 'boolean', '', 'True when all descendants are valid'],
       [
         'v-model:completed',
         'boolean',
@@ -618,12 +753,21 @@ export const vue = {
         '',
         'Can be used to instruct all descendants to immediately validate. Note that this will not update if the should-validate logic is updated elsewhere.',
       ],
-      [
-        'as',
-        'string',
-        'form',
-        'The DOM element to emit for the wrapper',
-      ],
+      ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
+    ],
+  },
+  Step: {
+    required: [],
+    props: [
+      ['active', 'boolean', 'false', `Step is active`],
+      ['completed', 'boolean', 'false', `Step is completed`],
+    ],
+  },
+  Steps: {
+    required: [],
+    props: [
+      ['horizontal', 'boolean', 'false', `Direction of steps`],
+      ['right', 'boolean', 'false', `Align steps to the right`],
     ],
   },
 };
@@ -640,11 +784,36 @@ export const elements = {
     ],
     props: [
       ['show', 'boolean', 'false', `Controls when the alert shows`],
+      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+    ],
+  },
+  Box: {
+    required: [],
+    props: [
+      ['bleed', 'boolean', 'false', 'Will make a box full-width on sm-size'],
+      ['bordered', 'boolean', 'false', 'Adds a lovely border'],
       [
-        'role',
+        'info',
+        'boolean',
+        'false',
+        'Will style the box with colors for indicating that it has informative content',
+      ],
+      [
+        'neutral',
+        'boolean',
+        'false',
+        'Will style the box in a neutral fashion',
+      ],
+    ],
+  },
+  Breadcrumbs: {
+    required: [],
+    props: [
+      [
+        'aria-label',
         'string',
-        'alert',
-        `ARIA live region "role" attribute value`,
+        'Her er du',
+        'Defines a string value that labels the current element.',
       ],
     ],
   },
@@ -681,6 +850,54 @@ export const elements = {
       ['rel', 'string', '', 'The relationship of the linked URL.'],
     ],
   },
+  Expandable: {
+    required: [],
+    props: [
+      ['expanded', 'boolean', 'false', "Controls component's expanded state"],
+      [
+        'bleed',
+        'boolean',
+        '',
+        'Will make the expandable full-width on sm-size',
+      ],
+      ['info', 'boolean', 'false', 'TStyles the box with a color'],
+      ['box', 'boolean', 'false', 'Will make the expandable a Box'],
+      ['animated', 'boolean', 'false', 'Will animate the expansion/collapse'],
+      [
+        'no-chevron',
+        'boolean',
+        'false',
+        'Whether to hide the chevron on the button part of the component',
+      ],
+      [
+        'title',
+        'string',
+        '',
+        'Component title. Used to display the title value which is always present regardless of whether the component is open or closed.',
+      ],
+      [
+        'heading-level',
+        'number',
+        '',
+        'Wrap the toggle button in a heading element with the specified level. If headingLevel is not specified, the button will not be wrapped by a heading element',
+      ],
+      [
+        'button-class',
+        'string',
+        '',
+        'Additional CSS classes to include on the button part of the component',
+      ],
+      [
+        'content-class',
+        'string',
+        '',
+        'Additional CSS classes to include on the content part of the component',
+      ],
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      ['v-model', 'boolean', '', 'Controls the expansion/collapse'],
+      ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
+    ],
+  },
   TextField: {
     required: [],
     props: [
@@ -697,12 +914,7 @@ export const elements = {
         '',
         'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error.',
       ],
-      [
-        'help-text',
-        'string',
-        '',
-        'The content to display as the help text.',
-      ],
+      ['help-text', 'string', '', 'The content to display as the help text.'],
       ['label', 'string', '', 'The content to display as the label.'],
       [
         'max',

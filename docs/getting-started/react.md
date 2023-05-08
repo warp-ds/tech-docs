@@ -2,7 +2,7 @@
 
 The Warp React package can be installed from NPM
 
-### with npm: 
+### with npm:
 ```shell
 npm install @warp-ds/react
 ```
@@ -21,7 +21,7 @@ import { Box } from '@warp-ds/react';
 ```
 
 You can find the specific import statement to import each component on that
-component's documentation page. For example, here's the [button page](/buttons/)
+component's documentation page. For example, here's the [button page](/components/buttons/)
 
 
 ## TypeScript support

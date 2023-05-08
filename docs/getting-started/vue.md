@@ -2,7 +2,7 @@
 
 The Warp Vue package can be installed from NPM
 
-### with npm: 
+### with npm:
 ```shell
 npm install @warp-ds/vue
 ```
@@ -16,7 +16,7 @@ pnpm add @warp-ds/vue
 
 Once installed, components can be imported into your app by name.
 You can find the specific import statement to import each component on that
-component's documentation page. For example, here's the [button page](/buttons/)
+component's documentation page. For example, here's the [button page](/components/buttons/)
 
 ### 1. Using in the entire app
 

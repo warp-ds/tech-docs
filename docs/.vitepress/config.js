@@ -6,8 +6,7 @@ import { classes } from '@warp-ds/component-classes/classes';
 export default defineConfig({
   lang: 'en-US',
   title: 'Warp Tech',
-  description:
-    'Documentation for Warp Design System technical platform',
+  description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
   cleanUrls: true,
   base: '/tech-docs/',
@@ -59,9 +58,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/warp-logo-small.svg',
     outline: 'deep',
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/warp-ds' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
     footer: {
       message: 'Released under the Apache 2.0 License.',
       copyright: 'Copyright © 2023-present Schibsted',
@@ -91,43 +88,82 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Actions',
-          collapsible: true,
-          items: [
-            { text: 'Button', link: '/buttons/' },
-            { text: 'Button Group', link: '/button-group/' },
-            { text: 'Pill', link: '/pill/' },
-          ],
-        },
-        {
-          text: 'Forms',
+          text: 'Components',
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'Select', link: '/select/' },
-            { text: 'Slider', link: '/slider/' },
-            { text: 'Switch', link: '/switch/' },
-            { text: 'Textarea', link: '/textarea/' },
-            { text: 'Textfield', link: '/textfield/' },
-            { text: 'Toggle', link: '/toggle/' },
+            {
+              text: 'Actions',
+              collapsible: true,
+              items: [{ text: 'Button', link: '/components/buttons/' }],
+            },
+            {
+              text: 'Forms',
+              collapsible: true,
+              items: [
+                { text: 'Select', link: '/components/select/' },
+                { text: 'Textarea', link: '/components/textarea/' },
+                { text: 'Textfield', link: '/components/textfield/' },
+              ],
+            },
+            {
+              text: 'Feedback',
+              collapsible: true,
+              items: [
+                { text: 'Alert', link: '/components/alert/' },
+                { text: 'Steps', link: '/components/steps/' },
+              ],
+            },
+            {
+              text: 'Layout',
+              collapsible: true,
+              items: [
+                { text: 'Box', link: '/components/box/' },
+                {
+                  text: 'Expandable',
+                  link: '/components/expandable/',
+                },
+              ],
+            },
+            {
+              text: 'Navigation',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Breadcrumbs',
+                  link: '/components/breadcrumbs/',
+                },
+              ],
+            },
           ],
         },
         {
-          text: 'Feedback',
+          text: 'Guidelines',
           collapsible: true,
+          collapsed: true,
           items: [
-            { text: 'Alert', link: '/alert/' },
-            { text: 'Steps', link: '/steps/' },
-          ],
-        },
-        {
-          text: 'Layout',
-          collapsible: true,
-          items: [
-            { text: 'Box', link: '/box/' },
-            { text: 'Card', link: '/card/' },
-            { text: 'Expandable', link: '/expandable/' },
-            { text: 'Tabs', link: '/tabs/' },
+            {
+              text: 'Data vizualisation',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Getting Started',
+                  link: '/guidelines/data-visualization/getting-started/',
+                },
+                {
+                  text: 'Color Usage',
+                  link: '/guidelines/data-visualization/color-usage/',
+                },
+                {
+                  text: 'Chart types',
+                  link: '/guidelines/data-visualization/chart-types/',
+                },
+                {
+                  text: 'Best Practices',
+                  link: '/guidelines/data-visualization/best-practices/',
+                },
+              ],
+            },
           ],
         },
       ],
