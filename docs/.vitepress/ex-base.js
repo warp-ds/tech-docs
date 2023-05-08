@@ -30,7 +30,7 @@ export const buildWc = (elementName, baseVueComponent) => {
       </style>`;
 
           this.shadow = this.attachShadow({ mode: 'open' });
-          this.shadow.innerHTML = warp + shadowUnoStyle + target;
+          this.shadow.innerHTML = shadowUnoStyle + warp + target;
           createApp(baseVueComponent).mount(this.appEl);
           document.addEventListener('change', () => {
             if (window.theme) {
