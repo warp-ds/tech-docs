@@ -3,6 +3,9 @@ import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/component-classes/classes';
 
+// Classes of documentation-related elements used within Warp component examples
+const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24']
+
 export default defineConfig({
   lang: 'en-US',
   title: 'Warp Tech',
@@ -23,7 +26,7 @@ export default defineConfig({
       uno({
         presets: [presetWarp({ usePreflight: true })],
         mode: 'shadow-dom',
-        safelist: classes,
+        safelist: [...classes, ...docsClasses],
       }),
     ],
   },
@@ -95,7 +98,10 @@ export default defineConfig({
             {
               text: 'Actions',
               collapsible: true,
-              items: [{ text: 'Button', link: '/components/buttons/' }],
+              items: [
+                { text: 'Button', link: '/components/buttons/' },
+                { text: 'Button Group', link: '/components/buttongroup/' }
+              ],
             },
             {
               text: 'Forms',
