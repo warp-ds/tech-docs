@@ -1,6 +1,8 @@
 # Getting Started
 
-Here you will find guidelines about data visualisation for use in customer facing products and services.
+These guidelines are primiary for customer facing products and services, but can also be used for internal graphs and visualisations.
+
+![A bar chart, donut chart and bubble graph](/tech-docs/dataviz-graphs.svg)
 
 ## What is data visualisation?
 
@@ -48,14 +50,14 @@ Should your visualisation be explanatory or exploratory?
 - **Explanatory**: your visualisation explains or communicates a specific story or insight to someone. In this case, you need to figure out what story to tell, and how to tell it.
 - **Exploratory**: users should explore data freely and find their own insight, for example in an analytical dashboard. In this case, you need to figure out how they are going to do that, for example using filters and sorting.
 
-## Which visualisation library should you use? (TBD)
-
+## Which visualisation library should you use?
+*To be decided*
 
 ## How do you provide feedback or get help?
 
 Don’t hesitate to reach out to the design system team [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04P0GYTHPV) if you have any feedback or questions.
 
-Jon Olav is an information designer working across verticals and brands in NMP, and can help you with:
+[Jon Olav](https://sch-chat.slack.com/team/U03KEH3V4) is an information designer working across verticals and brands in NMP, and can help you with:
 
 - Questions or unresolved needs related to these guidelines
 - Process guidance on how to figure out what data to present to users

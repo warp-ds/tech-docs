@@ -157,12 +157,12 @@ export default defineConfig({
                   link: '/guidelines/data-visualization/getting-started/',
                 },
                 {
-                  text: 'Color Usage',
-                  link: '/guidelines/data-visualization/color-usage/',
-                },
-                {
                   text: 'Chart types',
                   link: '/guidelines/data-visualization/chart-types/',
+                },
+                {
+                  text: 'Color Usage',
+                  link: '/guidelines/data-visualization/color-usage/',
                 },
                 {
                   text: 'Best Practices',
