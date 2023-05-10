@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import ApiTable from '../ApiTable.vue';
+import TabsContent from '../TabsContent.vue';
 import ThemeSwitcher from '../ThemeSwitcher.vue';
 import '../bootExamples.js';
 import './custom.css';
@@ -9,5 +10,6 @@ export default {
   enhanceApp({ app }) {
     app.component('ApiTable', ApiTable);
     app.component('ThemeSwitcher', ThemeSwitcher);
-  }
-}
+    app.component('TabsContent', TabsContent);
+  },
+};
