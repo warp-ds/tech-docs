@@ -2,7 +2,7 @@
 
 These guidelines are primiary for customer facing products and services, but can also be used for internal graphs and visualisations.
 
-![A bar chart, donut chart and bubble graph](/tech-docs/dataviz-graphs.svg)
+![A bar chart, donut chart and bubble graph](/dataviz-graphs.svg)
 
 ## What is data visualisation?
 
