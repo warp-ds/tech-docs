@@ -9,9 +9,9 @@ export const react = {
       ],
     ],
     props: [
-      ['show', 'boolean', 'undefined', `Controls when the alert shows`],
-      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
-      ['className', 'string', 'undefined', `Additional classes to include`],
+      ['show', 'boolean', 'undefined', 'Controls when the alert shows'],
+      ['role', 'string', 'alert', 'ARIA live region "role" attribute value'],
+      ['className', 'string', 'undefined', 'Additional classes to include'],
       [
         'style',
         'string',
@@ -476,16 +476,16 @@ export const react = {
   },
   Slider: {
     required: [
-      ['step', 'number', '', `Specifies the value granularity`],
+      ['step', 'number', '', 'Specifies the value granularity'],
       ['value', 'number', '', `The current value`],
     ],
     props: [
-      ['max', 'number', '100', `The greatest value in the range of permitted values`],
-      ['min', 'number', '', `The lowest value in the range of permitted values`],
-      ['disabled', 'number', '', `Whether the slider is disabled`],
-      ['aria-label', 'number', '', `String value that labels the slider`],
-      ['aria-labelledby', 'string', '', `Identifies the element that labels the slider`],
-      ['aria-valuetext', 'string', '', `Human readable text alternative for the value`],
+      ['max', 'number', '100', 'The greatest value in the range of permitted values'],
+      ['min', 'number', '', 'The lowest value in the range of permitted values'],
+      ['disabled', 'boolean', '', 'Whether the slider is disabled'],
+      ['aria-label', 'number', '', 'String value that labels the slider'],
+      ['aria-labelledby', 'string', '', 'Identifies the element that labels the slider'],
+      ['aria-valuetext', 'string', '', 'Human readable text alternative for the value'],
     ],
     events: [
       [ 'onChange', '(value: number) => void', '', 'Handler that is called when the value of the slider changes'],
@@ -493,19 +493,19 @@ export const react = {
   },
   Step: {
     required: [
-      ['children', 'Element | Element[]', '', `Contents of Step component`],
+      ['children', 'Element | Element[]', '', 'Contents of Step component'],
     ],
     props: [
-      ['active', 'boolean', 'false', `Step is active`],
-      ['completed', 'boolean', 'false', `Step is completed`],
+      ['active', 'boolean', 'false', 'Step is active'],
+      ['completed', 'boolean', 'false', 'Step is completed'],
     ],
   },
   Steps: {
-    required: [['children', 'Element[]', '', `Two or more Step components`]],
+    required: [['children', 'Element[]', '', 'Two or more Step components']],
     props: [
-      ['horizontal', 'boolean', 'false', `Direction of steps`],
-      ['right', 'boolean', 'false', `Align steps to the right`],
-      ['className', 'string', '', `Additional CSS class for the container`],
+      ['horizontal', 'boolean', 'false', 'Direction of steps'],
+      ['right', 'boolean', 'false', 'Align steps to the right'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
     ],
   },
 };
@@ -514,13 +514,13 @@ export const vue = {
   Alert: {
     required: [],
     props: [
-      ['v-model', 'boolean', 'undefined', `Controls when the alert shows`],
-      ['title', 'string', 'undefined', `The title for the alert`],
-      ['role', 'string', 'alert', `The aria role for the alert`],
-      ['negative', 'boolean', 'undefined', `Creates a negative alert`],
-      ['positive', 'boolean', 'undefined', `Creates a positive alert`],
-      ['warning', 'boolean', 'undefined', `Creates a warning alert`],
-      ['info', 'boolean', 'undefined', `Creates an info alert`],
+      ['v-model', 'boolean', 'undefined', 'Controls when the alert shows'],
+      ['title', 'string', 'undefined', 'The title for the alert'],
+      ['role', 'string', 'alert', 'The aria role for the alert'],
+      ['negative', 'boolean', 'undefined', 'Creates a negative alert'],
+      ['positive', 'boolean', 'undefined', 'Creates a positive alert'],
+      ['warning', 'boolean', 'undefined', 'Creates a warning alert'],
+      ['info', 'boolean', 'undefined', 'Creates an info alert'],
     ],
   },
   Box: {
@@ -776,25 +776,25 @@ export const vue = {
   Slider: {
     required: [],
     props: [
-      ['max', 'number', '100', `The greatest value in the range of permitted values`],
-      ['min', 'number', '0', `The lowest value in the range of permitted values`],
-      ['step', 'number', '', `Whether the slider is disabled`],
-      ['label', 'string', '', `String value for aria-label the slider`],
-      ['labelled-by', 'string', '', `Identifies the element that labels the slider`],
+      ['max', 'number', '100', 'The greatest value in the range of permitted values'],
+      ['min', 'number', '0', 'The lowest value in the range of permitted values'],
+      ['step', 'number', '', 'Specifies the value granularity'],
+      ['label', 'string', '', 'String value for aria-label the slider'],
+      ['labelled-by', 'string', '', 'Identifies the element that labels the slider'],
     ],
   },
   Step: {
     required: [],
     props: [
-      ['active', 'boolean', 'false', `Step is active`],
-      ['completed', 'boolean', 'false', `Step is completed`],
+      ['active', 'boolean', 'false', 'Step is active'],
+      ['completed', 'boolean', 'false', 'Step is completed'],
     ],
   },
   Steps: {
     required: [],
     props: [
-      ['horizontal', 'boolean', 'false', `Direction of steps`],
-      ['right', 'boolean', 'false', `Align steps to the right`],
+      ['horizontal', 'boolean', 'false', 'Direction of steps'],
+      ['right', 'boolean', 'false', 'Align steps to the right'],
     ],
   },
 };
@@ -806,12 +806,12 @@ export const elements = {
         'variant',
         "'negative' | 'positive' | 'warning' | 'info'",
         'undefined',
-        `Variant of the alert`,
+        'Variant of the alert',
       ],
     ],
     props: [
-      ['show', 'boolean', 'false', `Controls when the alert shows`],
-      ['role', 'string', 'alert', `ARIA live region "role" attribute value`],
+      ['show', 'boolean', 'false', 'Controls when the alert shows'],
+      ['role', 'string', 'alert', 'ARIA live region "role" attribute value'],
     ],
   },
   Box: {

@@ -31,7 +31,7 @@ function Example() {
 #### Disabled
 
 ```js
-<div className="space-y-32">
+<div>
   <Slider aria-label="Disabled slider" value={50} disabled />
 </div>
 ```

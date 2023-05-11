@@ -1,6 +1,6 @@
 ## Accessibility
 
-To be accessible, an `aria-label` prop should be provided to the slider. If the slider is labeled by a separate element, use an `aria-labelledby` prop with the id of the labeling element instead.
+To be accessible, an `aria-label` prop should be provided to the slider. If the slider is labeled by a separate element, use the `labelledby` prop with the id of the labeling element instead.
 
 ## Events
 
