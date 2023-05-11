@@ -95,7 +95,10 @@ export default defineConfig({
             {
               text: 'Actions',
               collapsible: true,
-              items: [{ text: 'Button', link: '/components/buttons/' }],
+              items: [
+                { text: 'Button', link: '/components/buttons/' },
+                { text: 'Slider', link: '/components/slider/' },
+              ],
             },
             {
               text: 'Forms',

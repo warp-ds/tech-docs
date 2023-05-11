@@ -474,6 +474,23 @@ export const react = {
       ],
     ],
   },
+  Slider: {
+    required: [
+      ['step', 'number', '', `Specifies the value granularity`],
+      ['value', 'number', '', `The current value`],
+    ],
+    props: [
+      ['max', 'number', '100', `The greatest value in the range of permitted values`],
+      ['min', 'number', '', `The lowest value in the range of permitted values`],
+      ['disabled', 'number', '', `Whether the slider is disabled`],
+      ['aria-label', 'number', '', `String value that labels the slider`],
+      ['aria-labelledby', 'string', '', `Identifies the element that labels the slider`],
+      ['aria-valuetext', 'string', '', `Human readable text alternative for the value`],
+    ],
+    events: [
+      [ 'onChange', '(value: number) => void', '', 'Handler that is called when the value of the slider changes'],
+    ]
+  },
   Step: {
     required: [
       ['children', 'Element | Element[]', '', `Contents of Step component`],
@@ -754,6 +771,16 @@ export const vue = {
         'Can be used to instruct all descendants to immediately validate. Note that this will not update if the should-validate logic is updated elsewhere.',
       ],
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
+    ],
+  },
+  Slider: {
+    required: [],
+    props: [
+      ['max', 'number', '100', `The greatest value in the range of permitted values`],
+      ['min', 'number', '0', `The lowest value in the range of permitted values`],
+      ['step', 'number', '', `Whether the slider is disabled`],
+      ['label', 'string', '', `String value for aria-label the slider`],
+      ['labelled-by', 'string', '', `Identifies the element that labels the slider`],
     ],
   },
   Step: {
