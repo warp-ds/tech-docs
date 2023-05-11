@@ -8,24 +8,23 @@ app.use(Forms)
 
 > Use in one component and special imports
 ```js
-import { wSelect } from '@warp-ds/vue'
+import { wToggle } from '@warp-ds/vue'
 ```
 
 ## Vue syntax
 
 ```html
-<w-select v-model="model" label="A label">
-  <option disabled selected value="">Pick something</option>
-  <option value="foo">Foo</option>
-</w-select>
+<w-toggle radio-button v-model="model" label="A label" :toggles="[
+  { label: 'One', value: 1 },
+  { label: 'Two', value: 2 }
+]" />
 ```
 
 ## Props
-All typical HTML5 attributes are valid props for select.
 
-Below are some additional props documented.
+The props documented below have defaults set or are unique to this component, all typical HTML5 attributes are valid props. See Field for additional props.
 
-<api-table type=vue component="Field"/>
+<api-table type=vue component="Toggle"/>
 
 ## Validation
 ### Validating Elements

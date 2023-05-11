@@ -3,6 +3,9 @@ import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/component-classes/classes';
 
+// Classes of documentation-related elements used within Warp component examples
+const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24']
+
 export default defineConfig({
   lang: 'en-US',
   title: 'Warp Tech',
@@ -23,7 +26,7 @@ export default defineConfig({
       uno({
         presets: [presetWarp({ usePreflight: true })],
         mode: 'shadow-dom',
-        safelist: classes,
+        safelist: [...classes, ...docsClasses],
       }),
     ],
   },
@@ -97,7 +100,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Button', link: '/components/buttons/' },
-                { text: 'Slider', link: '/components/slider/' },
+                { text: 'Button Group', link: '/components/buttongroup/' },
               ],
             },
             {
@@ -107,6 +110,10 @@ export default defineConfig({
                 { text: 'Select', link: '/components/select/' },
                 { text: 'Textarea', link: '/components/textarea/' },
                 { text: 'Textfield', link: '/components/textfield/' },
+                { text: 'Checkbox', link: '/components/checkbox/' },
+                { text: 'Radio', link: '/components/radio/' },
+                { text: 'Radio buttons', link: '/components/radiobuttons/' },
+                { text: 'Slider', link: '/components/slider/' },
               ],
             },
             {
@@ -154,12 +161,12 @@ export default defineConfig({
                   link: '/guidelines/data-visualization/getting-started/',
                 },
                 {
-                  text: 'Color Usage',
-                  link: '/guidelines/data-visualization/color-usage/',
-                },
-                {
                   text: 'Chart types',
                   link: '/guidelines/data-visualization/chart-types/',
+                },
+                {
+                  text: 'Color Usage',
+                  link: '/guidelines/data-visualization/color-usage/',
                 },
                 {
                   text: 'Best Practices',
