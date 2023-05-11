@@ -128,6 +128,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
+                { text: 'Card', link: '/components/card/' },
                 {
                   text: 'Expandable',
                   link: '/components/expandable/',

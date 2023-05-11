@@ -139,6 +139,51 @@ export const react = {
       ['rel', 'string', '', 'The relationship of the linked URL.'],
     ],
   },
+  Card: {
+    required: [['children', 'Element<br />|Element[]', '', 'The contents of the Card']],
+    props: [
+      ['className', 'string', '', 'Add your own custom styles to the container element'],
+      ['as', 'string<br />|Component', 'div', 'The wrapping container element'],
+      ['selected', 'boolean', '', 'If the card is selected'],
+      [
+        'flat',
+        'boolean',
+        '',
+        'Removes box shadow around card',
+      ],
+    ],
+  },
+  DeadToggle: {
+    required: [],
+    props: [
+      [
+        'radio',
+        'boolean',
+        '',
+        'Passes radio type to the underlying toggle',
+      ],
+      [
+        'checkbox',
+        'boolean',
+        '',
+        'Passes checkbox type to the underlying toggle',
+      ],
+      [
+        'value',
+        'string',
+        '',
+        'Value for the input',
+      ],
+      [
+        'checked',
+        'boolean',
+        '',
+        'Whether the toggle is checked',
+      ],
+      ['className', 'string', '', 'Additional classnames to the toggle wrapper'],
+      ['labelClassName', 'string', '', 'Additional classnames to the toggle label'],
+    ],
+  },
   Expandable: {
     required: [['title', 'string', '', 'The title for the expandable']],
     props: [
