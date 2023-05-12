@@ -505,6 +505,42 @@ export const react = {
       ['className', 'string', '', `Additional CSS class for the container`],
     ],
   },
+  Toggle: {
+    required: [],
+    props: [
+      [
+        'type',
+        '"radio"<br />|"checkbox"<br />|"radio-button"',
+        '',
+        'The type of Toggle',
+      ],
+      [
+        'title',
+        'string',
+        '',
+        'The option(s) title',
+      ],
+      [
+        'invalid',
+        'boolean',
+        '',
+        'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error.',
+      ],
+      ['helpText', 'string', '', 'Help text beneath options'],
+      ['options', 'ToggleEntry[]', '', 'An array of options to render'],
+      ['selected', 'ToggleEntry[]', '', 'An array of options to be selected / checked (controlled)'],
+      ['defaultSelected', 'ToggleEntry[]', '', 'An array of options to be selected / checked on mount (uncontrolled)'],
+      ['label', 'string', '', 'If you only need to render a single option, use this prop instead'],
+      ['noVisibleLabel', 'boolean', '', 'Whether label should be invisible'],
+      ['checked', 'boolean', '', 'Whether the single option should be checked (controlled)'],
+      ['defaultChecked', 'boolean', '', 'Whether the single option should be checked on mount (uncontrolled)'],
+      ['small', 'boolean', '', 'Whether the elements should be small'],
+      ['optional', 'boolean', '', 'Whether the toggle is optional Appends (valgfritt) to the end of the title for indication'],
+      ['equalWidth', 'boolean', '', 'Will make each radio-button equal width'],
+      ['indeterminate', 'boolean', '', 'Whether a single option is indeterminate, or "partially checked." The checkbox will appear with a small dash instead of a tick to indicate that the option is not exactly checked or unchecked.'],
+      ['className', 'string', '', 'Custom classes applied to the wrapping container'],
+    ],
+  },
 };
 
 export const vue = {
@@ -782,6 +818,32 @@ export const vue = {
     props: [
       ['horizontal', 'boolean', 'false', `Direction of steps`],
       ['right', 'boolean', 'false', `Align steps to the right`],
+    ],
+  },
+  Toggle: {
+    required: [],
+    props: [
+      [
+        'radio',
+        'boolean',
+        '',
+        '',
+      ],
+      [
+        'checkbox',
+        'boolean',
+        '',
+        '',
+      ],
+      [
+        'radio-button',
+        'boolean',
+        '',
+        '',
+      ],
+      ['equal-width', 'boolean', '', 'Will make each radio-button equal width'],
+      ['small', 'boolean', '', 'Will make radio-buttons small size'],
+      ['toggles', 'array', '', 'An array of objects. Each object must at least have a value and label attribute. Any other attributes will be transferred directly to the individual toggle'],
     ],
   },
 };
