@@ -112,6 +112,7 @@ export default defineConfig({
                 { text: 'Radio', link: '/components/radio/' },
                 { text: 'Radio Buttons', link: '/components/radiobuttons/' },
                 { text: 'Select', link: '/components/select/' },
+                { text: 'Slider', link: '/components/slider/' },
                 { text: 'Textarea', link: '/components/textarea/' },
                 { text: 'Textfield', link: '/components/textfield/' },
               ],
