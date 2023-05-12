@@ -5,7 +5,7 @@ devDependencies:
     specifier: 1.0.0-alpha.60
     version: 1.0.0-alpha.60
   '@warp-ds/uno':
-    specifier: ^1.0.0-alpha.21
+    specifier: ^1.0.0-alpha.23
     version: 1.0.0-alpha.23
   '@warp-ds/vue':
     specifier: ^1.0.0-alpha.20
