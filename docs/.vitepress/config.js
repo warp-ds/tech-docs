@@ -4,7 +4,9 @@ import uno from 'unocss/vite';
 import { classes } from '@warp-ds/component-classes/classes';
 
 // Classes of documentation-related elements used within Warp component examples
-const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24']
+const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
+'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
+'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100'];
 
 export default defineConfig({
   lang: 'en-US',

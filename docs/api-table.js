@@ -624,6 +624,14 @@ export const vue = {
       ],
     ],
   },
+  Card: {
+    required: [],
+    props: [
+      ['selected', 'boolean', '', 'If the card is selected'],
+      ['flat', 'boolean', '', 'Removes box shadow around card'],
+      ['as', 'string', 'div', 'The DOM element to emit'],
+    ]
+  },
   Pill: {
     required: [],
     props: [
@@ -956,6 +964,14 @@ export const elements = {
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
     ],
+  },
+  Card: {
+    required: [],
+    props: [
+      ['selected', 'boolean', '', 'If the card is selected'],
+      ['clickable', 'boolean', '', 'Applies styling to indicate click-ability'],
+      ['flat', 'boolean', '', 'Removes box shadow around card'],
+    ]
   },
   Expandable: {
     required: [],

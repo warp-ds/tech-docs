@@ -443,7 +443,7 @@ packages:
   /@fabric-ds/css@1.2.0:
     resolution: {integrity: sha512-2qtju85xQRxaHmuc6nEmWaQUUYLNZGR/nQAYTvONNv7InJYHfLmKc/LTG6V0E/BPxGT3BBnBuuHBoxBghAqDVw==}
     dependencies:
-      lit-html: 2.7.0
+      lit-html: 2.7.4
     dev: true
 
   /@floating-ui/core@0.7.3:
@@ -1248,8 +1248,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /lit-html@2.7.0:
-    resolution: {integrity: sha512-/zPOl8EfeB3HHpTzINSpnWgvgQ8N07g/j272EOAIyB0Ys2RzBqTVT23i+JZuUlNbB2WHHeSsTCFi92NtWrtpqQ==}
+  /lit-html@2.7.4:
+    resolution: {integrity: sha512-/Jw+FBpeEN+z8X6PJva5n7+0MzCVAH2yypN99qHYYkq8bI+j7I39GH+68Z/MZD6rGKDK9RpzBw7CocfmHfq6+g==}
     dependencies:
       '@types/trusted-types': 2.0.3
     dev: true

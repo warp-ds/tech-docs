@@ -252,7 +252,7 @@ Here's the full code example:
 
 ## Toggles inside of Cards
 
-Using Toggles([Radios](/tech-docs/components/radio/) or [Checkboxes](tech-docs/components/checkbox/)) inside of cards has the limitation of only being able to pass forward a label. If you wish to further enhance the look and feel of these you must use the DeadToggle helper component, which we cover a bit further down.
+Using Toggles([Radios](/components/radio/) or [Checkboxes](/components/checkbox/)) inside of cards has the limitation of only being able to pass forward a label. If you wish to further enhance the look and feel of these you must use the DeadToggle helper component, which we cover a bit further down.
 
 ```jsx example
 function Example() {
@@ -352,5 +352,5 @@ function Example() {
 }
 ```
 
-**Note** the `className="-mb-4"` on the Toggle component. This removes the ` that follows the component.
+**Note** the `className="-mb-4"` on the Toggle component. This removes the `margin-bottom` that follows the component.
 
