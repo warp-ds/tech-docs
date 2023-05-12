@@ -6,7 +6,7 @@
 
 # Slider
 
-A slider is an input where the user selects a value from within a given range. The precise value, however, is not necessarily considered important. It can have single or dual drag handles.
+A slider is an input where the user selects a value from within a given range. The precise value, however, is not necessarily considered important.
 
 ## Examples
 
