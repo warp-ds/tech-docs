@@ -508,6 +508,35 @@ export const react = {
       ['className', 'string', '', 'Additional CSS class for the container'],
     ],
   },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+    props: [
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
+      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
+      ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+    events: [
+      ['setActive', '(name: string)', 'false', ''],
+      ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The Tabs within the container']],
+    props: [
+      ['contained', 'boolean', 'false', 'Whether the tabs should use the contained look and feel or not.'],
+      ['active', 'string', '', 'Used to set the name of the Tab that should be active on mount. Defaults to the first tab if not present and isActive is not set on any Tab'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the container'],
+    ],
+    events: [
+      ['onChange', '(name: string) => void', '', 'Handler that is called when the tab changes'],
+    ],
+  },
   Toggle: {
     required: [],
     props: [
@@ -831,6 +860,35 @@ export const vue = {
     props: [
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
+    ],
+  },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+    props: [
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
+      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
+      ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+    events: [
+      ['setActive', '(name: string)', 'false', ''],
+      ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The Tabs within the container']],
+    props: [
+      ['contained', 'boolean', 'false', 'Whether the tabs should use the contained look and feel or not.'],
+      ['active', 'string', '', 'Used to set the name of the Tab that should be active on mount. Defaults to the first tab if not present and isActive is not set on any Tab'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the container'],
+    ],
+    events: [
+      ['onChange', '(name: string) => void', '', 'Handler that is called when the tab changes'],
     ],
   },
   Toggle: {
