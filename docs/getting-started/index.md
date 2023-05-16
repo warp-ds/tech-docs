@@ -16,8 +16,10 @@ Ensure your project is integrated with UnoCSS and Warp.
 
 #### Install
 
+`alpha` versions of @warp-ds packages should be installed until major versions are available.
+
 ```shell
-npm install -D unocss @warp-ds/uno
+npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 ```
 
 > Webpack based projects should also add: `@unocss/webpack` (see [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information)
