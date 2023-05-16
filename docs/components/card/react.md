@@ -1,10 +1,5 @@
 ## Import
 
-The toggle component allows you to render checkboxes. All you have to do is specify `type="checkbox"` for the Toggle and let the component handle the rest. Toggle is built to handle both single and multiple options.
-
-You must keep track of state yourself. The state has to be handled differently depending on whether you want to use single or multiple options. See examples below.
-
-
 ```js
 import { Card } from '@warp-ds/react';
 ```
