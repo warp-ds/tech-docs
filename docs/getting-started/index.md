@@ -8,6 +8,10 @@
 
 This page describes how to get started building an application with Warp components.
 
+If you are migrating from Fabric to Warp, please visit the [Migration page](https://warp-ds.github.io/tech-docs/).
+
+This is the initial version of Warp and is currently a work in progress. Any elements, components or inline styled/custom CSS that are not implemented using Fabric, is required to be managed in order to make them themeable.
+
 ## 1. Integrate with UnoCSS and Warp
 
 Ensure your project is integrated with UnoCSS and Warp.
@@ -16,8 +20,10 @@ Ensure your project is integrated with UnoCSS and Warp.
 
 #### Install
 
+`alpha` versions of @warp-ds packages should be installed until major versions are available.
+
 ```shell
-npm install -D unocss @warp-ds/uno
+npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 ```
 
 > Webpack based projects should also add: `@unocss/webpack` (see [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information)
