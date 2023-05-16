@@ -10,7 +10,7 @@ This page describes how to get started building an application with Warp compone
 
 ## 1. Set up fonts
 
-Specify fonts with which to display text in your application. Here's an example for Finn.no:
+Specify fonts to be used in your application. Here's an example for Finn.no:
 
 ```js
 @font-face {
