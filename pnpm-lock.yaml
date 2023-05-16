@@ -5,8 +5,8 @@ devDependencies:
     specifier: 1.0.0-alpha.68
     version: 1.0.0-alpha.68
   '@warp-ds/uno':
-    specifier: ^1.0.0-alpha.19
-    version: 1.0.0-alpha.19
+    specifier: ^1.0.0-alpha.23
+    version: 1.0.0-alpha.23
   '@warp-ds/vue':
     specifier: ^1.0.0-alpha.24
     version: 1.0.0-alpha.24
@@ -884,8 +884,8 @@ packages:
     resolution: {integrity: sha512-9SkZkXp5n2i3HButRdlg82fElx7hzVeredlHQ+cBmCMsSTqZt+ilj0NOmrlIFSmMNF6hoMfKnXkY1Gl1eGu96Q==}
     dev: true
 
-  /@warp-ds/uno@1.0.0-alpha.19:
-    resolution: {integrity: sha512-wUbsj+y5TroA09csPAvGYzEGXzIljLNnp4fBIgGnnXKYsPyZOxHsZYG4CV48zeK934M1E7IdmkJWRn49L0PxCA==}
+  /@warp-ds/uno@1.0.0-alpha.23:
+    resolution: {integrity: sha512-9x00PeEn8qi5XWZRgLqrZKssx7YGaODTKB36WuACWm7h6n0oA9P22YWzjZiHZRLADCbR0uenjHEcqhonhN65tg==}
     dependencies:
       '@unocss/core': 0.50.8
       '@unocss/preset-mini': 0.50.8

@@ -102,7 +102,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Button', link: '/components/buttons/' },
-                { text: 'Button Group', link: '/components/buttongroup/' }
+                { text: 'Button Group', link: '/components/buttongroup/' },
               ],
             },
             {
@@ -115,6 +115,7 @@ export default defineConfig({
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Radio', link: '/components/radio/' },
                 { text: 'Radio buttons', link: '/components/radiobuttons/' },
+                { text: 'Slider', link: '/components/slider/' },
               ],
             },
             {

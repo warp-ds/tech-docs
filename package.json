@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@warp-ds/component-classes": "1.0.0-alpha.68",
-    "@warp-ds/uno": "^1.0.0-alpha.19",
+    "@warp-ds/uno": "^1.0.0-alpha.23",
     "@warp-ds/vue": "^1.0.0-alpha.24",
     "markdown-it": "^13.0.1",
     "react": "^18.2.0",
