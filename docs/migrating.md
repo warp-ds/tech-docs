@@ -6,10 +6,10 @@ While Warp maintains as much backward-compatibility as possible from Fabric,
 some breaking changes were necessary or justified.
 
 ### How to migrate
-1. Make sure to install warp to your project. Follow the instructions on https://warp-ds.github.io/tech-docs/getting-started/
+1. Make sure to install warp to your project. Follow the instructions on [getting started](https://warp-ds.github.io/tech-docs/getting-started/)
 2. Remove Fabric as a dependency from your project
 3. Remove any mentions of Fabric, e.g. `fabric.css`
-4. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the `migration plugin` to help with this (see further down this page for further instructions on using the plugin)
+4. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the [migration plugin](https://warp-ds.github.io/tech-docs/getting-started/#migration-plugin) to help with this (see further down this page for further instructions on using the plugin)
 
 Don't include Fabric and Warp in the same context, instead use either one of them to avoid conflicts, overlapping styles and unintended visual inconsistencies.
 If it is necessary to include both libraries, it is recommended to encapsulate one of them within a shadow DOM to prevent conflicts and ensure proper isolation.
@@ -46,9 +46,9 @@ export default defineConfig({
 The output provides a description of the necessary changes or removals required when migrating from Fabric to Warp. The process requires to be done manually, so make sure that these modifications are applied to all relevant class names and component names.
 
 ```js
-[REPLACED] text-12
-[REPLACED] text-blue-600
-[REPLACED] text-gray-400
+[REPLACED] flex-shrink -> use shrink
+[REPLACED] flex-grow -> use grow
+[REPLACED] last-child:mb-0 -> use last:mb-0
 [REMOVED] button -> use Warp button component instead
 [REMOVED] button--primary -> use Warp button component instead
 [REMOVED] button--small -> use Warp button component instead
