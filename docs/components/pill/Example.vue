@@ -3,12 +3,9 @@
 </script>
 
 <template>
-  <h3>Standard</h3>
-  <w-pill label="Standard pill" />
-
-  <h3>Suggestion</h3>
-  <w-pill suggestion label="Suggestion pill" />
-
-  <h3>Closable</h3>
-  <w-pill can-close label="Closable pill" />
+  <div class="flex space-x-8">
+    <w-pill label="Standard pill" />
+    <w-pill suggestion label="Suggestion pill" />
+    <w-pill can-close label="Closable pill" />
+  </div>
 </template>
