@@ -6,8 +6,6 @@ import Usage from './usage.md';
 
 # Tabs
 
-The steps component is built to handle user journeys, making it clear to the end user where they are in the process.
-
 ## Examples
 
 <theme-switcher />

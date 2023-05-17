@@ -15,171 +15,82 @@ import { wTabs } from '@warp-ds/vue';
 ## Visual options
 
 ### Examples
+The following examples demonstrates how the `Tab`, `Tabs`, and `TabPanel` components can be used to switch between panels.
 
 #### Default
-The following example demonstrates how the Tab, Tabs, and TabPanel components can be used to switch between panels.
 
 ```js
-<Tabs>
-  <Tab label="Tab 1" name="one" isActive />
-  <Tab label="Tab 2" name="two" />
-  <Tab label="Tab 3" name="three" />
-</Tabs>
+<w-tabs>
+  <w-tab label="Tab 1" name="one" isActive />
+  <w-tab label="Tab 2" name="two" />
+  <w-tab label="Tab 3" name="three" />
+</w-tabs>
 ```
-#### default with left icons
+#### Tabs with panel content
 
 ```js
-function Example() {
-  const svgicon = (
-    <svg
-      width="16"
-      height="14"
-      viewBox="0 0 16 14"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d= /* string */
-        fill="#474445"
-      />
-    </svg>
-  );
-  return (
-    <Tabs>
-      <Tab label="Tab 1" name="one" isActive>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 2" name="two">
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 3" name="three">
-        {svgicon}
-      </Tab>
-    </Tabs>
-  );
-}
+<token :state="[model]">
+  <w-tabs v-model="model">
+    <w-tab label="Home" name="home" />
+    <w-tab label="Car" name="car" />
+    <w-tab label="Motorcycle" name="motorcycle" />
+  </w-tabs>
+  <div>
+    <w-tab-panel name="home" v-if="model === 'home'">
+      <h3>Welcome home!</h3>
+    </w-tab-panel>
+    <w-tab-panel name="car" v-if="model === 'car'">
+      <h3>I am a car page</h3>
+      </w-tab-panel>
+    <w-tab-panel name="motorcycle" v-if="model === 'motorcycle'">
+      <h3>Something something two wheels</h3>
+    </w-tab-panel>
+  </div>
+</token>
 ```
-#### default with icons over the label
+#### Tabs with icons and panel content
 
 ```js
-function Example() {
-  const svgicon = (
-    <svg
-      width="16"
-      height="14"
-      viewBox="0 0 16 14"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="/* string */"
-        fill="#474445"
-      />
-    </svg>
-  );
-  return (
-    <Tabs>
-      <Tab label="Tab 1" name="one" over isActive>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 2" name="two" over>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 3" name="three" over>
-        {svgicon}
-      </Tab>
-    </Tabs>
-  );
-}
+<script setup>
+import { wTabs, wTab, wTabPanel } from '@warp-ds/vue';
+import { ref } from 'vue';
+import { iconSvg } from '/icons';
+
+const model = ref("home");
+</script>
+
+<template>
+  <token :state="[model]">
+    <w-tabs v-model="model">
+      <w-tab label="Home" name="home">
+        <iconSvg />
+      </w-tab>
+      <w-tab label="Car" name="car">
+        <iconSvg />
+      </w-tab>
+      <w-tab label="Motorcycle" name="motorcycle">
+        <iconSvg />
+      </w-tab>
+    </w-tabs>
+    <div>
+      <w-tab-panel name="home" v-if="model === 'home'">
+        <h3 class="mb-0">Welcome home!</h3>
+        </w-tab-panel>
+      <w-tab-panel name="car" v-if="model === 'car'">
+        <h3 class="mb-0">I am a car page</h3></w-tab-panel>
+      <w-tab-panel name="motorcycle" v-if="model === 'motorcycle'">
+        <h3 class="mb-0">Something something two wheels</h3>
+        </w-tab-panel>
+    </div>
+  </token>
+</template>
 ```
 
-#### Contained
-
-```js
-<Tabs contained>
-  <Tab label="Tab 1" name="one" isActive />
-  <Tab label="Tab 2" name="two" />
-  <Tab label="Tab 3" name="three" />
-</Tabs>
-```
-
-#### Contained with left icons
-
-```js
-function Example() {
-  const svgicon = (
-    <svg
-      width="16"
-      height="14"
-      viewBox="0 0 16 14"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="/* string */"
-        fill="#474445"
-      />
-    </svg>
-  );
-  return (
-    <Tabs contained>
-      <Tab label="Tab 1" name="one" isActive>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 2" name="two">
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 3" name="three">
-        {svgicon}
-      </Tab>
-    </Tabs>
-  );
-}
-```
-
-#### Contained with icons over the label
-
-```js
-function Example() {
-  const svgicon = (
-    <svg
-      width="16"
-      height="14"
-      viewBox="0 0 16 14"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="/* string */"
-        fill="#474445"
-      />
-    </svg>
-  );
-  return (
-    <Tabs contained>
-      <Tab label="Tab 1" name="one" over isActive>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 2" name="two" over>
-        {svgicon}
-      </Tab>
-      <Tab label="Tab 3" name="three" over>
-        {svgicon}
-      </Tab>
-    </Tabs>
-  );
-}
-
-```
 
 ## Props
 
-<api-table type="react" component="Tabs" />
+### Tabs
+<api-table type="vue" component="Tabs" />
+
+### Tab
+<api-table type="vue" component="Tab" />
