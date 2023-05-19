@@ -2,14 +2,14 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: 1.0.0-alpha.63
-    version: 1.0.0-alpha.63
+    specifier: 1.0.0-alpha.68
+    version: 1.0.0-alpha.68
   '@warp-ds/uno':
     specifier: ^1.0.0-alpha.23
     version: 1.0.0-alpha.23
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.23
-    version: 1.0.0-alpha.23
+    specifier: ^1.0.0-alpha.24
+    version: 1.0.0-alpha.24
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -21,7 +21,7 @@ devDependencies:
     version: 1.60.0
   unocss:
     specifier: ^0.51.3
-    version: 0.51.3(vite@4.2.1)
+    version: 0.51.3(postcss@8.4.21)(vite@4.2.1)
   vite:
     specifier: ^4.2.1
     version: 4.2.1(sass@1.60.0)
@@ -443,7 +443,7 @@ packages:
   /@fabric-ds/css@1.2.0:
     resolution: {integrity: sha512-2qtju85xQRxaHmuc6nEmWaQUUYLNZGR/nQAYTvONNv7InJYHfLmKc/LTG6V0E/BPxGT3BBnBuuHBoxBghAqDVw==}
     dependencies:
-      lit-html: 2.7.0
+      lit-html: 2.7.4
     dev: true
 
   /@floating-ui/core@0.7.3:
@@ -620,9 +620,11 @@ packages:
       sirv: 2.0.2
     dev: true
 
-  /@unocss/postcss@0.51.3:
+  /@unocss/postcss@0.51.3(postcss@8.4.21):
     resolution: {integrity: sha512-ZXfkapLfK5813nI08pCOpCykdNObcX8u6uS5eaBJl84ndYUAW55Kbva1vnqxiiDORmBXmlxHo1iRHZi6/iGGxA==}
     engines: {node: '>=14'}
+    peerDependencies:
+      postcss: ^8.4.21
     dependencies:
       '@unocss/config': 0.51.3
       '@unocss/core': 0.51.3
@@ -878,8 +880,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.63:
-    resolution: {integrity: sha512-99SKJm9jrcN9fURoOR8KNGi5S7YmsrPGlgNc0blXSuAOLiWy8MYeslMVxU6hGS/b//FTHBbFpOMzm7YihNKnug==}
+  /@warp-ds/component-classes@1.0.0-alpha.68:
+    resolution: {integrity: sha512-9SkZkXp5n2i3HButRdlg82fElx7hzVeredlHQ+cBmCMsSTqZt+ilj0NOmrlIFSmMNF6hoMfKnXkY1Gl1eGu96Q==}
     dev: true
 
   /@warp-ds/uno@1.0.0-alpha.23:
@@ -889,8 +891,8 @@ packages:
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.23:
-    resolution: {integrity: sha512-REfxxpG5/ZYTpHO7Mbka7BM5SyDR2Mx31ynVtQ/EzJl/7ymb3oni2do1wmSdKAJ1RDOyGxuYgcDcsmaU9kFqCA==}
+  /@warp-ds/vue@1.0.0-alpha.24:
+    resolution: {integrity: sha512-Y5RP59vzU9eL8t+Vy2hUt8JsD89Dgwly5qmcu+b9jV+ajjuLC56TNVBUj1lnczx6RVDMcxt6bYCJ6VU7msY26Q==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
@@ -1246,8 +1248,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /lit-html@2.7.0:
-    resolution: {integrity: sha512-/zPOl8EfeB3HHpTzINSpnWgvgQ8N07g/j272EOAIyB0Ys2RzBqTVT23i+JZuUlNbB2WHHeSsTCFi92NtWrtpqQ==}
+  /lit-html@2.7.4:
+    resolution: {integrity: sha512-/Jw+FBpeEN+z8X6PJva5n7+0MzCVAH2yypN99qHYYkq8bI+j7I39GH+68Z/MZD6rGKDK9RpzBw7CocfmHfq6+g==}
     dependencies:
       '@types/trusted-types': 2.0.3
     dev: true
@@ -1585,7 +1587,7 @@ packages:
       jiti: 1.18.2
     dev: true
 
-  /unocss@0.51.3(vite@4.2.1):
+  /unocss@0.51.3(postcss@8.4.21)(vite@4.2.1):
     resolution: {integrity: sha512-iQ1ftflPKe9U68sOzyqA9QL00xschvmer6YprYNWOJxPTOf0Mw/jTaLGoS1ZF/lDIaC4nae6h479S8k0DzysXw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1598,7 +1600,7 @@ packages:
       '@unocss/cli': 0.51.3
       '@unocss/core': 0.51.3
       '@unocss/extractor-arbitrary-variants': 0.51.3
-      '@unocss/postcss': 0.51.3
+      '@unocss/postcss': 0.51.3(postcss@8.4.21)
       '@unocss/preset-attributify': 0.51.3
       '@unocss/preset-icons': 0.51.3
       '@unocss/preset-mini': 0.51.3
@@ -1615,6 +1617,7 @@ packages:
       '@unocss/transformer-variant-group': 0.51.3
       '@unocss/vite': 0.51.3(vite@4.2.1)
     transitivePeerDependencies:
+      - postcss
       - rollup
       - supports-color
       - vite
