@@ -8,6 +8,10 @@
 
 This page describes how to get started building an application with Warp components.
 
+If you are migrating from Fabric to Warp, please visit the [Migration page](https://warp-ds.github.io/tech-docs/).
+
+This is the initial version of Warp and is currently a work in progress. Any elements, components or inline styled/custom CSS that are not implemented using Fabric, is required to be managed in order to make them themeable.
+
 ## 1. Set up fonts
 
 Specify fonts to be used in your application. Here's an example for Finn.no:

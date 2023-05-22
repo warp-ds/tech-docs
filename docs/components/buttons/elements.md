@@ -1,7 +1,7 @@
-## Import
+## Usage
 
 ```js
-import { Button } from '@warp-ds/elements';
+<w-button variant="primary">Primary button</w-button>
 ```
 
 ## Variants
