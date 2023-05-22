@@ -37,7 +37,7 @@ import { presetMigrate } from '@warp-ds/preset-migrate'
 export default defineConfig({
   presets: [
     presetMigrate(),
-    presetWarp()
+    presetWarp({ usePreflight: true })
   ]
 })
 ```

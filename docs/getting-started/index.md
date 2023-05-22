@@ -30,7 +30,7 @@ npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 
 #### Configure
 
-Create a `uno.config.js` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).
+Create a `uno.config.js` file with the following content. This file will configure UnoCSS with our Warp preset, including preflights and a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).
 
 ```js
 import { defineConfig } from 'unocss';
@@ -39,7 +39,7 @@ import { classes } from '@warp-ds/component-classes/classes';
 
 export default defineConfig({
   presets: [
-    presetWarp(),
+    presetWarp({ usePreflight: true }),
     safelist: classes
   ]
 });
@@ -66,7 +66,7 @@ import { presetWarp } from '@warp-ds/uno';
 
 window.__unocss = {
   presets: [
-    presetWarp()
+    presetWarp({ usePreflight: true })
   ],
 };
 
