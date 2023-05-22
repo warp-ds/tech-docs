@@ -10,7 +10,7 @@ import Usage from './usage.md';
 
 <theme-switcher />
 
-<steps-example></steps-example>
+<tabs-example></tabs-example>
 
 <tabs-content>
   <template #usage>
