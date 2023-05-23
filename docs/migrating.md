@@ -53,7 +53,7 @@ The output provides a description of the necessary changes or removals required 
 [REMOVED] button--primary -> use Warp button component instead
 [REMOVED] button--small -> use Warp button component instead
 ```
-Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in [Tech docs](https://warp-ds.github.io/tech-docs/) for the component names. 
+Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in these [Tech docs](https://warp-ds.github.io/tech-docs) for the components.
 
 ## Component changes
 
