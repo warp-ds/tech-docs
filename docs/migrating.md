@@ -6,10 +6,10 @@ While Warp maintains as much backward-compatibility as possible from Fabric,
 some breaking changes were necessary or justified.
 
 ### How to migrate
-1. Make sure to install warp to your project. Follow the instructions on [getting started](https://warp-ds.github.io/tech-docs/getting-started/)
-2. Remove Fabric as a dependency from your project
-3. Remove any mentions of Fabric, e.g. `fabric.css`
-4. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the [migration plugin](https://warp-ds.github.io/tech-docs/getting-started/#migration-plugin) to help with this (see further down this page for further instructions on using the plugin)
+1. Remove Fabric as a dependency from your project.
+2. Remove any mentions of Fabric, e.g. `fabric.css`.
+3. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the [migration plugin](https://github.com/warp-ds/preset-migrate) to help with this (see further down this page for instructions on using the plugin).
+4. Make sure to install Warp to your project. Follow the instructions on [getting started page](/getting-started/).
 
 Don't include Fabric and Warp in the same context, instead use either one of them to avoid conflicts, overlapping styles and unintended visual inconsistencies.
 If it is necessary to include both libraries, it is recommended to encapsulate one of them within a shadow DOM to prevent conflicts and ensure proper isolation.
@@ -53,7 +53,7 @@ The output provides a description of the necessary changes or removals required 
 [REMOVED] button--primary -> use Warp button component instead
 [REMOVED] button--small -> use Warp button component instead
 ```
-Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in [Tech docs](https://warp-ds.github.io/tech-docs/) for the component names. 
+Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in the [Tech docs](https://warp-ds.github.io/tech-docs) for the components.
 
 ## Component changes
 
