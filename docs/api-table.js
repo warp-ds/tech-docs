@@ -20,6 +20,24 @@ export const react = {
       ],
     ],
   },
+  Attention: {
+    required: [
+      [
+        'placement', "Directions", '', `Placement according to the target element Arrow would be on the opposite side of this position`,
+      ],
+    ],
+    props: [
+      ['noArrow', 'boolean', 'false', 'Render Attention element without arrow'],
+      ['isShowing', 'boolean', '', 'Whether Attention element is shown Used for tooltip'],
+      ['children', 'Element | Element[]', '', 'Elements inside of the Attention component'],
+      ['targetEl', 'MutableRefObject<unknown>', '', `Container the Attention component is rendered relatively to`],
+      ['className', 'string', '', `Extend the Attention component container styling`],
+      ['tooltip', 'boolean', '', `Render tooltip`],
+      ['callout', 'boolean', '', `Render callout`],
+      ['popover', 'boolean', '', `Render popover`],
+      ['ref', 'Ref<HTMLDivElement>', '', `Forward arrow ref so Attention element can use it`],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -620,6 +638,21 @@ export const vue = {
       ['info', 'boolean', 'undefined', 'Creates an info alert'],
     ],
   },
+  Attention: {
+    required: [
+      ['target-el', 'string', '', 'Selector of element that the Attention component is rendered relatively to'],
+    ],
+    props: [
+      ['bottom', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['top', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['left', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['right', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['tooltip', 'boolean', 'false', 'Render tooltip'],
+      ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
+      ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
+      ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -938,6 +971,19 @@ export const elements = {
     props: [
       ['show', 'boolean', 'false', 'Controls when the alert shows'],
       ['role', 'string', 'alert', 'ARIA live region "role" attribute value'],
+    ],
+  },
+  Attention: {
+    required: [
+      ['placement', "'top' | 'right' | 'bottom' | 'left'", '', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['target-selector', 'string', '', 'Selector of element that the Attention component is rendered relatively to'],
+    ],
+    props: [
+      ['no-arrow', 'boolean', 'false', 'Render Attention element without an arrow'],
+      ['tooltip', 'boolean', 'false', 'Render tooltip'],
+      ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
+      ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
+      ['show', 'boolean', '', 'Whether Attention element should be visible'],
     ],
   },
   Box: {

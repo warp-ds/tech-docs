@@ -149,6 +149,16 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              text: 'Overlays',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Attention',
+                  link: '/components/attention/',
+                },
+              ],
+            },
           ],
         },
         {

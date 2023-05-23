@@ -1,6 +1,7 @@
 import { buildWc } from './ex-base.js';
 
 import Alert from '../components/alert/Example.vue';
+import Attention from '../components/attention/Example.vue';
 import Box from '../components/box/Example.vue';
 import Breadcrumbs from '../components/breadcrumbs/Example.vue';
 import Button from '../components/buttons/Example.vue';
@@ -18,6 +19,7 @@ import TextArea from '../components/textarea/Example.vue';
 import TextField from '../components/textfield/Example.vue';
 
 buildWc('alert-example', Alert);
+buildWc('attention-example', Attention);
 buildWc('box-example', Box);
 buildWc('breadcrumbs-example', Breadcrumbs);
 buildWc('button-example', Button);
