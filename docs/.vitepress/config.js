@@ -103,19 +103,20 @@ export default defineConfig({
               items: [
                 { text: 'Button', link: '/components/buttons/' },
                 { text: 'Button Group', link: '/components/buttongroup/' },
+                { text: 'Pill', link: '/components/pill/' },
               ],
             },
             {
               text: 'Forms',
               collapsible: true,
               items: [
-                { text: 'Select', link: '/components/select/' },
-                { text: 'Textarea', link: '/components/textarea/' },
-                { text: 'Textfield', link: '/components/textfield/' },
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Radio', link: '/components/radio/' },
-                { text: 'Radio buttons', link: '/components/radiobuttons/' },
+                { text: 'Radio Buttons', link: '/components/radiobuttons/' },
+                { text: 'Select', link: '/components/select/' },
                 { text: 'Slider', link: '/components/slider/' },
+                { text: 'Textarea', link: '/components/textarea/' },
+                { text: 'Textfield', link: '/components/textfield/' },
               ],
             },
             {
