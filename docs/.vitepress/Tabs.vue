@@ -37,6 +37,8 @@ const switchTab = (tab) => {
 
 <style lang="scss" scoped>
 .tablist {
+  font-size: 14px;
+  line-height: 1.5;
   display: flex;
   margin: 24px 0 0;
   padding-left: 0px;

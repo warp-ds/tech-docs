@@ -1,16 +1,23 @@
 <script setup>
+import { ref, computed, watch } from 'vue'
 import { wModal, wButton } from '@warp-ds/vue';
-import { ref } from 'vue';
 
 const showLeft = ref(false)
 const showModal = ref(false)
+
+const heightToggle = ref(false)
+const demoStyles = computed(() => ({
+  '--w-modal-min-height': heightToggle.value ? '100%' : '64%',
+  '--w-modal-max-height': '72%',
+}))
+const changeHeight = () => heightToggle.value = !heightToggle.value
 
 </script>
 
 <template>
   <h3>Default</h3>
   <div class="component flex gap-10">
-    <w-modal title="Hello Warp!" :left="showLeft" :right="{ 'aria-label': 'Close' }" @dismiss="showModal = false" v-model="showModal" @right="showModal = false">
+    <w-modal title="Hello Warp!" :style="demoStyles" :left="showLeft" :right="{ 'aria-label': 'Close' }" @dismiss="showModal = false" v-model="showModal" @right="showModal = false">
       <div class="space-x-8">
         <w-button utility @click="changeHeight" small class="mb-32">Modify height</w-button>
         <w-button utility @click="showLeft = !showLeft" small class="mb-32">Toggle the back-button</w-button>
