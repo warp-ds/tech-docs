@@ -6,4 +6,181 @@ import { Modal } from '@warp-ds/react';
 
 ## Props
 
-<!-- <api-table type=react component="Modal" /> -->
+<api-table type=react component="Modal" />
+
+## Example
+
+```jsx
+function Example() {
+  const [open, setOpen] = React.useState(false);
+  const [left, setLeft] = React.useState(true);
+  const [height, setHeight] = React.useState('68%');
+
+  const toggleModal = () => setOpen(!open);
+
+  return (
+    <>
+      <Button utility onClick={toggleModal}>
+        Open modal
+      </Button>
+
+      <Modal
+        left={left}
+        right
+        open={open}
+        onDismiss={toggleModal}
+        title="Hello title"
+        footer={
+          <Button primary onClick={toggleModal}>
+            Confirm
+          </Button>
+        }
+        style={{
+          '--w-modal-max-height': height,
+          '--w-modal-height': '100%',
+        }}
+      >
+        <div className="space-x-8">
+          <button
+            onClick={() => setHeight(height === '68%' ? '100%' : '68%')}
+            className="button button--utility button--small mb-32"
+          >
+            Modify height
+          </button>
+          <button
+            onClick={() => setLeft(!left)}
+            className="button button--utility button--small mb-32"
+          >
+            Toggle the back-button
+          </button>
+        </div>
+        <div>
+          <h1 className="h4 mb-16">This is a title for the content area</h1>
+          <p>
+            Life as a shorty shouldn't be so rough. Behold the bold soldier
+            control the globe slowly, proceeds to blow, swinging swords like
+            Shinobi. The game of chess, is like a swordfight, you must think
+            first before you move. My beats travel like a vortex through your
+            spine, to the top of your cerebral cortex. I smoke on the mic like
+            smoking Joe Frazier, the hell raiser, raising hell with the flavor.
+          </p>
+          <p>
+            I breaks it down to the bone gristle, Ill speaking Scud missile heat
+            seeking, Johnny Blazing. Protect Ya Neck, my sword still remain
+            imperial before I blast the mic, RZA scratch off the serial.
+            Shackling the masses with drastic rap tactics, graphic displays melt
+            the steel like blacksmiths. Perpendicular to the square we stay in
+            gold like Flair, escape from your dragon's lair in particular. Shame
+            on you when you stepped through to The Ol Dirty Bastard straight
+            from the Brooklyn Zoo. Protect Ya Neck, my sword still remain
+            imperial before I blast the mic, RZA scratch off the serial.
+          </p>
+          <p>
+            Life as a shorty shouldn't be so rough. Handcuffed in the back of a
+            bus, forty of us. Rae got it going on pal, call me the rap
+            assassinator, rhymes rugged and built like Schwarzenegger. My beats
+            travel like a vortex through your spine, to the top of your cerebral
+            cortex. Life as a shorty shouldn't be so rough. Well I'm a sire, I
+            set the microphone on fire, rap styles vary and carry like Mariah.
+          </p>
+        </div>
+      </Modal>
+    </>
+  );
+}
+```
+
+## Content
+
+WARP guidelines state the following:
+
+- The cancel action should always be on the left, while the main action is to the right.
+
+## Non dismissable modals
+
+The `onDismiss` prop is optional. It can be dropped to create a modal that won't respond to `esc` keypresses and/or clicking outside the modal.
+
+```jsx
+function Example() {
+  const [open, setOpen] = React.useState(false);
+  const [mustAgree, setMustAgree] = React.useState(false);
+  const [hasAgreed, setHasAgreed] = React.useState(false);
+
+  const toggleModal = () => {
+    if (open && !hasAgreed) {
+      setMustAgree(true);
+      return;
+    }
+    setMustAgree(false);
+    setOpen(!open);
+  };
+
+  return (
+    <>
+      <Button utility onClick={toggleModal}>
+        Open modal
+      </Button>
+
+      <Modal
+        open={open}
+        onDismiss={hasAgreed ? toggleModal : undefined}
+        title="Non dismissable"
+        footer={
+          <>
+            {mustAgree && <p className="m-10">You must agree first!</p>}
+            <Button primary onClick={toggleModal}>
+              Save
+            </Button>
+          </>
+        }
+      >
+        <p>To go further, you need to agree to these bogus terms</p>
+        <Toggle
+          type="checkbox"
+          label="I agree"
+          checked={hasAgreed}
+          onChange={(state) => setHasAgreed(state)}
+        />
+      </Modal>
+    </>
+  );
+}
+```
+
+## Customizing focus behavior
+
+By default the first interactive element in the modal will be focused when the modal opens. Use `initialFocusRef` to customize this behavior. For instance, this can be used to focus a call to action button.
+
+```jsx
+function Example() {
+  const [open, setOpen] = React.useState(false);
+  const focusRef = React.useRef();
+
+  const toggleModal = () => setOpen(!open);
+
+  return (
+    <>
+      <Button utility onClick={toggleModal}>
+        Open modal
+      </Button>
+      <Modal
+        open={open}
+        initialFocusRef={focusRef}
+        title="Customized focus behavior"
+        footer={
+          <>
+            <Button onClick={toggleModal} className="mr-12">
+              Cancel
+            </Button>
+            <Button primary ref={focusRef} onClick={toggleModal}>
+              Accept
+            </Button>
+          </>
+        }
+      >
+        <p>The call to action button has inital focus.</p>
+      </Modal>
+    </>
+  );
+}
+```
