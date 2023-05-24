@@ -8,7 +8,7 @@
 
 This page describes how to get started building an application with Warp components.
 
-If you are migrating from Fabric to Warp, please visit the [Migration page](https://warp-ds.github.io/tech-docs/).
+If you are migrating from Fabric to Warp, please visit the [Migration page](/migrating).
 
 This is the initial version of Warp and is currently a work in progress. Any elements, components or inline styled/custom CSS that are not implemented using Fabric, is required to be managed in order to make them themeable.
 

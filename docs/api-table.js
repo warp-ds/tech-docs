@@ -351,6 +351,22 @@ export const react = {
       ['label', 'string', '', 'Displays a string.'],
     ],
   },
+  Pill: {
+    required: [],
+    props: [
+      ['label', 'string', 'undefined', 'The text content of the pill.'],
+      ['~~icon~~', 'ReactNode', 'undefined', 'Used to render an icon inside the pill. You can pass any valid HTML. This will override the label property. @deprecated Do not use.'],
+      ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['openSRLabel', 'boolean', 'false', 'Label read by screen readers when targeting the pill.'],
+      ['closeSRLabel', 'boolean', 'false', 'Label read by screen readers when targeting the close button.'],
+      ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
+      ['className', 'string', 'undefined', 'Additional classes applied to the button element of the pill as long as canClose is set to false.'],
+    ],
+    events: [
+        ['onClick', 'Action to be called when the pill is clicked.'],
+        ['onClose', 'Action to be called when the close button is clicked.'],
+    ],
+  },
   TextArea: {
     required: [],
     props: [
@@ -649,20 +665,6 @@ export const vue = {
       ['as', 'string', 'div', 'The DOM element to emit'],
     ]
   },
-  Pill: {
-    required: [],
-    props: [
-      ['label', 'string', 'undefined', `The pill's label`],
-      ['canClose', 'boolean', 'false', 'If the pill should be removeable'],
-      [
-        'suggestion',
-        'boolean',
-        'false',
-        `If the pill should have suggestion-styling`,
-      ],
-    ],
-    events: [['close', 'the close button is pressed']],
-  },
   Button: {
     required: [],
     props: [
@@ -861,6 +863,15 @@ export const vue = {
       ],
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
     ],
+  },
+  Pill: {
+    required: [],
+    props: [
+      ['label', 'string', 'undefined', 'The text content of the pill.'],
+      ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
+    ],
+    events: [['close', 'the close button is pressed']],
   },
   Slider: {
     required: [],
