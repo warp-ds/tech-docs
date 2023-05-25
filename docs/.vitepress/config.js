@@ -137,6 +137,10 @@ export default defineConfig({
                   text: 'Expandable',
                   link: '/components/expandable/',
                 },
+                {
+                  text: 'Utilities',
+                  link: '/components/utilities/',
+                },
               ],
             },
             {
