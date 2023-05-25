@@ -351,6 +351,27 @@ export const react = {
       ['label', 'string', '', 'Displays a string.'],
     ],
   },
+  Modal: {
+    required: [
+      ['children', 'Element<br />|Element[]', '', 'The modal contents'],
+      ['open', 'boolean', '', 'Whether the modal is open or not'],
+    ],
+    props: [
+      ['title', 'string<br />|Element<br />|Element[]', '', 'A string or your own custom elements'],
+      ['left', 'boolean<br />|Element<br />|Element[]', '', 'A default back button or your own custom elements'],
+      ['right', 'boolean<br />|Element<br />|Element[]', '', 'A default close button or your own custom elements'],
+      ['footer', 'Element<br />|Element[]', '', 'Buttons passed to the footer'],
+      ['className', 'string', '', 'Additional classes added to the container'],
+      ['id', 'string', '', 'An id for the container and ARIA attributes. A random id is generated if none is provided.'],
+      ['style', 'CSSProperties', '', 'Additional styles to the contianer. [More info aboout CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
+      ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if neither `aria-labelledby` or `<ModalHeading>` is defined,'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if neither `aria-label` or `<ModalHeading>` is defined.'],
+      ['initialFocusRef', 'RefObject<any>	', '', `A reference to the element that should be focused. By default it'll be the first interactive element. [More info](https://legacy.reactjs.org/docs/refs-and-the-dom.html)`],
+    ],
+    events: [
+      [ 'onDismiss', '() => void', '', 'Handler that is called when the user presses esc or clicks outside the modal.'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -567,6 +588,34 @@ export const react = {
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
       ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+  },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+    props: [
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
+      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
+      ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+    events: [
+      ['setActive', '(name: string)', 'false', ''],
+      ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The Tabs within the container']],
+    props: [
+      ['active', 'string', '', 'Used to set the name of the Tab that should be active on mount. Defaults to the first tab if not present and isActive is not set on any Tab'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the container'],
+    ],
+    events: [
+      ['onChange', '(name: string) => void', '', 'Handler that is called when the tab changes'],
     ],
   },
   Toggle: {
@@ -864,6 +913,43 @@ export const vue = {
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
     ],
   },
+  Modal: {
+    required: [],
+    props: [
+      ['v-model', 'boolean', '', 'Whether or not to show the modal'],
+      ['left', 'boolean<br />|object', '', 'When truthy, will show the left button of the header. Object properties will be used as attributes on the button.'],
+      ['right', 'boolean<br />|object', '', 'When truthy, will show the right button of the header. Object properties will be used as attributes on the button.'],
+      ['title', 'string', '', ''],
+      ['titleAttrs', 'object', '', 'Properties will be set as attributes of the title in the header.'],
+      ['headerClasses', 'string<br />|object', '', 'Classes here will be set on the wrapper for the header.'],
+      ['contentClasses', 'string<br />|object', '', 'Classes here will be set on the wrapper for the content.'],
+      ['contentId', 'string', '', 'This id is useful if you need to programatically scroll content in the modal.'],
+    ],
+    events: [
+      [ 'dismiss', '', '', 'A user presses ESC or clicks outside the dialog'],
+      [ 'left', '', '', 'The left title-button has been clicked'],
+      [ 'right', '', '', 'The right title-button has been clicked'],
+      [ 'shown', '', '', 'Modal entrance transitions are complete and content has been mounted'],
+      [ 'hidden', '', '', 'Modal exit transitions are complete and content has been torn down or hidden'],
+    ]
+  },
+  ModalSlots: {
+    required: [],
+    slots: [
+      ['default', 'Content for the modal'],
+      ['footer', 'Footer (button drawer) for the modal - the footer is sticky'],
+      ['left', 'Overrides the default icon (a back arrow)'],
+      ['right', 'Overrides the default icon (an X symbol)'],
+    ],
+  },
+  ModalCustomProperties: {
+    titles: ['name', 'notes'],
+    rows: [
+      ['--w-modal-max-height', 'The max-height of the modal dialog'],
+      ['--w-modal-height', 'The height of the modal dialog'],
+      ['--w-modal-width', 'The max-width of the modal dialog'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -896,6 +982,16 @@ export const vue = {
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
     ],
+  },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The tabs within the container']],
+    events: [['v-model', 'string', '', 'Name of the active element']],
   },
   Toggle: {
     required: [],

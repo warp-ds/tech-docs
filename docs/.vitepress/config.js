@@ -137,6 +137,10 @@ export default defineConfig({
                   text: 'Expandable',
                   link: '/components/expandable/',
                 },
+                {
+                  text: 'Tabs',
+                  link: '/components/tabs/',
+                },
               ],
             },
             {
@@ -146,6 +150,16 @@ export default defineConfig({
                 {
                   text: 'Breadcrumbs',
                   link: '/components/breadcrumbs/',
+                },
+              ],
+            },
+            {
+              text: 'Overlays',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Modal',
+                  link: '/components/modal/',
                 },
               ],
             },
