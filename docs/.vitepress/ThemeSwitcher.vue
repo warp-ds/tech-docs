@@ -37,8 +37,6 @@ const selectedTheme = computed({
   padding: 4px 8px;
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;
-  font-size: 14px;
-  line-height: 1.5;
 
   select,
   &::after {
