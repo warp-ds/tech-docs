@@ -16,6 +16,7 @@ import Slider from '../components/slider/Example.vue';
 import Steps from '../components/steps/Example.vue';
 import TextArea from '../components/textarea/Example.vue';
 import TextField from '../components/textfield/Example.vue';
+import Utilities from '../components/utilities/Example.vue';
 
 buildWc('alert-example', Alert);
 buildWc('box-example', Box);
@@ -33,3 +34,4 @@ buildWc('slider-example', Slider);
 buildWc('steps-example', Steps);
 buildWc('textarea-example', TextArea);
 buildWc('textfield-example', TextField);
+buildWc('utilities-example', Utilities);
