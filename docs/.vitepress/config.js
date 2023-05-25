@@ -137,6 +137,10 @@ export default defineConfig({
                   text: 'Expandable',
                   link: '/components/expandable/',
                 },
+                {
+                  text: 'Tabs',
+                  link: '/components/tabs/',
+                },
               ],
             },
             {
