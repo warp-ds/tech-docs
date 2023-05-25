@@ -4,7 +4,9 @@ import uno from 'unocss/vite';
 import { classes } from '@warp-ds/component-classes/classes';
 
 // Classes of documentation-related elements used within Warp component examples
-const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24']
+const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
+'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
+'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100'];
 
 export default defineConfig({
   lang: 'en-US',
@@ -101,19 +103,20 @@ export default defineConfig({
               items: [
                 { text: 'Button', link: '/components/buttons/' },
                 { text: 'Button Group', link: '/components/buttongroup/' },
+                { text: 'Pill', link: '/components/pill/' },
               ],
             },
             {
               text: 'Forms',
               collapsible: true,
               items: [
-                { text: 'Select', link: '/components/select/' },
-                { text: 'Textarea', link: '/components/textarea/' },
-                { text: 'Textfield', link: '/components/textfield/' },
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Radio', link: '/components/radio/' },
-                { text: 'Radio buttons', link: '/components/radiobuttons/' },
+                { text: 'Radio Buttons', link: '/components/radiobuttons/' },
+                { text: 'Select', link: '/components/select/' },
                 { text: 'Slider', link: '/components/slider/' },
+                { text: 'Textarea', link: '/components/textarea/' },
+                { text: 'Textfield', link: '/components/textfield/' },
               ],
             },
             {
@@ -129,6 +132,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
+                { text: 'Card', link: '/components/card/' },
                 {
                   text: 'Expandable',
                   link: '/components/expandable/',
@@ -146,6 +150,16 @@ export default defineConfig({
                 {
                   text: 'Breadcrumbs',
                   link: '/components/breadcrumbs/',
+                },
+              ],
+            },
+            {
+              text: 'Overlays',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Modal',
+                  link: '/components/modal/',
                 },
               ],
             },
