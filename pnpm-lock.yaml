@@ -2,20 +2,17 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: ^1.0.0-alpha.70
-    version: 1.0.0-alpha.70
+    specifier: 1.0.0-alpha.81
+    version: 1.0.0-alpha.81
   '@warp-ds/uno':
-    specifier: ^1.0.0-alpha.23
-    version: 1.0.0-alpha.23
+    specifier: ^1.0.0-alpha.29
+    version: 1.0.0-alpha.29
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.24
-    version: 1.0.0-alpha.24
+    specifier: ^1.0.0-alpha.26
+    version: 1.0.0-alpha.26
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
-  react:
-    specifier: ^18.2.0
-    version: 18.2.0
   sass:
     specifier: ^1.60.0
     version: 1.60.0
@@ -27,7 +24,7 @@ devDependencies:
     version: 4.2.1(sass@1.60.0)
   vitepress:
     specifier: 1.0.0-alpha.64
-    version: 1.0.0-alpha.64(react@18.2.0)(sass@1.60.0)
+    version: 1.0.0-alpha.64(sass@1.60.0)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -201,10 +198,10 @@ packages:
     resolution: {integrity: sha512-6SCwI7P8ao+se1TUsdZ7B4XzL+gqeQZnBc+2EONZlcVa0dVrk0NjETxozFKgMv0eEGH8QzP1fkN+A1rH61l4eg==}
     dev: true
 
-  /@docsearch/js@3.3.3(react@18.2.0):
+  /@docsearch/js@3.3.3:
     resolution: {integrity: sha512-2xAv2GFuHzzmG0SSZgf8wHX0qZX8n9Y1ZirKUk5Wrdc+vH9CL837x2hZIUdwcPZI9caBA+/CzxsS68O4waYjUQ==}
     dependencies:
-      '@docsearch/react': 3.3.3(react@18.2.0)
+      '@docsearch/react': 3.3.3
       preact: 10.13.2
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -213,7 +210,7 @@ packages:
       - react-dom
     dev: true
 
-  /@docsearch/react@3.3.3(react@18.2.0):
+  /@docsearch/react@3.3.3:
     resolution: {integrity: sha512-pLa0cxnl+G0FuIDuYlW+EBK6Rw2jwLw9B1RHIeS4N4s2VhsfJ/wzeCi3CWcs5yVfxLd5ZK50t//TMA5e79YT7Q==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -231,7 +228,6 @@ packages:
       '@algolia/autocomplete-preset-algolia': 1.7.4(algoliasearch@4.16.0)
       '@docsearch/css': 3.3.3
       algoliasearch: 4.16.0
-      react: 18.2.0
     transitivePeerDependencies:
       - '@algolia/client-search'
     dev: true
@@ -443,7 +439,7 @@ packages:
   /@fabric-ds/css@1.2.0:
     resolution: {integrity: sha512-2qtju85xQRxaHmuc6nEmWaQUUYLNZGR/nQAYTvONNv7InJYHfLmKc/LTG6V0E/BPxGT3BBnBuuHBoxBghAqDVw==}
     dependencies:
-      lit-html: 2.7.0
+      lit-html: 2.7.4
     dev: true
 
   /@floating-ui/core@0.7.3:
@@ -880,19 +876,19 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.70:
-    resolution: {integrity: sha512-YLtjeaX84ymTauuQcZCBkaoxJCaPnZu3834iCW5odUeUXJbPrEEybZdHvjYZ8w+fvFoamNTc2N8xvWMnPnoThA==}
+  /@warp-ds/component-classes@1.0.0-alpha.81:
+    resolution: {integrity: sha512-vjQ+jz4xuF4ngZwR25IJ/FzmgQI2OtuZr0DXJQrD38kXeRrVsbE0s1raTDvvd8oP/Q7nrB4rH5znSds9LI8lnA==}
     dev: true
 
-  /@warp-ds/uno@1.0.0-alpha.23:
-    resolution: {integrity: sha512-9x00PeEn8qi5XWZRgLqrZKssx7YGaODTKB36WuACWm7h6n0oA9P22YWzjZiHZRLADCbR0uenjHEcqhonhN65tg==}
+  /@warp-ds/uno@1.0.0-alpha.29:
+    resolution: {integrity: sha512-Yybf2haqAFqcICjFTdZVEwbe3y2Fz24zq1yC0Di03Beli16CUNlNOVJAVJ4r41cciOdB59qcOc2qSbfNZD9yLw==}
     dependencies:
       '@unocss/core': 0.50.8
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.24:
-    resolution: {integrity: sha512-Y5RP59vzU9eL8t+Vy2hUt8JsD89Dgwly5qmcu+b9jV+ajjuLC56TNVBUj1lnczx6RVDMcxt6bYCJ6VU7msY26Q==}
+  /@warp-ds/vue@1.0.0-alpha.26:
+    resolution: {integrity: sha512-0Vb43XhR+8FFgr63m84T5kAewNSTcgMe8tMBQjv1SRtOLbO3BTnz1cC4xh0CisRp5YeN5hXGRH0J7pERU3dESA==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
@@ -1230,10 +1226,6 @@ packages:
     hasBin: true
     dev: true
 
-  /js-tokens@4.0.0:
-    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: true
-
   /jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
@@ -1248,8 +1240,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /lit-html@2.7.0:
-    resolution: {integrity: sha512-/zPOl8EfeB3HHpTzINSpnWgvgQ8N07g/j272EOAIyB0Ys2RzBqTVT23i+JZuUlNbB2WHHeSsTCFi92NtWrtpqQ==}
+  /lit-html@2.7.4:
+    resolution: {integrity: sha512-/Jw+FBpeEN+z8X6PJva5n7+0MzCVAH2yypN99qHYYkq8bI+j7I39GH+68Z/MZD6rGKDK9RpzBw7CocfmHfq6+g==}
     dependencies:
       '@types/trusted-types': 2.0.3
     dev: true
@@ -1264,13 +1256,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
-    dev: true
-
-  /loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-    dependencies:
-      js-tokens: 4.0.0
     dev: true
 
   /magic-string@0.25.9:
@@ -1433,13 +1418,6 @@ packages:
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-    dev: true
-
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
     dev: true
 
   /readdirp@3.6.0:
@@ -1657,12 +1635,12 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-alpha.64(react@18.2.0)(sass@1.60.0):
+  /vitepress@1.0.0-alpha.64(sass@1.60.0):
     resolution: {integrity: sha512-u12wcDH4VzgxxkQfVQWkXumrL3WRetpenz4VuAtiMWXeZSCayWcJtieWOFxmX/RzS2KEuTJpXGbtJAXORyyJBQ==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.3
-      '@docsearch/js': 3.3.3(react@18.2.0)
+      '@docsearch/js': 3.3.3
       '@vitejs/plugin-vue': 4.1.0(vite@4.2.1)(vue@3.2.47)
       '@vue/devtools-api': 6.5.0
       '@vueuse/core': 9.13.0(vue@3.2.47)

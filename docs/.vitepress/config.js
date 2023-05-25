@@ -149,6 +149,16 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              text: 'Overlays',
+              collapsible: true,
+              items: [
+                {
+                  text: 'Modal',
+                  link: '/components/modal/',
+                },
+              ],
+            },
           ],
         },
         {
