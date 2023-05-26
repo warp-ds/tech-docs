@@ -9,4 +9,4 @@
 
 ## Props
 
-<api-table type="elements" component="Expandable" />
+<api-table type="elements" component="Broadcast" />

@@ -132,6 +132,10 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
+                {
+                  text: 'Broadcast',
+                  link: '/components/broadcast/',
+                },
                 { text: 'Card', link: '/components/card/' },
                 {
                   text: 'Expandable',

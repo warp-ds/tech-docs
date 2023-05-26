@@ -1066,6 +1066,13 @@ export const elements = {
       ],
     ],
   },
+  Broadcast: {
+    required: [[ 'api', 'string', '', 'API endpoint to fetch broadcasts from']],
+    props: [
+      [ 'interval', 'number', '300 000', 'Refetch interval. Default is set to 5 minutes'],
+      [ 'url', 'string', 'window.location.href', 'Page (identified by its url) to check for registered broadcasts against'],
+    ],
+  },
   Button: {
     required: [],
     props: [
