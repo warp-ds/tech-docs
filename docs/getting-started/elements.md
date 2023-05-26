@@ -1,15 +1,16 @@
 ## Installation
 
 The Warp Elements package can be installed from NPM.
+`alpha` versions of @warp-ds packages should be installed until major versions are available.
 
 ### with npm: 
 ```shell
-npm install @warp-ds/elements
+npm install @warp-ds/elements@alpha
 ```
 
 ### with pnpm
 ```shell
-pnpm add @warp-ds/elements
+pnpm add @warp-ds/elements@alpha
 ```
 
 ## Using Components

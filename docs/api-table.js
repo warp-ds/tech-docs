@@ -1,4 +1,17 @@
 export const react = {
+  Affix: {
+    props: [
+      ['aria-label', 'string', '', 'Defines a string value that labels the affix element'],
+      ['prefix', 'boolean', '', 'Affix added at the beginning of input'],
+      ['suffix', 'boolean', '', 'Affix added at the end of input'],
+      ['clear', 'boolean', '', 'Displays a clear icon'],
+      ['search', 'boolean', '', 'Displays a search icon'],
+      ['label', 'string', '', 'Displays a string'],
+    ],
+    events: [
+      ['onClick', '() => void', '', 'Click handler paired with clear or search'],
+    ]
+  },
   Alert: {
     required: [
       [
@@ -170,6 +183,41 @@ export const react = {
         '',
         'Removes box shadow around card',
       ],
+    ],
+  },
+  Combobox: {
+    required: [
+      ['options', 'ComboboxOption[]', '', 'The available options to select from'],
+      ['value', 'string', '', 'The TextField input value'],
+      ['onChange', '(value: string) => void', '', 'Called when the value of the input changes'],
+    ],
+    props: [
+      ['id', 'string', '', 'Unique identifier for the input field'],
+      ['label', 'string', '', 'Label above input'],
+      ['placeholder', 'string', '', 'Input placeholder'],
+      ['openOnFocus', 'boolean', 'false', 'Whether the popover opens when focus is on the text field'],
+      ['selectOnBlur', 'boolean', 'true', 'Select active option on blur'],
+      ['matchTextSegments', 'boolean', 'false', 'Whether the matching text segments in the options should be highlighted. Customise the styling by using CSS selectors to override `[data-combobox-text-match]`. This uses the default matching algorithm. Use the `highlightValueMatch` to pass your own matching function.'],
+      ['disableStaticFiltering', 'boolean', 'false', 'Disable client-side static filtering'],
+      ['highlightValueMatch', '(optionValue: string, inputValue: string) => ReactNode', '', 'Pass your own function for highlight matching'],
+      ['invalid', 'boolean', '', 'Renders the input field in an invalid state. Often paired together with `helpText` to provide feedback about the error'],
+      ['helpText', 'ReactNode', '', 'The content to display as the help text'],
+      ['className', 'string', '', 'Additional container styling'],
+      ['listClassName', 'string', '', 'Additional list styling'],
+      ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if `aria-labelledby` is not defined. Defines a string value that labels the current element. @see aria-labelledby.'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if `aria-label` is not defined. Identifies the element (or elements) that labels the current element.'],
+      ['children', 'ReactNode', '', 'For Affix use'],
+      [
+        'optional',
+        'boolean',
+        '',
+        'Whether to show optional text',
+      ],
+    ],
+    events: [
+      ['onSelect', '((value: string) => void) & ReactEventHandler<HTMLInputElement>', '', 'Called when the user selects an option'],
+      ['onFocus', '(() => void) & FocusEventHandler<HTMLInputElement>', '', 'Called when the input is focus'],
+      ['onBlur', '((value: string) => void) & FocusEventHandler<HTMLInputElement>', '', 'Called when the input loses focus with the current navigation value or input value'],
     ],
   },
   DeadToggle: {
@@ -368,6 +416,27 @@ export const react = {
       ['clear', 'boolean', '', 'Displays a clear icon.'],
       ['search', 'boolean', '', 'Displays a search icon.'],
       ['label', 'string', '', 'Displays a string.'],
+    ],
+  },
+  Modal: {
+    required: [
+      ['children', 'Element<br />|Element[]', '', 'The modal contents'],
+      ['open', 'boolean', '', 'Whether the modal is open or not'],
+    ],
+    props: [
+      ['title', 'string<br />|Element<br />|Element[]', '', 'A string or your own custom elements'],
+      ['left', 'boolean<br />|Element<br />|Element[]', '', 'A default back button or your own custom elements'],
+      ['right', 'boolean<br />|Element<br />|Element[]', '', 'A default close button or your own custom elements'],
+      ['footer', 'Element<br />|Element[]', '', 'Buttons passed to the footer'],
+      ['className', 'string', '', 'Additional classes added to the container'],
+      ['id', 'string', '', 'An id for the container and ARIA attributes. A random id is generated if none is provided.'],
+      ['style', 'CSSProperties', '', 'Additional styles to the contianer. [More info about CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
+      ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if neither `aria-labelledby` or `<ModalHeading>` is defined,'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if neither `aria-label` or `<ModalHeading>` is defined.'],
+      ['initialFocusRef', 'RefObject<any>', '', `A reference to the element that should be focused. By default it'll be the first interactive element. [More info](https://react.dev/learn/manipulating-the-dom-with-refs)`],
+    ],
+    events: [
+      [ 'onDismiss', '() => void', '', 'Handler that is called when the user presses esc or clicks outside the modal.'],
     ],
   },
   Pill: {
@@ -586,6 +655,34 @@ export const react = {
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
       ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+  },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+    props: [
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
+      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
+      ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+    ],
+    events: [
+      ['setActive', '(name: string)', 'false', ''],
+      ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The Tabs within the container']],
+    props: [
+      ['active', 'string', '', 'Used to set the name of the Tab that should be active on mount. Defaults to the first tab if not present and isActive is not set on any Tab'],
+      ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the container'],
+    ],
+    events: [
+      ['onChange', '(name: string) => void', '', 'Handler that is called when the tab changes'],
     ],
   },
   Toggle: {
@@ -898,6 +995,43 @@ export const vue = {
       ['as', 'string', 'form', 'The DOM element to emit for the wrapper'],
     ],
   },
+  Modal: {
+    required: [],
+    props: [
+      ['v-model', 'boolean', '', 'Whether or not to show the modal'],
+      ['left', 'boolean<br />|object', '', 'When truthy, will show the left button of the header. Object properties will be used as attributes on the button.'],
+      ['right', 'boolean<br />|object', '', 'When truthy, will show the right button of the header. Object properties will be used as attributes on the button.'],
+      ['title', 'string', '', ''],
+      ['titleAttrs', 'object', '', 'Properties will be set as attributes of the title in the header.'],
+      ['headerClasses', 'string<br />|object', '', 'Classes here will be set on the wrapper for the header.'],
+      ['contentClasses', 'string<br />|object', '', 'Classes here will be set on the wrapper for the content.'],
+      ['contentId', 'string', '', 'This id is useful if you need to programatically scroll content in the modal.'],
+    ],
+    events: [
+      [ 'dismiss', '', '', 'A user presses ESC or clicks outside the dialog'],
+      [ 'left', '', '', 'The left title-button has been clicked'],
+      [ 'right', '', '', 'The right title-button has been clicked'],
+      [ 'shown', '', '', 'Modal entrance transitions are complete and content has been mounted'],
+      [ 'hidden', '', '', 'Modal exit transitions are complete and content has been torn down or hidden'],
+    ]
+  },
+  ModalSlots: {
+    required: [],
+    slots: [
+      ['default', 'Content for the modal'],
+      ['footer', 'Footer (button drawer) for the modal - the footer is sticky'],
+      ['left', 'Overrides the default icon (a back arrow)'],
+      ['right', 'Overrides the default icon (an X symbol)'],
+    ],
+  },
+  ModalCustomProperties: {
+    titles: ['name', 'notes'],
+    rows: [
+      ['--w-modal-max-height', 'The max-height of the modal dialog'],
+      ['--w-modal-height', 'The height of the modal dialog'],
+      ['--w-modal-width', 'The max-width of the modal dialog'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -930,6 +1064,16 @@ export const vue = {
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
     ],
+  },
+  Tab: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
+      ['label', 'any', '', 'The label of the tab item'],
+    ],
+  },
+  Tabs: {
+    required: [['children', 'Element[]', '', 'The tabs within the container']],
+    events: [['v-model', 'string', '', 'Name of the active element']],
   },
   Toggle: {
     required: [],
@@ -1015,6 +1159,13 @@ export const elements = {
         'Her er du',
         'Defines a string value that labels the current element.',
       ],
+    ],
+  },
+  Broadcast: {
+    required: [[ 'api', 'string', '', 'API endpoint to fetch broadcasts from']],
+    props: [
+      [ 'interval', 'number', '300 000', 'Refetch interval. Default is set to 5 minutes'],
+      [ 'url', 'string', 'window.location.href', 'Page (identified by its url) to check for registered broadcasts against'],
     ],
   },
   Button: {
@@ -1189,5 +1340,13 @@ export const elements = {
       ['search', 'boolean', '', 'Displays a search icon.'],
       ['label', 'string', '', 'Displays a string.'],
     ],
+  },
+  Toast: {
+    required: [],
+    props: [
+      ['type', "'success' | 'warning' | 'error'", "'success'", 'Type of toast'],
+      ['text', 'string', 'undefined', 'Applies styling to indicate click-ability'],
+      ['duration', 'number', '5000', 'Auto removal of toast'],
+    ]
   },
 };
