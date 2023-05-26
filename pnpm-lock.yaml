@@ -2,14 +2,14 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: ^1.0.0-alpha.70
-    version: 1.0.0-alpha.70
+    specifier: ^1.0.0-alpha.87
+    version: 1.0.0-alpha.87
   '@warp-ds/uno':
-    specifier: ^1.0.0-alpha.23
-    version: 1.0.0-alpha.23
+    specifier: ^1.0.0-alpha.29
+    version: 1.0.0-alpha.29
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.24
-    version: 1.0.0-alpha.24
+    specifier: ^1.0.0-alpha.27
+    version: 1.0.0-alpha.27
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -21,7 +21,7 @@ devDependencies:
     version: 1.60.0
   unocss:
     specifier: ^0.51.3
-    version: 0.51.3(postcss@8.4.21)(vite@4.2.1)
+    version: 0.51.3(vite@4.2.1)
   vite:
     specifier: ^4.2.1
     version: 4.2.1(sass@1.60.0)
@@ -620,11 +620,9 @@ packages:
       sirv: 2.0.2
     dev: true
 
-  /@unocss/postcss@0.51.3(postcss@8.4.21):
+  /@unocss/postcss@0.51.3:
     resolution: {integrity: sha512-ZXfkapLfK5813nI08pCOpCykdNObcX8u6uS5eaBJl84ndYUAW55Kbva1vnqxiiDORmBXmlxHo1iRHZi6/iGGxA==}
     engines: {node: '>=14'}
-    peerDependencies:
-      postcss: ^8.4.21
     dependencies:
       '@unocss/config': 0.51.3
       '@unocss/core': 0.51.3
@@ -880,19 +878,19 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.70:
-    resolution: {integrity: sha512-YLtjeaX84ymTauuQcZCBkaoxJCaPnZu3834iCW5odUeUXJbPrEEybZdHvjYZ8w+fvFoamNTc2N8xvWMnPnoThA==}
+  /@warp-ds/component-classes@1.0.0-alpha.87:
+    resolution: {integrity: sha512-ylgq5e9xIr6FanCNgIQ2FJ5BRSwRUnDez0K8Dpp+j08iSOWuIpIvDymXULtSZra3VM6yHQpdnuGB/FKoLbS7mA==}
     dev: true
 
-  /@warp-ds/uno@1.0.0-alpha.23:
-    resolution: {integrity: sha512-9x00PeEn8qi5XWZRgLqrZKssx7YGaODTKB36WuACWm7h6n0oA9P22YWzjZiHZRLADCbR0uenjHEcqhonhN65tg==}
+  /@warp-ds/uno@1.0.0-alpha.29:
+    resolution: {integrity: sha512-Yybf2haqAFqcICjFTdZVEwbe3y2Fz24zq1yC0Di03Beli16CUNlNOVJAVJ4r41cciOdB59qcOc2qSbfNZD9yLw==}
     dependencies:
       '@unocss/core': 0.50.8
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.24:
-    resolution: {integrity: sha512-Y5RP59vzU9eL8t+Vy2hUt8JsD89Dgwly5qmcu+b9jV+ajjuLC56TNVBUj1lnczx6RVDMcxt6bYCJ6VU7msY26Q==}
+  /@warp-ds/vue@1.0.0-alpha.27:
+    resolution: {integrity: sha512-qHeuFQ1ltFp31QQZqWxE3GU229jwjw0qOfvIQE6j7b5I3BHwi8xp6K28jW0WBY7eo2GPo9J3yv0zgJ3IK4rSDw==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
@@ -1587,7 +1585,7 @@ packages:
       jiti: 1.18.2
     dev: true
 
-  /unocss@0.51.3(postcss@8.4.21)(vite@4.2.1):
+  /unocss@0.51.3(vite@4.2.1):
     resolution: {integrity: sha512-iQ1ftflPKe9U68sOzyqA9QL00xschvmer6YprYNWOJxPTOf0Mw/jTaLGoS1ZF/lDIaC4nae6h479S8k0DzysXw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1600,7 +1598,7 @@ packages:
       '@unocss/cli': 0.51.3
       '@unocss/core': 0.51.3
       '@unocss/extractor-arbitrary-variants': 0.51.3
-      '@unocss/postcss': 0.51.3(postcss@8.4.21)
+      '@unocss/postcss': 0.51.3
       '@unocss/preset-attributify': 0.51.3
       '@unocss/preset-icons': 0.51.3
       '@unocss/preset-mini': 0.51.3
@@ -1617,7 +1615,6 @@ packages:
       '@unocss/transformer-variant-group': 0.51.3
       '@unocss/vite': 0.51.3(vite@4.2.1)
     transitivePeerDependencies:
-      - postcss
       - rollup
       - supports-color
       - vite
