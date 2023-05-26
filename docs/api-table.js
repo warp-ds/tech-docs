@@ -23,19 +23,20 @@ export const react = {
   Attention: {
     required: [
       [
-        'placement', "Directions", '', `Placement according to the target element Arrow would be on the opposite side of this position`,
+        'placement', "'top' | 'bottom' | 'left' | 'right' ", '', `Placement according to the target element. The arrow will point to the opposite side of this position`,
       ],
     ],
     props: [
       ['noArrow', 'boolean', 'false', 'Render Attention element without arrow'],
       ['isShowing', 'boolean', '', 'Whether Attention element is shown Used for tooltip'],
       ['children', 'Element | Element[]', '', 'Elements inside of the Attention component'],
-      ['targetEl', 'MutableRefObject<unknown>', '', `Container the Attention component is rendered relatively to`],
-      ['className', 'string', '', `Extend the Attention component container styling`],
-      ['tooltip', 'boolean', '', `Render tooltip`],
-      ['callout', 'boolean', '', `Render callout`],
-      ['popover', 'boolean', '', `Render popover`],
-      ['ref', 'Ref<HTMLDivElement>', '', `Forward arrow ref so Attention element can use it`],
+      ['targetEl', 'MutableRefObject<unknown>', '', 'Reference target the Attention component is rendered relatively to'],
+      ['targetEl', 'MutableRefObject<unknown>', '', 'The reference container to which the Attention component is positioned relative to'],
+      ['className', 'string', '', 'Extend the Attention component container styling'],
+      ['tooltip', 'boolean', '', 'Whether Attention element is rendered as a tooltip'],
+      ['callout', 'boolean', '', 'Whether Attention element is rendered as a callout'],
+      ['popover', 'boolean', '', 'Whether Attention element is rendered as a popover'],
+      ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
     ],
   },
   Box: {
