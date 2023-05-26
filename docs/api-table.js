@@ -983,7 +983,7 @@ export const elements = {
       ['tooltip', 'boolean', 'false', 'Render tooltip'],
       ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
-      ['show', 'boolean', '', 'Whether Attention element should be visible'],
+      ['show', 'boolean', 'false', 'Whether Attention element should be visible'],
     ],
   },
   Box: {
