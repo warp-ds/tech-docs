@@ -1287,4 +1287,12 @@ export const elements = {
       ['label', 'string', '', 'Displays a string.'],
     ],
   },
+  Toast: {
+    required: [],
+    props: [
+      ['type', "'success' | 'warning' | 'error'", "'success'", 'Type of toast'],
+      ['text', 'string', 'undefined', 'Applies styling to indicate click-ability'],
+      ['duration', 'number', '5000', 'Auto removal of toast'],
+    ]
+  },
 };
