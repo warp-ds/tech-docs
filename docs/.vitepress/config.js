@@ -142,6 +142,10 @@ export default defineConfig({
                   text: 'Tabs',
                   link: '/components/tabs/',
                 },
+                {
+                  text: 'Utilities',
+                  link: '/components/utilities/',
+                },
               ],
             },
             {

@@ -18,6 +18,7 @@ import Steps from '../components/steps/Example.vue';
 import Tabs from '../components/tabs/Example.vue';
 import TextArea from '../components/textarea/Example.vue';
 import TextField from '../components/textfield/Example.vue';
+import Utilities from '../components/utilities/Example.vue';
 
 buildWc('alert-example', Alert);
 buildWc('box-example', Box);
@@ -37,3 +38,4 @@ buildWc('steps-example', Steps);
 buildWc('tabs-example', Tabs);
 buildWc('textarea-example', TextArea);
 buildWc('textfield-example', TextField);
+buildWc('utilities-example', Utilities);
