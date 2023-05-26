@@ -911,6 +911,18 @@ export const vue = {
       ],
     ],
   },
+  Forms: {
+    required: [],
+    props: [
+      ['v-model', 'boolean', '', 'True when all descendants are valid'],
+      ['v-model:completed', 'boolean', '', 'True when all descendants are completed - passing their required rule'],
+      ['should-validate', 'boolean', '', 'Can be used to instruct all descendants to immediately validate. Note that this will not update if the should-validate logic is updated elsewhere'],
+      ['as', 'string', '', 'The DOM element to emit for the wrapper'],
+      ['valid', 'boolean', '', 'Whether or not to treat the form element as valid'],
+      ['hint', 'string', '', 'The hint to show when this result is triggered'],
+      ['always', 'boolean', '', `If true, will show the status/hint even if the form element hasn't been touched yet - normally validation is only shown after blur`],
+    ],
+  },
   Input: {
     required: [],
     props: [

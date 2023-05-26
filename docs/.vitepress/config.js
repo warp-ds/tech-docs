@@ -112,6 +112,7 @@ export default defineConfig({
               items: [
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Combobox', link: '/components/combobox/' },
+                { text: 'Forms', link: '/components/forms/' },
                 { text: 'Radio', link: '/components/radio/' },
                 { text: 'Radio Buttons', link: '/components/radiobuttons/' },
                 { text: 'Select', link: '/components/select/' },
