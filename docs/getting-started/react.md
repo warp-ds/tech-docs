@@ -1,15 +1,16 @@
 ## Installation
 
-The Warp React package can be installed from NPM
+The Warp React package can be installed from NPM.
+`alpha` versions of @warp-ds packages should be installed until major versions are available.
 
 ### with npm:
 ```shell
-npm install @warp-ds/react
+npm install @warp-ds/react@alpha
 ```
 
 ### with pnpm
 ```shell
-pnpm add @warp-ds/react
+pnpm add @warp-ds/react@alpha
 ```
 
 ## Using Components
