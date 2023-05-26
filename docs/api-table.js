@@ -1,4 +1,17 @@
 export const react = {
+  Affix: {
+    props: [
+      ['aria-label', 'string', '', 'Defines a string value that labels the affix element'],
+      ['prefix', 'boolean', '', 'Affix added at the beginning of input'],
+      ['suffix', 'boolean', '', 'Affix added at the end of input'],
+      ['clear', 'boolean', '', 'Displays a clear icon'],
+      ['search', 'boolean', '', 'Displays a search icon'],
+      ['label', 'string', '', 'Displays a string'],
+    ],
+    events: [
+      ['onClick', '() => void', '', 'Click handler paired with clear or search'],
+    ]
+  },
   Alert: {
     required: [
       [
@@ -151,6 +164,41 @@ export const react = {
         '',
         'Removes box shadow around card',
       ],
+    ],
+  },
+  Combobox: {
+    required: [
+      ['options', 'ComboboxOption[]', '', 'The available options to select from'],
+      ['value', 'string', '', 'The TextField input value'],
+      ['onChange', '(value: string) => void', '', 'Called when the value of the input changes'],
+    ],
+    props: [
+      ['id', 'string', '', 'Unique identifier for the input field'],
+      ['label', 'string', '', 'Label above input'],
+      ['placeholder', 'string', '', 'Input placeholder'],
+      ['openOnFocus', 'boolean', 'false', 'Whether the popover opens when focus is on the text field'],
+      ['selectOnBlur', 'boolean', 'true', 'Select active option on blur'],
+      ['matchTextSegments', 'boolean', 'false', 'Whether the matching text segments in the options should be highlighted. Customise the styling by using CSS selectors to override `[data-combobox-text-match]`. This uses the default matching algorithm. Use the `highlightValueMatch` to pass your own matching function.'],
+      ['disableStaticFiltering', 'boolean', 'false', 'Disable client-side static filtering'],
+      ['highlightValueMatch', '(optionValue: string, inputValue: string) => ReactNode', '', 'Pass your own function for highlight matching'],
+      ['invalid', 'boolean', '', 'Renders the input field in an invalid state. Often paired together with `helpText` to provide feedback about the error'],
+      ['helpText', 'ReactNode', '', 'The content to display as the help text'],
+      ['className', 'string', '', 'Additional container styling'],
+      ['listClassName', 'string', '', 'Additional list styling'],
+      ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if `aria-labelledby` is not defined. Defines a string value that labels the current element. @see aria-labelledby.'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if `aria-label` is not defined. Identifies the element (or elements) that labels the current element.'],
+      ['children', 'ReactNode', '', 'For Affix use'],
+      [
+        'optional',
+        'boolean',
+        '',
+        'Whether to show optional text',
+      ],
+    ],
+    events: [
+      ['onSelect', '((value: string) => void) & ReactEventHandler<HTMLInputElement>', '', 'Called when the user selects an option'],
+      ['onFocus', '(() => void) & FocusEventHandler<HTMLInputElement>', '', 'Called when the input is focus'],
+      ['onBlur', '((value: string) => void) & FocusEventHandler<HTMLInputElement>', '', 'Called when the input loses focus with the current navigation value or input value'],
     ],
   },
   DeadToggle: {
@@ -363,10 +411,10 @@ export const react = {
       ['footer', 'Element<br />|Element[]', '', 'Buttons passed to the footer'],
       ['className', 'string', '', 'Additional classes added to the container'],
       ['id', 'string', '', 'An id for the container and ARIA attributes. A random id is generated if none is provided.'],
-      ['style', 'CSSProperties', '', 'Additional styles to the contianer. [More info aboout CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
+      ['style', 'CSSProperties', '', 'Additional styles to the contianer. [More info about CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
       ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if neither `aria-labelledby` or `<ModalHeading>` is defined,'],
       ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if neither `aria-label` or `<ModalHeading>` is defined.'],
-      ['initialFocusRef', 'RefObject<any>	', '', `A reference to the element that should be focused. By default it'll be the first interactive element. [More info](https://legacy.reactjs.org/docs/refs-and-the-dom.html)`],
+      ['initialFocusRef', 'RefObject<any>', '', `A reference to the element that should be focused. By default it'll be the first interactive element. [More info](https://react.dev/learn/manipulating-the-dom-with-refs)`],
     ],
     events: [
       [ 'onDismiss', '() => void', '', 'Handler that is called when the user presses esc or clicks outside the modal.'],

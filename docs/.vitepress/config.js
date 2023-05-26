@@ -111,6 +111,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Checkbox', link: '/components/checkbox/' },
+                { text: 'Combobox', link: '/components/combobox/' },
                 { text: 'Radio', link: '/components/radio/' },
                 { text: 'Radio Buttons', link: '/components/radiobuttons/' },
                 { text: 'Select', link: '/components/select/' },
