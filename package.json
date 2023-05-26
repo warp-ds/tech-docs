@@ -7,7 +7,6 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@warp-ds/component-classes": "1.0.0-alpha.84",
     "@warp-ds/react": "^1.0.0-alpha.24",
     "@warp-ds/uno": "^1.0.0-alpha.29",

@@ -131,6 +131,11 @@ Then you include it as a child of TextField component and pass the appropiate pr
   <Affix suffix search onClick={() => alert('search')} />
 </TextField>
 ```
+
+## Affix props
+
+<api-table type=react component="Affix" />
+
 ### Read only
 
 The readOnly boolean prop makes the TextField's text content immutable. Unlike disabled the TextField remains focusable and the contents can still be copied. See the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly)

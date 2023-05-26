@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
-import vueJsx from '@vitejs/plugin-vue-jsx';
 import { classes } from '@warp-ds/component-classes/classes';
 
 // Classes of documentation-related elements used within Warp component examples
@@ -18,9 +17,6 @@ export default defineConfig({
   base: '/tech-docs/',
   markdown: { theme: 'nord' },
   vue: {
-    plugins: [
-      vueJsx(),
-    ],
     template: {
       compilerOptions: {
         isCustomElement: (tag) => tag.includes('-example'),
