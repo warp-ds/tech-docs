@@ -111,6 +111,7 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Checkbox', link: '/components/checkbox/' },
+                { text: 'Combobox', link: '/components/combobox/' },
                 { text: 'Radio', link: '/components/radio/' },
                 { text: 'Radio Buttons', link: '/components/radiobuttons/' },
                 { text: 'Select', link: '/components/select/' },
@@ -132,6 +133,10 @@ export default defineConfig({
               collapsible: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
+                {
+                  text: 'Broadcast',
+                  link: '/components/broadcast/',
+                },
                 { text: 'Card', link: '/components/card/' },
                 {
                   text: 'Expandable',
@@ -140,6 +145,10 @@ export default defineConfig({
                 {
                   text: 'Tabs',
                   link: '/components/tabs/',
+                },
+                {
+                  text: 'Toast',
+                  link: '/components/toast/',
                 },
                 {
                   text: 'Utilities',

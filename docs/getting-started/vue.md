@@ -1,15 +1,16 @@
 ## Installation
 
-The Warp Vue package can be installed from NPM
+The Warp Vue package can be installed from NPM.
+`alpha` versions of @warp-ds packages should be installed until major versions are available.
 
 ### with npm:
 ```shell
-npm install @warp-ds/vue
+npm install @warp-ds/vue@alpha
 ```
 
 ### with pnpm
 ```shell
-pnpm add @warp-ds/vue
+pnpm add @warp-ds/vue@alpha
 ```
 
 ## Using Components
