@@ -15,7 +15,7 @@
 
 ```js
 <w-attention placement="right" show="" callout="" class="flex items-center">
-  <div id="target" class="group block relative break-words p-16" slot="target">
+  <div id="target" slot="target">
     <p>This is a target to callout attention element</p>
   </div>
   <span slot="message">Callout on right</span>
@@ -26,7 +26,7 @@
 
 ```js
 <w-attention placement="right" tooltip="">
-  <button id="target" class="group block relative break-words p-16" slot="target">
+  <button id="target" slot="target">
     Hover or focus to show a tooltip on right
   </button>
   <span slot="message">I'm a tooltip on right</span>
@@ -46,9 +46,7 @@ It is possible to tell assistive technologies to recognize only a part of Attent
     <p id="aria-content" role="tooltip">I'm a popover with ARIA "tooltip" role</p>
     <p>(this text is less relevant)</p>
   </div>
-  <button aria-describedby="aria-content" id="target" class="group block
-    relative break-words last-child:mb-0 p-16 rounded-8"
-    slot="target">
+  <button aria-describedby="aria-content" id="target" slot="target">
     Click to toggle a popover on top
   </button>
 </w-attention>

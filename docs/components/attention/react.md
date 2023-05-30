@@ -9,7 +9,7 @@ import { Attention } from '@warp-ds/react';
 ### Callout
 
 ```js
-<div className="flex items-center">
+<div>
   <Box info>
     <h1>I am a box full of info</h1>
   </Box>
@@ -29,7 +29,6 @@ function Example() {
   return (
     <div>
       <h1
-        className="w-max mb-0"
         ref={targetEl}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
@@ -75,7 +74,6 @@ function Example() {
         small
         utility
         onClick={() => setShow(!show)}
-        className="w-max mb-0"
         ref={targetEl}
       >
         Open menu
@@ -86,17 +84,11 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <ul className="bg-white w-full text-center">
-          <li
-            tabIndex={0}
-            className="p-2 px-40 hover:bg-blue-200 hover:text-blue-500 cursor-pointer"
-          >
+        <ul>
+          <li tabIndex={0} >
             Hello
           </li>
-          <li
-            tabIndex={0}
-            className="p-2 px-40 hover:bg-blue-200 hover:text-blue-500 cursor-pointer"
-          >
+          <li tabIndex={0} >
             World
           </li>
         </ul>

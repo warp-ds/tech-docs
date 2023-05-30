@@ -43,7 +43,6 @@ export const react = {
       ['noArrow', 'boolean', 'false', 'Render Attention element without arrow'],
       ['isShowing', 'boolean', '', 'Whether Attention element is shown Used for tooltip'],
       ['children', 'Element | Element[]', '', 'Elements inside of the Attention component'],
-      ['targetEl', 'MutableRefObject<unknown>', '', 'Reference target the Attention component is rendered relatively to'],
       ['targetEl', 'MutableRefObject<unknown>', '', 'The reference container to which the Attention component is positioned relative to'],
       ['className', 'string', '', 'Extend the Attention component container styling'],
       ['tooltip', 'boolean', '', 'Whether Attention element is rendered as a tooltip'],
