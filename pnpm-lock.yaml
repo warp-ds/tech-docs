@@ -2,17 +2,17 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: 1.0.0-alpha.84
-    version: 1.0.0-alpha.84
+    specifier: ^1.0.0-alpha.87
+    version: 1.0.0-alpha.87
   '@warp-ds/react':
     specifier: ^1.0.0-alpha.24
-    version: 1.0.0-alpha.24(react@17.0.2)
+    version: 1.0.0-alpha.24
   '@warp-ds/uno':
     specifier: ^1.0.0-alpha.29
     version: 1.0.0-alpha.29
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.26
-    version: 1.0.0-alpha.26
+    specifier: ^1.0.0-alpha.27
+    version: 1.0.0-alpha.27
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -21,13 +21,13 @@ devDependencies:
     version: 1.60.0
   unocss:
     specifier: ^0.51.3
-    version: 0.51.3(postcss@8.4.21)(vite@4.2.1)
+    version: 0.51.3(vite@4.2.1)
   vite:
     specifier: ^4.2.1
     version: 4.2.1(sass@1.60.0)
   vitepress:
     specifier: 1.0.0-alpha.64
-    version: 1.0.0-alpha.64(react@17.0.2)(sass@1.60.0)
+    version: 1.0.0-alpha.64(sass@1.60.0)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -170,8 +170,8 @@ packages:
     resolution: {integrity: sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==}
     dev: true
 
-  /@babel/helper-string-parser@7.21.5:
-    resolution: {integrity: sha512-5pTUx3hAJaZIdW99sJ6ZUUgWq/Y+Hja7TowEnLNMm1VivRgZQL3vpBY3qUACVsvw+yQU6+YgfBVmcbLaZtrA1w==}
+  /@babel/helper-string-parser@7.19.4:
+    resolution: {integrity: sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -185,21 +185,21 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
-      '@babel/types': 7.21.5
+      '@babel/types': 7.21.0
     dev: true
 
-  /@babel/runtime@7.21.5:
-    resolution: {integrity: sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==}
+  /@babel/runtime@7.22.0:
+    resolution: {integrity: sha512-TT6NB0oszYQ4oxLNUdG+FNHIc3MohXVCKA2BeyQ4WeM2VCSC6wBZ6P0Yfkdzxv+87D8Xk0LJyHeCKlWMvpZt0g==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
     dev: true
 
-  /@babel/types@7.21.5:
-    resolution: {integrity: sha512-m4AfNvVF2mVC/F7fDEdH2El3HzUg9It/XsCxZiOTTA3m3qYfcSVSbTfM6Q9xG+hYDniZssYhlXKKUMD5m8tF4Q==}
+  /@babel/types@7.21.0:
+    resolution: {integrity: sha512-uR7NWq2VNFnDi7EYqiRz2Jv/VQIu38tu64Zy8TX2nQFQ6etJ9V/Rr2msW8BS132mum2rL645qpDrLtAJtVpuow==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-string-parser': 7.21.5
+      '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
@@ -212,10 +212,10 @@ packages:
     resolution: {integrity: sha512-6SCwI7P8ao+se1TUsdZ7B4XzL+gqeQZnBc+2EONZlcVa0dVrk0NjETxozFKgMv0eEGH8QzP1fkN+A1rH61l4eg==}
     dev: true
 
-  /@docsearch/js@3.3.3(react@17.0.2):
+  /@docsearch/js@3.3.3:
     resolution: {integrity: sha512-2xAv2GFuHzzmG0SSZgf8wHX0qZX8n9Y1ZirKUk5Wrdc+vH9CL837x2hZIUdwcPZI9caBA+/CzxsS68O4waYjUQ==}
     dependencies:
-      '@docsearch/react': 3.3.3(react@17.0.2)
+      '@docsearch/react': 3.3.3
       preact: 10.13.2
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -224,7 +224,7 @@ packages:
       - react-dom
     dev: true
 
-  /@docsearch/react@3.3.3(react@17.0.2):
+  /@docsearch/react@3.3.3:
     resolution: {integrity: sha512-pLa0cxnl+G0FuIDuYlW+EBK6Rw2jwLw9B1RHIeS4N4s2VhsfJ/wzeCi3CWcs5yVfxLd5ZK50t//TMA5e79YT7Q==}
     peerDependencies:
       '@types/react': '>= 16.8.0 < 19.0.0'
@@ -242,7 +242,6 @@ packages:
       '@algolia/autocomplete-preset-algolia': 1.7.4(algoliasearch@4.16.0)
       '@docsearch/css': 3.3.3
       algoliasearch: 4.16.0
-      react: 17.0.2
     transitivePeerDependencies:
       - '@algolia/client-search'
     dev: true
@@ -631,11 +630,9 @@ packages:
       sirv: 2.0.2
     dev: true
 
-  /@unocss/postcss@0.51.3(postcss@8.4.21):
+  /@unocss/postcss@0.51.3:
     resolution: {integrity: sha512-ZXfkapLfK5813nI08pCOpCykdNObcX8u6uS5eaBJl84ndYUAW55Kbva1vnqxiiDORmBXmlxHo1iRHZi6/iGGxA==}
     engines: {node: '>=14'}
-    peerDependencies:
-      postcss: ^8.4.21
     dependencies:
       '@unocss/config': 0.51.3
       '@unocss/core': 0.51.3
@@ -891,8 +888,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.84:
-    resolution: {integrity: sha512-frDUCZmU2PfT5E3w94KNSxMMMvnG3QIZZ7ah+WMwRor/0Q4xWcjPvwYRtLYIXQKz9bgTWtlMr0IAr+SAm1wKQA==}
+  /@warp-ds/component-classes@1.0.0-alpha.87:
+    resolution: {integrity: sha512-ylgq5e9xIr6FanCNgIQ2FJ5BRSwRUnDez0K8Dpp+j08iSOWuIpIvDymXULtSZra3VM6yHQpdnuGB/FKoLbS7mA==}
     dev: true
 
   /@warp-ds/core@1.0.0:
@@ -901,16 +898,15 @@ packages:
       '@floating-ui/dom': 0.5.4
     dev: true
 
-  /@warp-ds/react@1.0.0-alpha.24(react@17.0.2):
+  /@warp-ds/react@1.0.0-alpha.24:
     resolution: {integrity: sha512-l3HeUqcbyhx7kORegG9tAfTiR99NGgGSXu8r0qTfjlzFZCLsBlAMwiQtHx8bOmrwQ+kUw00FpSNiUbhPjnqq2g==}
     peerDependencies:
       react: 17.0.2
     dependencies:
       '@chbphone55/classnames': 2.0.0
-      '@warp-ds/component-classes': 1.0.0-alpha.84
+      '@warp-ds/component-classes': 1.0.0-alpha.87
       '@warp-ds/core': 1.0.0
-      react: 17.0.2
-      react-focus-lock: 2.9.4(react@17.0.2)
+      react-focus-lock: 2.9.4
       resize-observer-polyfill: 1.5.1
       scroll-doctor: 1.0.1
     transitivePeerDependencies:
@@ -924,8 +920,8 @@ packages:
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.26:
-    resolution: {integrity: sha512-0Vb43XhR+8FFgr63m84T5kAewNSTcgMe8tMBQjv1SRtOLbO3BTnz1cC4xh0CisRp5YeN5hXGRH0J7pERU3dESA==}
+  /@warp-ds/vue@1.0.0-alpha.27:
+    resolution: {integrity: sha512-qHeuFQ1ltFp31QQZqWxE3GU229jwjw0qOfvIQE6j7b5I3BHwi8xp6K28jW0WBY7eo2GPo9J3yv0zgJ3IK4rSDw==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
@@ -1485,16 +1481,15 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-clientside-effect@1.2.6(react@17.0.2):
+  /react-clientside-effect@1.2.6:
     resolution: {integrity: sha512-XGGGRQAKY+q25Lz9a/4EPqom7WRjz3z9R2k4jhVKA/puQFH/5Nt27vFZYql4m4NVNdUvX8PS3O7r/Zzm7cjUlg==}
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.21.5
-      react: 17.0.2
+      '@babel/runtime': 7.22.0
     dev: true
 
-  /react-focus-lock@2.9.4(react@17.0.2):
+  /react-focus-lock@2.9.4:
     resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1503,25 +1498,16 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.21.5
+      '@babel/runtime': 7.22.0
       focus-lock: 0.11.6
       prop-types: 15.8.1
-      react: 17.0.2
-      react-clientside-effect: 1.2.6(react@17.0.2)
-      use-callback-ref: 1.3.0(react@17.0.2)
-      use-sidecar: 1.1.2(react@17.0.2)
+      react-clientside-effect: 1.2.6
+      use-callback-ref: 1.3.0
+      use-sidecar: 1.1.2
     dev: true
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
-
-  /react@17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
     dev: true
 
   /readdirp@3.6.0:
@@ -1677,7 +1663,7 @@ packages:
       jiti: 1.18.2
     dev: true
 
-  /unocss@0.51.3(postcss@8.4.21)(vite@4.2.1):
+  /unocss@0.51.3(vite@4.2.1):
     resolution: {integrity: sha512-iQ1ftflPKe9U68sOzyqA9QL00xschvmer6YprYNWOJxPTOf0Mw/jTaLGoS1ZF/lDIaC4nae6h479S8k0DzysXw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1690,7 +1676,7 @@ packages:
       '@unocss/cli': 0.51.3
       '@unocss/core': 0.51.3
       '@unocss/extractor-arbitrary-variants': 0.51.3
-      '@unocss/postcss': 0.51.3(postcss@8.4.21)
+      '@unocss/postcss': 0.51.3
       '@unocss/preset-attributify': 0.51.3
       '@unocss/preset-icons': 0.51.3
       '@unocss/preset-mini': 0.51.3
@@ -1707,13 +1693,12 @@ packages:
       '@unocss/transformer-variant-group': 0.51.3
       '@unocss/vite': 0.51.3(vite@4.2.1)
     transitivePeerDependencies:
-      - postcss
       - rollup
       - supports-color
       - vite
     dev: true
 
-  /use-callback-ref@1.3.0(react@17.0.2):
+  /use-callback-ref@1.3.0:
     resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -1723,11 +1708,10 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      react: 17.0.2
       tslib: 2.5.0
     dev: true
 
-  /use-sidecar@1.1.2(react@17.0.2):
+  /use-sidecar@1.1.2:
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -1738,7 +1722,6 @@ packages:
         optional: true
     dependencies:
       detect-node-es: 1.1.0
-      react: 17.0.2
       tslib: 2.5.0
     dev: true
 
@@ -1776,12 +1759,12 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-alpha.64(react@17.0.2)(sass@1.60.0):
+  /vitepress@1.0.0-alpha.64(sass@1.60.0):
     resolution: {integrity: sha512-u12wcDH4VzgxxkQfVQWkXumrL3WRetpenz4VuAtiMWXeZSCayWcJtieWOFxmX/RzS2KEuTJpXGbtJAXORyyJBQ==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.3
-      '@docsearch/js': 3.3.3(react@17.0.2)
+      '@docsearch/js': 3.3.3
       '@vitejs/plugin-vue': 4.1.0(vite@4.2.1)(vue@3.2.47)
       '@vue/devtools-api': 6.5.0
       '@vueuse/core': 9.13.0(vue@3.2.47)
