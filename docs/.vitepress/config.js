@@ -172,6 +172,10 @@ export default defineConfig({
               collapsible: true,
               items: [
                 {
+                  text: 'Attention',
+                  link: '/components/attention/'
+                },
+                {
                   text: 'Modal',
                   link: '/components/modal/',
                 },

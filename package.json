@@ -8,15 +8,14 @@
   },
   "devDependencies": {
     "@warp-ds/component-classes": "1.0.0-alpha.88",
-    "@warp-ds/react": "^1.0.0-alpha.24",
     "@warp-ds/uno": "^1.0.0-alpha.31",
     "@warp-ds/vue": "^1.0.0-alpha.30",
     "markdown-it": "^13.0.1",
-    "sass": "^1.60.0",
-    "unocss": "^0.51.3",
-    "vite": "^4.2.1",
+    "sass": "^1.62.1",
+    "unocss": "^0.52.4",
+    "vite": "^4.3.9",
     "vitepress": "1.0.0-alpha.64",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "pnpm": {
     "peerDependencyRules": {
