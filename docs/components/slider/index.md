@@ -8,6 +8,8 @@
 
 A slider is an input where the user selects a value from within a given range. The precise value, however, is not necessarily considered important.
 
+<components-status react='released' vue='released' />
+
 ## Examples
 
 <theme-switcher />

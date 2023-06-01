@@ -9,6 +9,8 @@
 
 Breadcrumbs show the navigation structure for the current location.
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Example
 
 <theme-switcher />

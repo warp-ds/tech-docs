@@ -6,6 +6,8 @@ import Usage from './usage.md';
 
 # Tabs
 
+<components-status react='released' vue='released' />
+
 ## Examples
 
 <theme-switcher />

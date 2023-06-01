@@ -9,6 +9,8 @@
 
 A single-line text input component.
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Example
 
 <theme-switcher />

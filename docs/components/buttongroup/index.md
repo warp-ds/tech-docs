@@ -8,6 +8,7 @@
 
 Button Group is used to group and align clickable elements, applying different visuals for different needs.
 
+<components-status vue='released' />
 ## Example
 
 <theme-switcher />

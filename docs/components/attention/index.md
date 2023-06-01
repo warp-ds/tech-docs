@@ -6,6 +6,8 @@
 
 # Attention
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Examples
 
 <theme-switcher />

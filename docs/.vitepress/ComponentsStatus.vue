@@ -27,7 +27,7 @@ const status = {
   released: "Released",
   developing: "Developing",
   planned: "Planned",
-  unsupported: "Not supported",
+  unsupported: "Unsupported",
 }
 
 const reactStatusText = computed( () => status[props.react] );
@@ -43,7 +43,7 @@ const getStatus = ( key ) => {
 </script>
 
 <template>
-  <div class="status">
+  <div class="wrapper">
     <div v-for="(component, key) in components" :key="key" class="item">
       <div :class="['circle', `circle-${props[key]}`]"></div>
       <div>
@@ -55,8 +55,9 @@ const getStatus = ( key ) => {
 </template>
 
 <style lang="scss" scoped>
-.status {
+.wrapper {
   display: flex;
+  margin-top: 24px;
 }
 
 .item {
@@ -70,12 +71,12 @@ const getStatus = ( key ) => {
 }
 
 .circle {
-  width: 12px;
-  height: 12px;
   border-radius: 50%;
   display: inline-block;
+  height: 12px;
   margin-right: 12px;
   margin-top: 8px;
+  width: 12px;
 }
 
 .circle-released {

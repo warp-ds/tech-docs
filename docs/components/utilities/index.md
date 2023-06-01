@@ -6,6 +6,7 @@
 
 These components are available to make some of the layout components interactive.
 
+<components-status vue='released' />
 
 ## Example
 

@@ -8,6 +8,8 @@
 
 A multiline text input component.
 
+<components-status react='released' vue='released' />
+
 ## Example
 
 <theme-switcher />

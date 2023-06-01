@@ -7,6 +7,8 @@
 
 Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
 
+<components-status react='released' vue='released' />
+
 ## Example
 
 <theme-switcher />
