@@ -1,6 +1,5 @@
 <script setup>
   import Vue from './vue.md';
-  import Elements from './elements.md';
   import Usage from './usage.md';
 </script>
 
