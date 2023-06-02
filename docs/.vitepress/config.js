@@ -116,6 +116,7 @@ export default defineConfig({
                 { text: 'Radio Buttons', link: '/components/radiobuttons/' },
                 { text: 'Select', link: '/components/select/' },
                 { text: 'Slider', link: '/components/slider/' },
+                { text: 'Switch', link: '/components/switch/' },
                 { text: 'Textarea', link: '/components/textarea/' },
                 { text: 'Textfield', link: '/components/textfield/' },
               ],
@@ -170,6 +171,10 @@ export default defineConfig({
               text: 'Overlays',
               collapsible: true,
               items: [
+                {
+                  text: 'Attention',
+                  link: '/components/attention/'
+                },
                 {
                   text: 'Modal',
                   link: '/components/modal/',

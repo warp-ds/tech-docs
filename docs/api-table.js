@@ -33,6 +33,24 @@ export const react = {
       ],
     ],
   },
+  Attention: {
+    required: [
+      [
+        'placement', "'top' | 'bottom' | 'left' | 'right' ", '', `Placement according to the target element. The arrow will point to the opposite side of this position`,
+      ],
+    ],
+    props: [
+      ['noArrow', 'boolean', 'false', 'Render Attention element without arrow'],
+      ['isShowing', 'boolean', '', 'Whether Attention element is shown Used for tooltip'],
+      ['children', 'Element | Element[]', '', 'Elements inside of the Attention component'],
+      ['targetEl', 'MutableRefObject<unknown>', '', 'The reference container to which the Attention component is positioned relative to'],
+      ['className', 'string', '', 'Extend the Attention component container styling'],
+      ['tooltip', 'boolean', '', 'Whether Attention element is rendered as a tooltip'],
+      ['callout', 'boolean', '', 'Whether Attention element is rendered as a callout'],
+      ['popover', 'boolean', '', 'Whether Attention element is rendered as a popover'],
+      ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -638,6 +656,19 @@ export const react = {
       ['className', 'string', '', 'Additional CSS class for the container'],
     ],
   },
+  Switch: {
+    required: [
+        ['value', 'boolean', '', 'The value of the switch.'],
+    ],
+    props: [
+      ['id', 'string', 'false', 'The unique identifier.'],
+      ['aria-label', 'string', 'false', 'Defines a string value that labels the current element. Must be set if aria-labelledby is not defined.'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if aria-label is not defined.'],
+    ],
+    events: [
+      ['onClick', '() => void', '', 'Handler for when the Switch is clicked.'],
+    ]
+  },
   Tab: {
     required: [
       ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
@@ -715,6 +746,21 @@ export const vue = {
       ['positive', 'boolean', 'undefined', 'Creates a positive alert'],
       ['warning', 'boolean', 'undefined', 'Creates a warning alert'],
       ['info', 'boolean', 'undefined', 'Creates an info alert'],
+    ],
+  },
+  Attention: {
+    required: [
+      ['target-el', 'string', '', 'Selector of element that the Attention component is rendered relatively to'],
+    ],
+    props: [
+      ['bottom', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['top', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['left', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['right', 'boolean', 'false', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['tooltip', 'boolean', 'false', 'Render tooltip'],
+      ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
+      ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
+      ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
     ],
   },
   Box: {
@@ -1031,6 +1077,20 @@ export const vue = {
       ['right', 'boolean', 'false', 'Align steps to the right'],
     ],
   },
+  Switch: {
+    required: [
+      [
+        'v-model',
+        'boolean',
+        'false',
+        "The value of the switch.",
+      ],
+    ],
+    props: [
+      ['id', 'string', 'false', 'The unique identifier.'],
+      ['disabled', 'boolean', 'false', 'Whether the switch is disabled.'],
+    ],
+  },
   Tab: {
     required: [
       ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
@@ -1082,6 +1142,19 @@ export const elements = {
     props: [
       ['show', 'boolean', 'false', 'Controls when the alert shows'],
       ['role', 'string', 'alert', 'ARIA live region "role" attribute value'],
+    ],
+  },
+  Attention: {
+    required: [
+      ['placement', "'top' | 'right' | 'bottom' | 'left'", '', 'Placement according to the target element. Arrow would be on the opposite side of this position'],
+      ['target-selector', 'string', '', 'Selector of element that the Attention component is rendered relatively to'],
+    ],
+    props: [
+      ['no-arrow', 'boolean', 'false', 'Render Attention element without an arrow'],
+      ['tooltip', 'boolean', 'false', 'Render tooltip'],
+      ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
+      ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
+      ['show', 'boolean', 'false', 'Whether Attention element should be visible'],
     ],
   },
   Box: {
