@@ -161,8 +161,8 @@ export default defineConfig({
                   link: '/guidelines/data-visualization/color-usage/',
                 },
                 {
-                  text: 'Best Practices',
-                  link: '/guidelines/data-visualization/best-practices/',
+                  text: 'Success criteria',
+                  link: '/guidelines/data-visualization/success-criteria/',
                 },
               ],
             },
