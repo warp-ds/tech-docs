@@ -1,28 +1,8 @@
 # Getting Started
 
-These guidelines are primiary for customer facing products and services, but can also be used for internal graphs and visualisations.
+Here you will find guidelines about data visualisation in customer facing products and services.
 
-![A bar chart, donut chart and bubble graph](/tech-docs/dataviz-graphs.svg)
-
-## What is data visualisation?
-
-Data visualisation is a visual representation of data, and includes graphs, charts, maps and diagrams. These guidelines focus on visualisation of quantitative data in graphs and charts.
-
-When creating a visualisation from data we encode data into visual attributes such as shape, colour, size, position, length and angle.
-
-## Why should you visualise data?
-
-Data visualisation can help you convey information in a clear and engaging way. In particular, data visualisation makes it easier for people to:
-
-- Compare numbers and other values
-- Understand trends and patterns
-- Discover outliers.
-
-In addition, visualisations are often easier and quicker to digest and remember than large amounts of text and numbers.
-
-## What is a good visualisation?
-
-A good visualisation communicates insight in a clear and engaging way without the need of somebody to explain the insight to you. Don’t be afraid to add some text to make the visualisation clear. The best visualisations enable users to take action based on the insights they get from the visualisation.
+![A generic bar chart, donut chart and bubble graph](/dataviz-graphs.svg)
 
 ## What do you need to think about?
 
@@ -39,19 +19,49 @@ When you create visualisations you want to:
     
 4. **Make the information accessible for everyone**<br>
     Make the information available in multiple ways so that all users can benefit from it.
-    
+
+These are high level principles we should strive for. In the section [Success criteria](/guidelines/data-visualization/best-practices/) there are more specific guidelines.
+
 
 ## How do you define the goal of your visualisation?
 
-Before you make a visualisation it can be useful to define the goal of the visualisation. One way of doing so is to answer to core questions,
+Before you make a visualisation it can be useful to define the goal of the visualisation. One way of doing so is two answer two core questions:
+- Should your visualisation **explain** an insight, or allow people to **explore** on their own?
+- Should your visualisation enable people to **read** off the information in detail, or rather provide them an overall **feeling** of the data?
 
-Should your visualisation be explanatory or exploratory?
+![A scale ranging from Explain to Explore, and another scale ranging from Read to Feel](/dataviz-explain-explore-read-feel.svg)
+
+### Explain vs Explore
 
 - **Explanatory**: your visualisation explains or communicates a specific story or insight to someone. In this case, you need to figure out what story to tell, and how to tell it.
 - **Exploratory**: users should explore data freely and find their own insight, for example in an analytical dashboard. In this case, you need to figure out how they are going to do that, for example using filters and sorting.
 
+### Read vs Feel
+- **Read**: the focus is on being able to read the data as efficiently and precise as possible. In this case, make sure to use the graph types and elements that allows for a precise reading. For example, it is hard to compare one angle with another, or the size of an area with another, while it is easier to compare the length of lines next to each other.
+- **Feel**: the focus is on evoking a feeling or overall impression of the data. In this case, consider visual means that evoke associations and emotions and make the visualisation memorable.
+
+
+## What is a good visualisation?
+
+A good visualisation communicates insight in a clear and engaging way without the need of somebody to explain the insight to you. Don’t be afraid to add some text to make the visualisation clear. The best visualisations enable users to take action based on the insights they get from the visualisation.
+
+Consider this example:
+
+![A pile of bottles next to The Eiffel tower. Text: Every day the equivalent of a bottle pile half the size of the Eiffel Tower in Paris is sold around the world. ](/dataviz-eiffel.jpg)
+Source: [REUTERS](https://www.reuters.com/graphics/ENVIRONMENT-PLASTIC/0100B275155/index.html)
+
+The visualisation above puts a number (that otherwise would be very abstract) into a context that makes it possible to understand. In addition, the visual form itself grabs your attention and makes the insight memorable. Text is used to explain the visuals.
+
+It seems that the goal of this visualisation is to explain a specific message, rather than make you explore a dataset. In addition, the goal seems to be to make you feel something and get an overall understanding rather than enable you to read off exact values.
+
+![A scale where a dot is placed close to 'Explain' and far from 'Explore'. Another scale with a dot placed close to 'Feel' and far from 'Read' ](/dataviz-explain-feel.svg)
+
+
 ## Which visualisation library should you use?
-*To be decided*
+There are many JavaScript libraries available, such as [HighCharts](https://www.highcharts.com), [D3](https://d3js.org/), [visx](https://airbnb.io/visx/), [Recharts](https://recharts.org/) and [Apexcharts](https://apexcharts.com/). 
+
+We have not (yet) decided on a recommended charting library. Make sure to check if the library allows you to follow the [Success criteria](/guidelines/data-visualization/best-practices/), for example for screen reader accessibility.
+
 
 ## How do you provide feedback or get help?
 
