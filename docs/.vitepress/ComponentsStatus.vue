@@ -35,9 +35,9 @@ const vueStatusText = computed( () => status[props.vue] );
 const elementsStatusText = computed( () => status[props.elements] );
 
 const getStatus = ( key ) => {
-  if ( key === 'react' ) return reactStatusText.value;
-  else if ( key === 'vue' ) return vueStatusText.value;
-  else if ( key === 'elements' ) return elementsStatusText.value;
+  if (key === 'react') return reactStatusText.value;
+  else if (key === 'vue') return vueStatusText.value;
+  else if (key === 'elements') return elementsStatusText.value;
   return 'No status'
 }
 </script>
