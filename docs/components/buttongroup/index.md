@@ -1,7 +1,7 @@
 <script setup>
   import Vue from './vue.md';
   import Elements from './elements.md';
-  import React from './react.md';
+  import Usage from './usage.md';
 </script>
 
 # Button Group
@@ -16,13 +16,14 @@ Button Group is used to group and align clickable elements, applying different v
 <buttongroup-example />
 
 <tabs-content> 
+  <template #usage>
+    <usage />
+  </template>
   <template #react>
-   <react />
   </template>
   <template #vue>
     <vue />
   </template>
   <template #elements>
-    <elements />
   </template>
 </tabs-content>

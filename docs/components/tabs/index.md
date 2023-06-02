@@ -21,7 +21,9 @@ import Usage from './usage.md';
   <template #react>
    <react />
   </template>
- <template #vue>
+  <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

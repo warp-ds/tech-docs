@@ -16,10 +16,14 @@ Checkboxes allow users to select multiple items from a list of individual items,
 <checkbox-example />
 
 <tabs-content>
+  <template #usage>
+  </template>
   <template #react>
    <react />
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

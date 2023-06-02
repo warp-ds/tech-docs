@@ -26,4 +26,6 @@ A dropdown component for selecting a single value. Selects (sometimes known as "
   <template #vue>
     <vue />
   </template>
+  <template #elements>
+  </template>
 </tabs-content>

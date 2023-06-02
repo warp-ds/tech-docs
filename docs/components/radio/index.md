@@ -16,10 +16,14 @@ Radios allow users to select a single option from a list of mutually exclusive o
 <radio-example />
 
 <tabs-content>
+  <template #usage>
+  </template>
   <template #react>
    <react />
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

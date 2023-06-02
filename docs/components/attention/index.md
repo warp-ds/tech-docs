@@ -15,6 +15,8 @@
 <attention-example></attention-example>
 
 <tabs-content>
+  <template #usage>
+  </template>
   <template #react>
    <react />
   </template>

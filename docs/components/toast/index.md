@@ -15,6 +15,10 @@ Toasts display small snippets of information to the user and then disappear afte
   <template #usage>
     <usage />
   </template>
+  <template #react>
+  </template>
+  <template #vue>
+  </template>
   <template #elements>
     <elements />
   </template>

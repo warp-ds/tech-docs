@@ -26,4 +26,6 @@ A slider is an input where the user selects a value from within a given range. T
   <template #vue>
     <vue />
   </template>
+  <template #elements>
+  </template>
 </tabs-content>

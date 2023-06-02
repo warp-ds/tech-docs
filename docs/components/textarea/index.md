@@ -26,4 +26,6 @@ A multiline text input component.
   <template #vue>
     <vue />
   </template>
+  <template #elements>
+  </template>
 </tabs-content>

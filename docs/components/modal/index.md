@@ -26,4 +26,6 @@ Modals (or dialogs) display important information that users need to acknowledge
   <template #vue>
     <vue />
   </template>
+  <template #elements>
+  </template>
 </tabs-content>
