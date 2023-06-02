@@ -656,6 +656,19 @@ export const react = {
       ['className', 'string', '', 'Additional CSS class for the container'],
     ],
   },
+  Switch: {
+    required: [
+        ['value', 'boolean', '', 'The value of the switch.'],
+    ],
+    props: [
+      ['id', 'string', 'false', 'The unique identifier.'],
+      ['aria-label', 'string', 'false', 'Defines a string value that labels the current element. Must be set if aria-labelledby is not defined.'],
+      ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if aria-label is not defined.'],
+    ],
+    events: [
+      ['onClick', '() => void', '', 'Handler for when the Switch is clicked.'],
+    ]
+  },
   Tab: {
     required: [
       ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
@@ -1062,6 +1075,20 @@ export const vue = {
     props: [
       ['horizontal', 'boolean', 'false', 'Direction of steps'],
       ['right', 'boolean', 'false', 'Align steps to the right'],
+    ],
+  },
+  Switch: {
+    required: [
+      [
+        'v-model',
+        'boolean',
+        'false',
+        "The value of the switch.",
+      ],
+    ],
+    props: [
+      ['id', 'string', 'false', 'The unique identifier.'],
+      ['disabled', 'boolean', 'false', 'Whether the switch is disabled.'],
     ],
   },
   Tab: {
