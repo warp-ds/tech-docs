@@ -16,9 +16,9 @@ Card is a layout component used for a traditional card look and feel.
 
 <card-example />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

@@ -4,7 +4,7 @@
 import { Steps, Step } from '@warp-ds/react';
 ```
 
-## Usage
+## Syntax
 
 ```js
 function Example() {

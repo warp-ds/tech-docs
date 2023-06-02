@@ -1,6 +1,5 @@
 <script setup>
   import Vue from './vue.md';
-  import Usage from './usage.md';
 </script>
 
 # Button Group
@@ -14,10 +13,14 @@ Button Group is used to group and align clickable elements, applying different v
 
 <buttongroup-example />
 
+## Usage
+This component is only supported in Warp Vue at the moment.
+
+For a React equivalent that serves a similar purpose, use the `Toggle` in [RadioButtons](/components/radiobuttons), and use the `Toggle` with `radio-button` type.
+
+## Frameworks
+
 <tabs-content> 
-  <template #usage>
-    <usage />
-  </template>
   <template #react>
   </template>
   <template #vue>

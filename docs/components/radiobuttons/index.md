@@ -15,9 +15,9 @@ Radio buttons allow users to select a single option from a list of mutually excl
 
 <radiobuttons-example />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

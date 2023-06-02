@@ -1,7 +1,6 @@
 <script setup>
 import Vue from './vue.md';
 import React from './react.md';
-import Usage from './usage.md';
 </script>
 
 # Tabs
@@ -14,10 +13,14 @@ import Usage from './usage.md';
 
 <tabs-example></tabs-example>
 
+## Usage
+### Accessibility
+
+Focus management and ARIA attributes are handled automatically.
+
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-   <usage />
-  </template>
   <template #react>
    <react />
   </template>

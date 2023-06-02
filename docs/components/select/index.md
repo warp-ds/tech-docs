@@ -1,5 +1,4 @@
 <script setup>
-  import Usage from './usage.md';
   import Vue from './vue.md';
   import React from './react.md';
 </script>
@@ -16,10 +15,18 @@ A dropdown component for selecting a single value. Selects (sometimes known as "
 
 <select-example />
 
+## Usage
+
+### Accessibility
+
+If a visible label isn't specified, an `aria-label` should be provided to the
+Select for accessibility. If the field is labeled by a separate element, an
+`aria-labelledby` prop should be provided using the id of the labeling element
+instead.
+
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-   <usage />
-  </template>
   <template #react>
    <react />
   </template>

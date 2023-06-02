@@ -1,13 +1,13 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { Attention } from '@warp-ds/vue';
 app.use(Attention);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wAttention } from '@warp-ds/vue';

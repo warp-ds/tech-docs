@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex space-x-8">
+  <div class="flex space-x-8 component">
     <w-pill label="Standard pill" />
     <w-pill suggestion label="Suggestion pill" />
     <w-pill can-close label="Closable pill" />

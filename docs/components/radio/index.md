@@ -15,9 +15,9 @@ Radios allow users to select a single option from a list of mutually exclusive o
 
 <radio-example />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

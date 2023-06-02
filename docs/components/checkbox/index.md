@@ -15,9 +15,9 @@ Checkboxes allow users to select multiple items from a list of individual items,
 
 <checkbox-example />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

@@ -1,4 +1,4 @@
-### Usage
+## Syntax
 
 ```js
 <w-alert variant="info" show="">

@@ -1,19 +1,19 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { Steps } from '@warp-ds/vue';
 app.use(Steps);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wSteps, wStep } from '@warp-ds/vue';
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-steps>

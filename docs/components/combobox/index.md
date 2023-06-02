@@ -12,9 +12,9 @@ A combobox is the combination of an `<input type="text"/>` and a list. The list 
 
 ![Combobox](/combobox.png)
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

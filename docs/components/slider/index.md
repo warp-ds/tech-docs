@@ -1,7 +1,6 @@
 <script setup>
   import React from './react.md';
   import Vue from './vue.md';
-  import Usage from './usage.md';
 </script>
 
 # Slider
@@ -16,10 +15,19 @@ A slider is an input where the user selects a value from within a given range. T
 
 <slider-example></slider-example>
 
+## Usage
+
+### Accessibility
+
+To be accessible, an `aria-label` prop should be provided to the slider. If the slider is labeled by a separate element, use the `labelledby` prop with the id of the labeling element instead.
+
+### Events
+
+The slider accepts an `onChange` prop which is triggered whenever the value is changed by the user. Note that this value updates as the user is dragging.
+
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-   <usage />
-  </template>
   <template #react>
    <react />
   </template>

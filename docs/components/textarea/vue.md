@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Forms } from '@warp-ds/vue'
 app.use(Forms)
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wTextarea } from '@warp-ds/vue'
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-textarea label="A label" hint="A hint" v-model="model" />

@@ -4,7 +4,7 @@
 import { Breadcrumbs } from '@warp-ds/react';
 ```
 
-## Usage
+## Syntax
 
 ```js
 <Breadcrumbs>

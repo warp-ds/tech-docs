@@ -11,9 +11,9 @@ __N.B.__ Broadcast should only be included once per page to avoid duplicate broa
 
 <components-status elements='released' />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
   </template>
   <template #vue>

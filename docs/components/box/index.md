@@ -16,9 +16,9 @@ Box is a layout component used for separating content areas on a page.
 
 <box-example />
 
+## Frameworks
+
 <tabs-content> 
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

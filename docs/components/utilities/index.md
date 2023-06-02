@@ -14,9 +14,9 @@ These components are available to make some of the layout components interactive
 
 <utilities-example />
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
   </template>
   <template #vue>

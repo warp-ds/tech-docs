@@ -17,9 +17,9 @@ Expandable is a layout component used for creating expandable content areas on a
 
 <expandable-example></expandable-example>
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

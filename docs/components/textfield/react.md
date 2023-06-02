@@ -4,7 +4,7 @@
 import { TextField } from '@warp-ds/react';
 ```
 
-## Usage
+## Syntax
 
 ```js
 <TextField label="Name" />

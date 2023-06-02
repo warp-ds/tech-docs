@@ -16,9 +16,9 @@ Alert is an inline component used for displaying different types of messages.
 
 <alert-example></alert-example>
 
+## Frameworks
+
 <tabs-content> 
-  <template #usage disabled>
-  </template>
   <template #react>
    <react />
   </template>

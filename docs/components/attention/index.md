@@ -14,9 +14,9 @@
 
 <attention-example></attention-example>
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

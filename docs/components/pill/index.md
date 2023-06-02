@@ -11,15 +11,15 @@ Pill is a type of button that is often used as a filter, but can also be used as
 
 <components-status react='released' vue='released' />
 
-## Examples
+## Example
 
 <theme-switcher />
 
 <pill-example />
 
+## Frameworks
+
 <tabs-content> 
-  <template #usage>
-  </template>
   <template #react>
     <react />
   </template>

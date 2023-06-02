@@ -15,9 +15,9 @@ The steps component is built to handle user journeys, making it clear to the end
 
 <steps-example></steps-example>
 
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-  </template>
   <template #react>
    <react />
   </template>

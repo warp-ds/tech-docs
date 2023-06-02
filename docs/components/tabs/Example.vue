@@ -11,11 +11,11 @@ const Stars = {
     }),
 };
 
-const model = ref('first');
+const model = ref('one');
 </script>
 
 <template>
-  <div>
+  <div class="component">
     <token :state="[model]">
       <w-tabs v-model="model">
         <w-tab label="Tab 1" name="one">
