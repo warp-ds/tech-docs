@@ -1,54 +1,39 @@
 <script setup>
 import { computed } from 'vue';
 
-// props: 'released' | 'developing' | 'planned' | 'unsupported'
 const props = defineProps({
   react: {
     type: String,
     default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
   },
   vue: {
     type: String,
     default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
   },
   elements: {
     type: String,
     default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
   },
 });
 
-const components = {
-  react: "React",
-  vue: "Vue",
-  elements: "Elements",
-};
+const frameworkStatus = computed(() => [
+  { name: 'React', status: props.react },
+  { name: 'Vue', status: props.vue },
+  { name: 'Elements', status: props.elements },
+]);
 
-const status = {
-  released: "Released",
-  developing: "Developing",
-  planned: "Planned",
-  unsupported: "Unsupported",
-}
-
-const reactStatusText = computed( () => status[props.react] );
-const vueStatusText = computed( () => status[props.vue] );
-const elementsStatusText = computed( () => status[props.elements] );
-
-const getStatus = ( key ) => {
-  if (key === 'react') return reactStatusText.value;
-  else if (key === 'vue') return vueStatusText.value;
-  else if (key === 'elements') return elementsStatusText.value;
-  return 'No status'
-}
 </script>
 
 <template>
   <div class="wrapper">
-    <div v-for="(component, key) in components" :key="key" class="item">
-      <div :class="['circle', `circle-${props[key]}`]"></div>
+    <div v-for="framework in frameworkStatus" :key="framework.name" class="item">
+      <div :class="`circle circle-${framework.status}`"></div>
       <div>
-        <h4 class="title">{{ component }}</h4>
-        <span>{{ getStatus(key) }}</span>
+        <h4 class="title">{{ framework.name }}</h4>
+        <span class="status">{{ framework.status }}</span>
       </div>
     </div>
   </div>
@@ -93,5 +78,9 @@ const getStatus = ( key ) => {
 
 .circle-unsupported {
   background-color: #f99
+}
+
+.status {
+  text-transform: capitalize;
 }
 </style>
