@@ -20,7 +20,7 @@ When you create visualisations you want to:
 4. **Make the information accessible for everyone**<br>
     Make the information available in multiple ways so that all users can benefit from it.
 
-These are high level principles we should strive for. In the section [Success criteria](/guidelines/data-visualization/best-practices/) there are more specific guidelines.
+These are high level principles we should strive for. In the section [Success criteria](/guidelines/data-visualization/success-criteria/) there are more specific guidelines.
 
 
 ## How do you define the goal of your visualisation?
@@ -60,7 +60,7 @@ It seems that the goal of this visualisation is to explain a specific message, r
 ## Which visualisation library should you use?
 There are many JavaScript libraries available, such as [HighCharts](https://www.highcharts.com), [D3](https://d3js.org/), [visx](https://airbnb.io/visx/), [Recharts](https://recharts.org/) and [Apexcharts](https://apexcharts.com/). 
 
-We have not (yet) decided on a recommended charting library. Make sure to check if the library allows you to follow the [Success criteria](/guidelines/data-visualization/best-practices/), for example for screen reader accessibility.
+We have not (yet) decided on a recommended charting library. Make sure to check if the library allows you to follow the [Success criteria](/guidelines/data-visualization/success-criteria/), for example for screen reader accessibility.
 
 
 ## How do you provide feedback or get help?
