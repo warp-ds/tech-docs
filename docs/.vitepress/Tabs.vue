@@ -1,5 +1,5 @@
 <script setup>
-import { ref, getCurrentInstance } from 'vue';
+import { ref } from 'vue';
 
 const props = defineProps({
   initialTab: String,
