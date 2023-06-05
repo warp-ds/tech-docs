@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Forms } from '@warp-ds/vue'
 app.use(Forms)
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wInput } from '@warp-ds/vue'
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-input label="A label" hint="A hint" v-model="model" />
@@ -79,7 +79,7 @@ If the form element is marked required, a special rule will be inserted before a
 
 The required prop can accept a function that will be used as the required-rule.
 
-## FIELD Usage 
+## FIELD Syntax 
 
 ```js
 <w-field label="I can be anything!" hint="Isn't that neat?">

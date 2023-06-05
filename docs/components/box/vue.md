@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Box } from "@warp-ds/vue";
 app.use(Box);
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wBox } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-box info>

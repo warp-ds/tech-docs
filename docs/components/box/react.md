@@ -4,7 +4,7 @@
 import { Box } from "@warp-ds/react";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <Box info>

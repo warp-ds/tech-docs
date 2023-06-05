@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Button } from "@warp-ds/vue";
 app.use(Button);
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wButton } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-button primary>Click me</w-button>

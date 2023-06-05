@@ -4,7 +4,7 @@
 import { Alert } from "@warp-ds/react";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <Alert type="info" show>

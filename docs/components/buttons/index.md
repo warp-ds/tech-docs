@@ -1,5 +1,4 @@
 <script setup>
-  import Usage from './usage.md';
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
@@ -9,15 +8,23 @@
 
 Buttons are used to perform actions, with different visuals for different needs.
 
-### Example
+<components-status react='released' vue='released' elements='released' />
+
+## Example
 <theme-switcher />
 
 <button-example />
 
+## Usage
+
+### Accessibility
+
+If the button doesn't have visible text content, such as when used with only an
+icon, an `aria-label` prop must be provided for accessibility.
+
+## Frameworks
+
 <tabs-content> 
-  <template #usage>
-   <usage />
-  </template>
   <template #react>
    <react />
   </template>

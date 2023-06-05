@@ -4,7 +4,7 @@
 import { Pill } from "@warp-ds/react";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <Pill suggestion label="Suggestion pill" />

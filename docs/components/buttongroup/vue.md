@@ -1,19 +1,19 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { ButtonGroup } from "@warp-ds/vue";
 app.use(ButtonGroup);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wButtonGroup, wButtonGroupItem } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
   <w-button-group>

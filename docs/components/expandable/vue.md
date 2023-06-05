@@ -1,19 +1,19 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { Expandable } from '@warp-ds/vue';
 app.use(Expandable);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wExpandable, wExpandTransition, wWillExpand } from '@warp-ds/vue';
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-expandable title="I am expandable">

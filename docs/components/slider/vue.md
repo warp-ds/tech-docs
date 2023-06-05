@@ -1,13 +1,13 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { Slider } from '@warp-ds/vue';
 app.use(Slider);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wSlider } from '@warp-ds/vue';

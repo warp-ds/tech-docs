@@ -8,12 +8,15 @@
 
 Card is a layout component used for a traditional card look and feel.
 
+<components-status react='released' vue='released' elements='released' />
 
 ## Example
 
 <theme-switcher />
 
 <card-example />
+
+## Frameworks
 
 <tabs-content>
   <template #react>

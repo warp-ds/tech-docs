@@ -8,11 +8,16 @@
 
 Expandable is a layout component used for creating expandable content areas on a page.
 
+
+<components-status react='released' vue='released' elements='released' />
+
 ## Examples
 
 <theme-switcher />
 
 <expandable-example></expandable-example>
+
+## Frameworks
 
 <tabs-content>
   <template #react>

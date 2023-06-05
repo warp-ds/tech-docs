@@ -11,7 +11,7 @@ app.use(Forms)
 import { wToggle } from '@warp-ds/vue'
 ```
 
-## Vue syntax
+## Syntax
 
 ```html
 <w-toggle radio v-model="model" label="A label" :toggles="[

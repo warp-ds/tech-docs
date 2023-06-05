@@ -8,11 +8,15 @@
 
 Box is a layout component used for separating content areas on a page.
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Example
 
 <theme-switcher />
 
 <box-example />
+
+## Frameworks
 
 <tabs-content> 
   <template #react>

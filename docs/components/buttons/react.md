@@ -4,7 +4,7 @@
 import { Button } from '@warp-ds/react';
 ```
 
-## Example
+## Syntax
 
 ```jsx example
 <Button>Save</Button>

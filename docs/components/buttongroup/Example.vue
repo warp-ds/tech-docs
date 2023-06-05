@@ -26,7 +26,7 @@ const modifiers = reactive(buildCheckboxState({ controls: modifierControls }))
 </script>
 
 <template>
-  <div>
+  <div class="component">
     <component-title title="Button Group" />
 
     <token :state="[type, radioModel, modifiers]">

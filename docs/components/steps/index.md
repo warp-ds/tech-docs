@@ -7,11 +7,15 @@ import React from './react.md';
 
 The steps component is built to handle user journeys, making it clear to the end user where they are in the process.
 
+<components-status react='released' vue='released' />
+
 ## Examples
 
 <theme-switcher />
 
 <steps-example></steps-example>
+
+## Frameworks
 
 <tabs-content>
   <template #react>
@@ -19,5 +23,7 @@ The steps component is built to handle user journeys, making it clear to the end
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

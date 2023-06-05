@@ -1,12 +1,12 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 ```js
 import { Tabs } from '@warp-ds/vue';
 app.use(Tabs);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wTabs } from '@warp-ds/vue';

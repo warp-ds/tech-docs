@@ -18,7 +18,7 @@ Once you have imported the elements package, import the toast api package.
 import { toast, removeToast, updateToast } from '@warp-ds/elements/toast';
 ```
 
-## Usage
+## Syntax
 You create a new toast by giving it a message:
 
 ```js

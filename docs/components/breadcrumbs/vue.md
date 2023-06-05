@@ -1,19 +1,19 @@
 ## Import
 
-### Use in entire app
+> Use in entire app
 
 ```js
 import { Breadcrumbs } from "@warp-ds/vue";
 app.use(Breadcrumbs);
 ```
 
-### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wBreadcrumbs } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-breadcrumbs>
