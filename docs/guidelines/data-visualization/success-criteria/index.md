@@ -5,7 +5,7 @@
   import Screenreader from './screenreader.md';
 </script>
 
-# Best Practices
+# Success criteria
 
 This page will provide best practice for data visualisation related to
 - Cognitive
