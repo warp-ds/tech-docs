@@ -201,8 +201,8 @@ export default defineConfig({
                   link: '/guidelines/data-visualization/chart-types/',
                 },
                 {
-                  text: 'Color Usage',
-                  link: '/guidelines/data-visualization/color-usage/',
+                  text: 'Colour Usage',
+                  link: '/guidelines/data-visualization/colour-usage/',
                 },
                 {
                   text: 'Success criteria',
