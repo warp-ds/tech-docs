@@ -16,7 +16,7 @@ Button Group is used to group and align clickable elements, applying different v
 ## Usage
 This component is only supported in Warp Vue at the moment.
 
-For a React equivalent that serves a similar purpose, use the `Toggle` in [RadioButtons](/components/radiobuttons), and use the `Toggle` with `radio-button` type.
+For a React equivalent that serves a similar purpose, use the `Toggle` in [RadioButtons](/components/radiobuttons/).
 
 ## Frameworks
 
