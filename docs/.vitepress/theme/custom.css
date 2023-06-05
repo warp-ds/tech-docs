@@ -13,8 +13,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  --vp-c-brand: #9F2F28;
-  --vp-c-brand-dark: #9F2F28;
+  --vp-c-brand: #BE3830;
+  --vp-c-brand-dark: #BE3830;
   --vp-home-hero-name-color: #BE3830;
   --vp-c-brand-darker: #8E2A24;
   --vp-c-brand-light: #CF4840;
@@ -26,9 +26,9 @@ body {
 }
 
 html.dark body {
-  --vp-c-brand: #D6635C;
-  --vp-c-brand-dark: #D6635C;
-  --vp-home-hero-name-color: #D6635C;
+  --vp-c-brand: #F6D553;
+  --vp-c-brand-dark: #F6D553;
+  --vp-home-hero-name-color: #F6D553;
 }
 
 /* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
