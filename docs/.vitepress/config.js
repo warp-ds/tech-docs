@@ -88,8 +88,25 @@ export default defineConfig({
           text: 'Introduction',
           collabsible: true,
           items: [
-            { text: 'Getting Started', link: '/getting-started/' },
-            { text: 'Migrating from Fabric', link: '/migrating' },
+            { text: 'Welcome to Warp', link: '/welcome/' },
+          ],
+        },
+        {
+          text: 'Getting started',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Developers', link: '/getting-started/developers/' },
+            { text: 'Designers', link: '/getting-started/designers/' },
+          ],
+        },
+        {
+          text: 'Migration to Warp',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Developers guide', link: '/migration/developers/' },
+            { text: 'Designers guide', link: '/migration/designers/' },
           ],
         },
         {
@@ -188,6 +205,7 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
+            { text: 'Designing with a system', link: '/guidelines/design-system/' },
             {
               text: 'Data vizualisation',
               collapsible: true,
