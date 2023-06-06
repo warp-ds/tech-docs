@@ -1,4 +1,4 @@
-# Getting started guide for designers
+# Getting started for designers
 
 Hello 👋 welcome to Warp! If you are just getting started with designing for Nordic Marketplaces you are in the right place. Warp is the design system for all different marketplaces. 
 

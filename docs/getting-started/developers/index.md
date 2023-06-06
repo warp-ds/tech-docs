@@ -4,7 +4,7 @@
   import React from './react.md';
 </script>
 
-# Getting Started for developers
+# Getting started for developers
 
 This page describes how to get started building an application with Warp components.
 
