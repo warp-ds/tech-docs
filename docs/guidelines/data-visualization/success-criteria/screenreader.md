@@ -1,6 +1,6 @@
 <br>
 
-# Screen reader accessibility
+# Screen reader
 
 Data and insights should be accessible for people using screen readers.
 

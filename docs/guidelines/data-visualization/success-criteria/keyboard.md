@@ -1,6 +1,6 @@
 <br>
 
-# Keyboard accessibility
+# Keyboard navigation
 
 The charts should be easy to operate through keyboard interaction, in addition to pointer interaction.
 
