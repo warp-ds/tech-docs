@@ -16,9 +16,13 @@ The most common functions are:
 - **Part to whole**. See the composition of a whole
 - **Geolocation**. See the geographical distribution of a particular variable.
 
-For a full overview of different chart types you can use for different functions, have a look at the [DataViz Project](https://datavizproject.com/). Below are a few of the most common chart types.
+::: tip
+For a full overview of different chart types you can use for different functions, have a look at the [DataViz Project](https://datavizproject.com/).
+:::
 
 ## Most common chart types
+
+Here you'll find a few of the most common chart types.
 
 ### Vertical column chart and horizontal bar chart
 
