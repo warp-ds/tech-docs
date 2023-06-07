@@ -36,6 +36,13 @@ export default defineConfig({
     [
       'link',
       {
+        rel: 'icon',
+        href: '/warp-logo-small.svg'
+      }
+    ],
+    [
+      'link',
+      {
         rel: 'stylesheet',
         href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css'
       }
