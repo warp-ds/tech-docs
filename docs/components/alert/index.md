@@ -8,11 +8,15 @@
 
 Alert is an inline component used for displaying different types of messages.
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Example
 
 <theme-switcher />
 
 <alert-example></alert-example>
+
+## Frameworks
 
 <tabs-content> 
   <template #react>

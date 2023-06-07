@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Alert } from "@warp-ds/vue";
 app.use(Alert);
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wAlert } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-alert v-model="showAlert" info title="I am a title">

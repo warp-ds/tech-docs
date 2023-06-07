@@ -6,6 +6,7 @@
 
 These components are available to make some of the layout components interactive.
 
+<components-status vue='released' />
 
 ## Example
 
@@ -13,8 +14,14 @@ These components are available to make some of the layout components interactive
 
 <utilities-example />
 
+## Frameworks
+
 <tabs-content>
+  <template #react>
+  </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

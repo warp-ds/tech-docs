@@ -11,7 +11,7 @@ app.use(Forms)
 import { wSelect } from '@warp-ds/vue'
 ```
 
-## Vue syntax
+## Syntax
 
 ```html
 <w-select v-model="model" label="A label">

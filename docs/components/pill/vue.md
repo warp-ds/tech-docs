@@ -1,19 +1,19 @@
 ## Import
 
-#### Use in entire app
+> Use in entire app
 
 ```js
 import { Pill } from "@warp-ds/vue";
 app.use(Pill);
 ```
 
-#### Use in one component and special imports
+> Use in one component and special imports
 
 ```js
 import { wPill } from "@warp-ds/vue";
 ```
 
-## Usage
+## Syntax
 
 ```js
 <w-pill suggestion label="Suggestion pill" />

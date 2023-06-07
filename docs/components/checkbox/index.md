@@ -7,11 +7,15 @@
 
 Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
 
+<components-status react='released' vue='released' />
+
 ## Example
 
 <theme-switcher />
 
 <checkbox-example />
+
+## Frameworks
 
 <tabs-content>
   <template #react>
@@ -19,5 +23,7 @@ Checkboxes allow users to select multiple items from a list of individual items,
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

@@ -1,4 +1,4 @@
-## Example usage
+## Syntax
 
 ```js
 <w-broadcast 

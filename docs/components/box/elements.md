@@ -1,4 +1,4 @@
-### Usage
+## Syntax
 
 ```js
 <w-box info>

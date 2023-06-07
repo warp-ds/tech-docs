@@ -1,4 +1,4 @@
-## Usage
+## Syntax
 
 ```js
 <w-button variant="primary">Primary button</w-button>

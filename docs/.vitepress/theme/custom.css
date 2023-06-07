@@ -1,35 +1,35 @@
-@font-face{font-family:Finntype;font-style:normal;font-weight:400;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2") format("woff2")}
-@font-face{font-family:Finntype;font-style:normal;font-weight:700;src:url("https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2") format("woff2")}
 :root {
-  --vp-c-brand: #2b7eff;
-  --vp-c-brand-dark: #0063fb;
-  --vp-home-hero-name-color: #195FAB;
-  --vp-c-brand-darker: #004abc;
-  --vp-c-brand-light: #5e9cfd;
-  --vp-c-brand-lighter: #9ac1fe;
+  --vp-c-brand: #BE3830;
+  --vp-c-brand-dark: #BE3830;
+  --vp-home-hero-name-color: #BE3830;
+  --vp-c-brand-darker: #9F2F28;
+  --vp-c-brand-light: #CF4840;
+  --vp-c-brand-lighter: #E6A29D;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  --vp-c-brand: #2b7eff;
-  --vp-c-brand-dark: #0063fb;
-  --vp-home-hero-name-color: #195FAB;
-  --vp-c-brand-darker: #004abc;
-  --vp-c-brand-light: #5e9cfd;
-  --vp-c-brand-lighter: #9ac1fe;
+  --vp-c-brand: #BE3830;
+  --vp-c-brand-dark: #BE3830;
+  --vp-home-hero-name-color: #BE3830;
+  --vp-c-brand-darker: #8E2A24;
+  --vp-c-brand-light: #CF4840;
+  --vp-c-brand-lighter: #E6A29D;
   --vp-font-family-base: Finntype, Inter, -apple-system,
     BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: auto;
 }
-.VPHero .image-bg {
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #195FAB44 30%, #4AB1E444);
-  --vp-home-hero-image-filter: blur(32px);
-}
+
 html.dark body {
-  --vp-home-hero-name-color: #4AB1E4;
+  --vp-c-brand: #F6D553;
+  --vp-c-brand-dark: #F6D553;
+  --vp-home-hero-name-color: #F6D553;
 }
+
 /* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
 .VPNavBarMenuLink {
   font-weight: 700 !important;

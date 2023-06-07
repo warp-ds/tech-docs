@@ -36,29 +36,24 @@ export default defineConfig({
     [
       'link',
       {
-        rel: 'preload',
-        as: 'style',
-        href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css',
-      },
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css'
+      }
     ],
     [
       'link',
       {
-        rel: 'preload',
-        as: 'font',
-        type: 'font/woff2',
-        href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2',
-      },
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/tori-fi.css'
+      }
     ],
     [
       'link',
       {
-        rel: 'preload',
-        as: 'font',
-        type: 'font/woff2',
-        href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2',
-      },
-    ],
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/blocket-se.css'
+      }
+    ]
   ],
   themeConfig: {
     logo: '/warp-logo-small.svg',
@@ -88,8 +83,25 @@ export default defineConfig({
           text: 'Introduction',
           collabsible: true,
           items: [
-            { text: 'Getting Started', link: '/getting-started/' },
-            { text: 'Migrating from Fabric', link: '/migrating' },
+            { text: 'Welcome to Warp', link: '/welcome/' },
+          ],
+        },
+        {
+          text: 'Getting started',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Developers', link: '/getting-started/developers/' },
+            { text: 'Designers', link: '/getting-started/designers/' },
+          ],
+        },
+        {
+          text: 'Migration to Warp',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Developers guide', link: '/migration/developers/' },
+            { text: 'Designers guide', link: '/migration/designers/' },
           ],
         },
         {
@@ -188,6 +200,7 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
+            { text: 'Designing with a system', link: '/guidelines/design-system/' },
             {
               text: 'Data vizualisation',
               collapsible: true,
@@ -201,12 +214,12 @@ export default defineConfig({
                   link: '/guidelines/data-visualization/chart-types/',
                 },
                 {
-                  text: 'Color Usage',
-                  link: '/guidelines/data-visualization/color-usage/',
+                  text: 'Colour Usage',
+                  link: '/guidelines/data-visualization/colour-usage/',
                 },
                 {
-                  text: 'Best Practices',
-                  link: '/guidelines/data-visualization/best-practices/',
+                  text: 'Success criteria',
+                  link: '/guidelines/data-visualization/success-criteria/',
                 },
               ],
             },

@@ -1,5 +1,4 @@
 <script setup>
-  import Usage from './usage.md';
   import Vue from './vue.md';
   import React from './react.md';
 </script>
@@ -8,6 +7,7 @@
 
 Modals (or dialogs) display important information that users need to acknowledge. They are overlays that prevent users from interacting with the rest of the application until a specific action is taken. They can be disruptive because they require merchants to take an action before they can continue interacting with the rest of the site. It should be used thoughtfully and sparingly.
 
+<components-status react='released' vue='released' />
 
 ## Example
 
@@ -15,14 +15,22 @@ Modals (or dialogs) display important information that users need to acknowledge
 
 <modal-example />
 
+## Usage
+
+### Accessibility
+Modal needs either aria-label or aria-labelledby to be accessible to screen readers.
+
+All dialogs must have a title. Titles appear in bold at the top of the dialog and use a few words to convey the outcome of what will happen if a user continues with an action. Use the property title for this.
+
+## Frameworks
+
 <tabs-content>
-  <template #usage>
-   <usage />
-  </template>
   <template #react>
    <react />
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
   </template>
 </tabs-content>

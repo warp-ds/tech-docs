@@ -6,11 +6,15 @@
 
 # Attention
 
+<components-status react='released' vue='released' elements='released' />
+
 ## Examples
 
 <theme-switcher />
 
 <attention-example></attention-example>
+
+## Frameworks
 
 <tabs-content>
   <template #react>
