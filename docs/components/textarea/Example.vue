@@ -1,15 +1,18 @@
 <script setup>
   import { wTextarea } from '@warp-ds/vue';
+  import { ref } from 'vue';
+
+  const model = ref('');
 </script>
 
 <template>
   <h3>Standard with hint</h3>
   <div class="component">
-    <w-textarea label="A label" hint="A hint" />
+    <w-textarea v-model="model" label="A label" hint="A hint" />
   </div>
   <h3>Optional</h3>
   <div class="component">
-    <w-textarea label="A label" optional />
+    <w-textarea v-model="model" label="A label" optional />
   </div>
   <h3>Disabled</h3>
   <div class="component">

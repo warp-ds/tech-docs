@@ -26,7 +26,7 @@ export default defineConfig({
   vite: {
     plugins: [
       uno({
-        presets: [presetWarp({ usePreflight: true })],
+        presets: [presetWarp()],
         mode: 'shadow-dom',
         safelist: [...classes, ...docsClasses],
       }),
@@ -36,29 +36,31 @@ export default defineConfig({
     [
       'link',
       {
-        rel: 'preload',
-        as: 'style',
-        href: 'https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css',
-      },
+        rel: 'icon',
+        href: '/warp-logo-small.svg'
+      }
     ],
     [
       'link',
       {
-        rel: 'preload',
-        as: 'font',
-        type: 'font/woff2',
-        href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Light.woff2',
-      },
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css'
+      }
     ],
     [
       'link',
       {
-        rel: 'preload',
-        as: 'font',
-        type: 'font/woff2',
-        href: 'https://static.finncdn.no/_c/static/fonts/FINNTypeStrippet-Medium.woff2',
-      },
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/tori-fi.css'
+      }
     ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/blocket-se.css'
+      }
+    ]
   ],
   themeConfig: {
     logo: '/warp-logo-small.svg',
@@ -85,8 +87,6 @@ export default defineConfig({
     sidebar: {
       '/': [
         {
-          text: 'Introduction',
-          collabsible: true,
           items: [
             { text: 'Welcome to Warp', link: '/welcome/' },
           ],
@@ -228,6 +228,15 @@ export default defineConfig({
                 },
               ],
             },
+          ],
+        },
+        {
+          text: 'Collaborate with us',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
+            { text: 'Join the community ', link: '/collaborate/community/' },           
           ],
         },
       ],
