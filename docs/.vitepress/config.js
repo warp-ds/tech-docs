@@ -26,7 +26,7 @@ export default defineConfig({
   vite: {
     plugins: [
       uno({
-        presets: [presetWarp({ usePreflight: true })],
+        presets: [presetWarp()],
         mode: 'shadow-dom',
         safelist: [...classes, ...docsClasses],
       }),
