@@ -22,8 +22,14 @@ Ensure your project is integrated with UnoCSS and Warp.
 
 `alpha` versions of @warp-ds packages should be installed until major versions are available.
 
+### with npm: 
 ```shell
 npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
+```
+
+### with pnpm
+```shell
+pnpm add -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 ```
 
 > Webpack based projects should also add: `@unocss/webpack` (see [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information)
@@ -47,8 +53,36 @@ export default defineConfig({
 
 #### Adding Uno to your build tool
 
-For now, please refer to the [examples](https://github.com/unocss/unocss/tree/main/examples) found in the UnoCSS project. We will eventually have in-depth install guides for frameworks on the golden path.
+By default, UnoCSS will automatically look for uno.config.{js,ts,mjs,mts} or unocss.config.{js,ts,mjs,mts} in the root directory of your project. You can also specify the config file manually and in that case you won't need a separate uno config file. Like in this example for Vite:
 
+```ts
+// vite.config.js
+import { defineConfig } from 'vite';
+import UnoCSS from 'unocss/vite';
+import { presetWarp } from '@warp-ds/uno';
+import { classes } from '@warp-ds/component-classes/classes';
+
+export default defineConfig({
+  plugins: [
+    // leave it empty to use your config defined in uno.config.js
+    UnoCSS(),
+    // OR just define it here
+    UnoCSS({
+      presets: [presetWarp()],
+      safelist: classes,
+    }),
+  ],
+});
+```
+
+For more examples how to configure other building tools, please refer to the [examples](https://github.com/unocss/unocss/tree/main/examples) found in the UnoCSS project. We will eventually have in-depth install guides for frameworks on the golden path.
+
+#### Add uno.css to your main entry
+
+```js
+// e.g. main.[ts|js]
+import 'uno.css'
+```
 
 ### Runtime
 
@@ -57,7 +91,7 @@ UnoCSS also provides a CSS-in-JS runtime module which runs the UnoCSS engine rig
 #### Bundler usage
 
 ```shell
-npm install @unocss/runtime @warp-ds/uno
+pnpm install @unocss/runtime @warp-ds/uno
 ```
 
 ```js
