@@ -39,9 +39,9 @@ import { classes } from '@warp-ds/component-classes/classes';
 
 export default defineConfig({
   presets: [
-    presetWarp(),
-    safelist: classes
-  ]
+    presetWarp()
+  ],
+  safelist: classes
 });
 ```
 
