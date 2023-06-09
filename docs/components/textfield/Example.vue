@@ -14,11 +14,11 @@
 <template>
   <h3>Standard with hint</h3>
   <div class="component">
-    <w-input label="A label" hint="A hint" />
+    <w-input v-model="inputModel" label="A label" hint="A hint" />
   </div>
   <h3>Optional with placeholder</h3>
   <div class="component">
-    <w-input label="A label" placeholder="This is a placeholder" optional />
+    <w-input v-model="inputModel" label="A label" placeholder="This is a placeholder" optional />
   </div>
   <h3>Disabled</h3>
   <div class="component">

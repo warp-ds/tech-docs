@@ -8,8 +8,8 @@ devDependencies:
     specifier: ^1.0.0-alpha.36
     version: 1.0.0-alpha.36
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.33
-    version: 1.0.0-alpha.33
+    specifier: ^1.0.0-alpha.34
+    version: 1.0.0-alpha.34
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -891,8 +891,8 @@ packages:
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.33:
-    resolution: {integrity: sha512-u4Ud/P/KWL2I6g4DraGMw3lToUle/+laGGyaIvMKX0m7YuJcOesbTvyIY1+TbWCTRLEpf6jsUYpjLT2+kftcCA==}
+  /@warp-ds/vue@1.0.0-alpha.34:
+    resolution: {integrity: sha512-Q5htzPKtH7+/8otcO1FAcyEx1aSsodh1lgJCXrigjun0kNV0UtBnGelO7Va+yokSZiOKDDvFmxPY0jb/wJDaQA==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
