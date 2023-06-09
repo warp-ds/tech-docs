@@ -57,9 +57,9 @@ As mentioned, we provide detailed usage guidance of all our components in our [W
 
 ### Relevant guidelines to get you started:
 
-- [Guidelines for designing with a system](https://docs.google.com/document/d/1NOLs2ofUEeQntFbMQKlef3zQhyCxwlR2WMkFv0h4-xc/edit#bookmark=id.yvnskogu6gau)
-- [Guidelines for when to use Warp](https://docs.google.com/document/d/1NOLs2ofUEeQntFbMQKlef3zQhyCxwlR2WMkFv0h4-xc/edit#bookmark=id.phba1rcscndv)
-- [Contribute to the growth of Warp](https://docs.google.com/document/d/1NOLs2ofUEeQntFbMQKlef3zQhyCxwlR2WMkFv0h4-xc/edit#bookmark=id.a62qjprf5q6t)
+- [Guidelines for designing with a system](/guidelines/design-system/)
+- [Guidelines for when to use Warp](/guidelines/design-system/#when-to-use-warp)
+- [Contribute to the growth of Warp](/collaborate/contribute/)
 
 ## Get in contact with the Warp designers
 

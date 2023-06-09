@@ -87,8 +87,6 @@ export default defineConfig({
     sidebar: {
       '/': [
         {
-          text: 'Introduction',
-          collabsible: true,
           items: [
             { text: 'Welcome to Warp', link: '/welcome/' },
           ],
@@ -230,6 +228,15 @@ export default defineConfig({
                 },
               ],
             },
+          ],
+        },
+        {
+          text: 'Collaborate with us',
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
+            { text: 'Join the community ', link: '/collaborate/community/' },           
           ],
         },
       ],
