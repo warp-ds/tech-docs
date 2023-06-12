@@ -3,3 +3,4 @@ cache/
 dist/
 .idea/
 settings.json
+.DS_Store
