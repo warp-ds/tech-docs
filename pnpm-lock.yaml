@@ -1,9 +1,13 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: 1.0.0-alpha.93
-    version: 1.0.0-alpha.93
+    specifier: 1.0.0-alpha.96
+    version: 1.0.0-alpha.96
   '@warp-ds/uno':
     specifier: ^1.0.0-alpha.36
     version: 1.0.0-alpha.36
@@ -880,8 +884,8 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.93:
-    resolution: {integrity: sha512-W1/KmDTpE8Zy2wBlpWLIQNj8HQtegNL25NSXI2X03y/XGqGUKHldtEoLbuAaRvrM1Mn9wOfz+AoQJtfIoIYt4g==}
+  /@warp-ds/component-classes@1.0.0-alpha.96:
+    resolution: {integrity: sha512-NAsr27p4UgNo4Dfv7cKL3arh5LmH3Bpd7F2donigWIDf/TGkYVxBmsm0ZniuLPSPiAkYV/6y6Hz6MNGV3d7RXg==}
     dev: true
 
   /@warp-ds/uno@1.0.0-alpha.36:
