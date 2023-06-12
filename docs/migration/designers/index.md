@@ -19,14 +19,14 @@ Hello 👋 welcome to the migration to Warp! If you are just getting started wit
     - In the **library modal** turn on the library called: **Warp component library** <br>
     *You can have as many libraries as you want turned on but we suggest that you turn off the **Fabric core library** and any **Tori library** you might have access to while migrating.*
         
-2. Turn on / or keep the **Fabric Icons library** turned on to get access to the Fabric icons
+2. Turn on the **Warp Icons library** to get access to the Warp icons
 
 ### 2. Create a new empty file in Figma
 
 1. Name it something with FINN so you remember that it’s the **FINN** theme 🙂
 2. In the file, turn on the following libraries:
     - Warp component library
-    - Fabric icons library
+    - Warp icon library
     - Finn - Design tokens
 
 ### 3. Recreate your screens using Warp components

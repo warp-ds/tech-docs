@@ -46,4 +46,4 @@ Mondays between 2-3.30pm CET. Not always at the office, but always available rem
 
 We have a small invite only early adopters group that we use to help us test out new concepts, gather ideas and feedback from. We meet bi-weekly and expect you to give a few hours a month to this work. In return you’ll have a great impact on our roadmap and have a say in most decisions we make for the future of Warp.
 
-Are you interested in joining the group? Send a request
+Are you interested in joining the group? Send us a message in [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04P0GYTHPV)
