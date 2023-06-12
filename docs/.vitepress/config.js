@@ -63,6 +63,7 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
+    search: { provider: 'local' },
     logo: '/warp-logo-small.svg',
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
@@ -236,7 +237,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
-            { text: 'Join the community ', link: '/collaborate/community/' },           
+            { text: 'Join the community ', link: '/collaborate/community/' },
           ],
         },
       ],

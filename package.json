@@ -14,7 +14,7 @@
     "sass": "^1.62.1",
     "unocss": "^0.52.4",
     "vite": "^4.3.9",
-    "vitepress": "1.0.0-alpha.64",
+    "vitepress": "1.0.0-beta.2",
     "vue": "^3.3.4"
   },
   "pnpm": {
