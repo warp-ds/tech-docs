@@ -26,7 +26,7 @@ Hello 👋 welcome to the migration to Warp! If you are just getting started wit
 1. Name it something with FINN so you remember that it’s the **FINN** theme 🙂
 2. In the file, turn on the following libraries:
     - Warp component library
-    - Fabric icons library
+    - Warp icon library
     - Finn - Design tokens
 
 ### 3. Recreate your screens using Warp components
