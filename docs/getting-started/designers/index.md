@@ -26,6 +26,7 @@ Here you can find the [Warp Components overview in Figma](https://www.figma.com/
 We currently have the following Figma libraries available:
 
 - Warp component library
+- Warp icons library 
 - Finn - Design tokens
 - Tori - Design tokens
 
@@ -37,7 +38,7 @@ We currently have the following Figma libraries available:
         
         *You can have as many libraries as you want turned on but we suggest that you turn off the **Fabric core library** while migrating.*
         
-3. Turn on / or keep the **Fabric Icons library** turned on to get access to the Fabric icons
+3. Turn on the **Warp Icons library** to get access to the Warp icons
 4. Turn on the **Finn - Design tokens** library to enable FINN themed components in your file
 
 ## Foundations documentation

@@ -20,6 +20,6 @@ When you have your potential solutions at hand - talk to your peers. We can help
 
 | Use warp        | Extend warp     | Build a custom solution |
 | --------------- | --------------- | --------------- |
-| When available resources can solve a design problem | When a change or addition can solve a shared problem | When a unique problem requires a unique solution |
-| Read "Designing with our system"      | Read "When to contribute new patterns" | Share ideas in #ux-inspiration |
-| Review our component guidelines in the Warp UI Kit | Send a request to the Warp team | Build with Warp tokens |
+| We aim for a Warp first approach to all our solutions. So anytime Warp can solve your problem, use Warp. | When a change or addition can solve a shared problem | When a unique problem requires a unique solution |
+| Read "Designing with our system" (this page)      | Read "Contribute to the growth of Warp" | Share ideas in #nmp-ux |
+| Review our component guidelines in the Components overview | Send a request to the Warp team | Build with Warp tokens |
