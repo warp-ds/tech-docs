@@ -61,14 +61,13 @@ export default defineConfig({
   safelist: classes
 });
 ```
-
-#### Add Uno to your build tool
-
 By default, UnoCSS will automatically look in the root directory of your project for 
 
 `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]` 
 
-Then add Uno to your build tool
+#### Add Uno to your build tool
+
+Then add UnoCSS to your build tool
 
 > vite.config.js
 ```ts
