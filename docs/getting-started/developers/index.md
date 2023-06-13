@@ -12,9 +12,6 @@ If you are migrating from Fabric to Warp, please visit the [Migration page](/mig
 
 This is the initial version of Warp and is currently a work in progress. Any elements, components or inline styled/custom CSS that are not implemented using Fabric, is required to be managed in order to make them themeable.
 
-## Before getting started
-When migrating to Warp, this may affect or break the styling for other teams that exists on the same page as your project. **Make sure to communicate and align with affected teams before starting the migration process.**
-
 ## 1. Integrate with UnoCSS and Warp
 
 A guide on how to integrate your project with UnoCSS and Warp. 
@@ -45,11 +42,11 @@ See [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information.
 
 ------
 #### Configuration and setup
-When setting up Warp in your project, you can choose to create an `uno.config` file separately from your build tool, or you can include the uno config settings directly in the build tool. Below, the two different alternatives are described.
+When setting up Warp in your project, you can choose to create an `uno.config` file, or you can include the uno configuration settings directly in the build tool. Below, the two different alternatives are described.
 
 - **Alternative 1: Add a uno.config file**
 
-Create a `uno.config.js` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).
+Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).n
 
 > uno.config.js
 ```js
@@ -77,8 +74,6 @@ Then add Uno to your build tool
 ```ts
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
-import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/component-classes/classes';
 
 export default defineConfig({
   plugins: [
