@@ -42,7 +42,7 @@ See [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information.
 
 ------
 #### Configuration and setup
-When setting up Warp in your project, you can choose to create an `uno.config` file, or you can include the uno configuration settings directly in the build tool. Below, the two different alternatives are described.
+When setting up Warp in your project, you can choose to create an `uno.config` file, or you can include the UnoCSS configuration settings directly in the build tool. Below, the two different alternatives are described.
 
 - **Alternative 1: Add a uno.config file**
 
@@ -63,7 +63,7 @@ export default defineConfig({
 ```
 By default, UnoCSS will automatically look in the root directory of your project for `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]`.
 
-#### Add Uno to your build tool
+#### Add UnoCSS to your build tool
 
 Then add UnoCSS to your build tool
 
@@ -79,7 +79,7 @@ export default defineConfig({
 });
 ```
 
-- **Alternative 2: Include Uno directly in the build setup**
+- **Alternative 2: Include UnoCSS directly in the build setup**
 
 You can also specify the configuration file manually and in that case you won't need a separate `uno.config` file. 
 
@@ -142,7 +142,7 @@ initUnossRuntime();
 
 ### UnoCSS CLI
 
-With the custom configurations in `uno.config.js`, you can also generate styles at build step using Uno's standalone client.
+With the custom configurations in `uno.config.js`, you can also generate styles at build step using UnoCSS's standalone client.
 See [UnoCSS CLI](https://unocss.dev/integrations/cli) for more information and examples.
 
 ------
