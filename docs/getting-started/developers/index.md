@@ -12,32 +12,46 @@ If you are migrating from Fabric to Warp, please visit the [Migration page](/mig
 
 This is the initial version of Warp and is currently a work in progress. Any elements, components or inline styled/custom CSS that are not implemented using Fabric, is required to be managed in order to make them themeable.
 
+## Before getting started
+When migrating to Warp, this may affect or break the styling for other teams that exists on the same page as your project. **Make sure to communicate and align with affected teams before starting the migration process.**
+
 ## 1. Integrate with UnoCSS and Warp
 
-Ensure your project is integrated with UnoCSS and Warp.
+A guide on how to integrate your project with UnoCSS and Warp. 
 
 ### Build time
 
-#### Install
+#### Installation
 
 `alpha` versions of @warp-ds packages should be installed until major versions are available.
 
-### with npm: 
+> With npm: 
 ```shell
 npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 ```
 
-### with pnpm
+> With pnpm
 ```shell
 pnpm add -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
 ```
 
-> Webpack based projects should also add: `@unocss/webpack` (see [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information)
+#### If you are using Webpack
+In addition to the installation of the Warp packages, Webpack based projects should also install `@unocss/webpack`
 
-#### Configure
+```shell
+pnpm add -D @unocss/webpack
+```
+See [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information.
+
+------
+#### Configuration and setup
+When setting up Warp in your project, you can choose to create an `uno.config` file separately from your build tool, or you can include the uno config settings directly in the build tool. Below, the two different alternatives are described.
+
+- **Alternative 1: Add a uno.config file**
 
 Create a `uno.config.js` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).
 
+> uno.config.js
 ```js
 import { defineConfig } from 'unocss';
 import { presetWarp } from '@warp-ds/uno';
@@ -51,12 +65,16 @@ export default defineConfig({
 });
 ```
 
-#### Adding Uno to your build tool
+#### Add Uno to your build tool
 
-By default, UnoCSS will automatically look for uno.config.{js,ts,mjs,mts} or unocss.config.{js,ts,mjs,mts} in the root directory of your project. You can also specify the config file manually and in that case you won't need a separate uno config file. Like in this example for Vite:
+By default, UnoCSS will automatically look in the root directory of your project for 
 
+`uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]` 
+
+Then add Uno to your build tool
+
+> vite.config.js
 ```ts
-// vite.config.js
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 import { presetWarp } from '@warp-ds/uno';
@@ -64,9 +82,26 @@ import { classes } from '@warp-ds/component-classes/classes';
 
 export default defineConfig({
   plugins: [
-    // leave it empty to use your config defined in uno.config.js
     UnoCSS(),
-    // OR just define it here
+  ],
+});
+```
+
+- **Alternative 2: Include Uno directly in the build setup**
+
+You can also specify the config file manually and in that case you won't need a separate uno config file. 
+
+Below is an example for Vite:
+
+> vite.config.js
+```ts
+import { defineConfig } from 'vite';
+import UnoCSS from 'unocss/vite';
+import { presetWarp } from '@warp-ds/uno';
+import { classes } from '@warp-ds/component-classes/classes';
+
+export default defineConfig({
+  plugins: [
     UnoCSS({
       presets: [presetWarp()],
       safelist: classes,
@@ -77,12 +112,16 @@ export default defineConfig({
 
 For more examples how to configure other building tools, please refer to the [examples](https://github.com/unocss/unocss/tree/main/examples) found in the UnoCSS project. We will eventually have in-depth install guides for frameworks on the golden path.
 
+
+------
 #### Add uno.css to your main entry
 
+> e.g. main.js or main.ts
 ```js
-// e.g. main.[ts|js]
 import 'uno.css'
 ```
+
+------
 
 ### Runtime
 
@@ -107,11 +146,14 @@ window.__unocss = {
 initUnossRuntime();
 ```
 
+------
+
 ### UnoCSS CLI
 
 With the custom configurations in `uno.config.js`, you can also generate styles at build step using Uno's standalone client.
 See [UnoCSS CLI](https://unocss.dev/integrations/cli) for more information and examples.
 
+------
 
 ### Use with Shadow DOM and Vite
 
