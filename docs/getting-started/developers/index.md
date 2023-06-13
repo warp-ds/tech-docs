@@ -46,7 +46,7 @@ When setting up Warp in your project, you can choose to create an `uno.config` f
 
 - **Alternative 1: Add a uno.config file**
 
-Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).n
+Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` in the [Warp CSS docs](https://warp-ds.github.io/css-docs/plugin-api).
 
 > uno.config.js
 ```js
@@ -61,9 +61,7 @@ export default defineConfig({
   safelist: classes
 });
 ```
-By default, UnoCSS will automatically look in the root directory of your project for 
-
-`uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]` 
+By default, UnoCSS will automatically look in the root directory of your project for `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]`.
 
 #### Add Uno to your build tool
 
@@ -83,7 +81,7 @@ export default defineConfig({
 
 - **Alternative 2: Include Uno directly in the build setup**
 
-You can also specify the config file manually and in that case you won't need a separate uno config file. 
+You can also specify the configuration file manually and in that case you won't need a separate `uno.config` file. 
 
 Below is an example for Vite:
 
