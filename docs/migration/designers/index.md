@@ -11,7 +11,14 @@ Hello 👋 welcome to the migration to Warp! If you are just getting started wit
 - Create another file for your Tori versioned screens
 - Make the switch!
 
-## The design migration; step by step
+## The design migration, step by step
+
+::: tip
+For a more visual introduction, check out [the 'Start here' file in Figma](https://www.figma.com/file/8q1w2m8ssGlrYTQUaehU0m/Start-here?type=design&node-id=25%3A687&t=luXVwdsaETcwMDnl-1).
+
+[![File in figma with title "Start here" ](/figma-start-here.png)](https://www.figma.com/file/8q1w2m8ssGlrYTQUaehU0m/Start-here?type=design&node-id=25%3A687&t=luXVwdsaETcwMDnl-1)
+
+:::
 
 ### 1. Get the component and token libraries
 
@@ -35,10 +42,9 @@ You can search for components in the assets menu in Figma. The component will be
 
 We strongly recommend that you recreate your screens with the FINN theme in place to make sure you get a 1:1 experience of your screens. If you find that you can’t create the same design since you have made something custom, try to find components that you can use instead. If you can’t, reach out to us!
 
-### 4. Create a new empty File in Figma
+### 4. Duplicate your FINN styled Warp file
 
-1. Name the file something with Tori so you remember that it’s the **Tori** themed file 👏
-2. Copy all your screens from your FINN file and paste them into your new file.
+Name the file something with Tori so you remember that it’s the **Tori** themed file 👏
 
 ### 5. Apply Tori tokens to your components
 
