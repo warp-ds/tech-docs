@@ -30,6 +30,10 @@ html.dark body {
   --vp-home-hero-name-color: #F6D553;
 }
 
+.vp-doc ul {
+  font-size: 14px;
+}
+
 /* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
 .VPNavBarMenuLink {
   font-weight: 700 !important;
