@@ -56,3 +56,5 @@ Name the file something with Tori so you remember that it’s the **Tori** theme
 6. Click “Swap library.”
 
 And, voila – now you should have something that looks like Tori!
+
+<!--@include: ../colors.md-->

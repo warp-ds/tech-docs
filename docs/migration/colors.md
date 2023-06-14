@@ -1,0 +1,2 @@
+## Colors in Warp
+In Warp Design System we are changing the whole concept of working with colors. We are no longer picking colors from a palette (like `text-blue-600`), but instead we use colors based on their purpose (like `text-primary`). This is something we do because we need to support theming/dark mode.
