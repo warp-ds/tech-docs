@@ -80,3 +80,5 @@ Using the previous example's error as an example, it should be rewritten (f.ex) 
 > This field must be filled out with your 11-digit SSN
 
 and the hint can remain the same.
+
+<!--@include: ../colors.md-->
