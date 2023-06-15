@@ -1,6 +1,6 @@
 <br>
 
-# Screen reader
+## Screen reader
 
 All data that is accessible for sighted users should also be accessible for those using screen readers. This can be achieved through either turning the chart into an image with alternative text, adding table alternatives, or adding additional screen reader information to the visual elements. In addition, screen reader users should get the same insights as sighted people.
 
