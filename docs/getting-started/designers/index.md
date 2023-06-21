@@ -9,6 +9,13 @@ Hello 👋 welcome to Warp! If you are just getting started with designing for N
 - Familiarise yourself with our components and documentation
 - Read our guidelines for designing with a system
 
+::: tip
+For a more visual introduction, check out [the 'Start here' file in Figma](https://www.figma.com/file/8q1w2m8ssGlrYTQUaehU0m/Start-here?type=design&node-id=25%3A687&t=luXVwdsaETcwMDnl-1).
+
+[![File in figma with title "Start here" ](/figma-start-here.png)](https://www.figma.com/file/8q1w2m8ssGlrYTQUaehU0m/Start-here?type=design&node-id=25%3A687&t=luXVwdsaETcwMDnl-1)
+
+:::
+
 ## Figma, Warp component overview & libraries
 
 In Nordic marketplaces we use Figma as the main tool for all our design related tasks. Licences are provided by e-tech and you will find the Figma application while logging in to OKTA. Please see [Figma Downloads](https://www.figma.com/downloads/) to get started with the desktop application of your choice.

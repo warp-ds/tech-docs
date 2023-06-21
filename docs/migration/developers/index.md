@@ -5,6 +5,12 @@
 While Warp maintains as much backward-compatibility as possible from Fabric,
 some breaking changes were necessary or justified.
 
+
+### Before getting started
+Before migrating to Warp, this may affect or break the styling for other teams that exists on the same page as your project. **Make sure to communicate and align with affected teams before starting the migration process.**
+
+-----
+
 ### How to migrate
 1. Remove Fabric as a dependency from your project.
 2. Remove any mentions of Fabric, e.g. `fabric.css`.
@@ -74,3 +80,5 @@ Using the previous example's error as an example, it should be rewritten (f.ex) 
 > This field must be filled out with your 11-digit SSN
 
 and the hint can remain the same.
+
+<!--@include: ../colors.md-->

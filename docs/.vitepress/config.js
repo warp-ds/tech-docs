@@ -3,6 +3,8 @@ import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/component-classes/classes';
 
+const base = '/tech-docs';
+
 // Classes of documentation-related elements used within Warp component examples
 const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
 'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
@@ -14,7 +16,7 @@ export default defineConfig({
   description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
   cleanUrls: true,
-  base: '/tech-docs/',
+  base: `${base}/`,
   markdown: { theme: 'nord' },
   vue: {
     template: {
@@ -37,8 +39,9 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: '/warp-logo-small.svg'
-      }
+        type: 'image/svg+xml',
+        href: `${base}/warp-logo-small.svg`,
+      },
     ],
     [
       'link',
@@ -63,6 +66,7 @@ export default defineConfig({
     ]
   ],
   themeConfig: {
+    search: { provider: 'local' },
     logo: '/warp-logo-small.svg',
     outline: 'deep',
     socialLinks: [{ icon: 'github', link: 'https://github.com/warp-ds' }],
@@ -236,7 +240,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
-            { text: 'Join the community ', link: '/collaborate/community/' },           
+            { text: 'Join the community ', link: '/collaborate/community/' },
           ],
         },
       ],
