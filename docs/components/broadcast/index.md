@@ -11,6 +11,9 @@ __N.B.__ Broadcast should only be included once per page to avoid duplicate broa
 
 <components-status elements='released' />
 
+## Example
+See the [toast component](/components/toast/) for examples, as `broadcast` utilizes it to display messages. 
+
 ## Frameworks
 
 <tabs-content>
