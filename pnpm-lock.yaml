@@ -6,14 +6,14 @@ settings:
 
 devDependencies:
   '@warp-ds/component-classes':
-    specifier: 1.0.0-alpha.96
-    version: 1.0.0-alpha.96
+    specifier: 1.0.0-alpha.108
+    version: 1.0.0-alpha.108
   '@warp-ds/uno':
-    specifier: ^1.0.0-alpha.36
-    version: 1.0.0-alpha.36
+    specifier: ^1.0.0-alpha.47
+    version: 1.0.0-alpha.47
   '@warp-ds/vue':
-    specifier: ^1.0.0-alpha.34
-    version: 1.0.0-alpha.34
+    specifier: ^1.0.0-alpha.40
+    version: 1.0.0-alpha.40
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -961,19 +961,19 @@ packages:
       - vue
     dev: true
 
-  /@warp-ds/component-classes@1.0.0-alpha.96:
-    resolution: {integrity: sha512-NAsr27p4UgNo4Dfv7cKL3arh5LmH3Bpd7F2donigWIDf/TGkYVxBmsm0ZniuLPSPiAkYV/6y6Hz6MNGV3d7RXg==}
+  /@warp-ds/component-classes@1.0.0-alpha.108:
+    resolution: {integrity: sha512-x2Aik7aQwNa2Ix4LOM6EkxONo26vvp70j0rxutT0w2st8ZRDMC/OdTkyx+3WxC6Yd6vL9VqWm7cJoVZomFgSiw==}
     dev: true
 
-  /@warp-ds/uno@1.0.0-alpha.36:
-    resolution: {integrity: sha512-oHs+3qWxMfhwI6AUD4R0E2l0LzuNVHp9WqOewap/+Gi7mloCIpnDVIVXZWzvj81KkuDdm3rPMTWwBuqTNzSH8g==}
+  /@warp-ds/uno@1.0.0-alpha.47:
+    resolution: {integrity: sha512-+8RGDnthKD5/FDGx+7/WdY0NsmGenTCfrPeHA+VoyFDrVgFxz+DiWn6SldayaeYVgjlmvXyKTVAn0leGZROXdQ==}
     dependencies:
       '@unocss/core': 0.50.8
       '@unocss/preset-mini': 0.50.8
     dev: true
 
-  /@warp-ds/vue@1.0.0-alpha.34:
-    resolution: {integrity: sha512-Q5htzPKtH7+/8otcO1FAcyEx1aSsodh1lgJCXrigjun0kNV0UtBnGelO7Va+yokSZiOKDDvFmxPY0jb/wJDaQA==}
+  /@warp-ds/vue@1.0.0-alpha.40:
+    resolution: {integrity: sha512-fhO3vcxd1tjJpcRJ917/bsvmfxFRk+qYihjCb9MDhcJ7hKrhVtgyEIdjDCc4/6BuUZkrMRN6Dum7u9TYKpXVwQ==}
     dependencies:
       '@fabric-ds/core': 0.0.15
       '@fabric-ds/css': 1.2.0
