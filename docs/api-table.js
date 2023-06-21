@@ -1373,6 +1373,7 @@ export const elements = {
       ['type', "'success' | 'warning' | 'error'", "'success'", 'Type of toast'],
       ['text', 'string', 'undefined', 'Applies styling to indicate click-ability'],
       ['duration', 'number', '5000', 'Auto removal of toast'],
+      ['canclose', 'boolean', 'false', 'Adds close button'],
     ]
   },
 };

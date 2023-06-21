@@ -20,6 +20,7 @@ import Switch from '../components/switch/Example.vue';
 import Tabs from '../components/tabs/Example.vue';
 import TextArea from '../components/textarea/Example.vue';
 import TextField from '../components/textfield/Example.vue';
+import Toast from '../components/toast/Example.vue';
 import Utilities from '../components/utilities/Example.vue';
 
 buildWc('alert-example', Alert);
@@ -42,4 +43,5 @@ buildWc('switch-example', Switch);
 buildWc('tabs-example', Tabs);
 buildWc('textarea-example', TextArea);
 buildWc('textfield-example', TextField);
+buildWc('toast-example', Toast);
 buildWc('utilities-example', Utilities);

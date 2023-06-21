@@ -8,6 +8,10 @@ Toasts display small snippets of information to the user and then disappear afte
 
 <components-status elements='released' />
 
+## Example
+
+<toast-example></toast-example>
+
 ## Usage
 
 ### Accessibility
