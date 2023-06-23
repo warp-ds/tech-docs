@@ -7,7 +7,7 @@ Visual elements in graphs should be possible to perceive and distinguish from ea
 ### 1. Don’t rely on colour alone to explain data
 ![Red design tag](/dataviz-tag-design.svg) 
 
-**Why:** People with colour vision deficiencies may not be able to perceive color differences. In addition, charts or graphs can be printed in black and white or viewed on a monochrome displays.
+**Why:** People with colour vision deficiencies may not be able to perceive colour differences. In addition, charts or graphs can be printed in black and white or viewed on monochrome displays.
 
 ::: details
 How to achive this:
@@ -51,22 +51,23 @@ In Figma, you can use the plugin [Contrast](https://www.figma.com/community/plug
 ### 4. Graphical elements have a minimum colour contrast of 3:1 with adjacent elements
 ![Red design tag](/dataviz-tag-design.svg)
 
-When shapes are placed close to each other it might be hard to differentiate between then. This typically happens in a pie chart, stacked bar chart, or when hovering. 
+When shapes are placed close to each other it might be hard to differentiate between them. This typically happens in a pie chart, stacked bar chart, or when hovering. 
 
 ::: details
 #### Possible solutions:
 - add at least 1px margin between elements to keep them distinguishable
-- use somethine other than colour, such as patterns or shapes, to distinguish between elemeents.
+- use something other than colour, such as patterns or shapes, to distinguish between elements.
 
 #### Exceptions:
-- Lines that cross each other in a line chart. It is fine that they don't have good contrast between each other. It is more important that the contrast against the background is good enough.
-- Charts that use sequential or diverging colour scales, for example choropleth maps or a heat maps.
+- Lines that cross each other in a line chart. It is fine that they don't have a good contrast between each other. It is more important that the contrast against the background is good enough.
+- Charts that use sequential or diverging colour scales, for example choropleth maps or heat maps.
+
 :::
 
 ### 5. Text elements within the chart are minimum 12px
 ![Red design tag](/dataviz-tag-design.svg)
 
-As long as you stick to the fonts sizes in the design system (which you should), you'll be fine.
+As long as you stick to the font sizes in the design system (which you should), you'll be fine.
 
 ### 6. Insert at least 1px spacing between adjacent graphical elements
 ![Red design tag](/dataviz-tag-design.svg)
@@ -97,7 +98,7 @@ For checking colour combinations manually, you can use [Viz Palette](https://pro
 
 1. Enter the hex codes for the colours you want to compare
 2. Check the different colour deficiencies by using the tabs at the top of the page
-3. Look at the Color report further down the page. Avoid colour combination that result in a medium or large line between colours.
+3. Look at the Color report further down the page. Avoid colour combinations that result in a medium or large line between colours.
 
 :::
 

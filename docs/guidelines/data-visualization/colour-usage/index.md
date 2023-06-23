@@ -1,13 +1,14 @@
-# Colour usage for data visualisation
+# Colour usage in data visualisation
 
-Colour is highly important in data visualisation. Colour is one of the first things we perceive on a screen, and can be used to direct the users’ attention. 
+Colour plays a pivotal role in data visualisation. It is among the initial aspects we perceive on a screen and can be strategically utilised to guide a user's focus.
 
-Colour can also be used to convey information, for example by using different colours for representing different values, or for indicating something good or bad. 
+Not only does colour capture attention, but it also serves as a tool to convey information. This can be achieved by assigning different colours to represent distinct values, or to indicate positive or negative outcomes.
 
-However, since people see colours differently (or not at all), we need to make sure the information is accessible for everyone (see [Success criteria](/guidelines/data-visualization/success-criteria/)).
+Nonetheless, considering the variability in colour perception among individuals (including those who may not perceive it at all), it's crucial to ensure that the information remains accessible to all (see [Success criteria](/guidelines/data-visualization/success-criteria/) for further details).
+
 <br>
 <br>
 
 ::: info
-This page will provide guildelines for colour usage in graphs. We have not yet decided on colours, nor implemented colour tokens for data visualisation in NMP.
+This page will provide guidelines for colour usage in graphs. We have not yet decided on colours, nor implemented colour tokens for data visualisation in NMP.
 :::

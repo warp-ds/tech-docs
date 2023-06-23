@@ -5,15 +5,15 @@
 All data that is accessible for sighted users should also be accessible for those using screen readers. This can be achieved through either turning the chart into an image with alternative text, adding table alternatives, or adding additional screen reader information to the visual elements. In addition, screen reader users should get the same insights as sighted people.
 
 ### 1. Use correct heading elements
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
-Correct use of heading levels are necessary for screen reader users to effectively navigate a page and a chart.
+The correct use of heading levels is necessary for screen reader users to navigate a page and chart effectively.
 
 ::: details
 How to achieve this:
 
 #### Use heading tags
-Use heading tags (`<h1>`, `<h2>`, `<h3>` etc.) instead of text elements. Normally the visual styling will follow the heading levels, but this is not always necessarily.
+Use heading tags (`<h1>`, `<h2>`, `<h3>` etc.) instead of text elements. Normally the visual styling will follow the heading levels, but this is not always necessary.
 
 #### Heading levels should be in a hierarchical order
 Think of the headings as an outline in the table of contents of a book. Avoid skipping heading levels.
@@ -24,18 +24,18 @@ See also [(WCAG) Page Structures: Headings](https://www.w3.org/WAI/tutorials/pag
 :::
 
 ### 2. Communicate visually apparent features such as trends or patterns
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
-If possible, describe trends or patterns in text, so that it is available for both screan readers and people who struggle to understanding the graph. 
+If possible, describe trends or patterns in writing, so that it is available for both screen readers and people who struggle to understand the graph.
 
 ### 3. Provide an accessible table alternative
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
 If the graph has more than 3 data points there should be an accessible table alternative for the graph. The table does not have to be visible. However, a visible table can also be useful for many users.
 
 If the graph has 3 data points or less, wrap the graph in an `<img>` tag and write a descriptive ALT text that includes the data points.
 
-I there are a lot of data points (more than 30), consider grouping the data into larger chunks, or using additional ways of conveying the insight for people using screen readers. For example, describe trends, patterns or outliers.
+If there are a lot of data points (more than 30), consider grouping the data into larger chunks, or using additional ways of conveying the insight for people using screen readers. For example, describe trends, patterns or outliers.
 
 ### 4. The chart elements can be navigated using a screen reader
 ![Blue tech tag](/dataviz-tag-tech.svg)
@@ -50,14 +50,14 @@ How to achieve this:
 
 #### Sort the data before rendering and pay attention to the order of the different chart elements.
 
-When drawing with D3.js (or other libraries), from a visual point of view it doesn't really matter how an array is sorted or in which order we render the different elements, where on the page things are rendered depends on the `x` and `y` coordinates.
+When drawing with D3.js (or other libraries), from a visual point of view it doesn't really matter how an array is sorted or in which order we render the different elements. Where on the page things are rendered depends on the `x` and `y` coordinates.
 
 Assistive technology, however, reads out the contents of a page in the order they appear in the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model). In practice, this means we will need to:
 
 1. Render the different areas of the graph in a logical order.
 2. Sort the data array with data points in the order it should be read in before drawing the elements.
 
-Ideally, the order and sorting is documented by the designers and included in the handoff spec to the developers.
+Ideally, the order and sorting is documented by the designers and included in the handoff spec.
 
 #### Add roles and labels to the different chart elements
 
@@ -134,12 +134,12 @@ Common statuses and properties include:
 :::
 
 ### 6. Explain unconventional screen reader interaction
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
 If the screen reader interaction is unconventional, make sure to include information about how to navigate the chart/page. This text should only be accessible for screen readers, and not be visible on the page.
 
 ### 7. Use appropriate alternative text and ARIA roles
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
 ::: details
 How to achieve this:
@@ -152,7 +152,7 @@ Eg. `<svg role="img" aria-label="YOUR_ALTERNATIVE_TEXT">`
     
 #### Add a visual text summary
     
-In some cases everyone can benefit from a textual summary, in which case it can be added as a title, description or caption to the graph.
+In some cases, everyone can benefit from a textual summary, in which case it can be added as a title, description, or caption to the graph.
     
 #### Alternative text should be concise
 Everything that's inside the alternative text of an image gets read in one go to screen reader users, with no possibility to skip text. If lots of data points need to be read, other solutions may be better.
