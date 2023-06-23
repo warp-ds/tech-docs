@@ -4,7 +4,7 @@
 
 Interactive charts should be easy to operate using a keyboard. Everything that can be done through pointer interaction (e.g. click or hover), should be achievable through keyboard interaction as well. 
 
-Interactive elements should be easily identifiable and have focus outlines, and the focus order should be in a logical order. Any custom interaction should be explained.
+Interactive elements should be easily identifiable and have focus outlines, and the focus order should be in logical order. Any custom interaction should be explained.
 
 ### 1. Information accessible through pointer interaction is also available through keyboard interaction
 ![Blue tech tag](/dataviz-tag-tech.svg)
@@ -26,7 +26,7 @@ Either use the default system outline (so it will follow user preferences with r
 
 Interactive elements (such as `<button>`, `<a>`, `<input>`) automatically are focusable by keyboard, and will receive `:focus` states.
 
-Sometimes we may add interaction to non-interactive elements, such as shapes within an `<svg>` element. In those cases we will need to make sure the elements are reachable by keyboard interaction:
+Sometimes, interactions are added to non-interactive elements, such as shapes within an `<svg>` element. In those cases, it's necessary to make sure the elements are reachable by keyboard interactions.
 
 - Either by setting `tabindex=0` (will follow the tab order),
 - Or by programmatically changing the focus on certain commands (eg. the arrow keys).
@@ -53,7 +53,7 @@ If the interaction is explained somewhere else, it should be possible to reach t
 ![Blue tech tag](/dataviz-tag-tech.svg)
 
 - The `tab` key should navigate to the first interactive element of the chart <!-- And then go outside on next click? --> 
-- Arrow keys should navigate between data points, or toggle between data series, or legend items, or menu options
+- Arrow keys should navigate between data points, legend items, menu options, or toggle between data series
 - `Space`/`Enter` should activate buttons or toggles.
 
 ### 6. Unconventional keyboard interaction is explained

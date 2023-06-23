@@ -12,7 +12,7 @@ Avoid long and complicated words. Explain abbreviations that readers might not b
 ### 2. Include a descriptive title
 ![Red design tag](/dataviz-tag-design.svg) 
 
-Clarify what the graph represents. For example, what data or variables are presented. You may also include the main message of the graph.
+Clarify what the graph represents. For example, what data or variables are presented. You may also include the main message or key takeaway of the graph.
 
 ### 3. Provide a summary or description
 ![Red design tag](/dataviz-tag-design.svg) 
