@@ -15,7 +15,7 @@ Once you have imported the elements package, import the toast api package.
 
 
 ```js
-import { toast, removeToast, updateToast } from '@warp-ds/elements/toast';
+import { toast, removeToast, updateToast } from '@warp-ds/elements';
 ```
 
 ## Syntax
@@ -55,6 +55,13 @@ toast('message goes here', { type: 'warning' });
 
 ```js
 toast('message goes here', { type: 'error' });
+```
+
+### Success with close button
+WARNING! The close icon is designed to automatically close by default, and it is recommended to avoid adding the manual close function due to accessability reasons. If the toast absolutely must be dismissible, set the `canclose` property to `true`.
+
+```js
+toast('message goes here', { type: 'success', canclose: true });
 ```
 
 ## Options
