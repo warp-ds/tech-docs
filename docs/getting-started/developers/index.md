@@ -118,8 +118,8 @@ For more examples how to configure other building tools, please refer to the [ex
 
 #### Add uno.css to your main entry
 
-Depending on the build tool you have chosen this step can look different. The example below is applicable if you build unocss together with vite. If
-you for example use postcss as a build tool you would need to add `@unocss` to the main stylesheet. Please take a look at the [examples](https://github.com/unocss/unocss/tree/main/examples)
+Depending on the build tool you have chosen this step can look different. The example below is applicable if you build unocss together with Vite. If
+you for example use PostCSS as a build tool you would need to add `@unocss` to the main stylesheet. Please take a look at the [examples](https://github.com/unocss/unocss/tree/main/examples)
 and see what is needed to be added in your setup.
 
 > e.g. main.js or main.ts
