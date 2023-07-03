@@ -29,13 +29,13 @@ A guide on how to integrate your project with UnoCSS and Warp.
 > With npm:
 
 ```shell
-npm install -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
+npm install -D unocss @warp-ds/uno@alpha
 ```
 
 > With pnpm
 
 ```shell
-pnpm add -D unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
+pnpm add -D unocss @warp-ds/uno@alpha
 ```
 
 #### If you are using Webpack
