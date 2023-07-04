@@ -110,8 +110,8 @@ export const react = {
       [
         'secondary',
         'boolean',
-        'true',
-        'Set the button to be a secondary, flat style button. Can be combined with `quiet` and `small`.',
+        'false',
+        'Set the button to be a secondary button. Can be combined with `quiet` and `small`.',
       ],
       [
         'negative',

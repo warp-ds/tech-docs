@@ -32,9 +32,7 @@ screen as a primary button.
 
 ### Secondary
 
-Secondary buttons are without an outline, and are often used for secondary or
-tertiary actions. This is the default so you may simply omit the secondary
-property
+Secondary buttons are without background, and are often used for secondary actions. This is the default so you may simply omit the secondary property unless you want to use it with `quiet` variation.
 
 ```jsx example
 <div className="flex space-x-32">
