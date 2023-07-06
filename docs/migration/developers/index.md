@@ -30,7 +30,7 @@ The migration plugin is available to use to detect all deprecated CSS classes an
 #### Install the plugin
 
 ```shell
-pnpm add -D @warp-ds/preset-migrate
+npm install @warp-ds/preset-migrate --save-dev
 ```
 
 #### Use the plugin in your Uno config

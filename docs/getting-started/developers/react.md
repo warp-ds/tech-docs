@@ -3,14 +3,8 @@
 The Warp React package can be installed from NPM.
 `alpha` versions of @warp-ds packages should be installed until major versions are available.
 
-### with npm:
 ```shell
 npm install @warp-ds/react@alpha
-```
-
-### with pnpm
-```shell
-pnpm add @warp-ds/react@alpha
 ```
 
 ## Using Components
@@ -31,5 +25,5 @@ The components are written in TypeScript. To take advantage of this, make sure
 your project is up to date on the latest `@types/react` definitions.
 
 ```shell
-npm install @types/react -D
+npm install @types/react --save-dev
 ```
