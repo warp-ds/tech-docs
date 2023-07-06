@@ -17,7 +17,8 @@ import { wBox } from "@warp-ds/vue";
 
 ```js
 <w-box info>
-    This is "info" variant of the box element
+    <h1>Default example</h1>
+    <p>This is "info" variant of the box component</p>
 </w-box>
 ```
 

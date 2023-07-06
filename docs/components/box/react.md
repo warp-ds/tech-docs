@@ -8,7 +8,8 @@ import { Box } from "@warp-ds/react";
 
 ```js
 <Box info>
-    This is "info" variant of the box element
+    <h1>Default example</h1>
+    <p>This is "info" variant of the box component</p>
 </Box>
 ```
 
