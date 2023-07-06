@@ -62,6 +62,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
   <w-affix slot="suffix" search></w-affix>
 </w-textfield>
 ```
+<api-table type=elements component="Affix" />
 
 ### Read only
 The read-only boolean attribute makes the w-textfield's text content immutable. Unlike

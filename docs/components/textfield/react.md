@@ -132,7 +132,7 @@ Then you include it as a child of TextField component and pass the appropiate pr
 </TextField>
 ```
 
-## Affix props
+You cannot set the `type` of the Affix. `type` of the button renderered as `Affix` will be `submit` if you pass `search` as a prop, `reset` if you pass `clear` and `undefined` in other cases.
 
 <api-table type=react component="Affix" />
 
