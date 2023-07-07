@@ -1,5 +1,6 @@
 export const react = {
   Affix: {
+    title: 'Affix props',
     props: [
       ['aria-label', 'string', '', 'Defines a string value that labels the affix element'],
       ['prefix', 'boolean', '', 'Affix added at the beginning of input'],
@@ -405,16 +406,6 @@ export const react = {
       ['children', 'ReactNode', '', 'For affix use.'],
       ['value', 'string', '', 'The current value (controlled).'],
       ['optional', 'boolean', '', 'The current value (controlled).'],
-      //
-      [
-        'aria-label',
-        'string',
-        '',
-        'Defines a string value that labels the affix element.',
-      ],
-      ['clear', 'boolean', '', 'Displays a clear icon.'],
-      ['search', 'boolean', '', 'Displays a search icon.'],
-      ['label', 'string', '', 'Displays a string.'],
     ],
   },
   Modal: {
@@ -1130,6 +1121,15 @@ export const vue = {
 };
 
 export const elements = {
+  Affix: {
+    title: 'Affix props',
+    props: [
+      ['aria-label', 'string', '', 'Defines a string value that labels the affix element'],
+      ['clear', 'boolean', '', 'Displays a clear icon'],
+      ['search', 'boolean', '', 'Displays a search icon'],
+      ['label', 'string', '', 'Displays a string'],
+    ],
+  },
   Alert: {
     required: [
       [
@@ -1356,15 +1356,6 @@ export const elements = {
         'Whether user input is required on the input before form submission.',
       ],
       ['value', 'string', '', 'The current value (controlled).'],
-      [
-        'aria-label',
-        'string',
-        '',
-        'Defines a string value that labels the affix element.',
-      ],
-      ['clear', 'boolean', '', 'Displays a clear icon.'],
-      ['search', 'boolean', '', 'Displays a search icon.'],
-      ['label', 'string', '', 'Displays a string.'],
     ],
   },
   Toast: {
