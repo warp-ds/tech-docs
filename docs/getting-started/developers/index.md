@@ -27,7 +27,7 @@ A guide on how to integrate your project with UnoCSS and Warp.
 `alpha` versions of @warp-ds packages should be installed until major versions are available.
 
 ```shell
-npm install unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
+npm install unocss @warp-ds/uno@alpha @warp-ds/css@alpha
 ```
 
 #### If you are using Webpack
@@ -55,7 +55,7 @@ Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file
 ```js
 import { defineConfig } from 'unocss';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/component-classes/classes';
+import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   presets: [presetWarp()],
@@ -92,7 +92,7 @@ Below is an example for Vite:
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/component-classes/classes';
+import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   plugins: [

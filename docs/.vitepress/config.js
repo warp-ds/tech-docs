@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
-import { classes } from '@warp-ds/component-classes/classes';
+import { classes } from '@warp-ds/css/component-classes/classes';
 
 const base = '/tech-docs';
 
