@@ -2,9 +2,10 @@
 
 The Warp Vue package can be installed from NPM.
 `alpha` versions of @warp-ds packages should be installed until major versions are available.
+Below version is compatible with the theme stylesheets mentioned in the [Apply Theme](#_2-apply-theme) section.
 
 ```shell
-npm install @warp-ds/vue@alpha
+npm install @warp-ds/vue@1.0.0-alpha.43
 ```
 
 ## Using Components
