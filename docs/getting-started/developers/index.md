@@ -24,10 +24,10 @@ A guide on how to integrate your project with UnoCSS and Warp.
 
 #### Installation
 
-`alpha` versions of @warp-ds packages should be installed until major versions are available.
+`alpha` versions of @warp-ds packages should be installed until major versions are available. Below versions are compatible with the theme stylesheets mentioned in the [Apply Theme](#_2-apply-theme) section.
 
 ```shell
-npm install unocss @warp-ds/uno@alpha @warp-ds/component-classes@alpha
+npm install unocss @warp-ds/uno@1.0.0-alpha.49 @warp-ds/component-classes@1.0.0-alpha.116
 ```
 
 #### If you are using Webpack
@@ -129,7 +129,7 @@ UnoCSS also provides a CSS-in-JS runtime module which runs the UnoCSS engine rig
 #### Bundler usage
 
 ```shell
-npm install @unocss/runtime @warp-ds/uno
+npm install @unocss/runtime @warp-ds/uno@1.0.0-alpha.49
 ```
 
 ```js
