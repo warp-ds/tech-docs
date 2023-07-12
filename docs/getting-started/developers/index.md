@@ -35,7 +35,7 @@ npm install unocss @warp-ds/uno@1.0.0-alpha.49 @warp-ds/component-classes@1.0.0-
 In addition to the installation of the Warp packages, Webpack based projects should also install `@unocss/webpack`
 
 ```shell
-npm install -D @unocss/webpack --save-dev
+npm install @unocss/webpack --save-dev
 ```
 
 See [UnoCSS docs](https://unocss.dev/integrations/webpack) for more information.
