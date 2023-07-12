@@ -5,7 +5,7 @@ The Warp Elements package can be installed from NPM.
 Below version is compatible with the theme stylesheets mentioned in the [Apply Theme](#_2-apply-theme) section.
 
 ```shell
-npm install @warp-ds/elements@@1.0.0-alpha.27
+npm install @warp-ds/elements@1.0.0-alpha.27
 ```
 
 ## Using Components
