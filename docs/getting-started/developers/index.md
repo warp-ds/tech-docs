@@ -12,8 +12,6 @@ If you are migrating from Fabric to Warp, please visit the [Migration page](/mig
 
 If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the #nmp-warp-design-system channel on Slack!
 
-Warp is still a **work in progress**. We kindly ask that you refrain from deploying Warpified Finn apps to production until further notice. Some breaking changes are expected during the summer, and it would be great to have this completed before teams begin merging to the main branch.
-
 For now the primary focus with Warp is to support the existing styling and components that were available in Fabric. Adding new features to Warp is not our current priority.
 
 ## 1. Integrate with UnoCSS and Warp
