@@ -4,12 +4,12 @@
 
 <template>
     <div class="space-x-8">
-        <w-button primary>Click me</w-button>
-        <w-button primary loading>Click me</w-button>
-        <w-button>Click me</w-button>
-        <w-button secondary quiet>Click me</w-button>
-        <w-button secondary quiet small>Click me</w-button>
-        <w-button primary negative>Click me</w-button>
-        <w-button negative quiet>Click me</w-button>
+        <w-button primary>Primary</w-button>
+        <w-button primary loading>Loading</w-button>
+        <w-button utility>Utility</w-button>
+        <w-button>Secondary</w-button>
+        <w-button secondary quiet>Quiet</w-button>
+        <w-button primary negative>Negative</w-button>
+        <w-button negative quiet>Quiet</w-button>
     </div>
 </template>
