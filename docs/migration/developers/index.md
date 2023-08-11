@@ -17,7 +17,7 @@ Before migrating to Warp, this may affect or break the styling for other teams t
 2. Remove any mentions of Fabric, e.g. `fabric.css`.
 3. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the [migration plugin](https://github.com/warp-ds/preset-migrate) to help with this (see further down this page for instructions on using the plugin).
 4. Make sure to install Warp to your project. Follow the instructions on [getting started page](/getting-started/developers/).
-5. If you need to include external classes in our components, please be mindful of the possibility of a conflicting class being applied to the component itself. If these classes have the same CSS specificity, the class that takes precedence depends on the order in which they are applied. This will depend on what framework you are using, and it might have changed from Fabric. Consequently, you may need to append 'important' to the classes you are passing to our components, e.g. class="flex!"
+5. If using external classes in Warp components, be aware of potential conflicts with classes applied to the component itself. These classes share CSS specificity, and precedence is determined by order. For instance, in React components, the 'winning' class is based on the @warp-ds/uno rule sequence, which could differ from Fabric's. Adding 'important' to your classes (e.g., class='flex!') may be necessary.
 
 Don't include Fabric and Warp in the same context, instead use either one of them to avoid conflicts, overlapping styles and unintended visual inconsistencies.
 If it is necessary to include both libraries, it is recommended to encapsulate one of them within a shadow DOM to prevent conflicts and ensure proper isolation.
