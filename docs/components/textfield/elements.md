@@ -3,8 +3,8 @@
 
 ## Validation
 Text fields can communicate to the user whether the current value is invalid. Implement your
-own validation logic in your app and set the error prop to display it as invalid. <i>error</i> is
-often paired with <i>help-text</i> to provide feedback to the user about the error.
+own validation logic in your app and set the `invalid` attribute to display it as invalid. `invalid` is
+often paired with `help-text` to provide feedback to the user about the error.
 
 ```html
 <w-textfield label="Email" invalid help-text="Ugyldig e-post"></w-textfield>
