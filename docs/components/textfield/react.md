@@ -60,9 +60,9 @@ TextFields can provide additional context with `helpText` if the label and place
 
 ## Validation
 
-TextFields can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the error prop to display it as invalid.
+TextFields can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
 
-`error` is often paired with `helpText` to provide feedback to the user about the error.
+`invalid` is often paired with `helpText` to provide feedback to the user about the error.
 
 ```js
 <TextField label="Email" invalid helpText="Ugyldig e-post" />
