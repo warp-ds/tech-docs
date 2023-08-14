@@ -5,22 +5,25 @@
 While Warp maintains as much backward-compatibility as possible from Fabric,
 some breaking changes were necessary or justified.
 
-
 ### Before getting started
+
 Before migrating to Warp, this may affect or break the styling for other teams that exists on the same page as your project. **Make sure to communicate and align with affected teams before starting the migration process.**
 
------
+---
 
 ### How to migrate
+
 1. Remove Fabric as a dependency from your project.
 2. Remove any mentions of Fabric, e.g. `fabric.css`.
 3. Change the prefixes `f-` to `w-` for your component names. The icons should still use the `f-` prefix. Use the [migration plugin](https://github.com/warp-ds/preset-migrate) to help with this (see further down this page for instructions on using the plugin).
 4. Make sure to install Warp to your project. Follow the instructions on [getting started page](/getting-started/developers/).
+5. If using external classes in Warp components, be aware of potential conflicts with classes applied to the component itself. These classes share CSS specificity, and precedence is determined by order. For instance, in React components, the 'winning' class is based on the @warp-ds/uno rule sequence, which could differ from Fabric's. Adding 'important' to your classes (e.g., class='flex!') may be necessary.
 
 Don't include Fabric and Warp in the same context, instead use either one of them to avoid conflicts, overlapping styles and unintended visual inconsistencies.
 If it is necessary to include both libraries, it is recommended to encapsulate one of them within a shadow DOM to prevent conflicts and ensure proper isolation.
 
 ### Icons
+
 Warp does not currently support icons. Until Warp icons being available, continue import the icons from Fabric.
 
 ### Migration plugin
@@ -36,19 +39,17 @@ npm install @warp-ds/preset-migrate --save-dev
 #### Use the plugin in your Uno config
 
 ```js
-import { defineConfig } from 'unocss'
-import { presetWarp } from '@warp-ds/uno'
-import { presetMigrate } from '@warp-ds/preset-migrate'
+import { defineConfig } from 'unocss';
+import { presetWarp } from '@warp-ds/uno';
+import { presetMigrate } from '@warp-ds/preset-migrate';
 
 export default defineConfig({
-  presets: [
-    presetMigrate(),
-    presetWarp()
-  ]
-})
+  presets: [presetMigrate(), presetWarp()],
+});
 ```
 
 #### Output
+
 The output provides a description of the necessary changes or removals required when migrating from Fabric to Warp. The process requires to be done manually, so make sure that these modifications are applied to all relevant class names and component names.
 
 ```js
@@ -59,6 +60,7 @@ The output provides a description of the necessary changes or removals required 
 [REMOVED] button--primary -> use Warp button component instead
 [REMOVED] button--small -> use Warp button component instead
 ```
+
 Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in the [Tech docs](https://warp-ds.github.io/tech-docs) for the components.
 
 ## Component changes
