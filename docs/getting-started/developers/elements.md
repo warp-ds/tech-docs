@@ -10,9 +10,16 @@ npm install @warp-ds/elements@1.0.0-alpha.27
 
 ## Using Components
 
-Once installed, components can be used in your HTML markup.
+Once installed, components can be imported into your app.
 
 ```js
+import '@warp-ds/elements';
+```
+> When importing from NPM you will need to ensure you have build tooling in place. If you are working with Podium podlets or layouts, you likely already have Eik in place with Rollup or Esbuild, in which case no further action should be needed.
+
+Then they can be used in your HTML markup.
+
+```html
 <f-breadcrumbs class="mt-10">
   <a href="#/url/1">Eiendom</a>
   <a href="#/url/2">Bolig til salgs</a>
@@ -20,11 +27,3 @@ Once installed, components can be used in your HTML markup.
 </f-breadcrumbs>
 ```
 
-### Importing from the NPM package
-👉 _**This is the most common method and should be used in most cases**_ 
-
-When importing from NPM you will need to ensure you have build tooling in place. If you are working with Podium podlets or layouts, you likely already have Eik in place with Rollup or Esbuild, in which case no further action should be needed.
-Example
-```
-import '@warp-ds/elements';
-```
