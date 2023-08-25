@@ -26,6 +26,10 @@ If it is necessary to include both libraries, it is recommended to encapsulate o
 
 Warp does not currently support icons. Until Warp icons being available, continue import the icons from Fabric.
 
+### Colours
+
+Warp utilises a system of coloring border, text, background and icons using semantic colour tokens. You will need to manually find the most suitable semantic class (e.g. s-bg-primary) to replace the Fabric colour classes which sets static colours (e.g. blue-600). To find possible replacements refer to our [Colours in WARP](https://warp-ds.github.io/colour-tokens-overview/) page.
+
 ### Migration plugin
 
 The migration plugin is available to use to detect all deprecated CSS classes and provide warnings with useful hints.
