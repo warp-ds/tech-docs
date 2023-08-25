@@ -12,7 +12,7 @@ import { TextField } from '@warp-ds/react';
 
 ## Props
 
-<api-table type=react component="Input" />
+<api-table type=react component="TextField" />
 
 ## Value
 

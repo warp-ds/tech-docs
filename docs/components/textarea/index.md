@@ -3,7 +3,7 @@
   import React from './react.md';
 </script>
 
-# TextArea
+# Text Area
 
 A multiline text input component.
 
@@ -19,7 +19,8 @@ A multiline text input component.
 
 ### Accessibility
 
-If a visible label isn't specified, an `aria-label` must be provided to the TextArea for accessibility. If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
+If a visible label isn't specified, an `aria-label` must be provided to the Text Area for accessibility.
+If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
 
 ## Frameworks
 

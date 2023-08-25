@@ -44,8 +44,8 @@ The wForm component registers element descendants at any level, and provides the
 
 <api-table type=vue component="InputValidation"/>
 
-### Programatic validation
-The wField component can provide access to programatic validation beyond what wForm's props can. For information on which methods are available, see the documentation on Field.
+### Programmatic validation
+The wField component can provide access to programmatic validation beyond what wForm's props can. For information on which methods are available, see the documentation on Field.
 
 ```html
 <w-field #control="{ form }">

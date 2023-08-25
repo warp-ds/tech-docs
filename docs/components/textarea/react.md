@@ -1,7 +1,7 @@
 ## Import
 
 ```js
-import { TextField } from '@warp-ds/react';
+import { TextArea } from '@warp-ds/react';
 ```
 
 ## Syntax
@@ -59,7 +59,8 @@ TextAreas can provide additional context with `helpText` if the label and placeh
 
 ## Validation
 
-TextFields can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
+TextAreas can communicate to the user whether the current value is invalid.
+Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
 
 `invalid` is often paired with `helpText` to provide feedback to the user about the error.
 

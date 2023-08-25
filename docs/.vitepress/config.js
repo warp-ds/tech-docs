@@ -138,8 +138,8 @@ export default defineConfig({
                 { text: 'Select', link: '/components/select/' },
                 { text: 'Slider', link: '/components/slider/' },
                 { text: 'Switch', link: '/components/switch/' },
-                { text: 'Textarea', link: '/components/textarea/' },
-                { text: 'Textfield', link: '/components/textfield/' },
+                { text: 'Text Area', link: '/components/textarea/' },
+                { text: 'Text Field', link: '/components/textfield/' },
               ],
             },
             {
