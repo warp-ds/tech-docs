@@ -9,7 +9,7 @@ export const buildWc = (elementName, baseVueComponent) => {
       elementName,
       class extends HTMLElement {
         connectedCallback() {
-          const warp = `<link rel="stylesheet" type="text/css" href='https://assets.finn.no/pkg/@warp-ds/tokens/v1/finn-no.css' />`;
+          const warp = `<link rel="stylesheet" type="text/css" href='https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css' />`;
           const target = `<div id="app" class="mt-16"></div>`;
           const shadowUnoStyle = `<style>
         @unocss-placeholder
@@ -44,7 +44,7 @@ export const buildWc = (elementName, baseVueComponent) => {
                 if (s.getAttribute('href').includes('@warp-ds/tokens')) {
                   s.setAttribute(
                     'href',
-                    `https://assets.finn.no/pkg/@warp-ds/tokens/v1/${theme}.css`
+                    `https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${theme}.css`
                   );
                 }
               });
