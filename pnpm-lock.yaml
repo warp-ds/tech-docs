@@ -9,10 +9,10 @@ devDependencies:
     specifier: ^1.0.0
     version: 1.0.0
   '@warp-ds/elements':
-    specifier: 1.0.0
+    specifier: ^1.0.0
     version: 1.0.0
   '@warp-ds/uno':
-    specifier: 1.0.0
+    specifier: ^1.0.0
     version: 1.0.0
   '@warp-ds/vue':
     specifier: ^1.0.0
