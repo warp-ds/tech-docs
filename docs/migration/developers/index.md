@@ -60,9 +60,8 @@ The output provides a description of the necessary changes or removals required 
 [REPLACED] flex-shrink -> use shrink
 [REPLACED] flex-grow -> use grow
 [REPLACED] last-child:mb-0 -> use last:mb-0
-[REMOVED] button -> use Warp button component instead
-[REMOVED] button--primary -> use Warp button component instead
-[REMOVED] button--small -> use Warp button component instead
+[REMOVED] input -> use Warp button component instead
+[DEPRECATED] s-color-background-primary-default -> use 's-color-background-primary'
 ```
 
 Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in the [Tech docs](https://warp-ds.github.io/tech-docs) for the components.

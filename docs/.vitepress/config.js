@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
-import { classes } from '@warp-ds/component-classes/classes';
+import { classes } from '@warp-ds/css/component-classes/classes';
 
 const base = '/tech-docs';
 
@@ -138,8 +138,8 @@ export default defineConfig({
                 { text: 'Select', link: '/components/select/' },
                 { text: 'Slider', link: '/components/slider/' },
                 { text: 'Switch', link: '/components/switch/' },
-                { text: 'Textarea', link: '/components/textarea/' },
-                { text: 'Textfield', link: '/components/textfield/' },
+                { text: 'Text Area', link: '/components/textarea/' },
+                { text: 'Text Field', link: '/components/textfield/' },
               ],
             },
             {
