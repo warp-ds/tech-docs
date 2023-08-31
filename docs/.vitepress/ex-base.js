@@ -41,7 +41,7 @@ export const buildWc = (elementName, baseVueComponent) => {
             if (window.theme) {
               const stylesheets = this.shadow.querySelectorAll('link');
               stylesheets.forEach((s) => {
-                if (s.getAttribute('href').includes('@warp-ds/tokens')) {
+                if (s.getAttribute('href').includes('@warp-ds/css/v1/tokens')) {
                   s.setAttribute(
                     'href',
                     `https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${theme}.css`
