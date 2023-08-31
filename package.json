@@ -7,13 +7,13 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "@warp-ds/component-classes": "1.0.0-alpha.116",
-    "@warp-ds/elements": "1.0.0-alpha.27",
-    "@warp-ds/uno": "1.0.0-alpha.49",
-    "@warp-ds/vue": "^1.0.0-alpha.46",
+    "@warp-ds/css": "^1.0.0",
+    "@warp-ds/elements": "1.0.0",
+    "@warp-ds/uno": "1.0.0",
+    "@warp-ds/vue": "^1.0.0",
     "markdown-it": "^13.0.1",
     "sass": "^1.62.1",
-    "unocss": "^0.52.4",
+    "unocss": "^0.55.2",
     "vite": "^4.3.9",
     "vitepress": "1.0.0-beta.2",
     "vue": "^3.3.4"
