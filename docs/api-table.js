@@ -822,8 +822,9 @@ export const vue = {
       ],
     ],
     variants: [
-      ['primary', 'negative, quiet, small, loading'],
+      ['primary', 'quiet, small, loading'],
       ['secondary', 'quiet, small, loading'],
+      ['negative', 'quiet, small, loading'],
       ['link', 'small'],
       ['utility', 'small, loading'],
       ['pill', ''],
