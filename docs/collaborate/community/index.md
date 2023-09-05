@@ -5,36 +5,16 @@ We are always available in our slack channel and we really want that to be a blo
 Besides our slack channel we also have two formats for collaborating with the design systems team on a more structural level.
 
 
-## Warp Open Forum
+## Warp Office Hours
 
-### Purpose
-
-For designers and engineers that are working with the design system.
-
-- Feedback and discussions in a larger setting
-- Warp team talks about new features
-- Low key and relaxed setting
-
-Warp representatives from design, web and apps will be there.
-This is the place to be if you want to keep up with Warp.
-
-
-### Target group
-
-Designers and engineers in NMP.
-
-The agenda can be found in the calendar invite, check [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04P0GYTHPV) for updates.
-
-*If you have questions about component usage please bring them to the Office hours instead.*
-
+![Warp office hours every monday 14-15:30, 15-16:30 in Finland](/open-office.png)
 
 ### When?
 
-Every third Thursday of the month. Please sign up through the link in the calendar invite if you have a topic you want to discuss.
+Every Monday between 2 pm - 3:30pm (3-4:30pm in 🇫🇮Finland) we are hosting Warp office hours.
 
-We will make time for open questions at the end of each Forum.
-
-## Warp Office Hours
+Come around and ask questions, get feedback on sketches or your code.
+Login to [this Google meet](http://meet.google.com/qee-nqsf-qeu), or reach out in [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04P0GYTHPV) on Slack to schedule a meeting.
 
 ### Purpose
 
@@ -47,12 +27,6 @@ Do you have a design you think should be a component or a template? Right place 
 Designers that work with, or are about to start working with the design system.
 
 Engineers that have questions about usage of a component are welcome to reach out to set up a meeting anytime using our #nmp-warp-design-system channel.
-
-### When?
-
-Every third Thursday of the month. Please sign up through the link in the calendar invite if you have a topic you want to discuss.
-
-There will be time for open questions at the end of each Open Forum session.
 
 ## Being part of the early adopters warpies
 
