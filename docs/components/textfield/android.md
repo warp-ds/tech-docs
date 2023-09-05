@@ -50,8 +50,8 @@ Add the `optionalLabel` param to indicate that the textfield is not required.
 
 ```kotlin
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "Price",         
     optionalLabel = "(optional)"  
     )
@@ -62,13 +62,31 @@ TextFields can provide additional context with `helpText` if the label and place
 
 ```kotlin
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "Address",         
     helpText = "Street name & house nr"  
     )
 ```
+## Validation
 
+TextFields can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `isError` prop to display it as invalid.
+
+`isError` is often paired with `helpText` to provide feedback to the user about the error.
+
+```kotlin
+var text by rememberSaveable { mutableStateOf("") }
+var isError by remember { mutableStateOf(false)}
+var errorText by remember { mutableStateOf("")}
+
+WarpTextField(
+    value = text,
+    onValueChange = { text = it },            
+    label = "Zipcode",
+    isError = isError,          
+    helpText = errorText  
+    )
+```
 
 
 ## Visual options
@@ -79,8 +97,8 @@ Placeholder text can be used to describe the expected value or formatting for th
 
 ```kotlin
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "E-mail",         
     placeholderText = "email@mail.com"  
     )
@@ -92,8 +110,8 @@ Keep in mind that using disabled in its current form is an anti-pattern. There w
 
 ```kotlin
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "E-mail",         
     enabled = false  
     )
@@ -107,8 +125,8 @@ The readOnly boolean prop makes the TextField's text content immutable.
 
 ```kotlin
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "Name",
     readOnly = true 
     )
@@ -122,8 +140,8 @@ WarpTextField supports showing a leading and/or a trailing icon. The component e
 val leadingIcon: @Composable () -> Unit = { Icon(Icons.Filled.Email, contentDescription = "Content description for the leading icon") }
 
 WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
+    value = "",
+    onValueChange = { },            
     label = "E-mail",
     leadingIcon = leadingIcon 
     )
