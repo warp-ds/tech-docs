@@ -36,6 +36,6 @@ icon, an `aria-label` prop must be provided for accessibility.
     <elements />
   </template>
   <template #android>
-    <elements />
+    <android />
   </template>
 </tabs-content>

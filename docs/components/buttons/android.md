@@ -109,12 +109,5 @@ To support layouts still written in xml the WarpButton can be used as a custom v
 
 ### Parameters
 
-| | |
-|---|---|
-| text | The text to be displayed on the button |
-| onClick | Lambda to be invoked when clicked |
-| enabled | Set to false to disable the button. Default value is true |
-| modifer | Modifier for the button. Default value is Modifier |
-| buttonStyle | Controls the apperance of the button. Currently supported styles include: Primary, Secondary, Tertiary, Quiet, Critical, CriticalQuiet, Utility, UtilityQuiet and UtilityOverlay |
-| maxLines | Limits the lines of the text on the button |
-| loading | Set to true to enable the loading state. Default value is false |
+<api-table type=android component="Button" />
+

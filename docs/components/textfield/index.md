@@ -2,6 +2,7 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Elements from './elements.md';
+  import Android from './android.md';
 </script>
 
 # TextField
@@ -33,5 +34,8 @@ If a visible label isn't specified, an `aria-label` must be provided to the Text
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>
