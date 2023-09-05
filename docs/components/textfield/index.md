@@ -9,7 +9,7 @@
 
 A single-line text input component.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released' ios='developing' />
 
 ## Example
 

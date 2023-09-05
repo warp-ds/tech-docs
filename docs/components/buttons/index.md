@@ -9,7 +9,7 @@
 
 Buttons are used to perform actions, with different visuals for different needs.
 
-<components-status react='released' vue='released' elements='released' android='released' />
+<components-status react='released' vue='released' elements='released' android='released' ios='developing' />
 
 ## Example
 <theme-switcher />

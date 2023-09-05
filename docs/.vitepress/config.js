@@ -100,7 +100,14 @@ export default defineConfig({
           collabsible: true,
           collapsed: true,
           items: [
-            { text: 'Developers', link: '/getting-started/developers/' },
+            { text: 'Developers', 
+            collapsible: true,
+            items: [
+              { text: 'Web', link: '/getting-started/developers/' },
+              { text: 'Android', link: '/getting-started/android/' },
+              { text: 'iOS', link: '/getting-started/ios/' },
+            ],
+            },
             { text: 'Designers', link: '/getting-started/designers/' },
           ],
         },
