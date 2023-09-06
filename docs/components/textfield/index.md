@@ -3,6 +3,7 @@
   import React from './react.md';
   import Elements from './elements.md';
   import Android from './android.md';
+  import iOS from './ios.md';
 </script>
 
 # TextField
@@ -37,5 +38,8 @@ If a visible label isn't specified, an `aria-label` must be provided to the Text
   </template>
   <template #android>
     <android />
+  </template>
+  <template #ios>
+    <ios />
   </template>
 </tabs-content>
