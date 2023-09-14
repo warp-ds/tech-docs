@@ -154,6 +154,7 @@ export default defineConfig({
               text: 'Layout',
               collapsible: true,
               items: [
+                { text: 'Badge', link: '/components/badge/' },
                 { text: 'Box', link: '/components/box/' },
                 {
                   text: 'Broadcast',
