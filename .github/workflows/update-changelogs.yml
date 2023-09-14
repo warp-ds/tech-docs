@@ -1,0 +1,53 @@
+name: Update Changelogs and Create PR
+
+on:
+  workflow_dispatch: # This triggers the workflow manually
+
+jobs:
+  update-changelogs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Changelog from Elements
+        run: |
+          curl -o docs/whats-new/changelogs/repos/elements.md https://raw.githubusercontent.com/warp-ds/elements/main/CHANGELOG.md
+
+      - name: Fetch Changelog from React
+        run: |
+          curl -o docs/whats-new/changelogs/repos/react.md https://raw.githubusercontent.com/warp-ds/react/main/CHANGELOG.md
+
+      - name: Fetch Changelog from Vue
+        run: |
+          curl -o docs/whats-new/changelogs/repos/vue.md https://raw.githubusercontent.com/warp-ds/vue/main/CHANGELOG.md
+
+      - name: Fetch Changelog from Drive
+        run: |
+          curl -o docs/whats-new/changelogs/repos/drive.md https://raw.githubusercontent.com/warp-ds/drive/main/CHANGELOG.md
+
+      - name: Fetch Changelog from CSS
+        run: |
+          curl -o docs/whats-new/changelogs/repos/css.md https://raw.githubusercontent.com/warp-ds/css/main/CHANGELOG.md
+
+      - name: Remove Alpha/Next Changelogs
+        run: |
+          sed -i '/## \[Unreleased\]/,/## \[.*alpha.*\]/d' docs/whats-new/changelogs/repos/*.md
+
+      - name: Commit and Push Changelogs
+        run: |
+          git config user.name "GitHub Actions"
+          git checkout -b update-changelog-$(date +%Y%m%d%H%M%S)
+          git add docs/whats-new/changelogs/*
+          git commit -m "Update changelogs"
+          git push origin update-changelog-$(date +%Y%m%d%H%M%S)
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Update changelogs'
+          branch: 'update-changelog-$(date +%Y%m%d%H%M%S)'
+          title: 'Update Changelogs'
+          body: 'Automated update of changelogs from repositories.'

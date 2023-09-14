@@ -17,7 +17,7 @@ export default defineConfig({
   lastUpdated: false,
   cleanUrls: true,
   base: `${base}/`,
-  markdown: { theme: 'nord' },
+  markdown: { theme: 'nord', attrs: { disable: true }},
   vue: {
     template: {
       compilerOptions: {
@@ -104,6 +104,14 @@ export default defineConfig({
             { text: 'Designers', link: '/getting-started/designers/' },
           ],
         },
+        /*{
+          text: `What's new`,
+          collabsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Changelog', link: '/whats-new/changelogs/' },
+          ],
+        },*/
         {
           text: 'Migration to Warp',
           collabsible: true,
@@ -243,6 +251,10 @@ export default defineConfig({
             { text: 'Join the community ', link: '/collaborate/community/' },
           ],
         },
+        /*{
+          text: 'Changelogs',
+          link: '/changelogs/',
+        },*/
       ],
     },
   },
