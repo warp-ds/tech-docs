@@ -1,5 +1,6 @@
 <script setup>
     import { wButton } from '@warp-ds/vue';
+
 </script>
 
 <template>
@@ -11,5 +12,8 @@
         <w-button secondary quiet>Secondary Quiet</w-button>
         <w-button primary negative>Negative</w-button>
         <w-button negative quiet>Negative Quiet</w-button>
+        <w-button full-width primary>Primary full width</w-button>
+
+
     </div>
 </template>
