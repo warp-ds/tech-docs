@@ -1,14 +1,14 @@
-## Import
+### Import
 
 ```js
 import { Modal } from '@warp-ds/react';
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Modal" />
 
-## Example
+### Example
 
 ```jsx
 function Example() {
@@ -90,15 +90,16 @@ function Example() {
 }
 ```
 
-## Content
+### Content
 
 WARP guidelines state the following:
 
 - The cancel action should always be on the left, while the main action is to the right.
 
-## Non dismissable modals
+### Non dismissable modals
 
-The `onDismiss` prop is optional. It can be dropped to create a modal that won't respond to `esc` keypresses and/or clicking outside the modal.
+The `onDismiss` prop is optional.
+It can be dropped to create a modal that won't respond to `esc` key presses and/or clicking outside the modal.
 
 ```jsx
 function Example() {
@@ -147,9 +148,11 @@ function Example() {
 }
 ```
 
-## Customizing focus behavior
+### Customizing focus behavior
 
-By default the first interactive element in the modal will be focused when the modal opens. Use `initialFocusRef` to customize this behavior. For instance, this can be used to focus a call to action button.
+By default, the first interactive element in the modal will be focused when the modal opens.
+Use `initialFocusRef` to customize this behavior.
+For instance, this can be used to focus a call-to-action button.
 
 ```jsx
 function Example() {

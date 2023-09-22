@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,62 +13,63 @@ app.use(Steps);
 import { wSteps, wStep } from '@warp-ds/vue';
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
 <w-steps>
-  <w-step complete>
-    <h3>Step 1</h3>
-  </w-step>
-  <w-step active>
-    <h3>Step 2</h3>
-  </w-step>
-  <w-step>
-    <h3>Step 3</h3>
-  </w-step>
+  <w-step complete>Step 1</w-step>
+  <w-step active>Step 2</w-step>
+  <w-step>Step 3</w-step>
 </w-steps>
 ```
 
-### Interactive usage
+#### Interactive usage
 
-```js
+```vue
 <script setup>
-import { ref } from 'vue';
+import { computed, reactive, ref } from 'vue';
 import { wButton, wSteps, wStep } from '@warp-ds/vue';
 
-const currentStep = ref(1);
+const steps = [
+  { name: 'Step 1', desc: 'The first step' },
+  { name: 'Step 2', desc: 'The second step' },
+  { name: 'Step 3', desc: 'The last step' },
+];
 
-const handleClick = () => {
-  if (currentStep.value < 4) currentStep.value += 1;
-  else currentStep.value = 1;
+const currentStep = ref(0);
+
+const stepControlButtonText = computed(() => {
+  switch(currentStep.value) {
+    case steps.length:
+      return 'Start over';
+    case (steps.length - 1):
+      return 'Finish'
+    default:
+      return 'Next step';
+  }
+});
+
+const nextStep = () => {
+  if (++currentStep.value > steps.length) currentStep.value = 0;
 };
 </script>
-
 <template>
-  <w-steps>
-    <w-step :active="currentStep === 1" :complete="currentStep > 1">
-      <p class="font-bold">Step 1</p>
-      <p>Describing text</p>
-    </w-step>
-    <w-step :active="currentStep === 2" :complete="currentStep > 2">
-      <p class="font-bold">Step 2</p>
-      <p>Describing text</p>
-    </w-step>
-    <w-step :active="currentStep === 3" :complete="currentStep > 3">
-      <p class="font-bold">Step 3</p>
-      <p>Describing text</p>
+  <w-steps horizontal>
+    <w-step v-for="(step, stepIndex) in steps" :key="step.name" :active="currentStep === stepIndex" :complete="currentStep > stepIndex">
+      <strong>{{ step.name }}</strong>
+      <p>{{ step.desc }}</p>
     </w-step>
   </w-steps>
-  <w-button primary v-on:click="handleClick">Next step</w-button>
+  <w-button @click="nextStep">{{ stepControlButtonText }}</w-button>
 </template>
 ```
 
-## Props
+### Props
 
-### Steps
+#### Steps
 
 <api-table type="vue" component="Steps" />
 
-### Step
+#### Step
 
 <api-table type="vue" component="Step" />

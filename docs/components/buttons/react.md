@@ -1,18 +1,18 @@
-## Import
+### Import
 
 ```js
 import { Button } from '@warp-ds/react';
 ```
 
-## Syntax
+### Syntax
 
 ```jsx example
 <Button>Save</Button>
 ```
 
-## Visual options
+### Visual options
 
-### Primary
+#### Primary
 
 The primary button is a call to action. As a general rule, there should only be
 one of them on the screen. This guides the user towards the happy path.
@@ -21,7 +21,7 @@ one of them on the screen. This guides the user towards the happy path.
 <Button primary>Save</Button>
 ```
 
-### Negative
+#### Negative
 
 Used for destructive actions, like deletion. Shouldn't be used on the same
 screen as a primary button.
@@ -30,9 +30,10 @@ screen as a primary button.
 <Button negative>Delete</Button>
 ```
 
-### Secondary
+#### Secondary
 
-Secondary buttons are without background, and are often used for secondary actions. This is the default so you may simply omit the secondary property unless you want to use it with `quiet` variation.
+Secondary buttons are without background, and are often used for secondary actions.
+This is the default, so you may simply omit the secondary property unless you want to use it with `quiet` variation.
 
 ```jsx example
 <div className="flex space-x-32">
@@ -41,7 +42,7 @@ Secondary buttons are without background, and are often used for secondary actio
 </div>
 ```
 
-### Loading/In progress
+#### Loading/In progress
 
 Used for visual feedback that the action the user triggered is loading.
 
@@ -49,19 +50,19 @@ Used for visual feedback that the action the user triggered is loading.
 <Button loading>Save</Button>
 ```
 
-### Small
+#### Small
 
 ```jsx example
 <Button small>Small</Button>
 ```
 
-### Pill
+#### Pill
 
 ```jsx example
 <Button pill>Pill</Button>
 ```
 
-### Link
+#### Link
 
 Buttons will be rendered as an anchor (a tag) if they use an `href` attribute.
 
@@ -75,13 +76,13 @@ But if you need a button to look like a link, use the `link` property.
 <Button link>Link</Button>
 ```
 
-### Disabled
+#### Disabled
 
 Disabled is an anti-pattern and is not supported. There will ALWAYS be users who
 don't understand why an element is disabled, or users who can't even see that it
 is disabled because of poor lighting conditions or other reasons.
 
 
-### Props
+#### Props
 
 <api-table type=react component="Button" />

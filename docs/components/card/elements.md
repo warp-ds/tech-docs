@@ -1,29 +1,27 @@
-## Syntax
+### Syntax
 
-```js
+```html
 <w-card selected="">
   <div class="m-20">This example shows a card that looks selected</div>
 </w-card>
 ```
 
-## Props
+### Props
 
 <api-table type=elements component="Card" />
 
-### Selected
+#### Selected
 
 You can control whether the card looks "selected" by setting the `selected` attribute OR property.
 
-#### Attribute
-
+Attribute:
 ```html example
 <w-card selected="">
   <div class="m-20">This example shows a card that looks selected</div>
 </w-card>
 ```
 
-#### Property
-
+Property:
 ```html example
 <w-card id="card-selected-property-example">
   <div class="m-20">This example shows a card that looks selected</div>
@@ -31,17 +29,17 @@ You can control whether the card looks "selected" by setting the `selected` attr
 <script>document.querySelector('#card-selected-property-example').selected = true;</script>
 ```
 
-### Clickable
+#### Clickable
 
 Whenever you add event listeners or use the onclick attribute, you should set the component's `clickable` attribute. This ensures that things such as keyboard navigation works as expected.
 
-```jsx example
+```html example
 <w-card clickable="" onclick="alert('clicked!');">
   <div class="m-20">This example shows content as a clickable div</div>
 </w-card>
 ```
 
-### Flat
+#### Flat
 
 If you need to give the component a flat look, set the `flat` attribute.
 
@@ -51,9 +49,9 @@ If you need to give the component a flat look, set the `flat` attribute.
 </w-card>
 ```
 
-## Examples
+### Examples
 
-### Semantics
+#### Semantics
 
 When you need the component to behave like a section, article or what have you, you should set the `role` attribute.
 
@@ -63,7 +61,7 @@ When you need the component to behave like a section, article or what have you, 
 </w-card>
 ```
 
-### Click event handler example
+#### Click event handler example
 
 You can register click events with onclick or addEventListener as per any other HTML element. When you do so, be sure to set the `clickable` attribute on the element for styling and accessibility reasons.
 
@@ -84,7 +82,7 @@ You can register click events with onclick or addEventListener as per any other 
     <p class="text-14 text-gray-400 mb-4">Bøgata 25C, 0655 Oslo</p>
     <p class="font-bold my-8">
       52 m
-      <span style="font-size: 10px; vertical-align: 'super'; margin-right: 5px">
+      <span style="font-size: 10px; vertical-align: super; margin-right: 5px">
         2 </span>
       Totalpris: 4 869 039 kr
     </p>
@@ -96,7 +94,7 @@ You can register click events with onclick or addEventListener as per any other 
 </w-card>
 ```
 
-### Anchor link example
+#### Anchor link example
 
 Keep in mind that if you wish to make the Card a clickable anchor card, you must add a div as the very first element with the attribute `aria-owns` set to the id of the title element. In this example we set it to the id of `title` and assign the `h3` this id.
 
@@ -114,7 +112,6 @@ You should follow these semantics, but styling is up to you.
 ```
 
 Full code example:
-
 ```html example
 <w-card class="mt-10 mr-10">
   <div aria-owns="title"></div>
@@ -138,7 +135,7 @@ Full code example:
     <p class="text-14 text-gray-400 mb-4">Bøgata 25C, 0655 Oslo</p>
     <p class="font-bold my-8">
       52 m
-      <span style="font-size: 10px; vertical-align: 'super'; margin-right: 5px">
+      <span style="font-size: 10px; vertical-align: super; margin-right: 5px">
         2 </span>
       Totalpris: 4 869 039 kr
     </p>

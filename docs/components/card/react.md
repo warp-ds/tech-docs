@@ -1,18 +1,18 @@
-## Import
+### Import
 
 ```js
 import { Card } from '@warp-ds/react';
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Card" />
 
-## DeadToggle props
+### DeadToggle props
 
 <api-table type=react component="DeadToggle" />
 
-## Code
+### Code
 
 The `<Card>` component takes any set of JSX elements as its children.
 
@@ -55,12 +55,11 @@ The `<Card>` component takes any set of JSX elements as its children.
 </Card>
 ```
 
-## Selecting
+### Selecting
 
-You can mark a Card as selected by pasing the `selected` property. This will add an outline to indicate the selected state.
+You can mark a Card as selected by passing the `selected` property. This will add an outline to indicate the selected state.
 
 Try clicking one of the cards below and watch them all get selected at once.
-
 
 ```jsx example
 function Example() {
@@ -178,7 +177,7 @@ function Example() {
 }
 ```
 
-## Anchor Cards
+### Anchor Cards
 
 Keep in mind that if you wish to make the Card a clickable anchor card, you must add a div as the very first element with the attribute aria-owns set to the id of the title element. In this example we set it to the id of title and assign the h3 this id.
 
@@ -245,7 +244,7 @@ Here's the full code example:
 </Card>
 ```
 
-## Toggles inside of Cards
+### Toggles inside of Cards
 
 Using Toggles([Radios](/components/radio/) or [Checkboxes](/components/checkbox/)) inside of cards has the limitation of only being able to pass forward a label. If you wish to further enhance the look and feel of these you must use the DeadToggle helper component, which we cover a bit further down.
 
@@ -296,7 +295,7 @@ function Example() {
 }
 ```
 
-## Using the DeadToggle and Clickable helper component
+### Using the DeadToggle and Clickable helper component
 
 First we must import the necessary helper components:
 

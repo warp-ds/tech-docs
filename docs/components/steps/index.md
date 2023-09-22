@@ -13,7 +13,13 @@ The steps component is built to handle user journeys, making it clear to the end
 
 <theme-switcher />
 
-<steps-example></steps-example>
+<steps-example />
+
+## Usage
+
+<component-design-guidelines name="Warp - Components / Button" link="https://www.figma.com/file/8P1JQsd82b93gQ6K3igO2p/Warp---Components?type=design&node-id=303-19039&mode=design&t=zUBVst8JZi0AR66n-0" />
+
+<component-questions />
 
 ## Frameworks
 
@@ -23,7 +29,5 @@ The steps component is built to handle user journeys, making it clear to the end
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

@@ -11,8 +11,10 @@
 </script>
 
 <template>
-  <h3>Default</h3>
-  <div class="component flex gap-10">
+  <div class="component space-y-16">
+    <div>
+      <h3 class="h4">Default</h3>
+      <div class="flex gap-10">
         <w-card :selected="selected">
           <img class="h-128 w-full object-cover" src="https://source.unsplash.com/random/400x400" />
           <p class="absolute top-12 left-12 bg-aqua-200 text-aqua-900 p-4 rounded-4 text-12">Ukens bolig</p>
@@ -45,20 +47,19 @@
             <p class="font-bold my-8">52 m<span style="font-size: 10px; vertical-align: super;">2</span> Totalpris: 4 869 039 kr</p>
             <p class="text-14  mb-0">Eier (Selveier) <span class="">•</span> Leilighet <span class="">•</span> 2 soverom</p>
           </div>
-        
         </w-card>
       </div>
-      <h3>Toggles in cards</h3>
-      <div class="component">
-      
+    </div>
+    <div>
+      <h3 class="h4">Toggles in cards</h3>
       <w-card :selected="checkModel" class="w-max mb-8">
         <div class="p-24 flex">
           <w-dead-toggle checkbox v-model="checkModel" :value="true" />
           <w-clickable checkbox :value="true" v-model="checkModel" label-class="ml-12 text-16">Check in a card</w-clickable>
         </div>
       </w-card>
-
-        <w-card :selected="radioModel === 'foo'" class="w-max mb-8">
+      <div class="flex gap-10">
+        <w-card :selected="radioModel === 'foo'" class="w-max">
           <div class="p-24 flex">
             <w-dead-toggle radio v-model="radioModel" value="foo" />
             <w-clickable radio value="foo" v-model="radioModel" label-class="ml-12" name="radio-group">Radio in a card - A</w-clickable>
@@ -71,8 +72,10 @@
           </div>
         </w-card>
       </div>
-      <h3>Dead toggles</h3>
-      <div class="component flex gap-10">
+    </div>
+    <div>
+      <h3 class="h4">Dead toggles</h3>
+      <div class="flex gap-10">
         <w-card flat class="py-4 px-12 flex items-center" :selected="foo === 'foo'">
           <w-dead-toggle radio v-model="foo" value="foo" />
           <div class="ml-12">
@@ -88,5 +91,6 @@
           </div>
         </w-card>
       </div>
-
+    </div>
+  </div>
 </template>

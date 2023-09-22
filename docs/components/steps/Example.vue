@@ -1,64 +1,70 @@
 <script setup>
-import { ref } from 'vue';
+import {computed, reactive, ref} from 'vue';
 import { wButton, wSteps, wStep } from '@warp-ds/vue';
+import DemoControls from "../../.vitepress/Controls.vue";
 
-const alignment = {
+const steps = [
+  { name: 'Step 1', desc: 'The first step' },
+  { name: 'Step 2', desc: 'The second step' },
+  { name: 'Step 3', desc: 'The last step' },
+];
+
+const currentStep = ref(0);
+
+const stepControlButtonText = computed(() => {
+    switch(currentStep.value) {
+      case steps.length:
+        return 'Start over';
+      case (steps.length - 1):
+        return 'Finish'
+      default:
+        return 'Next step';
+    }
+});
+
+const nextStep = () => {
+  if (++currentStep.value > steps.length) currentStep.value = 0;
+};
+
+const alignments = {
   vertical: 'Vertical',
   horizontal: 'Horizontal',
 };
 
-const position = {
+const positions = {
   left: 'Left',
   right: 'Right',
 };
 
-const currentStep = ref(1);
-const currentAlignment = ref(alignment.vertical);
-const currentPosition = ref(position.left);
+const useIsActive = (state) => (name) => state.active === name;
+const radio = true;
 
-const handleClick = () => {
-  if (currentStep.value < 4) currentStep.value += 1;
-  else currentStep.value = 1;
-};
+const alignmentState = reactive({ active: alignments.horizontal });
+const isActiveAlignment = useIsActive(alignmentState);
+const alignmentControls = Object.entries(alignments).map(([,name]) => ({ name, radio }));
+
+const positionState = reactive({ active: positions.left });
+const isActivePosition = useIsActive(positionState);
+const positionControls = Object.entries(positions).map(([,name]) => ({ name, radio }));
 </script>
 
 <template>
-  <div class="options">
-    <label v-for="[name, value] in Object.entries(alignment)" :key="name">
-      <input
-        type="radio"
-        :id="name"
-        :value="value"
-        v-model="currentAlignment"
-      />
-      <span>{{ value }}</span>
-    </label>
-  </div>
-  <div class="options">
-    <label v-for="[name, value] in Object.entries(position)" :key="name">
-      <input type="radio" :id="name" :value="value" v-model="currentPosition" />
-      <span>{{ value }}</span>
-    </label>
-  </div>
-  <div>
+  <div class="component">
     <w-steps
-      class="component"
-      :horizontal="currentAlignment === alignment.horizontal"
-      :right="currentPosition === position.right"
+      :horizontal="isActiveAlignment(alignments.horizontal)"
+      :right="isActivePosition(positions.right)"
+      class="mb-32"
     >
-      <w-step :active="currentStep === 1" :complete="currentStep > 1">
-        <p class="font-bold">Step 1</p>
-        <p>Describing text</p>
-      </w-step>
-      <w-step :active="currentStep === 2" :complete="currentStep > 2">
-        <p class="font-bold">Step 2</p>
-        <p>Describing text</p>
-      </w-step>
-      <w-step :active="currentStep === 3" :complete="currentStep > 3">
-        <p class="font-bold">Step 3</p>
-        <p>Describing text</p>
+      <w-step v-for="(step, stepIndex) in steps" :key="step.name" :active="currentStep === stepIndex" :complete="currentStep > stepIndex">
+        <strong>{{ step.name }}</strong>
+        <p>{{ step.desc }}</p>
       </w-step>
     </w-steps>
-    <w-button primary v-on:click="handleClick">Next step</w-button>
+
+    <demo-controls x class="flex items-center">
+      <demo-control label="Alignment" :controls="alignmentControls" :state="alignmentState" />
+      <demo-control v-if="isActiveAlignment(alignments.vertical)" label="Position" :controls="positionControls" :state="positionState" />
+      <w-button primary @click="nextStep" class="last:mb-32 last-child:mb-32 mb-32 last:ml-auto!">{{ stepControlButtonText }}</w-button>
+    </demo-controls>
   </div>
 </template>

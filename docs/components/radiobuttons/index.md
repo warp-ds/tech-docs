@@ -15,6 +15,12 @@ Radio buttons allow users to select a single option from a list of mutually excl
 
 <radiobuttons-example />
 
+## Usage
+
+<component-design-guidelines name="Warp - Components / Button" link="https://www.figma.com/file/8P1JQsd82b93gQ6K3igO2p/Warp---Components?type=design&node-id=303-19039&mode=design&t=zUBVst8JZi0AR66n-0" />
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
@@ -23,7 +29,5 @@ Radio buttons allow users to select a single option from a list of mutually excl
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

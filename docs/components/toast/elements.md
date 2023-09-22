@@ -1,4 +1,5 @@
-## Import 
+### Import 
+
 The toast is intended to be used programmatically. JavaScript APIs are provided to create, update and remove toasts from a page while managing things like placement on the page for you.
 
 Toast is a bit different from other packages in Warp Elements. You need to import functions from the package and call them as needed.
@@ -13,12 +14,11 @@ import from '@warp-ds/elements'
 
 Once you have imported the elements package, import the toast api package.
 
-
 ```js
 import { toast, removeToast, updateToast } from '@warp-ds/elements';
 ```
 
-## Syntax
+### Syntax
 You create a new toast by giving it a message:
 
 ```js
@@ -37,47 +37,47 @@ Update an existing toast by id:
 updateToast(id, { text: 'This is a toast' });
 ```
 
-## Visual options
+### Visual options
 
-### Success
+#### Success
 
 ```js
 toast('message goes here', { type: 'success' });
 ```
 
-### Warning
+#### Warning
 
 ```js
 toast('message goes here', { type: 'warning' });
 ```
 
-### Error
+#### Error
 
 ```js
 toast('message goes here', { type: 'error' });
 ```
 
-### Success with close button
+#### Success with close button
 WARNING! The close icon is designed to automatically close by default, and it is recommended to avoid adding the manual close function due to accessability reasons. If the toast absolutely must be dismissible, set the `canclose` property to `true`.
 
 ```js
 toast('message goes here', { type: 'success', canclose: true });
 ```
 
-## Options
+### Options
 
-### Auto removal with duration
+#### Auto removal with duration
 
 ```js
 toast('message goes here', { type: 'success', duration: 2500 });
 ```
 
-### Text content
+#### Text content
 
 ```js
 const id = toast('message goes here'); updateToast({ id, text: 'change the message' });
 ```
 
-## Props
+### Props
 
 <api-table type="elements" component="Toast" />

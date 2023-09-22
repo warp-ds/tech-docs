@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,39 +13,39 @@ app.use(Expandable);
 import { wExpandable, wExpandTransition, wWillExpand } from '@warp-ds/vue';
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
 <w-expandable title="I am expandable">
   <p>Hello there I am some informative content</p>
 </w-expandable>
 ```
 
-## Visual options
+### Visual options
 
-### Default
+#### Default
 
-```js
+```vue
 <w-expandable title="I am expandable">
   <p>Hello there I am some informative content</p>
 </w-expandable>
 ```
 
-### Expandable box
+#### Expandable box
 
-```js
+```vue
 <w-expandable title="I am expandable" box>
   <p>Hello there I am some informative content</p>
 </w-expandable>
 ```
 
-## Animation
+### Animation
 
-### You should only use this feature under careful supervision of your friendly local UXer.
+#### You should only use this feature under careful supervision of your friendly local UXer.
 
 The w-expandable component can be animated using the animated prop.
 
-```js
+```vue
 <w-expandable animated title="I am expandable">
   <p>Hello there I am some informative content</p>
 </w-expandable>
@@ -53,13 +53,13 @@ The w-expandable component can be animated using the animated prop.
 
 The wExpandTransition component can wrap one or more wWillExpand components.
 
-```js
+```vue
 <w-expand-transition group>
   <w-will-expand v-if="expanded">Hello</w-will-expand>
   <w-will-expand v-else>Hi</w-will-expand>
 <w-expand-transition>
 ```
 
-## Props
+### Props
 
 <api-table type="vue" component="Expandable" />

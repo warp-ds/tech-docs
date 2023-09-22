@@ -14,16 +14,18 @@
 </script>
 
 <template>
-  <h3>Default</h3>
-  <div class="component">
-    <w-toggle checkbox v-model="toggleModel" label="A very toggly label" :toggles="toggles" />
-  </div>
-  <h3>Disabled</h3>
-  <div class="component">
-    <w-toggle checkbox disabled v-model="disabledToggleModel" label="A very DISABLED non-toggly label" :toggles="toggles" />
-  </div>  
-  <h3>Invalid</h3>
-  <div class="component">
-    <w-toggle checkbox invalid v-model="invalidToggleModel" label="A very INVALID toggly label" :toggles="toggles" />
+  <div class="component space-y-16">
+    <div>
+      <h3 class="h4">Default</h3>
+      <w-toggle checkbox v-model="toggleModel" label="A very toggly label" :toggles="toggles" />
+    </div>
+    <div>
+      <h3 class="h4">Disabled</h3>
+      <w-toggle checkbox disabled v-model="disabledToggleModel" label="A very DISABLED non-toggly label" :toggles="toggles" />
+    </div>
+    <div>
+      <h3 class="h4">Invalid</h3>
+      <w-toggle checkbox invalid v-model="invalidToggleModel" label="A very INVALID toggly label" :toggles="toggles" />
+    </div>
   </div>
 </template>
