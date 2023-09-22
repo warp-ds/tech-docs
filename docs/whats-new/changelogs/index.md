@@ -6,6 +6,10 @@
   import React from './repos/react.md';
 </script>
 
+# Latest releases
+
+Warp is versioned and released using Node Package Manager. NPM’s [organization page](https://www.npmjs.com/org/warp-ds) lists all packages available and their most recent versions.
+
 <tabs-content> 
   <template #drive>
    <drive />
