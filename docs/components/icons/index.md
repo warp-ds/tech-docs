@@ -27,5 +27,7 @@ Warp's icon set is designed to help users understand actions, information and dr
 
 ## Examples
 
+<theme-switcher />
+
 <icon-example></icon-example>
 

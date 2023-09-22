@@ -18,13 +18,13 @@
 </script>
 
 <template>
-  <section v-for="(size) in Object.keys(mappedIconsBySize)" class="s-bg-primary-subtle rounded-8 p-24 mb-24">
+  <section v-for="(size) in Object.keys(mappedIconsBySize)" style="background-color: var(--vp-c-bg-alt);" class="rounded-8 p-24 mb-24">
     <h2>{{size}}</h2>
     <main class="max-w-screen-xl mx-auto px-32">
       <div  class="grid gap-24 grid-cols-minmax-100px">
         <div v-for="(icon, fullName) in mappedIconsBySize[size]" :key="fullName">
           <div class="text-center"><div class="mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col">
-            <component v-bind:is="icon" class="s-text"></component>
+            <component v-bind:is="icon" class="s-icon"></component>
           </div>
           <div class="text-12">{{ getIconName(fullName) }}</div>
         </div>
