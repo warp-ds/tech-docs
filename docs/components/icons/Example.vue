@@ -13,6 +13,8 @@
       
   }, {});
   
+  const getIconName = (icon) => icon.replace(/Icon|\d+/g, '');
+
 </script>
 
 <template>
@@ -20,11 +22,11 @@
     <h2>{{size}}</h2>
     <main class="max-w-screen-xl mx-auto px-32">
       <div  class="grid gap-24 grid-cols-minmax-100px">
-        <div v-for="(icon, name) in mappedIconsBySize[size]" :key="name">
+        <div v-for="(icon, fullName) in mappedIconsBySize[size]" :key="fullName">
           <div class="text-center"><div class="mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col">
             <component v-bind:is="icon" class="s-text"></component>
           </div>
-          <div class="text-12">{{ name }}</div>
+          <div class="text-12">{{ getIconName(fullName) }}</div>
         </div>
       </div>
     </div>
