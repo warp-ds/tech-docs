@@ -7,7 +7,7 @@ import '@warp-ds/icons/elements/bag-16';
 ### Usage
 
 ```html
-  <w-icon-bag16 />
+  <w-icon-bag16></w-icon-bag16>
 ```
 
 ### Colors
