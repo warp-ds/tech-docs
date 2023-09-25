@@ -18,14 +18,22 @@ const selectedTheme = computed({
 </script>
 
 <template>
-  <div class="select">
-    <select v-model="selectedTheme" name="themes">
-      <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
-    </select>
-  </div>  
+  <div class="theme-switcher">
+    <label for="themeSelect">Select theme:</label>
+    <div class="select">
+      <select id="themeSelect" v-model="selectedTheme">
+        <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
+      </select>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.theme-switcher {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+}
 .select {
   display: grid;
   grid-template-areas: "select";
@@ -33,7 +41,7 @@ const selectedTheme = computed({
   position: relative;
   width: 300px;
   height: 30px;
-  margin-top: 24px;
+  margin-left: 8px;
   padding: 4px 8px;
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;

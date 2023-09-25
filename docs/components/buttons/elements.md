@@ -51,7 +51,7 @@ The negative button is for emphasizing actions that can be destructive or have n
 <w-button variant="pill" small>💙</w-button>
 ```
 
-### Quiet
+#### Quiet
 By default, buttons have a visible stroke and fill. Quiet buttons do not have this visible stroke or fill and should only be used for secondary actions within a button group. Quiet buttons have the same padding rules as other action buttons and reveal a button-like background color when hovered.
 ```html
 <w-button quiet="">Quiet secondary button</w-button>
@@ -59,19 +59,27 @@ By default, buttons have a visible stroke and fill. Quiet buttons do not have th
 <w-button quiet="" variant="utility">Quiet utility button</w-button>
 ```
 
-### Link
+#### Link
 Buttons will be rendered as an anchor (a tag) if they use an href attribute.
 ```html
 <w-button href="https://google.no">Button as anchor</w-button>
 ```
 
-### Loading state
+#### Loading state
 To show the user that the action they triggered has begun, buttons have an in progress or loading state.
 ```html
 <w-button variant="primary" loading="">Primary button loading</w-button>
 ```
+#### Full width
 
-### Disabled state
+The fullWidth prop sets the button's width to its parent's width. 
+```html
+<div class="w-full">
+  <w-button full-width variant="primary">Primary button full width</w-button>
+</div>
+```
+
+#### Disabled state
 
 Disabled is an anti-pattern and is not supported.
 There will ALWAYS be users who don't understand why an element is disabled, or users who can't even see that it is disabled because of poor lighting conditions or other reasons.

@@ -6,17 +6,17 @@ settings:
 
 devDependencies:
   '@warp-ds/css':
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.1.0
+    version: 1.1.0
   '@warp-ds/icons':
     specifier: ^1.0.0
     version: 1.0.0
   '@warp-ds/uno':
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.1.0
+    version: 1.1.0
   '@warp-ds/vue':
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.0.1
+    version: 1.0.1
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -1012,12 +1012,12 @@ packages:
       '@floating-ui/dom': 0.5.4
     dev: true
 
-  /@warp-ds/css@1.0.0:
-    resolution: {integrity: sha512-rxzEBKl5g7RP+5S27+gwhceO6clMHiYfRbbaDmJVJMyUNU8JwfYoMovoeVlJLLK0yh/v7yOdmUpP8/tJqqcB5w==}
+  /@warp-ds/css@1.1.0:
+    resolution: {integrity: sha512-ehDN05LnQ2RnhKfpatxQ2e0u++YH2yoXoVqN6NHaexF6j6kS6yosumqOZo0NHpbYGRhXwy0Hor0yntdrT8XNGg==}
     dependencies:
       '@warp-ds/fonts': 1.1.0
       '@warp-ds/tokenizer': 0.0.2
-      '@warp-ds/uno': 1.0.0
+      '@warp-ds/uno': 1.1.0
     dev: true
 
   /@warp-ds/fonts@1.1.0:
@@ -1035,21 +1035,21 @@ packages:
       yaml: 2.3.2
     dev: true
 
-  /@warp-ds/uno@1.0.0:
-    resolution: {integrity: sha512-RBt/uiUMmu333La2b0eFieJTe6p0xueCMlMkEiHhtkFYRkvQMzKnUj19AMyAkIeSx6IkbmuCvfuWQoCHnkILHA==}
+  /@warp-ds/uno@1.1.0:
+    resolution: {integrity: sha512-XzhziKuHAWRofxVXb9meEgFbRUS+3+Lfuvz9qwWiJNermlkc5tC9x2DdTmFa0ia73nkgeD3K3hx0yVY0etoZ2w==}
     dependencies:
       '@unocss/core': 0.55.3
       '@unocss/preset-mini': 0.52.7
     dev: true
 
-  /@warp-ds/vue@1.0.0:
-    resolution: {integrity: sha512-5EiEy8UbvLQj0uc4PmYQQGGSydgVMnt18qYVQmdShCaQXtlAtAyTj1EMvD6ov6wv639omoJV6QS4wRV2uaW9EA==}
+  /@warp-ds/vue@1.0.1:
+    resolution: {integrity: sha512-AJAFAyaFGbjTrTb+ae/yVhESfkD7kpdJQpUB/pfT3BUEw8ISUOoc1K44aN//xkVXECZTymSI0nIY7zUWjyAX3Q==}
     dependencies:
       '@floating-ui/dom': 1.5.1
       '@lingui/core': 4.4.1
       '@warp-ds/core': 1.0.0
-      '@warp-ds/css': 1.0.0
-      '@warp-ds/uno': 1.0.0
+      '@warp-ds/css': 1.1.0
+      '@warp-ds/uno': 1.1.0
       create-v-model: 2.2.0
       dom-focus-lock: 1.1.0
       element-collapse: 1.1.0

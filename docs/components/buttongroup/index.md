@@ -19,7 +19,7 @@ Button Group is used to group and align clickable elements, applying different v
 This component is only supported in Warp Vue at the moment.
 For a React equivalent that serves a similar purpose, use the `Toggle` in [RadioButtons](/components/radiobuttons/).
 
-<component-design-guidelines name="Warp - Components / Button" link="https://www.figma.com/file/8P1JQsd82b93gQ6K3igO2p/Warp---Components?type=design&node-id=303-19039&mode=design&t=zUBVst8JZi0AR66n-0" />
+<component-design-guidelines name="Warp - Components / Button Group" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=384-34744&mode=design" />
 
 <component-questions />
 

@@ -17,7 +17,7 @@ Buttons are used to perform actions, with different visuals for different needs.
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Button" link="https://www.figma.com/file/8P1JQsd82b93gQ6K3igO2p/Warp---Components?type=design&node-id=303-19039&mode=design&t=zUBVst8JZi0AR66n-0" />
+<component-design-guidelines name="Warp - Components / Button" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=384-34743&mode=design" />
 
 ### Accessibility
 If the button doesn't have visible text content, such as when used with only an
