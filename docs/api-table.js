@@ -169,6 +169,12 @@ export const react = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {
@@ -829,6 +835,12 @@ export const vue = {
         'button',
         "Controls the button's type, unused when `href` is present",
       ],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
     variants: [
       ['primary', 'quiet, small, loading'],
@@ -1240,6 +1252,12 @@ export const elements = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {
