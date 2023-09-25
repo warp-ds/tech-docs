@@ -7,8 +7,8 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "@warp-ds/css": "^1.1.0",
-    "@warp-ds/elements": "^1.0.0",
+    "@warp-ds/css": "^1.0.0",
+    "@warp-ds/icons": "^1.0.0",
     "@warp-ds/uno": "^1.0.0",
     "@warp-ds/vue": "^1.0.0",
     "markdown-it": "^13.0.1",
