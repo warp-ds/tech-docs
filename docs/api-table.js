@@ -467,6 +467,15 @@ export const react = {
       ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
     ],
   },
+  TabPanel: {
+    required: [
+      ['children', 'ReactNode', '', 'The content of the tab panel.'],
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
+    ],
+    props: [
+      ['hidden', 'boolean', '', 'Show/hide panel manually (in server-side rendering).'],
+    ],
+  },
   Tabs: {
     required: [['children', 'Element[]', '', 'The Tabs within the container']],
     props: [
@@ -1074,6 +1083,11 @@ export const vue = {
     required: [
       ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
       ['label', 'any', '', 'The label of the tab item'],
+    ],
+  },
+  TabPanel: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
     ],
   },
   Tabs: {
