@@ -48,22 +48,40 @@ When setting up Warp in your project, you can choose to create a `uno.config.js`
 
 - **Add a uno.config.js file**
 
-Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` at https://github.com/warp-ds/drive#plugin-api.
+Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset. See all configuration options for `presetWarp` at https://github.com/warp-ds/drive#plugin-api.
 
 > uno.config.js
 
 ```js
 import { defineConfig } from 'unocss';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   presets: [presetWarp()],
-  safelist: classes,
 });
 ```
 
 By default, UnoCSS will automatically look in the root directory of your project for `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]`.
+
+
+#### Components
+
+If you are using Warp components there are two additional steps to do.
+
+1. You'll need to add `https://assets.finn.no/pkg/@warp-ds/css/v1/components.css` in the head of your app or in the template if you are using such. This stylesheet is needed to add styling to Warp components.
+
+2. If you are NOT using Warp classes directly an only use our components you can skip this step. If you want to optimize the size of the produced css and you are using Warp's classes and want to prevent duplicate classes to be created - an `externalizeClasses` option needs to be added to the UnoCSS config and add classes from compoenent-classes as `externalClasses`. See example below and [check here for more info](https://github.com/warp-ds/drive#externalizeclasses):
+
+> uno.config.js
+```js
+import { defineConfig } from 'unocss';
+import { presetWarp } from '@warp-ds/uno';
+import { classes } from '@warp-ds/css/component-classes/classes';
+
+export default defineConfig({
+  presets: [presetWarp({ externalClasses: classes })],
+});
+```
 
 - **Add UnoCSS to your build tool**
 
@@ -94,13 +112,11 @@ Below is an example for Vite:
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   plugins: [
     UnoCSS({
       presets: [presetWarp()],
-      safelist: classes,
     }),
   ],
 });
