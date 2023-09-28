@@ -2,7 +2,7 @@
 
 ```js
 <w-box info>
-    <p>This is "info" variant of the box component</p>
+    <p>This is <strong>info</strong> variant of the box component</p>
 </w-box>
 ```
 

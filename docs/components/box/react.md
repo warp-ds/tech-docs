@@ -8,7 +8,7 @@ import { Box } from "@warp-ds/react";
 
 ```js
 <Box info>
-    <p>This is "info" variant of the box component</p>
+    <p>This is <strong>info</strong> variant of the box component</p>
 </Box>
 ```
 
