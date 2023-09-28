@@ -18,7 +18,7 @@ A single-line text input component.
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Text Area" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23909&mode=design" />
+<component-design-guidelines name="Warp - Components / Input" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=162-3118&mode=design&t=BeQTJcCWRTnsK9fC-0" />
 
 ### Accessibility
 
