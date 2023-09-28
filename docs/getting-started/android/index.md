@@ -15,9 +15,11 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```gradle
-finnImplementation("com.schibsted.nmp.warp:warp-finn:0.0.1")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.2")
 
-toriImplementation("com.schibsted.nmp.warp:warp-tori:0.0.1")
+finnImplementation("com.schibsted.nmp.warp:warp-finn:0.0.3")
+
+toriImplementation("com.schibsted.nmp.warp:warp-tori:0.0.3")
 ```
 
 
