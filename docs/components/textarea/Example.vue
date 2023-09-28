@@ -3,6 +3,7 @@
   import { ref } from 'vue';
 
   const model = ref('');
+  const readOnlyText = 'This is a readOnly textarea';
 </script>
 
 <template>
@@ -21,7 +22,7 @@
     </div>
     <div>
       <h3 class="h4">Read Only</h3>
-      <w-textarea label="A label" value="This is a readOnly textarea" readOnly />
+      <w-textarea label="A label" v-model="readOnlyText" readOnly />
     </div>
     <div>
       <h3 class="h4">Invalid</h3>
