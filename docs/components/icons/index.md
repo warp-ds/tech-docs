@@ -18,7 +18,7 @@ Warp's icon set is designed to help users understand actions, information and dr
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Icons" link="" />
+<component-design-guidelines name="Warp - Components / Icons" link="https://www.figma.com/file/yEx16ew6S0Xgd579dN4hsM/Warp---Icons?type=design&node-id=6011-1442&mode=design&t=zY5N398IPei2z89J-0" />
 
 <component-questions />
 
