@@ -17,8 +17,6 @@ You can, however, validate that the value comes from the list, that's up to your
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Choice List" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=259-14517&mode=design" />
-
 <component-questions />
 
 ## Frameworks
