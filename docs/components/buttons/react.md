@@ -78,7 +78,7 @@ But if you need a button to look like a link, use the `link` property.
 
 #### Disabled
 
-Disabled is an anti-pattern and is not supported. There will ALWAYS be users who
+Disabled is an anti-pattern and is not supported. There will always be users who
 don't understand why an element is disabled, or users who can't even see that it
 is disabled because of poor lighting conditions or other reasons.
 
