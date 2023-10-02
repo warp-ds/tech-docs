@@ -1,19 +1,17 @@
-## React Implementation
-
 ### Import
 
 ```js
 import { Switch } from "@warp-ds/react";
 ```
 
-### Usage
+### Syntax
 
 ```js
-    <Switch
-        value={value}
-        onClick={() => setValue(!value)}
-        aria-label="Toggle switch"
-    />
+  <Switch
+    value={value}
+    onClick={() => setValue(!value)}
+    aria-label="Toggle switch"
+  />
 ```
 
 ### Accessibility
@@ -24,7 +22,6 @@ The Switch needs either `aria-label` or `aria-labelledby` to be accessible to sc
 
 There is no visual styling to a disabled button.
 It is recommended to display a message to the user, for example a modal or toast, stating why the user cannot toggle the switch.
-
 
 ### Props
 

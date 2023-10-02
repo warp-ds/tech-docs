@@ -16,13 +16,15 @@ Uses toast apis under the hood.
 
 See the [toast component](/components/toast/) for examples, as `broadcast` utilizes it to display messages.
 
+## Usage
+
+<component-design-guidelines name="Warp - Components / Broadcast" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=253-14893&mode=design" />
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
-  <template #react>
-  </template>
-  <template #vue>
-  </template>
   <template #elements>
     <elements />
   </template>

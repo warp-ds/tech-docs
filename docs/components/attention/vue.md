@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,11 +13,11 @@ app.use(Attention);
 import { wAttention } from '@warp-ds/vue';
 ```
 
-## Visual options
+### Visual options
 
-### Callout
+#### Callout
 
-```js
+```vue
 <script>
 import { ref } from 'vue'
 import { wAttention, wBox } from '#components'
@@ -33,9 +33,9 @@ const showing = ref(false)
 </template>
 ```
 
-### Popover
+#### Popover
 
-```js
+```vue
 <script>
 import { ref } from 'vue'
 import { wAttention, wBox } from '#components'
@@ -51,9 +51,9 @@ const showing = ref(false)
 </template>
 ```
 
-### Tooltip
+#### Tooltip
 
-```js
+```vue
 <script>
 import { ref } from 'vue'
 import { wAttention, wBox } from '#components'
@@ -69,6 +69,6 @@ const showing = ref(false)
 </template>
 ```
 
-## Props
+### Props
 
 <api-table type="vue" component="Attention" />

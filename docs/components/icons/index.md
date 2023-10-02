@@ -8,8 +8,19 @@
 
 Warp's icon set is designed to help users understand actions, information and draw attention to elements.
 
-
 <components-status react='released' vue='released' elements='released' />
+
+## Examples
+
+<theme-switcher />
+
+<icon-example />
+
+## Usage
+
+<component-design-guidelines name="Warp - Components / Icons" link="https://www.figma.com/file/yEx16ew6S0Xgd579dN4hsM/Warp---Icons?type=design&node-id=6011-1442&mode=design&t=zY5N398IPei2z89J-0" />
+
+<component-questions />
 
 ## Frameworks
 
@@ -24,10 +35,3 @@ Warp's icon set is designed to help users understand actions, information and dr
     <elements />
   </template>
 </tabs-content>
-
-## Examples
-
-<theme-switcher />
-
-<icon-example></icon-example>
-

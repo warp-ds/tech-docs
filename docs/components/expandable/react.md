@@ -1,12 +1,12 @@
-## Import
+### Import
 
 ```js
 import { Expandable } from '@warp-ds/react';
 ```
 
-## Visual options
+### Visual options
 
-### Default
+#### Default
 
 ```js
 <Expandable title="I am expandable">
@@ -14,7 +14,7 @@ import { Expandable } from '@warp-ds/react';
 </Expandable>
 ```
 
-### Expandable box
+#### Expandable box
 
 ```js
 <Expandable title="I am expandable box" box>
@@ -22,7 +22,7 @@ import { Expandable } from '@warp-ds/react';
 </Expandable>
 ```
 
-### Expandable box with icon
+#### Expandable box with icon
 
 ```js
 import { IconBag16 } from '@fabric-ds/icons/react';
@@ -41,7 +41,7 @@ import { IconBag16 } from '@fabric-ds/icons/react';
 </Expandable>;
 ```
 
-### Expandable animated box
+#### Expandable animated box
 
 ```js
 <Expandable title="I am expandable animated box" box animated>
@@ -49,7 +49,7 @@ import { IconBag16 } from '@fabric-ds/icons/react';
 </Expandable>
 ```
 
-### The expanded prop
+#### The expanded prop
 
 You can set whether the component is open or collapsed using the `expanded` prop.
 
@@ -59,7 +59,7 @@ You can set whether the component is open or collapsed using the `expanded` prop
 </Expandable>
 ```
 
-### onChange event
+#### onChange event
 
 ```js
 <Expandable title="I am expandable" onChange={(state) => console.log(state)}>
@@ -68,7 +68,7 @@ You can set whether the component is open or collapsed using the `expanded` prop
 </Expandable>
 ```
 
-### Controlling the component
+#### Controlling the component
 
 If you need to take control of expansion, use the `onChange` event in combination with the `expanded` prop.
 
@@ -84,6 +84,6 @@ function Example() {
 }
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Expandable" />

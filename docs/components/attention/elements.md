@@ -1,6 +1,6 @@
-## Visual options
+### Visual options
 
-### Popover
+#### Popover
 
 ```js
 <w-attention placement="bottom" popover="">
@@ -11,7 +11,7 @@
 </w-attention>
 ```
 
-### Callout
+#### Callout
 
 ```js
 <w-attention placement="right" show="" callout="" class="flex items-center">
@@ -22,7 +22,7 @@
 </w-attention>
 ```
 
-### Tooltip
+#### Tooltip
 
 ```js
 <w-attention placement="right" tooltip="">
@@ -33,7 +33,7 @@
 </w-attention>
 ```
 
-## Accessibility
+### Accessibility
 If the Attention element has "left" or "top" position, it should be placed before the target element in the DOM.
 
 Attention element handles accessibility automatically by wrapping its slotted content with a `div` with `role="tooltip"`, and setting an aria-describedby attribute on the target element.
@@ -52,6 +52,6 @@ It is possible to tell assistive technologies to recognize only a part of Attent
 </w-attention>
 ```
 
-## Props
+### Props
 
 <api-table type="elements" component="Attention" />

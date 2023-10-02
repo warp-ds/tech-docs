@@ -14,7 +14,13 @@ Alert is an inline component used for displaying different types of messages.
 
 <theme-switcher />
 
-<alert-example></alert-example>
+<alert-example />
+
+## Usage
+
+<component-design-guidelines name="Warp - Components / Alert" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=127-6793&mode=design" />
+
+<component-questions />
 
 ## Frameworks
 

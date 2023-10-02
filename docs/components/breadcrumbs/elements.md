@@ -1,6 +1,6 @@
-## Syntax
+### Syntax
 
-```js
+```html
 <w-breadcrumbs>
   <a href="#/url/1">Page 1</a>
   <a href="#/url/2">Page 2</a>
@@ -8,6 +8,6 @@
 </w-breadcrumbs>
 ```
 
-## Props
+### Props
 
 <api-table type="elements" component="Breadcrumbs" />

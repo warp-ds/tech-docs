@@ -3,27 +3,30 @@
   import { ref } from 'vue';
 
   const model = ref('');
+  const readOnlyText = 'This is a readOnly textarea';
 </script>
 
 <template>
-  <h3>Standard with hint</h3>
-  <div class="component">
-    <w-textarea v-model="model" label="A label" hint="A hint" />
-  </div>
-  <h3>Optional</h3>
-  <div class="component">
-    <w-textarea v-model="model" label="A label" optional />
-  </div>
-  <h3>Disabled</h3>
-  <div class="component">
-    <w-textarea label="A label" disabled />
-  </div>
-  <h3>Read Only</h3>
-  <div class="component">
-    <w-textarea label="A label" value="This is a readOnly textarea" readOnly />
-  </div>
-  <h3>Invalid</h3>
-  <div class="component">
-    <w-textarea label="A label" invalid required />
+  <div class="component space-y-16">
+    <div>
+      <h3 class="h4">Standard with hint</h3>
+      <w-textarea v-model="model" label="A label" hint="A hint" />
+    </div>
+    <div>
+      <h3 class="h4">Optional</h3>
+      <w-textarea v-model="model" label="A label" optional />
+    </div>
+    <div>
+      <h3 class="h4">Disabled</h3>
+      <w-textarea label="A label" disabled />
+    </div>
+    <div>
+      <h3 class="h4">Read Only</h3>
+      <w-textarea label="A label" v-model="readOnlyText" readOnly />
+    </div>
+    <div>
+      <h3 class="h4">Invalid</h3>
+      <w-textarea label="A label" invalid required />
+    </div>
   </div>
 </template>

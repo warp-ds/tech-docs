@@ -17,10 +17,14 @@ A multiline text input component.
 
 ## Usage
 
+<component-design-guidelines name="Warp - Components / Text Area" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23909&mode=design" />
+
 ### Accessibility
 
 If a visible label isn't specified, an `aria-label` must be provided to the Text Area for accessibility.
 If the field is labeled by a separate element, an `aria-labelledby` prop must be provided using the id of the labeling element instead.
+
+<component-questions />
 
 ## Frameworks
 
@@ -30,7 +34,5 @@ If the field is labeled by a separate element, an `aria-labelledby` prop must be
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

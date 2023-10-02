@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,9 +13,9 @@ app.use(ButtonGroup);
 import { wButtonGroup, wButtonGroupItem } from "@warp-ds/vue";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
   <w-button-group>
     <w-button-group-item :selected="props.selected">
       <w-clickable label radio v-model="radioModel" value="foo">Foo</w-clickable>
@@ -29,13 +29,13 @@ import { wButtonGroup, wButtonGroupItem } from "@warp-ds/vue";
   </w-button-group>
 ```
 
-## Props
+### Props
 
-### ButtonGroup props
+#### ButtonGroup props
 
 <api-table type="vue" component="ButtonGroup" />
 
-### ButtonGroupItem props
+#### ButtonGroupItem props
 
 <api-table type="vue" component="ButtonGroupItem" />
 

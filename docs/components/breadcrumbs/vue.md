@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,9 +13,9 @@ app.use(Breadcrumbs);
 import { wBreadcrumbs } from "@warp-ds/vue";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
 <w-breadcrumbs>
   <a href="#/url/1">Page 1</a>
   <a href="#/url/2">Page 2</a>
@@ -23,6 +23,6 @@ import { wBreadcrumbs } from "@warp-ds/vue";
 </w-breadcrumbs>
 ```
 
-## Props
+### Props
 
 <api-table type="vue" component="Breadcrumbs" />

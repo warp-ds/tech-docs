@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 ```js
@@ -11,6 +11,6 @@ app.use(Card)
 import { wCard } from '@warp-ds/vue'
 ```
 
-## Props
+### Props
 
 <api-table type=vue component="Card"/>

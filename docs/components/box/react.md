@@ -1,18 +1,17 @@
-## Import
+### Import
 
 ```js
 import { Box } from "@warp-ds/react";
 ```
 
-## Syntax
+### Syntax
 
 ```js
 <Box info>
-    <h1>Default example</h1>
-    <p>This is "info" variant of the box component</p>
+    <p>This is <strong>info</strong> variant of the box component</p>
 </Box>
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Box" />

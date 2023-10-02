@@ -1,4 +1,4 @@
-## Import
+### Import
 
 The toggle component allows you to render radio buttons in a group. All you have to do is specify `type="radio-button"` for the Toggle and let the component handle the rest. Toggle is built to handle both single and multiple options.
 
@@ -8,7 +8,14 @@ You must keep track of state yourself. The state has to be handled differently d
 import { Toggle } from '@warp-ds/react';
 ```
 
-## React syntax
+### Syntax
+
+```ts example
+type ToggleEntry = {
+  label: string;
+  value: unknown;
+};
+```
 
 ```jsx example
 function Example() {
@@ -42,24 +49,15 @@ function Example() {
     </>
   );
 }
-
 ```
 
 Radio buttons have the special property `equalWidth`, which will render each option with equal width.
 
-
-## Props
+### Props
 
 <api-table type=react component="Toggle" />
 
-```ts example
-type ToggleEntry = {
-  label: string;
-  value: unknown;
-};
-```
-
-## Validation
+### Validation
 
 Validation is as easy as passing the property `invalid` with a `helpText` to further explain the error. `helpText` can also be used as an assistance label before an error occurs as long as `invalid` is set to false.
 
