@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,12 +13,10 @@ app.use(Slider);
 import { wSlider } from '@warp-ds/vue';
 ```
 
-## Visual options
-
 ### Examples
 
 #### Enabled
-```js
+```vue
 <script setup>
   import { ref } from 'vue';
   import { wSlider } from '@warp-ds/vue';
@@ -27,27 +25,25 @@ import { wSlider } from '@warp-ds/vue';
 </script>
 
 <template>
-  <div :state="currentValue">
-    <w-slider
-      v-model="currentValue"
-      :min="1000"
-      :max="10_000_000"
-      :step="1000"
-      label="slider"
-    />
-  </div>
+  <w-slider
+    v-model="currentValue"
+    :min="1000"
+    :max="10_000_000"
+    :step="1000"
+    label="slider"
+  />
 </template>
 ```
 
 #### Disabled
-```js
+```html
 <w-slider
   disabled
-  v-model="50"
+  v-model="currentValue"
   label="Disabled slider"
 />
 ```
 
-## Props
+### Props
 
 <api-table type="vue" component="Slider" />

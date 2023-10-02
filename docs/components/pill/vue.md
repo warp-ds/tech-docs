@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,12 +13,12 @@ app.use(Pill);
 import { wPill } from "@warp-ds/vue";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
 <w-pill suggestion label="Suggestion pill" />
 ```
 
-## Props
+### Props
 
 <api-table type=vue component="Pill" />

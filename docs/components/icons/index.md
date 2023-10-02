@@ -4,27 +4,27 @@
   import React from './react.md';
 </script>
 
-# Box
+# Icons
 
-Box is a layout component used for separating content areas on a page.
+Warp's icon set is designed to help users understand actions, information and draw attention to elements.
 
 <components-status react='released' vue='released' elements='released' />
 
-## Example
+## Examples
 
 <theme-switcher />
 
-<box-example />
+<icon-example />
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Box" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=250-13356&mode=design" />
+<component-design-guidelines name="Warp - Components / Icons" link="https://www.figma.com/file/yEx16ew6S0Xgd579dN4hsM/Warp---Icons?type=design&node-id=6011-1442&mode=design&t=zY5N398IPei2z89J-0" />
 
 <component-questions />
 
 ## Frameworks
 
-<tabs-content> 
+<tabs-content>
   <template #react>
    <react />
   </template>

@@ -1,5 +1,3 @@
-## Vue implementation
-
 ### Import
 
 #### Use in entire app
@@ -15,9 +13,9 @@ app.use(Switch);
 import { wSwitch } from "@warp-ds/vue";
 ```
 
-### Usage
+### Syntax
 
-```js
+```vue
 <w-switch v-model="model" />
 ```
 

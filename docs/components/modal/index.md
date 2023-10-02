@@ -17,20 +17,22 @@ Modals (or dialogs) display important information that users need to acknowledge
 
 ## Usage
 
+<component-design-guidelines name="Warp - Components / Modal" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=354-18223&mode=design" />
+
 ### Accessibility
 Modal needs either aria-label or aria-labelledby to be accessible to screen readers.
 
 All dialogs must have a title. Titles appear in bold at the top of the dialog and use a few words to convey the outcome of what will happen if a user continues with an action. Use the property title for this.
 
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

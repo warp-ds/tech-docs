@@ -11,34 +11,32 @@ const Stars = {
     }),
 };
 
-const model = ref('one');
+const selectedTab = ref('one');
 </script>
 
 <template>
   <div class="component">
-    <token :state="[model]">
-      <w-tabs v-model="model">
-        <w-tab label="Tab 1" name="one">
-          <stars />
-        </w-tab>
-        <w-tab label="Tab 2" name="two">
-          <stars />
-        </w-tab>
-        <w-tab label="Tab 3" name="three">
-          <stars />
-        </w-tab>
-      </w-tabs>
-      <div>
-        <w-tab-panel name="one" v-if="model === 'one'">
-          <p class="mb-0">First tab content</p>
-        </w-tab-panel>
-        <w-tab-panel name="two" v-if="model === 'two'">
-          <p class="mb-0">Second tab content</p>
-        </w-tab-panel>
-        <w-tab-panel name="three" v-if="model === 'three'">
-          <p class="mb-0">Third tab content</p>
-          </w-tab-panel>
-      </div>
-    </token>
+    <w-tabs v-model="selectedTab">
+      <w-tab label="Tab 1" name="one">
+        <stars />
+      </w-tab>
+      <w-tab label="Tab 2" name="two">
+        <stars />
+      </w-tab>
+      <w-tab label="Tab 3" name="three">
+        <stars />
+      </w-tab>
+    </w-tabs>
+    <div>
+      <w-tab-panel name="one" v-if="selectedTab === 'one'">
+        First tab content
+      </w-tab-panel>
+      <w-tab-panel name="two" v-if="selectedTab === 'two'">
+        Second tab content
+      </w-tab-panel>
+      <w-tab-panel name="three" v-if="selectedTab === 'three'">
+        Third tab content
+      </w-tab-panel>
+    </div>
   </div>
 </template>

@@ -1,10 +1,10 @@
-## Import
+### Import
 
 ```js
 import { Breadcrumbs } from '@warp-ds/react';
 ```
 
-## Syntax
+### Syntax
 
 ```js
 <Breadcrumbs>
@@ -16,7 +16,7 @@ import { Breadcrumbs } from '@warp-ds/react';
 </Breadcrumbs>
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Breadcrumbs" />
 

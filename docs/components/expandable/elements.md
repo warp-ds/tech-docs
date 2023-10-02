@@ -1,26 +1,26 @@
-## Visual options
+### Visual options
 
-### Default
+#### Default
 
-```js
+```html
 <w-expandable title="I'm expandable">
   <p>with expanded content</p>
 </w-expandable>
 ```
 
-### Expandable box
+#### Expandable box
 
-```js
+```html
 <w-expandable title="I'm expandable" box>
   <p>with expanded content</p>
 </w-expandable>
 ```
 
-### Expandable box with custom title
+#### Expandable box with custom title
 
 This can be used if more control over styling is needed than the `title` prop allows
 
-```js
+```html
 <w-expandable box>
   <div slot="title" class="flex flex-row items-center">
     <f-icon-bag16></f-icon-bag16>
@@ -30,14 +30,14 @@ This can be used if more control over styling is needed than the `title` prop al
 </w-expandable>
 ```
 
-### With expanded prop
+#### With expanded prop
 
-```js
+```html
 <w-expandable box info title="I'm expanded by default" expanded>
   <p>content should be visible</p>
 </w-expandable>
 ```
 
-## Props
+### Props
 
 <api-table type="elements" component="Expandable" />

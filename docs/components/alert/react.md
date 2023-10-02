@@ -1,10 +1,10 @@
-## Import
+### Import
 
 ```js
 import { Alert } from "@warp-ds/react";
 ```
 
-## Syntax
+### Syntax
 
 ```js
 <Alert type="info" show>
@@ -12,7 +12,7 @@ import { Alert } from "@warp-ds/react";
 </Alert>
 ```
 
-## Accessibility
+### Accessibility
 
 Use the ARIA live region `role` attribute to provide meaning to the alert
 element (defaults to "alert"). If you want to remove the role from the alert and
@@ -22,7 +22,7 @@ property of the `Alert` component to an empty string and assigning a respective
 attribute on
 [MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#roles_with_implicit_live_region_attributes).
 
-### Alert with "alert" role on a descendand element
+#### Alert with "alert" role on a descendant element
 
 ```js
 <Alert type="info" show={show} role="">
@@ -34,6 +34,6 @@ attribute on
 </Alert>
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Alert" />

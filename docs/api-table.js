@@ -169,6 +169,12 @@ export const react = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {
@@ -465,6 +471,15 @@ export const react = {
     events: [
       ['setActive', '(name: string)', 'false', ''],
       ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  TabPanel: {
+    required: [
+      ['children', 'ReactNode', '', 'The content of the tab panel.'],
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
+    ],
+    props: [
+      ['hidden', 'boolean', '', 'Show/hide panel manually (in server-side rendering).'],
     ],
   },
   Tabs: {
@@ -820,6 +835,12 @@ export const vue = {
         'button',
         "Controls the button's type, unused when `href` is present",
       ],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
     variants: [
       ['primary', 'quiet, small, loading'],
@@ -1076,6 +1097,11 @@ export const vue = {
       ['label', 'any', '', 'The label of the tab item'],
     ],
   },
+  TabPanel: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
+    ],
+  },
   Tabs: {
     required: [['children', 'Element[]', '', 'The tabs within the container']],
     events: [['v-model', 'string', '', 'Name of the active element']],
@@ -1226,6 +1252,12 @@ export const elements = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {

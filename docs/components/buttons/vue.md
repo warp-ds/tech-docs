@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,13 +13,13 @@ app.use(Button);
 import { wButton } from "@warp-ds/vue";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```html
 <w-button primary>Click me</w-button>
 <w-button>Click me</w-button>
 ```
 
-## Props
+### Props
 
 <api-table type=vue component="Button" />

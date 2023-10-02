@@ -1,10 +1,8 @@
-## Import
+### Import
 
 ```js
 import { Slider } from '@warp-ds/react';
 ```
-
-## Visual options
 
 ### Examples
 
@@ -30,12 +28,12 @@ function Example() {
 
 #### Disabled
 
-```js
+```jsx
 <div>
   <Slider aria-label="Disabled slider" value={50} disabled />
 </div>
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Slider" />

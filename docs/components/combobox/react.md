@@ -1,10 +1,10 @@
-## Import
+### Import
 
 ```js
 import { Combobox } from '@warp-ds/react';
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Combobox" />
 
@@ -15,7 +15,7 @@ export type ComboboxOption = {
 };
 ```
 
-## Example
+### Example
 
 ```jsx
 function Example() {
@@ -38,7 +38,7 @@ function Example() {
 }
 ```
 
-## Highlight matched text segments
+### Highlight matched text segments
 
 If you want to highlight the matched text you can set the `matchTextSegments` prop.
 
@@ -77,21 +77,19 @@ The `matchTextSegments` uses the default algorithm for input/option matching. To
 ```jsx
 // PSEUDO CODE
 function highlightValueMatch(optionValue: string, inputValue: string) {
-    // ADDITIONAL CODE?
-    if match // return JSX string value with additional visual styling
-    else // return JSX string value
-  });
+  // ADDITIONAL CODE?
+  if (match) ;// return JSX string value with additional visual styling
+  else ;// return JSX string value
 }
 ```
 
-## Asynchronous option fetching
+### Asynchronous option fetching
 
 When you fetch options asynchronously, it is often preferred to pass the `disableStaticFiltering` prop so that you don't filter the options client side.
 
-## Custom rendering in ComboboxOption
+### Custom rendering in ComboboxOption
 
 Sometimes you need to render something other than the value as the visible option, in these cases you can pass a `label`. The label is only for display. The `value` is what gets sent back when selected.
-
 
 ```jsx
 function Example() {
@@ -116,7 +114,7 @@ function Example() {
 }
 ```
 
-## Client side search
+### Client side search
 
 This example searches an API of Star Wars characters. Combobox does not implement any matching on your list (aside from highlighting the matched phrases in an option). Instead, you render an option for each result you want in the list. So your job is to:
 
@@ -183,7 +181,7 @@ function Example() {
 }
 ```
 
-## Affix
+### Affix
 
 If you wish to use an affix you must first import the Affix component.
 
@@ -191,7 +189,7 @@ If you wish to use an affix you must first import the Affix component.
 import { Affix } from '@warp-ds/react';
 ```
 
-Then you include it as a child of Combobox component and pass the appropiate props (see bottom of this page for types)
+Then you include it as a child of Combobox component and pass the appropriate props (see bottom of this page for types).
 
 ```jsx
 function Example() {
@@ -223,11 +221,12 @@ function Example() {
 }
 ```
 
-*Note* that when using the Affix component without a `label` you should specify an `aria-label`. See props at the bottom of this page. See [TextField](/components/textfield/) for more details on Affix.
+*Note* that when using the Affix component without a `label` you should specify an `aria-label`.
+See props at the bottom of this page. See [TextField](/components/textfield/) for more details on Affix.
 
 <api-table type=react component="Affix" />
 
-## Clearing input on select
+### Clearing input on select
 
 If you want, you can have the input field cleared after a value has been selected:
 
@@ -255,7 +254,7 @@ function Example() {
 }
 ```
 
-## Optional prop
+### Optional prop
 
 Add the optional prop to indicate that the combobox field is not required.
 

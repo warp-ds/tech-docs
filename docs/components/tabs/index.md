@@ -11,12 +11,17 @@ import React from './react.md';
 
 <theme-switcher />
 
-<tabs-example></tabs-example>
+<tabs-example />
 
 ## Usage
+
+<component-design-guidelines name="Warp - Components / Tabs" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23908&mode=designA" />
+
 ### Accessibility
 
 Focus management and ARIA attributes are handled automatically.
+
+<component-questions />
 
 ## Frameworks
 
@@ -26,7 +31,5 @@ Focus management and ARIA attributes are handled automatically.
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

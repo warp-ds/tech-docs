@@ -1,10 +1,10 @@
-## Import
+### Import
 
 ```js
 import { Steps, Step } from '@warp-ds/react';
 ```
 
-## Syntax
+### Syntax
 
 ```js
 function Example() {
@@ -29,7 +29,7 @@ function Example() {
 
 **Note** the `active` and `completed` properties on the `<Step>` component. You have to conditionally set the truthiness of these properties depending on where in the process the user is. See interactive example below.
 
-### Interactive usage
+#### Interactive usage
 
 ```js
 function Example() {
@@ -80,12 +80,12 @@ function Example() {
 
 **Note** the `horizontal` and `right` properties on the `<Steps>` component. These choose the direction and alignment of the steps.
 
-## Props
+### Props
 
-### Steps
+#### Steps
 
 <api-table type="react" component="Steps" />
 
-### Step
+#### Step
 
 <api-table type="react" component="Step" />

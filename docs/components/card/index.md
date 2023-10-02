@@ -16,6 +16,12 @@ Card is a layout component used for a traditional card look and feel.
 
 <card-example />
 
+## Usage
+
+<component-design-guidelines name="Warp - Components / Card" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-34742&mode=design" />
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>

@@ -15,6 +15,12 @@ Checkboxes allow users to select multiple items from a list of individual items,
 
 <checkbox-example />
 
+## Usage
+
+<component-design-guidelines name="Warp - Components / Checkbox" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=103-802&mode=design" />
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
@@ -23,7 +29,5 @@ Checkboxes allow users to select multiple items from a list of individual items,
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

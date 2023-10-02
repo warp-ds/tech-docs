@@ -13,6 +13,14 @@ The Switch component allows users to toggle between validity for a condition.
 
 <switch-example />
 
+## Usage
+
+<component-design-guidelines name="Warp - Components / Switch" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23907&mode=design" />
+
+<component-questions />
+
+## Frameworks
+
 <tabs-content> 
   <template #react>
     <react />
