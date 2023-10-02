@@ -1401,3 +1401,170 @@ export const elements = {
     ]
   },
 };
+
+export const android = {
+  Button: {
+    required: [
+      [
+        'text', 
+        'String', 
+        '', 
+        'The text to be displayed on the button'
+      ],
+      [
+        'onClick',
+        '() -> Unit',
+        '',
+        'Lambda to be invoked when clicked',
+      ],
+      [
+        'buttonStyle',
+        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Tertiary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Critical <br />WarpButtonStyle.CriticalQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
+        'WarpButtonStyle.Primary',
+        'Controls the apperance of the button',
+      ]
+    ],
+    props: [
+      [
+        'enabled',
+        'Boolean',
+        'true',
+        'Sets the button in disbaled mode',
+      ],
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the button',
+      ],
+      [
+        'maxLines',
+        'Integer',
+        '1',
+        'Limits the lines of the text on the button',
+      ],
+      [
+        'loading',
+        'Boolean',
+        'false',
+        'Set the button to look like it is in progress, can be combined with other button types. Can be combined with any button type',
+      ],
+    ],
+  },
+
+  TextField: {
+    required: [
+      [
+        'value',
+        'String',
+        '',
+        'The text displayed currently in the textfield',
+      ],
+      [
+        'onValueChange',
+        '(String) -> Unit',
+        '',
+        'Lambda to be invoked when input value changes',
+      ],
+      [
+        'label', 
+        'String', 
+        '', 
+        'The content to display as the label above the textfield'
+      ],
+
+    ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the textfield',
+      ],
+      [
+        'enabled',
+        'Boolean',
+        'true',
+        'Sets the textfield in disbaled mode',
+      ],
+      [
+        'readOnly',
+        'Boolean',
+        'false',
+        'Sets the textfield in read-only mode',
+      ],
+      [
+        'optionalLabel', 
+        'String', 
+        '', 
+        'The otional content to display next to the label above the textfield'
+      ],
+      [
+        'placeholderText',
+        'String',
+        '',
+        'Text hint that occupies the textfield when it is empty',
+      ],
+      [
+        'helpText', 
+        'String', 
+        '', 
+        'The content to display as the help text below the textfield'
+      ],
+      [
+        'leadingIcon',
+        '@Composable () -> Unit?',
+        'null',
+        'Sets the composable infront of the input value',
+      ],
+      [
+        'trailingIcon',
+        '@Composable () -> Unit?',
+        'null',
+        'Sets the composable behind the input value',
+      ],
+      [
+        'isError',
+        'Boolean',
+        'false',
+        'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error',
+      ],
+      [
+        'visualTransformation', 
+        'VisualTransformation', 
+        'VisualTransformation.None', 
+        'Interface used for changing visual output of the input field '
+      ],
+      [
+        'keyboardOptions', 
+        'KeyboardOptions', 
+        'KeyboardOptions.Default', 
+        'The keyboard configuartion options '
+      ],
+      [
+        'keyboardActions', 
+        'KeyboardActions', 
+        'KeyboardActions.Default', 
+        'The KeyboardActions that specify actions that will be triggered in response to triggering IME action on the software keyboard'
+      ],
+      [
+        'singleLine', 
+        'Boolean', 
+        'true', 
+        'Sets the textfield to a single line'
+      ],
+      [
+        'maxLines', 
+        'Int', 
+        'Int.MAX_VALUE', 
+        'Sets the maximum amount of lines allowed'
+      ],
+      [
+        'interactionSourceing', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
+      ],
+    ],
+  }
+};

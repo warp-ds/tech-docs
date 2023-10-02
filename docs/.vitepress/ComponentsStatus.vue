@@ -17,12 +17,24 @@ const props = defineProps({
     default: 'unsupported',
     validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
   },
+  android: {
+    type: String,
+    default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
+  },
+  ios: {
+    type: String,
+    default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
+  }
 });
 
 const frameworkStatus = computed(() => [
   { name: 'React', status: props.react },
   { name: 'Vue', status: props.vue },
   { name: 'Elements', status: props.elements },
+  { name: 'Android', status: props.android },
+  { name: 'iOS', status: props.ios }
 ]);
 
 </script>

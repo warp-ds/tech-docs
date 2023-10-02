@@ -2,13 +2,15 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Elements from './elements.md';
+  import Android from './android.md';
+  import iOS from './ios.md';
 </script>
 
 # Text Field
 
 A single-line text input component.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released' ios='developing' />
 
 ## Example
 
@@ -38,5 +40,11 @@ If the field is labeled by a separate element, an `aria-labelledby` prop must be
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
+  </template>
+  <template #ios>
+    <ios />
   </template>
 </tabs-content>
