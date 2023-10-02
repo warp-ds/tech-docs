@@ -14,7 +14,7 @@ Alert is an inline component used for displaying different types of messages.
 
 <theme-switcher />
 
-<alert-example></alert-example>
+<alert-example />
 
 ## Usage
 

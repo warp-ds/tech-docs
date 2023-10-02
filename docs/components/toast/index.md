@@ -10,7 +10,7 @@ Toasts display small snippets of information to the user and then disappear afte
 
 ## Example
 
-<toast-example></toast-example>
+<toast-example />
 
 ## Usage
 
