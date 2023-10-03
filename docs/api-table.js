@@ -52,6 +52,27 @@ export const react = {
       ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
     ],
   },
+  Badge: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
+      ['children', 'Element | Element[] | string', '', 'Content of the Badge component'],
+      ['className', 'string', '', 'Additional CSS classes to apply to the component'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -769,6 +790,24 @@ export const vue = {
       ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
     ],
   },
+  Badge: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -1182,6 +1221,23 @@ export const elements = {
       ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
       ['show', 'boolean', 'false', 'Whether Attention element should be visible'],
+    ],
+  },
+  Badge: {
+    required: [],
+    props: [
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
     ],
   },
   Box: {
