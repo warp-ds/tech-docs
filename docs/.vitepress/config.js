@@ -85,9 +85,9 @@ export default defineConfig({
       {
         text: 'Implementations',
         items: [
-          { text: 'React', link: 'https://github.com/warp-ds' },
-          { text: 'Vue', link: 'https://github.com/warp-ds' },
-          { text: 'Elements', link: 'https://github.com/warp-ds' },
+          { text: 'React', link: 'https://github.com/warp-ds/react' },
+          { text: 'Vue', link: 'https://github.com/warp-ds/vue' },
+          { text: 'Elements', link: 'https://github.com/warp-ds/elements' },
         ],
       },
     ],
@@ -100,11 +100,10 @@ export default defineConfig({
         },
         {
           text: 'Getting started',
-          collabsible: true,
           collapsed: true,
           items: [
             { text: 'Developers', 
-            collapsible: true,
+            collapsed: true,
             items: [
               { text: 'Web', link: '/getting-started/developers/' },
               { text: 'Android', link: '/getting-started/android/' },
@@ -116,7 +115,6 @@ export default defineConfig({
         },
         {
           text: 'Migration to Warp',
-          collabsible: true,
           collapsed: true,
           items: [
             { text: 'Developers guide', link: '/migration/developers/' },
@@ -125,12 +123,11 @@ export default defineConfig({
         },
         {
           text: 'Components',
-          collapsible: true,
           collapsed: true,
           items: [
             {
               text: 'Actions',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Button', link: '/components/buttons/' },
                 { text: 'Button Group', link: '/components/buttongroup/' },
@@ -139,7 +136,7 @@ export default defineConfig({
             },
             {
               text: 'Forms',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Combobox', link: '/components/combobox/' },
@@ -154,7 +151,7 @@ export default defineConfig({
             },
             {
               text: 'Feedback',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Alert', link: '/components/alert/' },
                 { text: 'Steps', link: '/components/steps/' },
@@ -162,12 +159,11 @@ export default defineConfig({
             },
             {
               text: "Icons",
-              collapsible: true,
               link: "/components/icons/",
             },
             {
               text: 'Layout',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
                 {
@@ -195,7 +191,7 @@ export default defineConfig({
             },
             {
               text: 'Navigation',
-              collapsible: true,
+              collapsed: true,
               items: [
                 {
                   text: 'Breadcrumbs',
@@ -205,7 +201,7 @@ export default defineConfig({
             },
             {
               text: 'Overlays',
-              collapsible: true,
+              collapsed: true,
               items: [
                 {
                   text: 'Attention',
@@ -221,13 +217,12 @@ export default defineConfig({
         },
         {
           text: 'Guidelines',
-          collapsible: true,
           collapsed: true,
           items: [
             { text: 'Designing with a system', link: '/guidelines/design-system/' },
             {
-              text: 'Data vizualisation',
-              collapsible: true,
+              text: 'Data visualisation',
+              collapsed: true,
               items: [
                 {
                   text: 'Getting Started',
@@ -251,7 +246,6 @@ export default defineConfig({
         },
         {
           text: 'Collaborate with us',
-          collabsible: true,
           collapsed: true,
           items: [
             { text: 'Contribute to Warp', link: '/collaborate/contribute/' },
