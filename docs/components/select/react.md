@@ -1,10 +1,10 @@
-## Import
+### Import
 
 ```js
 import { Select } from '@warp-ds/react';
 ```
 
-## React syntax
+### Syntax
 
 ```jsx example
 <Select label="Berries">
@@ -14,11 +14,11 @@ import { Select } from '@warp-ds/react';
 </Select>
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Select" />
 
-## Value
+#### Value
 
 An initial, uncontrolled, value can be provided using the `defaultValue` prop.
 Alternatively, a controlled value can be provided using the `value` prop.
@@ -49,12 +49,12 @@ function Example() {
 }
 ```
 
-## Labeling
+#### Labelling
 
 A visual label should be provided for the Select using the `label` prop.
 
 
-### Optional
+#### Optional
 
 Add the `optional` prop to indicate that the select is not required.
 
@@ -66,7 +66,7 @@ Add the `optional` prop to indicate that the select is not required.
 </Select>
 ```
 
-## Hint text
+#### Hint text
 
 Selects can provide additional context with `hint` if the label and placeholder
 aren't enough. You can force the hint text to always display by setting the
@@ -80,7 +80,7 @@ aren't enough. You can force the hint text to always display by setting the
 </Select>
 ```
 
-## Validation
+### Validation
 
 Selects can communicate to the user whether the current value is invalid.
 Implement your own validation logic in your app and set the `invalid` prop to
@@ -97,9 +97,9 @@ error.
 </Select>
 ```
 
-## Disabled
+### Disabled
 
 Using disabled is considered an anti-pattern and is therefore not supported.
-There will ALWAYS be users who don't understand why an element is disabled, or
+There will always be users who don't understand why an element is disabled, or
 users who can't even see that it is disabled because of poor lighting conditions
 or other reasons. Please consider more informative alternatives.

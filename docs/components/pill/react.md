@@ -1,15 +1,15 @@
-## Import
+### Import
 
 ```js
 import { Pill } from "@warp-ds/react";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```jsx
 <Pill suggestion label="Suggestion pill" />
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Pill" />

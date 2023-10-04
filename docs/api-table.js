@@ -169,6 +169,12 @@ export const react = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {
@@ -465,6 +471,15 @@ export const react = {
     events: [
       ['setActive', '(name: string)', 'false', ''],
       ['onChange', '(name: string) => void', '', 'Action to be called when the component is clicked'],
+    ],
+  },
+  TabPanel: {
+    required: [
+      ['children', 'ReactNode', '', 'The content of the tab panel.'],
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
+    ],
+    props: [
+      ['hidden', 'boolean', '', 'Show/hide panel manually (in server-side rendering).'],
     ],
   },
   Tabs: {
@@ -820,6 +835,12 @@ export const vue = {
         'button',
         "Controls the button's type, unused when `href` is present",
       ],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
     variants: [
       ['primary', 'quiet, small, loading'],
@@ -1076,6 +1097,11 @@ export const vue = {
       ['label', 'any', '', 'The label of the tab item'],
     ],
   },
+  TabPanel: {
+    required: [
+      ['name', 'string', '', 'Tab name identifier - This value should be the same as the `name` prop of the corresponding Tab component.'],
+    ],
+  },
   Tabs: {
     required: [['children', 'Element[]', '', 'The tabs within the container']],
     events: [['v-model', 'string', '', 'Name of the active element']],
@@ -1226,6 +1252,12 @@ export const elements = {
         'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
+      [
+        'fullWidth',
+        'boolean',
+        '',
+        "Sets the button's width to its parent's width. Useful especially on mobile when button should take full width.",
+      ],
     ],
   },
   Card: {
@@ -1368,4 +1400,171 @@ export const elements = {
       ['canclose', 'boolean', 'false', 'Adds close button. WARNING! For accessibility reasons, toasts should not be interactive and canclose should always be false. If the toast absolutely must be dismissible, set this to true.'],
     ]
   },
+};
+
+export const android = {
+  Button: {
+    required: [
+      [
+        'text', 
+        'String', 
+        '', 
+        'The text to be displayed on the button'
+      ],
+      [
+        'onClick',
+        '() -> Unit',
+        '',
+        'Lambda to be invoked when clicked',
+      ],
+      [
+        'buttonStyle',
+        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Tertiary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Critical <br />WarpButtonStyle.CriticalQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
+        'WarpButtonStyle.Primary',
+        'Controls the appearance of the button',
+      ]
+    ],
+    props: [
+      [
+        'enabled',
+        'Boolean',
+        'true',
+        'Sets the button in disabled mode',
+      ],
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the button',
+      ],
+      [
+        'maxLines',
+        'Integer',
+        '1',
+        'Limits the lines of the text on the button',
+      ],
+      [
+        'loading',
+        'Boolean',
+        'false',
+        'Set the button to look like it is in progress, can be combined with other button types. Can be combined with any button type',
+      ],
+    ],
+  },
+
+  TextField: {
+    required: [
+      [
+        'value',
+        'String',
+        '',
+        'The text displayed currently in the textfield',
+      ],
+      [
+        'onValueChange',
+        '(String) -> Unit',
+        '',
+        'Lambda to be invoked when input value changes',
+      ],
+      [
+        'label', 
+        'String', 
+        '', 
+        'The content to display as the label above the textfield'
+      ],
+
+    ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the textfield',
+      ],
+      [
+        'enabled',
+        'Boolean',
+        'true',
+        'Sets the textfield in disabled mode',
+      ],
+      [
+        'readOnly',
+        'Boolean',
+        'false',
+        'Sets the textfield in read-only mode',
+      ],
+      [
+        'optionalLabel', 
+        'String', 
+        '', 
+        'The optional content to display next to the label above the textfield'
+      ],
+      [
+        'placeholderText',
+        'String',
+        '',
+        'Text hint that occupies the textfield when it is empty',
+      ],
+      [
+        'helpText', 
+        'String', 
+        '', 
+        'The content to display as the help text below the textfield'
+      ],
+      [
+        'leadingIcon',
+        '@Composable () -> Unit?',
+        'null',
+        'Sets the composable in front of the input value',
+      ],
+      [
+        'trailingIcon',
+        '@Composable () -> Unit?',
+        'null',
+        'Sets the composable behind the input value',
+      ],
+      [
+        'isError',
+        'Boolean',
+        'false',
+        'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error',
+      ],
+      [
+        'visualTransformation', 
+        'VisualTransformation', 
+        'VisualTransformation.None', 
+        'Interface used for changing visual output of the input field '
+      ],
+      [
+        'keyboardOptions', 
+        'KeyboardOptions', 
+        'KeyboardOptions.Default', 
+        'The keyboard configuration options '
+      ],
+      [
+        'keyboardActions', 
+        'KeyboardActions', 
+        'KeyboardActions.Default', 
+        'The KeyboardActions that specify actions that will be triggered in response to triggering IME action on the software keyboard'
+      ],
+      [
+        'singleLine', 
+        'Boolean', 
+        'true', 
+        'Sets the textfield to a single line'
+      ],
+      [
+        'maxLines', 
+        'Int', 
+        'Int.MAX_VALUE', 
+        'Sets the maximum amount of lines allowed'
+      ],
+      [
+        'interactionSourceing', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
+      ],
+    ],
+  }
 };

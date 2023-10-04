@@ -8,7 +8,10 @@ const base = '/tech-docs';
 // Classes of documentation-related elements used within Warp component examples
 const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
 'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
-'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100'];
+'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100',
+'max-w-screen-xl', 'mx-auto', 'px-32', 's-bg-active', 'rounded-8', 'p-24', 'mb-24', 'grid', 'gap-24', 'mx-auto', 'mb-8',
+'s-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
+'last:ml-auto!',];
 
 export default defineConfig({
   lang: 'en-US',
@@ -82,9 +85,9 @@ export default defineConfig({
       {
         text: 'Implementations',
         items: [
-          { text: 'React', link: 'https://github.com/warp-ds' },
-          { text: 'Vue', link: 'https://github.com/warp-ds' },
-          { text: 'Elements', link: 'https://github.com/warp-ds' },
+          { text: 'React', link: 'https://github.com/warp-ds/react' },
+          { text: 'Vue', link: 'https://github.com/warp-ds/vue' },
+          { text: 'Elements', link: 'https://github.com/warp-ds/elements' },
         ],
       },
     ],
@@ -97,16 +100,21 @@ export default defineConfig({
         },
         {
           text: 'Getting started',
-          collabsible: true,
           collapsed: true,
           items: [
-            { text: 'Developers', link: '/getting-started/developers/' },
+            { text: 'Developers', 
+            collapsed: true,
+            items: [
+              { text: 'Web', link: '/getting-started/developers/' },
+              { text: 'Android', link: '/getting-started/android/' },
+              { text: 'iOS', link: '/getting-started/ios/' },
+            ],
+            },
             { text: 'Designers', link: '/getting-started/designers/' },
           ],
         },
         {
           text: 'Migration to Warp',
-          collabsible: true,
           collapsed: true,
           items: [
             { text: 'Developers guide', link: '/migration/developers/' },
@@ -115,12 +123,11 @@ export default defineConfig({
         },
         {
           text: 'Components',
-          collapsible: true,
           collapsed: true,
           items: [
             {
               text: 'Actions',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Button', link: '/components/buttons/' },
                 { text: 'Button Group', link: '/components/buttongroup/' },
@@ -129,7 +136,7 @@ export default defineConfig({
             },
             {
               text: 'Forms',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Checkbox', link: '/components/checkbox/' },
                 { text: 'Combobox', link: '/components/combobox/' },
@@ -144,15 +151,19 @@ export default defineConfig({
             },
             {
               text: 'Feedback',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Alert', link: '/components/alert/' },
                 { text: 'Steps', link: '/components/steps/' },
               ],
             },
             {
+              text: "Icons",
+              link: "/components/icons/",
+            },
+            {
               text: 'Layout',
-              collapsible: true,
+              collapsed: true,
               items: [
                 { text: 'Box', link: '/components/box/' },
                 {
@@ -180,7 +191,7 @@ export default defineConfig({
             },
             {
               text: 'Navigation',
-              collapsible: true,
+              collapsed: true,
               items: [
                 {
                   text: 'Breadcrumbs',
@@ -190,7 +201,7 @@ export default defineConfig({
             },
             {
               text: 'Overlays',
-              collapsible: true,
+              collapsed: true,
               items: [
                 {
                   text: 'Attention',
@@ -206,13 +217,12 @@ export default defineConfig({
         },
         {
           text: 'Guidelines',
-          collapsible: true,
           collapsed: true,
           items: [
             { text: 'Designing with a system', link: '/guidelines/design-system/' },
             {
-              text: 'Data vizualisation',
-              collapsible: true,
+              text: 'Data visualisation',
+              collapsed: true,
               items: [
                 {
                   text: 'Getting Started',
@@ -236,7 +246,6 @@ export default defineConfig({
         },
         {
           text: 'Collaborate with us',
-          collabsible: true,
           collapsed: true,
           items: [
             { text: 'Contribute to Warp', link: '/collaborate/contribute/' },

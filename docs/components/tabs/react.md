@@ -1,16 +1,15 @@
-## Import
+### Import
 
 ```js
 import { Tab, Tabs, TabPanel } from '@warp-ds/react';
 ```
-## Visual options
 
-### Examples
+### Syntax
 
 #### Default
 The following example demonstrates how the Tab, Tabs, and TabPanel components can be used to switch between panels.
 
-```js
+```jsx
 <>
   <Tabs>
     <Tab label="Tab 1" name="one" isActive />
@@ -24,6 +23,7 @@ The following example demonstrates how the Tab, Tabs, and TabPanel components ca
   </div>
 </>
 ```
+
 #### Tabs with left icons
 
 ```js
@@ -97,7 +97,7 @@ function Example() {
 }
 ```
 
-## Technical details
+### Technical details
 You can set the active tab in one of two ways:
 
 1. By passing the name of the active Tab to the Tabs component using the active attribute.
@@ -107,8 +107,16 @@ It is important that all children of Tabs are Tab components.
 
 Note that name attributes will be used to generate id attributes (prefixed with warp-tab- and warp-tabpanel-), and therefore they must be unique throughout the entire DOM. This is because aria-controls and aria-labelledby rely on id attributes, and they are required for the tabs to be ARIA compliant.
 
-## Props
-### Tabs
+### Props
+
+#### Tabs
+
 <api-table type="react" component="Tabs" />
-### Tab
+
+#### Tab
+
 <api-table type="react" component="Tab" />
+
+#### TabPanel
+
+<api-table type="react" component="TabPanel" />

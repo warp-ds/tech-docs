@@ -21,7 +21,7 @@ substitute for labeling the element with a visible label.
 ```
 
 ### Disabled
-Keep in mind that using disabled in its current form is an anti-pattern. There will ALWAYS
+Keep in mind that using disabled in its current form is an anti-pattern. There will always
 be users who don't understand why an element is disabled, or users who can't even see that
 it is disabled because of poor lighting conditions or other reasons. Please consider more
 informative alternatives before choosing to use disabled on an element.

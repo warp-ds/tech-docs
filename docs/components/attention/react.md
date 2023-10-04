@@ -1,12 +1,12 @@
-## Import
+### Import
 
 ```js
 import { Attention } from '@warp-ds/react';
 ```
 
-## Visual options
+### Visual options
 
-### Callout
+#### Callout
 
 ```js
 <div>
@@ -19,7 +19,7 @@ import { Attention } from '@warp-ds/react';
 </div>
 ```
 
-### Tooltip
+#### Tooltip
 
 ```js
 function Example() {
@@ -48,7 +48,7 @@ function Example() {
 }
 ```
 
-### Popover
+#### Popover
 
 ```js
 function Example() {
@@ -98,6 +98,6 @@ function Example() {
 }
 ```
 
-## Props
+### Props
 
 <api-table type="react" component="Attention" />

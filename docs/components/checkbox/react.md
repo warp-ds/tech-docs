@@ -1,4 +1,4 @@
-## Import
+### Import
 
 The toggle component allows you to render checkboxes. All you have to do is specify `type="checkbox"` for the Toggle and let the component handle the rest. Toggle is built to handle both single and multiple options.
 
@@ -9,7 +9,7 @@ You must keep track of state yourself. The state has to be handled differently d
 import { Toggle } from '@warp-ds/react';
 ```
 
-## Props
+### Props
 
 <api-table type=react component="Toggle" />
 
@@ -20,7 +20,7 @@ type ToggleEntry = {
 };
 ```
 
-## Checkbox with single option
+### Checkbox with single option
 
 When you only want a single option, please use the `label` property over passing a single option to the `options` property. This results in the `onChange` callback function returning a single boolean value indicating the current state of the toggle.
 
@@ -46,7 +46,7 @@ function Example() {
 
 **Note** the `onChange` property returning a boolean value. This is because we're working with a single option. When using the `options` property, as seen in examples below, the option which has been selected is returned on the callback and we must handle this state ourselves.
 
-## Checkbox with multiple options
+### Checkbox with multiple options
 
 Let's have a look at using the Toggle with multiple options. As mentioned above, using the `options` property will change the returning value of the `onChange` callback. It will now return the option which was selected.
 
@@ -87,7 +87,7 @@ function Example() {
 **Note** the `title` property. This gives you the option to label the options, but is not required.
 
 
-## Checkbox with invisible label
+### Checkbox with invisible label
 
 You can hide the label by passing a `noVisibleLabel` prop to Toggle component.
 
@@ -111,7 +111,7 @@ function Example() {
 }
 ```
 
-## Checkbox with indeterminate state
+### Checkbox with indeterminate state
 
 Sometimes we need to indicate that the state of a single checkbox is indeterminate, or "partially checked". The checkbox will appear with a small dash instead of a tick to indicate that the option is not exactly checked or unchecked.
 
@@ -179,7 +179,7 @@ function Example() {
 }
 ```
 
-## Validation
+### Validation
 
 Validation is as easy as passing the property `invalid` with a `helpText` to further explain the error. `helpText` can also be used as an assistance label before an error occurs as long as `invalid` is set to false.
 

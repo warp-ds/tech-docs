@@ -7,6 +7,7 @@
 Button Group is used to group and align clickable elements, applying different visuals for different needs.
 
 <components-status vue='released' />
+
 ## Example
 
 <theme-switcher />
@@ -14,18 +15,16 @@ Button Group is used to group and align clickable elements, applying different v
 <buttongroup-example />
 
 ## Usage
-This component is only supported in Warp Vue at the moment.
 
+This component is only supported in Warp Vue at the moment.
 For a React equivalent that serves a similar purpose, use the `Toggle` in [RadioButtons](/components/radiobuttons/).
+
+<component-questions />
 
 ## Frameworks
 
 <tabs-content> 
-  <template #react>
-  </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

@@ -4,7 +4,7 @@
 
 # Layout utilities
 
-These components are available to make some of the layout components interactive.
+These utility components are available to make some layout components interactive.
 
 <components-status vue='released' />
 
@@ -14,14 +14,14 @@ These components are available to make some of the layout components interactive
 
 <utilities-example />
 
+## Usage
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
-  <template #react>
-  </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

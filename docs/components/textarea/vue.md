@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,13 +13,13 @@ app.use(Forms)
 import { wTextarea } from '@warp-ds/vue'
 ```
 
-## Syntax
+### Syntax
 
-```html
+```vue
 <w-textarea label="A label" hint="A hint" v-model="model" />
 ```
 
-## Props
+### Props
 
 All typical HTML5 attributes are valid props for textarea.
 
@@ -27,9 +27,9 @@ Below are some additional props documented.
 
 <api-table type=vue component="Field"/>
 
-## Validation
+### Validation
 
-### Validating Elements
+#### Validating Elements
 
 Every form element accepts a prop `rules` which takes an array of functions. These functions will be run in order until one returns an object. If all functions return `true` the field is considered valid.
 
@@ -41,13 +41,13 @@ The function has one argument, the current value of the form element — and can
 
 <api-table type=vue component="InputAttributes"/>
 
-### Collecting Validation with wForm
+#### Collecting Validation with wForm
 
 The `wForm` component registers element descendants at any level, and provides the aggregate validation status.
 
 <api-table type=vue component="InputValidation"/>
 
-### Programmatic validation
+#### Programmatic validation
 
 The wField component can provide access to programmatic validation beyond what wForm's props can. For information on which methods are available, see the documentation on Field.
 
@@ -57,7 +57,7 @@ The wField component can provide access to programmatic validation beyond what w
 </w-field>
 ```
 
-### Validation and required Form Elements
+#### Validation and required Form Elements
 
 If the form element is marked required, a special rule will be inserted before any user-defined rules.
 

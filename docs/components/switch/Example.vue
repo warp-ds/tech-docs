@@ -6,7 +6,9 @@
 </script>
 
 <template>
-  <w-field label="Switch it" #default="{ labelFor }">
-    <w-switch v-model="toggle" :id="labelFor" />
-  </w-field>
+  <div class="component">
+    <w-field label="Switch it" #default="{ labelFor }">
+      <w-switch v-model="toggle" :id="labelFor" />
+    </w-field>
+  </div>
 </template>

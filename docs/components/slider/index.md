@@ -13,9 +13,11 @@ A slider is an input where the user selects a value from within a given range. T
 
 <theme-switcher />
 
-<slider-example></slider-example>
+<slider-example />
 
 ## Usage
+
+<component-design-guidelines name="Warp - Components / Slider" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23902&mode=design" />
 
 ### Accessibility
 
@@ -25,6 +27,8 @@ To be accessible, an `aria-label` prop should be provided to the slider. If the 
 
 The slider accepts an `onChange` prop which is triggered whenever the value is changed by the user. Note that this value updates as the user is dragging.
 
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
@@ -33,7 +37,5 @@ The slider accepts an `onChange` prop which is triggered whenever the value is c
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>

@@ -1,4 +1,4 @@
-## Import
+### Import
 
 The toggle component allows you to render radios. All you have to do is specify `type="radio"` for the Toggle and let the component handle the rest. Toggle is built to handle both single and multiple options.
 
@@ -8,9 +8,9 @@ You must keep track of state yourself. The state has to be handled differently d
 import { Toggle } from '@warp-ds/react';
 ```
 
-## Props
+### Syntax
 
-<api-table type=react component="Toggle" />
+#### Radio with multiple options
 
 ```ts example
 type ToggleEntry = {
@@ -18,8 +18,6 @@ type ToggleEntry = {
   value: unknown;
 };
 ```
-
-## Radio with multiple options
 
 ```jsx example
 function Example() {
@@ -43,7 +41,11 @@ function Example() {
 
 Note the `helpText` property. This gives you the option to further explain the purpose of the toggle and the action to take.
 
-## Validation
+### Props
+
+<api-table type=react component="Toggle" />
+
+### Validation
 
 Validation is as easy as passing the property `invalid` with a `helpText` to further explain the error. `helpText` can also be used as an assistance label before an error occurs as long as `invalid` is set to false.
 

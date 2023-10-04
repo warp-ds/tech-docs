@@ -1,4 +1,4 @@
-## Import
+### Import
 
 > Use in entire app
 
@@ -13,14 +13,14 @@ app.use(Alert);
 import { wAlert } from "@warp-ds/vue";
 ```
 
-## Syntax
+### Syntax
 
-```js
+```vue
 <w-alert v-model="showAlert" info title="I am a title">
   <p>I am an excellent message for the user.</p>
 </w-alert>
 ```
 
-## Props
+### Props
 
 <api-table type=vue component="Alert" />

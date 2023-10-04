@@ -17,20 +17,31 @@ const props = defineProps({
     default: 'unsupported',
     validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
   },
+  android: {
+    type: String,
+    default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
+  },
+  ios: {
+    type: String,
+    default: 'unsupported',
+    validator: (value) => ['released', 'developing', 'planned', 'unsupported'].includes(value)
+  }
 });
 
 const frameworkStatus = computed(() => [
   { name: 'React', status: props.react },
   { name: 'Vue', status: props.vue },
   { name: 'Elements', status: props.elements },
+  { name: 'Android', status: props.android },
+  { name: 'iOS', status: props.ios }
 ]);
-
 </script>
 
 <template>
-  <div class="wrapper">
-    <div v-for="framework in frameworkStatus" :key="framework.name" class="item">
-      <div :class="`circle circle-${framework.status}`"></div>
+  <div class="component-status">
+    <div v-for="framework in frameworkStatus" :key="framework.name" class="framework">
+      <div :class="`circle circle--${framework.status}`"></div>
       <div>
         <h4 class="title">{{ framework.name }}</h4>
         <span class="status">{{ framework.status }}</span>
@@ -40,15 +51,20 @@ const frameworkStatus = computed(() => [
 </template>
 
 <style lang="scss" scoped>
-.wrapper {
+.component-status {
   display: flex;
+  flex-flow: row wrap;
   margin-top: 24px;
+  column-gap: 24px;
+  row-gap: 24px;
+
+  @media (min-width: 768px) and (max-width: 959px), (min-width: 1104px) and (max-width: 1279px), (min-width: 1366px) {
+    column-gap: 48px;
+  }
 }
 
-.item {
+.framework {
   display: flex;
-  margin-right: 64px;
-  margin-top: 12px;
 }
 
 .title {
@@ -58,26 +74,26 @@ const frameworkStatus = computed(() => [
 .circle {
   border-radius: 50%;
   display: inline-block;
-  height: 12px;
-  margin-right: 12px;
-  margin-top: 8px;
   width: 12px;
-}
+  height: 12px;
+  margin-right: 8px;
+  margin-top: 6px;
 
-.circle-released {
-  background-color: #67eeb8
-}
+  &--released {
+    background-color: #67eeb8
+  }
 
-.circle-planned {
-  background-color: #66e0ff
-}
+  &--planned {
+    background-color: #66e0ff
+  }
 
-.circle-developing {
-  background-color:  #fae76b;
-}
+  &--developing {
+    background-color:  #fae76b;
+  }
 
-.circle-unsupported {
-  background-color: #f99
+  &--unsupported {
+    background-color: #f99
+  }
 }
 
 .status {

@@ -71,7 +71,7 @@ const data = computed(() => apiTable[props.type || 'react'][props.component]);
     }
 
     thead {
-      border-bottom: 1px solid var(--vp-c-divider-light);
+      border-bottom: 1px solid var(--vp-c-divider);
 
       tr {
         text-transform: uppercase;

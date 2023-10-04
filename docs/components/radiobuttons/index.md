@@ -15,15 +15,17 @@ Radio buttons allow users to select a single option from a list of mutually excl
 
 <radiobuttons-example />
 
+## Usage
+
+<component-questions />
+
 ## Frameworks
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />
-  </template>
-  <template #elements>
   </template>
 </tabs-content>
