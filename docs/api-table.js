@@ -1421,7 +1421,7 @@ export const android = {
         'buttonStyle',
         'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Tertiary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Critical <br />WarpButtonStyle.CriticalQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
-        'Controls the apperance of the button',
+        'Controls the appearance of the button',
       ]
     ],
     props: [
@@ -1429,7 +1429,7 @@ export const android = {
         'enabled',
         'Boolean',
         'true',
-        'Sets the button in disbaled mode',
+        'Sets the button in disabled mode',
       ],
       [
         'modifier',
@@ -1485,7 +1485,7 @@ export const android = {
         'enabled',
         'Boolean',
         'true',
-        'Sets the textfield in disbaled mode',
+        'Sets the textfield in disabled mode',
       ],
       [
         'readOnly',
@@ -1497,7 +1497,7 @@ export const android = {
         'optionalLabel', 
         'String', 
         '', 
-        'The otional content to display next to the label above the textfield'
+        'The optional content to display next to the label above the textfield'
       ],
       [
         'placeholderText',
@@ -1515,7 +1515,7 @@ export const android = {
         'leadingIcon',
         '@Composable () -> Unit?',
         'null',
-        'Sets the composable infront of the input value',
+        'Sets the composable in front of the input value',
       ],
       [
         'trailingIcon',
@@ -1539,7 +1539,7 @@ export const android = {
         'keyboardOptions', 
         'KeyboardOptions', 
         'KeyboardOptions.Default', 
-        'The keyboard configuartion options '
+        'The keyboard configuration options '
       ],
       [
         'keyboardActions', 
