@@ -36,7 +36,6 @@ const frameworkStatus = computed(() => [
   { name: 'Android', status: props.android },
   { name: 'iOS', status: props.ios }
 ]);
-
 </script>
 
 <template>
@@ -59,8 +58,8 @@ const frameworkStatus = computed(() => [
   column-gap: 24px;
   row-gap: 24px;
 
-  @media (min-width: 768px) {
-    column-gap: 64px;
+  @media (min-width: 768px) and (max-width: 959px), (min-width: 1104px) and (max-width: 1279px), (min-width: 1366px) {
+    column-gap: 48px;
   }
 }
 

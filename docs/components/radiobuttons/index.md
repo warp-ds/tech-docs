@@ -23,7 +23,7 @@ Radio buttons allow users to select a single option from a list of mutually excl
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />

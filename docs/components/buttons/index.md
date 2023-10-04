@@ -3,7 +3,7 @@
   import Elements from './elements.md';
   import React from './react.md';
   import Android from './android.md';
-  import iOS from './ios.md';
+  import ios from './ios.md';
 </script>
 
 # Button
@@ -41,8 +41,5 @@ icon, an `aria-label` prop must be provided for accessibility.
   </template>
   <template #android>
     <android />
-  </template>
-  <template #ios>
-    <ios />
   </template>
 </tabs-content>
