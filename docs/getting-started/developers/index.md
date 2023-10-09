@@ -59,7 +59,6 @@ import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   presets: [presetWarp({ externalClasses: classes, skipResets: true })],
-  safelist: classes,
 });
 ```
 
@@ -180,11 +179,6 @@ Add this to your `index.html`:
 
 ### Make sure you import the resets and components classes from EIK cdn:
 
-```css
-@import url(https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css);
-@import url(https://assets.finn.no/pkg/@warp-ds/css/v1/components.css);
-```
-or
 ```html
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css">
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/components.css">
