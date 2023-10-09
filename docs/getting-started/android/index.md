@@ -17,9 +17,9 @@ Warp is used together with a brand theme and should be installed for a specific 
 ```gradle
 implementation("com.schibsted.nmp.warp:warp-android:0.0.2")
 
-finnImplementation("com.schibsted.nmp.warp:warp-finn:0.0.3")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.3")
 
-toriImplementation("com.schibsted.nmp.warp:warp-tori:0.0.3")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.3")
 ```
 
 

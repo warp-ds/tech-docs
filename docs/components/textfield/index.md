@@ -3,7 +3,7 @@
   import React from './react.md';
   import Elements from './elements.md';
   import Android from './android.md';
-  import iOS from './ios.md';
+  import ios from './ios.md';
 </script>
 
 # Text Field
@@ -33,7 +33,7 @@ If the field is labeled by a separate element, an `aria-labelledby` prop must be
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />
@@ -43,8 +43,5 @@ If the field is labeled by a separate element, an `aria-labelledby` prop must be
   </template>
   <template #android>
     <android />
-  </template>
-  <template #ios>
-    <ios />
   </template>
 </tabs-content>
