@@ -52,6 +52,27 @@ export const react = {
       ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
     ],
   },
+  Badge: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
+      ['children', 'Element | Element[] | string', '', 'Content of the Badge component'],
+      ['className', 'string', '', 'Additional CSS classes to apply to the component'],
+      ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -318,7 +339,7 @@ export const react = {
       ['footer', 'Element<br />|Element[]', '', 'Buttons passed to the footer'],
       ['className', 'string', '', 'Additional classes added to the container'],
       ['id', 'string', '', 'An id for the container and ARIA attributes. A random id is generated if none is provided.'],
-      ['style', 'CSSProperties', '', 'Additional styles to the contianer. [More info about CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
+      ['style', 'CSSProperties', '', 'Additional styles to the container. [More info about CSSProperties](https://legacy.reactjs.org/docs/dom-elements.html#style)'],
       ['aria-label', 'number', '', 'Defines a string value that labels the current element. Must be set if neither `aria-labelledby` or `<ModalHeading>` is defined,'],
       ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if neither `aria-label` or `<ModalHeading>` is defined.'],
       ['initialFocusRef', 'RefObject<any>', '', `A reference to the element that should be focused. By default it'll be the first interactive element. [More info](https://react.dev/learn/manipulating-the-dom-with-refs)`],
@@ -769,6 +790,24 @@ export const vue = {
       ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
     ],
   },
+  Badge: {
+    required: [],
+    props: [
+      ['as', 'string', 'div', 'The DOM element to emit'],
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
+    ],
+  },
   Box: {
     required: [],
     props: [
@@ -966,7 +1005,7 @@ export const vue = {
         'label-level',
         'number',
         '',
-        'Useable on toggles, will make the emitted legend element into a heading for accessibility.',
+        'Usable on toggles, will make the emitted legend element into a heading for accessibility.',
       ],
     ],
   },
@@ -1182,6 +1221,23 @@ export const elements = {
       ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
       ['show', 'boolean', 'false', 'Whether Attention element should be visible'],
+    ],
+  },
+  Badge: {
+    required: [],
+    props: [
+      [
+        'variant',
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral'",
+        'Variant of the badge',
+      ],
+      [
+        'position',
+        "'top-left', 'top-right', 'bottom-right', 'bottom-left'",
+        "undefined",
+        'Used for absolute positioning of the badge within a container',
+      ],
     ],
   },
   Box: {
