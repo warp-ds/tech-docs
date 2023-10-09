@@ -58,7 +58,7 @@ import { presetWarp } from '@warp-ds/uno';
 import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
-  presets: [presetWarp()],
+  presets: [presetWarp({ externalClasses: classes, skipResets: true })],
   safelist: classes,
 });
 ```
@@ -99,8 +99,7 @@ import { classes } from '@warp-ds/css/component-classes/classes';
 export default defineConfig({
   plugins: [
     UnoCSS({
-      presets: [presetWarp()],
-      safelist: classes,
+      presets: [presetWarp({ externalClasses: classes, skipResets: true })],
     }),
   ],
 });
@@ -179,6 +178,17 @@ Add this to your `index.html`:
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css">
 ```
 
+### Make sure you import the resets and components classes from EIK cdn:
+
+```css
+@import url(https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css);
+@import url(https://assets.finn.no/pkg/@warp-ds/css/v1/components.css);
+```
+or
+```html
+<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css">
+<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/components.css">
+``````
 
 ## 3. Use Warp components
 
