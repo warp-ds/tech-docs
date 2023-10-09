@@ -15,11 +15,11 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```gradle
-implementation("com.schibsted.nmp.warp:warp-android:0.0.2")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.3")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.3")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.4")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.3")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.4")
 ```
 
 
@@ -47,9 +47,9 @@ Use the composable theme which you initiated earlier to be able to use Warp comp
 @Composable
 fun MainScreen() {
     val flavor = viewModel.flavor.collectAsState()
+    val theme = BrandTheme(flavor = flavor.value)
 
-    BrandTheme(flavor = flavor.value) {
-
+    theme {
       Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -73,6 +73,50 @@ fun MainScreen() {
 ```
 ### Legacy support
 All Warp components have xml support to be able to use Warp with legacy layouts. Use Warp components as any other custom View components.
+
+To be able to apply the correct styling to legacy components it is required to use Koin dependency injection. You will need to integrate Koin into your project (unless it already is there).
+
+```gradle
+implementation("io.insert-koin:koin-androidx-compose:3.5.0")
+```
+
+Then start Koin in your Application
+```kotlin
+class WarpApplication : Application() {
+        override fun onCreate() {
+            super.onCreate()
+            startKoin {
+                androidContext(this@WarpApplication)
+                modules(warpAppModule)
+            }
+        }
+}
+```
+Next, create a Theme class which implemets the LegacyWarpTheme 
+```kotlin
+const val FINN = "finn"
+const val TORI = "tori"
+
+class BrandTheme(val flavor: String) : LegacyWarpTheme {
+
+    @Composable
+    override fun invoke(content:@Composable  () -> Unit) {
+        when (flavor) {
+            FINN -> FinnWarpTheme(content)
+            TORI -> ToriWarpTheme(content)
+        }
+    }
+}
+```
+Create an instance of the theme class within a koin module
+```kotlin
+val warpAppModule = module {
+    single<LegacyWarpTheme> { BrandTheme(flavor = BuildConfig.FLAVOR) }
+}
+```
+Now the warp components will show correct colors and styling.
+
+Xml implementation example
 
 ```xml example
 <?xml version="1.0" encoding="utf-8"?>
