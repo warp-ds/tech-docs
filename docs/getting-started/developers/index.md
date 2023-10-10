@@ -177,7 +177,7 @@ Add this to your `index.html`:
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css">
 ```
 
-### Make sure you import the resets and components classes from EIK cdn:
+### Make sure you import the resets and components classes from Eik CDN:
 
 ```html
 <link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css">
