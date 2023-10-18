@@ -1,7 +1,7 @@
 <script setup>
 import { wBadge } from '@warp-ds/vue';
 
-const badgeVariants = ['neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price',];-b
+const badgeVariants = ['neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price',];
 const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right',];
 </script>
 
