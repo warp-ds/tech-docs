@@ -10,12 +10,6 @@ Warp's icon set is designed to help users understand actions, information and dr
 
 <components-status react='released' vue='released' elements='released' />
 
-## Examples
-
-<theme-switcher />
-
-<icon-example />
-
 ## Usage
 
 <component-design-guidelines name="Warp - Components / Icons" link="https://www.figma.com/file/yEx16ew6S0Xgd579dN4hsM/Warp---Icons?type=design&node-id=6011-1442&mode=design&t=zY5N398IPei2z89J-0" />
@@ -35,3 +29,13 @@ Warp's icon set is designed to help users understand actions, information and dr
     <elements />
   </template>
 </tabs-content>
+
+## Setup
+
+Since warp components are internationalised, you'd need to either set `NMP_LANGUAGE` for server-side rendering of the component, or set html document lang with a two-letter-code, eg: `<html lang="en">`. The server-side variable is read as `process.env.NMP_LANGUAGE` so you could either define this in your package.json script, or use `.env` files to leverage [dotenv](https://github.com/motdotla/dotenv).
+
+## Examples
+
+<theme-switcher />
+
+<icon-example />

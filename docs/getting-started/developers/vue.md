@@ -6,6 +6,11 @@ The Warp Vue package can be installed from NPM.
 npm install @warp-ds/vue
 ```
 
+## Setup
+
+Since warp components are internationalised, you'd need to either set `NMP_LANGUAGE` for server-side rendering of the component, or set html document lang with a two-letter-code, eg: `<html lang="en">`. The server-side variable is read as `process.env.NMP_LANGUAGE` so you could either define this in your package.json script, or use `.env` files to leverage [dotenv](https://github.com/motdotla/dotenv).
+
+
 ## Using Components
 
 Once installed, components can be imported into your app by name.
@@ -27,3 +32,9 @@ This code is bringing in **an installer** for the Box component, and any additio
 import { wBox, wClickable } from '@warp-ds/vue'
 ```
 This code is bringing in the Box and Clickable components themselves, rather than an installer - this is denoted by the `w` prefix of the components. Some edge-case components may be available this way that don't make sense to globally install for everyone.
+
+## Eik support
+We publish `@warp-ds/vue` package to EIK cdn, eg:
+```
+https://assets.finn.no/pkg/@warp-ds/vue/v1/warp-vue.eik.js
+```
