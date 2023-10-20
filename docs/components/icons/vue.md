@@ -7,7 +7,7 @@ import { IconBag16 } from '@warp-ds/icons/vue';
 ### Syntax
 
 ```html
-<icon-bag16 />
+<icon-bag-16 />
 ```
 
 ### Colors

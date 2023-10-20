@@ -23,7 +23,7 @@ This can be used if more control over styling is needed than the `title` prop al
 ```html
 <w-expandable box>
   <div slot="title" class="flex flex-row items-center">
-    <f-icon-bag16></f-icon-bag16>
+    <w-icon-bag-16></w-icon-bag-16>
     <p class="ml-8 mb-0">This is a title with an icon</p>
   </div>
   <p>with expanded content</p>
