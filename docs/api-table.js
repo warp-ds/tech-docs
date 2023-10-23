@@ -92,6 +92,12 @@ export const react = {
         'Will style the box in a neutral fashion',
       ],
       [
+        'role',
+        'string',
+        'region',
+        'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
+      ],
+      [
         '~~clickable~~',
         'boolean',
         'false',
@@ -827,6 +833,12 @@ export const vue = {
         'Will style the box in a neutral fashion',
       ],
       [
+        'role',
+        'string',
+        'region',
+        'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
+      ],
+      [
         '~~clickable~~',
         'boolean',
         'false',
@@ -1256,6 +1268,12 @@ export const elements = {
         'boolean',
         'false',
         'Will style the box in a neutral fashion',
+      ],
+      [
+        'role',
+        'string',
+        'region',
+        'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
       ],
     ],
   },
