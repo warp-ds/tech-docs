@@ -6,17 +6,17 @@ settings:
 
 devDependencies:
   '@warp-ds/css':
+    specifier: ^1.1.2
+    version: 1.1.2
+  '@warp-ds/icons':
     specifier: ^1.1.0
     version: 1.1.0
-  '@warp-ds/icons':
-    specifier: ^1.0.0
-    version: 1.0.0
   '@warp-ds/uno':
     specifier: ^1.1.0
     version: 1.1.0
   '@warp-ds/vue':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.1
+    version: 1.1.1
   markdown-it:
     specifier: ^13.0.1
     version: 13.0.1
@@ -553,17 +553,17 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@lingui/core@4.4.1:
-    resolution: {integrity: sha512-G5Sc1r0mw7loiGeQnrXbyMed3UzwGi93yJK2o1SNbnh7VVKlS99bgA0QN4ECH8Rmf6yy1iC3Dfx+uUIfq6s3Yw==}
+  /@lingui/core@4.5.0:
+    resolution: {integrity: sha512-8zTuIXJo5Qvjato7LWE6Q4RHiO4LjTBVOoRlqfOGYDp8VZ9w9P7Z7IJgxI7UP5Z1wiuEvnMdVF9I1C4acqXGlQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@babel/runtime': 7.22.11
-      '@lingui/message-utils': 4.4.1
-      unraw: 2.0.1
+      '@lingui/message-utils': 4.5.0
+      unraw: 3.0.0
     dev: true
 
-  /@lingui/message-utils@4.4.1:
-    resolution: {integrity: sha512-nZK5S4MayrSKdZPhSTEFf2h6Q5r62IHzYhhqMFHZ/JVZV4XiEr9UXmDLS5lH8if2vfgqF6Q/CDnmcCcv/4/9AQ==}
+  /@lingui/message-utils@4.5.0:
+    resolution: {integrity: sha512-iRqh2wvNtzJO3NStB77nEXEfeI53aVVjzD7/mBrEm/P0lC7sqPHk0WBQCfzE0N9xm6a+XHmHu3J+x2nnQ2OjcA==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@messageformat/parser': 5.1.0
@@ -1012,20 +1012,17 @@ packages:
       '@floating-ui/dom': 0.5.4
     dev: true
 
-  /@warp-ds/css@1.1.0:
-    resolution: {integrity: sha512-ehDN05LnQ2RnhKfpatxQ2e0u++YH2yoXoVqN6NHaexF6j6kS6yosumqOZo0NHpbYGRhXwy0Hor0yntdrT8XNGg==}
+  /@warp-ds/css@1.1.2:
+    resolution: {integrity: sha512-fHR5tY7u62E8mIx2CC7aMDepQKeuBHpbB5DKsGzP6zp+8s1VngWXiQzcemYvLpFUac8BxNy49Ku+ckFQjFoGpQ==}
     dependencies:
-      '@warp-ds/fonts': 1.1.0
       '@warp-ds/tokenizer': 0.0.2
       '@warp-ds/uno': 1.1.0
     dev: true
 
-  /@warp-ds/fonts@1.1.0:
-    resolution: {integrity: sha512-kLNZzK3o0rMJApm7/YT3K7rYoFKgH5PyJMTVwv34O4Dx6ikfN7appc4f2DFYkE2XY6gifpD5F2r1ftcJtdW4+w==}
-    dev: true
-
-  /@warp-ds/icons@1.0.0:
-    resolution: {integrity: sha512-wAKyzaanqsB9p6tb1WgwjVuASryEeuH4ypUs+YFH8lw1b12KY3crtlPDB5eWHca/kA8AcKu0Cwz5oJJ+LJ+hGg==}
+  /@warp-ds/icons@1.1.0:
+    resolution: {integrity: sha512-2EJhU6L2nhaM3iTC9uApe5KU5/Pb5oNC6UncClfo5VMSjBzUn4RNkwyiyJlk4FrL41P7kre30M+VXpr+3KclFA==}
+    dependencies:
+      '@lingui/core': 4.5.0
     dev: true
 
   /@warp-ds/tokenizer@0.0.2:
@@ -1042,13 +1039,14 @@ packages:
       '@unocss/preset-mini': 0.52.7
     dev: true
 
-  /@warp-ds/vue@1.1.0:
-    resolution: {integrity: sha512-CietROIT7lB0SDc5dI+TiOwWSYwilabg693ry4YpoWCHe/5lzNT7OEl4HY8GcNKM2bpzc9IZ3HrzzjXSvhh7vQ==}
+  /@warp-ds/vue@1.1.1:
+    resolution: {integrity: sha512-Q+c5FJwwVJt7qUf4pFCrrQCKv3KJdBoUhBw/j61iFE6woka9Z448PCFQ8NAPpmMJlvRP6wo3Ffsku347ZRpVUg==}
     dependencies:
       '@floating-ui/dom': 1.5.1
-      '@lingui/core': 4.4.1
+      '@lingui/core': 4.5.0
       '@warp-ds/core': 1.0.0
-      '@warp-ds/css': 1.1.0
+      '@warp-ds/css': 1.1.2
+      '@warp-ds/icons': 1.1.0
       '@warp-ds/uno': 1.1.0
       create-v-model: 2.2.0
       dom-focus-lock: 1.1.0
@@ -1821,8 +1819,8 @@ packages:
       - supports-color
     dev: true
 
-  /unraw@2.0.1:
-    resolution: {integrity: sha512-tdOvLfRzHolwYcHS6HIX860MkK9LQ4+oLuNwFYL7bpgTEO64PZrcQxkisgwJYCfF8sKiWLwwu1c83DvMkbefIQ==}
+  /unraw@3.0.0:
+    resolution: {integrity: sha512-08/DA66UF65OlpUDIQtbJyrqTR0jTAlJ+jsnkQ4jxR7+K5g5YG1APZKQSMCE1vqqmD+2pv6+IdEjmopFatacvg==}
     dev: true
 
   /vite@4.3.9(sass@1.62.1):
