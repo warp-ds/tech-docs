@@ -26,11 +26,10 @@ attribute on
 
 ```js
 <Alert type="info" show={show} role="">
-  <p role="alert" className="font-bold">
+  <h3 role="alert" className="t5">
     This is "info" variant of the alert element
-  </p>
+  </h3>
   <p>With an additional description</p>
-  <a>And a link to more information</a>
 </Alert>
 ```
 
