@@ -35,7 +35,6 @@ function Example() {
         utility
         aria-describedby='tooltip-bubbletext'
         aria-expanded='true'
-        type='button'
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
         onFocus={() => setShow(true)}
@@ -82,6 +81,7 @@ function Example() {
         small
         aria-expanded={show}
         aria-controls='popover-attention-example'
+        aria-details='popover-bubbletext'
         utility
         onClick={() => setShow(!show)}
         ref={targetEl}
@@ -93,10 +93,11 @@ function Example() {
         placement='bottom'
         targetEl={targetEl}
         isShowing={show}
+        id='popover-attention-example'
       >
-        <ul>
-          <li tabIndex={0}>Hello</li>
-          <li tabIndex={0}>World</li>
+        <ul id='popover-bubbletext'>
+          <li>Hello</li>
+          <li>World</li>
         </ul>
       </Attention>
     </div>

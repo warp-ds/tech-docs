@@ -50,8 +50,8 @@ export const react = {
       ['callout', 'boolean', '', 'Whether Attention element is rendered as a callout'],
       ['popover', 'boolean', '', 'Whether Attention element is rendered as a popover'],
       ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
-      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention element'],
-      ['aria-label', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention element'],
+      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention component'],
+      ['aria-label', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention component'],
 
     ],
   },

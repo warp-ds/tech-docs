@@ -43,8 +43,6 @@ const popoverShowing = ref(false)
         bottom
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
-        @focus="tooltipShowing = true"
-        @blur="tooltipShowing = false"
       >
         <p id="tooltip-bubbletext">This is a tooltip</p>
       </w-attention>
@@ -56,7 +54,6 @@ const popoverShowing = ref(false)
         :aria-expanded="popoverShowing"
         aria-controls="popover-example"
         aria-details="popover-bubbletext"
-        type="button"
         ref="popoverTarget"
         @click="() => (popoverShowing = !popoverShowing)"
       >
