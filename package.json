@@ -10,7 +10,7 @@
     "@warp-ds/css": "^1.1.2",
     "@warp-ds/icons": "^1.1.0",
     "@warp-ds/uno": "^1.1.0",
-    "@warp-ds/vue": "^1.1.1",
+    "@warp-ds/vue": "^1.1.2-next.2",
     "markdown-it": "^13.0.1",
     "sass": "^1.62.1",
     "unocss": "^0.55.2",
