@@ -15,7 +15,7 @@ const popoverShowing = ref(false)
     <div>
       <h4>Callout</h4>
       <div class="flex items-center">
-        <w-box neutral aria-details="callout-bubbletext" tabindex="0">
+        <w-box neutral aria-details="callout-bubbletext">
           I am a box full of info
         </w-box>
         <w-attention callout right v-model="calloutShowing" class="ml-8">
@@ -35,8 +35,6 @@ const popoverShowing = ref(false)
         @keydown.escape="tooltipShowing = false"
         @focus="tooltipShowing = true"
         @blur="tooltipShowing = false"
-        tabindex="0"
-        type="button"
       >
         Hover over me
       </w-button>
@@ -57,6 +55,7 @@ const popoverShowing = ref(false)
         utility
         :aria-expanded="popoverShowing"
         aria-controls="popover-example"
+        aria-details="popover-bubbletext"
         type="button"
         ref="popoverTarget"
         @click="() => (popoverShowing = !popoverShowing)"
@@ -68,8 +67,9 @@ const popoverShowing = ref(false)
         bottom
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"
+        id="popover-example"
       >
-        <p>Hello Warp!</p>
+        <p id="popover-bubbletext">This is a popover</p>
       </w-attention>
     </div>
   </div>
