@@ -791,8 +791,8 @@ export const vue = {
       ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
       ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
-      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention element'],
-      ['ariaLabel', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention element'],
+      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention component'],
+      ['ariaLabel', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention component'],
     ],
   },
   Badge: {

@@ -25,7 +25,7 @@ import { wAttention, wBox } from '#components'
 const showing = ref(false)
 </script>
 <template>
-  <w-box neutral as="h4" aria-details="callout-bubbletext" tabindex="0">
+  <w-box neutral as="h4" aria-details="callout-bubbletext">
     I am a box full of info
   </w-box>
   <w-attention callout right v-model="showing">
@@ -49,7 +49,7 @@ const showing = ref(false)
     utility
     :aria-expanded="showing"
     aria-controls="popover-example"
-    type="button"
+    aria-details="popover-bubbletext"
     ref="target"
     @click="() => (showing = !showing)"
   >
@@ -60,8 +60,9 @@ const showing = ref(false)
     bottom
     :target-el="target ? target.$el : null"
     v-model="showing"
+    id="popover-example"
   >
-    <p>Hello Warp!</p>
+    <p id="popover-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```
@@ -87,8 +88,6 @@ const showing = ref(false)
     @keydown.escape="showing = false"
     @focus="showing = true"
     @blur="showing = false"
-    tabindex="0"
-    type="button"
   >
     Hover over me
   </w-button>
