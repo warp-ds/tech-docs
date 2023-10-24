@@ -1,9 +1,8 @@
 ### Syntax
 
 ```html
-<w-alert variant="info" show="">
-  <p class="font-bold">This is "info" variant of the alert element</p>
-  <p>With an additional description</p>
+<w-alert variant="info" show>
+  <p>This is "info" variant of the alert element</p>
 </w-alert>
 ```
 
@@ -20,12 +19,11 @@ attribute on
 #### Alert with "alert" role on a descendant element
 
 ```html
-<w-alert type="info" show={show} role="">
-  <p role="alert" class="font-bold">
+<w-alert variant="info" show role="">
+  <h3 role="alert" class="t5">
     This is "info" variant of the alert element
-  </p>
+  </h3>
   <p>With an additional description</p>
-  <a>And a link to more information</a>
 </w-alert>
 ```
 
