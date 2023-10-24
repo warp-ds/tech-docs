@@ -11,10 +11,10 @@ import { Attention } from '@warp-ds/react';
 ```js
 <div>
   <Box info>
-    <h1>I am a box full of info</h1>
+    <h1 aria-details="callout-bubbletext">I am a box full of info</h1>
   </Box>
   <Attention callout placement="right" isShowing={true}>
-    <p>I'm a callout because that box over there is new or something</p>
+    <p id="callout-bubbletext">I'm a callout because that box over there is new or something</p>
   </Attention>
 </div>
 ```
@@ -32,8 +32,16 @@ function Example() {
         ref={targetEl}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
+        aria-describedby='tooltip-text'
+        aria-hidden={!show}
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
+        onFocus={() => setShow(true)}
+        onBlur={() => setShow(false)}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
       >
-        hover this for useless info
+        <button>hover this for useless info</button>
       </h1>
       <Attention
         tooltip
@@ -41,7 +49,7 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <p>lol i am a popover</p>
+        <p id="tooltip-text" role="tooltip">lol i am a popover</p>
       </Attention>
     </div>
   );
@@ -72,6 +80,9 @@ function Example() {
     <div ref={containerRef}>
       <Button
         small
+        aria-expanded={show}
+        aria-controls='pop-over-attention-example'
+        aria-details='pop-over-bubbletext'
         utility
         onClick={() => setShow(!show)}
         ref={targetEl}
@@ -84,7 +95,7 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <ul>
+        <ul id="pop-over-bubbletext">
           <li tabIndex={0} >
             Hello
           </li>

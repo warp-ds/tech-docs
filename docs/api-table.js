@@ -50,6 +50,9 @@ export const react = {
       ['callout', 'boolean', '', 'Whether Attention element is rendered as a callout'],
       ['popover', 'boolean', '', 'Whether Attention element is rendered as a popover'],
       ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
+      ['role', 'string', '', 'Sets the ARIA role attribute for the Attention element'],
+      ['aria-label', 'string', '', 'Sets the aria-label attribute for the Attention element'],
+
     ],
   },
   Badge: {
