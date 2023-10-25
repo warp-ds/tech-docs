@@ -17,7 +17,7 @@ Things to consider when requesting a new component:
 - If no: Is this something that benefits more than just your team?
 - What variants and use cases do you see?
 
-[Fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSfs54AvPDtDdJNsN0-YeAxHV-6Qd5V2p4EJo7qEzLlCu9Pe_g/viewform) or reach out during Office Hours and we will help you
+Reach out to the Warp team on slack #nmp-warp-design-system with your request or join the Warp Office Hours and we will help you. If you are not working in Schibsted you can [fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSfs54AvPDtDdJNsN0-YeAxHV-6Qd5V2p4EJo7qEzLlCu9Pe_g/viewform).
 
 ## Requesting changes to an existing component
 
@@ -27,7 +27,7 @@ Things to consider when requesting a change to a component:
 - If no: Is this something that benefits more than just your team?
 - What variants and use cases do you see?
 
-[Fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSfs54AvPDtDdJNsN0-YeAxHV-6Qd5V2p4EJo7qEzLlCu9Pe_g/viewform) or reach out during Office Hours and we will help you
+Reach out to the Warp team on slack #nmp-warp-design-system with your request or join the Warp Office Hours and we will help you. If you are not working in Schibsted you can [fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSfs54AvPDtDdJNsN0-YeAxHV-6Qd5V2p4EJo7qEzLlCu9Pe_g/viewform).
 
 ### Prioritisation of component requests
 
