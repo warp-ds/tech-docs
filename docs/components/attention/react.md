@@ -32,8 +32,6 @@ function Example() {
         ref={targetEl}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
-        aria-describedby='tooltip-text'
-        aria-hidden={!show}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
         onFocus={() => setShow(true)}
@@ -41,7 +39,14 @@ function Example() {
         onKeyDown={handleKeyDown}
         tabIndex={0}
       >
-        <button>hover this for useless info</button>
+        <button
+          aria-describedby='tooltip-bubbletext'
+          aria-expanded='true'
+          type='button'
+          className='bg-transparent'
+        >
+          hover this for useless info
+        </button>
       </h1>
       <Attention
         tooltip
@@ -49,7 +54,7 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <p id="tooltip-text" role="tooltip">lol i am a popover</p>
+        <p id="tooltip-bubbletext">lol i am a popover</p>
       </Attention>
     </div>
   );
@@ -81,8 +86,8 @@ function Example() {
       <Button
         small
         aria-expanded={show}
-        aria-controls='pop-over-attention-example'
-        aria-details='pop-over-bubbletext'
+        aria-controls='popover-example'
+        aria-details='popover-bubbletext'
         utility
         onClick={() => setShow(!show)}
         ref={targetEl}
@@ -95,7 +100,7 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <ul id="pop-over-bubbletext">
+        <ul id="popover-bubbletext">
           <li tabIndex={0} >
             Hello
           </li>

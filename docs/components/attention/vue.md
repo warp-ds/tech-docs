@@ -30,7 +30,6 @@ const showing = ref(false)
     neutral
     as="h4"
     ref="target"
-    aria-details="callout-bubbletext"
     @mouseenter="showing = true"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
@@ -38,7 +37,10 @@ const showing = ref(false)
     @blur="showing = false"
     tabindex="0"
   >
-    <button>Hover over me</button>
+    <button aria-describedby="callout-bubbletext" aria-expanded="true" type="button">
+      Hover over me
+    </button>
+
   </w-box>
   <w-attention
     callout
@@ -48,7 +50,7 @@ const showing = ref(false)
     @focus="showing = true"
     @blur="showing = false"
   >
-    <p id="callout-bubbletext" role="img">Hello Warp!</p>
+    <p id="callout-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```
@@ -78,7 +80,10 @@ const showing = ref(false)
     @blur="showing = false"
     tabindex="0"
   >
-    <button>Hover over me</button>
+  <button aria-describedby="popover-bubbletext" aria-expanded="true" type="button"
+    Hover over me
+  </button>
+
   </w-box>
   <w-attention
     popover
@@ -88,7 +93,7 @@ const showing = ref(false)
     @focus="showing = true"
     @blur="showing = false"
   >
-    <p id="popover-bubbletext" role="img">Hello Warp!</p>
+    <p id="popover-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```
@@ -108,8 +113,6 @@ const showing = ref(false)
     neutral
     as="h4"
     ref="target"
-    aria-describedby="tooltip-text"
-    :aria-hidden="!showing"
     @mouseenter="showing = true"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
@@ -117,7 +120,10 @@ const showing = ref(false)
     @blur="showing = false"
     tabindex="0"
   >
-    <button>Hover over me</button>
+  <button aria-describedby="tooltip-bubbletext" aria-expanded="true" type="button">
+    Hover over me
+  </button>
+
   </w-box>
   <w-attention
     tooltip
@@ -127,7 +133,7 @@ const showing = ref(false)
     @focus="showing = true"
     @blur="showing = false"
   >
-    <p id="tooltip-text" role="img">Hello Warp!</p>
+    <p id="tooltip-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```

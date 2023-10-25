@@ -19,7 +19,6 @@ const popoverShowing = ref(false)
         <w-box
           neutral
           ref="calloutTarget"
-          aria-details="callout-bubbletext"
           @mouseenter="calloutShowing = true; target = $refs.calloutTarget"
           @mouseleave="calloutShowing = false"
           @keydown.escape="calloutShowing = false"
@@ -27,7 +26,7 @@ const popoverShowing = ref(false)
           @blur="calloutShowing = false"
           tabindex="0"
           >
-          <button class="bg-transparent">Hover over me</button>
+          <button aria-describedby="callout-bubbletext" aria-expanded="true" type="button" class="bg-transparent">Hover over me</button>
           </w-box
         >
         <w-attention
@@ -39,7 +38,7 @@ const popoverShowing = ref(false)
           @blur="calloutShowing = false"
           class="ml-8"
         >
-          <p id="callout-bubbletext" role="img">This is a callout</p>
+          <p id="callout-bubbletext">This is a callout</p>
         </w-attention>
       </div>
     </div>
@@ -48,8 +47,6 @@ const popoverShowing = ref(false)
       <w-box
         neutral
         ref="tooltipTarget"
-        aria-describedby="tooltip-text"
-        :aria-hidden="!tooltipShowing"
         @mouseenter=" tooltipShowing = true; target = $refs.tooltipTarget"
         @mouseleave="tooltipShowing = false"
         @keydown.escape="tooltipShowing = false"
@@ -57,7 +54,7 @@ const popoverShowing = ref(false)
         @blur="tooltipShowing = false"
         tabindex="0"
         >
-        <button class="bg-transparent">Hover over me</button>
+        <button aria-describedby="tooltip-bubbletext" aria-expanded="true" type="button" class="bg-transparent">Hover over me</button>
         </w-box
       >
       <w-attention
@@ -68,7 +65,7 @@ const popoverShowing = ref(false)
         @focus="tooltipShowing = true"
         @blur="tooltipShowing = false"
       >
-        <p id="tooltip-text" role="tooltip">This is a tooltip</p>
+        <p id="tooltip-bubbletext">This is a tooltip</p>
       </w-attention>
     </div>
     <div>
@@ -77,8 +74,7 @@ const popoverShowing = ref(false)
         neutral
         ref="popoverTarget"
         :aria-expanded="popoverShowing"
-        aria-controls="pop-over-attention-example"
-        aria-details="popover-bubbletext"
+        aria-controls="popover-attention-example"
         @mouseenter="popoverShowing = true; target = $refs.popoverTarget"
         @mouseleave="popoverShowing = false"
         @keydown.escape="popoverShowing = false"
@@ -86,7 +82,7 @@ const popoverShowing = ref(false)
         @blur="popoverShowing = false"
         tabindex="0"
         >
-        <button class="bg-transparent">Hover over me</button>
+        <button aria-describedby="popover-bubbletext" aria-expanded="true" type="button" class="bg-transparent">Hover over me</button>
         </w-box
       >
       <w-attention
@@ -97,7 +93,7 @@ const popoverShowing = ref(false)
         @focus="popoverShowing = true"
         @blur="popoverShowing = false"
       >
-        <p id="popover-bubbletext" role="img">This is a popover</p>
+        <p id="popover-bubbletext">This is a popover</p>
       </w-attention>
     </div>
   </div>
