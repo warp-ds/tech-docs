@@ -82,7 +82,7 @@ const showing = ref(false)
     utility
     ref="target"
     aria-describedby="tooltip-bubbletext"
-    aria-expanded="true"
+    @aria-expanded="showing"
     @mouseenter="showing = true; target = $refs.target"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
@@ -96,8 +96,6 @@ const showing = ref(false)
     bottom
     :target-el="target?.$el"
     v-model="showing"
-    @focus="showing = true"
-    @blur="showing = false"
   >
     <p id="tooltip-bubbletext">Hello Warp!</p>
   </w-attention>

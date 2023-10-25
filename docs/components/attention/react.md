@@ -34,7 +34,7 @@ function Example() {
         ref={targetEl}
         utility
         aria-describedby='tooltip-bubbletext'
-        aria-expanded='true'
+        aria-expanded={show}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
         onFocus={() => setShow(true)}
