@@ -55,11 +55,13 @@ Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file
 ```js
 import { defineConfig } from 'unocss';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/css/component-classes/classes';
 
-export default defineConfig({
-  presets: [presetWarp({ externalClasses: classes, skipResets: true })],
-});
+export default (async () => {
+  const asyncPreset = await presetWarp()
+  return defineConfig({
+    presets: [asyncPreset]
+  })
+})();
 ```
 
 By default, UnoCSS will automatically look in the root directory of your project for `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]`.
@@ -93,15 +95,17 @@ Below is an example for Vite:
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 import { presetWarp } from '@warp-ds/uno';
-import { classes } from '@warp-ds/css/component-classes/classes';
 
-export default defineConfig({
-  plugins: [
-    UnoCSS({
-      presets: [presetWarp({ externalClasses: classes, skipResets: true })],
-    }),
-  ],
-});
+export default (async () => {
+  const asyncPreset = await presetWarp({ skipResets: true });
+  return defineConfig({
+    plugins: [
+      UnoCSS({
+        presets: [asyncPreset],
+      }),
+    ],
+  })
+})();
 ```
 
 #### Add `uno.css` to your main entry
