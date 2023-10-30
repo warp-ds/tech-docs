@@ -113,6 +113,32 @@ function Example() {
 }
 ```
 
+### Accessibility
+
+The attention element handles accessibility automatically by wrapping its slotted content with a `div` with either `role="tooltip"` for tooltip or `role="img"` for callout and popover, as well as, setting a default `aria-label`. The default `aria-label` also supports i18n.
+
+It is possible to reset the `role` and `aria-label` attributes, and it is also possible to override the default `aria-label`:
+
+```js
+<div className="flex items-center">
+  <Box info>
+    <h1 aria-details='callout-bubbletext'>I am a box full of info</h1>
+  </Box>
+  <Attention
+    callout
+    placement='right'
+    isShowing={true}
+    role=''
+    aria-label='overriding default aria-label'
+  >
+  <p id='callout-bubbletext' role='img' style={{ width: 200 }}>
+    I'm a callout speech bubble with resetted role and overridden aria-label
+    attributes pointing left.
+  </p>
+  </Attention>
+</div>
+```
+
 ### Props
 
 <api-table type="react" component="Attention" />

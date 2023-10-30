@@ -120,6 +120,39 @@ const showing = ref(false)
 </template>
 ```
 
+### Accessibility
+
+The attention element handles accessibility automatically by wrapping its slotted content with a `div` with either `role="tooltip"` for tooltip or `role="img"` for callout and popover, as well as, setting a default `aria-label`. The default `aria-label` also supports i18n.
+
+It is possible to reset the `role` and `aria-label` attributes, and it is also possible to override the default `aria-label`:
+
+```js
+<div class="flex items-center">
+  <w-box
+    neutral
+    as="h4"
+    :ref="target ? target.$el : null"
+    aria-details="callout-bubbletext"
+    tabindex="0"
+  >
+    I am a box full of info
+  </w-box>
+  <w-attention
+    callout
+    right
+    v-model="showing"
+    :target-el="target ? target.$el : null"
+    role=""
+    ariaLabel="overriding default aria-label"
+    class="ml-8"
+  >
+  <p id="callout-bubbletext">
+    Hello Warp! This thing is new!
+  </p>
+  </w-attention>
+</div>
+```
+
 ### Props
 
 <api-table type="vue" component="Attention" />
