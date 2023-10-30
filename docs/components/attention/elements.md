@@ -46,7 +46,7 @@ It is possible to tell assistive technologies to recognize only a part of Attent
     <p id="aria-content" role="tooltip">I'm a popover with ARIA "tooltip" role</p>
     <p>(this text is less relevant)</p>
   </div>
-  <button aria-details="aria-content" id="target" slot="target">
+  <button aria-describedby="aria-content" id="target" slot="target">
     Click to toggle a popover on top
   </button>
 </w-attention>
