@@ -29,28 +29,19 @@ const showing = ref(false)
   <w-box
     neutral
     as="h4"
-    ref="target"
-    @mouseenter="showing = true"
-    @mouseleave="showing = false"
-    @keydown.escape="showing = false"
-    @focus="showing = true"
-    @blur="showing = false"
+    :ref="target ? target.$el : null"
+    aria-details="callout-bubbletext"
     tabindex="0"
   >
-    <button aria-describedby="callout-bubbletext" aria-expanded="true" type="button">
-      Hover over me
-    </button>
-
+    I am a box full of info
   </w-box>
   <w-attention
     callout
     right
-    :target-el="target?.$el"
     v-model="showing"
-    @focus="showing = true"
-    @blur="showing = false"
+    :target-el="target ? target.$el : null"
   >
-    <p id="callout-bubbletext">Hello Warp!</p>
+    <p id="callout-bubbletext">Hello Warp! This thing is new!</p>
   </w-attention>
 </template>
 ```
@@ -66,34 +57,22 @@ const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box
-    neutral
-    as="h4"
-    ref="target"
+  <button
     :aria-expanded="showing"
-    aria-controls="pop-over-attention-example"
-    aria-details="popover-bubbletext"
-    @mouseenter="showing = true"
-    @mouseleave="showing = false"
-    @keydown.escape="showing = false"
-    @focus="showing = true"
-    @blur="showing = false"
-    tabindex="0"
+    aria-controls="popover-example"
+    type="button"
+    :ref="target ? target.$el : null"
+    @click="() => (showing = !showing)"
   >
-  <button aria-describedby="popover-bubbletext" aria-expanded="true" type="button"
-    Hover over me
+    Open popover
   </button>
-
-  </w-box>
   <w-attention
     popover
-    right
-    :target-el="target?.$el"
+    bottom
+    :target-el="target ? target.$el : null"
     v-model="showing"
-    @focus="showing = true"
-    @blur="showing = false"
   >
-    <p id="popover-bubbletext">Hello Warp!</p>
+    <p>Hello Warp!</p>
   </w-attention>
 </template>
 ```
@@ -120,10 +99,13 @@ const showing = ref(false)
     @blur="showing = false"
     tabindex="0"
   >
-  <button aria-describedby="tooltip-bubbletext" aria-expanded="true" type="button">
-    Hover over me
-  </button>
-
+    <button
+      aria-describedby="tooltip-bubbletext"
+      aria-expanded="true"
+      type="button"
+    >
+      Hover over me
+    </button>
   </w-box>
   <w-attention
     tooltip
