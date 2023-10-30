@@ -7,7 +7,7 @@ const calloutTarget = ref(null)
 const popoverTarget = ref(null)
 
 const tooltipShowing = ref(false)
-const calloutShowing = ref(false)
+const calloutShowing = ref(true)
 const popoverShowing = ref(false)
 </script>
 
@@ -18,15 +18,11 @@ const popoverShowing = ref(false)
       <div class="flex items-center">
         <w-box
           neutral
-          ref="calloutTarget"
-          @mouseenter="calloutShowing = true; target = $refs.calloutTarget"
-          @mouseleave="calloutShowing = false"
-          @keydown.escape="calloutShowing = false"
-          @focus="calloutShowing = true"
-          @blur="calloutShowing = false"
+          :ref="calloutTarget ? calloutTarget.$el : null"
+          aria-details="callout-bubbletext"
           tabindex="0"
           >
-          <button aria-describedby="callout-bubbletext" aria-expanded="true" type="button" class="bg-transparent">Hover over me</button>
+          I am a box full of info
           </w-box
         >
         <w-attention
@@ -34,8 +30,6 @@ const popoverShowing = ref(false)
           right
           :target-el="calloutTarget ? calloutTarget.$el : null"
           v-model="calloutShowing"
-          @focus="calloutShowing = true"
-          @blur="calloutShowing = false"
           class="ml-8"
         >
           <p id="callout-bubbletext">This is a callout</p>
@@ -70,31 +64,24 @@ const popoverShowing = ref(false)
     </div>
     <div>
       <h4>Popover</h4>
-      <w-box
-        neutral
-        ref="popoverTarget"
-        :aria-expanded="popoverShowing"
-        aria-controls="popover-attention-example"
-        @mouseenter="popoverShowing = true; target = $refs.popoverTarget"
-        @mouseleave="popoverShowing = false"
-        @keydown.escape="popoverShowing = false"
-        @focus="popoverShowing = true"
-        @blur="popoverShowing = false"
-        tabindex="0"
-        >
-        <button aria-describedby="popover-bubbletext" aria-expanded="true" type="button" class="bg-transparent">Hover over me</button>
-        </w-box
-      >
-      <w-attention
-        popover
-        bottom
-        :target-el="popoverTarget ? popoverTarget.$el : null"
-        v-model="popoverShowing"
-        @focus="popoverShowing = true"
-        @blur="popoverShowing = false"
-      >
-        <p id="popover-bubbletext">This is a popover</p>
-      </w-attention>
+      <button
+            :aria-expanded="popoverShowing"
+            aria-controls="popover-example"
+            type="button"
+            :ref="popoverTarget ? popoverTarget.$el : null"
+            @click="() => (popoverShowing = !popoverShowing)"
+            class="p-4 border rounded bg-transparent"
+          >
+            Open popover
+          </button>
+          <w-attention
+            popover
+            bottom
+            :target-el="popoverTarget ? popoverTarget.$el : null"
+            v-model="popoverShowing"
+          >
+            <p>Hello Warp!</p>
+          </w-attention>
     </div>
   </div>
 </template>
