@@ -120,9 +120,9 @@ const showing = ref(false)
 
 ### Accessibility
 
-The attention element handles accessibility automatically by wrapping its slotted content with a `div` with either `role="tooltip"` for tooltip or `role="img"` for callout and popover, as well as, setting a default `aria-label`. The default `aria-label` also supports i18n.
+The attention element handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role`attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
 
-It is possible to reset the `role` and `aria-label` attributes, and it is also possible to override the default `aria-label`:
+It is possible to reset the `role` and `aria-label` attributes, and the default `aria-label` can be overridden:
 
 ```js
 <div class="flex items-center">

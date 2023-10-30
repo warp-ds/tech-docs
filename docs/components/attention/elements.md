@@ -36,7 +36,7 @@
 ### Accessibility
 If the Attention element has "left" or "top" position, it should be placed before the target element in the DOM.
 
-Attention element handles accessibility automatically by wrapping its slotted content with a `div` with either `role="tooltip"` for tooltip or `role="img"` for callout and popover, a default `aria-label` and setting an `aria-details` attribute on the target element. The default `aria-label` also supports i18n. 
+Attention element handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`. In addition, Attention automatically sets an `aria-details` on its target element, pointing to the slotted message element.
 
 It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set the `role` attribute on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-details`. The `aria-details` attribute is on the target element, not on `w-attention`.
 
