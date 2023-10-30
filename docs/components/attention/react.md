@@ -86,8 +86,7 @@ function Example() {
       <Button
         small
         aria-expanded={show}
-        aria-controls='popover-example'
-        aria-details='popover-bubbletext'
+        aria-controls='popover-attention-example'
         utility
         onClick={() => setShow(!show)}
         ref={targetEl}
@@ -100,7 +99,7 @@ function Example() {
         targetEl={targetEl}
         isShowing={show}
       >
-        <ul id="popover-bubbletext">
+        <ul>
           <li tabIndex={0} >
             Hello
           </li>
