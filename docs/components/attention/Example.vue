@@ -18,7 +18,6 @@ const popoverShowing = ref(false)
       <div class="flex items-center">
         <w-box
           neutral
-          :ref="calloutTarget ? calloutTarget.$el : null"
           aria-details="callout-bubbletext"
           tabindex="0"
           >
@@ -28,7 +27,6 @@ const popoverShowing = ref(false)
         <w-attention
           callout
           right
-          :target-el="calloutTarget ? calloutTarget.$el : null"
           v-model="calloutShowing"
           class="ml-8"
         >

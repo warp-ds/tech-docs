@@ -29,7 +29,6 @@ const showing = ref(false)
   <w-box
     neutral
     as="h4"
-    :ref="target ? target.$el : null"
     aria-details="callout-bubbletext"
     tabindex="0"
   >
@@ -39,7 +38,6 @@ const showing = ref(false)
     callout
     right
     v-model="showing"
-    :target-el="target ? target.$el : null"
   >
     <p id="callout-bubbletext">Hello Warp! This thing is new!</p>
   </w-attention>
@@ -131,7 +129,6 @@ It is possible to reset the `role` and `aria-label` attributes, and it is also p
   <w-box
     neutral
     as="h4"
-    :ref="target ? target.$el : null"
     aria-details="callout-bubbletext"
     tabindex="0"
   >
@@ -141,7 +138,6 @@ It is possible to reset the `role` and `aria-label` attributes, and it is also p
     callout
     right
     v-model="showing"
-    :target-el="target ? target.$el : null"
     role=""
     ariaLabel="overriding default aria-label"
     class="ml-8"
