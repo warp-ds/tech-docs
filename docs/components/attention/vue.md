@@ -26,19 +26,10 @@ const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box
-    neutral
-    as="h4"
-    aria-details="callout-bubbletext"
-    tabindex="0"
-  >
+  <w-box neutral as="h4" aria-details="callout-bubbletext" tabindex="0">
     I am a box full of info
   </w-box>
-  <w-attention
-    callout
-    right
-    v-model="showing"
-  >
+  <w-attention callout right v-model="showing">
     <p id="callout-bubbletext">Hello Warp! This thing is new!</p>
   </w-attention>
 </template>
@@ -49,13 +40,14 @@ const showing = ref(false)
 ```vue
 <script>
 import { ref } from 'vue'
-import { wAttention, wBox } from '#components'
+import { wAttention, wButton } from '#components'
 
 const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <button
+  <w-button
+    utility
     :aria-expanded="showing"
     aria-controls="popover-example"
     type="button"
@@ -63,7 +55,7 @@ const showing = ref(false)
     @click="() => (showing = !showing)"
   >
     Open popover
-  </button>
+  </w-button>
   <w-attention
     popover
     bottom
@@ -80,31 +72,27 @@ const showing = ref(false)
 ```vue
 <script>
 import { ref } from 'vue'
-import { wAttention, wBox } from '#components'
+import { wAttention, wButton } from '#components'
 
 const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box
-    neutral
-    as="h4"
-    ref="target"
-    @mouseenter="showing = true"
+  <w-button
+    utility
+    :ref="target ? target.$el : null"
+    aria-describedby="tooltip-bubbletext"
+    aria-expanded="true"
+    @mouseenter="showing = true; target = $refs.target"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
     @focus="showing = true"
     @blur="showing = false"
     tabindex="0"
+    type="button"
   >
-    <button
-      aria-describedby="tooltip-bubbletext"
-      aria-expanded="true"
-      type="button"
-    >
-      Hover over me
-    </button>
-  </w-box>
+    Hover over me
+  </w-button>
   <w-attention
     tooltip
     bottom
@@ -120,33 +108,17 @@ const showing = ref(false)
 
 ### Accessibility
 
-The attention element handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role`attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
+The attention component handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
 
-It is possible to reset the `role` and `aria-label` attributes, and the default `aria-label` can be overridden:
+It is possible to override the `role` and `aria-label` attributes:
 
 ```js
-<div class="flex items-center">
-  <w-box
-    neutral
-    as="h4"
-    aria-details="callout-bubbletext"
-    tabindex="0"
-  >
-    I am a box full of info
-  </w-box>
-  <w-attention
-    callout
-    right
-    v-model="showing"
-    role=""
-    ariaLabel="overriding default aria-label"
-    class="ml-8"
-  >
-  <p id="callout-bubbletext">
-    Hello Warp! This thing is new!
+<w-attention tooltip bottom v-model='tooltipShowing' role='' ariaLabel=''>
+  <p id='tooltip-bubbletext' role='tooltip'>
+    I'm a tooltip speech bubble with overridden role and aria-label attributes
+    pointing up.
   </p>
-  </w-attention>
-</div>
+</w-attention>
 ```
 
 ### Props
