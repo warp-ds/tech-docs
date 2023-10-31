@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import Control from './Control.vue';
 import Controls from './Controls.vue';
+import '@warp-ds/elements';
+import '@warp-ds/icons/elements';
 
 export const buildWc = (elementName, baseVueComponent) => {
   if (typeof window === 'undefined') return;
