@@ -121,6 +121,8 @@ It is possible to override the `role` and `aria-label` attributes:
 </w-attention>
 ```
 
+If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
+
 ### Props
 
 <api-table type="vue" component="Attention" />
