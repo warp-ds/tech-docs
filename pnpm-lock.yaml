@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0
   '@warp-ds/vue':
-    specifier: ^1.2.0-next.3
-    version: 1.2.0-next.3
+    specifier: ^1.1.1
+    version: 1.1.1
   markdown-it:
     specifier: ^13.0.2
     version: 13.0.2
@@ -1069,8 +1069,8 @@ packages:
       '@unocss/preset-mini': 0.52.7
     dev: true
 
-  /@warp-ds/vue@1.2.0-next.3:
-    resolution: {integrity: sha512-crSR5oqwvb0yhKevZyU7pzkBwLqdPLFyHcUb76969z8UcAmSS/DqxAaOjuQ+RkfhzWsr6TZBoiEAOJx+TeeYUQ==}
+  /@warp-ds/vue@1.1.1:
+    resolution: {integrity: sha512-Q+c5FJwwVJt7qUf4pFCrrQCKv3KJdBoUhBw/j61iFE6woka9Z448PCFQ8NAPpmMJlvRP6wo3Ffsku347ZRpVUg==}
     dependencies:
       '@floating-ui/dom': 1.5.3
       '@lingui/core': 4.5.0
