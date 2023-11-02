@@ -22,7 +22,6 @@ import { wAttention } from '@warp-ds/vue'
 import { ref } from 'vue'
 import { wAttention, wBox } from '#components'
 
-const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
@@ -51,7 +50,7 @@ const showing = ref(false)
     :aria-expanded="showing"
     aria-controls="popover-example"
     type="button"
-    :ref="target ? target.$el : null"
+    ref="target"
     @click="() => (showing = !showing)"
   >
     Open popover
@@ -80,7 +79,7 @@ const showing = ref(false)
 <template>
   <w-button
     utility
-    :ref="target ? target.$el : null"
+    ref="target"
     aria-describedby="tooltip-bubbletext"
     aria-expanded="true"
     @mouseenter="showing = true; target = $refs.target"

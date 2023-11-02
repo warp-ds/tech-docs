@@ -28,7 +28,7 @@ const popoverShowing = ref(false)
       <h4>Tooltip</h4>
       <w-button
         utility
-        :ref="tooltipTarget ? tooltipTarget.$el : null"
+        ref="tooltipTarget"
         aria-describedby="tooltip-bubbletext"
         aria-expanded="true"
         @mouseenter="tooltipShowing = true; target = $refs.tooltipTarget"
@@ -59,7 +59,7 @@ const popoverShowing = ref(false)
         :aria-expanded="popoverShowing"
         aria-controls="popover-example"
         type="button"
-        :ref="popoverTarget ? popoverTarget.$el : null"
+        ref="popoverTarget"
         @click="() => (popoverShowing = !popoverShowing)"
       >
         Open popover
