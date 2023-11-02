@@ -8,11 +8,11 @@ In order to solve nasty issues like FOUT and FOUC when writing custom elements f
 
 ## How does it work?
 
-The base class, WarpElement, extends PodiumElement which in turn extends LitElement. It’s pretty much the same as extending LitElement, but with styles added in. The base class does the work of detecting whether it is being run server side or client and applies styles differently depending on the which context it detects.
+The base class, WarpElement, extends PodiumElement which in turn extends LitElement. It’s pretty much the same as extending LitElement, but with styles added in. The base class does the work of detecting whether it is being run server side or client and applies styles differently depending on which context it detects.
 
 ### Server side
 
-On the server side, the base class adds CSS `@import(...)` statements to the server rendered markup for the various Warp CSS files; fonts, brand, resets and components. This works because when the browser sees these statements, it won't render anything until these imports have been resolved so theres no unwanted flicker of unstyled content that you would see if you used this technique client side.
+On the server side, the base class adds CSS `@import(...)` statements to the server rendered markup for the various Warp CSS files; fonts, brand, resets and components. This works because when the browser sees these statements, it won't render anything until these imports have been resolved so there's no unwanted flicker of unstyled content that you would see if you used this technique client side.
 
 ### Client side
 
@@ -20,7 +20,7 @@ On the client side, as mentioned, we can’t use CSS `@import(...)` statements b
 
 ### Performance
 
-All CSS is loaded from absolute URLS on the Eik server. This means we have to pay a cost in terms of additional requests to the Eik server to resolve the CSS files. In addition, a fair amount of CSS needs to be loaded on a cold load. However, theres a really big win here in that since these 4 URLs are unchanging, and since all components that extend the base class will be making fetch calls for the same 4 URLs, the browser is able to all but remove the problem for us with caching. Sure the first cold request using a component or components that use the WarpElement base class will have to make 4 requests to the Eik server, all requests thereafter will not. And this win goes across pages. As users navigate the site, they will encounter more components that make use of the WarpElement base class and the browser will simply serve these files from cache. The WarpElement class itself is also provided via Eik for the same reason and client side, all components should refer to it on the Eik server directly. There is a bit of a waterfall effect where one file loads another which can increase page loads but this can be mitigated with preloading.
+All CSS is loaded from absolute URLS on the Eik server. This means we have to pay a cost in terms of additional requests to the Eik server to resolve the CSS files. In addition, a fair amount of CSS needs to be loaded on a cold load. However, there's a really big win here in that since these 4 URLs are unchanging, and since all components that extend the base class will be making fetch calls for the same 4 URLs, the browser is able to all but remove the problem for us with caching. Sure the first cold request using a component or components that use the WarpElement base class will have to make 4 requests to the Eik server, all requests thereafter will not. And this win goes across pages. As users navigate the site, they will encounter more components that make use of the WarpElement base class and the browser will simply serve these files from cache. The WarpElement class itself is also provided via Eik for the same reason and client side, all components should refer to it on the Eik server directly. There is a bit of a waterfall effect where one file loads another which can increase page loads but this can be mitigated with preloading.
 
 ## Usage in an app
 
@@ -139,7 +139,7 @@ npm run build
 
 ## Publishing components
 
-If you are creating a component or component library that is to be consumed by other teams you will need to create and provide components your components and include instructions on how to setup import mapping.
+If you are creating a component or component library that is to be consumed by other teams you will need to create and provide components and include instructions on how to setup import mapping.
 
 ### The Server side components package
 
