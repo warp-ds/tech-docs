@@ -20,7 +20,12 @@ export default defineConfig({
   lastUpdated: false,
   cleanUrls: true,
   base: `${base}/`,
-  markdown: { theme: 'nord' },
+  markdown: {
+    theme: {
+      light: "github-light",
+      dark: "github-dark",
+    },
+  },
   vue: {
     template: {
       compilerOptions: {
