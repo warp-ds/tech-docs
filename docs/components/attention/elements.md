@@ -33,6 +33,20 @@
 </w-attention>
 ```
 
+#### Highlight (with optional close button)
+
+```js
+<w-attention placement="right" highlight id="highlight" can-close="">
+  <button
+    id="highlightTarget"
+    slot="target"
+  >
+    Click to toggle a highlight on right
+  </button>
+  <span slot="message">I'm a dismissible highlight on right</span>
+</w-attention>
+```
+
 ### Accessibility
 If the Attention element has "left" or "top" position, it should be placed before the target element in the DOM.
 

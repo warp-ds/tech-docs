@@ -105,6 +105,50 @@ function Example() {
 }
 ```
 
+#### Highlight (with optional close button)
+
+```js
+function DismissibleHighlight() {
+  const [show, setShow] = React.useState(false)
+  const targetEl = React.useRef()
+
+  return (
+    <div className='flex flex-col justify-between h-[200]'>
+      <Button
+        small
+        aria-expanded={show}
+        aria-controls='highlight-attention-example'
+        utility
+        onClick={() => setShow(!show)}
+        className='w-max mb-0'
+      >
+        Show an onboarding hint
+      </Button>
+      <div>
+        <div ref={targetEl} className="w-2/3" aria-details='highlight-bubble-text'>
+          <Box info>
+            <h1>I am a box full of info</h1>
+          </Box>
+        </div>
+        <Attention
+          highlight
+          canClose
+          onDismiss={() => setShow(false)}
+          placement='top'
+          isShowing={show}
+          targetEl={targetEl}
+          id='highlight-attention-example'
+        >
+          <p id='highlight-bubble-text'>
+            I'm a highlight that can dismiss itself
+          </p>
+        </Attention>
+      </div>
+    </div>
+  )
+}
+```
+
 ### Accessibility
 
 The attention component handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.

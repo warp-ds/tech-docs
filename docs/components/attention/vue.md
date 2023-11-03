@@ -102,6 +102,38 @@ const showing = ref(false)
 </template>
 ```
 
+#### Highlight (with optional close button)
+
+```vue
+<script setup>
+  import { ref } from 'vue'
+  import { wAttention, wButton } from '#components'
+
+  const highlightTarget = ref(null)
+  const highlightShowing = ref(false)
+</script>
+<template>
+  <w-button
+    :aria-expanded="highlightShowing"
+    aria-controls="highlightAttentionExample"
+    aria-details="highlightedContent"
+    ref="highlightTarget"
+    @click="highlightShowing = !highlightShowing"
+  >Click me</w-button>
+  <w-attention
+    id="highlightAttentionExample"
+    highlight
+    bottom
+    canClose
+    @dismiss="highlightShowing = false"
+    :target-el="highlightTarget ? highlightTarget.$el : null"
+    v-model="highlightShowing"
+  >
+  <p id="highlightedContent">I'm a dismissible highlight</p>
+  </w-attention>
+</template>
+```
+
 ### Accessibility
 
 The attention component handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
