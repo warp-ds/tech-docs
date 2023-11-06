@@ -34,8 +34,7 @@ function Example() {
         ref={targetEl}
         utility
         aria-describedby='tooltip-bubbletext'
-        aria-expanded='true'
-        type='button'
+        aria-expanded={show}
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
         onFocus={() => setShow(true)}
@@ -61,27 +60,15 @@ function Example() {
 ```js
 function Example() {
   const [show, setShow] = React.useState(false)
-  const containerRef = React.useRef()
   const targetEl = React.useRef()
 
-  React.useEffect(() => {
-    function onBlurHandler(e) {
-      if (containerRef.current && !containerRef.current.contains(e.target)) {
-        setShow(false)
-      }
-    }
-    document.addEventListener('mousedown', onBlurHandler)
-    return () => {
-      document.removeEventListener('mousedown', onBlurHandler)
-    }
-  })
-
   return (
-    <div ref={containerRef}>
+    <div>
       <Button
         small
         aria-expanded={show}
         aria-controls='popover-attention-example'
+        aria-details='popover-bubbletext'
         utility
         onClick={() => setShow(!show)}
         ref={targetEl}
@@ -93,12 +80,57 @@ function Example() {
         placement='bottom'
         targetEl={targetEl}
         isShowing={show}
+        id='popover-attention-example'
       >
-        <ul>
-          <li tabIndex={0}>Hello</li>
-          <li tabIndex={0}>World</li>
+        <ul id='popover-bubbletext'>
+          <li>Hello</li>
+          <li>World</li>
         </ul>
       </Attention>
+    </div>
+  )
+}
+```
+
+#### Highlight (with optional close button)
+
+```js
+function DismissibleHighlight() {
+  const [show, setShow] = React.useState(false)
+  const targetEl = React.useRef()
+
+  return (
+    <div className='flex flex-col justify-between h-[200]'>
+      <Button
+        small
+        aria-expanded={show}
+        aria-controls='highlight-attention-example'
+        utility
+        onClick={() => setShow(!show)}
+        className='w-max mb-0'
+      >
+        Show an onboarding hint
+      </Button>
+      <div>
+        <div ref={targetEl} className="w-2/3" aria-details='highlight-bubble-text'>
+          <Box info>
+            <h1>I am a box full of info</h1>
+          </Box>
+        </div>
+        <Attention
+          highlight
+          canClose
+          onDismiss={() => setShow(false)}
+          placement='top'
+          isShowing={show}
+          targetEl={targetEl}
+          id='highlight-attention-example'
+        >
+          <p id='highlight-bubble-text'>
+            I'm a highlight that can dismiss itself
+          </p>
+        </Attention>
+      </div>
     </div>
   )
 }
