@@ -36,9 +36,9 @@
 ### Accessibility
 If the Attention element has "left" or "top" position, it should be placed before the target element in the DOM.
 
-Attention element handles accessibility automatically by wrapping its slotted content with a `div` with `role="tooltip"`, and setting an aria-describedby attribute on the target element.
+Attention element handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`. In addition, Attention automatically sets an `aria-details` on its target element, pointing to the slotted message element.
 
-It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set `role="tooltip"` on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-describedby`. The `aria-describedby` attribute is on the target element, not on `w-attention`.
+It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set the `role` attribute on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-details`. The `aria-details` attribute is on the target element, not on `w-attention`.
 
 ```js
 <w-attention placement="top" popover="">

@@ -50,6 +50,9 @@ export const react = {
       ['callout', 'boolean', '', 'Whether Attention element is rendered as a callout'],
       ['popover', 'boolean', '', 'Whether Attention element is rendered as a popover'],
       ['ref', 'Ref<HTMLDivElement>', '', 'Forward arrow ref so Attention element can use it'],
+      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention element'],
+      ['aria-label', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention element'],
+
     ],
   },
   Badge: {
@@ -788,6 +791,8 @@ export const vue = {
       ['callout', 'boolean', 'false', 'Whether Attention element is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention element is rendered as a popover'],
       ['v-model', 'boolean', '', 'Whether Attention element should be visible'],
+      ['role', 'string', '', 'Allows the user to override the default ARIA role attribute for the Attention element'],
+      ['ariaLabel', 'string', '', 'Allows the user to override the default aria-label attribute for the Attention element'],
     ],
   },
   Badge: {

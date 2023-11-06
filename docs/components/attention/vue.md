@@ -3,14 +3,14 @@
 > Use in entire app
 
 ```js
-import { Attention } from '@warp-ds/vue';
-app.use(Attention);
+import { Attention } from '@warp-ds/vue'
+app.use(Attention)
 ```
 
 > Use in one component and special imports
 
 ```js
-import { wAttention } from '@warp-ds/vue';
+import { wAttention } from '@warp-ds/vue'
 ```
 
 ### Visual options
@@ -22,13 +22,14 @@ import { wAttention } from '@warp-ds/vue';
 import { ref } from 'vue'
 import { wAttention, wBox } from '#components'
 
-const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box neutral class="h4" ref="target" @mouseenter="showing = true" @mouseleave="showing = false">Hover over me</w-box>
-  <w-attention callout right :target-el="target?.$el" v-model="showing">
-    <p>Hello Warp!</p>
+  <w-box neutral as="h4" aria-details="callout-bubbletext" tabindex="0">
+    I am a box full of info
+  </w-box>
+  <w-attention callout right v-model="showing">
+    <p id="callout-bubbletext">Hello Warp! This thing is new!</p>
   </w-attention>
 </template>
 ```
@@ -38,14 +39,28 @@ const showing = ref(false)
 ```vue
 <script>
 import { ref } from 'vue'
-import { wAttention, wBox } from '#components'
+import { wAttention, wButton } from '#components'
 
 const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box neutral class="h4" ref="target" @mouseenter="showing = true" @mouseleave="showing = false">Hover over me</w-box>
-  <w-attention popover right :target-el="target?.$el" v-model="showing">
+  <w-button
+    utility
+    :aria-expanded="showing"
+    aria-controls="popover-example"
+    type="button"
+    ref="target"
+    @click="() => (showing = !showing)"
+  >
+    Open popover
+  </w-button>
+  <w-attention
+    popover
+    bottom
+    :target-el="target ? target.$el : null"
+    v-model="showing"
+  >
     <p>Hello Warp!</p>
   </w-attention>
 </template>
@@ -56,18 +71,56 @@ const showing = ref(false)
 ```vue
 <script>
 import { ref } from 'vue'
-import { wAttention, wBox } from '#components'
+import { wAttention, wButton } from '#components'
 
 const target = ref(null)
 const showing = ref(false)
 </script>
 <template>
-  <w-box neutral class="h4" ref="target" @mouseenter="showing = true" @mouseleave="showing = false">Hover over me</w-box>
-  <w-attention tooltip bottom :target-el="target?.$el" v-model="showing">
-    <p>Hello Warp!</p>
+  <w-button
+    utility
+    ref="target"
+    aria-describedby="tooltip-bubbletext"
+    aria-expanded="true"
+    @mouseenter="showing = true; target = $refs.target"
+    @mouseleave="showing = false"
+    @keydown.escape="showing = false"
+    @focus="showing = true"
+    @blur="showing = false"
+    tabindex="0"
+    type="button"
+  >
+    Hover over me
+  </w-button>
+  <w-attention
+    tooltip
+    bottom
+    :target-el="target?.$el"
+    v-model="showing"
+    @focus="showing = true"
+    @blur="showing = false"
+  >
+    <p id="tooltip-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```
+
+### Accessibility
+
+The attention component handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
+
+It is possible to override the `role` and `aria-label` attributes:
+
+```js
+<w-attention tooltip bottom v-model='tooltipShowing' role='' ariaLabel=''>
+  <p id='tooltip-bubbletext' role='tooltip'>
+    I'm a tooltip speech bubble with overridden role and aria-label attributes
+    pointing up.
+  </p>
+</w-attention>
+```
+
+If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
 
 ### Props
 
