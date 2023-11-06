@@ -357,10 +357,11 @@ export const react = {
       ['label', 'string', 'undefined', 'The text content of the pill.'],
       ['~~icon~~', 'ReactNode', 'undefined', 'Used to render an icon inside the pill. You can pass any valid HTML. This will override the label property. @deprecated Do not use.'],
       ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
-      ['openSRLabel', 'string', 'Åpne filter', 'Label read by screen readers when targeting the pill.'],
-      ['closeSRLabel', 'string', 'undefined', 'Label read by screen readers when targeting the close button.'],
+      ['~~openSRLabel~~', 'string', 'Open filter', 'Used to render a label read by screen readers when targeting the pill. @deprecated Do not use.'],
+      ['~~closeSRLabel~~', 'string', 'Remove filter', 'Used to render a label read by screen readers when targeting the close button. @deprecated Do not use.'],
       ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
       ['className', 'string', 'undefined', 'Additional classes applied to the button element of the pill as long as canClose is set to false.'],
+      ['aria-label', 'string', 'undefined', 'Sets the aria-label for the button element of the pill'],
     ],
     events: [
         ['onClick', 'Action to be called when the pill is clicked.'],
