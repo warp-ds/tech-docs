@@ -25,7 +25,7 @@ import { wAttention, wBox } from '#components'
 const showing = ref(false)
 </script>
 <template>
-  <w-box neutral as="h4" aria-details="callout-bubbletext" tabindex="0">
+  <w-box neutral as="h4" aria-details="callout-bubbletext">
     I am a box full of info
   </w-box>
   <w-attention callout right v-model="showing">
@@ -49,7 +49,7 @@ const showing = ref(false)
     utility
     :aria-expanded="showing"
     aria-controls="popover-example"
-    type="button"
+    aria-details="popover-bubbletext"
     ref="target"
     @click="() => (showing = !showing)"
   >
@@ -60,8 +60,9 @@ const showing = ref(false)
     bottom
     :target-el="target ? target.$el : null"
     v-model="showing"
+    id="popover-example"
   >
-    <p>Hello Warp!</p>
+    <p id="popover-bubbletext">Hello Warp!</p>
   </w-attention>
 </template>
 ```
@@ -81,14 +82,12 @@ const showing = ref(false)
     utility
     ref="target"
     aria-describedby="tooltip-bubbletext"
-    aria-expanded="true"
+    :aria-expanded="showing"
     @mouseenter="showing = true; target = $refs.target"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
     @focus="showing = true"
     @blur="showing = false"
-    tabindex="0"
-    type="button"
   >
     Hover over me
   </w-button>
@@ -97,10 +96,40 @@ const showing = ref(false)
     bottom
     :target-el="target?.$el"
     v-model="showing"
-    @focus="showing = true"
-    @blur="showing = false"
   >
     <p id="tooltip-bubbletext">Hello Warp!</p>
+  </w-attention>
+</template>
+```
+
+#### Highlight (with optional close button)
+
+```vue
+<script setup>
+  import { ref } from 'vue'
+  import { wAttention, wButton } from '#components'
+
+  const highlightTarget = ref(null)
+  const highlightShowing = ref(false)
+</script>
+<template>
+  <w-button
+    :aria-expanded="highlightShowing"
+    aria-controls="highlight-attention-example"
+    aria-details="highlighted-bubbletext"
+    ref="highlightTarget"
+    @click="highlightShowing = !highlightShowing"
+  >Click me</w-button>
+  <w-attention
+    id="highlight-attention-example"
+    highlight
+    bottom
+    canClose
+    @dismiss="highlightShowing = false"
+    :target-el="highlightTarget ? highlightTarget.$el : null"
+    v-model="highlightShowing"
+  >
+  <p id="highlighted-bubbletext">I'm a dismissible highlight</p>
   </w-attention>
 </template>
 ```

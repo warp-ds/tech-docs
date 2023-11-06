@@ -4,10 +4,12 @@ import { wAttention, wBox, wButton } from '@warp-ds/vue'
 
 const tooltipTarget = ref(null)
 const popoverTarget = ref(null)
+const highlightTarget = ref(null)
 
 const tooltipShowing = ref(false)
 const calloutShowing = ref(true)
 const popoverShowing = ref(false)
+const highlightShowing = ref(false)
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const popoverShowing = ref(false)
     <div>
       <h4>Callout</h4>
       <div class="flex items-center">
-        <w-box neutral aria-details="callout-bubbletext" tabindex="0">
+        <w-box neutral aria-details="callout-bubbletext">
           I am a box full of info
         </w-box>
         <w-attention callout right v-model="calloutShowing" class="ml-8">
@@ -35,8 +37,6 @@ const popoverShowing = ref(false)
         @keydown.escape="tooltipShowing = false"
         @focus="tooltipShowing = true"
         @blur="tooltipShowing = false"
-        tabindex="0"
-        type="button"
       >
         Hover over me
       </w-button>
@@ -45,8 +45,6 @@ const popoverShowing = ref(false)
         bottom
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
-        @focus="tooltipShowing = true"
-        @blur="tooltipShowing = false"
       >
         <p id="tooltip-bubbletext">This is a tooltip</p>
       </w-attention>
@@ -57,7 +55,7 @@ const popoverShowing = ref(false)
         utility
         :aria-expanded="popoverShowing"
         aria-controls="popover-example"
-        type="button"
+        aria-details="popover-bubbletext"
         ref="popoverTarget"
         @click="() => (popoverShowing = !popoverShowing)"
       >
@@ -68,8 +66,33 @@ const popoverShowing = ref(false)
         bottom
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"
+        id="popover-example"
       >
-        <p>Hello Warp!</p>
+        <p id="popover-bubbletext">This is a popover</p>
+      </w-attention>
+    </div>
+    <div>
+      <h4>Highlight (with optional close button)</h4>
+      <w-button
+        utility
+        :aria-expanded="highlightShowing"
+        aria-controls="highlight-attention-example"
+        aria-details="highlighted-bubbletext"
+        ref="highlightTarget"
+        @click="highlightShowing = !highlightShowing"
+      >
+        Open highlight
+      </w-button>
+      <w-attention
+        id="highlight-attention-example"
+        highlight
+        bottom
+        canClose
+        @dismiss="highlightShowing = false"
+        :target-el="highlightTarget ? highlightTarget.$el : null"
+        v-model="highlightShowing"
+      >
+        <p id="highlighted-bubbletext">I'm a highlight that can close itself</p>
       </w-attention>
     </div>
   </div>
