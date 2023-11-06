@@ -30,20 +30,19 @@ function Example() {
 
   return (
     <div>
-      <h1 ref={targetEl}>
-        <Button
-          utility
-          aria-describedby='tooltip-bubbletext'
-          aria-expanded='true'
-          type='button'
-          onMouseEnter={() => setShow(true)}
-          onMouseLeave={() => setShow(false)}
-          onFocus={() => setShow(true)}
-          onBlur={() => setShow(false)}
-        >
-          hover this for useless info
-        </Button>
-      </h1>
+      <Button
+        ref={targetEl}
+        utility
+        aria-describedby='tooltip-bubbletext'
+        aria-expanded='true'
+        type='button'
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
+        onFocus={() => setShow(true)}
+        onBlur={() => setShow(false)}
+      >
+        hover this for useless info
+      </Button>
       <Attention
         tooltip
         placement='bottom'
