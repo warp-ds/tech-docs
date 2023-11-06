@@ -30,20 +30,16 @@ function Example() {
 
   return (
     <div>
-      <h1
-        ref={targetEl}
-        onMouseEnter={() => setShow(true)}
-        onMouseLeave={() => setShow(false)}
-        onFocus={() => setShow(true)}
-        onBlur={() => setShow(false)}
-        onKeyDown={handleKeyDown}
-        tabIndex={0}
-      >
+      <h1 ref={targetEl}>
         <Button
           utility
           aria-describedby='tooltip-bubbletext'
           aria-expanded='true'
           type='button'
+          onMouseEnter={() => setShow(true)}
+          onMouseLeave={() => setShow(false)}
+          onFocus={() => setShow(true)}
+          onBlur={() => setShow(false)}
         >
           hover this for useless info
         </Button>
@@ -123,6 +119,7 @@ It is possible to override the `role` and `aria-label` attributes:
   </p>
 </Attention>
 ```
+
 If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
 
 ### Props

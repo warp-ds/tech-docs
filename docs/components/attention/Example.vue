@@ -3,7 +3,6 @@ import { ref } from 'vue'
 import { wAttention, wBox, wButton } from '@warp-ds/vue'
 
 const tooltipTarget = ref(null)
-const calloutTarget = ref(null)
 const popoverTarget = ref(null)
 
 const tooltipShowing = ref(false)
