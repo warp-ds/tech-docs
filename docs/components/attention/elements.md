@@ -4,9 +4,9 @@
 
 ```js
 <w-attention placement="bottom" popover="">
-  <w-button id="target" primary onclick="toggleShow()" slot="target">
+  <button id="target" onclick="toggleShow()" slot="target">
     Click to toggle a popover on bottom
-  </w-button>
+  </button>
   <span slot="message">I'm a popover on bottom</span>
 </w-attention>
 ```
@@ -55,13 +55,13 @@ Attention element handles accessibility automatically by wrapping its slotted co
 It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set the `role` attribute on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-details`. The `aria-details` attribute is on the target element, not on `w-attention`.
 
 ```js
-<w-attention placement="top" popover="">
+<w-attention placement="top" tooltip="">
   <div slot="message">
-    <p id="aria-content" role="tooltip">I'm a popover with ARIA "tooltip" role</p>
+    <p id="aria-content" role="tooltip">This tooltip text is important</p>
     <p>(this text is less relevant)</p>
   </div>
   <button aria-describedby="aria-content" id="target" slot="target">
-    Click to toggle a popover on top
+    Click to toggle a tooltip on top
   </button>
 </w-attention>
 ```

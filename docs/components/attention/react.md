@@ -60,23 +60,10 @@ function Example() {
 ```js
 function Example() {
   const [show, setShow] = React.useState(false)
-  const containerRef = React.useRef()
   const targetEl = React.useRef()
 
-  React.useEffect(() => {
-    function onBlurHandler(e) {
-      if (containerRef.current && !containerRef.current.contains(e.target)) {
-        setShow(false)
-      }
-    }
-    document.addEventListener('mousedown', onBlurHandler)
-    return () => {
-      document.removeEventListener('mousedown', onBlurHandler)
-    }
-  })
-
   return (
-    <div ref={containerRef}>
+    <div>
       <Button
         small
         aria-expanded={show}
@@ -163,7 +150,6 @@ It is possible to override the `role` and `aria-label` attributes:
   </p>
 </Attention>
 ```
-If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
 
 If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
 

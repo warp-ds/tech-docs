@@ -82,7 +82,7 @@ const showing = ref(false)
     utility
     ref="target"
     aria-describedby="tooltip-bubbletext"
-    @aria-expanded="showing"
+    :aria-expanded="showing"
     @mouseenter="showing = true; target = $refs.target"
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
@@ -115,13 +115,13 @@ const showing = ref(false)
 <template>
   <w-button
     :aria-expanded="highlightShowing"
-    aria-controls="highlightAttentionExample"
-    aria-details="highlightedContent"
+    aria-controls="highlight-attention-example"
+    aria-details="highlighted-bubbletext"
     ref="highlightTarget"
     @click="highlightShowing = !highlightShowing"
   >Click me</w-button>
   <w-attention
-    id="highlightAttentionExample"
+    id="highlight-attention-example"
     highlight
     bottom
     canClose
@@ -129,7 +129,7 @@ const showing = ref(false)
     :target-el="highlightTarget ? highlightTarget.$el : null"
     v-model="highlightShowing"
   >
-  <p id="highlightedContent">I'm a dismissible highlight</p>
+  <p id="highlighted-bubbletext">I'm a dismissible highlight</p>
   </w-attention>
 </template>
 ```
