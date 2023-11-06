@@ -1,6 +1,4 @@
-<script setup>
-  import { wBreadcrumbs } from '@warp-ds/vue';
-</script>
+
 
 <template>
   <div class="component">
