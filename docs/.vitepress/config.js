@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/css/component-classes/classes';
+import topLevelAwait from "vite-plugin-top-level-await";
 
 const base = '/tech-docs';
 
@@ -29,11 +30,20 @@ export default defineConfig({
     },
   },
   vite: {
+    build: {
+      target: 'esnext',
+    },
     plugins: [
       uno({
         presets: [presetWarp()],
         mode: 'shadow-dom',
         safelist: [...classes, ...docsClasses],
+      }),
+      topLevelAwait({
+        // The export name of top-level await promise for each chunk module
+        promiseExportName: "__tla",
+        // The function to generate import names of top-level await promise in each chunk module
+        promiseImportName: i => `__tla_${i}`
       }),
     ],
   },
