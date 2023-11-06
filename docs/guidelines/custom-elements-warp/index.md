@@ -2,13 +2,13 @@
 
 ## Background
 
-The shadow Dom brings great power but also great complexity, especially once you bring a style library into the mix. 
+The shadow DOM brings great power but also great complexity, especially once you bring a style library into the mix.
 
-In order to solve nasty issues like FOUT and FOUC when writing custom elements for Warp, a base class has been created which can be extended to get out of the box, FOUC/FOUT free styling both on the server (SSR) and In the browser (client side).
+In order to solve nasty issues like FOUT (flash of unstyled text) and FOUC (flash of unstyled content) when writing custom elements for Warp, a base class has been created. This can be extended to get out of the box FOUC/FOUT-free styling both on the server (SSR) and in the browser (client side).
 
 ## How does it work?
 
-The base class, WarpElement, extends PodiumElement which in turn extends LitElement. It’s pretty much the same as extending LitElement, but with styles added in. The base class does the work of detecting whether it is being run server side or client and applies styles differently depending on which context it detects.
+The base class, [WarpElement](https://github.com/warp-ds/labs/tree/main/warp-element), extends [PodiumElement](https://github.com/podium-lib/element) which in turn extends [LitElement](https://lit.dev/docs/api/LitElement/). It’s pretty much the same as extending LitElement, but with styles added in. The base class does the work of detecting whether it is being run server side or client and applies styles differently depending on which context it detects.
 
 ### Server side
 
@@ -205,7 +205,7 @@ await esbuild.build({
 
 // eik build
 // this part of the build produces a version with lit and warp-element import
-// mapped out making it ready for the client side. This build should be 
+// mapped out making it ready for the client side. This build should be
 // published to the Eik server.
 await eik.load();
 await esbuild.build({
@@ -239,4 +239,6 @@ await esbuild.build({
 }
 ```
 
+::: tip
 When you publish to NPM, also publish to Eik.
+:::
