@@ -5,7 +5,6 @@ export default createContentLoader("/blog/posts/*.md", {
   render: true, // include rendered full page HTML?
   excerpt: true, // include excerpt?
   transform(rawData) {
-    console.log(rawData);
     // map, sort, or filter the raw data as you wish.
     // the final result is what will be shipped to the client.
     return rawData
