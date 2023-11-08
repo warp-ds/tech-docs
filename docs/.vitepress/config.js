@@ -95,6 +95,11 @@ export default defineConfig({
           { text: 'Elements', link: 'https://github.com/warp-ds/elements' },
         ],
       },
+      {
+        text: 'Whats new',
+        link: '/blog/',
+        activeMatch: '/blog/$',
+      },
     ],
     sidebar: {
       '/': [
