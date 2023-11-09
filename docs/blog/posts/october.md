@@ -1,6 +1,6 @@
 ---
 title: "What's been cooking in Warp lately"
-date: 2023-11-09
+date: 2023-11-10
 ---
 
 Updated Tori colors, new Figma Component Library in progress, updated icons, and Warp colors for Android and iOS... Read on to discover all the exciting updates and improvements we've made in Warp the past couple of months 🎉
