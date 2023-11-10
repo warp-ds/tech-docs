@@ -34,4 +34,4 @@ Make sure you have the newest versions of our packages to get the latest changes
 
 ## Native Updates
 
-The Proof of Concept (POC) for both Android and iOS has been a success! We've implemented a button and a textfield component, with styling changes that adapt to the brand. Our next focus is on replacing old colors in the Finniverse kit (used by Finn.no) with Warp colors. While this work is still in progress, you can test it on the Android branch [here](https://github.schibsted.io/finn/android_finn_app/pull/6671). When checking out that branch, you'll receive warning messages when using the old colors, and you will be suggested to use the new Warp colors instead. iOS is coming soon!
+The Proof of Concept (POC) for both Android and iOS has been a success! We've implemented a button and a textfield component, with styling changes that adapt to the brand. Our next focus is on replacing old colors in the Finniverse kit (used by Finn.no) with Warp colors. We are currently going through the Finn and NMP apps to ensure we replace all the old colors.
