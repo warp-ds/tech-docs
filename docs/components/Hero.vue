@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">What's new in WARP</h1>
+        <h1 class="title">{{ title }}</h1>
         <h2 class="subtitle">
           {{ subtitle }}
         </h2>
@@ -23,6 +23,10 @@ export default {
       type: String,
       required: true,
     },
+    title: {
+      type: String,
+      required: true,
+    }
   },
 };
 </script>

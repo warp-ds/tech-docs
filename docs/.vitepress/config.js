@@ -95,11 +95,6 @@ export default defineConfig({
           { text: 'Elements', link: 'https://github.com/warp-ds/elements' },
         ],
       },
-      {
-        text: 'Whats new',
-        link: '/blog/',
-        activeMatch: '/blog/$',
-      },
     ],
     sidebar: {
       '/': [
@@ -121,6 +116,14 @@ export default defineConfig({
             ],
             },
             { text: 'Designers', link: '/getting-started/designers/' },
+          ],
+        },
+        {
+          text: "What's new",
+          collapsed: true,
+          items: [
+            { text: 'Updates', link: '/whats-new/blog/', activeMatch: '/whats-new/blog/$', },
+            { text: 'Roadmap', link: '/whats-new/roadmap/' },
           ],
         },
         {
