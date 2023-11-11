@@ -40,29 +40,29 @@ const selectedTheme = computed({
   align-items: center;
   position: relative;
   width: 300px;
-  height: 30px;
   margin-left: 8px;
-  padding: 4px 8px;
+  padding: 3px 8px;
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;
 
-  select,
-  &::after {
+  select {
     grid-area: select;
+    background-color: transparent;
   }
 
   &::after {
+    grid-area: select;
     content: "";
     justify-self: end;
     width: 8px;
     height: 5px;
-    background-color: var(--vp-code-block-bg);
+    background-color: var(--vp-c-text-1);
     clip-path: polygon(100% 0%, 0 0, 50% 100%);
   }
 
   &:focus-within {
-    border: 2px solid var(--vp-c-brand);
-    padding: 3px 7px;
+    border: 2px solid var(--vp-c-brand-1);
+    padding: 2px 7px;
   }
 }
 </style>
