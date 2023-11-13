@@ -200,7 +200,7 @@ export const react = {
         'target',
         'string',
         '',
-        'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
+        'Anchor target, see [The Anchor element / MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
       [
@@ -1342,7 +1342,7 @@ export const elements = {
         'target',
         'string',
         '',
-        'Anchor target, see `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a`.',
+        'Anchor target, see [The Anchor element / MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a).',
       ],
       ['rel', 'string', '', 'The relationship of the linked URL.'],
       [

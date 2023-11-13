@@ -20,6 +20,7 @@ export const buildWc = (elementName, baseVueComponent) => {
           padding: 16px;
           border: 3px solid rgb(246, 248, 250);
           margin-bottom: 8px;
+          background-color: var(--w-s-color-background);
         }
         .options {
           margin-bottom: 8px;
