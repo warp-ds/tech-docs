@@ -626,7 +626,7 @@ export const react = {
       ],
       ['children', 'ReactNode', '', 'For affix use.'],
       ['value', 'string', '', 'The current value (controlled).'],
-      ['optional', 'boolean', '', 'The current value (controlled).'],
+      ['optional', 'boolean', '', 'Indicates that the textarea is not required.'],
     ],
   },
   TextField: {
@@ -734,7 +734,7 @@ export const react = {
       ],
       ['children', 'ReactNode', '', 'For affix use.'],
       ['value', 'string', '', 'The current value (controlled).'],
-      ['optional', 'boolean', '', 'The current value (controlled).'],
+      ['optional', 'boolean', '', 'Indicates that the textfield is not required.'],
     ],
   },
   Toggle: {
