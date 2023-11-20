@@ -59,7 +59,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 ```html
 <w-textfield label="Price" placeholder="1 000 000">
   <w-affix slot="prefix" label="kr"></w-affix>
-  <w-affix slot="suffix" search></w-affix>
+  <w-affix slot="suffix" search aria-label="Search"></w-affix>
 </w-textfield>
 ```
 <api-table type=elements component="Affix" />
