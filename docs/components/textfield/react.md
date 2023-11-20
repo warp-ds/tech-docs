@@ -114,13 +114,13 @@ Then you include it as a child of TextField component and pass the appropiate pr
 
 ```jsx
 <TextField>
-  <Affix suffix clear onClick={() => alert('clear')} />
+  <Affix suffix clear aria-label="Clear text" onClick={() => alert('clear')} />
 </TextField>
 ```
 
 ```jsx
 <TextField>
-  <Affix suffix search onClick={() => alert('search')} />
+  <Affix suffix search aria-label="Search" onClick={() => alert('search')} />
 </TextField>
 ```
 
@@ -129,7 +129,7 @@ You can also use both a prefix and suffix
 ```jsx
 <TextField>
   <Affix prefix label="kr" />
-  <Affix suffix search onClick={() => alert('search')} />
+  <Affix suffix search aria-label="Search" onClick={() => alert('search')} />
 </TextField>
 ```
 
