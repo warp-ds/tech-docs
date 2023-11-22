@@ -76,6 +76,9 @@ But if you need a button to look like a link, use the `link` property.
 <Button link>Link</Button>
 ```
 
+However, it is not recommended to use `link` property in combination with the `href` attribute. 
+If there is a need to have an anchor (a tag) that should still look like a link, the recommendation is to instead use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" rel="noopener">`<a>` HTML element</a>. 
+
 #### Disabled
 
 Disabled is an anti-pattern and is not supported. There will always be users who

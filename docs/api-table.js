@@ -176,7 +176,7 @@ export const react = {
         'link',
         'boolean',
         'false',
-        'Set the button to look like a link. Can be combined with `small`.',
+        'Set the button to look like a link. Can be combined with `small`. Should not be combined with `href`',
       ],
       [
         'pill',
@@ -194,7 +194,7 @@ export const react = {
         'href',
         'string',
         '',
-        'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation.',
+        'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation. Should not be combined with `link`',
       ],
       [
         'target',
@@ -892,7 +892,7 @@ export const vue = {
         'href',
         'string',
         '',
-        'When set, an anchor tag will be used instead of a button',
+        'When set, an anchor tag will be used instead of a button. Should not be combined with variant `link`',
       ],
       [
         'type',
@@ -1336,7 +1336,7 @@ export const elements = {
         'href',
         'string',
         '',
-        'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation.',
+        'Set the href for the location where clicking the button will take you to. Uses an a tag instead of a button tag for the underlying implementation. Should not be combined with variant `link`',
       ],
       [
         'target',

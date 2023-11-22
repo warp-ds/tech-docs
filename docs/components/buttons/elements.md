@@ -60,10 +60,18 @@ By default, buttons have a visible stroke and fill. Quiet buttons do not have th
 ```
 
 #### Link
-Buttons will be rendered as an anchor (a tag) if they use an href attribute.
+Buttons will be rendered as an anchor (a tag) if they use the `href` attribute.
 ```html
 <w-button href="https://google.no">Button as anchor</w-button>
 ```
+
+But if you need a button to look like a link, use the `link` variant.
+
+```html
+<w-button variant="link">Link button</w-button>
+```
+However, it is not recommended to use the `link` variant in combination with the `href` attribute. 
+If there is a need to have an anchor (a tag) that should still look like a link, the recommendation is to instead use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" rel="noopener">`<a>` HTML element</a>. 
 
 #### Loading state
 To show the user that the action they triggered has begun, buttons have an in progress or loading state.
