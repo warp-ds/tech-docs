@@ -19,7 +19,7 @@ const selectedTheme = computed({
 
 <template>
   <div class="theme-switcher">
-    <label for="themeSelect">Select theme:</label>
+    <label for="themeSelect">Select brand:</label>
     <div class="select">
       <select id="themeSelect" v-model="selectedTheme">
         <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
@@ -44,6 +44,7 @@ const selectedTheme = computed({
   padding: 3px 8px;
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;
+  background-color: transparent;
 
   select {
     grid-area: select;
