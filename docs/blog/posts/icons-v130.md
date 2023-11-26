@@ -51,4 +51,4 @@ We have added new icons :tada: All requests up until week 45 should have been ha
   </li>
 </ul>
 
-You can see all available icons in our documentation [here](http://localhost:5173/tech-docs/components/icons/).
+You can see all available icons in our documentation [here](https://warp-ds.github.io/tech-docs/components/icons/).
