@@ -108,6 +108,7 @@ const reset = () => {
     <main class="max-w-screen-xl mx-auto px-32">
       <div class="grid gap-24 grid-cols-minmax-100px">
         <div
+          class="cursor-pointer"
           @click="
             showModal = true;
             setIconData(fullName, event);
