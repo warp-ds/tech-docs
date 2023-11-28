@@ -38,4 +38,6 @@ Since warp components are internationalised, you'd need to either set `NMP_LANGU
 
 <theme-switcher />
 
+
+Click any icon tile to open usage modal:
 <icon-example />
