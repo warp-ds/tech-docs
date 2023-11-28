@@ -66,13 +66,7 @@ const reset = () => {
 </script>
 
 <template>
-  <section
-    v-for="size in Object.keys(mappedIconsBySize)"
-    :key="size"
-    style="background-color: var(--vp-c-bg-alt)"
-    class="rounded-8 p-24 mb-24"
-  >
-    <h2 style="color: var(--vp-c-text-1)">{{ size }}</h2>
+  <div>
     <w-modal
       v-if="modalData"
       title="Icon usage"
@@ -111,10 +105,17 @@ const reset = () => {
         </p>
       </div>
     </w-modal>
+    <section
+    v-for="size in Object.keys(mappedIconsBySize)"
+    :key="size"
+    style="background-color: var(--vp-c-bg-alt)"
+    class="rounded-8 p-24 mb-24"
+  >
+    <h2 style="color: var(--vp-c-text-1)">{{ size }}</h2>
     <main class="max-w-screen-xl mx-auto px-32">
       <div class="grid gap-24 grid-cols-minmax-100px">
         <button
-          class="cursor-pointer bg-transparent"
+          class="bg-transparent"
           @click="
             showModal = true;
             setIconData(icon, fullName, event);
@@ -136,4 +137,5 @@ const reset = () => {
       </div>
     </main>
   </section>
+  </div>
 </template>
