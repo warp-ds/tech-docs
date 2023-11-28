@@ -8,6 +8,7 @@ import { ref } from "vue";
 const showModal = ref(false);
 let modalData = ref({
   iconName: "",
+  icon: "",
   react: "",
   reactSyntax: "",
   vue: "",
@@ -28,7 +29,7 @@ const mappedIconsBySize = Object.keys(icons).reduce((acc, current) => {
 
 const getIconName = (icon) => icon.replace(/Icon|\d+/g, "");
 
-const setIconData = (fullName, event) => {
+const setIconData = (icon, fullName, event) => {
   const reactIconName = Object.keys(reactIcons)
     .find((icon) => icon === fullName)
     .replace("Icon", "");
@@ -40,6 +41,7 @@ const setIconData = (fullName, event) => {
 
   modalData = {
     iconName: fullName,
+    icon: icon,
     react: `import ${fullName} from '@warp-ds/icons/react/${outputString}';`,
     reactSyntax: `<${fullName} />`,
     vue: `import ${fullName} from '@warp-ds/icons/vue/${outputString}';`,
@@ -52,6 +54,7 @@ const setIconData = (fullName, event) => {
 const reset = () => {
   modalData = {
     iconName: "",
+    icon: "",
     react: "",
     reactSyntax: "",
     vue: "",
@@ -88,6 +91,9 @@ const reset = () => {
         <h1 class="h4 mb-16">
           You can use the following import for icon: {{ modalData.iconName }}
         </h1>
+        <div class="mx-auto mb-8 s-bg border rounded-4 h-56 flex items-center justify-center flex-col">
+          <component :is="modalData.icon" class="s-icon"></component>
+        </div>
         <p>
           Usage for React:
           <div class="border rounded-8 my-8 p-8">{{ modalData.react }}</div>
@@ -107,11 +113,11 @@ const reset = () => {
     </w-modal>
     <main class="max-w-screen-xl mx-auto px-32">
       <div class="grid gap-24 grid-cols-minmax-100px">
-        <div
-          class="cursor-pointer"
+        <button
+          class="cursor-pointer bg-transparent"
           @click="
             showModal = true;
-            setIconData(fullName, event);
+            setIconData(icon, fullName, event);
           "
           v-for="(icon, fullName) in mappedIconsBySize[size]"
           :key="fullName"
@@ -126,7 +132,7 @@ const reset = () => {
               {{ getIconName(fullName) }}
             </p>
           </div>
-        </div>
+        </button>
       </div>
     </main>
   </section>
