@@ -20,6 +20,6 @@ You can define an 'icons.d.ts' file in your repo and export the types bundled wi
 
 ```
 declare module '@warp-ds/icons/react' {
-    export * from '@warp-ds/icons/dist/types/react'
+    export * from '@warp-ds/icons/dist/react/index.d.ts'
 }
 ```

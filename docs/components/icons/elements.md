@@ -41,6 +41,6 @@ You can define an 'icons.d.ts' file in your repo and export the types bundled wi
 
 ```
 declare module '@warp-ds/icons/elements' {
-    export * from '@warp-ds/icons/dist/types/elements'
+    export * from '@warp-ds/icons/dist/elements/index.d.ts'
 }
 ```
