@@ -10,10 +10,6 @@ Warp's icon set is designed to help users understand actions, information and dr
 
 <components-status react='released' vue='released' elements='released' />
 
-## Usage
-
-<component-design-guidelines name="Warp - Components / Icons" link="https://www.figma.com/file/yEx16ew6S0Xgd579dN4hsM/Warp---Icons?type=design&node-id=6011-1442&mode=design&t=zY5N398IPei2z89J-0" />
-
 <component-questions />
 
 ## Frameworks
@@ -29,6 +25,11 @@ Warp's icon set is designed to help users understand actions, information and dr
     <elements />
   </template>
 </tabs-content>
+
+## Typescript support
+
+Starting from @warp-ds/icons@1.3.0, We are fully typescript compliant. You'll need to switch to module & moduleResolution as `NodeNext`. You can read more about it [here](https://www.typescriptlang.org/docs/handbook/modules/reference.html#node16-nodenext)
+
 
 ## Setup
 
