@@ -18,7 +18,8 @@ export const buildWc = (elementName, baseVueComponent) => {
         }
         .component {
           padding: 16px;
-          border: 3px solid rgb(246, 248, 250);
+          border: 2px solid var(--vp-c-gray-1);
+          border-radius: 8px;
           margin-bottom: 8px;
           background-color: var(--w-s-color-background);
         }
@@ -35,9 +36,9 @@ export const buildWc = (elementName, baseVueComponent) => {
           this.shadow = this.attachShadow({ mode: 'open' });
           this.shadow.innerHTML = shadowUnoStyle + warp + target;
           createApp(baseVueComponent)
-          .component('demo-control', Control)
-          .component('demo-controls', Controls)
-          .mount(this.appEl);
+            .component('demo-control', Control)
+            .component('demo-controls', Controls)
+            .mount(this.appEl);
           document.addEventListener('change', () => {
             if (window.theme) {
               const stylesheets = this.shadow.querySelectorAll('link');
