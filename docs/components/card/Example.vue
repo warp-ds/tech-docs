@@ -7,86 +7,112 @@
 
   const checkModel = ref(false)
   const radioModel = ref('')
-
 </script>
 
 <template>
-  <div class="component space-y-16">
-    <div>
-      <h3 class="h4">Default</h3>
-      <div class="flex gap-10">
-        <w-card :selected="selected">
-          <img class="h-128 w-full object-cover" src="https://source.unsplash.com/random/400x400" />
-          <p class="absolute top-12 left-12 bg-aqua-200 text-aqua-900 p-4 rounded-4 text-12">Ukens bolig</p>
-          <div class="p-16">
-            <p class="text-12">DNB Eiendom</p>
-            <p><w-clickable @click="selected = !selected" class="text-left">Stilfull og gjennomgående 3-roms m/balkong. Oppusset i 2019. Inkl. bl.a. vv/fyring.</w-clickable></p>
-            <p class="text-14  mb-4">Bøgata 25C, 0655 Oslo</p>
-            <p class="font-bold my-8">52 m<span style="font-size: 10px; vertical-align: super;">2</span> Totalpris: 4 869 039 kr</p>
-            <p class="text-14  mb-0">Eier (Selveier) <span class="">•</span> Leilighet <span class="">•</span> 2 soverom</p>
-          </div>
+  <div class="component">
+
+      <h3 class="h4">Default Card</h3>
+      <p>The card can have any content but it needs at least one interactive item. Here using the w-clickable component to give clickable area the same size as the card itself.</p>
+
+
+      <h3 class="h4">Card</h3>
+      <div class="grid grid-cols-3 gap-24 mb-32">
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+          </article>
         </w-card>
-        <w-card :selected="selected">
-          <img class="h-128 w-full object-cover" src="https://source.unsplash.com/random/400x402" />
-          <p class="absolute top-12 left-12 bg-aqua-200 text-aqua-900 p-4 rounded-4 text-12">Ukens bolig</p>
-          <div class="p-16">
-            <p class="text-12 ">DNB Eiendom</p>
-            <p><w-clickable @click="selected = !selected" class="text-left">Stilfull og gjennomgående 3-roms m/balkong. Oppusset i 2019. Inkl. bl.a. vv/fyring.</w-clickable></p>
-            <p class="text-14  mb-4">Bøgata 25C, 0655 Oslo</p>
-            <p class="font-bold my-8">52 m<span style="font-size: 10px; vertical-align: super;">2</span> Totalpris: 4 869 039 kr</p>
-            <p class="text-14  mb-0">Eier (Selveier) <span class="">•</span> Leilighet <span class="">•</span> 2 soverom</p>
-          </div>
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+          </article>
         </w-card>
-        <w-card :selected="selected">
-          <img class="h-128 w-full object-cover" src="https://source.unsplash.com/random/400x404" />
-          <p class="absolute top-12 left-12 bg-aqua-200 text-aqua-900 p-4 rounded-4 text-12">Ukens bolig</p>
-          <div class="p-16">
-            <p class="text-12 ">DNB Eiendom</p>
-            <p><w-clickable @click="selected = !selected" class="text-left">Stilfull og gjennomgående 3-roms m/balkong. Oppusset i 2019. Inkl. bl.a. vv/fyring.</w-clickable></p>
-            <p class="text-14  mb-4">Bøgata 25C, 0655 Oslo</p>
-            <p class="font-bold my-8">52 m<span style="font-size: 10px; vertical-align: super;">2</span> Totalpris: 4 869 039 kr</p>
-            <p class="text-14  mb-0">Eier (Selveier) <span class="">•</span> Leilighet <span class="">•</span> 2 soverom</p>
-          </div>
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+          </article>
         </w-card>
       </div>
-    </div>
+
+
+      <h3 class="h4">Card containing multiple clickable areas</h3>
+      <div class="grid grid-cols-3 gap-24 mb-24">
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+            <a href="#" class="relative z-10">Interactive #2</a>
+          </article>
+        </w-card>
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+            <a href="#" class="relative z-10">Interactive #2</a>
+          </article>
+        </w-card>
+        <w-card class="full-width">
+          <article class="p-16">
+            <h2 class="h4 font-normal">
+              <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+            </h2>
+            <a href="#" class="relative z-10">Interactive #2</a>
+          </article>
+        </w-card>
+      </div>
+
+
+    <p class="pb-32">The card component is meant for things like the result list items. You are free to use any means of layout and positioning within. The card itself needs an interactive Item for the card, the w-clickable is nice for this. If that is supplied with an href it renders as a link, otherwise it renders as a button.</p>
+
+  </div>
+
+  <div class="component">
     <div>
-      <h3 class="h4">Toggles in cards</h3>
+      <h4 class="h4">Toggles in cards</h4>
       <w-card :selected="checkModel" class="w-max mb-8">
-        <div class="p-24 flex">
-          <w-dead-toggle checkbox v-model="checkModel" :value="true" />
-          <w-clickable checkbox :value="true" v-model="checkModel" label-class="ml-12 text-16">Check in a card</w-clickable>
-        </div>
+        <article class="p-24 flex">
+            <w-dead-toggle checkbox v-model="checkModel" :value="true" />
+            <w-clickable checkbox :value="true" v-model="checkModel" label-class="ml-12 text-16">Check in a card</w-clickable>
+        </article>
       </w-card>
       <div class="flex gap-10">
         <w-card :selected="radioModel === 'foo'" class="w-max">
-          <div class="p-24 flex">
+          <article class="p-24 flex">
             <w-dead-toggle radio v-model="radioModel" value="foo" />
             <w-clickable radio value="foo" v-model="radioModel" label-class="ml-12" name="radio-group">Radio in a card - A</w-clickable>
-          </div>
+          </article>
         </w-card>
         <w-card :selected="radioModel === 'bar'" class="w-max">
-          <div class="p-24 flex">
+          <article class="p-24 flex">
             <w-dead-toggle radio v-model="radioModel" value="bar" />
             <w-clickable radio value="bar" v-model="radioModel" label-class="ml-12" name="radio-group">Radio in a card - B</w-clickable>
-          </div>
+          </article>
         </w-card>
       </div>
     </div>
     <div>
-      <h3 class="h4">Dead toggles</h3>
+      <h4 class="h4">Dead toggles</h4>
       <div class="flex gap-10">
         <w-card flat class="py-4 px-12 flex items-center" :selected="foo === 'foo'">
           <w-dead-toggle radio v-model="foo" value="foo" />
           <div class="ml-12">
-            <h4 class="mb-0"><w-clickable radio v-model="foo" value="foo">Purchase foo</w-clickable></h4>
+            <h5 class="h4 mb-0"><w-clickable radio v-model="foo" value="foo">Purchase foo</w-clickable></h5>
             <p class="mb-0 text-14">470 kr/mnd</p>
           </div>
         </w-card>
         <w-card flat class="py-8 px-12 flex items-center" :selected="foo === 'bar'">
           <w-dead-toggle radio v-model="foo" value="bar" />
           <div class="ml-12">
-            <h4 class="mb-0"><w-clickable radio v-model="foo" value="bar">Purchase bar</w-clickable></h4>
+            <h5 class="h4 mb-0"><w-clickable radio v-model="foo" value="bar">Purchase bar</w-clickable></h5>
             <p class="mb-0 text-14">520 kr/mnd</p>
           </div>
         </w-card>
@@ -94,3 +120,4 @@
     </div>
   </div>
 </template>
+
