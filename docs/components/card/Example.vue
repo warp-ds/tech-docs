@@ -71,7 +71,7 @@
       </div>
 
 
-    <p class="pb-32">The card component is ment for things like the result list items. You are free to use any means of layout and positioning within. The card itself needs a interactive Item for the card, the w-clickable is nice for this. If that is supplied with a href it renders as a link, otherwise it renders as a button.</p>
+    <p class="pb-32">The card component is meant for things like the result list items. You are free to use any means of layout and positioning within. The card itself needs an interactive Item for the card, the w-clickable is nice for this. If that is supplied with an href it renders as a link, otherwise it renders as a button.</p>
 
   </div>
 
