@@ -124,6 +124,14 @@ Then you include it as a child of TextField component and pass the appropiate pr
 </TextField>
 ```
 
+For prefixes wider than 40px, push the input further to the right by setting a `--w-prefix-width` value on the TextField component. This will increase left padding of its input element. This value needs to be hardcoded until we find a more robust solution.
+
+```jsx
+<TextField className="[--w-prefix-width:56px]" label="Price in kroner">
+  <Affix prefix label="kroner" />
+</TextField>
+```
+
 You can also use both a prefix and suffix
 
 ```jsx

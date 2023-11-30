@@ -40,5 +40,11 @@ const handleClear = () => {
         <template #suffix><w-affix suffix clear aria-label="Clear text" @click="handleClear" /></template>
       </w-textfield>
     </div>
+    <div>
+      <h3 class="h4">Wider Prefix</h3>
+      <w-textfield label="Price in kroner" v-model="inputModel" class="[--w-prefix-width:56px]" #prefix placeholder="1 000 000">
+        <w-affix prefix label="kroner" />
+      </w-textfield>
+    </div>
   </div>
 </template>

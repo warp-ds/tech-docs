@@ -39,9 +39,49 @@ export default {
     provide('Cleave', Cleave)
   }
 }
-
 // or install app-wide by using the provide method on app
 app.provide('Cleave', Cleave)
+```
+
+#### Affixes
+
+If you wish to use an affix you must first import the wAffix component
+
+```js
+import { wAffix } from '@warp-ds/vue';
+```
+
+Then you include it as a child to w-textfield and pass the appropiate props.
+You must specify which slot to set the affix into (either prefix or suffix).
+
+> Suffix
+```html
+<w-textfield #suffix v-model="inputModel" label="Search for items">
+  <w-affix suffix search aria-label="Search" @click="handleSearch"/>
+</w-textfield>
+```
+
+> Prefix
+```html
+<w-textfield #prefix v-model="inputModel" label="Price">
+  <w-affix prefix label="kr"/>
+</w-textfield>
+```
+
+> For prefixes wider than 40px, push the input further to the right by setting a `--w-prefix-width` value on the w-textfield component.
+> This will increase left padding of its input element. This value needs to be hardcoded until we find a more robust solution.
+```html
+<w-textfield class="[--w-prefix-width:56px]" #prefix label="Price in kroner">
+  <w-affix prefix label="kroner"></w-affix>
+</w-textfield>
+```
+
+> You can also use both a prefix and suffix
+```html
+<w-textfield v-model="inputModel" label="Price">
+  <template #prefix><w-affix prefix label="kr" /></template>
+  <template #suffix><w-affix suffix clear aria-label="Clear text" @click="handleClear" /></template>
+</w-textfield>
 ```
 
 ### Validation

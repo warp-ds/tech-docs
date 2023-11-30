@@ -54,6 +54,15 @@ You must specify which slot to set the affix into (either prefix or suffix).
 </w-textfield>
 ```
 
+> For prefixes wider than 40px, push the input further to the right by setting a `--w-prefix-width` value on the w-textfield element.
+> This will increase left padding of its input element. This value needs to be hardcoded until we find a more robust solution.
+
+```html
+<w-textfield class="[--w-prefix-width:56px]" label="Price in kroner">
+  <w-affix slot="prefix" label="kroner"></w-affix>
+</w-textfield>
+```
+
 > You can also use both a prefix and suffix
 
 ```html
