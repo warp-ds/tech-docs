@@ -1,6 +1,6 @@
 ---
 title: 'WARP releases'
-date: 2023-11-30
+date: 2023-12-01
 ---
 
 We have now released new versions of our Warp packages:
