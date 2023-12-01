@@ -96,7 +96,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Whats new',
+        text: 'What\'s new',
         link: '/blog/',
         activeMatch: '/blog/$',
       },
