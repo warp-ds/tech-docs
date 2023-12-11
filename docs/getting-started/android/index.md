@@ -15,28 +15,24 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```gradle
-implementation("com.schibsted.nmp.warp:warp-android:0.0.3")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.8")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.4")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.9")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.4")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.10")
 ```
 
 
 
 ## 2. Apply theme
-To start using Warp you must first initialize the theme depending on the selected flavor of the code.
+To start using Warp you must first initialize the theme depending on the selected flavor of the code. This file should live in the flavor specific code package. This applies only to compose. To use legacy components in xml see [legacy support](#legacy-support).
 
 ```kotlin
-const val FINN = "finn"
-const val TORI = "tori"
 
 @Composable
-fun BrandTheme(flavor: String, content: @Composable () -> Unit) {
-    when (flavor) {
-        FINN -> FinnWarpTheme(content)
-        TORI -> ToriWarpTheme(content)
-    }
+fun WarpBrandTheme(flavor: String, content: @Composable () -> Unit) {
+    FinnWarpTheme(content) // or ToriWarpTheme(content) depending on the selected flavor
+    
 }
 ```
 
@@ -46,10 +42,8 @@ Use the composable theme which you initiated earlier to be able to use Warp comp
 ```kotlin exmaple
 @Composable
 fun MainScreen() {
-    val flavor = viewModel.flavor.collectAsState()
-    val theme = BrandTheme(flavor = flavor.value)
 
-    theme {
+    WarpBrandTheme {
       Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -94,27 +88,38 @@ class WarpApplication : Application() {
 ```
 Next, create a Theme class which implemets the LegacyWarpTheme 
 ```kotlin
-const val FINN = "finn"
-const val TORI = "tori"
 
-class BrandTheme(val flavor: String) : LegacyWarpTheme {
+class WarpBrandTheme : LegacyWarpTheme {
 
     @Composable
     override fun invoke(content:@Composable  () -> Unit) {
-        when (flavor) {
-            FINN -> FinnWarpTheme(content)
-            TORI -> ToriWarpTheme(content)
-        }
+        FINN -> FinnWarpTheme(content) // or ToriWarpTheme(content) depending on the selected flavor
     }
 }
 ```
 Create an instance of the theme class within a koin module
 ```kotlin
 val warpAppModule = module {
-    single<LegacyWarpTheme> { BrandTheme(flavor = BuildConfig.FLAVOR) }
+    single<LegacyWarpTheme> { WarpBrandTheme() }
 }
 ```
 Now the warp components will show correct colors and styling.
+
+To use compose with this setup follow this example:
+
+```kotlin exmaple
+@Composable
+fun MainScreen() {
+
+    WarpBrandTheme().invoke {
+      WarpButton(
+              onClick = {  },
+              buttonStyle = WarpButtonStyle.Primary,
+              text = "Submit"
+              )
+    }
+}
+```
 
 Xml implementation example
 

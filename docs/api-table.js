@@ -1512,7 +1512,7 @@ export const android = {
       ],
       [
         'buttonStyle',
-        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Tertiary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Critical <br />WarpButtonStyle.CriticalQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
+        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Negative <br />WarpButtonStyle.NegativeQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
         'Controls the appearance of the button',
       ]
