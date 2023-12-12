@@ -1,7 +1,7 @@
 
 # Getting started for iOS developers
 
-This page describes how to get started building an application with Warp components.
++To get started, you need to install the `warp-ds/warp-ios` package
 
 ## 1. Integrate Warp
 
@@ -28,11 +28,13 @@ Creating component:
        }
 
     Textfield:
+
         Warp.Input(config: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>)
 
         Warp.Input(config: .default, text: $searchTextFieldText, state: .constant(.active))
 
     Typography:
+
         Text(text)
             .font(from: Warp.Typography.title1)
 

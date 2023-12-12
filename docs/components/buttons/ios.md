@@ -15,6 +15,18 @@ fun WarpButton(
 )
 ```
 
+```swift example
+
+     Warp.Button(type: <#T##Warp.ButtonType#>, title: <#T##String#>, imageSystemName: <#T##String?#>, action: <#T##() -> Void#>, size: <#T##Warp.ButtonSize#>, isEnabled: <#T##Bool#>, fullWidth: <#T##Bool#>, colorProvider: <#T##ColorProvider#>)
+
+    Warp.Button(type: .critical, title: "Warp", image: nil, action: {
+        print("tap tap")
+    }, size: .big, isEnabled: true, fullWidth: true, colorProvider: Warp.Config.colorProvider)
+
+     Warp.Button.create(for: .primary, title: "Warp", icon: Image(systemName: "plus")) {
+        print("tap tap")
+    }
+
 ## Visual options
 
 ### Primary
