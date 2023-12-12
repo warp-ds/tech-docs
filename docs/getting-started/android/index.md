@@ -25,7 +25,7 @@ toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.10")
 
 
 ## 2. Apply theme
-To start using Warp you must first initialize the theme depending on the selected flavor of the code. This file should live in the flavor specific code package. This applies only to compose. To use legacy components in xml see [legacy support](#legacy-support).
+To start using Warp you must first initialize the theme depending on the selected flavor of the code. There should be a file like this for each flavor and this file should live in the flavor specific code package. This applies only to compose. To use legacy components in xml see [legacy support](#legacy-support).
 
 ```kotlin
 
@@ -86,7 +86,7 @@ class WarpApplication : Application() {
         }
 }
 ```
-Next, create a Theme class which implemets the LegacyWarpTheme 
+Next, create a Theme class (one for each flavor) which implemets the LegacyWarpTheme. This code should live in the flavor specific packages. 
 ```kotlin
 
 class WarpBrandTheme : LegacyWarpTheme {
