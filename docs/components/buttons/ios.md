@@ -2,19 +2,6 @@
 
 ## Syntax
 
-```kotlin example
-@Composable
-fun WarpButton(
-    text: String, 
-    onClick: () -> Unit, 
-    modifier: Modifier = Modifier, 
-    enabled: Boolean = true, 
-    buttonStyle: WarpButtonStyle, 
-    maxLines: Int = 1, 
-    loading: Boolean = false
-)
-```
-
 ```swift example
 
      Warp.Button(type: <#T##Warp.ButtonType#>, title: <#T##String#>, imageSystemName: <#T##String?#>, action: <#T##() -> Void#>, size: <#T##Warp.ButtonSize#>, isEnabled: <#T##Bool#>, fullWidth: <#T##Bool#>, colorProvider: <#T##ColorProvider#>)
@@ -28,6 +15,30 @@ fun WarpButton(
     }
 
 ## Visual options
+        /// Primary button style as default `SwiftUI` button style.
+        case primary
+
+        /// Style as subtitle/caption buttons.
+        case secondary
+
+        /// Style for plain buttons without borders.
+        case tertiary
+
+        /// Style as red alert/destructive button.
+        case critical
+
+        /// Style for plain red alert/destructive buttons without borders.
+        case criticalTertiary
+
+        /// Style fot 
+        case utility
+
+        /// <#Description#>
+        case utilityTertiary
+
+        /// <#Description#>
+        case utilityOverlay
+
 
 ### Primary
 
