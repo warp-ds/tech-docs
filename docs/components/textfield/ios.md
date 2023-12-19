@@ -1,46 +1,46 @@
 
 ## Syntax
+'' ios
 
-```kotlin
-@Composable
-fun WarpTextField(
-    value: String, 
-    onValueChange: (String) -> Unit, 
-    modifier: Modifier = Modifier, 
-    enabled: Boolean = true, 
-    readOnly: Boolean = false, 
-    label: String, 
-    optionalLabel: String? = null, 
-    placeholderText: String? = null, 
-    helpText: String? = null, 
-    leadingIcon: @Composable () -> Unit? = null, 
-    trailingIcon: @Composable () -> Unit? = null, 
-    isError: Boolean = false, 
-    visualTransformation: VisualTransformation = VisualTransformation.None, 
-    keyboardOptions: KeyboardOptions = KeyboardOptions.Default, 
-    keyboardActions: KeyboardActions = KeyboardActions.Default, 
-    singleLine: Boolean = true, 
-    maxLines: Int = Int.MAX_VALUE, 
-    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() }
-)
+    var warpTextField = Warp.Input(config: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>, colorProvider: <#T##ColorProvider#>)
+    
+        /// Input that will have common design for a search text field.
+    var searchField = Warp.Input.createSearchTextField(text: <#T##Binding<String>#>)
+
+    /// Input that will resolve common needs to work with decimals.
+    var decimalField = Warp.Input.createDecimalTextField(text: <#T##Binding<String>#>)
+
+    /// Input that will be used to handle secure text,
+    /// it will contain a button as right view in order to secure/unsecure current text.
+     var secureField = Warp.Input.createSecureTextField(configuration: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>, isSecured: <#T##Binding<Bool>#>)
+
+    /// Input that that will contain a button as right view, that will have the responsibility of discarding current text.
+    var withDiscardButton = Warp.Input.createWithDiscardButton(configuration: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>)    
+
 ```
+## Examples
+@State var text = ""
 
-## Params
+let warpField = Warp.Input.createSearchTextField(text: $text)
 
-<api-table type=android component="TextField" />
+let warpfield2 = Warp.Input(config: .default, text: $text, state: .constant(.active))
+
+let warpDiscardField = Warp.Input.createWithDiscardButton(configuration: .default, text: $text, state: .constant(.normal))
+
+
 
 ## Value
 
-A TextField's value is empty by default, but an initial value can be provided using the `value` param.
+A binding for the textfields value must be provided
 
-```kotlin
-var text by rememberSaveable { mutableStateOf("0") }
+```IOS
+    @State private var textFieldText = ""
 
-WarpTextField(
-    value = text,
-    onValueChange = { text = it },            
-    label = "Price",           
-    )
+     Warp.Input.createSearchTextField(text: $textFieldText)
+          .padding()
+    }, label: {
+        Text("TextField")
+    }
 ```
 
 ## Labeling
