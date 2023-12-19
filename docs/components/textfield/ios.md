@@ -27,6 +27,7 @@ let warpfield2 = Warp.Input(config: .default, text: $text, state: .constant(.act
 
 let warpDiscardField = Warp.Input.createWithDiscardButton(configuration: .default, text: $text, state: .constant(.normal))
 
+let warpSecureField = Warp.Input.createSecureTextField(configuration: .default, text: $text, state: .constant(.active), isSecured: .constant(true))
 
 
 ## Value
@@ -45,28 +46,20 @@ A binding for the textfields value must be provided
 
 ## Labeling
 
-A visual label should be provided for the TextField using the `label` param.
+A visual place should be provided for the TextField using the `label` param.
 Add the `optionalLabel` param to indicate that the textfield is not required.
 
-```kotlin
-WarpTextField(
-    value = "",
-    onValueChange = { },            
-    label = "Price",         
-    optionalLabel = "(optional)"  
-    )
+```IOS
+label: {
+    Text("TextField")
+}
 ```
 ## Help text
 
 TextFields can provide additional context with `helpText` if the label and placeholder aren't enough.
 
-```kotlin
-WarpTextField(
-    value = "",
-    onValueChange = { },            
-    label = "Address",         
-    helpText = "Street name & house nr"  
-    )
+```IOS
+helpMessage: "Help message",
 ```
 ## Validation
 
