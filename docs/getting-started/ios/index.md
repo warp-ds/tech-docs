@@ -21,7 +21,10 @@ Brand:
 
 To set and get the current theme:
 
-    Warp.Config.warpTheme
+    Warp.Config.warpTheme  
+    
+    Warp.Config.warpTheme = .tori
+
 
 Creating component:
 
