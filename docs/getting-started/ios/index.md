@@ -17,8 +17,17 @@ dependencies: [
 
 ## 2. Use Warp components
 
-Brand: to set the colortheme for the market you can specify what brand the app is using, then in the market cell is set the tintcolor is defined.
-  
+Brand:
+
+The colorthee for each brand: 
+
+Tori: UIColor(red: 247/255, green: 81/255, blue: 89/255, alpha: 1)
+
+Finn: UIColor(red: 6/255, green: 190/255, blue: 251/255, alpha: 1)
+
+To set the colortheme for the market you can specify what brand the app is using:
+
+ did set:
 var brand: String = "" {
     didSet {
         if brand == "Tori" {
@@ -31,6 +40,17 @@ var brand: String = "" {
         }
     }
 }
+
+func: 
+func setTheme(brand: String) {
+    if brand == "Tori" {
+      iconImageView.tintColor = UIColor(red: 247/255, green: 81/255, blue: 89/255, alpha: 1)
+    }
+    else if brand == "Finn" {
+      iconImageView.tintColor = UIColor(red: 6/255, green: 190/255, blue: 251/255, alpha: 1)
+    }
+} 
+
 
 Creating component:
 
