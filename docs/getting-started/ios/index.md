@@ -36,11 +36,28 @@ Creating component:
             print("Warp button")
        }
 
+        WButton types:
+        .primary,
+        .secondary,
+        .tertiary,
+        .critical,
+        .criticalTertiary,
+        .utility,
+        .utilityTertiary,
+        .utilityOverlay
+
+
+
     Textfield:
 
         Warp.Input(config: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>)
 
         Warp.Input(config: .default, text: $searchTextFieldText, state: .constant(.active))
+
+        Create a textfield:
+
+        Warp.Input.createSearchTextField(text: $searchTextFieldText)
+
 
     Typography:
 
