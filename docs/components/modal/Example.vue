@@ -18,6 +18,7 @@ const changeHeight = () => heightToggle.value = !heightToggle.value
   <div class="component">
     <h3 class="h4">Default</h3>
     <div class="flex gap-10">
+      <w-button utility @click="showModal = true">Show modal</w-button>
       <w-modal title="Hello Warp!" :style="demoStyles" :left="showLeft" :right="{ 'aria-label': 'Close' }" @dismiss="showModal = false" v-model="showModal" @right="showModal = false">
         <div class="space-x-8">
           <w-button utility @click="changeHeight" small class="mb-32">Modify height</w-button>
@@ -35,7 +36,6 @@ const changeHeight = () => heightToggle.value = !heightToggle.value
           <w-button primary @click="showModal = false">Click me</w-button>
         </template>
       </w-modal>
-      <w-button utility @click="showModal = true">Show modal</w-button>
     </div>
   </div>
 </template>
