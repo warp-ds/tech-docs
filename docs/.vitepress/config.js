@@ -64,13 +64,6 @@ export default defineConfig({
         rel: 'stylesheet',
         href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/tori-fi.css'
       }
-    ],
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/blocket-se.css'
-      }
     ]
   ],
   themeConfig: {
