@@ -24,7 +24,7 @@ If it is necessary to include both libraries, it is recommended to encapsulate o
 
 ### Icons
 
-Warp does not currently support icons. Until Warp icons being available, continue import the icons from Fabric.
+Warp now supports icons, and it is no longer necessary to continue importing the icons from Fabric. See further information and icons usage on our [icons page](https://warp-ds.github.io/tech-docs/components/icons/).
 
 ### Colours
 
