@@ -36,7 +36,7 @@ The migration plugin is available to use to detect all deprecated CSS classes an
 
 #### Install the plugin
 :::info
-Do not forget to uninstall the plugin one the migration is complete.
+Do not forget to uninstall the plugin once the migration is complete.
 :::
 
 ```shell
