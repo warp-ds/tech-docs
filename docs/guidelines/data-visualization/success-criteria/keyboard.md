@@ -12,7 +12,7 @@ Interactive elements should be easily identifiable and have focus outlines, and 
 For example, hover interaction on bars or lines should be possible to reach using the keyboard.
 
 ### 2. Interactive elements have focus outlines
-![Red design tagn and blue tech tag](/dataviz-tag-design-and-tech.svg)
+![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
 People who use a keyboard to navigate a page or chart need to be able to see clearly which element is in focus.
 
