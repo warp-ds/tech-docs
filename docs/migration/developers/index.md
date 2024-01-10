@@ -35,6 +35,9 @@ Warp utilises a system of coloring border, text, background and icons using sema
 The migration plugin is available to use to detect all deprecated CSS classes and provide warnings with useful hints.
 
 #### Install the plugin
+:::info
+Do not forget to uninstall the plugin once the migration is complete.
+:::
 
 ```shell
 npm install @warp-ds/preset-migrate --save-dev
