@@ -913,7 +913,7 @@ export const vue = {
       ['negative', 'quiet, small, loading', ''],
       ['link', 'small', ''],
       ['utility', 'small, loading, quiet', ''],
-      ['pill', '', '@deprecated use `utility` together with `quiet`instead.'],
+      ['pill', '', '@deprecated use `utility` together with `quiet` instead.'],
     ]
   },
   ButtonGroup: {
