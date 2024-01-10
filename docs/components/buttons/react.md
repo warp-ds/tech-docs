@@ -56,10 +56,10 @@ Used for visual feedback that the action the user triggered is loading.
 <Button small>Small</Button>
 ```
 
-#### Pill
-
+#### Utility
+The `utility` button combined with `quiet` replaces the deprecated button `pill` prop.
 ```jsx example
-<Button pill>Pill</Button>
+<Button utility quiet><IconShare16 /></Button>
 ```
 
 #### Link

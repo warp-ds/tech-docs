@@ -158,7 +158,7 @@ export const react = {
         'utility',
         'boolean',
         'false',
-        'Set the button to be a utility style button. Can be combined with `small`.',
+        'Set the button to be a utility style button. Can be combined with `small` and `quiet`.',
       ],
       [
         'quiet',
@@ -182,7 +182,7 @@ export const react = {
         'pill',
         'boolean',
         'false',
-        'Set the button to look like a pill style button.',
+        'Set the button to look like a pill style button. @deprecated use `utility` together with `quiet` instead.',
       ],
       [
         'loading',
@@ -908,13 +908,13 @@ export const vue = {
       ],
     ],
     variants: [
-      ['primary', 'quiet, small, loading'],
-      ['secondary', 'quiet, small, loading'],
-      ['negative', 'quiet, small, loading'],
-      ['link', 'small'],
-      ['utility', 'small, loading'],
-      ['pill', ''],
-    ],
+      ['primary', 'quiet, small, loading', ''],
+      ['secondary', 'quiet, small, loading', ''],
+      ['negative', 'quiet, small, loading', ''],
+      ['link', 'small', ''],
+      ['utility', 'small, loading, quiet', ''],
+      ['pill', '', '@deprecated use `utility` together with `quiet`instead.'],
+    ]
   },
   ButtonGroup: {
     required: [],
@@ -1325,7 +1325,7 @@ export const elements = {
       ],
       [
         'variant',
-        '"primary" | "secondary" | "negative" | "utility" | "link" | "pill"',
+        '"primary" | "secondary" | "negative" | "utility" | "link"',
         'secondary',
         '',
       ],
