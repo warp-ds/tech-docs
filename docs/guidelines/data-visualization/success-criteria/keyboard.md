@@ -16,7 +16,7 @@ For example, hover interaction on bars or lines should be possible to reach usin
 
 People who use a keyboard to navigate a page or chart need to be able to see clearly which element is in focus.
 
-::: details
+::: details How to enable focus outline
 
 #### Set an outline or border on `:focus`
 

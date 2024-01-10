@@ -15,6 +15,10 @@ The criteria are put into four categories:
 - **Keyboard**: Can interactive charts be operated using keyboard navigation?
 - **Screen reader**: Is all the information accessible for people using a screen reader?
 
+::: info Credit
+The siccess criteria are adapted from accessibility criteria formulated by [Sarah Fossheim](http://fossheim.io/), based on [WCAG success criteria](https://www.w3.org/TR/WCAG21/) and inspired by the [Chartability](https://chartability.fizz.studio/) framework. 
+:::
+
 <tabs-content>
   <template #cognitive>
    <cognitive />

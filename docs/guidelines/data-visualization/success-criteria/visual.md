@@ -9,8 +9,7 @@ Visual elements in graphs should be possible to perceive and distinguish from ea
 
 **Why:** People with colour vision deficiencies may not be able to perceive colour differences. In addition, charts or graphs can be printed in black and white or viewed on monochrome displays.
 
-::: details
-How to achive this:
+::: details How to use other means than colour alone
 
 #### Use patterns or symbols in addition to colour
 A drawback is that many patterns can make the graph look busy, making it harder to read for everyone. This will have to be assessed by designers on a case-to-case basis.
@@ -28,7 +27,7 @@ If icons, shapes or patterns are used, they should be included in the legend.
 ### 2. Text has a colour contrast of 4.5:1 or 3:1 with the background
 ![Red design tag](/dataviz-tag-design.svg)
 
-<!-- We should refer to the Warp file sizes when ready and checked -->
+<!-- We should refer to the Warp font sizes when ready and checked -->
 
 - Normal text, less than 24px (18pt) must have a contrast ratio of at least 4.5:1.
 - Large text, at least 24px (18pt) or 19px (14pt) bold, must have a contrast ratio of at least 3:1. This applies to Display, T1 and T2 i Figma.
@@ -53,7 +52,7 @@ In Figma, you can use the plugin [Contrast](https://www.figma.com/community/plug
 
 When shapes are placed close to each other it might be hard to differentiate between them. This typically happens in a pie chart, stacked bar chart, or when hovering. 
 
-::: details
+::: details Solutions and exceptions
 #### Possible solutions:
 - add at least 1px margin between elements to keep them distinguishable
 - use something other than colour, such as patterns or shapes, to distinguish between elements.
@@ -93,7 +92,7 @@ However, make sure that the encoding of all the data is explained to the users.
 
 Documentation for the dataviz colours will provide information about this.
 
-::: details
+::: details How to check your colours
 For checking colour combinations manually, you can use [Viz Palette](https://projects.susielu.com/viz-palette).
 
 1. Enter the hex codes for the colours you want to compare
@@ -109,9 +108,7 @@ For checking colour combinations manually, you can use [Viz Palette](https://pro
 ### 10. It's possible to zoom in to 400% without breaking the layout. 
 ![Blue tech tag](/dataviz-tag-tech.svg)
 
-::: details
-How to achieve this: 
-
+::: details How to enable zoom 
 #### Use media queries to adjust the chart to different zoom levels.
 If the chart is not zoomable by default, media queries can be used to adjust css properties. When zooming in, the viewport get smaller.
 

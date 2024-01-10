@@ -9,8 +9,7 @@ All data that is accessible for sighted users should also be accessible for thos
 
 The correct use of heading levels is necessary for screen reader users to navigate a page and chart effectively.
 
-::: details
-How to achieve this:
+::: details How to achieve correct heading levels
 
 #### Use heading tags
 Use heading tags (`<h1>`, `<h2>`, `<h3>` etc.) instead of text elements. Normally the visual styling will follow the heading levels, but this is not always necessary.
@@ -44,9 +43,7 @@ Data visualisations mainly consist of SVG shapes (`<rect>`, `<circle>`, etc) and
 
 By default, assistive technology does pick up on the text elements, and reads them in the order they appear in the accessibility tree, but it can't announce anything about the different graphical elements that make a chart unless we add that functionality ourselves.
 
-::: details
-
-How to achieve this:
+::: details How to make elements accessible for screen readers 
 
 #### Sort the data before rendering and pay attention to the order of the different chart elements.
 
@@ -87,9 +84,7 @@ Some interactive roles include:
 
 Using the correct ARIA roles and attributes ensures that screen reader users get the same contextual information about interactive elements as sighted users do. For example, when using `<button>` or `role="button"` elements, the screen reader will automatically announce that the element is a button.
 
-::: details
-
-How to achieve this:
+::: details How to achieve correct roles and attributes
 
 #### Use semantic HTML elements where possible
 Where possible, opt to use semantic HTML elements, such as button, a, input, etc. instead of generic divs or text elements.
@@ -141,8 +136,7 @@ If the screen reader interaction is unconventional, make sure to include informa
 ### 7. Use appropriate alternative text and ARIA roles
 ![Red design tag and blue tech tag](/dataviz-tag-design-and-tech.svg)
 
-::: details
-How to achieve this:
+::: details How to implement alternative text
 
 #### Give the SVG element an image role and aria-label
     
