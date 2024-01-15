@@ -15,11 +15,11 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```gradle
-implementation("com.schibsted.nmp.warp:warp-android:0.0.8")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.10")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.9")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.11")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.10")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.12")
 ```
 
 
@@ -30,7 +30,7 @@ To start using Warp you must first initialize the theme depending on the selecte
 ```kotlin
 
 @Composable
-fun WarpBrandTheme(flavor: String, content: @Composable () -> Unit) {
+fun WarpBrandTheme(content: @Composable () -> Unit) {
     FinnWarpTheme(content) // or ToriWarpTheme(content) depending on the selected flavor
     
 }

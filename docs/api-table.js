@@ -1659,5 +1659,54 @@ export const android = {
         'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
       ],
     ],
+  },
+  Pill: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed on the pill'
+    ],
+    [
+      'onClick',
+        '() -> Unit',
+        '',
+        'Lambda to be invoked when clicked',
+    ],
+  ],
+
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the pill',
+      ],
+      [
+        'style',
+        'WarpPillStyle.Filter <br />WarpPillStyle.Suggestion',
+        'WarpPillStyle.Filter',
+        'Sets the appearance of the pill',
+      ],
+      [
+        'selected', 
+        'boolean', 
+        'false', 
+        'Whether the pill appears in selected mode or not'
+      ],
+      [
+        'closable', 
+        'boolean', 
+        'false', 
+        'Whether the pill should be removable via a close button.'
+      ],
+      [
+        'iconContentDescription', 
+        'String', 
+        'null', 
+        'The content description of the close icon. Used for accessibility purposes'
+      ],
+    ],
   }
 };
