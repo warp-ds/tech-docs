@@ -6,8 +6,12 @@ const slots = useSlots();
 const tabs = Object.keys(slots);
 
 const formatTabTitle = (tab) => {
-  const capitalizedTab = tab.charAt(0).toUpperCase() + tab.slice(1);
-  return capitalizedTab?.replaceAll('_', ' ');
+  if (tab === 'iOS') {
+    return tab;
+  } else {
+    const capitalizedTab = tab.charAt(0).toUpperCase() + tab.slice(1);
+    return capitalizedTab?.replaceAll('_', ' ');
+  }
 };
 
 const isDisabled = (tab) => {
