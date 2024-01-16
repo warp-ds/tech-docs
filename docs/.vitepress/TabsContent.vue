@@ -6,7 +6,7 @@ const slots = useSlots();
 const tabs = Object.keys(slots);
 
 const formatTabTitle = (tab) => {
-  if (tab == 'iOS') {
+  if (tab === 'iOS') {
     return tab;
   } else {
     const capitalizedTab = tab.charAt(0).toUpperCase() + tab.slice(1);
