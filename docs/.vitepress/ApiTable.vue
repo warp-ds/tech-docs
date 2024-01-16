@@ -28,7 +28,7 @@ const data = computed(() => apiTable[props.type || 'react'][props.component]);
     </div>
     <div v-if="data.variants?.length">
       <component :is="`h${headerLevel}`">Variants</component>
-      <other-table :headers="['main', 'combination']" :data="data.variants" />
+      <other-table :headers="['main', 'combination', 'notes']" :data="data.variants" />
     </div>
     <div v-if="data.slots?.length">
       <component :is="`h${headerLevel}`">Slots</component>

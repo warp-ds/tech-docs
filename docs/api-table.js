@@ -158,7 +158,7 @@ export const react = {
         'utility',
         'boolean',
         'false',
-        'Set the button to be a utility style button. Can be combined with `small`.',
+        'Set the button to be a utility style button. Can be combined with `small` and `quiet`.',
       ],
       [
         'quiet',
@@ -182,7 +182,7 @@ export const react = {
         'pill',
         'boolean',
         'false',
-        'Set the button to look like a pill style button.',
+        'Set the button to look like a pill style button. @deprecated use `utility` together with `quiet` instead.',
       ],
       [
         'loading',
@@ -908,13 +908,13 @@ export const vue = {
       ],
     ],
     variants: [
-      ['primary', 'quiet, small, loading'],
-      ['secondary', 'quiet, small, loading'],
-      ['negative', 'quiet, small, loading'],
-      ['link', 'small'],
-      ['utility', 'small, loading'],
-      ['pill', ''],
-    ],
+      ['primary', 'quiet, small, loading', ''],
+      ['secondary', 'quiet, small, loading', ''],
+      ['negative', 'quiet, small, loading', ''],
+      ['link', 'small', ''],
+      ['utility', 'small, loading, quiet', ''],
+      ['pill', '', '@deprecated use `utility` together with `quiet` instead.'],
+    ]
   },
   ButtonGroup: {
     required: [],
@@ -1325,7 +1325,7 @@ export const elements = {
       ],
       [
         'variant',
-        '"primary" | "secondary" | "negative" | "utility" | "link" | "pill"',
+        '"primary" | "secondary" | "negative" | "utility" | "link"',
         'secondary',
         '',
       ],
@@ -1512,7 +1512,7 @@ export const android = {
       ],
       [
         'buttonStyle',
-        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Tertiary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Critical <br />WarpButtonStyle.CriticalQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
+        'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Negative <br />WarpButtonStyle.NegativeQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
         'Controls the appearance of the button',
       ]
@@ -1657,6 +1657,85 @@ export const android = {
         'MutableInteractionSource', 
         'MutableInteractionSource', 
         'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
+      ],
+    ],
+  },
+  Pill: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed on the pill'
+    ],
+    [
+      'onClick',
+        '() -> Unit',
+        '',
+        'Lambda to be invoked when clicked',
+    ],
+  ],
+
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the pill',
+      ],
+      [
+        'style',
+        'WarpPillStyle.Filter <br />WarpPillStyle.Suggestion',
+        'WarpPillStyle.Filter',
+        'Sets the appearance of the pill',
+      ],
+      [
+        'selected', 
+        'boolean', 
+        'false', 
+        'Whether the pill appears in selected mode or not'
+      ],
+      [
+        'closable', 
+        'boolean', 
+        'false', 
+        'Whether the pill should be removable via a close button.'
+      ],
+      [
+        'iconContentDescription', 
+        'String', 
+        'null', 
+        'The content description of the close icon. Used for accessibility purposes'
+      ],
+    ],
+  },
+  Badge: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed on the badge'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the badge',
+      ],
+      [
+        'style',
+        'WarpBadgeStyle.Neutral <br />WarpBadgeStyle.Info <br />WarpBadgeStyle.Success <br />WarpBadgeStyle.Warning <br />WarpBadgeStyle.Error <br />WarpBadgeStyle.Disabled <br />WarpBadgeStyle.Sponsored <br />WarpBadgeStyle.Price',
+        'WarpBadgeStyle.Neutral',
+        'Sets the appearance of the badge',
+      ],
+      [
+        'alignmentStyle',
+        'WarpBadgeAlignment.None <br />WarpBadgeAlignment.TopStart <br />WarpBadgeAlignment.TopEnd <br />WarpBadgeAlignment.BottomStart <br />WarpBadgeAlignment.BottomEnd',
+        'WarpBadgeAlignment.None',
+        'Sets the alignment style for the badge',
       ],
     ],
   }

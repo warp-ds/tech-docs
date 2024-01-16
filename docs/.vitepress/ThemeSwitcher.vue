@@ -3,7 +3,6 @@ import { computed } from 'vue';
 
 const themes = {
   'Finn': 'finn-no',
-  'Blocket': 'blocket-se',
   'Tori': 'tori-fi'
 };
 

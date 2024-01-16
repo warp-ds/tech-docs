@@ -24,7 +24,7 @@ If it is necessary to include both libraries, it is recommended to encapsulate o
 
 ### Icons
 
-Warp does not currently support icons. Until Warp icons being available, continue import the icons from Fabric.
+Warp now supports icons, and it is no longer necessary to continue importing the icons from Fabric. See further information and icons usage on our [icons page](https://warp-ds.github.io/tech-docs/components/icons/).
 
 ### Colours
 
@@ -35,6 +35,9 @@ Warp utilises a system of coloring border, text, background and icons using sema
 The migration plugin is available to use to detect all deprecated CSS classes and provide warnings with useful hints.
 
 #### Install the plugin
+:::info Reminder
+Do not forget to uninstall the plugin once the migration is complete.
+:::
 
 ```shell
 npm install @warp-ds/preset-migrate --save-dev

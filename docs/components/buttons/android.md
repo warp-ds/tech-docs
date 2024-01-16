@@ -55,7 +55,7 @@ screen as a primary button.
 ```kotlin example
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Critical, 
+    buttonStyle = WarpButtonStyle.Negative, 
     text = "Cancel"
 )
 ```

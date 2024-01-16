@@ -36,19 +36,18 @@ The negative button is for emphasizing actions that can be destructive or have n
 <w-button variant="utility">Utility button</w-button>
 <w-button variant="utility" small>Utility button small</w-button>
 ```
+The `utility` variant combined with `quiet` replaces the deprecated `pill` variant.
+```html
+<w-button variant="utility" quiet="">
+  <w-icon-share-16></w-icon-share-16>
+</w-button>
+```
 
 #### Link
 
 ```html
 <w-button variant="link">Link button</w-button>
 <w-button variant="link" small>Link button small</w-button>
-```
-
-#### Pill
-
-```html
-<w-button variant="pill">💙</w-button>
-<w-button variant="pill" small>💙</w-button>
 ```
 
 #### Quiet
