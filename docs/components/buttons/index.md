@@ -3,14 +3,14 @@
   import Elements from './elements.md';
   import React from './react.md';
   import Android from './android.md';
-  import ios from './ios.md';
+  import iOS from './ios.md';
 </script>
 
 # Button
 
 Buttons are used to perform actions, with different visuals for different needs.
 
-<components-status react='released' vue='released' elements='released' android='released' ios='developing' />
+<components-status react='released' vue='released' elements='released' android='released' ios='released' />
 
 ## Example
 <theme-switcher />
@@ -41,5 +41,8 @@ icon, an `aria-label` prop must be provided for accessibility.
   </template>
   <template #android>
     <android />
+  </template>
+    <template #iOS>
+    <iOS />
   </template>
 </tabs-content>

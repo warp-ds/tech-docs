@@ -1661,3 +1661,127 @@ export const android = {
     ],
   }
 };
+
+export const iOS = {
+  Button: {
+    required: [
+      [
+        'title', 
+        'String', 
+        '', 
+        'The text to be displayed on the button'
+      ],
+      [
+        'action',
+        '() -> Void',
+        '',
+        'Action to be invoked when clicked',
+      ],
+      [
+        'buttonType',
+        'Warp.ButtonType.primary <br />Warp.ButtonType.secondary <br />Warp.ButtonType.tertiary <br />Warp.ButtonType.critical <br />Warp.ButtonType.criticalTertiary <br />Warp.ButtonType.utility <br />Warp.ButtonType.utilityTertiary <br />Warp.ButtonType.utilityOverlay',
+        '',
+        'Controls the appearance of the button',
+      ]
+    ],
+    props: [
+      [
+        'icon',
+        'Image?',
+        'nil',
+        'Sets the button image beside the title',
+      ],
+      [
+        'size',
+        'Warp.ButtonSize.big <br />Warp.ButtonSize.small',
+        'Warp.ButtonSize.big',
+        'Sets the size of button',
+      ],
+      [
+        'isEnabled',
+        'Bool',
+        'true',
+        'Sets the button in disabled mode',
+      ],
+      [
+        'fullWidth',
+        'Bool',
+        'false',
+        'Change the width behaviour of the button',
+      ],
+    ],
+  },
+
+  TextField: {
+    required: [
+      [
+        'text',
+        'String',
+        '',
+        'The text displayed currently in the textfield',
+      ],
+      [
+        'state',
+        'Binding<InputState.normal> <br />Binding<InputState.active> <br />Binding<InputState.disabled> <br />Binding<InputState.error> <br />Binding<InputState.readOnly>',
+        '',
+        'The state the Input is in',
+      ],
+    ],
+    props: [
+      [
+        'placeholder',
+        'String',
+        'empty',
+        'Text hint that occupies the textfield when it is empty',
+      ],
+      [
+        'title',
+        'String?',
+        'nil',
+        'The title to display above the textfield',
+      ],
+      [
+        'additionalInformation',
+        'Srring?',
+        'nil',
+        'Additional information to display above the textfield',
+      ],
+      [
+        'infoToolTipView',
+        'AnyView?',
+        'nil',
+        'The view to display when additionalInformation is tapped',
+      ],
+      [
+        'leftView',
+        'AnyView?',
+        'nil',
+        'The view on the left side of the textfield',
+      ],
+      [
+        'rightView',
+        'AnyView?',
+        'nil',
+        'The view on the right side of the textfield',
+      ],
+      [
+        'errorMessage',
+        'String?',
+        'nil',
+        'The error message to show when in InputState.error',
+      ],
+      [
+        'helpMessage',
+        'String?',
+        'nil',
+        'The content to display as the help text below the textfield',
+      ],
+      [
+        'isAnimated',
+        'Bool',
+        'true',
+        'If the changes support animation',
+      ],
+    ],
+  }
+};

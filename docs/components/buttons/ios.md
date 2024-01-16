@@ -3,71 +3,47 @@
 ## Syntax
 
 ```swift example
-
-     Warp.Button(type: <#T##Warp.ButtonType#>, title: <#T##String#>, imageSystemName: <#T##String?#>, action: <#T##() -> Void#>, size: <#T##Warp.ButtonSize#>, isEnabled: <#T##Bool#>, fullWidth: <#T##Bool#>, colorProvider: <#T##ColorProvider#>)
-
-    Warp.Button(type: .critical, title: "Warp", image: nil, action: {
-        print("tap tap")
-    }, size: .big, isEnabled: true, fullWidth: true, colorProvider: Warp.Config.colorProvider)
-
-     Warp.Button.create(for: .primary, title: "Warp", icon: Image(systemName: "plus")) {
-        print("tap tap")
-    }
+Warp.Button.create(
+        for buttonType: Warp.ButtonType,
+        title: String,
+        icon: Image? = nil,
+        action: @escaping () -> Void,
+        size: Warp.ButtonSize = .big,
+        isEnabled: Bool = true,
+        fullWidth: Bool = false,
+        colorProvider: ColorProvider = Warp.Config.colorProvider
+    )
+```
 
 ## Visual options
-        /// Primary button style as default `SwiftUI` button style.
-        case primary
-
-        /// Style as subtitle/caption buttons.
-        case secondary
-
-        /// Style for plain buttons without borders.
-        case tertiary
-
-        /// Style as red alert/destructive button.
-        case critical
-
-        /// Style for plain red alert/destructive buttons without borders.
-        case criticalTertiary
-
-        /// Style fot 
-        case utility
-
-        /// <#Description#>
-        case utilityTertiary
-
-        /// <#Description#>
-        case utilityOverlay
-
 
 ### Primary
 
 The primary button is a call to action. As a general rule, there should only be
 one of them on the screen. This guides the user towards the happy path.
 
-
-```kotlin example
-WarpButton(
-    onClick = { }, 
-    buttonStyle = WarpButtonStyle.Primary, 
-    text = "Save"
+```swift example
+Warp.Button.create(
+    for: .primary,
+    title: "Save",
+    action: {}
 )
 ```
 
 ### Secondary
 
-Secondary buttons are without background, and are often used for secondary actions. Also available as `quiet` style.
+Secondary buttons are without background, and are often used for secondary actions. Also available as `tertiary` style.
 
-```kotlin example
-WarpButton(
-    onClick = { }, 
-    buttonStyle = WarpButtonStyle.Secondary, 
-    text = "Save"
+```swift example
+Warp.Button.create(
+    for: .secondary,
+    title: "Save",
+    action: {}
 )
-WarpButton(
-    onClick = { }, 
-    buttonStyle = WarpButtonStyle.Quiet, 
-    text = "Save"
+Warp.Button.create(
+    for: .tertiary,
+    title: "Save",
+    action: {}
 )
 ```
 
@@ -76,11 +52,11 @@ WarpButton(
 Used for destructive actions, like deletion. Shouldn't be used on the same
 screen as a primary button.
 
-```kotlin example
-WarpButton(
-    onClick = { }, 
-    buttonStyle = WarpButtonStyle.Critical, 
-    text = "Cancel"
+```swift example
+Warp.Button.create(
+    for: .critical,
+    title: "Cancel",
+    action: {}
 )
 ```
 
@@ -88,16 +64,12 @@ WarpButton(
 
 Used for visual feedback that the action the user triggered is loading.
 
-```kotlin example
-var loading by remember { mutableStateOf(false) }
-var buttonText by remember { mutableStateOf("Save") }
-val onClickAction = { }
-
-WarpButton(
-    onClick = onClickAction, 
-    buttonStyle = WarpButtonStyle.Primary, 
-    text = buttonText,
-    loading = loading
+```swift example
+Warp.Button.create(
+    for: .primary,
+    title: "Save",
+    isLoading: true,
+    action: {}
 )
 ```
 
@@ -107,32 +79,18 @@ Disabled is an anti-pattern and is not supported. There will ALWAYS be users who
 don't understand why an element is disabled, or users who can't even see that it
 is disabled because of poor lighting conditions or other reasons.
 
-```kotlin example
-var enabled by remember { mutableStateOf(false) }
-
-WarpButton(
-    onClick = { }, 
-    buttonStyle = WarpButtonStyle.Secondary, 
-    text = "Edit",
-    enabled = enabled
+```swift example
+Warp.Button.create(
+    for: .primary,
+    title: "Save",
+    isEnabled: false,
+    action: {}
 )
 ```
 
 ### Legacy suport
-To support layouts still written in xml the WarpButton can be used as a custom view.
-
-```xml example
-<com.schibsted.nmp.warp.components.WarpButtonView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:warpButtonStyle="primary"
-    app:buttonText="Send"
-    app:loading="false"
-    app:enabled="true"/>
-```
+The bridge will be added soon.
 
 ### Parameters
 
-<api-table type=android component="Button" />
-
-
+<api-table type=iOS component="Button" />
