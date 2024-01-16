@@ -1,7 +1,10 @@
 
 # Getting started for iOS developers
 
-+To get started, you need to install the `warp-ds/warp-ios` package
+This page describes how to get started building an application with Warp components.
+
+If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the #nmp-warp-design-system channel on Slack!
+
 
 ## 1. Integrate Warp
 
@@ -9,78 +12,44 @@ A guide on how to integrate Warp into your project.
 
 ### Swift Package Manager
 
+You can use the url for Warp on Xcode default package manager or use it like below in your Package.swift file:
+
 ```swift
 dependencies: [
     .package(url: "https://github.com/warp-ds/warp-ios.git")
 ]
 ```
+You can use a specific branch or version, but we suggest using our latest version like this to avoid conflict between dependencies:
 
-## 2. Use Warp components
+```swift
+dependencies: [
+    .package(url: "https://github.com/warp-ds/warp-ios.git", "0.0.1"..."999.0.0")
+]
+```
 
-Brand:
+## 2. Apply theme
 
-To set and get the current theme:
+To start using Warp you must first initialize the theme depending on the selected target of the project.
 
-    Warp.Config.warpTheme  
-    
-    Warp.Config.warpTheme = .tori
+```swift
+Warp.Config.warpTheme = .tori
+```
 
+Right now we support `.finn` and `.tori` with `.finn` as the default one.
 
-Creating component:
+## 3. Use Warp components
 
-    Button:
+Use the Warp components just like any other SwiftUI or UIKit view. The selected target will give it the correct colors and styling. 
 
-        Warp.Button(type: <#T##Warp.ButtonType#>, title: <#T##String#>, imageSystemName: <#T##String?#>, action: <#T##() -> Void#>, size: <#T##Warp.ButtonSize#>, isEnabled: <#T##Bool#>, fullWidth: <#T##Bool#>, colorProvider: <#T##ColorProvider#>)
+```swift exmaple
+Warp.Button.create(
+    for: .primary,
+    title: "button",
+    icon: Image(systemName: "plus"),
+    action: {}
+)
+```
 
-        Warp.Button.create(for: .primary, title: "Warp", icon: Image(systemName: "plus")) {
-            print("Warp button")
-       }
+### Legacy support
 
-        WButton types:
-        .primary,
-        .secondary,
-        .tertiary,
-        .critical,
-        .criticalTertiary,
-        .utility,
-        .utilityTertiary,
-        .utilityOverlay
-
-
-
-    Textfield:
-
-        Warp.Input(config: <#T##Warp.InputConfiguration#>, text: <#T##Binding<String>#>, state: <#T##Binding<Warp.InputState>#>)
-
-        Warp.Input(config: .default, text: $searchTextFieldText, state: .constant(.active))
-
-        Create a textfield:
-
-        Warp.Input.createSearchTextField(text: $searchTextFieldText)
-
-
-    Typography:
-
-        Text(text)
-            .font(from: Warp.Typography.title1)
-
-        var allCases: [(typography: Warp.Typography, name: String)] = [
-            (.display, "Display"),
-            (.title1, "Title 1"),
-            (.title2, "Title 2"),
-            (.title3, "Title 3"),
-            (.title4, "Title 4"),
-            (.title5, "Title 5"),
-            (.title6, "Title 6"),
-            (.preamble, "Preamble"),
-            (.body, "Body"),
-            (.bodyStrong, "Body Strong"),
-            (.caption, "Caption"),
-            (.captionStrong, "Caption Strong"),
-            (.detail, "Detail"),
-            (.detailStrong, "Detail Strong"),
-        ] 
-
-
-
-           
+All Warp components will provide a bridge to be able to use with legacy code. Check each component's documentations for more information.
