@@ -1742,7 +1742,7 @@ export const iOS = {
       ],
       [
         'additionalInformation',
-        'Srring?',
+        'String?',
         'nil',
         'Additional information to display above the textfield',
       ],
