@@ -21,15 +21,14 @@ fun WarpPill(
 The default style for the pill using the primary color for background. If closable is set to true the pill will show a close icon. 
 
 ```kotlin example
-@Composable
-fun WarpPill(
-        modifier = Modifier,
-        text = "Filter",
-        onClick = { },
-        style = WarpPillStyle.Filter,
-        selected = false,
-        closable = true,
-        iconContentDescription = "Close icon"
+WarpPill(
+    modifier = Modifier,
+    text = "Filter",
+    onClick = { },
+    style = WarpPillStyle.Filter,
+    selected = false,
+    closable = true,
+    iconContentDescription = "Close icon"
     )
 ```
 
@@ -38,15 +37,14 @@ fun WarpPill(
 Suggestion style pill using gray color for background. As with the Filter pill, if closable is set to true the pill will show a close icon. 
 
 ```kotlin example
-@Composable
-fun WarpPill(
-        modifier = Modifier,
-        text = "Suggestion",
-        onClick = { },
-        style = WarpPillStyle.Suggestion,
-        selected = false,
-        closable = true,
-        iconContentDescription = "Close icon"
+WarpPill(
+    modifier = Modifier,
+    text = "Suggestion",
+    onClick = { },
+    style = WarpPillStyle.Suggestion,
+    selected = false,
+    closable = true,
+    iconContentDescription = "Close icon"
     )
 ```
 

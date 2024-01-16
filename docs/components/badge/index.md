@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import Android from './android.md';
 </script>
 
 # Badge
 
 Badge is used for showing a small amount of non-interactive color-categorized metadata, like a status or count.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released' />
 
 ## Example
 
@@ -33,5 +34,8 @@ Badge is used for showing a small amount of non-interactive color-categorized me
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>

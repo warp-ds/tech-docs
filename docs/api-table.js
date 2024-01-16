@@ -1708,5 +1708,35 @@ export const android = {
         'The content description of the close icon. Used for accessibility purposes'
       ],
     ],
+  },
+  Badge: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed on the badge'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the badge',
+      ],
+      [
+        'style',
+        'WarpBadgeStyle.Neutral <br />WarpBadgeStyle.Info <br />WarpBadgeStyle.Success <br />WarpBadgeStyle.Warning <br />WarpBadgeStyle.Error <br />WarpBadgeStyle.Disabled <br />WarpBadgeStyle.Sponsored <br />WarpBadgeStyle.Price',
+        'WarpBadgeStyle.Neutral',
+        'Sets the appearance of the badge',
+      ],
+      [
+        'alignmentStyle',
+        'WarpBadgeAlignment.None <br />WarpBadgeAlignment.TopStart <br />WarpBadgeAlignment.TopEnd <br />WarpBadgeAlignment.BottomStart <br />WarpBadgeAlignment.BottomEnd',
+        'WarpBadgeAlignment.None',
+        'Sets the alignment style for the badge',
+      ],
+    ],
   }
 };
