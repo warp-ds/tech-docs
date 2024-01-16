@@ -21,7 +21,7 @@ WarpBadge(
     )
 ```
 
-There are a variety of styles and alignements supported for the badge component:
+There are a variety of styles and alignments supported for the badge component:
 
 ```kotlin example
 WarpBadgeStyle {
