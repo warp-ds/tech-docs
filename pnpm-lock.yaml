@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^1.4.0
     version: 1.4.0
   '@warp-ds/react':
-    specifier: 1.3.0-next.2
-    version: 1.3.0-next.2(react@18.2.0)
+    specifier: 1.3.0
+    version: 1.3.0(react@18.2.0)
   '@warp-ds/uno':
     specifier: ^1.3.0
     version: 1.3.0
@@ -1096,7 +1096,7 @@ packages:
     resolution: {integrity: sha512-fupSS33C7h+2OZ+58TUekhUnfPS1D/EW41ZoGFytyQrdS/uVNQQ/FXEOIHkumoV1m0FPj5s+qAPPuOw6oXu+Rw==}
     dependencies:
       '@warp-ds/tokenizer': 0.0.2
-      '@warp-ds/uno': 1.5.0
+      '@warp-ds/uno': 1.6.0
     dev: true
 
   /@warp-ds/icons@1.3.0:
@@ -1111,8 +1111,8 @@ packages:
       '@lingui/core': 4.5.0
     dev: true
 
-  /@warp-ds/react@1.3.0-next.2(react@18.2.0):
-    resolution: {integrity: sha512-/cHXJXCzZzq6Tb4a9QydsTNx+D6x7cOPXF4WgWtaSfnDwvyVY5HH5UdJNrIPQIjnWGuDY7AAfQ4hNlWI0xtUoQ==}
+  /@warp-ds/react@1.3.0(react@18.2.0):
+    resolution: {integrity: sha512-bs91ksdMu+/vloTOz+jKQYNInTabO9XLyZH/LO2gyasxx3o9yqaP5VSOtwaxfA+mubDU5qcOvgbUndFj/vKGHA==}
     peerDependencies:
       react: 17.0.2
     dependencies:
@@ -1121,7 +1121,7 @@ packages:
       '@warp-ds/core': 1.0.2
       '@warp-ds/css': 1.7.0
       '@warp-ds/icons': 1.4.0
-      '@warp-ds/uno': 1.5.0
+      '@warp-ds/uno': 1.6.0
       react: 18.2.0
       react-focus-lock: 2.9.6(react@18.2.0)
       resize-observer-polyfill: 1.5.1
@@ -1145,8 +1145,8 @@ packages:
       '@unocss/rule-utils': 0.57.7
     dev: true
 
-  /@warp-ds/uno@1.5.0:
-    resolution: {integrity: sha512-LYImJbiNzgJa3+M8RhAAr5TjgK+FIpPMZNVqj9bH8jLfSCjOUzQ3HNlwGrZAMysDpSxBs27+pY+LfWkWbobFfA==}
+  /@warp-ds/uno@1.6.0:
+    resolution: {integrity: sha512-s7bF/6KArZpUtNtI9BOrUlDMmEFlIZgKE81xYWCh4dBh0dr0W4nUGu4rB9ELFUE4YzuwRZLn/IqpooIOBmcZ2g==}
     dependencies:
       '@unocss/core': 0.58.3
       '@unocss/preset-mini': 0.58.3
