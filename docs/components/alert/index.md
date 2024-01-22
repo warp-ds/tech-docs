@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import Android from './android.md';
 </script>
 
 # Alert
 
 Alert is an inline component used for displaying different types of messages.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released' />
 
 ## Example
 
@@ -33,5 +34,8 @@ Alert is an inline component used for displaying different types of messages.
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>

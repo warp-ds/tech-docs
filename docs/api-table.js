@@ -1738,5 +1738,71 @@ export const android = {
         'Sets the alignment style for the badge',
       ],
     ],
+  },
+  Alert: {
+    required: [
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the alert'
+    ],
+    [
+      'body', 
+      'String', 
+      '', 
+      'The body text to be displayed in the alert'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the alert',
+      ],
+      [
+        'type',
+        'WarpAlertType.Info <br />WarpAlertType.Positive <br />WarpAlertType.Critical <br />WarpBadgeStyle.Warning',
+        'WarpAlertType.Info',
+        'Sets the style and icon of the alert',
+      ],
+      [
+        'linkText', 
+        'String', 
+        'null', 
+        'The link text to be displayed in the alert'
+      ],
+      [
+        'linkAction', 
+        '() -> Unit', 
+        'null', 
+        'Lambda to be invoked when clicked'
+      ],
+      [
+        'secondaryButtonText', 
+        'String', 
+        'null', 
+        'The secondary button text to be displayed in the alert'
+      ],
+      [
+        'secondaryButtonAction', 
+        '() -> Unit', 
+        'null', 
+        'Lambda to be invoked when clicked'
+      ],
+      [
+        'quietButtonText', 
+        'String', 
+        'null', 
+        'The quiet button text to be displayed in the alert'
+      ],
+      [
+        'quietButtonAction', 
+        '() -> Unit', 
+        'null', 
+        'Lambda to be invoked when clicked'
+      ],
+    ],
   }
 };
