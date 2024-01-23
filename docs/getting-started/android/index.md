@@ -15,11 +15,11 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```gradle
-implementation("com.schibsted.nmp.warp:warp-android:0.0.10")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.11")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.11")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.12")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.12")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.13")
 ```
 
 
@@ -30,7 +30,7 @@ To start using Warp you must first initialize the theme depending on the selecte
 ```kotlin
 
 @Composable
-fun WarpBrandTheme(content: @Composable () -> Unit) {
+fun WarpNmpTheme(content: @Composable () -> Unit) {
     FinnWarpTheme(content) // or ToriWarpTheme(content) depending on the selected flavor
     
 }
@@ -42,8 +42,8 @@ Use the composable theme which you initiated earlier to be able to use Warp comp
 ```kotlin exmaple
 @Composable
 fun MainScreen() {
-
-    WarpBrandTheme {
+    val warpTheme = WarpNmpTheme() // if LegacyWarpTheme is extended, otherwise just use WarpNmpTheme { }
+    warpTheme {
       Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -89,7 +89,7 @@ class WarpApplication : Application() {
 Next, create a Theme class (one for each flavor) which implemets the LegacyWarpTheme. This code should live in the flavor specific packages. 
 ```kotlin
 
-class WarpBrandTheme : LegacyWarpTheme {
+class WarpNmpTheme : LegacyWarpTheme {
 
     @Composable
     override fun invoke(content:@Composable  () -> Unit) {
@@ -100,7 +100,7 @@ class WarpBrandTheme : LegacyWarpTheme {
 Create an instance of the theme class within a koin module
 ```kotlin
 val warpAppModule = module {
-    single<LegacyWarpTheme> { WarpBrandTheme() }
+    single<LegacyWarpTheme> { WarpNmpTheme() }
 }
 ```
 Now the warp components will show correct colors and styling.
@@ -111,7 +111,8 @@ To use compose with this setup follow this example:
 @Composable
 fun MainScreen() {
 
-    WarpBrandTheme().invoke {
+    val warpTheme = WarpNmpTheme()
+    warpTheme {
       WarpButton(
               onClick = {  },
               buttonStyle = WarpButtonStyle.Primary,
