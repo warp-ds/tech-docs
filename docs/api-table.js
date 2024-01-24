@@ -1677,7 +1677,7 @@ export const android = {
         'Sets the maximum amount of lines allowed'
       ],
       [
-        'interactionSourceing', 
+        'interactionSource', 
         'MutableInteractionSource', 
         'MutableInteractionSource', 
         'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
