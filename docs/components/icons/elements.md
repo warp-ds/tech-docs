@@ -1,25 +1,12 @@
-#### Import Elements icons
+### Import
 
-Import elements icons once to use them in the entire app.
-Once imported, run your script through whatever bundling process your app uses (Rollup, Esbuild, etc) after which the component can be used in the page.
+Import Elements icons individually to optimize your JS bundle size by adding only the icons you need:
 
-```js
-import '@warp-ds/icons/elements';
-```
-
-```html
-<w-icon-attachment-16></w-icon-attachment-16>
-<w-icon-attachment-24></w-icon-attachment-24>
-```
-
-Or import individual icons:
 ```js
 import "@warp-ds/icons/elements/alert-16";
 ```
 
-```html
-<w-icon-alert-16></w-icon-alert-16>
-```
+Don't import icons directly from the `@warp-ds/icons/elements` package, since this will add every Warp icon, and bloat your bundle.
 
 ### Syntax
 
@@ -28,6 +15,14 @@ import "@warp-ds/icons/elements/alert-16";
 ```
 
 Check out exact imports below in our Examples section
+
+### Styling
+
+Elements icons are using shadow-dom to encapsulate their styles. As a result, you can’t simply target their internals with the usual CSS selectors. Instead, components expose “parts” that can be targeted with `part-[iconname-part]:classname`. Here's an example that sets the width & height of an icon:
+
+```html
+<w-icon-bag-16 class="part-[w-icon-bag-16-part]:w-64 part-[w-icon-bag-16-part]:h-64"></w-icon-bag-16>
+```
 
 ### Colors
 The color of the icon will default to `currentColor`.
