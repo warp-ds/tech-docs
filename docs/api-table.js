@@ -1941,5 +1941,29 @@ export const iOS = {
         'If the changes support animation',
       ],
     ],
-  }
+  },
+  Badge: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed on the badge'
+    ],
+    [
+      'variant',
+      'Warp.Badge.Variant.info <br />Warp.Badge.Variant.success <br />Warp.Badge.Variant.warning <br />Warp.Badge.Variant.error <br />Warp.Badge.Variant.disabled <br />Warp.Badge.Variant.sponsored <br />Warp.Badge.Variant.neutral',
+      '',
+      'Sets the appearance of the badge',
+    ],
+  ],
+    props: [
+      [
+        'position',
+        'Warp.Badge.Position.default <br />Warp.Badge.Position.topLeft <br />Warp.Badge.Position.topRight <br />Warp.Badge.Position.bottomLeft <br />Warp.Badge.Position.bottomRight',
+        'Warp.Badge.Position.default',
+        'Sets the corners that need radius',
+      ],
+    ],
+  },
 };
