@@ -46,7 +46,7 @@ Warp.Badge.Position {
 }
 ```
 
-### Legacy suport
+### Legacy support
 Coming soon
 
 ### Parameters
