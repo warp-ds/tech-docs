@@ -1655,7 +1655,7 @@ export const android = {
       [
         'keyboardOptions', 
         'KeyboardOptions', 
-        'KeyboardOptions.Default', 
+        'KeyboardOptions(capitalization = KeyboardCapitalization.Sentences)', 
         'The keyboard configuration options '
       ],
       [

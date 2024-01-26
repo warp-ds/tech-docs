@@ -19,7 +19,7 @@ fun WarpTextField(
     trailingIcon: @Composable () -> Unit? = null, 
     isError: Boolean = false, 
     visualTransformation: VisualTransformation = VisualTransformation.None, 
-    keyboardOptions: KeyboardOptions = KeyboardOptions.Default, 
+    keyboardOptions: KeyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences), 
     keyboardActions: KeyboardActions = KeyboardActions.Default, 
     singleLine: Boolean = true, 
     maxLines: Int = Int.MAX_VALUE, 
@@ -155,6 +155,13 @@ WarpTextField(
     onValueChange = { },            
     label = "Price",
     suffixText = "kr" 
+    )
+    
+WarpTextField(
+    value = "",
+    onValueChange = { },            
+    label = "Price",
+    prefixText = "kronor" 
     )
 ```
 
