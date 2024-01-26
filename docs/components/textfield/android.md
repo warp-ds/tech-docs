@@ -7,27 +7,25 @@ fun WarpTextField(
     value: String, 
     onValueChange: (String) -> Unit, 
     modifier: Modifier = Modifier, 
+    label: String? = null,
     enabled: Boolean = true, 
     readOnly: Boolean = false, 
-    label: String, 
     optionalLabel: String? = null, 
     placeholderText: String? = null, 
     helpText: String? = null, 
+    prefixText: String? = null,
+    suffixText: String? = null,
     leadingIcon: @Composable () -> Unit? = null, 
     trailingIcon: @Composable () -> Unit? = null, 
     isError: Boolean = false, 
     visualTransformation: VisualTransformation = VisualTransformation.None, 
-    keyboardOptions: KeyboardOptions = KeyboardOptions.Default, 
+    keyboardOptions: KeyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences), 
     keyboardActions: KeyboardActions = KeyboardActions.Default, 
     singleLine: Boolean = true, 
     maxLines: Int = Int.MAX_VALUE, 
     interactionSource: MutableInteractionSource = remember { MutableInteractionSource() }
 )
 ```
-
-## Params
-
-<api-table type=android component="TextField" />
 
 ## Value
 
@@ -147,6 +145,26 @@ WarpTextField(
     )
 ```
 
+### Prefix & Suffix
+ 
+WarpTextField supports showing a prefix or suffix text. When set this text will appear permanently infront of or behind the value. 
+
+```kotlin
+WarpTextField(
+    value = "",
+    onValueChange = { },            
+    label = "Price",
+    suffixText = "kr" 
+    )
+    
+WarpTextField(
+    value = "",
+    onValueChange = { },            
+    label = "Price",
+    prefixText = "kronor" 
+    )
+```
+
 ## Legacy suport
 To support layouts still written in xml the WarpTextField can be used as a custom view.
 
@@ -156,7 +174,7 @@ To support layouts still written in xml the WarpTextField can be used as a custo
         android:layout_height="wrap_content"
         app:label="Label"
         app:optionalLabel="(optional)"
-        app:placeholderText="Placeholder text inside the textField"
+        app:placeholderText="Placeholder/hint"
         app:helpText="Help text under the textfield"
         app:textFieldEnabled="true"
         app:readOnly="false"
@@ -165,5 +183,12 @@ To support layouts still written in xml the WarpTextField can be used as a custo
         app:trailingIcon="@drawable/trailing_icon"
         app:trailingIconContentDescr="Trailing icon description"
         app:isError="false"
+        app:prefixText="kronor"
+        app:suffixText="kr"
+        app:maxLines="2"
+        app:singleLine="false"
         />
 ```
+## Parameters
+
+<api-table type=android component="TextField" />

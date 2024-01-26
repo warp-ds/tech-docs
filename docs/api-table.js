@@ -1572,13 +1572,6 @@ export const android = {
         '',
         'Lambda to be invoked when input value changes',
       ],
-      [
-        'label', 
-        'String', 
-        '', 
-        'The content to display as the label above the textfield'
-      ],
-
     ],
     props: [
       [
@@ -1586,6 +1579,12 @@ export const android = {
         'Modifier',
         'Modifier',
         'Sets the modifier for the textfield',
+      ],
+      [
+        'label', 
+        'String', 
+        'null', 
+        'The text to display as the label above the textfield'
       ],
       [
         'enabled',
@@ -1602,20 +1601,32 @@ export const android = {
       [
         'optionalLabel', 
         'String', 
-        '', 
-        'The optional content to display next to the label above the textfield'
+        'null', 
+        'The optional text to display next to the label above the textfield'
       ],
       [
         'placeholderText',
         'String',
-        '',
+        'null',
         'Text hint that occupies the textfield when it is empty',
       ],
       [
         'helpText', 
         'String', 
-        '', 
-        'The content to display as the help text below the textfield'
+        'null', 
+        'The text to display as the help text below the textfield'
+      ],
+      [
+        'prefixText', 
+        'String', 
+        'null', 
+        'The text to display infront of the value inside the textfield'
+      ],
+      [
+        'suffixText', 
+        'String', 
+        'null', 
+        'The text to display after the value inside the textfield'
       ],
       [
         'leadingIcon',
@@ -1644,7 +1655,7 @@ export const android = {
       [
         'keyboardOptions', 
         'KeyboardOptions', 
-        'KeyboardOptions.Default', 
+        'KeyboardOptions(capitalization = KeyboardCapitalization.Sentences)', 
         'The keyboard configuration options '
       ],
       [
@@ -1666,7 +1677,7 @@ export const android = {
         'Sets the maximum amount of lines allowed'
       ],
       [
-        'interactionSourceing', 
+        'interactionSource', 
         'MutableInteractionSource', 
         'MutableInteractionSource', 
         'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
