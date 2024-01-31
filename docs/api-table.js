@@ -1828,7 +1828,67 @@ export const android = {
         'Lambda to be invoked when clicked'
       ],
     ],
-  }
+  },
+  Text: {
+    required: [
+    [
+      'text', 
+      'String | AnnotatedString', 
+      '', 
+      'The text to be displayed'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the text',
+      ],
+      [
+        'color', 
+        'Color', 
+        'WarpTheme.colors.text.default', 
+        'The color of the text'
+      ],
+      [
+        'style',
+        'WarpTextStyle.Display <br />WarpTextStyle.Title1 <br />WarpTextStyle.Title2 <br />WarpTextStyle.Title3 <br />WarpTextStyle.Title4 <br />WarpTextStyle.Title5 <br />WarpTextStyle.Title6 <br />WarpTextStyle.Preamble <br />WarpTextStyle.Body <br />WarpTextStyle.BodyStrong <br />WarpTextStyle.Caption <br />WarpTextStyle.CaptionStrong <br />WarpTextStyle.Detail <br />WarpTextStyle.DetailStrong',
+        'WarpTextStyle.Body',
+        'Sets the appearance of the text - font and size',
+      ],
+      [
+        'maxLines', 
+        'Int', 
+        'Int.MAX_VALUE', 
+        'Max lines of text'
+      ],
+      [
+        'textAlign', 
+        'TextAlign', 
+        'null', 
+        'TextAlign controls how text aligns in the space it appears'
+      ],
+      [
+        'overflow', 
+        'TextOverflow', 
+        'TextOverflow.Ellipsis', 
+        'How overflowing text should be handled'
+      ],
+      [
+        'softWrap', 
+        'Boolean', 
+        'true', 
+        'If text should wrap or not'
+      ],
+      [
+        'textDecoration', 
+        'TextDecoration', 
+        'null', 
+        'Defines a horizontal line to be drawn on the text. Useful for displaying links'
+      ],
+    ],
+  },
 };
 
 export const iOS = {

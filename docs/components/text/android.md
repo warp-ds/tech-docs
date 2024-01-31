@@ -3,61 +3,84 @@
 
 ```kotlin example
 @Composable
-fun WarpBadge(
+fun WarpText(
+    text: String | AnnotatedString,
     modifier: Modifier = Modifier,
-    text: String,
-    style: WarpBadgeStyle = WarpBadgeStyle.Neutral,
-    alignmentStyle: WarpBadgeAlignment = WarpBadgeAlignment.None
+    color: Color = colors.text.default,
+    style: WarpTextStyle = WarpTextStyle.Body,
+    maxLines: Int = Int.MAX_VALUE,
+    textAlign: TextAlign? = null,
+    overflow: TextOverflow = TextOverflow.Ellipsis,
+    softWrap: Boolean = true,
+    textDecoration: TextDecoration? = null,
 )
 ```
 
-The default style for the badge is Neutral. 
+The default style for the text is WarpTextStyle.Body and the default text color is WarpTheme.colors.text.default.
 
 ```kotlin example
-WarpBadge(
-    text = "Success",
-    style = WarpBadgeStyle.Success,
-    alignment = Alignment.BottomStart
-    )
+WarpText(
+    text = "Warp!"
+)
+
+WarpText(
+    text = "Warp with style",
+    modifier = Modifier.padding(vertical = 8.dp),
+    style = WarpTextStyle.Display,
+    color = WarpTheme.colors.text.positive
+)
 ```
 
-There are a variety of styles and alignments supported for the badge component:
+To make WarpText clickable use the modifier function:
+```kotlin example
+WarpText(
+    text = "Click this link",
+    modifier = Modifier.clickable { clickFunction.invoke() },
+    style = WarpTextStyle.Caption,
+    color = WarpTheme.colors.text.link
+)
+```
+
+There are a variety of styles supported for the text component:
 
 ```kotlin example
-WarpBadgeStyle {
-    Info,
-    Success,
-    Warning,
-    Error,
-    Disabled,
-    Neutral,
-    Sponsored,
-    Price
-}
-
-WarpBadgeAlignment {
-    None,
-    TopStart,
-    TopEnd,
-    BottomStart,
-    BottomEnd
+WarpTextStyle {
+    Display,
+    Title1,
+    Title2,
+    Title3,
+    Title4,
+    Title5,
+    Title6,
+    Preamble,
+    Body,
+    BodyStrong,
+    Caption,
+    CaptionStrong,
+    Detail,
+    DetailStrong
 }
 ```
 
 
 ### Legacy suport
-To support layouts still written in xml the WarpBadge can be used as a custom view.
+To support layouts still written in xml the WarpText can be used as a custom view.
+
+```kotlin example
+fun setOnClickListener(onCLick: OnClickListener?)
+```
 
 ```xml example
-<com.schibsted.nmp.warp.components.legacy.WarpBadgeView
+<com.schibsted.nmp.warp.components.legacy.WarpTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Warp badge!"
-    app:alignmentStyle="topEnd"
-    app:warpBadgeStyle="sponsored" />
+    app:text="Warp speed"
+    app:warpTextStyle="title1"
+    app:color="@color/warp_text_link"
+     />
 ```
 
 ### Parameters
 
-<api-table type=android component="Badge" />
+<api-table type=android component="Text" />
 
