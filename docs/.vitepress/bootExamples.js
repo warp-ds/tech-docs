@@ -25,6 +25,7 @@ import TextArea from '../components/textarea/Example.vue';
 import TextField from '../components/textfield/Example.vue';
 import Toast from '../components/toast/Example.vue';
 import Utilities from '../components/utilities/Example.vue';
+import Text from '../components/text/Example.vue';
 
 buildWc('alert-example', Alert);
 buildWc('attention-example', Attention);
@@ -51,3 +52,4 @@ buildWc('textarea-example', TextArea);
 buildWc('textfield-example', TextField);
 buildWc('toast-example', Toast);
 buildWc('utilities-example', Utilities);
+buildWc('text-example', Text);

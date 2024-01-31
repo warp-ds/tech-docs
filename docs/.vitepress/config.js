@@ -184,6 +184,10 @@ export default defineConfig({
                   link: '/components/tabs/',
                 },
                 {
+                  text: 'Text',
+                  link: '/components/text/',
+                },
+                {
                   text: 'Toast',
                   link: '/components/toast/',
                 },
