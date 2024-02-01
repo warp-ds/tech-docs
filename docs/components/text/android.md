@@ -63,7 +63,7 @@ WarpTextStyle {
 ```
 
 
-### Legacy suport
+### Legacy support
 To support layouts still written in xml the WarpText can be used as a custom view.
 
 ```kotlin example
