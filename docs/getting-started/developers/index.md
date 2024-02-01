@@ -6,13 +6,11 @@
 
 # Getting started for developers
 
-This page describes how to get started building an application with Warp components.
+This page describes how to get started building a web application with Warp styling and components. Warp is using [UnoCSS](https://unocss.dev/), an atomic CSS engine. UnoCSS works by searching for the utilities (classes) usages from your codebase and generate the corresponding CSS on-demand. The Warp preset contains the utilities UnoCSS will look for. Only the used utilities are shipped to your app, ensuring speed and efficiency in any project size.
 
 If you are migrating from Fabric to Warp, please visit the [Migration page](/migration/developers/).
 
 If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the #nmp-warp-design-system channel on Slack!
-
-For now the primary focus with Warp is to support the existing styling and components that were available in Fabric. Adding new features to Warp is not our current priority.
 
 ## 1. Integrate with UnoCSS and Warp
 
@@ -48,7 +46,7 @@ When setting up Warp in your project, you can choose to create a `uno.config.js`
 
 - **Add a uno.config.js file**
 
-Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset, including a safelist of component classes, which will add styling to Warp components. See all configuration options for `presetWarp` at https://github.com/warp-ds/drive#plugin-api.
+Create a `uno.config.[js,ts,mjs,mts]` file with the following content. This file will configure UnoCSS with our Warp preset.
 
 > uno.config.js
 
@@ -63,6 +61,15 @@ export default defineConfig({
 ```
 
 By default, UnoCSS will automatically look in the root directory of your project for `uno.config.[js,ts,mjs,mts]` or `unocss.config.[js,ts,mjs,mts]`.
+
+<details>
+  <summary><b>Details about this configuration setup</b></summary>
+
+When an application consists of several parts (e.g. if you are using [Podium](https://podium-lib.io/)) and each part needs to integrate with UnoCSS and Warp - it's more performant to get styling from an external stylesheet (as this will be cached in the browser) instead of making UnoCSS generate the same CSS multiple times. In the example above we pass external classes and skip resets, because we import components.css and reset.css as mentioned [below](/getting-started/developers/#make-sure-you-import-the-resets-and-components-classes-from-eik-cdn).
+
+See all configuration options for `presetWarp` at https://github.com/warp-ds/drive#plugin-api.
+
+</details>
 
 - **Add UnoCSS to your build tool**
 
@@ -159,7 +166,10 @@ In order to load correct fonts for each brand, you need to include a font setup 
 Add this to your `index.html`:
 
 ```html
-<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css">
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css"
+/>
 ```
 
 ### Add brand CSS
@@ -170,19 +180,27 @@ In order to apply your application's theme, a respective brand CSS should be add
 - Tori: https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/tori-fi.css
 - Blocket: https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/blocket-se.css
 
-
 Add this to your `index.html`:
 
 ```html
-<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css">
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css"
+/>
 ```
 
 ### Make sure you import the resets and components classes from Eik CDN:
 
 ```html
-<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css">
-<link rel="stylesheet" href="https://assets.finn.no/pkg/@warp-ds/css/v1/components.css">
-``````
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v1/resets.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v1/components.css"
+/>
+```
 
 ## 3. Use Warp components
 
