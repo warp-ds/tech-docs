@@ -33,8 +33,8 @@ const deprecatedIcons = [
   { old: 'Paw32', new:'AnimalPaw' },
   { old: 'Car42', new: 'Minivan' },
   { old: 'TableInfo', new:'Info' },
-  { old: 'Honk', new:'HonkLight' },
-  { old: 'Nettbil', new:'NettbilLight' }
+  { old: 'Honk42', new:'HonkLight' },
+  { old: 'Nettbil42', new:'NettbilLight' }
 ]
 
 const isDeprecated = (iconName) => deprecatedIcons.find(icon => iconName.includes(icon.old)) ? true : false;
