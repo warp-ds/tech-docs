@@ -5,6 +5,41 @@ import * as reactIcons from "@warp-ds/icons/react";
 import { wModal } from "@warp-ds/vue";
 import { ref } from "vue";
 
+const deprecatedIcons = [
+  { old: 'AlertWarning', new: 'WarningFilled' },
+  { old: 'BankId', new: 'BankIdNo' },
+  { old: 'BankIdent', new: 'CheckShield' },
+  { old: 'Favorite', new: 'Heart' },
+  { old: 'File', new: 'FileAdd' },
+  { old: 'Market', new: 'Sofa' },
+  { old: 'RatingEmpty', new:'StarEmpty' },
+  { old: 'RatingFull', new:'StarFull' },
+  { old: 'RatingHalf', new:'StarHalf' },
+  { old: 'PhoneNew', new:'Phone' },
+  { old: 'TableSortUp', new:'ArrowUp' },
+  { old: 'TableSortDown', new:'ArrowDown' },
+  { old: 'TorgetBrowser', new:'Browser' },
+  { old: 'TorgetDelivery', new:'Delivery' },
+  { old: 'TorgetHeadset', new:'Headset' },
+  { old: 'TorgetLamp', new:'Lamp' },
+  { old: 'TorgetShipping', new:'Shipping' },
+  { old: 'TorgetUsers', new:'UserGroup' },
+  { old: 'TorgetVerified', new:'Verified' },
+  { old: 'TorgetShopping', new:'ShoppingCart' },
+  { old: 'TorgetMixer', new:'Mixer' },
+  { old: 'Triangle', new:'warning' },
+  { old: 'Paw16', new:'AnimalPaw' },
+  { old: 'Paw24', new:'AnimalPaw' },
+  { old: 'Paw32', new:'AnimalPaw' },
+  { old: 'Car42', new: 'Minivan' },
+  { old: 'TableInfo', new:'Info' },
+  { old: 'Honk42', new:'HonkLight' },
+  { old: 'Nettbil42', new:'NettbilLight' }
+]
+
+const isDeprecated = (iconName) => deprecatedIcons.find(icon => iconName.includes(icon.old)) ? true : false;
+const getDeprecationMessage = (iconName) => `DEPRECATED - will be replaced with ${deprecatedIcons.find(icon => iconName.includes(icon.old)).new} icon in v2.0.0`
+
 const showModal = ref(false);
 let modalData = ref({
   iconName: "",
@@ -15,6 +50,7 @@ let modalData = ref({
   vueSyntax: "",
   elements: "",
   elementsIcon: "",
+  deprecationMessage: ""
 });
 
 const mappedIconsBySize = Object.keys(icons).reduce((acc, current) => {
@@ -48,6 +84,7 @@ const setIconData = (icon, fullName, event) => {
     vueSyntax: `<icon-${outputString} />`,
     elements: `import from '@warp-ds/icons/elements/${outputString}';`,
     elementsSyntax: `<w-icon-${outputString}></w-icon-${outputString}>`,
+    deprecationMessage: isDeprecated(fullName) && getDeprecationMessage(fullName),
   };
 };
 
@@ -61,6 +98,7 @@ const reset = () => {
     vueSyntax: "",
     elements: "",
     elementsSyntax: "",
+    deprecationMessage: "",
   };
 };
 </script>
@@ -82,9 +120,12 @@ const reset = () => {
       "
     >
       <div>
-        <h1 class="h4 mb-16">
+        <h2 class="t4 mb-16 text-center">
           You can use the following import for icon: {{ modalData.iconName }}
-        </h1>
+        </h2>
+        <p v-if="modalData.deprecationMessage" class="my-8 text-center s-text-negative">
+          {{ modalData.deprecationMessage }}
+        </p>
         <div class="mx-auto mb-8 s-bg border rounded-4 h-56 flex items-center justify-center flex-col">
           <component :is="modalData.icon" class="s-icon"></component>
         </div>
@@ -115,7 +156,7 @@ const reset = () => {
     <main class="max-w-screen-xl mx-auto px-32">
       <div class="grid gap-24 grid-cols-minmax-100px">
         <button
-          class="bg-transparent"
+          class="bg-transparent flex"
           @click="
             showModal = true;
             setIconData(icon, fullName, event);
@@ -123,14 +164,18 @@ const reset = () => {
           v-for="(icon, fullName) in mappedIconsBySize[size]"
           :key="fullName"
         >
-          <div class="text-center">
+          <div class="text-center flex-1">
             <div
-              class="mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col"
+              :class="{
+                'mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col': true,
+                's-bg-inverted': fullName.includes('Dark')
+              }"
             >
               <component :is="icon" class="s-icon"></component>
             </div>
             <p class="text-12" style="color: var(--vp-c-text-1)">
               {{ getIconName(fullName) }}
+              {{ isDeprecated(fullName) ? 'DEPRECATED' : ''}}
             </p>
           </div>
         </button>
