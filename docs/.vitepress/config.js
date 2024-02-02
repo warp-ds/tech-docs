@@ -12,7 +12,7 @@ const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16',
 'max-w-screen-xl', 'mx-auto', 'px-32', 's-bg-active', 'rounded-8', 'p-24', 'mb-24', 'grid', 'gap-24', 'mx-auto', 'mb-8',
 's-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
 'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display', 
-'t1', 't2', 't3', 't4', 't5', 't6', 'text-preamble', 'text-body', 'text-caption', 'text-detail'];
+'t1', 't2', 't3', 't4', 't5', 't6', 'text-preamble', 'text-body', 'text-caption', 'text-detail', 's-bg-inverted'];
 
 export default defineConfig({
   lang: 'en-US',

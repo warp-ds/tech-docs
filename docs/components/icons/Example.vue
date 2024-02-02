@@ -125,7 +125,10 @@ const reset = () => {
         >
           <div class="text-center">
             <div
-              class="mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col"
+              :class="{
+                'mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col': true,
+                's-bg-inverted': fullName.includes('Dark')
+              }"
             >
               <component :is="icon" class="s-icon"></component>
             </div>
