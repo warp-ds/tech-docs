@@ -1422,6 +1422,18 @@ export const elements = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
+  Modal: {
+    required: [],
+    props: [
+      ['show', 'boolean', '', 'Whether or not to show the modal'],
+      ['ignore-backdrop-clicks', 'boolean', '', 'Will ignore clicks to the backdrop UI when true'],
+    ]
+  },
+  ModalTitleBar: {
+    required: [
+      ['title', 'string', '', 'A short but descriptive title for the modal'],
+    ],
+  },
   TextField: {
     required: [],
     props: [
@@ -1512,9 +1524,9 @@ export const android = {
   Button: {
     required: [
       [
-        'text', 
-        'String', 
-        '', 
+        'text',
+        'String',
+        '',
         'The text to be displayed on the button'
       ],
       [
@@ -1581,9 +1593,9 @@ export const android = {
         'Sets the modifier for the textfield',
       ],
       [
-        'label', 
-        'String', 
-        'null', 
+        'label',
+        'String',
+        'null',
         'The text to display as the label above the textfield'
       ],
       [
@@ -1599,9 +1611,9 @@ export const android = {
         'Sets the textfield in read-only mode',
       ],
       [
-        'optionalLabel', 
-        'String', 
-        'null', 
+        'optionalLabel',
+        'String',
+        'null',
         'The optional text to display next to the label above the textfield'
       ],
       [
@@ -1611,21 +1623,21 @@ export const android = {
         'Text hint that occupies the textfield when it is empty',
       ],
       [
-        'helpText', 
-        'String', 
-        'null', 
+        'helpText',
+        'String',
+        'null',
         'The text to display as the help text below the textfield'
       ],
       [
-        'prefixText', 
-        'String', 
-        'null', 
+        'prefixText',
+        'String',
+        'null',
         'The text to display infront of the value inside the textfield'
       ],
       [
-        'suffixText', 
-        'String', 
-        'null', 
+        'suffixText',
+        'String',
+        'null',
         'The text to display after the value inside the textfield'
       ],
       [
@@ -1647,39 +1659,39 @@ export const android = {
         'Renders the field in an invalid state. Often paired together with `helpText` to provide feedback about the error',
       ],
       [
-        'visualTransformation', 
-        'VisualTransformation', 
-        'VisualTransformation.None', 
+        'visualTransformation',
+        'VisualTransformation',
+        'VisualTransformation.None',
         'Interface used for changing visual output of the input field '
       ],
       [
-        'keyboardOptions', 
-        'KeyboardOptions', 
-        'KeyboardOptions(capitalization = KeyboardCapitalization.Sentences)', 
+        'keyboardOptions',
+        'KeyboardOptions',
+        'KeyboardOptions(capitalization = KeyboardCapitalization.Sentences)',
         'The keyboard configuration options '
       ],
       [
-        'keyboardActions', 
-        'KeyboardActions', 
-        'KeyboardActions.Default', 
+        'keyboardActions',
+        'KeyboardActions',
+        'KeyboardActions.Default',
         'The KeyboardActions that specify actions that will be triggered in response to triggering IME action on the software keyboard'
       ],
       [
-        'singleLine', 
-        'Boolean', 
-        'true', 
+        'singleLine',
+        'Boolean',
+        'true',
         'Sets the textfield to a single line'
       ],
       [
-        'maxLines', 
-        'Int', 
-        'Int.MAX_VALUE', 
+        'maxLines',
+        'Int',
+        'Int.MAX_VALUE',
         'Sets the maximum amount of lines allowed'
       ],
       [
-        'interactionSource', 
-        'MutableInteractionSource', 
-        'MutableInteractionSource', 
+        'interactionSource',
+        'MutableInteractionSource',
+        'MutableInteractionSource',
         'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
       ],
     ],
@@ -1687,9 +1699,9 @@ export const android = {
   Pill: {
     required: [
     [
-      'text', 
-      'String', 
-      '', 
+      'text',
+      'String',
+      '',
       'The text to be displayed on the pill'
     ],
     [
@@ -1714,21 +1726,21 @@ export const android = {
         'Sets the appearance of the pill',
       ],
       [
-        'selected', 
-        'boolean', 
-        'false', 
+        'selected',
+        'boolean',
+        'false',
         'Whether the pill appears in selected mode or not'
       ],
       [
-        'closable', 
-        'boolean', 
-        'false', 
+        'closable',
+        'boolean',
+        'false',
         'Whether the pill should be removable via a close button.'
       ],
       [
-        'iconContentDescription', 
-        'String', 
-        'null', 
+        'iconContentDescription',
+        'String',
+        'null',
         'The content description of the close icon. Used for accessibility purposes'
       ],
     ],
@@ -1736,9 +1748,9 @@ export const android = {
   Badge: {
     required: [
     [
-      'text', 
-      'String', 
-      '', 
+      'text',
+      'String',
+      '',
       'The text to be displayed on the badge'
     ],
   ],
@@ -1766,15 +1778,15 @@ export const android = {
   Alert: {
     required: [
     [
-      'title', 
-      'String', 
-      '', 
+      'title',
+      'String',
+      '',
       'The title to be displayed in the alert'
     ],
     [
-      'body', 
-      'String', 
-      '', 
+      'body',
+      'String',
+      '',
       'The body text to be displayed in the alert'
     ],
   ],
@@ -1792,39 +1804,39 @@ export const android = {
         'Sets the style and icon of the alert',
       ],
       [
-        'linkText', 
-        'String', 
-        'null', 
+        'linkText',
+        'String',
+        'null',
         'The link text to be displayed in the alert'
       ],
       [
-        'linkAction', 
-        '() -> Unit', 
-        'null', 
+        'linkAction',
+        '() -> Unit',
+        'null',
         'Lambda to be invoked when clicked'
       ],
       [
-        'secondaryButtonText', 
-        'String', 
-        'null', 
+        'secondaryButtonText',
+        'String',
+        'null',
         'The secondary button text to be displayed in the alert'
       ],
       [
-        'secondaryButtonAction', 
-        '() -> Unit', 
-        'null', 
+        'secondaryButtonAction',
+        '() -> Unit',
+        'null',
         'Lambda to be invoked when clicked'
       ],
       [
-        'quietButtonText', 
-        'String', 
-        'null', 
+        'quietButtonText',
+        'String',
+        'null',
         'The quiet button text to be displayed in the alert'
       ],
       [
-        'quietButtonAction', 
-        '() -> Unit', 
-        'null', 
+        'quietButtonAction',
+        '() -> Unit',
+        'null',
         'Lambda to be invoked when clicked'
       ],
     ],
@@ -1832,9 +1844,9 @@ export const android = {
   Text: {
     required: [
     [
-      'text', 
-      'String | AnnotatedString', 
-      '', 
+      'text',
+      'String | AnnotatedString',
+      '',
       'The text to be displayed'
     ],
   ],
@@ -1846,9 +1858,9 @@ export const android = {
         'Sets the modifier for the text',
       ],
       [
-        'color', 
-        'Color', 
-        'WarpTheme.colors.text.default', 
+        'color',
+        'Color',
+        'WarpTheme.colors.text.default',
         'The color of the text'
       ],
       [
@@ -1858,33 +1870,33 @@ export const android = {
         'Sets the appearance of the text - font and size',
       ],
       [
-        'maxLines', 
-        'Int', 
-        'Int.MAX_VALUE', 
+        'maxLines',
+        'Int',
+        'Int.MAX_VALUE',
         'Max lines of text'
       ],
       [
-        'textAlign', 
-        'TextAlign', 
-        'null', 
+        'textAlign',
+        'TextAlign',
+        'null',
         'TextAlign controls how text aligns in the space it appears'
       ],
       [
-        'overflow', 
-        'TextOverflow', 
-        'TextOverflow.Ellipsis', 
+        'overflow',
+        'TextOverflow',
+        'TextOverflow.Ellipsis',
         'How overflowing text should be handled'
       ],
       [
-        'softWrap', 
-        'Boolean', 
-        'true', 
+        'softWrap',
+        'Boolean',
+        'true',
         'If text should wrap or not'
       ],
       [
-        'textDecoration', 
-        'TextDecoration', 
-        'null', 
+        'textDecoration',
+        'TextDecoration',
+        'null',
         'Defines a horizontal line to be drawn on the text. Useful for displaying links'
       ],
     ],
@@ -1895,9 +1907,9 @@ export const iOS = {
   Button: {
     required: [
       [
-        'title', 
-        'String', 
-        '', 
+        'title',
+        'String',
+        '',
         'The text to be displayed on the button'
       ],
       [
@@ -2016,9 +2028,9 @@ export const iOS = {
   Badge: {
     required: [
     [
-      'text', 
-      'String', 
-      '', 
+      'text',
+      'String',
+      '',
       'The text to be displayed on the badge'
     ],
     [

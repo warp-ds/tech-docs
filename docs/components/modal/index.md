@@ -1,6 +1,7 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import Elements from './elements.md';
 </script>
 
 # Modal
@@ -34,5 +35,8 @@ All dialogs must have a title. Titles appear in bold at the top of the dialog an
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #elements>
+    <elements />
   </template>
 </tabs-content>
