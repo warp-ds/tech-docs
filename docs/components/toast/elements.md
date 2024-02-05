@@ -9,7 +9,7 @@ Import functions for working with toasts:
 Be sure to import the elements package first as the toast APIs depend on this package.
 
 ```js
-import from '@warp-ds/elements'
+import '@warp-ds/elements';
 ```
 
 Once you have imported the elements package, import the toast api package.
