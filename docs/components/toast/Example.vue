@@ -10,7 +10,7 @@
     </div>
     <div>
       <h3 class="h4">Error</h3>
-      <img src="/toast_error.png" alt="toast success" width="200"/>
+      <img src="/toast_error.png" alt="toast error" width="200"/>
     </div>
   </div>
 </template>
