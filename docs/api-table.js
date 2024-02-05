@@ -347,7 +347,7 @@ export const react = {
     ],
     props: [
       ['title', 'string<br />|Element<br />|Element[]', '', 'A string or your own custom elements'],
-      ['left', 'boolean<br />|Element<br />|Element[]', '', 'A default back button or your own custom elements'],
+      ['left', 'boolean<br />|Element<br />|Element[]', '', 'Whether a default back button should render with an onDismiss() callback. It can also be your own custom element(s).'],
       ['right', 'boolean<br />|Element<br />|Element[]', '', 'A default close button or your own custom elements'],
       ['footer', 'Element<br />|Element[]', '', 'Buttons passed to the footer'],
       ['className', 'string', '', 'Additional classes added to the container'],
@@ -359,6 +359,7 @@ export const react = {
     ],
     events: [
       [ 'onDismiss', '() => void', '', 'Handler that is called when the user presses esc or clicks outside the modal.'],
+      [ 'onLeftClick', '() => void', '', 'Handler that is called when the user clicks the default back button. Requires the `left` prop to be `true`.'],
     ],
   },
   Pagination: {
