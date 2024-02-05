@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^1.5.0
     version: 1.5.0
   '@warp-ds/react':
-    specifier: 1.3.0
-    version: 1.3.0(react@18.2.0)
+    specifier: 1.4.0
+    version: 1.4.0(react@18.2.0)
   '@warp-ds/uno':
     specifier: ^1.3.0
     version: 1.3.0
@@ -1125,7 +1125,7 @@ packages:
   /@warp-ds/icons@1.4.0:
     resolution: {integrity: sha512-CC4LlDUlSa65/ts4REDk8hVC3vY+IA6D6mhTFYg31WpOf8KwfzNY4QnEnXdzbL/1WUFU+fmUSejgqbwI8nnpVw==}
     dependencies:
-      '@lingui/core': 4.5.0
+      '@lingui/core': 4.7.0
     dev: true
 
   /@warp-ds/icons@1.5.0:
@@ -1134,13 +1134,13 @@ packages:
       '@lingui/core': 4.7.0
     dev: true
 
-  /@warp-ds/react@1.3.0(react@18.2.0):
-    resolution: {integrity: sha512-bs91ksdMu+/vloTOz+jKQYNInTabO9XLyZH/LO2gyasxx3o9yqaP5VSOtwaxfA+mubDU5qcOvgbUndFj/vKGHA==}
+  /@warp-ds/react@1.4.0(react@18.2.0):
+    resolution: {integrity: sha512-JUQSf5UR3hC4oubodnRT7RZdHNaZGk/dqrIBpxvsvbgI873kVYWtu8Eyo8lgASspgq5hcVy4U9NVUSYmT65fzg==}
     peerDependencies:
-      react: 17.0.2
+      react: 18.2.0
     dependencies:
       '@chbphone55/classnames': 2.0.0
-      '@lingui/core': 4.5.0
+      '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
       '@warp-ds/css': 1.7.0
       '@warp-ds/icons': 1.4.0
@@ -1148,7 +1148,7 @@ packages:
       react: 18.2.0
       react-focus-lock: 2.9.6(react@18.2.0)
       resize-observer-polyfill: 1.5.1
-      scroll-doctor: 1.0.1
+      scroll-doctor: 2.0.2
     transitivePeerDependencies:
       - '@types/react'
     dev: true
@@ -1915,6 +1915,10 @@ packages:
 
   /scroll-doctor@1.0.1:
     resolution: {integrity: sha512-+9t0VawVYL2XligaxF609EWERjPjZn/jfcJK0glsE/tfsipubbWULksHtZQjuZ1LXF7rnqO7EJOihoRyVgqppg==}
+    dev: true
+
+  /scroll-doctor@2.0.2:
+    resolution: {integrity: sha512-ujQhzC7HtOFKfFMRwO12waIim6nHptwVmH+Tphx0wMUq8+iig0nikc6WqBikR1Sx8pYER+nFC01vmsvlpxmUgQ==}
     dev: true
 
   /search-insights@2.11.0:
