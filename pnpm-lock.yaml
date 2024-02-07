@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.6.1
     version: 1.6.1
   '@warp-ds/icons':
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: 2.0.0
+    version: 2.0.0
   '@warp-ds/react':
     specifier: 1.4.0
     version: 1.4.0(react@18.2.0)
@@ -1128,8 +1128,8 @@ packages:
       '@lingui/core': 4.7.0
     dev: true
 
-  /@warp-ds/icons@1.5.0:
-    resolution: {integrity: sha512-HQ4OZ7XcG0FAFkFXFAPvkPw7yOvPuxGF6WNpM0s/czfn5ZQ4+rTyow87mkUodoizc6Nq4uP2Q5HRDnCDLRBXaQ==}
+  /@warp-ds/icons@2.0.0:
+    resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
     dependencies:
       '@lingui/core': 4.7.0
     dev: true
