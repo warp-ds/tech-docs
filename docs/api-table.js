@@ -2164,4 +2164,34 @@ export const iOS = {
     props: [  
     ],
   },
+  Callout: {
+    required: [
+    [
+      'size', 
+      'Warp.CalloutSize.default <br />Warp.CalloutSize.small',
+      'Warp.CalloutSize.default', 
+      'The size of the Callout'
+    ],
+    [
+      'type', 
+      'Warp.CalloutType.inline <br />Warp.CalloutType.popover',
+      'Warp.CalloutType.inline', 
+      'The type of the Callout, popover accepts a onClose action'
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The text to be displayed'
+    ],
+    [
+      'arrowEdge', 
+      'Edge.top <br />Edge.leading <br />Edge.bottom <br />Edge.trailing ',
+      'Edge.top', 
+      'The direction of the arrow'
+    ],
+  ],
+    props: [  
+    ],
+  },
 };
