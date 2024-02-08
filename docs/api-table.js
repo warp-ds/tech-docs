@@ -2110,4 +2110,40 @@ export const iOS = {
     props: [
     ],
   },
+  Pill: {
+    required: [
+    [
+      'text',
+      'String', 
+      '',
+      'The text to be displayed on the pill',
+    ],
+    [
+      'onTap', 
+      '() -> Void',
+      '{}', 
+      'The action that will trigger on pill tap'
+    ],
+    [
+      'onClose', 
+      '(() -> Void)?',
+      'nil', 
+      'If added will show a close button and the action will trigger on pill close'
+    ],
+    [
+      'iconContentDescription', 
+      'String?',
+      'nil', 
+      'The a11y text for the close button'
+    ],
+    [
+      'style', 
+      'Warp.PillStyle.filter <br />Warp.PillStyle.suggestion ',
+      '.filter', 
+      'The style of the pill'
+    ],
+  ],
+    props: [
+    ],
+  },
 };
