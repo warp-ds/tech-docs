@@ -1,12 +1,13 @@
 <script setup>
   import Elements from './elements.md';
+  import iOS from './ios.md';
 </script>
 
 # Toast
 
 Toasts display small snippets of information to the user and then disappear after a set time. The Warp toast appears at the bottom of the screen but will normally be triggered by a user interaction somewhere else on the page.
 
-<components-status elements='released' />
+<components-status elements='released' ios='released' />
 
 ## Example
 
@@ -27,5 +28,8 @@ For accessibility reasons, toasts should never contain interactive elements as i
 <tabs-content>
   <template #elements>
     <elements />
+  </template>
+  <template #iOS>
+    <iOS />
   </template>
 </tabs-content>

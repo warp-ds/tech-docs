@@ -2080,4 +2080,34 @@ export const iOS = {
       ],
     ],
   },
+  Toast: {
+    required: [
+    [
+      'style',
+      'Warp.ToastStyle.error <br />Warp.ToastStyle.success <br />Warp.ToastStyle.warning',
+      '',
+      'Sets the style and icon of the toast',
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the toast'
+    ],
+    [
+      'toastEdge', 
+      'Warp.ToastEdge.top <br />Warp.ToastEdge.bottom',
+      '', 
+      'The position of the toast to be displayed'
+    ],
+    [
+      'isPresented', 
+      'Binding Bool', 
+      '', 
+      'The binding to control the visibility'
+    ],
+  ],
+    props: [
+    ],
+  },
 };
