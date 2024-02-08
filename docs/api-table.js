@@ -1952,9 +1952,9 @@ export const iOS = {
       ],
       [
         'state',
-        'Binding<InputState.normal> <br />Binding<InputState.active> <br />Binding<InputState.disabled> <br />Binding<InputState.error> <br />Binding<InputState.readOnly>',
+        'Binding<Warp.TextFieldState.normal> <br />Binding<Warp.TextFieldState.active> <br />Binding<Warp.TextFieldState.disabled> <br />Binding<Warp.TextFieldState.error> <br />Binding<Warp.TextFieldState.readOnly>',
         '',
-        'The state the Input is in',
+        'The state the TextField is in',
       ],
     ],
     props: [
@@ -1998,7 +1998,7 @@ export const iOS = {
         'errorMessage',
         'String?',
         'nil',
-        'The error message to show when in InputState.error',
+        'The error message to show when in Warp.TextFieldState.error',
       ],
       [
         'helpMessage',
@@ -2036,6 +2036,162 @@ export const iOS = {
         'Warp.Badge.Position.default',
         'Sets the corners that need radius',
       ],
+    ],
+  },
+  Alert: {
+    required: [
+    [
+      'style',
+      'Warp.AlertStyle.info <br />Warp.AlertStyle.warning <br />Warp.AlertStyle.critical <br />Warp.AlertStyle.success',
+      '',
+      'Sets the style and icon of the alert',
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the alert'
+    ],
+    [
+      'subtitle', 
+      'String', 
+      '', 
+      'The subtitle text to be displayed in the alert'
+    ],
+  ],
+    props: [
+      [
+        'link', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The link text and action in the alert'
+      ],
+      [
+        'primaryButton', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The primary button text and action in the alert'
+      ],
+      [
+        'secondaryButton', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The secondary button text and action in the alert'
+      ],
+    ],
+  },
+  Toast: {
+    required: [
+    [
+      'style',
+      'Warp.ToastStyle.error <br />Warp.ToastStyle.success <br />Warp.ToastStyle.warning',
+      '',
+      'Sets the style and icon of the toast',
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the toast'
+    ],
+    [
+      'toastEdge', 
+      'Warp.ToastEdge.top <br />Warp.ToastEdge.bottom',
+      '', 
+      'The position of the toast to be displayed'
+    ],
+    [
+      'isPresented', 
+      'Binding Bool', 
+      '', 
+      'The binding to control the visibility'
+    ],
+  ],
+    props: [
+    ],
+  },
+  Pill: {
+    required: [
+    [
+      'text',
+      'String', 
+      '',
+      'The text to be displayed on the pill',
+    ],
+    [
+      'onTap', 
+      '() -> Void',
+      '{}', 
+      'The action that will trigger on pill tap'
+    ],
+    [
+      'onClose', 
+      '(() -> Void)?',
+      'nil', 
+      'If added will show a close button and the action will trigger on pill close'
+    ],
+    [
+      'iconContentDescription', 
+      'String?',
+      'nil', 
+      'The a11y text for the close button'
+    ],
+    [
+      'style', 
+      'Warp.PillStyle.filter <br />Warp.PillStyle.suggestion ',
+      '.filter', 
+      'The style of the pill'
+    ],
+  ],
+    props: [
+    ],
+  },
+  Text: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed'
+    ],
+    [
+      'style', 
+      'Warp.TextStyle.display <br />Warp.TextStyle.title1 <br />Warp.TextStyle.title2 <br />Warp.TextStyle.title3 <br />Warp.TextStyle.title4 <br />Warp.TextStyle.title5 <br />Warp.TextStyle.title6 <br />Warp.TextStyle.preamble <br />Warp.TextStyle.body <br />Warp.TextStyle.bodyStrong <br />Warp.TextStyle.caption <br />Warp.TextStyle.captionStrong <br />Warp.TextStyle.detail <br />Warp.TextStyle.detailStrong',
+      '', 
+      'Sets the appearance of the text - font and size',
+    ],
+  ],
+    props: [  
+    ],
+  },
+  Callout: {
+    required: [
+    [
+      'size', 
+      'Warp.CalloutSize.default <br />Warp.CalloutSize.small',
+      'Warp.CalloutSize.default', 
+      'The size of the Callout'
+    ],
+    [
+      'type', 
+      'Warp.CalloutType.inline <br />Warp.CalloutType.popover',
+      'Warp.CalloutType.inline', 
+      'The type of the Callout, popover accepts a onClose action'
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The text to be displayed'
+    ],
+    [
+      'arrowEdge', 
+      'Edge.top <br />Edge.leading <br />Edge.bottom <br />Edge.trailing ',
+      'Edge.top', 
+      'The direction of the arrow'
+    ],
+  ],
+    props: [  
     ],
   },
 };
