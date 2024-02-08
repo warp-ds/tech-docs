@@ -1952,9 +1952,9 @@ export const iOS = {
       ],
       [
         'state',
-        'Binding<InputState.normal> <br />Binding<InputState.active> <br />Binding<InputState.disabled> <br />Binding<InputState.error> <br />Binding<InputState.readOnly>',
+        'Binding<Warp.TextFieldState.normal> <br />Binding<Warp.TextFieldState.active> <br />Binding<Warp.TextFieldState.disabled> <br />Binding<Warp.TextFieldState.error> <br />Binding<Warp.TextFieldState.readOnly>',
         '',
-        'The state the Input is in',
+        'The state the TextField is in',
       ],
     ],
     props: [
@@ -1998,7 +1998,7 @@ export const iOS = {
         'errorMessage',
         'String?',
         'nil',
-        'The error message to show when in InputState.error',
+        'The error message to show when in Warp.TextFieldState.error',
       ],
       [
         'helpMessage',
@@ -2035,6 +2035,48 @@ export const iOS = {
         'Warp.Badge.Position.default <br />Warp.Badge.Position.topLeft <br />Warp.Badge.Position.topRight <br />Warp.Badge.Position.bottomLeft <br />Warp.Badge.Position.bottomRight',
         'Warp.Badge.Position.default',
         'Sets the corners that need radius',
+      ],
+    ],
+  },
+  Alert: {
+    required: [
+    [
+      'style',
+      'Warp.AlertStyle.info <br />Warp.AlertStyle.warning <br />Warp.AlertStyle.critical <br />Warp.AlertStyle.success',
+      '',
+      'Sets the style and icon of the alert',
+    ],
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the alert'
+    ],
+    [
+      'subtitle', 
+      'String', 
+      '', 
+      'The subtitle text to be displayed in the alert'
+    ],
+  ],
+    props: [
+      [
+        'link', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The link text and action in the alert'
+      ],
+      [
+        'primaryButton', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The primary button text and action in the alert'
+      ],
+      [
+        'secondaryButton', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'The secondary button text and action in the alert'
       ],
     ],
   },
