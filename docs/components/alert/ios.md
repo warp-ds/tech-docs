@@ -37,7 +37,7 @@ public enum AlertStyle {
 }
 ```
 
-It is possible to add and optional link text, primary button and a secondary button or all together.
+It is possible to add an optional link text, primary button and a secondary button or all together.
 ```swift example
 Warp.Alert(
     style: .critical,
