@@ -1,9 +1,9 @@
 ---
-title: '@warp-ds/icons v2.0.0'
+title: '@warp-ds/icons v2.0.0 - breaking changes incoming!'
 date: 2024-02-08
 ---
 
-<h3>Breaking changes incoming!</h3>
+We've released [v2.0.0 of @warp-ds/icons](https://github.com/warp-ds/icons/releases/tag/v2.0.0), which means some deprecated icons need to be replaced.
 
 ---
 
@@ -278,7 +278,7 @@ We have deleted deprecated icons and added respective replacements. When updatin
 </table>
 
 
-<h4>New icons, 16px versions and modifications</h4>
+### New icons, 16px versions and modifications
 In addition to renamed icons, we've added missing 16px versions of functional icons and modified stroke-width of 24/32px icons.
 
 <ul>
@@ -331,7 +331,7 @@ In addition to renamed icons, we've added missing 16px versions of functional ic
 
 You can see all available icons in our documentation [here](https://warp-ds.github.io/tech-docs/components/icons/).
 
-<style>
+<style scoped>
   .post-blog-table p {
     margin: 0;
   }
