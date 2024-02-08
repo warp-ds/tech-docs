@@ -50,7 +50,7 @@ Warp.Alert(
 ```
 
 
-### Legacy suport
+### Legacy support
 Coming soon
 
 ### Parameters
