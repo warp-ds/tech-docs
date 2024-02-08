@@ -1,12 +1,13 @@
 <script setup>
   import Android from './android.md';
+  import iOS from './ios.md';
 </script>
 
 # Text
 
 Text is used for showing text in a layout. Pre-defined styles provide a font and size. 
 
-<components-status android='released' />
+<components-status android='released' ios='released' />
 
 ## Example
 
@@ -25,5 +26,8 @@ Text is used for showing text in a layout. Pre-defined styles provide a font and
 <tabs-content> 
   <template #android>
     <android />
+  </template>
+  <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
