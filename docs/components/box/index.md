@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import Android from './android.md';
 </script>
 
 # Box
 
 Box is a layout component used for separating content areas on a page.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released'/>
 
 ## Example
 
@@ -41,5 +42,8 @@ Consider using more suitable roles for your specific Box, as described on
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>
