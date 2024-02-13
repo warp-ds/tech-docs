@@ -82,7 +82,7 @@ WarpBox(
 ```
 
 
-### Legacy suport
+### Legacy support
 To support layouts still written in xml the WarpBox can be used as a custom view. To add functionality to the optional link and button, set click listeners.
 When providing an icon drawable, please also include a content description string for accessibility.
 
