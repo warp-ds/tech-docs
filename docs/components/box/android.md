@@ -57,7 +57,7 @@ WarpBox(
 }
 ```
 
-It is possible to add and optional heading, icon, body text, link and a secondary button or all together. The box layout will adjust depending on which optional components are specified. 
+It is possible to add an optional heading, icon, body text, link and a secondary button or all together. The box layout will adjust depending on which optional components are specified. 
 
 ```kotlin example
 WarpBox(
