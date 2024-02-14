@@ -2,7 +2,7 @@
 
 ## Syntax
 
-There are 2 options - button with pre-defined content and custom content. This showcases the pre-defined option with a text and an optional icon.
+There are 2 options - button with pre-defined content and custom content. This showcases the pre-defined option with a text and an optional leading or trailing icon.
 ```kotlin example
 @Composable
 fun WarpButton(
@@ -13,8 +13,10 @@ fun WarpButton(
     buttonStyle: WarpButtonStyle = WarpButtonStyle.Primary,
     maxLines: Int = 1,
     loading: Boolean = false,
-    @DrawableRes icon: Int? = null,
-    iconContentDescr: String? = null
+    @DrawableRes leadingIcon: Int? = null,
+    leadingIconContentDescr: String? = null,
+    @DrawableRes trailingIcon: Int? = null,
+    trailingIconContentDescr: String? = null
 )
 ```
 To add custom content follow this syntax:
@@ -108,10 +110,6 @@ WarpButton(
 
 ### Disabled
 
-Disabled is an anti-pattern and is not supported. There will ALWAYS be users who
-don't understand why an element is disabled, or users who can't even see that it
-is disabled because of poor lighting conditions or other reasons.
-
 ```kotlin example
 var enabled by remember { mutableStateOf(false) }
 
@@ -125,15 +123,23 @@ WarpButton(
 
 ### Icon
 
-An optional icon can be displayed at the start of the button text. Always remember to include a content description string for accessibility :) 
+An optional leading or trailing icon can be displayed at the start of the button text. Always remember to include a content description string for accessibility :) 
 
 ```kotlin example
 WarpButton(
     onClick = { },
     buttonStyle = WarpButtonStyle.Secondary,
     text = "With icon",
-    icon = R.drawable.ic_duck,
-    iconContentDescr = "Duck icon"
+    leadingIcon = R.drawable.ic_duck,
+    leadingIconContentDescr = "Duck icon"
+)
+
+WarpButton(
+    onClick = { },
+    buttonStyle = WarpButtonStyle.Secondary,
+    text = "With icon",
+    trailingIcon = R.drawable.ic_clock,
+    trailingIconContentDescr = "Clock icon"
 )
 ```
 
@@ -145,8 +151,10 @@ To support layouts still written in xml the WarpButton can be used as a custom v
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:warpButtonStyle="primary"
-    app:buttonIcon="@drawable/ic_duck"
-    app:buttonIconContentDescr="Icon content description"
+    app:buttonLeadingIcon="@drawable/ic_duck"
+    app:buttonleadingIconContentDescr="Icon content description"
+    app:buttonTrailingIcon="@drawable/ic_clock"
+    app:buttonTrailingIconContentDescr="Icon content description"
     app:buttonText="Send"
     app:loading="false"
     app:enabled="true"/>

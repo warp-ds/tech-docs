@@ -1558,13 +1558,25 @@ export const android = {
         'Set the button to look like it is in progress, can be combined with other button types. Can be combined with any button type',
       ],
       [
-        'icon', 
+        'leadingIcon', 
         'Int', 
         'null', 
         'The id of the icon drawable recource to be displayed in the button before the text'
       ],
       [
-        'iconContentDescr', 
+        'leadingIconContentDescr', 
+        'String', 
+        'null', 
+        'The content description of the icon'
+      ],
+      [
+        'trailingIcon', 
+        'Int', 
+        'null', 
+        'The id of the icon drawable recource to be displayed in the button after the text'
+      ],
+      [
+        'trailingIconContentDescr', 
         'String', 
         'null', 
         'The content description of the icon'
