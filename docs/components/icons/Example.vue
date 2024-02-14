@@ -62,7 +62,7 @@ const setIconData = (icon, fullName, event) => {
     reactSyntax: `<${fullName} />`,
     vue: `import ${fullName} from '@warp-ds/icons/vue/${outputString}';`,
     vueSyntax: `<icon-${outputString} />`,
-    elements: `import from '@warp-ds/icons/elements/${outputString}';`,
+    elements: `import '@warp-ds/icons/elements/${outputString}';`,
     elementsSyntax: `<w-icon-${outputString}></w-icon-${outputString}>`,
     deprecationMessage: isDeprecated(fullName) && getDeprecationMessage(fullName),
   };
