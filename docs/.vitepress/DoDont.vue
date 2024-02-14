@@ -1,10 +1,11 @@
 <template>
-    <section class="dodont-grid">
-        <slot></slot>
-    </section>
+  <section class="do-dont-grid">
+    <slot></slot>
+  </section>
 </template>
+
 <style>
-  .dodont-grid{
+  .do-dont-grid{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
