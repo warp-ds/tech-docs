@@ -2,7 +2,7 @@
 ## Syntax
 
 ```swift
-Warp.Input(
+Warp.TextField(
     placeholder: String = "",
     title: String? = nil,
     additionalInformation: String? = nil,
@@ -13,7 +13,7 @@ Warp.Input(
     helpMessage: String? = nil,
     isAnimated: Bool = true,
     text: Binding<String>,
-    state: InputState = Warp.inputDefaultInactiveState,
+    state: TextFieldState = .normal,
     colorProvider: ColorProvider = Config.colorProvider
 )
 ```

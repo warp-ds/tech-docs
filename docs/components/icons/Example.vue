@@ -5,40 +5,20 @@ import * as reactIcons from "@warp-ds/icons/react";
 import { wModal } from "@warp-ds/vue";
 import { ref } from "vue";
 
-const deprecatedIcons = [
-  { old: 'AlertWarning', new: 'WarningFilled' },
-  { old: 'BankId', new: 'BankIdNo' },
-  { old: 'BankIdent', new: 'CheckShield' },
-  { old: 'Favorite', new: 'Heart' },
-  { old: 'File', new: 'FileAdd' },
-  { old: 'Market', new: 'Sofa' },
-  { old: 'RatingEmpty', new:'StarEmpty' },
-  { old: 'RatingFull', new:'StarFull' },
-  { old: 'RatingHalf', new:'StarHalf' },
-  { old: 'PhoneNew', new:'Phone' },
-  { old: 'TableSortUp', new:'ArrowUp' },
-  { old: 'TableSortDown', new:'ArrowDown' },
-  { old: 'TorgetBrowser', new:'Browser' },
-  { old: 'TorgetDelivery', new:'Delivery' },
-  { old: 'TorgetHeadset', new:'Headset' },
-  { old: 'TorgetLamp', new:'Lamp' },
-  { old: 'TorgetShipping', new:'Shipping' },
-  { old: 'TorgetUsers', new:'UserGroup' },
-  { old: 'TorgetVerified', new:'Verified' },
-  { old: 'TorgetShopping', new:'ShoppingCart' },
-  { old: 'TorgetMixer', new:'Mixer' },
-  { old: 'Triangle', new:'warning' },
-  { old: 'Paw16', new:'AnimalPaw' },
-  { old: 'Paw24', new:'AnimalPaw' },
-  { old: 'Paw32', new:'AnimalPaw' },
-  { old: 'Car42', new: 'Minivan' },
-  { old: 'TableInfo', new:'Info' },
-  { old: 'Honk42', new:'HonkLight' },
-  { old: 'Nettbil42', new:'NettbilLight' }
-]
+// When an existing icon is deprecated, add { old: "OldIconName", new: "NewIconName" } to the deprecatedIcons list.
+// This will display a deprecation message with a suggested replacement.
+const deprecatedIcons = []
 
 const isDeprecated = (iconName) => deprecatedIcons.find(icon => iconName.includes(icon.old)) ? true : false;
-const getDeprecationMessage = (iconName) => `DEPRECATED - will be replaced with ${deprecatedIcons.find(icon => iconName.includes(icon.old)).new} icon in v2.0.0`
+const getDeprecationMessage = (iconName) => {
+  const newIconName = deprecatedIcons.find(icon => iconName.includes(icon.old)).new;
+  
+  if (newIconName) {
+    return `DEPRECATED - use ${newIconName} icon instead`;
+  }
+
+  return "DEPRECATED";
+}
 
 const showModal = ref(false);
 let modalData = ref({
@@ -82,7 +62,7 @@ const setIconData = (icon, fullName, event) => {
     reactSyntax: `<${fullName} />`,
     vue: `import ${fullName} from '@warp-ds/icons/vue/${outputString}';`,
     vueSyntax: `<icon-${outputString} />`,
-    elements: `import from '@warp-ds/icons/elements/${outputString}';`,
+    elements: `import '@warp-ds/icons/elements/${outputString}';`,
     elementsSyntax: `<w-icon-${outputString}></w-icon-${outputString}>`,
     deprecationMessage: isDeprecated(fullName) && getDeprecationMessage(fullName),
   };

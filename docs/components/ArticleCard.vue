@@ -1,6 +1,6 @@
 <template>
   <a :href="href" class="card">
-    <h5 class="title">{{ title }}</h5>
+    <h3 class="title">{{ title }}</h3>
     <p v-if="excerpt" class="excerpt" v-html="excerpt"></p>
     <p class="date">{{ new Date(date).toDateString() }}</p>
   </a>
@@ -71,9 +71,6 @@ a {
 }
 
 .title {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-    line-height: 2rem;
+  margin-top: 0.5rem;
 }
 </style>

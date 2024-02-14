@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Android from './android.md';
+  import iOS from './ios.md';
 </script>
 
 # Pill
 
 Pill is a type of button that is often used as a filter, but can also be used as a rounded button for overlays, etc.
 
-<components-status react='released' vue='released' android='released' />
+<components-status react='released' vue='released' android='released' ios='released' />
 
 ## Example
 
@@ -33,5 +34,8 @@ Pill is a type of button that is often used as a filter, but can also be used as
   </template>
   <template #android>
     <android />
+  </template>
+  <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
