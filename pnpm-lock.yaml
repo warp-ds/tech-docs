@@ -1,21 +1,25 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
   '@warp-ds/css':
-    specifier: ^1.8.1
-    version: 1.8.1
+    specifier: ^1.8.3
+    version: 1.8.3
   '@warp-ds/icons':
     specifier: 2.0.0
     version: 2.0.0
   '@warp-ds/react':
-    specifier: 1.4.0
-    version: 1.4.0(react@18.2.0)
+    specifier: 1.4.2
+    version: 1.4.2(react@18.2.0)
   '@warp-ds/uno':
     specifier: ^1.8.1
     version: 1.8.1
   '@warp-ds/vue':
-    specifier: ^1.2.3
-    version: 1.2.3
+    specifier: ^1.2.4
+    version: 1.2.4
   decamelize:
     specifier: ^6.0.0
     version: 6.0.0
@@ -33,13 +37,13 @@ devDependencies:
     version: 1.70.0
   unocss:
     specifier: ^0.58.5
-    version: 0.58.5(vite@5.1.1)
+    version: 0.58.5(postcss@8.4.35)(vite@5.1.1)
   vite:
     specifier: ^5.0.12
     version: 5.1.1(sass@1.70.0)
   vitepress:
     specifier: 1.0.0-rc.42
-    version: 1.0.0-rc.42(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)
+    version: 1.0.0-rc.42(postcss@8.4.35)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)
   vue:
     specifier: ^3.4.19
     version: 3.4.19
@@ -805,15 +809,19 @@ packages:
       '@floating-ui/core': 0.7.3
     dev: true
 
-  /@floating-ui/dom@1.5.3:
-    resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==}
+  /@floating-ui/dom@1.6.3:
+    resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
     dependencies:
       '@floating-ui/core': 1.5.0
-      '@floating-ui/utils': 0.1.6
+      '@floating-ui/utils': 0.2.1
     dev: true
 
   /@floating-ui/utils@0.1.6:
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
+    dev: true
+
+  /@floating-ui/utils@0.2.1:
+    resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: true
 
   /@iconify/types@2.0.0:
@@ -876,15 +884,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@lingui/core@4.5.0:
-    resolution: {integrity: sha512-8zTuIXJo5Qvjato7LWE6Q4RHiO4LjTBVOoRlqfOGYDp8VZ9w9P7Z7IJgxI7UP5Z1wiuEvnMdVF9I1C4acqXGlQ==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@babel/runtime': 7.23.2
-      '@lingui/message-utils': 4.5.0
-      unraw: 3.0.0
-    dev: true
-
   /@lingui/core@4.7.0:
     resolution: {integrity: sha512-lr6CMDRztFgS5qna9pLA/MPZRgujN9SCIoQ1LvGZem94U4Qc7ptSwAG1LIET9b3qxRXJm5XOTrq0HefN2Qm1IA==}
     engines: {node: '>=16.0.0'}
@@ -892,13 +891,6 @@ packages:
       '@babel/runtime': 7.23.2
       '@lingui/message-utils': 4.7.0
       unraw: 3.0.0
-    dev: true
-
-  /@lingui/message-utils@4.5.0:
-    resolution: {integrity: sha512-iRqh2wvNtzJO3NStB77nEXEfeI53aVVjzD7/mBrEm/P0lC7sqPHk0WBQCfzE0N9xm6a+XHmHu3J+x2nnQ2OjcA==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@messageformat/parser': 5.1.0
     dev: true
 
   /@lingui/message-utils@4.7.0:
@@ -1163,9 +1155,11 @@ packages:
       sirv: 2.0.4
     dev: true
 
-  /@unocss/postcss@0.58.5:
+  /@unocss/postcss@0.58.5(postcss@8.4.35):
     resolution: {integrity: sha512-m4L2YRdYfT6CV306Kl2VwEwbqa/92EpW4GE2Kqak1RuJyFJXBnWEEMJV4Uy6B1jWKLlCEWkuVUW33JUg7X6BxQ==}
     engines: {node: '>=14'}
+    peerDependencies:
+      postcss: ^8.4.21
     dependencies:
       '@unocss/config': 0.58.5
       '@unocss/core': 0.58.5
@@ -1502,30 +1496,11 @@ packages:
       '@floating-ui/dom': 0.5.4
     dev: true
 
-  /@warp-ds/css@1.7.0:
-    resolution: {integrity: sha512-fupSS33C7h+2OZ+58TUekhUnfPS1D/EW41ZoGFytyQrdS/uVNQQ/FXEOIHkumoV1m0FPj5s+qAPPuOw6oXu+Rw==}
+  /@warp-ds/css@1.8.3:
+    resolution: {integrity: sha512-SFG9gmnMv0POtCb9HHp73Gq6Y7eZeoWZDdXhB8tBY71nMRLp45a7tvu5q28OEGIlNF44PGLmRoF2YHbfq+jThg==}
     dependencies:
-      '@warp-ds/tokenizer': 0.0.2
+      '@warp-ds/tokenizer': 0.0.4
       '@warp-ds/uno': 1.8.1
-    dev: true
-
-  /@warp-ds/css@1.8.1:
-    resolution: {integrity: sha512-NoI3ZycFEMdKTp1noZmJ8IFhBJzFIeTYzG/2x8VrDJ83t244DayfKxyMl0c6sEGRsakvMUJOEBe6LlH8vwpNMw==}
-    dependencies:
-      '@warp-ds/tokenizer': 0.0.3
-      '@warp-ds/uno': 1.8.1
-    dev: true
-
-  /@warp-ds/icons@1.3.0:
-    resolution: {integrity: sha512-YlP8p3ONQmpx8114xhySN+Rx+6hkWETXztvl3sw6MdGsXgXhNhO9pKs8x2MIx3K+R15vBfV8dt8fdqGPmFgL6w==}
-    dependencies:
-      '@lingui/core': 4.5.0
-    dev: true
-
-  /@warp-ds/icons@1.4.0:
-    resolution: {integrity: sha512-CC4LlDUlSa65/ts4REDk8hVC3vY+IA6D6mhTFYg31WpOf8KwfzNY4QnEnXdzbL/1WUFU+fmUSejgqbwI8nnpVw==}
-    dependencies:
-      '@lingui/core': 4.7.0
     dev: true
 
   /@warp-ds/icons@2.0.0:
@@ -1534,34 +1509,27 @@ packages:
       '@lingui/core': 4.7.0
     dev: true
 
-  /@warp-ds/react@1.4.0(react@18.2.0):
-    resolution: {integrity: sha512-JUQSf5UR3hC4oubodnRT7RZdHNaZGk/dqrIBpxvsvbgI873kVYWtu8Eyo8lgASspgq5hcVy4U9NVUSYmT65fzg==}
+  /@warp-ds/react@1.4.2(react@18.2.0):
+    resolution: {integrity: sha512-CN0ZA24aOLAC/KuUKGcwdSTqZm3ttbFbxlOuUfNNTA4ARub0Fddtaw3ZAKZOzAFTC4USUO/mmy443E1077YafQ==}
     peerDependencies:
       react: 18.2.0
     dependencies:
       '@chbphone55/classnames': 2.0.0
       '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.7.0
-      '@warp-ds/icons': 1.4.0
+      '@warp-ds/css': 1.8.3
+      '@warp-ds/icons': 2.0.0
       '@warp-ds/uno': 1.8.1
       react: 18.2.0
-      react-focus-lock: 2.9.6(react@18.2.0)
+      react-focus-lock: 2.9.7(react@18.2.0)
       resize-observer-polyfill: 1.5.1
       scroll-doctor: 2.0.2
     transitivePeerDependencies:
       - '@types/react'
     dev: true
 
-  /@warp-ds/tokenizer@0.0.2:
-    resolution: {integrity: sha512-pEtBvP6my14f1kOmYSoDNhofGK/L2yNqnZkEotvY6boVs3jcIncHpgo9Nt4AHOiAvzDrPP0t8b36jwqGaWzNPg==}
-    dependencies:
-      glob: 9.3.5
-      yaml: 2.3.4
-    dev: true
-
-  /@warp-ds/tokenizer@0.0.3:
-    resolution: {integrity: sha512-7e1/gquOPcSIUNbk6GutvvGJwneWQ2bmTvxnwi+qyuSF+h4yQvuy2XncS8EtNjb3e+xDkVA7B+9wNM9Am6A47w==}
+  /@warp-ds/tokenizer@0.0.4:
+    resolution: {integrity: sha512-D4qIUQdY0Tp23OpeR6P9T5QXpsr9crN/FusHWN+975Yk5WoWZOMAf7SVyvgFKV0uq5s70I3qlZqjT51khMwPNQ==}
     dependencies:
       glob: 10.3.10
       yaml: 2.3.4
@@ -1575,20 +1543,20 @@ packages:
       '@unocss/rule-utils': 0.58.5
     dev: true
 
-  /@warp-ds/vue@1.2.3:
-    resolution: {integrity: sha512-7Sc6z6BBigy8hl73u+HxJcYyV9UiMgUQ5/WlCd+ViE4vwrMTtVEOYvLVms9rudg+rWmjxOZjFE4dFyKNcJvMGg==}
+  /@warp-ds/vue@1.2.4:
+    resolution: {integrity: sha512-HWkPe9naAGRy3b/+sdoR4oh5sqjyZnvz2r8On1Z5JySEQydVpxthwrwPIrbtHw+ZPzJ2RnPEUz8nDqbf3mwfsw==}
     dependencies:
-      '@floating-ui/dom': 1.5.3
-      '@lingui/core': 4.5.0
+      '@floating-ui/dom': 1.6.3
+      '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.8.1
-      '@warp-ds/icons': 1.3.0
+      '@warp-ds/css': 1.8.3
+      '@warp-ds/icons': 2.0.0
       '@warp-ds/uno': 1.8.1
       create-v-model: 2.2.0
       dom-focus-lock: 1.1.0
       element-collapse: 1.1.0
       femtobounce: 1.0.0
-      scroll-doctor: 1.0.1
+      scroll-doctor: 2.0.2
     dev: true
 
   /acorn@8.11.3:
@@ -1970,10 +1938,6 @@ packages:
       signal-exit: 4.1.0
     dev: true
 
-  /fs.realpath@1.0.0:
-    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
-    dev: true
-
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -2008,16 +1972,6 @@ packages:
       jackspeak: 2.3.6
       minimatch: 9.0.3
       minipass: 7.0.4
-      path-scurry: 1.10.1
-    dev: true
-
-  /glob@9.3.5:
-    resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      fs.realpath: 1.0.0
-      minimatch: 8.0.4
-      minipass: 4.2.8
       path-scurry: 1.10.1
     dev: true
 
@@ -2223,23 +2177,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /minimatch@8.0.4:
-    resolution: {integrity: sha512-W0Wvr9HyFXZRGIDgCicunpQ299OKXs9RgZfaukz4qAW/pJhcpUfupc9c+OObPOFueNy8VSrZgEmDtk6Kh4WzDA==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      brace-expansion: 2.0.1
-    dev: true
-
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
-
-  /minipass@4.2.8:
-    resolution: {integrity: sha512-fNzuVyifolSLFL4NzpF+wEF4qrgqaaKX0haXPQEdQ7NKAN+WecoKMHV09YcuL/DHxrUsYQOK3MiuDf7Ip2OXfQ==}
-    engines: {node: '>=8'}
     dev: true
 
   /minipass@7.0.4:
@@ -2433,8 +2375,8 @@ packages:
       scheduler: 0.23.0
     dev: true
 
-  /react-focus-lock@2.9.6(react@18.2.0):
-    resolution: {integrity: sha512-B7gYnCjHNrNYwY2juS71dHbf0+UpXXojt02svxybj8N5bxceAkzPChKEncHuratjUHkIFNCn06k2qj1DRlzTug==}
+  /react-focus-lock@2.9.7(react@18.2.0):
+    resolution: {integrity: sha512-EfhX040SELLqnQ9JftqsmQCG49iByg8F5X5m19Er+n371OaETZ35dlNPZrLOOTlnnwD4c2Zv0KDgabDTc7dPHw==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2529,10 +2471,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
-
-  /scroll-doctor@1.0.1:
-    resolution: {integrity: sha512-+9t0VawVYL2XligaxF609EWERjPjZn/jfcJK0glsE/tfsipubbWULksHtZQjuZ1LXF7rnqO7EJOihoRyVgqppg==}
     dev: true
 
   /scroll-doctor@2.0.2:
@@ -2680,7 +2618,7 @@ packages:
       mlly: 1.5.0
     dev: true
 
-  /unocss@0.58.5(vite@5.1.1):
+  /unocss@0.58.5(postcss@8.4.35)(vite@5.1.1):
     resolution: {integrity: sha512-0g4P6jLgRRNnhscxw7nQ9RHGrKJ1UPPiHPet+YT3TXUcmy4mTiYgo9+kGQf5bjyrzsELJ10cT6Qz2y6g9Tls4g==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2696,7 +2634,7 @@ packages:
       '@unocss/cli': 0.58.5
       '@unocss/core': 0.58.5
       '@unocss/extractor-arbitrary-variants': 0.58.5
-      '@unocss/postcss': 0.58.5
+      '@unocss/postcss': 0.58.5(postcss@8.4.35)
       '@unocss/preset-attributify': 0.58.5
       '@unocss/preset-icons': 0.58.5
       '@unocss/preset-mini': 0.58.5
@@ -2714,6 +2652,7 @@ packages:
       '@unocss/vite': 0.58.5(vite@5.1.1)
       vite: 5.1.1(sass@1.70.0)
     transitivePeerDependencies:
+      - postcss
       - rollup
       - supports-color
     dev: true
@@ -2798,7 +2737,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.42(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0):
+  /vitepress@1.0.0-rc.42(postcss@8.4.35)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0):
     resolution: {integrity: sha512-VeiVVXFblt/sjruFSJBNChMWwlztMrRMe8UXdNpf4e05mKtTYEY38MF5qoP90KxPTCfMQiKqwEGwXAGuOTK8HQ==}
     hasBin: true
     peerDependencies:
@@ -2822,6 +2761,7 @@ packages:
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.3.0
+      postcss: 8.4.35
       shiki: 1.1.2
       vite: 5.1.1(sass@1.70.0)
       vue: 3.4.19
@@ -2922,7 +2862,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
