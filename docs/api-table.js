@@ -1524,14 +1524,15 @@ export const android = {
         '',
         'Lambda to be invoked when clicked',
       ],
+      
+    ],
+    props: [
       [
         'buttonStyle',
         'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Negative <br />WarpButtonStyle.NegativeQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
         'Controls the appearance of the button',
-      ]
-    ],
-    props: [
+      ],
       [
         'enabled',
         'Boolean',
@@ -1555,6 +1556,30 @@ export const android = {
         'Boolean',
         'false',
         'Set the button to look like it is in progress, can be combined with other button types. Can be combined with any button type',
+      ],
+      [
+        'leadingIcon', 
+        'Int', 
+        'null', 
+        'The id of the icon drawable recource to be displayed in the button before the text'
+      ],
+      [
+        'leadingIconContentDescr', 
+        'String', 
+        'null', 
+        'The content description of the icon'
+      ],
+      [
+        'trailingIcon', 
+        'Int', 
+        'null', 
+        'The id of the icon drawable recource to be displayed in the button after the text'
+      ],
+      [
+        'trailingIconContentDescr', 
+        'String', 
+        'null', 
+        'The content description of the icon'
       ],
     ],
   },

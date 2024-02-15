@@ -14,8 +14,8 @@ A guide on how to integrate Warp into your project.
 
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
-```gradle
-implementation("com.schibsted.nmp.warp:warp-android:0.0.12")
+```groovy
+implementation("com.schibsted.nmp.warp:warp-android:0.0.14")
 
 finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.13")
 
@@ -70,7 +70,7 @@ All Warp components have xml support to be able to use Warp with legacy layouts.
 
 To be able to apply the correct styling to legacy components it is required to use Koin dependency injection. You will need to integrate Koin into your project (unless it already is there).
 
-```gradle
+```groovy
 implementation("io.insert-koin:koin-androidx-compose:3.5.0")
 ```
 
