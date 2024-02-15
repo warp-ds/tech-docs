@@ -1,5 +1,6 @@
 <script setup>
   import Elements from './elements.md';
+  import iOS from './ios.md';
 </script>
 
 # Broadcast
@@ -10,7 +11,7 @@ Uses toast apis under the hood.
 
 **N.B.** Broadcast should only be included once per page to avoid duplicate broadcast messages being displayed. The preferred method for including broadcast is to use the [broadcast-podlet](https://github.schibsted.io/finn/broadcast-podlet) provided by the communication team.
 
-<components-status elements='released' />
+<components-status elements='released' ios='released' />
 
 ## Example
 
@@ -27,5 +28,8 @@ See the [toast component](/components/toast/) for examples, as `broadcast` utili
 <tabs-content>
   <template #elements>
     <elements />
+  </template>
+  <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
