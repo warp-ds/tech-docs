@@ -2252,4 +2252,70 @@ export const iOS = {
     props: [  
     ],
   },
+  Box: {
+    required: [
+    [
+      'style', 
+      'Warp.BoxStyle.neutral <br />Warp.BoxStyle.info <br />Warp.BoxStyle.bordered',
+      '', 
+      'Preferred style of box.'
+    ],
+    [
+      'subtitle', 
+      'String',
+      '', 
+      'Text that will be shown after title in the middle of the box.'
+    ],
+  ],
+    props: [
+      [
+        'title', 
+        'String?', 
+        '', 
+        'Text that will be shown as box heading. <br />If there is no title the icon would be hidden too.'
+      ],
+      [
+        'shouldShowToolTipImage', 
+        'Bool',
+        'true', 
+        'Flag indicating tooltip image should be shown.'
+      ],
+      [
+        'link', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'Tuple that will provide a title and an action for creating a link view below subtitle. <br />Passing `nil` will skip adding link view.'
+      ],
+      [
+        'button', 
+        '(title: String, action: () -> Void)?', 
+        'nil', 
+        'Tuple that will provide a title and an action for creating a button view below link. <br />Passing `nil` will skip adding button view.'
+      ],
+    ],
+  },
+  Broadcast: {
+    required: [
+    [
+      'text', 
+      'String',
+      '', 
+      'Text that will be shown in the broadcast'
+    ],
+    [
+      'broadcastEdge', 
+      'Warp.BroadcastEdge.top <br />Warp.BroadcastEdge.bottom',
+      '', 
+      'Edge from where the broadcast is presented'
+    ],
+    [
+      'isPresented', 
+      'Binding Bool', 
+      '', 
+      'Binding to a boolean value that allows the broadcast to control dismissal'
+    ],
+  ],
+    props: [  
+    ],
+  },
 };
