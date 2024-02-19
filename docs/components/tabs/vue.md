@@ -3,93 +3,89 @@
 > Use in entire app
 
 ```js
-import { Tabs } from '@warp-ds/vue';
+import { Tabs, Tab, TabContent } from '@warp-ds/vue';
 app.use(Tabs);
+app.use(Tab);
+app.use(TabContent);
 ```
 
 > Use in one component and special imports
 
 ```js
-import { wTabs } from '@warp-ds/vue';
+import { wTabs, wTab, wTabConent } from '@warp-ds/vue';
 ```
 
 ### Syntax
 
-The following examples demonstrates how the `Tab`, `Tabs`, and `TabPanel` components can be used to switch between panels.
-
-#### Default
-
-```vue
+#### Basic usage
+```html
 <w-tabs>
-  <w-tab label="Tab 1" name="one" isActive />
-  <w-tab label="Tab 2" name="two" />
-  <w-tab label="Tab 3" name="three" />
+  <w-tab name="one" label="Tab 1" />
+  <w-tab name="two" label="Tab 2" />
+  <w-tab name="three" label="Tab 3" />
 </w-tabs>
 ```
-#### Tabs with panel content
 
+##### Tabs with icons
 ```vue
-<w-tabs v-model="selectedTab">
-  <w-tab label="Tab 1" name="one" />
-  <w-tab label="Tab 2" name="two" />
-  <w-tab label="Tab 3" name="three" />
-</w-tabs>
-<div>
-  <w-tab-panel name="one" v-if="selectedTab === 'one'">
-    First tab content
-  </w-tab-panel>
-  <w-tab-panel name="two" v-if="selectedTab === 'two'">
-    Second tab content
-  </w-tab-panel>
-  <w-tab-panel name="three" v-if="selectedTab === 'three'">
-    Third tab content
-  </w-tab-panel>
-</div>
+<script setup>
+import { ref } from 'vue';
+import { iconSvg } from '/icons';
+
+const selectedTab = ref('one');
+</script>
+
+<template>
+  <w-tabs v-model="selectedTab">
+    <w-tab name="one" label="Tab 1">
+      <icon-svg />
+    </w-tab>
+    <w-tab name="two" label="Tab 2">
+      <icon-svg />
+    </w-tab>
+    <w-tab name="three" label="Tab 3">
+      <icon-svg />
+    </w-tab>
+  </w-tabs>
+</template>
 ```
-#### Tabs with icons and panel content
+
+#### Tabs with panel content
+The following example demonstrates how the `Tabs`, `Tab`, and `TabPanel` components can be used to switch between panels.
 
 ```vue
 <script setup>
 import { wTabs, wTab, wTabPanel } from '@warp-ds/vue';
 import { ref } from 'vue';
-import { iconSvg } from '/icons';
 
-const selectedTab = ref("first");
+const selectedTab = ref('one');
 </script>
 
 <template>
   <w-tabs v-model="selectedTab">
-    <w-tab label="Tab 1" name="one">
-      <iconSvg />
-    </w-tab>
-    <w-tab label="Tab 2" name="two">
-      <iconSvg />
-    </w-tab>
-    <w-tab label="Tab 3" name="three">
-      <iconSvg />
-    </w-tab>
+    <w-tab name="one" label="Tab 1" />
+    <w-tab name="two" label="Tab 2" />
+    <w-tab name="three" label="Tab 3" />
   </w-tabs>
   <div>
-    <w-tab-panel name="one" v-if="selectedTab === 'one'">
+    <w-tab-panel v-if="selectedTab === 'one'" name="one">
       First tab content
     </w-tab-panel>
-    <w-tab-panel name="two" v-if="selectedTab === 'two'">
+    <w-tab-panel v-if="selectedTab === 'two'" name="two">
       Second tab content
     </w-tab-panel>
-    <w-tab-panel name="three" v-if="selectedTab === 'three'">
+    <w-tab-panel v-if="selectedTab === 'three'" name="three">
       Third tab content
     </w-tab-panel>
   </div>
 </template>
 ```
 
-### Props
-
-#### Tabs
+### Props - Tabs
 <api-table type="vue" component="Tabs" />
 
-#### Tab
+### Props - Tab
 <api-table type="vue" component="Tab" />
 
-#### TabPanel
+### Props - TabPanel
 <api-table type="vue" component="TabPanel" />

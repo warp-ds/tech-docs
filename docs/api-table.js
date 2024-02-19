@@ -510,11 +510,10 @@ export const react = {
       ['label', 'any', '', 'The label of the tab item'],
     ],
     props: [
-      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
-      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
-      ['style', 'any', '', 'Additional CSS styles for the Tab'],
       ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
       ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
     ],
     events: [
       ['setActive', '(name: string)', 'false', ''],
@@ -1172,8 +1171,14 @@ export const vue = {
   },
   Tab: {
     required: [
-      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
-      ['label', 'any', '', 'The label of the tab item'],
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs setActive handler'],
+    ],
+    props: [
+      ['label', 'string', '', 'Interchangeable with the `label slot` for labelling'],
+    ],
+    slots: [
+      ['default', 'Default slot - mainly used for icons'],
+      ['label', 'Label for the tab (renders below default slot)'],
     ],
   },
   TabPanel: {
@@ -1182,8 +1187,7 @@ export const vue = {
     ],
   },
   Tabs: {
-    required: [['children', 'Element[]', '', 'The tabs within the container']],
-    events: [['v-model', 'string', '', 'Name of the active element']],
+    required: [['v-model', 'string', '', 'Name of the active tab (set by the Tab component via the setActive handler)']],
   },
   TextField: {
     required: [],
