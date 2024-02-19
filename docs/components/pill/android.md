@@ -48,7 +48,7 @@ WarpPill(
     )
 ```
 
-### Legacy suport
+### Legacy support
 To support layouts still written in xml the WarpPill can be used as a custom view.
 
 ```xml example

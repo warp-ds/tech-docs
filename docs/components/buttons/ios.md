@@ -88,7 +88,7 @@ Warp.Button.create(
 )
 ```
 
-### Legacy suport
+### Legacy support
 The bridge will be added soon.
 
 ### Parameters

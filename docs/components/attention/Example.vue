@@ -20,7 +20,7 @@ const highlightShowing = ref(false)
         <w-box neutral aria-details="callout-bubbletext">
           I am a box full of info
         </w-box>
-        <w-attention callout right v-model="calloutShowing" class="ml-8">
+        <w-attention callout placement="right" v-model="calloutShowing" class="ml-8">
           <p id="callout-bubbletext">This is a callout</p>
         </w-attention>
       </div>
@@ -42,7 +42,7 @@ const highlightShowing = ref(false)
       </w-button>
       <w-attention
         tooltip
-        bottom
+        placement="bottom"
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
       >
@@ -63,7 +63,7 @@ const highlightShowing = ref(false)
       </w-button>
       <w-attention
         popover
-        bottom
+        placement="bottom"
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"
         id="popover-example"
@@ -86,8 +86,8 @@ const highlightShowing = ref(false)
       <w-attention
         id="highlight-attention-example"
         highlight
-        bottom
-        canClose
+        placement="bottom"
+        can-close
         @dismiss="highlightShowing = false"
         :target-el="highlightTarget ? highlightTarget.$el : null"
         v-model="highlightShowing"
