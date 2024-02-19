@@ -28,7 +28,7 @@ const showing = ref(false)
   <w-box neutral as="h4" aria-details="callout-bubbletext">
     I am a box full of info
   </w-box>
-  <w-attention callout right v-model="showing">
+  <w-attention callout placement="right" v-model="showing">
     <p id="callout-bubbletext">Hello Warp! This thing is new!</p>
   </w-attention>
 </template>
@@ -57,7 +57,7 @@ const showing = ref(false)
   </w-button>
   <w-attention
     popover
-    bottom
+    placement="bottom"
     :target-el="target ? target.$el : null"
     v-model="showing"
     id="popover-example"
@@ -93,7 +93,7 @@ const showing = ref(false)
   </w-button>
   <w-attention
     tooltip
-    bottom
+    placement="bottom"
     :target-el="target?.$el"
     v-model="showing"
   >
@@ -123,8 +123,8 @@ const showing = ref(false)
   <w-attention
     id="highlight-attention-example"
     highlight
-    bottom
-    canClose
+    placement="bottom"
+    can-close
     @dismiss="highlightShowing = false"
     :target-el="highlightTarget ? highlightTarget.$el : null"
     v-model="highlightShowing"
@@ -141,7 +141,7 @@ The attention component handles accessibility automatically by wrapping its slot
 It is possible to override the `role` and `aria-label` attributes:
 
 ```js
-<w-attention tooltip bottom v-model='tooltipShowing' role='' ariaLabel=''>
+<w-attention tooltip placement="bottom" v-model='tooltipShowing' role='' aria-label=''>
   <p id='tooltip-bubbletext' role='tooltip'>
     I'm a tooltip speech bubble with overridden role and aria-label attributes
     pointing up.

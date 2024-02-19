@@ -3,7 +3,7 @@
 #### Popover
 
 ```js
-<w-attention placement="bottom" popover="">
+<w-attention placement="bottom" popover>
   <button id="target" onclick="toggleShow()" slot="target">
     Click to toggle a popover on bottom
   </button>
@@ -14,7 +14,7 @@
 #### Callout
 
 ```js
-<w-attention placement="right" show="" callout="" class="flex items-center">
+<w-attention placement="right" show callout class="flex items-center">
   <div id="target" slot="target">
     <p>This is a target to callout attention element</p>
   </div>
@@ -25,7 +25,7 @@
 #### Tooltip
 
 ```js
-<w-attention placement="right" tooltip="">
+<w-attention placement="right" tooltip>
   <button id="target" slot="target">
     Hover or focus to show a tooltip on right
   </button>
@@ -36,7 +36,7 @@
 #### Highlight (with optional close button)
 
 ```js
-<w-attention placement="right" highlight id="highlight" can-close="">
+<w-attention placement="right" highlight id="highlight" can-close>
   <button
     id="highlightTarget"
     slot="target"
@@ -55,7 +55,7 @@ Attention element handles accessibility automatically by wrapping its slotted co
 It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set the `role` attribute on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-details`. The `aria-details` attribute is on the target element, not on `w-attention`.
 
 ```js
-<w-attention placement="top" tooltip="">
+<w-attention placement="top" tooltip>
   <div slot="message">
     <p id="aria-content" role="tooltip">This tooltip text is important</p>
     <p>(this text is less relevant)</p>
