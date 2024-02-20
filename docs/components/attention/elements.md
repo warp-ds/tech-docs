@@ -14,7 +14,7 @@
 #### Popover with icon as target element
 
 ```js
-<w-attention placement="right-end" popover :distance="-8" :skidding='27'>
+<w-attention placement="right-end" popover distance="-8" skidding='27'>
   <button id="target" quiet variant="utility" onclick="toggleShow()" slot="target">
     <w-icon-info-16></w-icon-info-16>
   </button>
