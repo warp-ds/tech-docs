@@ -3,7 +3,7 @@
 #### Popover
 
 ```js
-<w-attention placement="bottom" popover>
+<w-attention placement="bottom" popover flip>
   <button id="target" onclick="toggleShow()" slot="target">
     Click to toggle a popover on bottom
   </button>
@@ -46,7 +46,7 @@
 #### Highlight (with optional close button)
 
 ```js
-<w-attention placement="right" highlight id="highlight" can-close>
+<w-attention placement="right" highlight id="highlight" can-close flip>
   <button
     id="highlightTarget"
     slot="target"
