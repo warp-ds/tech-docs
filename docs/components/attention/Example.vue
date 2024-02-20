@@ -81,6 +81,30 @@ const popoverIconTargetShowing = ref(false)
       </w-attention>
     </div>
     <div>
+      <h4>Popover with icon as target element</h4>
+      <w-button
+        :aria-expanded="popoverIconTargetShowing"
+        aria-controls="popover-icon-target-example"
+        type="button"
+        utility
+        quiet
+        ref="popoverIconTarget"
+        @click="() => (popoverIconTargetShowing = !popoverIconTargetShowing)"
+      >
+        <icon-info16 />
+      </w-button>
+        <w-attention
+          popover
+          placement="right-end"
+          :distance="-8"
+          :skidding="27"
+          :target-el="popoverIconTarget ? popoverIconTarget.$el : null"
+          v-model="popoverIconTargetShowing"
+        >
+          <p>Hello Warp!</p>
+        </w-attention>
+    </div>
+    <div>
       <h4>Highlight (with optional close button)</h4>
       <w-button
         utility
@@ -103,32 +127,6 @@ const popoverIconTargetShowing = ref(false)
       >
         <p id="highlighted-bubbletext">I'm a highlight that can close itself</p>
       </w-attention>
-    </div>
-    <div>
-      <h4>Popover with icon as target element</h4>
-      <w-button
-        :aria-expanded="popoverIconTargetShowing"
-        aria-controls="popover-icon-target-example"
-        type="button"
-        utility
-        quiet
-        ref="popoverIconTarget"
-        @click="() => (popoverIconTargetShowing = !popoverIconTargetShowing)"
-      >
-        <icon-info16 />
-      </w-button>
-      <div class="relative">
-        <w-attention
-          popover
-          placement="right-end"
-          :distance="-8"
-          :skidding="27"
-          :target-el="popoverIconTarget ? popoverIconTarget.$el : null"
-          v-model="popoverIconTargetShowing"
-        >
-          <p>Hello Warp!</p>
-        </w-attention>
-      </div>
     </div>
   </div>
 </template>

@@ -67,6 +67,42 @@ const showing = ref(false)
 </template>
 ```
 
+#### Popover with icon as target element
+
+```vue
+<script>
+import { ref } from 'vue'
+import { wAttention, wButton } from '#components'
+import IconInfo16 from '@warp-ds/icons/vue/info-16'
+
+const target = ref(null)
+const showing = ref(false)
+</script>
+<template>
+ <w-button
+  :aria-expanded="popoverIconTargetShowing"
+  aria-controls="popover-icon-target-example"
+  type="button"
+  utility
+  quiet
+  ref="popoverIconTarget"
+  @click="() => (popoverIconTargetShowing = !popoverIconTargetShowing)"
+  >
+    <icon-info16 />
+  </w-button>
+  <w-attention
+    popover
+    placement="right-end"
+    :distance="-8"
+    :skidding="27"
+    :target-el="popoverIconTarget ? popoverIconTarget.$el : null"
+    v-model="popoverIconTargetShowing"
+  >
+    <p>Hello Warp!</p>
+  </w-attention>
+</template>
+```
+
 #### Tooltip
 
 ```vue
@@ -83,7 +119,10 @@ const showing = ref(false)
     ref="target"
     aria-describedby="tooltip-bubbletext"
     :aria-expanded="showing"
-    @mouseenter="showing = true; target = $refs.target"
+    @mouseenter="
+      showing = true
+      target = $refs.target
+    "
     @mouseleave="showing = false"
     @keydown.escape="showing = false"
     @focus="showing = true"
@@ -106,11 +145,11 @@ const showing = ref(false)
 
 ```vue
 <script setup>
-  import { ref } from 'vue'
-  import { wAttention, wButton } from '#components'
+import { ref } from 'vue'
+import { wAttention, wButton } from '#components'
 
-  const highlightTarget = ref(null)
-  const highlightShowing = ref(false)
+const highlightTarget = ref(null)
+const highlightShowing = ref(false)
 </script>
 <template>
   <w-button
@@ -119,7 +158,8 @@ const showing = ref(false)
     aria-details="highlighted-bubbletext"
     ref="highlightTarget"
     @click="highlightShowing = !highlightShowing"
-  >Click me</w-button>
+    >Click me</w-button
+  >
   <w-attention
     id="highlight-attention-example"
     highlight
@@ -129,7 +169,7 @@ const showing = ref(false)
     :target-el="highlightTarget ? highlightTarget.$el : null"
     v-model="highlightShowing"
   >
-  <p id="highlighted-bubbletext">I'm a dismissible highlight</p>
+    <p id="highlighted-bubbletext">I'm a dismissible highlight</p>
   </w-attention>
 </template>
 ```
@@ -141,7 +181,13 @@ The attention component handles accessibility automatically by wrapping its slot
 It is possible to override the `role` and `aria-label` attributes:
 
 ```js
-<w-attention tooltip placement="bottom" v-model='tooltipShowing' role='' aria-label=''>
+<w-attention
+  tooltip
+  placement='bottom'
+  v-model='tooltipShowing'
+  role=''
+  aria-label=''
+>
   <p id='tooltip-bubbletext' role='tooltip'>
     I'm a tooltip speech bubble with overridden role and aria-label attributes
     pointing up.
