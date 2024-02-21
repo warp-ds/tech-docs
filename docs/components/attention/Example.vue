@@ -51,7 +51,9 @@ const popoverIconTargetShowing = ref(false)
       </w-button>
       <w-attention
         tooltip
-        placement="bottom"
+        placement="right-start"
+        flip
+        :fallback-placements="['bottom', 'top']"
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
       >
@@ -72,7 +74,9 @@ const popoverIconTargetShowing = ref(false)
       </w-button>
       <w-attention
         popover
-        placement="bottom"
+        placement="right"
+        flip
+        :fallback-placements="['left', 'bottom', 'top']"
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"
         id="popover-example"
@@ -120,6 +124,8 @@ const popoverIconTargetShowing = ref(false)
         id="highlight-attention-example"
         highlight
         placement="bottom"
+        flip
+        :fallback-placements="['top']"
         can-close
         @dismiss="highlightShowing = false"
         :target-el="highlightTarget ? highlightTarget.$el : null"
