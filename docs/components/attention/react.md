@@ -44,7 +44,8 @@ function Example() {
       </Button>
       <Attention
         tooltip
-        placement='bottom'
+        placement='right'
+        flip={true}
         targetEl={targetEl}
         isShowing={show}
       >
@@ -77,7 +78,9 @@ function Example() {
       </Button>
       <Attention
         popover
-        placement='bottom'
+        placement='right'
+        flip={true}
+        fallbackPlacements={['left', 'bottom', 'top']}
         targetEl={targetEl}
         isShowing={show}
         id='popover-attention-example'
@@ -185,9 +188,11 @@ function DismissibleHighlight() {
           highlight
           canClose
           onDismiss={() => setShow(false)}
-          placement='top'
+          placement='bottom'
           isShowing={show}
           targetEl={targetEl}
+          flip={true}
+          fallbackPlacements={['top']}
           id='highlight-attention-example'
         >
           <p id='highlight-bubble-text'>

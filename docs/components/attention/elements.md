@@ -1,9 +1,31 @@
 ### Visual options
 
+#### Callout
+
+```js
+<w-attention placement="right" show callout class="flex items-center">
+  <div id="target" slot="target">
+    <p>This is a target to callout attention element</p>
+  </div>
+  <span slot="message">Callout on right</span>
+</w-attention>
+```
+
+#### Tooltip
+
+```js
+<w-attention placement="right" tooltip flip>
+  <button id="target" slot="target">
+    Hover or focus to show a tooltip on right
+  </button>
+  <span slot="message">I'm a tooltip on right</span>
+</w-attention>
+```
+
 #### Popover
 
 ```js
-<w-attention placement="bottom" popover flip>
+<w-attention placement="right" popover flip fallback-placements='["left", "bottom", "top"]'>
   <button id="target" onclick="toggleShow()" slot="target">
     Click to toggle a popover on bottom
   </button>
@@ -21,32 +43,11 @@
   <span slot="message">I'm a popover on right-end</span>
 </w-attention>
 ```
-#### Callout
-
-```js
-<w-attention placement="right" show callout class="flex items-center">
-  <div id="target" slot="target">
-    <p>This is a target to callout attention element</p>
-  </div>
-  <span slot="message">Callout on right</span>
-</w-attention>
-```
-
-#### Tooltip
-
-```js
-<w-attention placement="right" tooltip>
-  <button id="target" slot="target">
-    Hover or focus to show a tooltip on right
-  </button>
-  <span slot="message">I'm a tooltip on right</span>
-</w-attention>
-```
 
 #### Highlight (with optional close button)
 
 ```js
-<w-attention placement="right" highlight id="highlight" can-close flip>
+<w-attention placement="right" highlight id="highlight" can-close flip fallback-placements='["top"]'>
   <button
     id="highlightTarget"
     slot="target"

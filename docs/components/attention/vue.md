@@ -34,6 +34,45 @@ const showing = ref(false)
 </template>
 ```
 
+#### Tooltip
+
+```vue
+<script>
+import { ref } from 'vue'
+import { wAttention, wButton } from '#components'
+
+const target = ref(null)
+const showing = ref(false)
+</script>
+<template>
+  <w-button
+    utility
+    ref="target"
+    aria-describedby="tooltip-bubbletext"
+    :aria-expanded="showing"
+    @mouseenter="
+      showing = true
+      target = $refs.target
+    "
+    @mouseleave="showing = false"
+    @keydown.escape="showing = false"
+    @focus="showing = true"
+    @blur="showing = false"
+  >
+    Hover over me
+  </w-button>
+  <w-attention
+    tooltip
+    placement="right"
+    flip
+    :target-el="target?.$el"
+    v-model="showing"
+  >
+    <p id="tooltip-bubbletext">Hello Warp!</p>
+  </w-attention>
+</template>
+```
+
 #### Popover
 
 ```vue
@@ -57,7 +96,9 @@ const showing = ref(false)
   </w-button>
   <w-attention
     popover
-    placement="bottom"
+    placement="right"
+    flip
+    :fallback-placements="['left', 'bottom', 'top']"
     :target-el="target ? target.$el : null"
     v-model="showing"
     id="popover-example"
@@ -103,44 +144,6 @@ const showing = ref(false)
 </template>
 ```
 
-#### Tooltip
-
-```vue
-<script>
-import { ref } from 'vue'
-import { wAttention, wButton } from '#components'
-
-const target = ref(null)
-const showing = ref(false)
-</script>
-<template>
-  <w-button
-    utility
-    ref="target"
-    aria-describedby="tooltip-bubbletext"
-    :aria-expanded="showing"
-    @mouseenter="
-      showing = true
-      target = $refs.target
-    "
-    @mouseleave="showing = false"
-    @keydown.escape="showing = false"
-    @focus="showing = true"
-    @blur="showing = false"
-  >
-    Hover over me
-  </w-button>
-  <w-attention
-    tooltip
-    placement="bottom"
-    :target-el="target?.$el"
-    v-model="showing"
-  >
-    <p id="tooltip-bubbletext">Hello Warp!</p>
-  </w-attention>
-</template>
-```
-
 #### Highlight (with optional close button)
 
 ```vue
@@ -164,6 +167,8 @@ const highlightShowing = ref(false)
     id="highlight-attention-example"
     highlight
     placement="bottom"
+    flip
+    :fallback-placements="['top']"
     can-close
     @dismiss="highlightShowing = false"
     :target-el="highlightTarget ? highlightTarget.$el : null"

@@ -51,9 +51,8 @@ const popoverIconTargetShowing = ref(false)
       </w-button>
       <w-attention
         tooltip
-        placement="right-start"
+        placement="right"
         flip
-        :fallback-placements="['bottom', 'top']"
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
       >
