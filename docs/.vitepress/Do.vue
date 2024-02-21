@@ -1,8 +1,23 @@
+<!--
+// USAGE
+// <do>This is a nice do box</do>
+// <do not>This is a nice do not box</do>
+// <do imgurl="..." imgalt="Description of image"></do>
+// <do darkmode>This is a nice do box with a dark background.</do>
+//
+// LAYOUT
+// We might put these inside a <do-dont-grid></do-dont-grid> for some automagic layout love, or set up any other layout if that is wanted.
+// <do-dont-grid><do>Simple example</do></do-dont-grid>
+//
+// The grid will always try to put do's to the left and dont's to the right. Any combination and number of these can be entered into the grid.
+-->
+
 <script setup>
 const props = defineProps({
   not: Boolean,
   imgurl: String,
   imgalt: String,
+  darkmode: Boolean,
 });
 </script>
 
@@ -21,7 +36,7 @@ const props = defineProps({
       </svg>
       Do{{not?'n\'t':''}}
     </h3>
-    <div v-if="imgurl" class="do-figure">
+    <div v-if="imgurl" class="do-figure" v-bind:class="[darkmode ? 'darkmode': 'lightmode']">
       <img :src="imgurl" :alt="imgalt">
     </div>
     <div class="do-caption">
@@ -52,14 +67,16 @@ const props = defineProps({
     border-radius: 5px;
     aspect-ratio: 4 / 3;
     overflow: hidden;
-    background-color: #ccc;
+    background-color: #F1F1F1;
     margin-bottom: 16px;
 
     img {
       max-width: 80%
     }
+    &.darkmode {
+      background-color: #333
+    }
   }
-
   &.do-not {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -70,3 +87,4 @@ const props = defineProps({
   }
 }
 </style>
+
