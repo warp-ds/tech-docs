@@ -2057,10 +2057,16 @@ export const iOS = {
     ],
     props: [
       [
-        'icon',
+        'leadingIcon',
         'Image?',
         'nil',
-        'Sets the button image beside the title',
+        'Sets the button image leading the title',
+      ],
+      [
+        'trailingIcon',
+        'Image?',
+        'nil',
+        'Sets the button image trailing the title',
       ],
       [
         'size',
