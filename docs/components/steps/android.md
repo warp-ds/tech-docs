@@ -58,7 +58,7 @@ VerticalWarpStepIndicator(
     stepDescription = { descriptions[it] }
 ) {
     /** Shows a "Continue" button while on the active step and a "Reset" button on all the other steps. 
-    Clicking the "Continue" button will mark the current step ad complete and take the user forward by 1 step. 
+    Clicking the "Continue" button will mark the current step as complete and take the user forward by 1 step. 
     Clicking on the "Reset" button will take the user to that step and mark it as active in addition to marking all the previous steps as incomplete.**/
     Column(modifier = Modifier.padding(vertical = dimensions.space1)) {
         WarpText(
