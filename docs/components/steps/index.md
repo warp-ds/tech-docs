@@ -1,13 +1,14 @@
 <script setup>
 import Vue from './vue.md';
 import React from './react.md';
+import Android from './android.md';
 </script>
 
 # Steps
 
 The steps component is built to handle user journeys, making it clear to the end user where they are in the process.
 
-<components-status react='released' vue='released' />
+<components-status react='released' vue='released' android='released' />
 
 ## Examples
 
@@ -29,5 +30,8 @@ The steps component is built to handle user journeys, making it clear to the end
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>

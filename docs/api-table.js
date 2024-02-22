@@ -1977,6 +1977,60 @@ export const android = {
       ],
     ],
   },
+  StepIndicator: {
+    required: [
+    [
+      'steps', 
+      'Int', 
+      '', 
+      'The amount of steps in the indicator'
+    ],
+    [
+      'stepContent',
+      '@Composable (Int) -> Unit',
+      '',
+      'The custom content between the steps. Vertical orientation only',
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the step indicator',
+      ],
+      [
+        'activeStep', 
+        'Int', 
+        '0', 
+        'The active step in the step indicator'
+      ],
+      [
+        'onStepClicked', 
+        '(Int) -> Unit', 
+        'null', 
+        'Lambda for the step click action, returns the integer value of the step clicked'
+      ],
+      [
+        'stepContentDescription', 
+        '@Composable (Int) -> String', 
+        'null', 
+        'The content description of the step. Used for accessibility purposes'
+      ],
+      [
+        'stepTitle', 
+        '(Int) -> String', 
+        'null', 
+        'Lambda for the step title, returns the integer value of the step'
+      ],
+      [
+        'stepDescription', 
+        '(Int) -> String', 
+        'null', 
+        'Lambda for the step description, returns the integer value of the step'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
