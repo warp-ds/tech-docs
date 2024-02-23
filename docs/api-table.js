@@ -512,11 +512,10 @@ export const react = {
       ['label', 'any', '', 'The label of the tab item'],
     ],
     props: [
-      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
-      ['isActive', 'boolean', '', 'Additional CSS class for the container'],
-      ['style', 'any', '', 'Additional CSS styles for the Tab'],
       ['isActive', 'boolean', '', 'Used to set which tab should be active on mount. Defaults to the first tab if not present'],
+      ['over', 'boolean', 'false', 'Set the over prop to true if you need to move icons to above the tab label'],
       ['className', 'string', '', 'Additional CSS class for the container'],
+      ['style', 'any', '', 'Additional CSS styles for the Tab'],
     ],
     events: [
       ['setActive', '(name: string)', 'false', ''],
@@ -1182,8 +1181,14 @@ export const vue = {
   },
   Tab: {
     required: [
-      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs onChange handler'],
-      ['label', 'any', '', 'The label of the tab item'],
+      ['name', 'string', '', 'Tab name identifier. This value will be omitted as the argument to the Tabs setActive handler'],
+    ],
+    props: [
+      ['label', 'string', '', 'Interchangeable with the `label slot` for labelling'],
+    ],
+    slots: [
+      ['default', 'Default slot - mainly used for icons'],
+      ['label', 'Label for the tab (renders below default slot)'],
     ],
   },
   TabPanel: {
@@ -1192,8 +1197,7 @@ export const vue = {
     ],
   },
   Tabs: {
-    required: [['children', 'Element[]', '', 'The tabs within the container']],
-    events: [['v-model', 'string', '', 'Name of the active element']],
+    required: [['v-model', 'string', '', 'Name of the active tab (set by the Tab component via the setActive handler)']],
   },
   TextField: {
     required: [],
@@ -1987,6 +1991,60 @@ export const android = {
       ],
     ],
   },
+  StepIndicator: {
+    required: [
+    [
+      'steps', 
+      'Int', 
+      '', 
+      'The amount of steps in the indicator'
+    ],
+    [
+      'stepContent',
+      '@Composable (Int) -> Unit',
+      '',
+      'The custom content between the steps. Vertical orientation only',
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the step indicator',
+      ],
+      [
+        'activeStep', 
+        'Int', 
+        '0', 
+        'The active step in the step indicator'
+      ],
+      [
+        'onStepClicked', 
+        '(Int) -> Unit', 
+        'null', 
+        'Lambda for the step click action, returns the integer value of the step clicked'
+      ],
+      [
+        'stepContentDescription', 
+        '@Composable (Int) -> String', 
+        'null', 
+        'The content description of the step. Used for accessibility purposes'
+      ],
+      [
+        'stepTitle', 
+        '(Int) -> String', 
+        'null', 
+        'Lambda for the step title, returns the integer value of the step'
+      ],
+      [
+        'stepDescription', 
+        '(Int) -> String', 
+        'null', 
+        'Lambda for the step description, returns the integer value of the step'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
@@ -2013,10 +2071,16 @@ export const iOS = {
     ],
     props: [
       [
-        'icon',
+        'leadingIcon',
         'Image?',
         'nil',
-        'Sets the button image beside the title',
+        'Sets the button image leading the title',
+      ],
+      [
+        'trailingIcon',
+        'Image?',
+        'nil',
+        'Sets the button image trailing the title',
       ],
       [
         'size',

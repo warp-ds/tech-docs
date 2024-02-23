@@ -6,7 +6,8 @@
 Warp.Button.create(
         for buttonType: Warp.ButtonType,
         title: String,
-        icon: Image? = nil,
+        leadingIcon: Image? = nil,
+        trailingIcon: Image? = nil,
         action: @escaping () -> Void,
         size: Warp.ButtonSize = .big,
         isEnabled: Bool = true,

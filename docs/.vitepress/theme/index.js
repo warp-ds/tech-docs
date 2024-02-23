@@ -5,6 +5,8 @@ import ThemeSwitcher from '../ThemeSwitcher.vue';
 import ComponentDesignGuidelines from '../../components/ComponentDesignGuidelines.md';
 import ComponentQuestions from '../../components/ComponentQuestions.md';
 import ComponentsStatus from '../ComponentsStatus.vue';
+import Do from '../Do.vue';
+import DoDont from '../DoDont.vue';
 import '../bootExamples.js';
 import './custom.css';
 
@@ -17,5 +19,7 @@ export default {
     app.component('ComponentDesignGuidelines', ComponentDesignGuidelines);
     app.component('ComponentQuestions', ComponentQuestions);
     app.component('ComponentsStatus', ComponentsStatus);
+    app.component('Do', Do);
+    app.component('DoDont', DoDont);
   },
 };
