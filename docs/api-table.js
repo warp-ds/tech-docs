@@ -53,9 +53,9 @@ export const react = {
       ['noArrow', 'boolean', 'false', 'Render Attention component without arrow'],
       ['canClose', 'boolean', 'false', 'Whether a close button is shown'],
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
-      ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally'],
+      ['skidding', 'number', '0', "Distance from which to offset the Attention component along its targetEl horizontally. Can alter the opposite placement's positioning if used when `flip` is set to true."],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`'],
+      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['onDismiss', '() => void', '', 'Called when user clicks the close button or presses Escape when the button is in focus.'],
@@ -826,9 +826,9 @@ export const vue = {
       ['no-arrow', 'boolean', 'false', 'Render Attention component without arrow'],
       ['can-close', 'boolean', 'false', 'Whether a close button is shown'],
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
-      ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally'],
+      ['skidding', 'number', '0', "Distance from which to offset the Attention component along its targetEl horizontally. Can alter the opposite placement's positioning if used when `flip` is set to true."],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`'],
+      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`.  Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@dismiss', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.'],
@@ -1274,9 +1274,9 @@ export const elements = {
       ['no-arrow', 'boolean', 'false', 'Render Attention element without an arrow'],
       ['can-close', 'boolean', 'false', 'Render Attention element with a close button'],
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
-      ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally'],
+      ['skidding', 'number', '0', "Distance from which to offset the Attention component along its targetEl horizontally. Can alter the opposite placement's positioning if used when `flip` is set to true."],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`'],
+      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@close', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.']
