@@ -15,8 +15,24 @@ import { wPill } from "@warp-ds/vue";
 
 ### Syntax
 
+#### Filter Pill
 ```vue
-<w-pill suggestion label="Suggestion pill" />
+<w-pill label="Filter Pill" />
+```
+
+#### Closable Filter Pill
+```vue
+<w-pill can-close label="Closable Filter Pill" />
+```
+
+#### Suggestion Pill
+```vue
+<w-pill suggestion label="Suggestion Pill" />
+```
+
+#### Closable Suggestion Pill
+```vue
+<w-pill suggestion can-close label="Closable Suggestion Pill" />
 ```
 
 ### Props

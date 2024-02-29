@@ -1126,7 +1126,7 @@ export const vue = {
     required: [],
     props: [
       ['label', 'string', 'undefined', 'The text content of the pill.'],
-      ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['can-close', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
       ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
     ],
     events: [['close', 'the close button is pressed']],

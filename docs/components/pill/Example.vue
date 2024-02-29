@@ -4,8 +4,10 @@
 
 <template>
   <div class="flex space-x-8 component">
-    <w-pill label="Standard pill" />
-    <w-pill suggestion label="Suggestion pill" />
-    <w-pill can-close label="Closable pill" />
+    <w-pill label="Filter Pill" />
+    <w-pill can-close label="Closable Filter Pill" />
+    <w-pill suggestion label="Suggestion Pill" />
+    <w-pill suggestion can-close label="Closable Suggestion Pill" />
+
   </div>
 </template>
