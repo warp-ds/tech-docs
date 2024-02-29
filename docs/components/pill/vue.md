@@ -20,9 +20,19 @@ import { wPill } from "@warp-ds/vue";
 <w-pill label="Filter Pill" />
 ```
 
+#### Filter Pill with changed pill screen reader label
+```vue
+ <w-pill label="Filter Pill" open-SR-label='Activate Filter'/>
+```
+
 #### Closable Filter Pill
 ```vue
 <w-pill can-close label="Closable Filter Pill" />
+```
+
+#### Closable Filter Pill with changed close button screen reader label
+```vue
+    <w-pill can-close label="Closable Filter Pill" close-SR-label='Deactivate Filter'/>
 ```
 
 #### Suggestion Pill

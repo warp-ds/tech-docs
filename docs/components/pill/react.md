@@ -11,9 +11,19 @@ import { Pill } from "@warp-ds/react";
 <Pill label="Filter Pill" />
 ```
 
+#### Filter Pill with changed pill screen reader label
+```jsx
+<Pill label="Filter Pill" openSRLabel="Activate Filter" />
+```
+
 #### Closable Filter Pill
 ```jsx
 <Pill canClose label="Closable Filter Pill" />
+```
+
+#### Closable Filter Pill with changed close button screen reader label
+```jsx
+<Pill canClose label="Closable Filter Pill" closeSRLabel="Deactivate Filter" />
 ```
 
 #### Suggestion Pill
