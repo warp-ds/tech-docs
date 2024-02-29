@@ -1427,6 +1427,20 @@ export const elements = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
+  Pill: {
+    required: [],
+    props: [
+      ['open-sr-label', 'string', '"Open filter"', 'Label read by screen readers when targeting the pill'],
+      ['close-sr-label', 'string', '"Remove filter {label}"', 'Label read by screen readers when targeting the close button'],
+      ['can-close', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
+    ],
+    events: [
+      ['w-pill-click', 'Event to be called when the pill is clicked.'],
+      ['w-pill-close', 'Event to be called when the close button is clicked.']
+    ],
+  },
+
   TextField: {
     required: [],
     props: [
