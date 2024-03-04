@@ -1,6 +1,7 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import Elements from './elements.md';
   import Android from './android.md';
   import iOS from './ios.md';
 </script>
@@ -9,7 +10,7 @@
 
 Pill is a type of button that is often used as a filter, but can also be used as a rounded button for overlays, etc.
 
-<components-status react='released' vue='released' android='released' ios='released' />
+<components-status react='released' vue='released' elements='released' android='released' ios='released' />
 
 ## Example
 
@@ -31,6 +32,9 @@ Pill is a type of button that is often used as a filter, but can also be used as
   </template>
   <template #vue>
     <vue />
+  </template>
+   <template #elements>
+    <elements />
   </template>
   <template #android>
     <android />
