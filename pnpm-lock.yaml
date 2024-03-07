@@ -12,14 +12,14 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@warp-ds/react':
-    specifier: 1.4.3-next.3
-    version: 1.4.3-next.3(react@18.2.0)
+    specifier: 1.4.3
+    version: 1.4.3(react@18.2.0)
   '@warp-ds/uno':
     specifier: 1.9.0
     version: 1.9.0
   '@warp-ds/vue':
-    specifier: 1.2.5-next.2
-    version: 1.2.5-next.2
+    specifier: 1.2.5
+    version: 1.2.5
   decamelize:
     specifier: ^6.0.0
     version: 6.0.0
@@ -1509,8 +1509,8 @@ packages:
       '@lingui/core': 4.7.0
     dev: true
 
-  /@warp-ds/react@1.4.3-next.3(react@18.2.0):
-    resolution: {integrity: sha512-1e0Q9SFsEQezLPtbAKKAwLy331Wji53/3O9WEjBb2YhLBhLOm3xROqWhyOkugITgIprhvdUSBfMh7FcpxtLtXA==}
+  /@warp-ds/react@1.4.3(react@18.2.0):
+    resolution: {integrity: sha512-PckSQcpCIhsabWDGHSyzKf0qieM9Al5FlaG004tw+Dt+B5d82ZHb3hqCWZAl36X54ItURezemuhooka1/tx0Xw==}
     peerDependencies:
       react: 18.2.0
     dependencies:
@@ -1543,8 +1543,8 @@ packages:
       '@unocss/rule-utils': 0.58.5
     dev: true
 
-  /@warp-ds/vue@1.2.5-next.2:
-    resolution: {integrity: sha512-lCF58GAkKvAy5hIXXFtXzUfKo8JXyC+Gn6yp7Py4kSc2kE9v0GVO84zn54u9MaXSE//yidtAl9Eom5KqoE4Bmg==}
+  /@warp-ds/vue@1.2.5:
+    resolution: {integrity: sha512-ZeseIMCS199NV+aO0/VWR7Mafvvj527ReHay8fDejV8gnQ2HZiuSTlWatD+lKXxn5aHZqgtFyf38AktZ5kipHA==}
     dependencies:
       '@floating-ui/dom': 1.6.3
       '@lingui/core': 4.7.0
