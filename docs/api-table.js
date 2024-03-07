@@ -780,7 +780,7 @@ export const react = {
       ['checked', 'boolean', '', 'Whether the single option should be checked (controlled)'],
       ['defaultChecked', 'boolean', '', 'Whether the single option should be checked on mount (uncontrolled)'],
       ['indeterminate', 'boolean', '', 'Whether a single option is indeterminate, or "partially checked." The checkbox will appear with a small dash instead of a tick to indicate that the option is not exactly checked or unchecked.'],
-      ['optional', 'boolean', '', 'Whether the toggle is optional Appends (valgfritt) to the end of the title for indication'],
+      ['optional', 'boolean', '', 'Whether the toggle is optional Appends (optional) to the end of the title for indication'],
       ['className', 'string', '', 'Custom classes applied to the wrapping container'],
       ['equalWidth', 'boolean', '', 'Will make each option equal width, only applied when "radio-button" type is set'],
       ['small', 'boolean', '', 'Whether the elements should be small, only applied when "radio-button" type is set'],
