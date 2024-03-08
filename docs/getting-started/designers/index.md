@@ -18,7 +18,7 @@ For a more visual introduction, check out [the 'Start here' file in Figma](https
 
 ## Figma, Warp component overview & libraries
 
-In Schibsted Marketplaces we use Figma as the main tool for all our design related tasks. Licenses are provided by e-tech and you will find the Figma application while logging in to [Okta](https://schibsted.okta.com/app/UserHome). Please see [Figma Downloads](https://www.figma.com/downloads/) to get started with the desktop application of your choice.
+In Nordic Marketplaces we use Figma as the main tool for all our design related tasks. Licenses are provided by e-tech and you will find the Figma application while logging in to [Okta](https://schibsted.okta.com/app/UserHome). Please see [Figma Downloads](https://www.figma.com/downloads/) to get started with the desktop application of your choice.
 
 ### Warp components overview
 
