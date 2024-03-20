@@ -7,7 +7,7 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "@warp-ds/css": "1.8.4",
+    "@warp-ds/css": "1.9.1",
     "@warp-ds/icons": "2.0.0",
     "@warp-ds/react": "1.4.3",
     "@warp-ds/uno": "1.9.0",
