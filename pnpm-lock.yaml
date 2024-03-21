@@ -12,14 +12,14 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@warp-ds/react':
-    specifier: 1.4.3
-    version: 1.4.3(react@18.2.0)
+    specifier: 1.4.4
+    version: 1.4.4(react@18.2.0)
   '@warp-ds/uno':
     specifier: 1.9.0
     version: 1.9.0
   '@warp-ds/vue':
-    specifier: 1.2.5
-    version: 1.2.5
+    specifier: 1.2.6
+    version: 1.2.6
   decamelize:
     specifier: ^6.0.0
     version: 6.0.0
@@ -1492,13 +1492,6 @@ packages:
       '@floating-ui/dom': 0.5.4
     dev: true
 
-  /@warp-ds/css@1.8.4:
-    resolution: {integrity: sha512-SGX3bORF13I20XzCg4Ab0FlUe7Yj4XUH1/klu+NeCVrIWymPhExgFTbFJrs+9RvTKh81d4/IFiyiqdHSpRG6iw==}
-    dependencies:
-      '@warp-ds/tokenizer': 0.0.4
-      '@warp-ds/uno': 1.9.0
-    dev: true
-
   /@warp-ds/css@1.9.1:
     resolution: {integrity: sha512-AlfEwB0ernCxA/TccSElR2sJcTP6crEJthBHBvJyqi+TpUFE8R/8oCdw2Lh4rDCG3b86dtfthi1hzp9JN0LK9w==}
     dependencies:
@@ -1512,15 +1505,15 @@ packages:
       '@lingui/core': 4.7.0
     dev: true
 
-  /@warp-ds/react@1.4.3(react@18.2.0):
-    resolution: {integrity: sha512-PckSQcpCIhsabWDGHSyzKf0qieM9Al5FlaG004tw+Dt+B5d82ZHb3hqCWZAl36X54ItURezemuhooka1/tx0Xw==}
+  /@warp-ds/react@1.4.4(react@18.2.0):
+    resolution: {integrity: sha512-pGHxj1yMLEkBJSGLrJRmzWOdCrO7A9AxSRHjYHRvLYmNBe6Y2bqNMVVfyIDUbRrlHd+9Sj3/9iYhon8O0jZ4cw==}
     peerDependencies:
       react: 18.2.0
     dependencies:
       '@chbphone55/classnames': 2.0.0
       '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.8.4
+      '@warp-ds/css': 1.9.1
       '@warp-ds/icons': 2.0.0
       '@warp-ds/uno': 1.9.0
       react: 18.2.0
@@ -1546,13 +1539,13 @@ packages:
       '@unocss/rule-utils': 0.58.5
     dev: true
 
-  /@warp-ds/vue@1.2.5:
-    resolution: {integrity: sha512-ZeseIMCS199NV+aO0/VWR7Mafvvj527ReHay8fDejV8gnQ2HZiuSTlWatD+lKXxn5aHZqgtFyf38AktZ5kipHA==}
+  /@warp-ds/vue@1.2.6:
+    resolution: {integrity: sha512-L3lTJMzf1e8FWRUJVgJAEyUMLcjIkquCei9zqNT5s9jaodiPWmFJ1JXkW49GeBWDZpTSQkhlE+pwNYBhSdPPtg==}
     dependencies:
       '@floating-ui/dom': 1.6.3
       '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.8.4
+      '@warp-ds/css': 1.9.1
       '@warp-ds/icons': 2.0.0
       '@warp-ds/uno': 1.9.0
       create-v-model: 2.2.0
