@@ -25,15 +25,6 @@ Style fixes for invalid form components, Tori links; rework of tokens (dark mode
 
 [Changelog](https://github.com/warp-ds/css/releases)
 
-## @warp-ds/elements@1.3.2
-
-### Bug fixes
-
-* **text-field/select:** use correct colors in label and error text ([#139](https://github.com/warp-ds/elements/issues/139)) ([c9045fd](https://github.com/warp-ds/elements/commit/c9045fd733aa64395fdb50b52a6329e9ae774c03))
-
-[Changelog](https://github.com/warp-ds/elements/releases)
-
-
 ## @warp-ds/react@1.4.4
 
 ### Bug Fixes
