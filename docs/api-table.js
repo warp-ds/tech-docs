@@ -55,7 +55,7 @@ export const react = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally.'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`. Can only be used when `flip` is set to true.'],
+      ['fallbackPlacements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['onDismiss', '() => void', '', 'Called when user clicks the close button or presses Escape when the button is in focus.'],
@@ -827,7 +827,7 @@ export const vue = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`.  Can only be used when `flip` is set to true.'],
+      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`.  Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@dismiss', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.'],
@@ -1285,7 +1285,7 @@ export const elements = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally.'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', '[oppositePlacement]', 'Choose which preferred placements the Attention element should flip to. Default is opposite value of `placement`. Can only be used when `flip` is set to true.'],
+      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@close', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.']
