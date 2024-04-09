@@ -383,8 +383,8 @@ export const react = {
       ['label', 'string', 'undefined', 'The text content of the pill.'],
       ['~~icon~~', 'ReactNode', 'undefined', 'Used to render an icon inside the pill. You can pass any valid HTML. This will override the label property. @deprecated Do not use.'],
       ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
-      ['openSRLabel', 'string', 'Åpne filter', 'Label read by screen readers when targeting the pill.'],
-      ['closeSRLabel', 'string', 'undefined', 'Label read by screen readers when targeting the close button.'],
+      ['openSRLabel', 'string', '"Open filter"', 'Label read by screen readers when targeting the pill.'],
+      ['closeSRLabel', 'string', '"Remove filter {label}"', 'Label read by screen readers when targeting the close button.'],
       ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
       ['className', 'string', 'undefined', 'Additional classes applied to the button element of the pill as long as canClose is set to false.'],
     ],
@@ -781,11 +781,11 @@ export const react = {
       ['noVisibleLabel', 'boolean', '', 'Whether label should be invisible'],
       ['checked', 'boolean', '', 'Whether the single option should be checked (controlled)'],
       ['defaultChecked', 'boolean', '', 'Whether the single option should be checked on mount (uncontrolled)'],
-      ['small', 'boolean', '', 'Whether the elements should be small'],
-      ['optional', 'boolean', '', 'Whether the toggle is optional Appends (valgfritt) to the end of the title for indication'],
-      ['equalWidth', 'boolean', '', 'Will make each radio-button equal width'],
       ['indeterminate', 'boolean', '', 'Whether a single option is indeterminate, or "partially checked." The checkbox will appear with a small dash instead of a tick to indicate that the option is not exactly checked or unchecked.'],
+      ['optional', 'boolean', '', 'Whether the toggle is optional Appends (optional) to the end of the title for indication'],
       ['className', 'string', '', 'Custom classes applied to the wrapping container'],
+      ['equalWidth', 'boolean', '', 'Will make each option equal width, only applied when "radio-button" type is set'],
+      ['small', 'boolean', '', 'Whether the elements should be small, only applied when "radio-button" type is set'],
     ],
   },
 };
@@ -1136,8 +1136,10 @@ export const vue = {
     required: [],
     props: [
       ['label', 'string', 'undefined', 'The text content of the pill.'],
-      ['canClose', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['can-close', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
       ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
+      ['open-SR-label', 'string', '"Open filter"', 'Label read by screen readers when targeting the pill'],
+      ['close-SR-label', 'string', '"Remove filter {label}"', 'Label read by screen readers when targeting the close button'],
     ],
     events: [['close', 'the close button is pressed']],
   },
@@ -1233,9 +1235,12 @@ export const vue = {
         '',
         '',
       ],
-      ['equal-width', 'boolean', '', 'Will make each radio-button equal width'],
-      ['small', 'boolean', '', 'Will make radio-buttons small size'],
       ['toggles', 'array', '', 'An array of objects. Each object must at least have a value and label attribute. Any other attributes will be transferred directly to the individual toggle'],
+      ['invalid', 'boolean', '', 'Whether elements should be styled as invalid',],
+      ['disabled', 'boolean', '', 'Whether elements should be styled as disabled',],
+      ['indeterminate', 'boolean', '', 'Whether a single option is indeterminate, or "partially checked." The checkbox will appear with a small dash instead of a tick to indicate that the option is not exactly checked or unchecked.'],
+      ['equal-width', 'boolean', '', 'Will make each option equal width, only applied when radio-button is set'],
+      ['small', 'boolean', '', 'Whether the elements should be small, only applied when radio-button is set'],
     ],
   },
 };
@@ -1441,6 +1446,20 @@ export const elements = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
+  Pill: {
+    required: [],
+    props: [
+      ['open-sr-label', 'string', '"Open filter"', 'Label read by screen readers when targeting the pill'],
+      ['close-sr-label', 'string', '"Remove filter {label}"', 'Label read by screen readers when targeting the close button'],
+      ['can-close', 'boolean', 'false', 'Whether the pill should be removable via a close button.'],
+      ['suggestion', 'boolean', 'false', 'Whether the pill should be rendered as a suggestion.'],
+    ],
+    events: [
+      ['w-pill-click', 'Event to be called when the pill is clicked.'],
+      ['w-pill-close', 'Event to be called when the close button is clicked.']
+    ],
+  },
+
   TextField: {
     required: [],
     props: [
