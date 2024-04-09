@@ -43,7 +43,7 @@ Style fixes for invalid form components, Tori links; rework of tokens (dark mode
 
 [Changelog](https://github.com/warp-ds/react/releases)
 
-## @warp-ds/vue@1.2.6
+## @warp-ds/vue@1.2.7
 
 ### Bug Fixes
 
