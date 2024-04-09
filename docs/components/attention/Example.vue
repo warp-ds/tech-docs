@@ -99,8 +99,8 @@ const popoverIconTargetShowing = ref(false)
         <w-attention
           popover
           placement="right-end"
-          :distance="-8"
-          :skidding="27"
+          :distance="-6"
+          :skidding="15"
           :target-el="popoverIconTarget ? popoverIconTarget.$el : null"
           v-model="popoverIconTargetShowing"
         >

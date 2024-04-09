@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@warp-ds/css':
-    specifier: 1.8.4
-    version: 1.8.4
+    specifier: 1.9.1
+    version: 1.9.1
   '@warp-ds/icons':
     specifier: 2.0.0
     version: 2.0.0
@@ -18,8 +18,8 @@ devDependencies:
     specifier: 1.9.0
     version: 1.9.0
   '@warp-ds/vue':
-    specifier: 1.2.5
-    version: 1.2.5
+    specifier: 1.2.6
+    version: 1.2.6
   decamelize:
     specifier: ^6.0.0
     version: 6.0.0
@@ -1503,6 +1503,13 @@ packages:
       '@warp-ds/uno': 1.9.0
     dev: true
 
+  /@warp-ds/css@1.9.1:
+    resolution: {integrity: sha512-AlfEwB0ernCxA/TccSElR2sJcTP6crEJthBHBvJyqi+TpUFE8R/8oCdw2Lh4rDCG3b86dtfthi1hzp9JN0LK9w==}
+    dependencies:
+      '@warp-ds/tokenizer': 0.0.4
+      '@warp-ds/uno': 1.9.0
+    dev: true
+
   /@warp-ds/icons@2.0.0:
     resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
     dependencies:
@@ -1543,13 +1550,13 @@ packages:
       '@unocss/rule-utils': 0.58.5
     dev: true
 
-  /@warp-ds/vue@1.2.5:
-    resolution: {integrity: sha512-ZeseIMCS199NV+aO0/VWR7Mafvvj527ReHay8fDejV8gnQ2HZiuSTlWatD+lKXxn5aHZqgtFyf38AktZ5kipHA==}
+  /@warp-ds/vue@1.2.6:
+    resolution: {integrity: sha512-L3lTJMzf1e8FWRUJVgJAEyUMLcjIkquCei9zqNT5s9jaodiPWmFJ1JXkW49GeBWDZpTSQkhlE+pwNYBhSdPPtg==}
     dependencies:
       '@floating-ui/dom': 1.6.3
       '@lingui/core': 4.7.0
       '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.8.4
+      '@warp-ds/css': 1.9.1
       '@warp-ds/icons': 2.0.0
       '@warp-ds/uno': 1.9.0
       create-v-model: 2.2.0
