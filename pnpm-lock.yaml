@@ -18,8 +18,8 @@ devDependencies:
     specifier: 1.9.0
     version: 1.9.0
   '@warp-ds/vue':
-    specifier: 1.2.6
-    version: 1.2.6
+    specifier: 1.2.7
+    version: 1.2.7
   decamelize:
     specifier: ^6.0.0
     version: 6.0.0
@@ -1539,8 +1539,8 @@ packages:
       '@unocss/rule-utils': 0.58.5
     dev: true
 
-  /@warp-ds/vue@1.2.6:
-    resolution: {integrity: sha512-L3lTJMzf1e8FWRUJVgJAEyUMLcjIkquCei9zqNT5s9jaodiPWmFJ1JXkW49GeBWDZpTSQkhlE+pwNYBhSdPPtg==}
+  /@warp-ds/vue@1.2.7:
+    resolution: {integrity: sha512-D0Dv6Ljpo/3ObZ+hj1i1jLSCDPIIMndqIpm0uLqrLV+bbGN6KxOYXD0euMPB3+YoAfFTSq+PubOqlTfoeepQjg==}
     dependencies:
       '@floating-ui/dom': 1.6.3
       '@lingui/core': 4.7.0
