@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/css/component-classes/classes';
+import { supported } from '../supported.js';
 
 const base = '/tech-docs';
 
@@ -11,7 +12,7 @@ const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16',
 'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100',
 'max-w-screen-xl', 'mx-auto', 'px-32', 's-bg-active', 'rounded-8', 'p-24', 'mb-24', 'grid', 'gap-24', 'mx-auto', 'mb-8',
 's-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
-'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display', 
+'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display',
 't1', 't2', 't3', 't4', 't5', 't6', 'text-preamble', 'text-body', 'text-caption', 'text-detail', 's-bg-inverted', 'text-center', 's-text-negative',
 'flex-1'];
 
@@ -107,7 +108,7 @@ export default defineConfig({
           text: 'Getting started',
           collapsed: true,
           items: [
-            { text: 'Developers', 
+            { text: 'Developers',
             collapsed: true,
             items: [
               { text: 'Web', link: '/getting-started/developers/' },
@@ -124,6 +125,20 @@ export default defineConfig({
           items: [
             { text: 'Developers guide', link: '/migration/developers/' },
             { text: 'Designers guide', link: '/migration/designers/' },
+          ],
+        },
+        {
+          text: 'Classes',
+          collapsed: true,
+          items: [
+            {
+              text: 'Layout',
+              collapsed: true,
+              items: [
+                { text: 'Aspect Ratio', link: '/classes/aspect-ratio' },
+                { text: 'Display', link: '/classes/display' },
+              ],
+            },
           ],
         },
         {

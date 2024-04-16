@@ -7,12 +7,16 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
+    "@itsy/okay": "^0.0.4",
+    "@unocss/core": "^0.58.5",
+    "@vueuse/core": "^10.9.0",
     "@warp-ds/css": "^1.8.3",
     "@warp-ds/icons": "2.0.0",
     "@warp-ds/react": "1.4.2",
     "@warp-ds/uno": "^1.8.1",
     "@warp-ds/vue": "^1.2.4",
     "decamelize": "^6.0.0",
+    "camelcase": "^8.0.0",
     "markdown-it": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

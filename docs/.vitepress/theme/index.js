@@ -7,6 +7,9 @@ import ComponentQuestions from '../../components/ComponentQuestions.md';
 import ComponentsStatus from '../ComponentsStatus.vue';
 import Do from '../Do.vue';
 import DoDont from '../DoDont.vue';
+import Container from '../Container.vue';
+import QrTable from '../qr-table.vue';
+import WidthController from '../WidthController.vue';
 import '../bootExamples.js';
 import './custom.css';
 
@@ -21,5 +24,8 @@ export default {
     app.component('ComponentsStatus', ComponentsStatus);
     app.component('Do', Do);
     app.component('DoDont', DoDont);
+    app.component('Container', Container);
+    app.component('WidthController', WidthController);
+    app.component('QrTable', QrTable);
   },
 };
