@@ -2,7 +2,7 @@ import { createContentLoader } from "vitepress";
 
 const base = '/tech-docs';
 
-export default createContentLoader("/blog/posts/*.md", {
+export default createContentLoader("/blog/posts/**/*.md", {
   includeSrc: true, // include raw markdown source?
   render: true, // include rendered full page HTML?
   excerpt: true, // include excerpt?

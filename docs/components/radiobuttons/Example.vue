@@ -3,6 +3,7 @@ import { wToggle, wButton } from '@warp-ds/vue';
 import { ref } from 'vue';
 
 const isJustified = ref(false);
+const multiToggleModelSmall = ref('');
 const multiToggleModel = ref('');
 
 const toggles = [
@@ -12,12 +13,15 @@ const toggles = [
 </script>
 
 <template>
-  <div class="component">
-    <h3 class="h4">Default</h3>
-    <w-toggle radio-button :equal-width="isJustified" v-model="multiToggleModel" label="A very toggly label" :toggles="toggles" class="mb-32" />
+  <div class="component space-y-16">
+    <h3 class="t4">Default</h3>
+    <w-toggle id="radio-button-group" radio-button :equal-width="isJustified" v-model="multiToggleModel" label="Radio-button Toggle" :toggles="toggles" />
+
+    <h3 class="t4">Small</h3>
+    <w-toggle id="radio-button-group-small" small radio-button :equal-width="isJustified" v-model="multiToggleModelSmall" label="Small Radio-button Toggle" :toggles="toggles" />
 
     <demo-controls>
-      <w-button small utility @click="isJustified = !isJustified">{{ isJustified ? 'Unjustify' : 'Justify' }}</w-button>
+      <w-button aria-controls="radio-button-group" small utility @click="isJustified = !isJustified">{{ isJustified ? 'Unjustify radio button groups' : 'Justify radio button groups' }}</w-button>
     </demo-controls>
   </div>
 </template>
