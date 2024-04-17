@@ -139,6 +139,13 @@ export default defineConfig({
                 { text: 'Display', link: '/classes/display' },
               ],
             },
+            {
+              text: 'Backgrounds',
+              collapsed: true,
+              items: [
+                { text: 'Background Color', link: '/classes/background-color' },
+              ],
+            },
           ],
         },
         {

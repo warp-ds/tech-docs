@@ -9,7 +9,9 @@ import Do from '../Do.vue';
 import DoDont from '../DoDont.vue';
 import Container from '../Container.vue';
 import QrTable from '../qr-table.vue';
+import QrColorTable from '../qr-color-table.vue';
 import WidthController from '../WidthController.vue';
+import Box from '../Box.vue';
 import '../bootExamples.js';
 import './custom.css';
 
@@ -27,5 +29,7 @@ export default {
     app.component('Container', Container);
     app.component('WidthController', WidthController);
     app.component('QrTable', QrTable);
+    app.component('QrColorTable', QrColorTable);
+    app.component('Box', Box);
   },
 };
