@@ -7,7 +7,7 @@ const registerSelf = () => widthController?.register(el.value)
 onMounted(registerSelf)
 </script>
 
-<style>
+<style scoped>
 .wd-container{
   margin-right: 0px;
   border-color: var(--vp-c-border);
