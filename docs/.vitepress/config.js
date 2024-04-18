@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { presetDocs } from '@warp-ds/preset-docs';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
 import { classes } from '@warp-ds/css/component-classes/classes';
@@ -39,11 +40,23 @@ export default defineConfig({
   vite: {
     plugins: [
       uno({
-        presets: [presetWarp()],
+        presets: [presetWarp(), presetDocs()],
         mode: 'shadow-dom',
         safelist: [...classes, ...docsClasses],
       }),
-          ],
+      uno({
+        presets: [presetWarp(), presetDocs()],
+        shortcuts: [
+          {
+            'ex-font':
+                'pd-text-sm font-bold pd-font-mono pd-text-white',
+            'ex-box':
+                'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
+          },
+        ],
+        safelist: supported
+      }),
+    ],
   },
   head: [
     [
@@ -58,16 +71,23 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css'
-      }
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css',
+      },
     ],
     [
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/tori-fi.css'
-      }
-    ]
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/tori-fi.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css',
+      },
+    ],
   ],
   themeConfig: {
     search: { provider: 'local' },

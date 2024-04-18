@@ -141,7 +141,7 @@ window.__unocss = {
   presets: [presetWarp()],
 };
 
-initUnossRuntime();
+initUnocssRuntime();
 ```
 
 ---
