@@ -40,21 +40,17 @@ export default defineConfig({
   vite: {
     plugins: [
       uno({
-        presets: [presetWarp(), presetDocs()],
+        presets: [presetWarp()],
         mode: 'shadow-dom',
         safelist: [...classes, ...docsClasses],
       }),
       uno({
-        presets: [presetWarp(), presetDocs()],
-        shortcuts: [
-          {
-            'ex-font':
-                'pd-text-sm font-bold pd-font-mono pd-text-white',
-            'ex-box':
-                'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
-          },
-        ],
-        safelist: supported
+        presets: [presetWarp({ skipResets: true }), presetDocs()],
+        shortcuts: [{
+          'ex-font': 'pd-text-sm font-bold pd-font-mono pd-text-white',
+          'ex-box': 'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
+        }],
+        safelist: [...supported, ...docsClasses],
       }),
     ],
   },

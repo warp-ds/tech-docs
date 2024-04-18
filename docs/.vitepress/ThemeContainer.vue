@@ -20,17 +20,15 @@ const selectedTheme = computed({
 </script>
 
 <template>
-  <ClientOnly>
-    <div class="theme-switcher">
-      <label for="themeSelect">Select theme:</label>
-      <div class="select">
-        <select id="themeSelect" v-model="selectedTheme">
-          <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
-        </select>
-      </div>
+  <div class="theme-switcher">
+    <label for="themeSelect">Select theme:</label>
+    <div class="select">
+      <select id="themeSelect" v-model="selectedTheme">
+        <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
+      </select>
     </div>
-    <slot />
-  </ClientOnly>
+  </div>
+  <slot />
 </template>
 
 <style lang="scss" scoped>
