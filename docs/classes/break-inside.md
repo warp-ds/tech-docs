@@ -3,7 +3,6 @@
 # Break Inside
 Utilities for controlling how a column or page should break within an element.
 
-
 ## Quick reference
 
 <qr-table />
