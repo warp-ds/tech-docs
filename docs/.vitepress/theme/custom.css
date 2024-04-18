@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
 }
 
 body {
@@ -36,7 +36,20 @@ html.dark body {
 }
 
 .dark .VPNavBarTitle {
-  --vp-c-text-1: #F6D553
+  --vp-c-text-1: #F6D553;
+}
+
+.dark .VPSidebar {
+  --vp-c-divider: #FFFBD525;
+}
+
+.dark .VPHero .image-bg {
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(4,121,144, 0.25) 0%, rgba(138,105,156, 0.25) 100%);
+  --vp-home-hero-image-filter: blur(32px);
+}
+
+.vp-doc blockquote > p {
+  font-size: 1.28rem !important;
 }
 
 /* weight was 500, finnfont doesnt ship 'medium', but might be fun to actually ship the right fonts here? */
@@ -56,17 +69,12 @@ html.dark body {
   line-height: 1.5;
 }
 
-/* change sidebar active-page highlighting a bit */
-.VPSidebar .link {
-  transition: border-color .2s linear !important;
-  border-left: 1px solid transparent;
+.VPSidebarItem.has-active.collapsible > .item .caret
+{
+  color: var(--vp-c-text-1);
 }
-.VPSidebar .link * {
-  transition: padding-left .3s ease, color .1s linear !important;
-}
-.link.active {
-  border-color: var(--vp-c-brand-1);
-}
-.VPSidebar .link.active .link-text {
-  padding-left: .6rem;
+.VPSidebarItem.collapsible .item:hover *,
+.VPSidebarItem.has-active.collapsible > .item:hover .text
+{
+  color: var(--vp-c-brand-2);
 }
