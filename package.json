@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@warp-ds/css": "1.9.4",
-    "@warp-ds/icons": "2.0.0",
+    "@warp-ds/icons": "2.0.1",
     "@warp-ds/react": "1.4.4",
     "@warp-ds/uno": "1.11.0",
     "@warp-ds/vue": "1.2.7",
