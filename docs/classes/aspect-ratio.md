@@ -50,14 +50,14 @@ Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 
 <width-controller>
   <container>
-    <div class="flex justify-center aspect-16/9 rounded-4">
+    <div class="flex justify-center aspect-1/1 rounded-4">
       <img src="/classes/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
     </div>
   </container>
 </width-controller>
 
 ```html
-<div class="aspect-16/9">
+<div class="aspect-1/1">
   <img class="object-cover" src="..." alt="..." />
 </div>
 ```
