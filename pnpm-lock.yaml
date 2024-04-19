@@ -11,11 +11,11 @@ devDependencies:
     specifier: ^10.9.0
     version: 10.9.0(vue@3.4.22)
   '@warp-ds/css':
-    specifier: ^1.9.4
+    specifier: 1.9.4
     version: 1.9.4
   '@warp-ds/icons':
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.0.1
+    version: 2.0.1
   '@warp-ds/preset-docs':
     specifier: ^0.0.16
     version: 0.0.16(@warp-ds/uno@1.11.0)
@@ -1576,6 +1576,12 @@ packages:
 
   /@warp-ds/icons@2.0.0:
     resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
+    dependencies:
+      '@lingui/core': 4.7.0
+    dev: true
+
+  /@warp-ds/icons@2.0.1:
+    resolution: {integrity: sha512-GYKgLePU6dVfWcBnfJEschXY0hQxy1ajsEuiJwcKRgN70pk9ZWICBfJbVI4NSlgdWbglgaptyjDj9B6ug4Jy6A==}
     dependencies:
       '@lingui/core': 4.7.0
     dev: true
