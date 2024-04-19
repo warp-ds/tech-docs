@@ -8,9 +8,11 @@ import { supported } from '../supported.js';
 const base = '/tech-docs';
 
 // Classes of documentation-related elements used within Warp component examples
+// These classes are for styling our docs within the shadow DOM
+// if you add a class somewhere in code and it doesn't work, add that class here (no time to explain)
 const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
 'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
-'top-12','left-12','bg-aqua-200','text-aqua-900','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100',
+'top-12','left-12','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100',
 'max-w-screen-xl', 'mx-auto', 'px-32', 's-bg-active', 'rounded-8', 'p-24', 'mb-24', 'grid', 'gap-24', 'mx-auto', 'mb-8',
 's-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
 'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display',
@@ -50,7 +52,7 @@ export default defineConfig({
           'ex-font': 'pd-text-sm font-bold pd-font-mono pd-text-white',
           'ex-box': 'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
         }],
-        safelist: [...supported, ...docsClasses],
+        safelist: [...supported],
       }),
     ],
   },
