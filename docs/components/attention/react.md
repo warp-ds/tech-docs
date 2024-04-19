@@ -205,10 +205,33 @@ function DismissibleHighlight() {
 }
 ```
 ### Flip prop
-The attention component uses the Floating-ui library to calculate its position. By default the `flip` prop is set to `false`, which means that the attention component will not flip its position to the opposite side. When `flip`is set to `false`, it will not recalculate the attention component's position on scroll or resize, meaning that the attention component's position will remain the same.  When `flip` is set to `true`, it will instead trigger Floating-ui's flip() function that will make sure that the attention component stays in view by flipping it to the opposite side when there is no space left, meaning that the attention component's position will change. For example, if `placement` prop is set to `right`, then the attention component will prefer to stay on the `right` side, unless there is no longer any space left on the `right` side, which it will then instead try to position it to the `left` side. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's flip() function here</a>.
+The attention component uses the Floating-ui library to calculate its position. By default the `flip` prop is set to `false`, which means that the attention component will not flip its position to the opposite side.
+
+Try to scroll and see how the attention component doesn't move:
+
+<attention-static-example />
+<br>
+<br>
+
+When `flip` is set to `true`, it will instead trigger Floating-ui's flip() function that will make sure that the attention component stays in viewport, by flipping it to the opposite side. <a target="_blank" href="https://floating-ui.com/docs/flip">Read more about Floating-ui's flip() function here</a>.
+
+Try to scroll and see how the attention component moves its position to the opposite side to keep itself in viewport as long as possible:
+<br>
+<br>
+<br>
+<attention-flip-example />
+<br>
+<br>
 
 ### FallbackPlacements prop
-By defaut, `fallbackPlacements` is `undefined`. If `flip`is set to `true`, then you have the option to also use `fallbackPlacements` prop and pass in an array of preferred placements that you want the attention component to try if there is no longer any space left to position it to the initial `placement`. For example, if `placement` is set to `top-start` and `fallbackPlacements` is set to `['top, left', 'right']`, then it will first try to position the attention component to be on the top-left side of the target-element. If there is no space for the inital `placement`, then it will first try to position the attention component to be top-centered, and then it will instead try to position it to be on the left side, and then on the right-side of the target-element. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's fallbackPlacements here</a>.
+By default, `fallbackPlacements` is `undefined`. If `flip`is set to `true`, then you have the option to also use `fallbackPlacements` prop and pass in an array of preferred placements that you want the attention component to try if there is no longer any space left to position it to the initial `placement`, e.g. `['right', 'top']`. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's fallbackPlacements here</a>.
+
+Try to scroll and see how the attention component's position starts at the `bottom` but then moves to the `right` and then to the `top`: 
+<br>
+<br>
+<br>
+<attention-fallback-placements-example />
+<br>
 
 ### Accessibility
 

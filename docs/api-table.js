@@ -35,14 +35,15 @@ export const react = {
     ],
   },
   Attention: {
-    required: [],
+    required: [
+      ['targetEl', 'MutableRefObject<unknown>', '', 'The reference container to which the Attention component is positioned relative to. Optional if `callout`.'],
+    ],
     props: [
       ['isShowing', 'boolean', 'false', 'Whether Attention component is shown Used for tooltip'],
       [
         'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position',
       ],
       ['children', 'Element | Element[]', '', 'Elements inside of the Attention component'],
-      ['targetEl', 'MutableRefObject<unknown>', '', 'The reference container to which the Attention component is positioned relative to'],
       ['className', 'string', '', 'Extend the Attention component container styling'],
       ['tooltip', 'boolean', 'false', 'Whether Attention component is rendered as a tooltip'],
       ['callout', 'boolean', 'false', 'Whether Attention component is rendered as a callout'],
@@ -55,7 +56,8 @@ export const react = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally.'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallbackPlacements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`. Can only be used when `flip` is set to true.'],
+      ['crossAxis', 'boolean', 'false', 'Whether Attention element should ignore cross axis overflow when flip is enabled. Can only be used when `flip` is set to true.'],
+      ['fallbackPlacements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['onDismiss', '() => void', '', 'Called when user clicks the close button or presses Escape when the button is in focus.'],
@@ -806,9 +808,9 @@ export const vue = {
   Attention: {
     required: [
       ['v-model', 'boolean', '', 'Whether Attention component should be visible'],
+      ['target-el', 'string', '', 'Selector of element that the Attention component is rendered relatively to. Optional if `callout`.'],
     ],
     props: [
-      ['target-el', 'string', '', 'Selector of element that the Attention component is rendered relatively to'],
       [
         'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position. Replaces props `bottom`, `top`, `left`, `right`',
       ],
@@ -827,7 +829,8 @@ export const vue = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`.  Can only be used when `flip` is set to true.'],
+      ['cross-axis', 'boolean', 'false', 'Whether Attention element should ignore cross axis overflow when flip is enabled. Can only be used when `flip` is set to true.'],
+      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@dismiss', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.'],
@@ -1285,7 +1288,8 @@ export const elements = {
       ['distance', 'number', '8', 'Distance from which to offset the Attention component from the targetEl vertically'],
       ['skidding', 'number', '0', 'Distance from which to offset the Attention component along its targetEl horizontally.'],
       ['flip', 'boolean', 'false', 'Whether Attention element should flip its placement in order to keep it in view'],
-      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Default is `undefined`. Can only be used when `flip` is set to true.'],
+      ['cross-axis', 'boolean', 'false', 'Whether Attention element should ignore cross axis overflow when flip is enabled. Can only be used when `flip` is set to true.'],
+      ['fallback-placements', 'array', 'undefined', 'Choose which preferred placements the Attention element should flip to. Can only be used when `flip` is set to true.'],
     ],
     events: [
       ['@close', '', '', 'Triggered when user clicks the close button or presses Escape when the button is in focus.']
