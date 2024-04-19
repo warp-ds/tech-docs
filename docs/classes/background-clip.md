@@ -41,7 +41,7 @@ Use `bg-clip-text` to crop an element’s background to match the shape of the t
 
 <container>
   <div class="pd-text-5xl pd-font-extrabold text-center">
-    <span class="bg-clip-text bg-cover text-transparent bg-[url(/office-warping.png)]">
+    <span class="bg-clip-text bg-cover text-transparent bg-[url(/classes/office-warping.png)]">
       Warp speed
     </span>
   </div>

@@ -35,7 +35,7 @@ Set the maximum width of an element using the `max-w-{size}` utilities.
 <width-controller>
   <container>
     <box class="flex justify-center" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
-      <section style="max-width:480px" class="pd-bg-white dark:pd-bg-black pd-text-black dark:pd-text-white ex-box">
+      <section class="pd-bg-white dark:pd-bg-black pd-text-black dark:pd-text-white ex-box max-w-[480]">
         <img src="/classes/20s-scientists.jpg" class="-my-24 -ml-24 h-144 w-144 rounded-l" alt="AI generated picture of 1920s scientists working on a warp drive" />
         <div class="px-24">
           <div class="font-bold">Warp scientists</div>
@@ -47,7 +47,7 @@ Set the maximum width of an element using the `max-w-{size}` utilities.
 </width-controller>
 
 ```html
-<div class="max-w-480 ..."> <-- !TODO: non-excisting
+<div class="max-w-[480] ...">
   <!-- ... -->
 </div>
 ```

@@ -473,6 +473,7 @@ export const listStyleType = [
   'list-none',
   'list-disc',
   'list-decimal',
+  'list-checked',
 ];
 
 export const minWidth = [
