@@ -13,7 +13,7 @@ Utilities for controlling how a background image behaves when scrolling.
 ### Fixed
 Use `bg-fixed` to fix the background image relative to the viewport.
 
-<container class="bg-fixed bg-[url(/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
+<container class="bg-fixed bg-[url(/classes/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
   <div class="pd-bg-slate-800/80 pd-shadow-lg p-32 rounded-8 text-center sm:mx-[10%] sm:my-32 pd-text-white">
     <h3 class="mt-8! h1!">The science</h3>
     <p class="pd-text-sm pd-text-gray-300">March 9th, 2023 · 14 min read</p>
@@ -29,7 +29,7 @@ Use `bg-fixed` to fix the background image relative to the viewport.
 ### Local
 Use `bg-local` to scroll the background image with the container and the viewport.
 
-<container class="bg-local bg-[url(/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
+<container class="bg-local bg-[url(/classes/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
   <div class="pd-bg-slate-800/80 pd-shadow-lg p-32 rounded-8 text-center sm:mx-[10%] sm:my-32 pd-text-white">
     <h3 class="mt-8! h1!">The science</h3>
     <p class="pd-text-sm pd-text-gray-300">March 9th, 2023 · 14 min read</p>
@@ -45,7 +45,7 @@ Use `bg-local` to scroll the background image with the container and the viewpor
 ### Scroll
 Use `bg-scroll` to scroll the background image with the viewport, but not with the container.
 
-<container class="bg-scroll bg-[url(/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
+<container class="bg-scroll bg-[url(/classes/office-warping.png)] overflow-hidden h-[240] overflow-y-scroll overscroll-contain">
   <div class="pd-bg-slate-800/80 pd-shadow-lg p-32 rounded-8 text-center sm:mx-[10%] sm:my-32 pd-text-white">
     <h3 class="mt-8! h1!">The science</h3>
     <p class="pd-text-sm pd-text-gray-300">March 9th, 2023 · 14 min read</p>
