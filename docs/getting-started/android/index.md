@@ -15,11 +15,11 @@ A guide on how to integrate Warp into your project.
 Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
 
 ```groovy
-implementation("com.schibsted.nmp.warp:warp-android:0.0.14")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.20")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.13")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.18")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.14")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.19")
 ```
 
 
@@ -58,7 +58,7 @@ fun MainScreen() {
               )
             WarpButton(
               onClick = {  },
-              buttonStyle = WarpButtonStyle.Primary,
+              style = WarpButtonStyle.Primary,
               text = "Submit"
               )
           }
@@ -115,7 +115,7 @@ fun MainScreen() {
     warpTheme {
       WarpButton(
               onClick = {  },
-              buttonStyle = WarpButtonStyle.Primary,
+              style = WarpButtonStyle.Primary,
               text = "Submit"
               )
     }

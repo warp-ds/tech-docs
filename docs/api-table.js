@@ -1551,7 +1551,7 @@ export const android = {
     ],
     props: [
       [
-        'buttonStyle',
+        'style',
         'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Negative <br />WarpButtonStyle.NegativeQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
         'Controls the appearance of the button',
@@ -1815,12 +1815,6 @@ export const android = {
   Alert: {
     required: [
     [
-      'title', 
-      'String', 
-      '', 
-      'The title to be displayed in the alert'
-    ],
-    [
       'body', 
       'String', 
       '', 
@@ -1828,6 +1822,12 @@ export const android = {
     ],
   ],
     props: [
+      [
+        'title', 
+        'String', 
+        'null', 
+        'The title to be displayed in the alert'
+      ],
       [
         'modifier',
         'Modifier',
