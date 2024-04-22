@@ -75,6 +75,7 @@ const popoverIconTargetShowing = ref(false)
         popover
         placement="right"
         flip
+        cross-axis
         :fallback-placements="['left', 'bottom', 'top']"
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"

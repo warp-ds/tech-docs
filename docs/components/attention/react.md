@@ -80,6 +80,7 @@ function Example() {
         popover
         placement='right'
         flip={true}
+        crossAxis={true}
         fallbackPlacements={['left', 'bottom', 'top']}
         targetEl={targetEl}
         isShowing={show}
@@ -222,6 +223,9 @@ Try to scroll and see how the attention component moves its position to the oppo
 <attention-flip-example />
 <br>
 <br>
+
+### CrossAxis prop
+The `crossAxis` prop decides whether to check for cross axis overflow or not when `flip` is set to `true`. By default the `crossAxis` prop is set to `false`, which means that the attention component will ignore cross axis overflow. <a target="_blank" href="https://floating-ui.com/docs/flip#crossaxis">Read more about Floating-ui's crossAxis here</a>.
 
 ### FallbackPlacements prop
 By default, `fallbackPlacements` is `undefined`. If `flip`is set to `true`, then you have the option to also use `fallbackPlacements` prop and pass in an array of preferred placements that you want the attention component to try if there is no longer any space left to position it to the initial `placement`, e.g. `['right', 'top']`. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's fallbackPlacements here</a>.
