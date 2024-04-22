@@ -1,18 +1,25 @@
 <script setup>
 import { ref } from 'vue'
-import { wAttention, wBox } from '@warp-ds/vue'
+import { wAttention, wButton } from '@warp-ds/vue'
 
 const popoverTarget = ref(null)
 
-const popoverShowing = ref(true)
+const popoverShowing = ref(false)
 </script>
 
 <template>
   <div class="py-40">
     <div>
-      <w-box bordered as="h4" aria-details="popover-bubbletext" ref="popoverTarget">
-        Look at how this popover moves!
-      </w-box>
+      <w-button
+        utility
+        :aria-expanded="popoverShowing"
+        aria-controls="popover-example"
+        aria-details="popover-bubbletext"
+        ref="popoverTarget"
+        @click="() => (popoverShowing = !popoverShowing)"
+      >
+      Open this dynamical popover!
+      </w-button>
       <w-attention
         popover
         placement="bottom-start"
