@@ -1,29 +1,23 @@
 <script setup>
-import { inject, ref, onMounted } from 'vue'
+import { inject, ref, onMounted } from 'vue';
 
-const widthController = inject('widthController', null)
-const el = ref(null)
-const registerSelf = () => widthController?.register(el.value)
-onMounted(registerSelf)
+const widthController = inject('widthController', null);
+const el = ref(null);
+
+onMounted(() => widthController?.register(el.value));
 </script>
 
 <style scoped>
-.wd-container{
-  margin-right: 0px;
-  border-color: var(--vp-c-border);
+.wd-container {
   --w-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--w-bg-opacity));
-  border-width: 1px;
-  border-style: solid;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-right: 0;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
+  padding: 32px 16px;
+  background-color: rgba(243, 244, 246, var(--w-bg-opacity));
 }
 .dark .wd-container {
-    --w-bg-opacity: 1;
-    background-color: rgba(31, 41, 55, var(--w-bg-opacity));
+  background-color: rgba(31, 41, 55, var(--w-bg-opacity));
 }
 </style>
 
