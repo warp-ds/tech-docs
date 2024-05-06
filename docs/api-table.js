@@ -1772,7 +1772,13 @@ export const android = {
         'closable', 
         'boolean', 
         'false', 
-        'Whether the pill should be removable via a close button.'
+        'Whether the pill should be removable via a close button. Will override the custom icon'
+      ],
+      [
+        'icon', 
+        'Int', 
+        'null', 
+        'The id of the icon drawable recource to be displayed in the pill after the text'
       ],
       [
         'iconContentDescription', 
