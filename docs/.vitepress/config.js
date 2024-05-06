@@ -153,7 +153,7 @@ export default defineConfig({
               text: 'Introduction',
               collapsed: true,
               items: [
-                { text: 'unoCSS - whats that?', link: '/classes/unocss' },
+                { text: 'UnoCSS - what\'s that?', link: '/classes/unocss' },
                 { text: 'Class Variants', link: '/classes/class-variants' },
                 { text: 'Hover, Focus and other states', link: '/classes/states' },
                 { text: 'Helper classes', link: '/classes/helpers' },
