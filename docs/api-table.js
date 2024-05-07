@@ -1584,7 +1584,7 @@ export const android = {
         'leadingIcon', 
         'Int', 
         'null', 
-        'The id of the icon drawable recource to be displayed in the button before the text'
+        'The id of the icon drawable resource to be displayed in the button before the text'
       ],
       [
         'leadingIconContentDescr', 
@@ -1596,7 +1596,7 @@ export const android = {
         'trailingIcon', 
         'Int', 
         'null', 
-        'The id of the icon drawable recource to be displayed in the button after the text'
+        'The id of the icon drawable resource to be displayed in the button after the text'
       ],
       [
         'trailingIconContentDescr', 
@@ -1778,7 +1778,7 @@ export const android = {
         'icon', 
         'Int', 
         'null', 
-        'The id of the icon drawable recource to be displayed in the pill after the text'
+        'The id of the icon drawable resource to be displayed in the pill after the text'
       ],
       [
         'iconContentDescription', 
