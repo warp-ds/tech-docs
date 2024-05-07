@@ -2056,6 +2056,84 @@ export const android = {
       ],
     ],
   },
+  Modal: {
+    required: [
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the modal'
+    ],
+    [
+      'body', 
+      'String', 
+      '', 
+      'The text to be displayed in the modal'
+    ],
+    [
+      'onDismiss', 
+      '() -> Unit', 
+      '', 
+      'The lambda to be invoked when closing the modal'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the modal Card',
+      ],
+      [
+        'subtitle', 
+        'String', 
+        'null', 
+        'The subtitle to be displayed in the modal'
+      ],
+      [
+        'confirmButtonText', 
+        'String', 
+        'null', 
+        'The text to be displayed on the positive button.'
+      ],
+      [
+        'dismissButtonText', 
+        'String', 
+        'null', 
+        'The text to be displayed on the negative button.'
+      ],
+      [
+        'onConfirm', 
+        '() -> Unit', 
+        'null', 
+        'The lambda to be invoked on the positive button click.'
+      ],
+      [
+        'showCloseIcon', 
+        'Boolean', 
+        'false', 
+        'Whether the close icon (X) should be displayed in the top right corner.'
+      ],
+      [
+        'closeIconContentDescription', 
+        'String', 
+        'null', 
+        'The text to be used by accessibility tools.'
+      ],
+      [
+        'dismissOnClickOutside', 
+        'Boolean', 
+        'true', 
+        'Whether the modal should be closed when clicking outside of its layout.'
+      ],
+      [
+        'dismissOnBackPress', 
+        'Boolean', 
+        'true', 
+        'Whether the modal should be closed when pressing back.'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
