@@ -6,7 +6,7 @@
 fun WarpAlert(
     modifier: Modifier = Modifier,
     type: WarpAlertType = WarpAlertType.Info,
-    title: String,
+    title: String? = null,
     body: String,
     linkText: String? = null,
     linkAction: (() -> Unit)? = null,
@@ -38,7 +38,7 @@ WarpAlertType {
 }
 ```
 
-It is possible to add and optional link text, secondary button and a quiet button or all together.
+It is possible to add and optional title, link text, secondary button and a quiet button or all together.
 ```kotlin example
 WarpAlert(
     modifier = Modifier.padding(WarpTheme.dimensions.space2),        

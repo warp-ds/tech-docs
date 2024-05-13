@@ -10,7 +10,7 @@ fun WarpButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    buttonStyle: WarpButtonStyle = WarpButtonStyle.Primary,
+    style: WarpButtonStyle = WarpButtonStyle.Primary,
     maxLines: Int = 1,
     loading: Boolean = false,
     @DrawableRes leadingIcon: Int? = null,
@@ -26,7 +26,7 @@ fun WarpButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    buttonStyle: WarpButtonStyle = WarpButtonStyle.Primary,
+    style: WarpButtonStyle = WarpButtonStyle.Primary,
     loading: Boolean = false,
     content: @Composable RowScope.() -> Unit
 )
@@ -56,7 +56,7 @@ one of them on the screen. This guides the user towards the happy path. This is 
 ```kotlin example
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Primary, 
+    style = WarpButtonStyle.Primary, 
     text = "Save"
 )
 ```
@@ -68,12 +68,12 @@ Secondary buttons are without background, and are often used for secondary actio
 ```kotlin example
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Secondary, 
+    style = WarpButtonStyle.Secondary, 
     text = "Save"
 )
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Quiet, 
+    style = WarpButtonStyle.Quiet, 
     text = "Save"
 )
 ```
@@ -86,7 +86,7 @@ screen as a primary button.
 ```kotlin example
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Negative, 
+    style = WarpButtonStyle.Negative, 
     text = "Cancel"
 )
 ```
@@ -102,7 +102,7 @@ val onClickAction = { }
 
 WarpButton(
     onClick = onClickAction, 
-    buttonStyle = WarpButtonStyle.Primary, 
+    style = WarpButtonStyle.Primary, 
     text = buttonText,
     loading = loading
 )
@@ -115,7 +115,7 @@ var enabled by remember { mutableStateOf(false) }
 
 WarpButton(
     onClick = { }, 
-    buttonStyle = WarpButtonStyle.Secondary, 
+    style = WarpButtonStyle.Secondary, 
     text = "Edit",
     enabled = enabled
 )
@@ -128,7 +128,7 @@ An optional leading or trailing icon can be displayed at the start of the button
 ```kotlin example
 WarpButton(
     onClick = { },
-    buttonStyle = WarpButtonStyle.Secondary,
+    style = WarpButtonStyle.Secondary,
     text = "With icon",
     leadingIcon = R.drawable.ic_duck,
     leadingIconContentDescr = "Duck icon"
@@ -136,7 +136,7 @@ WarpButton(
 
 WarpButton(
     onClick = { },
-    buttonStyle = WarpButtonStyle.Secondary,
+    style = WarpButtonStyle.Secondary,
     text = "With icon",
     trailingIcon = R.drawable.ic_clock,
     trailingIconContentDescr = "Clock icon"

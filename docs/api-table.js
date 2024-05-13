@@ -1551,7 +1551,7 @@ export const android = {
     ],
     props: [
       [
-        'buttonStyle',
+        'style',
         'WarpButtonStyle.Primary <br />WarpButtonStyle.Secondary <br />WarpButtonStyle.Quiet <br />WarpButtonStyle.Negative <br />WarpButtonStyle.NegativeQuiet <br />WarpButtonStyle.Utility <br />WarpButtonStyle.UtilityQuiet <br />WarpButtonStyle.UtilityOverlay',
         'WarpButtonStyle.Primary',
         'Controls the appearance of the button',
@@ -1584,7 +1584,7 @@ export const android = {
         'leadingIcon', 
         'Int', 
         'null', 
-        'The id of the icon drawable recource to be displayed in the button before the text'
+        'The id of the icon drawable resource to be displayed in the button before the text'
       ],
       [
         'leadingIconContentDescr', 
@@ -1596,7 +1596,7 @@ export const android = {
         'trailingIcon', 
         'Int', 
         'null', 
-        'The id of the icon drawable recource to be displayed in the button after the text'
+        'The id of the icon drawable resource to be displayed in the button after the text'
       ],
       [
         'trailingIconContentDescr', 
@@ -1772,7 +1772,13 @@ export const android = {
         'closable', 
         'boolean', 
         'false', 
-        'Whether the pill should be removable via a close button.'
+        'Whether the pill should be removable via a close button. Will override the custom icon'
+      ],
+      [
+        'icon', 
+        'Int', 
+        'null', 
+        'The id of the icon drawable resource to be displayed in the pill after the text'
       ],
       [
         'iconContentDescription', 
@@ -1815,12 +1821,6 @@ export const android = {
   Alert: {
     required: [
     [
-      'title', 
-      'String', 
-      '', 
-      'The title to be displayed in the alert'
-    ],
-    [
       'body', 
       'String', 
       '', 
@@ -1828,6 +1828,12 @@ export const android = {
     ],
   ],
     props: [
+      [
+        'title', 
+        'String', 
+        'null', 
+        'The title to be displayed in the alert'
+      ],
       [
         'modifier',
         'Modifier',
