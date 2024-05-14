@@ -30,17 +30,17 @@ z-10: The rest<br />
 
 Control the stack order (or three-dimensional positioning) of an element in warp, regardless of order it has been displayed, using the `z-{index}` utilities.
 
-<container>
-  <div class="flex justify-center -space-x-24 pd-font-mono pd-text-white pd-text-sm font-bold">
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-pink-500 z-0 border">01</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-fuchsia-500 z-10 border">02</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-purple-500 z-20 border">03</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-violet-500 z-30 border">04</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-indigo-500 z-20 border">05</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-blue-500 z-10 border">06</div>
-    <div class="w-80 h-80 rounded-full flex items-center justify-center pd-bg-cyan-500 z-0 border">07</div>
+<example-container>
+  <div class="flex justify-center -space-x-24">
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-pink-500">01</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-fuchsia-500 pd-shadow-md">02</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-purple-500 pd-shadow-md">03</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-violet-500 pd-shadow-md z-30">04</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-indigo-500 pd-shadow-md z-20">05</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-blue-500 pd-shadow-md z-10">06</div>
+    <div class="w-80 h-80 rounded-full ex-box border s-border-inverted pd-bg-cyan-500 pd-shadow-md z-0">07</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div>01</div>
@@ -60,6 +60,8 @@ To use a negative z-index value, prefix the class name with a dash to convert it
   <!-- ... -->
 </div>
 ```
+
+## Applying conditionally
 
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:z-50` to apply the `z-50` utility at only medium screen sizes and above.

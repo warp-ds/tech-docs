@@ -1,3 +1,30 @@
+const getValueClasses = (classPrefixes, classValues) => classPrefixes.reduce(
+  (result, prefix) => [
+    ...result,
+    ...classValues.map((value) => `${prefix}-${value}`)
+  ],
+  []
+);
+
+const getDirectionalClasses = (baseClasses, replacePrefix, directions = ['l','r','t','b','x','y']) => {
+  const replaceRegexp = new RegExp(`^(${replacePrefix})`);
+  return baseClasses.reduce(
+    (result, baseClass) => [
+      ...result,
+      ...directions.map((direction) => baseClass.replace(replaceRegexp, `$1${direction}-`))
+    ],
+    []
+  )
+}
+;
+
+const getWidthClasses = (classPrefixes) => getValueClasses(classPrefixes, [0,1,2,4,8]);
+
+const getSpacingClasses = (classPrefixes) => getValueClasses(classPrefixes, ['auto', 0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]);
+
+const getRoundingClasses = (classPrefixes) => getValueClasses(classPrefixes, ['full',0,2,4,8,16]);
+
+
 export const alignContent = [
   'content-start',
   'content-center',
@@ -8,6 +35,7 @@ export const alignContent = [
 ];
 
 export const alignItems = [
+  'items-baseline',
   'items-stretch',
   'items-start',
   'items-center',
@@ -190,10 +218,39 @@ export const borderColor = [
   's-border-info-subtle-active',
 ];
 
+export const directionalBorderColor = getDirectionalClasses(borderColor, 's-border-');
+
+export const borderWidth = getWidthClasses([
+  'border',
+  'border-x',
+  'border-y',
+  'border-l',
+  'border-r',
+  'border-t',
+  'border-b'
+]);
+
+export const borderRadius = [
+  'rounded',
+  'rounded-t',
+  'rounded-tr',
+  'rounded-r',
+  'rounded-br',
+  'rounded-b',
+  'rounded-bl',
+  'rounded-l',
+  'rounded-tl',
+];
+
+export const borderRadiusValues = getRoundingClasses(borderRadius);
+
+export const columns = getValueClasses(['columns'], [1,2,3,4,5,6,7,8,9,10,11,12]);
+
 export const outlineColor = borderColor.map(c => c.replace('border', 'outline'))
 
 export const divideColor = borderColor.map(c => c.replace('border', 'divide'))
 
+export const divideWidth = getWidthClasses(['divide','divide-x','divide-y']);
 export const borderStyle = [
   'border-solid',
   'border-dashed',
@@ -382,6 +439,12 @@ export const fontVariantNumeric = [
   'proportional-nums',
 ];
 
+export const gap = getSpacingClasses([
+  'gap',
+  'gap-x',
+  'gap-y',
+]);
+
 export const gridAutoFlow = [
   'grid-flow-row',
   'grid-flow-col',
@@ -403,6 +466,15 @@ export const gridAutoRows = [
   'auto-rows-max',
   'auto-rows-fr',
 ];
+
+export const gridColSpan = getValueClasses(['col-span'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
+export const gridColStart = getValueClasses(['col-start'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
+export const gridColEnd = getValueClasses(['col-end'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
+
+export const gridRowSpan = getValueClasses(['col-span'], [1,2,3,4,5,6,7]);
+export const gridRowStart = getValueClasses(['col-start'], [1,2,3,4,5,6,7]);
+export const gridRowEnd = getValueClasses(['col-end'], [1,2,3,4,5,6,7]);
+
 
 export const iconColor = [
   's-icon',
@@ -454,6 +526,7 @@ export const justifySelf = [
 ];
 
 export const lineHeight = [
+  'leading-none',
   'leading-xs',
   'leading-s',
   'leading-m',
@@ -476,8 +549,36 @@ export const listStyleType = [
   'list-checked',
 ];
 
+export const margin = getSpacingClasses([
+  'm',
+  'ml',
+  'mr',
+  'mt',
+  'mb',
+  'mx',
+  'my',
+]);
+
+export const maxWidth = [
+  ...getValueClasses(['max-w'], [0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]),
+  'max-w-none',
+  'max-w-full',
+  'max-w-min',
+  'max-w-max',
+  'max-w-fit',
+  'max-w-prose',
+];
+
+export const maxHeight = [
+  ...getValueClasses(['max-h'], [0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]),
+  'max-h-full',
+  'max-h-screen',
+  'max-h-min',
+  'max-h-max',
+  'max-h-fit',
+];
 export const minWidth = [
-  'min-w-0',
+  ...getValueClasses(['min-w'], [0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]),
   'min-w-full',
   'min-w-min',
   'min-w-max',
@@ -485,7 +586,7 @@ export const minWidth = [
 ];
 
 export const minHeight = [
-  'min-h-0',
+  ...getValueClasses(['min-h'], [0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]),
   'min-h-full',
   'min-h-min',
   'min-h-max',
@@ -550,6 +651,16 @@ export const overscrollBehavior = [
   'overscroll-x-none',
 ];
 
+export const padding = getSpacingClasses([
+  'p',
+  'pl',
+  'pr',
+  'pt',
+  'pb',
+  'px',
+  'py',
+]);
+
 export const placeContent = [
   'place-content-center',
   'place-content-start',
@@ -592,6 +703,11 @@ export const position = [
   'sticky',
 ];
 
+export const positioning = getValueClasses(
+  [ 'top', 'right', 'bottom', 'left', '-top', '-right', '-bottom', '-left', 'inset', 'inset-x', 'inset-y' ],
+  ['a', '1/2', 0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]
+);
+
 export const resize = [
   'resize-none',
   'resize-y',
@@ -620,6 +736,17 @@ export const scrollSnapType = [
   'snap-mandatory',
   'snap-proximity',
 ];
+
+export const sizing = getValueClasses(
+  [ 'w', 'h', '-w', '-h' ],
+  ['auto', 'full', 'screen', 'min', 'max', '1/2', '1/3', '2/3', '1/4', '3/4', '1/5', '2/5', '3/5', '4/5', '1/6', '5/6', 0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]
+);
+
+export const space = getSpacingClasses([
+  'space',
+  'space-x',
+  'space-y',
+]);
 
 export const tableLayout = ['table-auto', 'table-fixed'];
 
@@ -750,3 +877,8 @@ export const wordBreak = [
   'break-all',
   'break-keep',
 ];
+
+export const zIndex = getValueClasses(
+  [ 'z' ],
+  ['auto', 0, 10, 20, 30, 40, 50]
+);

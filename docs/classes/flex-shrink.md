@@ -14,13 +14,11 @@ Utilities for controlling how flex items shrink.
 Use `shrink` to allow a flex item to shrink if needed.
 
 <width-controller>
-  <container>
-    <box striped class="flex gap-24 rounded-4" fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
-      <div class="flex-none pd-bg-indigo-800 ex-box">01</div>
-      <div class="w-128 shrink pd-bg-indigo-500 ex-box">02</div>
-      <div class="flex-none pd-bg-indigo-800 ex-box">03</div>
-    </box>
-  </container>
+  <box striped class="flex gap-24 rounded-4" fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="flex-none pd-bg-indigo-800 ex-box">01</div>
+    <div class="w-128 shrink pd-bg-indigo-500 ex-box">02</div>
+    <div class="flex-none pd-bg-indigo-800 ex-box">03</div>
+  </box>
 </width-controller>
 
 ```html
@@ -41,13 +39,11 @@ Use `shrink` to allow a flex item to shrink if needed.
 Use `shrink-0` to prevent a flex item from shrinking
 
 <width-controller>
-  <container>
-    <box striped class="flex gap-24 rounded-4" fg-color="var(--tw-pink-fg)" bg-color="var(--tw-pink-bg)">
-      <div class="flex-1 pd-bg-pink-800 ex-box">01</div>
-      <div class="w-128 shrink-0 pd-bg-pink-500 ex-box">02</div>
-      <div class="flex-1 pd-bg-pink-800 ex-box">03</div>
-    </box>
-  </container>
+  <box striped class="flex gap-24 rounded-4" fg-color="var(--tw-pink-fg)" bg-color="var(--tw-pink-bg)">
+    <div class="flex-1 pd-bg-pink-800 ex-box">01</div>
+    <div class="w-128 shrink-0 pd-bg-pink-500 ex-box">02</div>
+    <div class="flex-1 pd-bg-pink-800 ex-box">03</div>
+  </box>
 </width-controller>
 
 ```html

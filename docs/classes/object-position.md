@@ -13,64 +13,64 @@ Utilities for controlling how a replaced element's content should be positioned 
 ### Positioning a replaced element
 Use the `object-{side}` utilities to specify how a replaced element’s content should be positioned within its container.
 
-<container>
-  <div class="flex sm:grid sm:grid-cols-3 sm:gap-24 sm:justify-around">
-    <div class="flex flex-col justify-self-start place-items-start">
+<example-container>
+  <div class="flex sm:grid sm:grid-cols-3 sm:gap-16 sm:justify-around">
+    <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
       <div class="pb-8">.object-left-top</div>
-      <div class="h-128 w-128">
-        <img width="300" src="/classes/50s-scientists_240.jpg" class="object-none object-top-left rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <div class="h-128 w-128 flex">
+        <img src="/classes/50s-scientists_240.jpg" class="object-none object-left-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-center place-items-center">
+    <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
       <div class="pb-8">.object-top</div>
-      <div class="h-128 w-128">
+      <div class="h-128 w-128 flex">
         <img src="/classes/50s-scientists_240.jpg" class="object-none object-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-end place-items-end">
+    <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
       <div class="pb-8">.object-right-top</div>
-      <div class="h-128 w-128">
+      <div class="h-128 w-128 flex">
         <img src="/classes/50s-scientists_240.jpg" class="object-none object-right-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-start place-items-start">
+    <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
       <div class="pb-8">.object-left</div>
-      <div class="h-128 w-128">
+      <div class="h-128 w-128 flex">
         <img src="/classes/50s-scientists_240.jpg" class="object-none object-left rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-center place-items-center">
+    <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
       <div class="pb-8">.object-center</div>
-      <div class="h-128 w-128">
+      <div class="h-128 w-128 flex">
         <img src="/classes/50s-scientists_240.jpg" class="object-none object-center rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-end place-items-end">
+    <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
       <div class="pb-8">.object-right</div>
-      <div class="h-128 w-128">
+      <div class="h-128 w-128 flex">
         <img src="/classes/50s-scientists_240.jpg" class="object-none object-right rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-     <div class="flex flex-col justify-self-start place-items-start">
-      <div class="pb-8">.object-bottom-left</div>
-      <div class="h-128 w-128">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-bottom-left rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+     <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
+      <div class="pb-8">.object-left-bottom</div>
+      <div class="h-128 w-128 flex">
+        <img src="/classes/50s-scientists_240.jpg" class="object-none object-left-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-center place-items-center">
-      <div class="pb-8">.object-bottom-center</div>
-      <div class="h-128 w-128">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-bottom-center rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+    <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
+      <div class="pb-8">.object-bottom</div>
+      <div class="h-128 w-128 flex">
+        <img src="/classes/50s-scientists_240.jpg" class="object-none object-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
-    <div class="flex flex-col justify-self-end place-items-end">
-      <div class="pb-8">.object-bottom-right</div>
-      <div class="h-128 w-128">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-bottom-right rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+    <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
+      <div class="pb-8">.object-right-bottom</div>
+      <div class="h-128 w-128 flex">
+        <img src="/classes/50s-scientists_240.jpg" class="object-none object-right-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <img class="object-none object-left-top ..." src="..." alt="..." />

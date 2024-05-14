@@ -16,7 +16,7 @@ Use `align-baseline` to align the baseline of an element with the baseline of it
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <span class="w-0 h-32 inline-block align-baseline">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -38,7 +38,7 @@ Use `align-top` to align the top of an element and its descendants with the top 
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-top">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -56,7 +56,7 @@ Use `align-middle` to align the middle of an element with the baseline plus half
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-middle">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -74,7 +74,7 @@ Use `align-bottom` to align the bottom of an element and its descendants with th
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-bottom">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -92,7 +92,7 @@ Use `align-text-top` to align the top of an element with the top of the parent e
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-text-top">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -110,7 +110,7 @@ Use `align-text-bottom` to align the bottom of an element with the bottom of the
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-text-bottom">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -128,7 +128,7 @@ Use `align-sub` to align the bottom of an element with the subscript-baseline of
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-sub">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
@@ -146,7 +146,7 @@ Use `align-super` to align the bottom of an element with the superscript-baselin
 <container>
   <div class="mx-24">
     <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="leading-none relative" style="line-height: 1">
+      <div class="relative" style="line-height: 1">
         <box class="w-0 h-32 inline-block align-super">
           <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
           <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>

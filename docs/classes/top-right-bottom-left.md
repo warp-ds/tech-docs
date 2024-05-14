@@ -32,37 +32,37 @@ Utilities for controlling the placement of positioned elements.
 ### Placing a positioned element
 Use the `{top|right|bottom|left|inset}-{size}` utilities to set the horizontal or vertical position of [positioned element](/position).
 
-<container>
+<example-container>
   <div class="grid grid-cols-3 gap-16">
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 rounded-8 absolute left-0 top-0 h-32 w-32 pd-bg-violet-600">01</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute top-0 inset-x-0 h-32 pd-bg-violet-600">02</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute right-0 left-a top-0 h-32 w-32 pd-bg-violet-600">03</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute left-0 top-0 bottom-0 w-32 pd-bg-violet-600">04</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute inset-0 pd-bg-violet-600">05</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute right-0 left-a inset-y-0 w-32 pd-bg-violet-600">06</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute left-0 bottom-0 h-32 top-a w-32 pd-bg-violet-600">07</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute inset-x-0 bottom-0 top-a h-32 pd-bg-violet-600">08</div>
-    </box>
-    <box striped class="rounded-8 relative aspect-2/1" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
-      <div class="ex-box rounded-8 absolute right-0 bottom-0 left-a top-a h-32 w-32 pd-bg-violet-600">09</div>
-    </box>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute left-0 top-0 h-32 w-32 ex-box rounded-8 pd-bg-violet-600">01</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute top-0 inset-x-0 h-32 ex-box rounded-8 pd-bg-violet-600">02</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute right-0 left-a top-0 h-32 w-32 ex-box rounded-8 pd-bg-violet-600">03</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute left-0 top-0 bottom-0 w-32 ex-box rounded-8 pd-bg-violet-600">04</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute inset-0 ex-box rounded-8 pd-bg-violet-600">05</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute right-0 left-a inset-y-0 w-32 ex-box rounded-8 pd-bg-violet-600">06</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute left-0 bottom-0 h-32 top-a w-32 ex-box rounded-8 pd-bg-violet-600">07</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute inset-x-0 bottom-0 top-a h-32 ex-box rounded-8 pd-bg-violet-600">08</div>
+    </div>
+    <div class="relative ex-bg--striped ex-bg--purple aspect-2/1 rounded-8">
+      <div class="absolute right-0 bottom-0 left-a top-a h-32 w-32 ex-box rounded-8 pd-bg-violet-600">09</div>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html{3,8,13,18,23,28,33,38,43}
 <!-- Pin to top left corner -->
@@ -114,19 +114,20 @@ Use the `{top|right|bottom|left|inset}-{size}` utilities to set the horizontal o
 ### Using negative values
 To use a negative top/right/bottom/left value, prefix the class name with a dash to convert it to a negative value.
 
-<container>
-  <box striped class="relative rounded-8 max-w-144 h-96 mx-auto" fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--indigo relative rounded-8 max-w-144 h-96 mx-auto">
     <div class="ex-box rounded-8 absolute -left-16 -top-16 h-64 w-64 pd-bg-indigo-600"> </div>
-  </box>
-</container>
+  </div>
+</example-container>
 
-```html
+```html{2}
 <div class="relative ...">
-  <div class="absolute h-64 w-64 -left-16 -top-16 ..."></div>
+  <div class="absolute -left-16 -top-16 ..."></div>
 </div>
 ```
 
-> Applying conditionally
+## Applying conditionally
+
 ### Hover, focus, and other states
 You can conditionally apply utility classes in different states using variant modifiers. For example, use `hover:top-6` to only apply the `top-6` utility on hover.
 

@@ -9,6 +9,7 @@ import Button from '../components/buttons/Example.vue';
 import ButtonGroup from '../components/buttongroup/Example.vue';
 import Card from '../components/card/Example.vue';
 import Checkbox from '../components/checkbox/Example.vue';
+import Container from './Container.vue';
 import Expandable from '../components/expandable/Example.vue';
 import Icon from '../components/icons/Example.vue';
 import Modal from '../components/modal/Example.vue';
@@ -26,6 +27,8 @@ import TextField from '../components/textfield/Example.vue';
 import Toast from '../components/toast/Example.vue';
 import Utilities from '../components/utilities/Example.vue';
 import Text from '../components/text/Example.vue';
+
+import QrColorTable from "./qr-color-table.vue";
 
 buildWc('alert-example', Alert);
 buildWc('attention-example', Attention);
@@ -53,3 +56,10 @@ buildWc('textfield-example', TextField);
 buildWc('toast-example', Toast);
 buildWc('utilities-example', Utilities);
 buildWc('text-example', Text);
+
+buildWc('example-container');
+
+buildWc('background-color-table', QrColorTable, { dataId: 'backgroundColor' });
+buildWc('border-color-table', QrColorTable, { dataId: 'borderColor' });
+buildWc('divide-color-table', QrColorTable, { dataId: 'divideColor' });
+buildWc('text-color-table', QrColorTable, { dataId: 'textColor' });

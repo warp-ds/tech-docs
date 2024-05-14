@@ -9,15 +9,73 @@ const base = '/tech-docs';
 
 // Classes of documentation-related elements used within Warp component examples
 // These classes are for styling our docs within the shadow DOM
-// if you add a class somewhere in code and it doesn't work, add that class here (no time to explain)
-const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16','w-max','p-24', 'flex', 'ml-12',
-'mb-8','py-4', 'py-8', 'px-12','flex','items-center', 'mb-0', 'text-14', 'h-128','w-full','object-cover','absolute',
-'top-12','left-12','p-4','rounded-4','p-16','font-bold','my-8', 'gap-10', 'w-100',
-'max-w-screen-xl', 'mx-auto', 'px-32', 's-bg-active', 'rounded-8', 'p-24', 'mb-24', 'grid', 'gap-24', 'mx-auto', 'mb-8',
-'s-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
-'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display',
-'t1', 't2', 't3', 't4', 't5', 't6', 'text-preamble', 'text-body', 'text-caption', 'text-detail', 's-bg-inverted', 'text-center', 's-text-negative',
-'flex-1'];
+// if you add a class somewhere in code, and it doesn't work, add that class here (no time to explain)
+const docsClasses = [
+  'aspect-square', 'aspect-1/1', 'aspect-2/1',
+  'bg-[url(/tech-docs/classes/50s-scientists.jpg)]', 'bg-[--vp-c-bg-soft]', 'bg-[--w-s-color-border]', 'bg-[--tw-pink-fg]',
+  'border-x-[--w-s-color-background-positive/60]', 'hover:border-x-[--w-s-color-background-positive/100]',
+  'border-y-[var(--w-black)/40]', 'hover:border-y-[var(--w-black)/100]',
+  'bottom-[26]',
+  'duration-700',
+  'sm:flex-row',
+  'font-bold',
+//  'gap-10', 'gap-24',
+  'sm:gap-16',
+  'sm:grid',
+  'sm:grid-cols-3',
+  'grid-cols-minmax-100px', 'grid-cols-[1fr_2.4rem_1fr_2.4rem_1fr]', 'grid-cols-[1fr_1fr_1fr]', 'grid-rows-[1fr_3fr_1fr]',
+  'grid-cols-minmax-100px', 'grid-cols-[1fr_2.4rem_1fr_2.4rem_1fr]', 'grid-cols-[1fr_1fr_1fr]', 'grid-rows-[1fr_3fr_1fr]',
+  'h-[7]', 'h-[200]',
+  'sm:justify-around',
+  'leading-[120]',
+  '-m-1', '-m-[19]', '-ml-48', '-my-32',
+  'max-w-screen-xl', 'max-w-[300]', 'max-w-[400]',
+  //  'mb-0', 'mb-8', 'mb-24',
+//  'ml-12',
+//  'mt-16',
+//  'mx-auto',
+//  'my-8',
+//  'p-4', 'p-16', 'p-24',
+//  'pl-6',
+//  'pr-6',
+//  'px-12', 'px-32',
+//  'py-4', 'py-8',
+//  'space-x-24',
+//  'space-y-24',
+  'right-[26]',
+  '-rotate-90',
+  's-bg/10','s-bg/20', 's-bg/50', 's-bg-primary/10', 's-bg-positive/10', 's-bg-negative/10',
+  's-border/50', 'hover:s-border/100',
+  's-border-t-primary/55', 'hover:s-border-t-primary/100',
+  's-text/60', 'hover:s-text/100', 's-text-link/50', 'hover:s-text-link/100', 'text-[--w-s-color-text-positive/60]', 'hover:text-[--w-s-color-text-positive/100]', 'text-[var(--w-black)/50]', 'hover:text-[var(--w-black)/100]', 'hover:s-text-positive', 'md:s-text-positive',
+  '-space-x-24',
+  'text-12', 'text-14',
+  'text-right!',
+  'transition-colors',
+  'translate-x-1', '-translate-x-1', 'translate-y-1', '-translate-y-1', '-translate-y-[3]', '-translate-x-[3]',
+  'w-[400]',
+  '[--w-prefix-width:56px]',
+  'last:ml-auto!',
+  'md:block', 'md:hidden', 'md:s-border-positive',
+  'group-hover:visible',
+
+  // presetDocs:
+  'ex-box', 'ex-inner-box', 'ex-font', 'ex-pic-no',
+  'pd-border-indigo-400', 'pd-border-sky-500', 'pd-border-pink-500',
+  'pd-bg-blue-500',
+  'pd-bg-cyan-500',
+  'pd-bg-fuchsia-500',
+  'pd-bg-indigo-400', 'pd-bg-indigo-500', 'pd-bg-indigo-600',
+  'pd-bg-pink-500',
+  'pd-bg-purple-500', 'pd-bg-purple-600',
+  'pd-bg-sky-100', 'pd-bg-sky-500',
+  'pd-bg-violet-500', 'pd-bg-violet-600',
+  'pd-bg-white',
+  'pd-font-mono',
+  'pd-shadow-sm', 'pd-shadow-md', 'pd-shadow-lg', 'pd-shadow-xl',
+  'pd-text-sm', 'pd-text-xs',
+  'pd-text-black', 'pd-text-white', 'pd-text-slate-500', 'pd-text-slate-800', 'pd-text-slate-900', 'pd-text-indigo-600',
+];
 
 export default defineConfig({
   lang: 'en-US',
@@ -35,25 +93,31 @@ export default defineConfig({
   vue: {
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => tag.includes('-example'),
+        isCustomElement: (tag) => /(-example|-color-table|example-container)$/.test(tag),
       },
     },
   },
   vite: {
     plugins: [
       uno({
-        presets: [presetWarp()],
+        presets: [presetWarp(), presetDocs()],
         mode: 'shadow-dom',
-        safelist: [...classes, ...docsClasses],
-      }),
-      uno({
-        presets: [presetWarp({ skipResets: true }), presetDocs()],
         shortcuts: [{
           'ex-font': 'pd-text-sm font-bold pd-font-mono pd-text-white',
-          'ex-box': 'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
+          'ex-box': 'ex-font p-24 rounded pd-shadow-xl flex items-center justify-center',
+          'ex-inner-box': 'p-24 rounded pd-shadow-xl mx-auto pd-bg-white pd-text-slate-500 max-w-[300]',
+          'ex-pic-no': 'absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800 leading-[32]',
         }],
-        safelist: supported,
+        safelist: [...classes, ...supported, ...docsClasses],
       }),
+      // uno({
+      //   presets: [presetWarp({ skipResets: true }), presetDocs()],
+      //   shortcuts: [{
+      //     'ex-font': 'pd-text-sm font-bold pd-font-mono pd-text-white',
+      //     'ex-box': 'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
+      //   }],
+      //   safelist: supported,
+      // }),
     ],
   },
   head: [
@@ -127,12 +191,12 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Developers',
-            collapsed: true,
-            items: [
-              { text: 'Web', link: '/getting-started/developers/' },
-              { text: 'Android', link: '/getting-started/android/' },
-              { text: 'iOS', link: '/getting-started/ios/' },
-            ],
+              collapsed: true,
+              items: [
+                { text: 'Web', link: '/getting-started/developers/' },
+                { text: 'Android', link: '/getting-started/android/' },
+                { text: 'iOS', link: '/getting-started/ios/' },
+              ],
             },
             { text: 'Designers', link: '/getting-started/designers/' },
           ],

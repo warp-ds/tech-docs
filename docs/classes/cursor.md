@@ -33,7 +33,7 @@ Use the `cursor-{style}` to control which cursor is displayed when hovering over
 <div class="cursor-none ...">cursor-none</div>
 ```
 
-## Applying conditional
+## Applying conditionally
 
 ### Hover, focus, and other states
 Warp lets you conditionally apply utility classes in different states using variant modifiers.

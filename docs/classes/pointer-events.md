@@ -13,7 +13,7 @@ Use `pointer-events-auto` to revert to the default browser behavior for pointer 
 Use `pointer-events-none` to make an element ignore pointer events. The pointer events will still trigger on child elements and pass-through to elements that are “beneath” the target.
 
 <container>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-24 px-0 sm:px-10 pd-font-mono font-bold">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-24 px-0 sm:px-10 pd-font-mono font-bold">
     <div class="flex flex-col">
       <p class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono mb-3 dark:pd-text-slate-400">pointer-events-auto</p>
       <div class="relative rounded-8 pd-shadow-xl w-full">

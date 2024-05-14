@@ -1,7 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 import ApiTable from '../ApiTable.vue';
 import TabsContent from '../TabsContent.vue';
-import ThemeContainer from '../ThemeContainer.vue';
 import ThemeSwitcher from '../ThemeSwitcher.vue';
 import ComponentDesignGuidelines from '../../components/ComponentDesignGuidelines.md';
 import ComponentQuestions from '../../components/ComponentQuestions.md';
@@ -16,21 +15,15 @@ import Box from '../Box.vue';
 import { IconStarFull32 } from '@warp-ds/icons/vue';
 import '../bootExamples.js';
 import './custom.css';
-import 'uno.css';
 
 export default {
   ...DefaultTheme,
   async enhanceApp(ctx) {
     if (!import.meta.env.SSR) {
-      const fontsize = await import('../customElements/fontsize-example.js');
-      const heading = await import('../customElements/heading-example.js');
       const themeSwitcherListener = await import('../theme-switcher-listener.js');
-      ctx.app.use(() => fontsize);
-      ctx.app.use(() => heading);
       ctx.app.use(() => themeSwitcherListener);
     }
     ctx.app.component('ApiTable', ApiTable);
-    ctx.app.component('ThemeContainer', ThemeContainer);
     ctx.app.component('ThemeSwitcher', ThemeSwitcher);
     ctx.app.component('TabsContent', TabsContent);
     ctx.app.component('ComponentDesignGuidelines', ComponentDesignGuidelines);

@@ -6,7 +6,7 @@ Utilities for setting the maximum height of an element.
 ## Quick reference
 
 | Class               | Description               |
-| ------------------- | ------------------------- |
+|---------------------|---------------------------|
 | `max-h-full`        | `max-height: 100%`        |
 | `max-h-screen`      | `max-height: 100vh`       |
 | `max-h-min`         | `max-height: min-content` |
@@ -20,6 +20,7 @@ Utilities for setting the maximum height of an element.
 > `{fraction}`: _Any fraction is valid - e.g. `1/5`_
 
 ## Basic usage
+
 ### Setting the maximum height
 Set the maximum height of an element using the `max-h-full` or `max-h-screen` utilities.
 
@@ -31,21 +32,22 @@ Set the maximum height of an element using the `max-h-full` or `max-h-screen` ut
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:max-h-screen` to apply the `max-h-screen` utility at only medium screen sizes and above.
-
-```html
-<div class="h-48 max-h-full md:max-h-screen">
-  <!-- ... -->
-</div>
-```
-
-
 ### Arbitrary values
 If you need to use a one-off max-height value, you can use square brackets to generate a property using any arbitrary value.
 
 ```html
 <div class="max-h-[32]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:max-h-screen` to apply the `max-h-screen` utility at only medium screen sizes and above.
+
+```html
+<div class="h-48 max-h-full md:max-h-screen">
   <!-- ... -->
 </div>
 ```

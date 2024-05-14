@@ -10,9 +10,9 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 
 ## Quick reference
 
-<ThemeContainer />
+<theme-switcher />
 
-<qr-color-table />
+<background-color-table />
 
 ## Basic usage
 

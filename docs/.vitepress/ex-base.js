@@ -2,19 +2,37 @@ import { createApp } from 'vue';
 import Control from './Control.vue';
 import Controls from './Controls.vue';
 
-export const buildWc = (elementName, baseVueComponent) => {
-  if (typeof window === 'undefined') return;
-  if (!customElements.get(elementName))
+export const buildWc = (elementName, baseVueComponent, rootProperties) => {
+  if (typeof window !== 'undefined' && !customElements.get(elementName))
     customElements.define(
       elementName,
       class extends HTMLElement {
+        static observedAttributes = ['class'];
+
+        constructor() {
+          super();
+          this.unoExampleWrapper = document.createElement('div');
+          this.unoExampleWrapper.classList = 'example-container';
+        }
+        attributeChangedCallback(name, oldValue, newValue) {
+          this.unoExampleWrapper.classList = 'example-container ' + newValue;
+        }
         connectedCallback() {
-          const warp = `<link rel="stylesheet" type="text/css" href='https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css' />`;
-          const target = `<div id="app" class="mt-16"></div>`;
+          const tokens =  '<link rel="stylesheet" type="text/css" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css" />';
           const shadowUnoStyle = `<style>
         @unocss-placeholder
+
         h3 {
           font-weight: bold;
+        }
+        .example-container {
+          --ex-bg-el-color: #3b82f680;
+          --ex-bg-bg-color: #60a5fa1a;
+          padding: 32px;
+          border: 2px solid var(--vp-c-gray-1);
+          border-radius: 8px;
+          margin-bottom: 8px;
+          background-color: var(--vp-c-bg-soft);
         }
         .component {
           padding: 16px;
@@ -25,20 +43,111 @@ export const buildWc = (elementName, baseVueComponent) => {
         }
         .options {
           margin-bottom: 8px;
-
         }
         .options span {
           margin-right: 12px;
           margin-left: 4px;
         }
+        .docs-table {
+          width: 100%;
+          display: table;
+        }
+        .docs-table tr {
+          background-color: var(--vp-c-bg);
+        }
+        .docs-table tr:nth-child(2n) {
+          background-color: var(--vp-c-bg-soft);
+        }
+        .docs-table th,
+        .docs-table td {
+          border: 1px solid var(--vp-c-divider);
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+        .docs-table thead th {
+          text-align: left;
+          color: var(--vp-c-text-2);
+          background-color: var(--vp-c-bg-soft);
+        }
+        .docs-table code {
+          border-radius: 4px;
+          padding: 3px 6px;
+          background-color: var(--vp-code-bg);
+          font-size: var(--vp-code-font-size);
+          color: var(--vp-code-color);
+        }
+
+        .ex-bg--purple {
+          --ex-bg-el-color: #a855f780;
+          --ex-bg-bg-color: #c084fc1a;
+        }
+        .ex-bg--violet {
+          --ex-bg-el-color: #8b5cf680;  
+          --ex-bg-bg-color: #a78bfa1a;
+        }
+        .ex-bg--pink {
+          --ex-bg-el-color: #ec489980;
+          --ex-bg-bg-color: #f472b61a;
+        }
+        .ex-bg--indigo {
+          --ex-bg-el-color: #6366f180;
+          --ex-bg-bg-color: #818cf81a;
+        }
+        .ex-bg--blue {
+          --ex-bg-el-color: #3b82f680;
+          --ex-bg-bg-color: #60a5fa1a;
+        }
+        .ex-bg--cyan {
+          --ex-bg-el-color: #06b6d480;
+          --ex-bg-bg-color: #22d3ee1a;
+        }
+        .ex-bg--fuchsia {
+          --ex-bg-el-color: #d946ef80;
+          --ex-bg-bg-color: #e879f91a; 
+        }
+        .ex-bg--white {
+          --ex-bg-el-color: #ffffffbf;
+        }
+        .ex-bg--dotted {
+          --ex-bg-dot-size: 8px;
+          --ex-bg-bg-size: var(--ex-bg-dot-size) var(--ex-bg-dot-size);
+          --ex-bg-dot-position: 0 0, calc(var(--ex-bg-dot-size) / 2) calc(var(--ex-bg-dot-size) / 2);
+          background-image:
+            radial-gradient(var(--ex-bg-el-color) 30%, transparent 30%),
+            radial-gradient(var(--ex-bg-el-color) 30%, transparent 30%);
+          background-size: var(--ex-bg-bg-size);
+          background-position: var(--ex-bg-dot-position);
+          background-color: var(--ex-bg-bg-color);
+        }
+        .ex-bg--striped {
+          background-color: var(--ex-bg-bg-color);
+          background-size: 7px 7px;
+          background-image:
+            linear-gradient(135deg,
+              var(--ex-bg-el-color) 10%,
+              transparent 0,
+              transparent 50%,
+              var(--ex-bg-el-color) 0,
+              var(--ex-bg-el-color) 60%,
+              transparent 0,
+              transparent);
+        }
       </style>`;
 
           this.shadow = this.attachShadow({ mode: 'open' });
-          this.shadow.innerHTML = shadowUnoStyle + warp + target;
-          createApp(baseVueComponent)
-            .component('demo-control', Control)
-            .component('demo-controls', Controls)
-            .mount(this.appEl);
+          this.shadow.innerHTML += shadowUnoStyle + tokens;
+
+          if (baseVueComponent) {
+            this.shadow.innerHTML += '<div id="app" class="mt-16 s-bg-primary"></div>';
+            createApp(baseVueComponent, rootProperties)
+              .component('demo-control', Control)
+              .component('demo-controls', Controls)
+              .mount(this.appEl);
+          } else {
+            this.unoExampleWrapper.innerHTML = this.innerHTML;
+            this.shadow.appendChild(this.unoExampleWrapper);
+          }
+
           document.addEventListener('change', () => {
             if (window.theme) {
               const stylesheets = this.shadow.querySelectorAll('link');

@@ -1,12 +1,13 @@
 > Sizing
 
 # Height
+
 Utilities for setting the height of an element.
 
 ## Quick reference
 
 | Class          | Description           |
-| -------------- | --------------------- |
+|----------------|-----------------------|
 | `h-auto`       | `height: auto`        |
 | `h-full`       | `height: 100%`        |
 | `h-screen`     | `height: 100vw`       |
@@ -21,18 +22,19 @@ Utilities for setting the height of an element.
 > `{fraction}`: _Any fraction is valid - e.g. `1/5`_
 
 ## Basic usage
+
 ### Fixed heights
 Use `h-{number}` to set an element to a fixed height. Example `h-16` = 1.6rem = 16px.
 
-<container class="flex justify-center items-end gap-16">
-  <div class="h-128 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-64 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-32 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-16 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-8 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-4 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-  <div class="h-2 w-32 mb-16 pd-bg-blue-500 rounded"></div>
-</container>
+<example-container class="flex justify-center items-end gap-16">
+  <div class="h-128 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-64 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-32 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-16 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-8 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-4 w-32 pd-bg-blue-500 rounded"></div>
+  <div class="h-2 w-32 pd-bg-blue-500 rounded"></div>
+</example-container>
 
 ```html
   <div class="h-128 ... "></div>
@@ -56,19 +58,11 @@ Use `h-full` to set an element’s height to 100% of its parent, as long as the 
 ```
 
 ### Viewport height
+
 Use `h-screen` to make an element span the entire height of the viewport.
 
 ```html
 <div class="h-screen">
-  <!-- ... -->
-</div>
-```
-
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:h-full` to apply the `h-full` utility at only medium screen sizes and above.
-
-```html
-<div class="h-8 md:h-full">
   <!-- ... -->
 </div>
 ```
@@ -82,4 +76,13 @@ If you need to use a one-off height value, use square brackets to generate a pro
 </div>
 ```
 
+## Applying conditionally
 
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:h-full` to apply the `h-full` utility at only medium screen sizes and above.
+
+```html
+<div class="h-8 md:h-full">
+  <!-- ... -->
+</div>
+```

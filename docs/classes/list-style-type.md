@@ -9,61 +9,64 @@ Utilities for controlling the bullet/number style of a list.
 <qr-table />
 
 ## Basic usage
+
 ### Setting the list style type
 To create bulleted, checked or numeric lists, use the `list-disc`, `list-checked` and `list-decimal` utilities.
 
-<container>
-  <div class="flex flex-col gap-8 p-16">
+<theme-switcher />
+
+<example-container>
+  <div class="ex-inner-box max-w-full flex flex-col gap-16">
     <div>
-      <span class="s-text dark:s-text-inverted mb-3">list-disc</span>
-      <ul class="!list-disc !list-inside s-text dark:s-text-inverted !pl-0">
+      <strong>list-disc</strong>
+      <ul class="list-disc list-inside">
         <li>An orbit is a regular, repeating path.</li>
-        <li>Orbiting objects, include planets, moons, asteroids, and manmade devices.</li>
+        <li>Orbiting objects, include planets, moons, asteroids, and man-made devices.</li>
         <li>Objects orbit each other because of gravity.</li>
       </ul>
     </div>
     <div>
-      <span class="s-text dark:s-text-inverted mb-3">list-decimal</span>
-      <ul class="!list-decimal !list-inside s-text dark:s-text-inverted !pl-0">
+      <strong>list-decimal</strong>
+      <ul class="list-decimal list-inside">
         <li>An orbit is a regular, repeating path.</li>
-        <li>Orbiting objects, include planets, moons, asteroids, and manmade devices.</li>
+        <li>Orbiting objects, include planets, moons, asteroids, and man-made devices.</li>
         <li>Objects orbit each other because of gravity.</li>
       </ul>
     </div>
     <div>
-      <span class="s-text dark:s-text-inverted mb-3">list-checked</span>
-      <ul class="!list-checked !list-inside s-text dark:s-text-inverted !pl-0">
+      <strong>list-checked</strong>
+      <ul class="list-checked list-inside">
         <li>An orbit is a regular, repeating path.</li>
-        <li>Orbiting objects, include planets, moons, asteroids, and manmade devices.</li>
+        <li>Orbiting objects, include planets, moons, asteroids, and man-made devices.</li>
         <li>Objects orbit each other because of gravity.</li>
       </ul>
     </div>
     <div>
-      <span class="s-text dark:s-text-inverted mb-3">list-none</span>
-      <ul class="!list-none !list-inside s-text dark:s-text-inverted !pl-0">
+      <strong>list-none</strong>
+      <ul class="list-none">
         <li>An orbit is a regular, repeating path.</li>
-        <li>Orbiting objects, include planets, moons, asteroids, and manmade devices.</li>
+        <li>Orbiting objects, include planets, moons, asteroids, and man-made devices.</li>
         <li>Objects orbit each other because of gravity.</li>
       </ul>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <ul class="list-disc ...">
-  <li>5 warp scientists</li>
+  <li>An orbit is ...</li>
   <!-- ... -->
 </ul>
 <ul class="list-decimal ...">
-  <li>5 warp scientists</li>
+  <li>An orbit is ...</li>
   <!-- ... -->
 </ul>
 <ul class="list-checked ...">
-  <li>5 warp scientists</li>
+  <li>An orbit is ...</li>
   <!-- ... -->
 </ul>
 <ul class="list-none ...">
-  <li>5 warp scientists</li>
+  <li>An orbit is ...</li>
   <!-- ... -->
 </ul>
 ```

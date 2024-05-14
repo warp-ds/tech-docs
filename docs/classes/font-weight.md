@@ -16,14 +16,14 @@ Utilities for controlling the font weight of an element.
 ### Setting the font size
 Control the font size of an element using the `text-{size}` utilities.
 
-<container>
-  <div class="mx-24">
-    <span class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono dark:pd-text-slate-400">font-normal</span>
-    <p class="text-t1 font-normal mt-0!">The quick smart warp scientist</p>
-    <span class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono dark:pd-text-slate-400">font-bold</span>
-    <p class="text-t2 font-bold mt-0!">The quick smart warp scientist</p>
+<example-container>
+  <div class="ex-inner-box s-text">
+    <span class="font-normal">font-normal</span>
+    <p class="font-normal">The quick smart warp scientist</p>
+    <span class="font-bold">font-bold</span>
+    <p class="font-bold">The quick smart warp scientist</p>
   </div>
-</container>
+</example-container>
 
 ```html
 <p class="font-normal ...">The quick smart warp scientist ...</p>

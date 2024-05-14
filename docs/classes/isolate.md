@@ -1,6 +1,7 @@
 > Layout
 
 # Isolate
+
 Utilities for controlling whether an element should explicitly create a new stacking context.
 
 ## Quick reference
@@ -8,6 +9,7 @@ Utilities for controlling whether an element should explicitly create a new stac
 <qr-table />
 
 ## Basic usage
+
 ### Setting the stacking context
 Use the `isolate` and `isolation-auto` utilities to control whether an element should explicitly create a new stacking context.
 

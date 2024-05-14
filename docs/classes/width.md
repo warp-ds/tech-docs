@@ -6,7 +6,7 @@ Utilities for setting the width of an element.
 ## Quick reference
 
 | Class          | Description          |
-| -------------- | -------------------- |
+|----------------|----------------------|
 | `w-auto`       | `width: auto`        |
 | `w-full`       | `width: 100%`        |
 | `w-screen`     | `width: 100vw`       |
@@ -21,10 +21,11 @@ Utilities for setting the width of an element.
 > `{fraction}`: _Any fraction is valid - e.g. `1/5`_
 
 ## Basic usage
+
 ### Fixed widths
 Use `w-{number}` to set an element to a fixed width. Example `w-32` = 3.2rem = 32px.
 
-<container class="flex justify-center">
+<example-container class="flex justify-center">
   <div class="space-y-16">
     <div class="w-128 h-32 mb-16 pd-bg-blue-500 rounded"></div>
     <div class="w-64 h-32 mb-16 pd-bg-blue-500 rounded"></div>
@@ -34,7 +35,7 @@ Use `w-{number}` to set an element to a fixed width. Example `w-32` = 3.2rem = 3
     <div class="w-4 h-32 mb-16 pd-bg-blue-500 rounded"></div>
     <div class="w-2 h-32 mb-16 pd-bg-blue-500 rounded"></div>
   </div>
-</container>
+</example-container>
 
 ```html
   <div class="w-128 ... "></div>
@@ -49,7 +50,7 @@ Use `w-{number}` to set an element to a fixed width. Example `w-32` = 3.2rem = 3
 ### Percentage widths
 Use `w-{fraction}` or `w-full` to set an element to a percentage based width.
 
-<container>
+<example-container>
   <div class="flex gap-16">
     <div class="w-1/2 h-32 mb-16 pd-bg-violet-500 ex-box">w-1/2</div>
     <div class="w-1/2 h-32 mb-16 pd-bg-violet-500 ex-box">w-1/2</div>
@@ -77,7 +78,7 @@ Use `w-{fraction}` or `w-full` to set an element to a percentage based width.
     <div class="flex gap-16">
     <div class="w-full h-32 mb-16 pd-bg-violet-500 ex-box">w-full</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="flex ...">
@@ -127,20 +128,22 @@ The `w-auto` utility can be useful if you need to remove an element’s assigned
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:w-full` to apply the `w-full` utility at only medium screen sizes and above.
-
-```html
-<div class="w-1/2 md:w-full">
-  <!-- ... -->
-</div>
-```
-
 ### Arbitrary values
 If you need to use a one-off width value, use square brackets to generate a property using any arbitrary value. Example: `w-[256]` generates width:25.6rem = 256px in most cases.
 
 ```html
 <div class="w-[256]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:w-full` to apply the `w-full` utility at only medium screen sizes and above.
+
+```html
+<div class="w-1/2 md:w-full">
   <!-- ... -->
 </div>
 ```

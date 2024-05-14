@@ -15,24 +15,24 @@ Use `static` to position an element according to the normal flow of the document
 
 Any `offsets` will be ignored and the element will not act as a position reference for absolutely positioned children.
 
-<container>
-  <div class="relative">
-    <box striped class="rounded-8 p-16" fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
-      <div class="static pd-bg-fuchsia-500 px-16 py-4 h-144 rounded-4">
-        <p class="ex-font">Static parent</p>
-        <div class="absolute bottom-0 left-0 pd-bg-purple-600 pd-shadow-lg rounded-4 px-16 py-4 pd-text-white">
-          <p class="ex-font">Absolute child</p>
-        </div>
+<example-container>
+  <div class="ex-bg--striped ex-bg--fuchsia rounded-8 p-16 relative">
+    <div class="static pd-bg-fuchsia-500 p-16 h-128 rounded-4 ex-font">
+      Static parent
+      <div class="absolute bottom-0 left-0 pd-bg-purple-600 pd-shadow-lg rounded-4 p-16 pd-text-white ex-font">
+        Absolute child
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
-```html
-<div class="static ...">
-  <p>Static parent</p>
-  <div class="absolute bottom-0 left-0 ...">
-    <p>Absolute child</p>
+```html{2}
+<div class="relative ...">
+  <div class="static ...">
+    Static parent
+    <div class="absolute bottom-0 left-0 ...">
+      Absolute child
+    </div>
   </div>
 </div>
 ```
@@ -42,18 +42,16 @@ Use `relative` to position an element according to the normal flow of the docume
 
 Any `offsets` are calculated relative to the element’s normal position and the element will act as a position reference for absolutely positioned children.
 
-<container>
-  <div class="relative">
-    <box striped class="rounded-8 p-16" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
-      <div class="relative pd-bg-blue-500 px-16 py-4 h-144 rounded-4">
-        <p class="ex-font">Relative parent</p>
-        <div class="absolute bottom-0 left-0 pd-bg-indigo-600 pd-shadow-lg rounded-4 px-16 py-4 pd-text-white">
-          <p class="ex-font">Absolute child</p>
-        </div>
+<example-container>
+  <div class="ex-bg--striped ex-bg--blue rounded-8 p-16">
+    <div class="relative pd-bg-blue-500 p-16 h-128 rounded-4 ex-font">
+      Relative parent
+      <div class="absolute bottom-0 left-0 pd-bg-indigo-600 pd-shadow-lg rounded-4 p-16 pd-text-white ex-font">
+        Absolute child
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="relative ...">
@@ -69,42 +67,39 @@ Use `absolute` to position an element outside the normal flow of the document, c
 
 Any `offsets` are calculated relative to the nearest parent that has a position other than static, and the element will act as a position reference for other absolutely positioned children.
 
-<container>
-  <h4 class="mb-8">With static positioning</h4>
-  <div class="relative">
-    <box striped class="relative rounded-8 p-16" fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
-      <div class="ex-font pd-text-black pb-4">Relative parent</div>
-      <div class="static pd-bg-fuchsia-500 px-16 py-4 h-144 rounded-4">
-        <p class="ex-font">Static parent</p>
-        <div class="flex gap-16">
-          <div class="static bottom-0 left-0 pd-bg-purple-500 pd-shadow-lg rounded-4 px-16 py-4 pd-text-white">
-            <p class="ex-font">Static child</p>
-          </div>
-          <div class="static bottom-0 left-0 pd-bg-white pd-shadow-lg rounded-4 px-16 py-4 pd-text-black">
-            <p class="ex-font pd-text-black!">Static sibling</p>
-          </div>
+<example-container>
+  <h4>With static positioning</h4>
+  <div class="relative ex-bg--striped ex-bg--fuchsia rounded-8 p-16 ex-font pd-text-black">
+    Relative parent
+    <div class="static pd-bg-fuchsia-500 p-8 h-144 mt-8 rounded-4 pd-text-white">
+      Static parent
+      <div class="flex gap-16 my-8">
+        <div class="static pd-bg-purple-600 pd-shadow-lg rounded-4 p-8">
+          Static child
+        </div>
+        <div class="static pd-bg-white pd-shadow-lg rounded-4 p-8 pd-text-black">
+          Static sibling
         </div>
       </div>
-    </box>
+    </div>
   </div>
-  <h4 class="mt-24 mb-8">With absolute positioning</h4>
-  <div class="relative">
-    <box striped class="relative rounded p-16" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
-      <div class="pb-4 ex-font pd-text-black">Relative parent</div>
-      <div class="static pd-bg-blue-500 px-16 py-4 h-144 rounded">
-        <p class="ex-font">Static parent</p>
-        <div class="flex gap-16">
-          <div class="absolute top-0 right-0 pd-bg-indigo-500 pd-shadow-lg rounded-4 px-16 py-4 pd-text-white">
-            <p class="ex-font">Absolute child</p>
-          </div>
-          <div class="static bottom-0 left-0 pd-bg-white pd-shadow-lg rounded-4 px-16 py-4 pd-text-black">
-            <p class="ex-font pd-text-black">Static sibling</p>
-          </div>
+
+  <h4 class="mt-24">With absolute positioning</h4>
+  <div class="relative ex-bg--striped ex-bg--blue rounded-8 p-16 ex-font pd-text-black">
+    Relative parent
+    <div class="static pd-bg-blue-500 p-8 h-144 mt-8 rounded-4 pd-text-white">
+      Static parent
+      <div class="flex gap-16 my-8">
+        <div class="absolute top-0 right-0 pd-bg-indigo-500 pd-shadow-lg rounded-4 p-8">
+          Absolute child
+        </div>
+        <div class="static pd-bg-white pd-shadow-lg rounded-4 p-8 pd-text-black">
+          Static sibling
         </div>
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="static ...">
@@ -122,57 +117,59 @@ Use `fixed` to position an element relative to the browser window.
 
 Any `offsets` are calculated relative to the viewport and the element will act as a position reference for absolutely positioned children.
 
-<container>
-  <div class="flex justify-center -my-32">
-    <div class="relative">
-      <div style="width:300px;max-height:275px" class="overflow-auto mx-auto pd-bg-white px-16 pd-text-slate-500 dark:pd-bg-slate-800 dark:pd-text-slate-400">
-       <div class="absolute left-0 right-0 px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 pd-bg-slate-50/90 dark:pd-bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">Warp Scientists</div>
-        <div class="flex items-center pt-16">
-          <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-          <div class="">
+<example-container>
+  <div class="ex-inner-box p-0 pd-bg-blue-500 p-4 rounded-4">
+    <div class="pd-text-white ex-font pb-4 px-2">Imaginary browser window</div>
+    <div class="relative s-bg h-[200] overflow-y-scroll">
+      <h4 class="sticky border-b s-border/50 s-bg/50 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m">Warp Scientists</h4>
+      <ul class="divide-y">
+        <li class="flex items-center p-16">
+          <img src="/classes/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <div>
             <div class="font-bold">Justina Matter</div>
+            Warp Scientist
           </div>
-        </div>
-        <hr class="-mx-16!" />
-        <div class="flex items-center ">
-          <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-          <div class="">
+        </li>
+        <li class="flex items-center p-16">
+          <img src="/classes/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <div>
             <div class="font-bold">Narve Hoops</div>
+            Warp Scientist
           </div>
-        </div>
-        <hr class="-mx-16!" />
-        <div class="flex items-center ">
-          <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-          <div class="">
+        </li>
+        <li class="flex items-center p-16">
+          <img src="/classes/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <div>
             <div class="font-bold">Dagny Calamity</div>
+            Warp Scientist
           </div>
-        </div>
-        <hr class="-mx-16!" />
-        <div class="flex items-center pb-16">
-          <img src="/classes/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-          <div class="">
+        </li>
+        <li class="flex items-center p-16">
+          <img src="/classes/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <div>
             <div class="font-bold">Joar Quack</div>
+            Warp Scientist
           </div>
-        </div>
-      </div>
+        </li>
+    </ul>
     </div>
   </div>
-</container>
+</example-container>
 
-```html
-<div class="relative">
-  <div class="fixed top-0 left-0 right-0">Warp Scientists</div>
-  <div>
-    <div>
+```html{2}
+<div>
+  <h4 class="fixed top-0 left-0 right-0">Warp Scientists</h4>
+  <ul>
+    <li>
       <img src="..." />
       <div>Justina Matter</div>
-    </div>
-    <div>
+    </li>
+    <li>
       <img src="..." />
       <div>Narve Hoops</div>
-    </div>
+    </li>
     <!-- ... -->
-  </div>
+  </ul>
 </div>
 ```
 
@@ -181,136 +178,101 @@ Use `sticky` to position an element as `relative` until it crosses a specified t
 
 Any `offsets` are calculated relative to the element’s normal position and the element will act as a position reference for absolutely positioned children.
 
-<container class="relative">
-  <div class="flex justify-center -my-32">
-    <div class="relative">
-      <div style="width:300px;max-height:275px" class="overflow-auto mx-auto pd-bg-white px-16 pd-text-slate-500 dark:pd-bg-slate-800 dark:pd-text-slate-400">
-        <div class="relative">
-          <div class="sticky top-0 px-16 -mx-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 pd-bg-slate-50/90 dark:pd-bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
-            A - Warp Scientists
-          </div>
-          <div class="flex items-center pt-16">
+<example-container>
+  <div class="ex-inner-box relative p-0">
+    <div class="overflow-y-scroll h-[200]">
+      <div>
+        <h4 class="sticky border-b s-border/50 s-bg-primary/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">A - Warp Scientists</h4>
+        <ul class="divide-y">
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Ainsley Matter</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Ainsley Matter</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Alarik Hoops</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Alarik Hoops</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Ambrose Calamity</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center pb-16">
+            <strong>Ambrose Calamity</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Anders Quack</div>
-            </div>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="sticky top-0 px-16 -mx-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 pd-bg-slate-50/90 dark:pd-bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
-            B - Warp Scientists
-          </div>
-          <div class="flex items-center pt-16">
+            <strong>Anders Quack</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-32">
+        <h4 class="sticky border-b s-border/50 s-bg-positive/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">B - Warp Scientists</h4>
+        <ul class="divide-y">
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Bella Matter</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Bella Matter</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Brayden Hoops</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Brayden Hoops</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
+            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <strong>Bailey Calamity</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Bailey Calamity</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center pb-16">
-            <img src="/classes/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Bentley Quack</div>
-            </div>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="sticky top-0 px-16 -mx-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 pd-bg-slate-50/90 dark:pd-bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
-            C - Warp Scientists
-          </div>
-          <div class="flex items-center pt-16">
+            <strong>Bentley Quack</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-32">
+        <h4 class="sticky border-b s-border/50 s-bg-negative/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">C - Warp Scientists</h4>
+        <ul class="divide-y">
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Charlotte Matter</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Charlotte Matter</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Carter Hoops</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center ">
+            <strong>Carter Hoops</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
+            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <strong>Claire Calamity</strong>
+          </li>
+          <li class="flex items-center px-12 py-8">
             <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Claire Calamity</div>
-            </div>
-          </div>
-          <hr class="-mx-16!" />
-          <div class="flex items-center pb-16">
-            <img src="/classes/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
-            <div class="">
-              <div class="font-bold">Cora Quack</div>
-            </div>
-          </div>
-        </div>
+            <strong>Cora Quack</strong>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-</container>
+</example-container>
 
-```html
+```html{3,17}
 <div>
   <div>
-    <div class="sticky top-0 ...">A</div>
-    <div>
-      <div>
+    <h4 class="sticky top-0 left-0 right-0 ...">A - Warp Scientists</h4>
+    <ul>
+      <li>
         <img src="..." />
         <strong>Ainsley Matter</strong>
-      </div>
-      <div>
+      </li>
+      <li>
         <img src="..." />
         <strong>Alarik Hoops</strong>
-      </div>
+      </li>
       <!-- ... -->
-    </div>
+    </ul>
   </div>
   <div>
-    <div class="sticky top-0">B</div>
-    <div>
-      <div>
+    <h4 class="sticky top-0 left-0 right-0 ...">B - Warp Scientists</h4>
+    <ul>
+      <li>
         <img src="..." />
         <strong>Bella Matter</strong>
-      </div>
+      </li>
       <!-- ... -->
-    </div>
+    </ul>
   </div>
   <!-- ... -->
 </div>

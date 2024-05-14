@@ -28,7 +28,7 @@ Utilities for controlling the border radius of an element.
 ### Rounded corners
 Use utilities like `.rounded`, or `.rounded-full` to apply different border radius sizes to an element.
 
-<container>
+<example-container>
   <div class="grid grid-cols-4 gap-16 justify-items-center">
     <div>rounded</div>
     <div>rounded-8</div>
@@ -39,7 +39,7 @@ Use utilities like `.rounded`, or `.rounded-full` to apply different border radi
     <div class="pd-bg-pink-500 w-96 h-96 rounded-16 ex-box">03</div>
     <div class="pd-bg-pink-500 w-96 h-96 rounded-full ex-box">04</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="rounded ...">01</div>
@@ -53,12 +53,12 @@ Use `rounded-0` to remove an existing border radius from an element.
 
 This is most commonly used to remove a border radius that was applied at a smaller breakpoint.
 
-<container>
+<example-container>
   <div class="grid gap-16 justify-items-center">
     <div>rounded-0</div>
     <div class="pd-bg-fuchsia-500 p-24 rounded-0 ex-box">OMG, a square</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="rounded-0 ..."></div>
@@ -67,7 +67,7 @@ This is most commonly used to remove a border radius that was applied at a small
 ### Rounding sides separately
 Use `rounded-{t|r|b|l}{-size}` to only round one side of an element.
 
-<container>
+<example-container>
   <div class="grid grid-cols-4 gap-16 justify-items-center">
     <div>rounded-t-16</div>
     <div>rounded-r-16</div>
@@ -78,7 +78,7 @@ Use `rounded-{t|r|b|l}{-size}` to only round one side of an element.
     <div class="pd-bg-purple-500 p-24 rounded-b-16 ex-box">03</div>
     <div class="pd-bg-purple-500 p-24 rounded-l-16 ex-box">04</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="rounded-t-16 ...">01</div>
@@ -90,18 +90,18 @@ Use `rounded-{t|r|b|l}{-size}` to only round one side of an element.
 ### Rounding corners separately
 Use `rounded-{tl|tr|br|bl}{-size}` to only round one corner an element.
 
-<container>
+<example-container>
   <div class="grid grid-cols-4 gap-16 justify-items-center">
-    <div>rounded-tl</div>
-    <div>rounded-tr</div>
-    <div>rounded-br</div>
-    <div>rounded-bl</div>
+    <div>rounded-tl-16</div>
+    <div>rounded-tr-16</div>
+    <div>rounded-br-16</div>
+    <div>rounded-bl-16</div>
     <div class="pd-bg-violet-500 p-24 rounded-tl-16 ex-box">01</div>
     <div class="pd-bg-violet-500 p-24 rounded-tr-16 ex-box">02</div>
     <div class="pd-bg-violet-500 p-24 rounded-br-16 ex-box">03</div>
     <div class="pd-bg-violet-500 p-24 rounded-bl-16 ex-box">04</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="rounded-tl-16 ...">01</div>

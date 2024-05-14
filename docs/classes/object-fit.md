@@ -13,15 +13,15 @@ Utilities for controlling how a replaced element's content should be resized.
 ### Resizing to cover a container
 Resize an element’s content to cover its container using `.object-cover`.
 
-<container>
+<example-container>
   <div class="flex justify-center">
-    <box class="rounded" style="height:200px;width:400px;" striped fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
         <img src="/classes/50s-scientists.jpg" class="object-cover rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="aspect-2/1 ...">
@@ -32,15 +32,15 @@ Resize an element’s content to cover its container using `.object-cover`.
 ### Containing an element
 Resize an element’s content to stay contained within its container using `.object-contain`.
 
-<container>
+<example-container>
   <div class="flex justify-center">
-    <box class="rounded" style="height:200px;width:400px;" striped fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
         <img src="/classes/50s-scientists.jpg" class="object-contain rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="aspect-2/1 ...">
@@ -51,15 +51,15 @@ Resize an element’s content to stay contained within its container using `.obj
 ### Stretching to fit a container
 Stretch an element’s content to fit its container using `.object-fill`.
 
-<container>
+<example-container>
   <div class="flex justify-center">
-    <box class="rounded" style="height:200px;width:400px;" striped fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
         <img src="/classes/50s-scientists.jpg" class="object-stretch rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="aspect-2/1 ...">
@@ -70,15 +70,15 @@ Stretch an element’s content to fit its container using `.object-fill`.
 ### Scaling down if too large
 Display an element’s content at its original size but scale it down to fit its container if necessary using `.object-scale-down`.
 
-<container>
+<example-container>
   <div class="flex justify-center">
-    <box class="rounded" style="height:200px;width:400px;" striped fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
         <img src="/classes/50s-scientists.jpg" class="object-scale-down rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="aspect-2/1 ...">
@@ -90,15 +90,15 @@ Display an element’s content at its original size but scale it down to fit its
 
 Display an element’s content at its original size ignoring the container size using `.object-none`.
 
-<container>
+<example-container>
   <div class="flex justify-center">
-    <box class="rounded" style="height:200px;width:400px;" striped fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+    <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
         <img src="/classes/50s-scientists.jpg" class="object-none rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
-    </box>
+    </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="aspect-2/1 ...">

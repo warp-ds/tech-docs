@@ -8,6 +8,28 @@ Utilities for controlling the visibility of an element.
 
 <qr-table />
 
+## Basic usage
+
+### Making elements invisible
+
+Use `invisible` to hide an element, but still maintain its place in the DOM, affecting the layout of other elements (compare with `.hidden` from the `display` documentation).
+
+<example-container>
+  <div class="grid grid-cols-3 gap-16">
+   <div class="ex-box pd-bg-fuchsia-500">01</div>
+   <div class="ex-box pd-bg-fuchsia-500 invisible">02</div>
+   <div class="ex-box pd-bg-fuchsia-500">03</div>
+  </div>
+</example-container>
+
+```html{3}
+<div class="...">
+  <div>01</div>
+  <div class="invisible ...">02</div>
+  <div>03</div>
+</div>
+```
+
 <!--
 
 #TODO: Collapse doesnt work
@@ -16,29 +38,6 @@ Sidenote:  Visibility: collapse used to have / has(?) so many weird quirks that 
 I think Chrome still treats it = visibility: hidden which makes it kinda useless.
 https://caniuse.com/mdn-css_properties_visibility_collapse
 
--->
-
-## Basic usage
-
-### Making elements invisible
-
-Use `invisible` to hide an element, but still maintain its place in the DOM, affecting the layout of other elements (compare with `.hidden` from the `display` documentation).
-
-<container>
-  <div class="grid grid-cols-3 gap-16">
-   <div class="ex-box pd-bg-fuchsia-500 rounded-4">01</div>
-   <div class="ex-box pd-bg-fuchsia-500 rounded-4 invisible">02</div>
-   <div class="ex-box pd-bg-fuchsia-500 rounded-4">03</div>
-  </div>
-</container>
-
-```html
-<div class="grid grid-cols-3 gap-16">
-  <div>01</div>
-  <div class="invisible ...">02</div>
-  <div>03</div>
-</div>
-```
 
 ### Collapsing elements
 
@@ -46,89 +45,89 @@ Use `collapse` to hide table rows, row groups, columns, and column groups as if 
 
 This makes it possible to dynamically toggle rows and columns without affecting the table layout.
 
-<container>
-  <div>Showing all rows</div>
-  <table class="border-collapse table! w-full border-y pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800">
-    <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
+<example-container>
+  <h4>Showing all rows</h4>
+  <table class="docs-table mb-16">
+    <thead>
       <tr>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-right">#</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Scientist</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Title</th>
+        <th>#</th>
+        <th>Scientist</th>
+        <th>Title</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">1</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Justina Matter</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>1</td>
+        <td>Justina Matter</td>
+        <td>Warp Scientist</td>
       </tr>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">2</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Narve Hoops</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>2</td>
+        <td>Narve Hoops</td>
+        <td>Warp Scientist</td>
       </tr>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">3</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Dagny Calamity</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>3</td>
+        <td>Dagny Calamity</td>
+        <td>Warp Scientist</td>
       </tr>
     </tbody>
   </table>
-  <div>Hiding a row using `collapse`</div>
-  <table class="border-collapse table! w-full border-y pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm">
-    <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
+  <h4>Hiding a row using `collapse`</h4>
+  <table class="docs-table mb-16">
+    <thead>
       <tr>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-right">#</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Scientist</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Title</th>
+        <th>#</th>
+        <th>Scientist</th>
+        <th>Title</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">1</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Justina Matter</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>1</td>
+        <td>Justina Matter</td>
+        <td>Warp Scientist</td>
       </tr>
-      <tr class="collapse">
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">2</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Narve Hoops</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+      <tr class="collapse" style="visibility: collapse;">
+        <td>2</td>
+        <td>Narve Hoops</td>
+        <td>Warp Scientist</td>
       </tr>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">3</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Dagny Calamity</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>3</td>
+        <td>Dagny Calamity</td>
+        <td>Warp Scientist</td>
       </tr>
     </tbody>
   </table>
-  <div>Hiding a row using `hidden`</div>
-  <table class="border-collapse table! w-full border-y pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm">
-    <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
+  <h4>Hiding a row using `hidden`</h4>
+  <table class="docs-table">
+    <thead>
       <tr>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-right">#</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Scientist</th>
-        <th class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-600 pd-font-semibold px-16 py-8 pd-text-slate-900 dark:pd-text-slate-200 text-left">Title</th>
+        <th>#</th>
+        <th>Scientist</th>
+        <th>Title</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">1</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Justina Matter</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>1</td>
+        <td>Justina Matter</td>
+        <td>Warp Scientist</td>
       </tr>
       <tr class="hidden">
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">2</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Narve Hoops</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>2</td>
+        <td>Narve Hoops</td>
+        <td>Warp Scientist</td>
       </tr>
       <tr>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">3</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Dagny Calamity</td>
-        <td class="border first:border-l-0 last:border-r-0 pd-border-slate-300 dark:pd-border-slate-700 px-4 py-4 pd-text-slate-500 dark:pd-text-slate-400">Warp Scientist</td>
+        <td>3</td>
+        <td>Dagny Calamity</td>
+        <td>Warp Scientist</td>
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html{15}
   <table>
@@ -158,27 +157,45 @@ This makes it possible to dynamically toggle rows and columns without affecting 
     </tbody>
   </table>
 ```
+
+-->
+
 ### Making elements visible
-Use `visible` to make an element visible. This is mostly useful for undoing the `invisible` utility at different screen sizes.
+Use `visible` to make an element visible. This is mostly useful for undoing the `invisible` utility at different screen sizes or other conditionals.
 
-<container>
+<example-container>
   <div class="grid grid-cols-3 gap-16">
-   <div class="ex-box pd-bg-cyan-500 rounded-4">01</div>
-   <div class="ex-box pd-bg-cyan-500 rounded-4 visible">02</div>
-   <div class="ex-box pd-bg-cyan-500 rounded-4">03</div>
+    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">01</div></div>
+    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-800 group overflow-hidden">
+      Hover me
+      <div class="absolute inset-0 flex items-center justify-center pd-bg-indigo-500 pd-text-white invisible group-hover:visible">02</div>
+    </div>
+    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">03</div></div>
   </div>
-</container>
+</example-container>
 
-```html
-<div class="grid grid-cols-3 gap-16">
-  <div>01</div>
-  <div class="visible ...">02</div>
-  <div>03</div>
+```html{8}
+<div>
+  <div class="...">
+    Invisible
+    <div class="invisible">01</div>
+  </div>
+  <div class="group ...">
+    Hover me
+    <div class="invisible group-hover:visible ...">02</div>
+  </div>
+  <div class="...">
+    Invisible
+    <div class="invisible">02</div>
+  </div>
 </div>
 ```
+
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:invisible` to apply the `invisible` utility
-at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:invisible` to apply the `invisible` utility at only medium screen sizes and above.
 
 ```html
 <div class="visible md:invisible">

@@ -33,48 +33,47 @@ This functionality is not yet supported! If you need this, reach out to us on [#
 Set the maximum width of an element using the `max-w-{size}` utilities.
 
 <width-controller>
-  <container>
-    <box class="flex justify-center" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
-      <section class="pd-bg-white dark:pd-bg-black pd-text-black dark:pd-text-white ex-box max-w-[480]">
-        <img src="/classes/20s-scientists.jpg" class="-my-24 -ml-24 h-144 w-144 rounded-l" alt="AI generated picture of 1920s scientists working on a warp drive" />
-        <div class="px-24">
-          <div class="font-bold">Warp scientists</div>
-          <div class="">AI generated picture of warp scientists from the 1920s</div>
-        </div>
+  <example-container>
+    <div class="ex-bg--striped ex-bg--blue flex justify-center">
+      <section class="ex-box pd-bg-white max-w-[300]">
+        <img src="/classes/20s-scientists.jpg" class="h-128 w-128 rounded-full" alt="AI generated picture of 1920s scientists working on a warp drive" />
+        <p class="pd-text-slate-900 pl-16">AI generated picture of warp scientists from the 1920s</p>
       </section>
-    </box>
-  </container>
+    </div>
+  </example-container>
 </width-controller>
 
 ```html
-<div class="max-w-[480] ...">
+<div class="max-w-[300] ...">
   <!-- ... -->
 </div>
 ```
 
+<!-- TODO: Unsupported
 ### Constraining to your breakpoints
 The `max-w-screen-{breakpoint}` classes can be used to give an element a max-width matching a specific breakpoint.
 
 ```html
-<div class="max-w-screen-md">
-  <!-- ... -->
-</div>
+<div class="max-w-screen-md"></div>
 ```
-
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:max-w-lg` to apply the `max-w-lg` utility at only medium screen sizes and above.
-
-```html
-<div class="max-w-sm md:max-w-lg">
-  <!-- ... -->
-</div>
-```
+-->
 
 ### Arbitrary values
 If you need to use a one-off `max-width` value that doesn't make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.
 
 ```html
 <div class="max-w-[50]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:max-w-lg` to apply the `max-w-lg` utility at only medium screen sizes and above.
+
+```html
+<div class="max-w-sm md:max-w-lg">
   <!-- ... -->
 </div>
 ```

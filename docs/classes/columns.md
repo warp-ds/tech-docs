@@ -3,83 +3,82 @@
 # Columns
 Utilities for controlling the number of columns within an element.
 
-
 ## Quick reference
 
 | Class           | Description     |
-| --------------- | --------------- |
+|-----------------|-----------------|
 | `columns-{n}`   | `columns: {n}`  |
 | `columns-auto`  | `columns: auto` |
 
 > Available values <br />
 > `{n}`: `1` through `12` <br />
 
-
-
 ## Basic usage
-### Adding based on column count
-Use the `columns-{count}` utilities to set the number of columns that should be created for the content within an element. The column width will be automatically adjusted to accommodate that number.
 
-<container>
-  <div class="columns-1 md:columns-3 gap-x-24" style="columns:3">
+### Adding based on column count
+Use the `columns-{count}` utilities to set the number of columns that should be created for the content within an element.
+The column width will be automatically adjusted to accommodate that number.
+
+<example-container>
+  <div class="columns-3 gap-x-24">
     <box striped fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists" />
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">1</div>
+        <div class="ex-pic-no">1</div>
       </div>
       <div class="relative">
-        <div class="aspect-1/1 block mb-24">
+        <div class="aspect-1/1 mb-24">
           <img class="w-full object-cover" src="/classes/la01.jpg" alt="Ai generated line drawing of warp related scene">
         </div>
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">2</div>
+        <div class="ex-pic-no">2</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la02.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">3</div>
+        <div class="ex-pic-no">3</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la06.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">4</div>
+        <div class="ex-pic-no">4</div>
       </div>
       <div class="relative">
-        <div class="aspect-1/1 block mb-24">
+        <div class="aspect-1/1 mb-24">
           <img class="w-full object-cover" src="/classes/la03.jpg" alt="Ai generated line drawing of warp related scene">
         </div>
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">5</div>
+        <div class="ex-pic-no">5</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la04.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">6</div>
+        <div class="ex-pic-no">6</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la11.jpg" alt="Ai generated line drawing of warp scientists">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">7</div>
+        <div class="ex-pic-no">7</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la05.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">8</div>
+        <div class="ex-pic-no">8</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la07.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">9</div>
+        <div class="ex-pic-no">9</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la10.jpg" alt="Ai generated line drawing of warp scientists">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">10</div>
+        <div class="ex-pic-no">10</div>
       </div>
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la08.jpg" alt="Ai generated line drawing of warp related scene">
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">11</div>
+        <div class="ex-pic-no">11</div>
       </div>
       <div class="relative">
-        <div class="aspect-1/1 block mb-24">
+        <div class="aspect-1/1 mb-24">
           <img class="w-full" src="/classes/la12.jpg" alt="Ai generated line drawing of warp scientists">
         </div>
-        <div class="absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800" style="line-height:32px">12</div>
+        <div class="ex-pic-no">12</div>
       </div>
     </box>
   </div>
-</container>
+</example-container>
 
 ```html{2,4}
 <div class="columns-3 ...">
@@ -92,35 +91,30 @@ Use the `columns-{count}` utilities to set the number of columns that should be 
 ### Setting the column gap
 To specify the width between columns, you can use the `gap-x` utilities.
 
-<container>
-  <div class="grid grid-cols-[1fr_2.4rem_1fr_2.4rem_1fr]" style="">
-    <div class="flex flex-col w-full">
-        <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists">
+<example-container>
+  <div class="columns-3 gap-x-24 ex-bg--striped ex-bg--fuchsia">
+    <div class="bg-[--vp-c-bg-soft]">
+      <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists">
       <div class="aspect-square object-cover mb-24">
         <img class="w-full" src="/classes/la01.jpg" alt="Ai generated line drawing of warp related scene">
       </div>
-      <img class="w-full mb-24" src="/classes/la02.jpg" alt="Ai generated line drawing of warp related scene">
-      <img class="w-full mb-24" src="/classes/la06.jpg" alt="Ai generated line drawing of warp related scene">
+      <img class="w-full" src="/classes/la02.jpg" alt="Ai generated line drawing of warp related scene">
     </div>
-    <box striped fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)"></box>
-    <div>
+    <div class="bg-[--vp-c-bg-soft]">
       <div class="aspect-square object-cover mb-24">
         <img class="w-full" src="/classes/la03.jpg" alt="Ai generated line drawing of warp related scene"></div>
       <img class="w-full mb-24" src="/classes/la04.jpg" alt="Ai generated line drawing of warp related scene">
-      <img class="w-full mb-24" src="/classes/la11.jpg" alt="Ai generated line drawing of warp scientists">
-      <img class="w-full mb-24" src="/classes/la05.jpg" alt="Ai generated line drawing of warp related scene">
+      <img class="w-full" src="/classes/la11.jpg" alt="Ai generated line drawing of warp scientists">
     </div>
-    <box striped fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)"></box>
-    <div>
+    <div class="bg-[--vp-c-bg-soft]">
       <img class="w-full mb-24" src="/classes/la07.jpg" alt="Ai generated line drawing of warp related scene">
       <img class="w-full mb-24" src="/classes/la10.jpg" alt="Ai generated line drawing of warp scientists">
-      <div class="aspect-square object-cover mb-24">
+      <div class="aspect-square object-cover">
         <img class="w-full" src="/classes/la08.jpg" alt="Ai generated line drawing of warp related scene">
       </div>
-      <img class="w-full mb-24" src="/classes/la12.jpg" alt="Ai generated line drawing of warp scientists">
     </div>
   </div>
-</container>
+</example-container>
 
 ```html{1}
 <div class="gap-x-24 columns-3 ...">
@@ -138,7 +132,7 @@ You can also use variant modifiers to target media queries like responsive break
   <!-- ... -->
 </div>
 ```
-​
+
 ### Arbitrary values
 If you need to use a one-off columns value, use square brackets to generate a property on the fly using any arbitrary value.
 

@@ -35,11 +35,11 @@ The built-in `aspect-ratio` property is not yet well supported.
 Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 
 <width-controller>
-  <container>
-    <div class="flex justify-center aspect-2/1 rounded-4 overflow-hidden" style="display:flex;justify:center;rounded;position:relative;padding-bottom:50%;border-radius:4px;overflow:hidden;">
-      <img src="/classes/50s-scientists.jpg" class="object-cover" style="object-fit:cover;position:absolute;height:100%;width:100%;top:0;right:0;bottom:0;left:0;" alt="AI generated picture of 1950s scientists working on a warp drive" />
+  <example-container>
+    <div class="flex justify-center aspect-2/1 rounded relative overflow-hidden">
+      <img src="/classes/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
     </div>
-  </container>
+  </example-container>
 </width-controller>
 
 ```html
@@ -49,11 +49,11 @@ Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 ```
 
 <width-controller>
-  <container>
+  <example-container>
     <div class="flex justify-center aspect-1/1 rounded-4">
       <img src="/classes/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
     </div>
-  </container>
+  </example-container>
 </width-controller>
 
 ```html
