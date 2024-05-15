@@ -14,12 +14,9 @@ Utilities for controlling the background size of an element's background image.
 
 Use `bg-auto` to display the background image at its default size.
 
-<container class="p-0! overflow-hidden">
-  <box striped>
-    <div class="h-144 bg-auto bg-center bg-no-repeat bg-[url(/20s-scientists.jpg)]">
-    </div>
-  </box>
-</container>
+<example-container class="p-0! overflow-hidden ex-bg--striped">
+  <div class="h-144 bg-auto bg-center bg-no-repeat bg-[url(/tech-docs/classes/20s-scientists.jpg)]"></div>
+</example-container>
 
 ```html
 <div class="bg-auto bg-no-repeat bg-center bg-[url(...)] ..."/>
@@ -28,11 +25,9 @@ Use `bg-auto` to display the background image at its default size.
 ### Cover
 Use `bg-cover` to scale the background image until it fills the background layer.
 
-<container class="p-0! overflow-hidden">
-  <box striped>
-    <div class="h-144 bg-cover bg-center bg-no-repeat bg-[url(/20s-scientists.jpg)]"></div>
-  </box>
-</container>
+<example-container class="p-0! overflow-hidden ex-bg--striped">
+  <div class="h-144 bg-cover bg-center bg-no-repeat bg-[url(/tech-docs/classes/20s-scientists.jpg)]"></div>
+</example-container>
 
 ```html
 <div class="bg-cover bg-center bg-[url(...)] ...">
@@ -41,11 +36,9 @@ Use `bg-cover` to scale the background image until it fills the background layer
 ### Contain
 Use `bg-contain` to scale the background image to the outer edges without cropping or stretching.
 
-<container class="p-0! overflow-hidden">
-  <box striped>
-    <div class="h-144 bg-contain bg-center bg-no-repeat bg-[url(/20s-scientists.jpg)]"></div>
-  </box>
-</container>
+<example-container class="p-0! overflow-hidden ex-bg--striped">
+  <div class="h-144 bg-auto bg-contain bg-no-repeat bg-[url(/tech-docs/classes/20s-scientists.jpg)]"></div>
+</example-container>
 
 ```html
 <div class="bg-contain bg-center bg-[url(...)] ..."></div>
