@@ -19,43 +19,52 @@ Utilities for controlling an element's padding.
 
 ## Basic usage
 
+### Padding to all sides
+Control the padding on all sides of an element using the `p-{size}` utilities.
+
+<example-container>
+  <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold">
+    <div class="flex-none pd-bg-violet-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white p-32">
+        <div class="p-16 pd-bg-violet-500">p-32</div>
+      </div>
+    </div>
+  </div>
+</example-container>
+
+```html
+<div class="p-32 ...">p-32</div>
+```
+
 ### Add padding to a single side
 Control the padding on one side of an element using the `p{t|r|b|l|x|y}-{size}` utilities.
 
 For example,`pt-16` would add `1.6rem` which is equivalent of 16px of padding to the top of an element, `pr-8` would add `0.8rem` (8px) of padding to the right of an element, `pb-32` would add `3.2rem` (32px) of padding to the bottom of an element, and `pl-64` would add `6.4rem` (64px) of padding to the left of an element.
 
-<container>
-  <div class="flex flex-wrap items-start justify-center pd-text-white pd-text-sm font-bold -mx-5">
-    <div class="flex items-start">
-      <div class="flex-none px-16">
-        <div class="pd-bg-purple-500 rounded-4 overflow-hidden">
-          <box striped class="h-16" fg-color="var(--tw-white-fg)"></box>
-          <div class="p-16">pt-16</div>
-        </div>
-      </div>
-      <div class="flex-none px-16 pt-16">
-        <div class="flex pd-bg-purple-500 rounded-4 overflow-hidden">
-          <div class="flex-none p-16">pr-24</div>
-          <box striped class="flex-none w-24" fg-color="var(--tw-white-fg)" ></box>
-        </div>
+<example-container>
+  <div class="flex flex-wrap items-start justify-center pd-text-white pd-text-sm font-bold gap-16 pt-12">
+    <div class="flex-none pd-bg-purple-400 rounded overflow-hidden -mt-16">
+      <div class="ex-bg--striped ex-bg--white pt-16">
+        <div class="p-16 pd-bg-purple-500">pt-16</div>
       </div>
     </div>
-    <div class="flex items-start">
-      <div class="flex-none px-16 pt-16">
-        <div class="pd-bg-purple-500 rounded-4 overflow-hidden">
-          <div class="p-16">pb-8</div>
-          <box striped class="h-8" fg-color="var(--tw-white-fg)"></box>
-        </div>
+    <div class="flex-none pd-bg-purple-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white pr-24">
+        <div class="p-16 pd-bg-purple-500">pr-24</div>
       </div>
-      <div class="flex-none flex px-16 pt-16">
-        <div class="flex pd-bg-purple-500 rounded-4 overflow-hidden">
-          <box striped class="flex-none w-32" fg-color="var(--tw-white-fg)"></box>
-          <div class="flex-none p-16">pl-32</div>
-        </div>
+    </div>
+    <div class="flex-none pd-bg-purple-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white pb-8">
+        <div class="p-16 pd-bg-purple-500">pb-8</div>
+      </div>
+    </div>
+    <div class="flex-none pd-bg-purple-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white pl-32">
+        <div class="p-16 pd-bg-purple-500">pl-32</div>
       </div>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="pt-16 ...">pt-16</div>
@@ -67,17 +76,15 @@ For example,`pt-16` would add `1.6rem` which is equivalent of 16px of padding to
 ### Horizontal Padding
 Control the horizontal padding of an element using the `px-{size}` utilities.
 
-<container>
-  <div class="relative overflow-auto p-8">
-    <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold leading-6">
-      <div class="pd-bg-indigo-500 rounded-4 overflow-hidden flex">
-        <box striped class="w-32" fg-color="var(--tw-white-fg)"></box>
-        <div class="p-16">px-32</div>
-        <box striped class="w-32" fg-color="var(--tw-white-fg)"></box>
+<example-container>
+  <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold">
+    <div class="flex-none pd-bg-blue-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white px-32">
+        <div class="p-16 pd-bg-blue-500">px-32</div>
       </div>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="px-32 ...">px-32</div>
@@ -86,40 +93,30 @@ Control the horizontal padding of an element using the `px-{size}` utilities.
 ### Vertical padding
 Control the vertical padding of an element using the `py-{size}` utilities.
 
-<container>
-  <div class="relative overflow-auto p-8">
-    <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold leading-6">
-      <div class="pd-bg-pink-500 rounded-4 overflow-hidden">
-        <box striped class="h-32" fg-color="var(--tw-white-fg)"></box>
-        <div class="p-16">py-32</div>
-        <box striped class="h-32" fg-color="var(--tw-white-fg)"></box>
+<example-container>
+  <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold">
+    <div class="flex-none pd-bg-pink-400 rounded overflow-hidden">
+      <div class="ex-bg--striped ex-bg--white py-32">
+        <div class="p-16 pd-bg-pink-500">py-32</div>
       </div>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="px-16 ...">px-16</div>
 ```
 
-### Padding to all sides
-Control the padding on all sides of an element using the `p-{size}` utilities.
-
-<container>
-  <div class="relative overflow-auto p-8">
-    <div class="flex justify-center pd-font-mono pd-text-white pd-text-sm font-bold leading-6">
-      <div class="pd-bg-violet-500 rounded-4 overflow-hidden">
-        <box striped class="p-32" fg-color="var(--tw-white-fg)">
-          <div class="pd-bg-violet-500 p-16">p-32</div>
-        </box>
-      </div>
-    </div>
-  </div>
-</container>
+### Arbitrary values
+If you need to use a one-off padding value, use square brackets to generate a property on the fly using any arbitrary value.
 
 ```html
-<div class="p-32 ...">p-32</div>
+<div class="p-[113]">
+  <!-- ... -->
+</div>
 ```
+
+## Applying conditionally
 
 ### Hover, focus, and other states
 Warp lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:py-32` to only apply the `py-32` utility on hover.
@@ -135,15 +132,6 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="py-4 md:py-8">
-  <!-- ... -->
-</div>
-```
-
-### Arbitrary values
-If you need to use a one-off padding value, use square brackets to generate a property on the fly using any arbitrary value.
-
-```html
-<div class="p-[113]">
   <!-- ... -->
 </div>
 ```

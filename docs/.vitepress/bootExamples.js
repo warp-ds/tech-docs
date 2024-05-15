@@ -12,7 +12,6 @@ import Button from '../components/buttons/Example.vue';
 import ButtonGroup from '../components/buttongroup/Example.vue';
 import Card from '../components/card/Example.vue';
 import Checkbox from '../components/checkbox/Example.vue';
-import Container from './Container.vue';
 import Expandable from '../components/expandable/Example.vue';
 import Icon from '../components/icons/Example.vue';
 import Modal from '../components/modal/Example.vue';
