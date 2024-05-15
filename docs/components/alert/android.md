@@ -38,7 +38,7 @@ WarpAlertType {
 }
 ```
 
-It is possible to add and optional title, link text, secondary button and a quiet button or all together.
+It is possible to add an optional title, link text, secondary button and a quiet button or all together.
 ```kotlin example
 WarpAlert(
     modifier = Modifier.padding(WarpTheme.dimensions.space2),        
@@ -55,7 +55,7 @@ WarpAlert(
 ```
 
 
-### Legacy suport
+### Legacy support
 To support layouts still written in xml the WarpAlert can be used as a custom view. To add functionality to the optional link and buttons, set click listeners.
 
 ```kotlin example

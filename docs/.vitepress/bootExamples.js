@@ -2,6 +2,9 @@ import { buildWc } from './ex-base.js';
 
 import Alert from '../components/alert/Example.vue';
 import Attention from '../components/attention/Example.vue';
+import AttentionFlip from '../components/attention/FlipExample.vue';
+import AttentionStatic from '../components/attention/StaticExample.vue';
+import AttentionFallbackPlacements from '../components/attention/FallbackPlacementsExample.vue';
 import Badge from '../components/badge/Example.vue';
 import Box from '../components/box/Example.vue';
 import Breadcrumbs from '../components/breadcrumbs/Example.vue';
@@ -29,6 +32,9 @@ import Text from '../components/text/Example.vue';
 
 buildWc('alert-example', Alert);
 buildWc('attention-example', Attention);
+buildWc('attention-flip-example', AttentionFlip);
+buildWc('attention-static-example', AttentionStatic);
+buildWc('attention-fallback-placements-example', AttentionFallbackPlacements);
 buildWc('badge-example', Badge);
 buildWc('box-example', Box);
 buildWc('breadcrumbs-example', Breadcrumbs);
