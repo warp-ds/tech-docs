@@ -13,147 +13,129 @@ Utilities for controlling the vertical alignment of an inline or table-cell box.
 ### Baseline
 Use `align-baseline` to align the baseline of an element with the baseline of its parent.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <span class="w-0 h-32 inline-block align-baseline">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </span>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-baseline text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ```html
-<span class="inline-block align-baseline ...">...</span>
+<span class="inline-block align-baseline ...">Warp</span>
 ```
 
 ### Top
 Use `align-top` to align the top of an element and its descendants with the top of the entire line.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-top">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-top text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Middle
 Use `align-middle` to align the middle of an element with the baseline plus half the x-height of the parent.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-middle">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-middle text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Bottom
 Use `align-bottom` to align the bottom of an element and its descendants with the bottom of the entire line.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-bottom">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-bottom text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Text Top
 Use `align-text-top` to align the top of an element with the top of the parent element’s font.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-text-top">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-text-top text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Text Bottom
 Use `align-text-bottom` to align the bottom of an element with the bottom of the parent element’s font.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-text-bottom">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative" style="line-height: 1">
+      <span class="inline-block align-text-bottom text-xxl mr-10" style="line-height: 1">
+        <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+        <span class="relative z-20">Warp</span>
+      </span>
+      <span class="relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Sub
 Use `align-sub` to align the bottom of an element with the subscript-baseline of its parent.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-sub">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative text-xxl" style="line-height: 1">
+      <div class="absolute -mx-8 inset-x-0 top-1 bottom-4">
+        <span class="absolute inset-x-0 top-0 bottom-8 pd-border-pink-300 border-y-1 border-dashed"></span>
+        <span class="absolute h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
       </div>
+      <span class="inline-block mr-4 relative z-20" style="line-height: 1">Warp</span>
+      <span class="align-sub text-body relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>
 
 ### Super
 Use `align-super` to align the bottom of an element with the superscript-baseline of its parent.
 
-<container>
-  <div class="mx-24">
-    <div class="pd-bg-white py-4 max-w-md mx-auto dark:pd-bg-slate-800">
-      <div class="relative" style="line-height: 1">
-        <box class="w-0 h-32 inline-block align-super">
-          <span class="absolute top-0 pd-border-slate-200 border-t border-b border-dashed w-full h-32 dark:pd-border-slate-700"></span>
-          <span class="absolute top-0 pd-border-slate-200 border-b border-dashed w-full h-16 dark:pd-border-slate-700"></span>
-        </box>
-        <span class="relative z-10 pd-text-slate-700 px-8 dark:pd-text-slate-200 font-bold">
-        The quick smart warp scientist drinks the hazy coffee.</span>
-      </div>
+<example-container>
+  <div class="ex-inner-box s-text text-body max-w-full">
+    <div class="relative text-xxl" style="line-height: 1">
+      <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
+      <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
+      <span class="inline-block mr-4 relative z-20" style="line-height: 1">Warp</span>
+      <span class="align-super text-body relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
-</container>
+</example-container>

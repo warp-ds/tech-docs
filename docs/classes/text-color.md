@@ -20,15 +20,26 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 Control the text color of an element using the `text-{transparent|current}` or `s-text-{semantic color}` utilities specified in the table above.
 
 <example-container>
-  <div class="ex-inner-box">
+  <div class="ex-inner-box text-body">
+    <strong class="s-text pd-font-mono text-s">s-text</strong>
     <p class="s-text">The quick smart warp scientist</p>
+    <strong class="s-text-subtle pd-font-mono text-s">s-text-subtle</strong>
     <p class="s-text-subtle">The quick smart warp scientist</p>
+    <strong class="s-text-placeholder pd-font-mono text-s">s-text-placeholder</strong>
     <p class="s-text-placeholder">The quick smart warp scientist</p>
-    <p class="s-text-inverted s-bg-inverted">The quick smart warp scientist</p>
-    <p class="s-text-inverted-subtle s-bg-inverted">The quick smart warp scientist</p>
+    <div class="s-bg-inverted -mx-8 px-8 py-4 mb-8 rounded">
+      <strong class="s-text-inverted pd-font-mono text-s">s-text-inverted</strong>
+      <p class="s-text-inverted">The quick smart warp scientist</p>
+      <strong class="s-text-inverted-subtle pd-font-mono text-s">s-text-inverted-subtle</strong>
+      <p class="s-text-inverted-subtle mb-0">The quick smart warp scientist</p>
+    </div>
+    <strong class="s-text-link pd-font-mono text-s">s-text-link</strong>
     <p class="s-text-link">The quick smart warp scientist</p>
+    <strong class="s-text-link-disabled pd-font-mono text-s">s-text-link-disabled</strong>
     <p class="s-text-link-disabled">The quick smart warp scientist</p>
+    <strong class="s-text-positive pd-font-mono text-s">s-text-positive</strong>
     <p class="s-text-positive">The quick smart warp scientist</p>
+    <strong class="s-text-negative pd-font-mono text-s">s-text-negative</strong>
     <p class="s-text-negative">The quick smart warp scientist</p>
   </div>
 </example-container>
@@ -79,6 +90,8 @@ Always make sure any text has sufficient contrast to its background.
 <div class="text-[--w-s-color-text-positive/60] hover:text-[--w-s-color-text-positive/100] ...">Warp</div>
 <div class="text-[var(--w-black)/50] hover:text-[var(--w-black)/100] ...">Warp</div>
 ```
+
+## Applying conditionally
 
 ### Hover, focus, and other states
 

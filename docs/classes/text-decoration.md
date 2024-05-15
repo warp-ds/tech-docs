@@ -8,19 +8,20 @@ Utilities for controlling the decoration of text.
 <qr-table />
 
 ## Basic usage
+
 ### Setting the text decoration
 Control how text is decorated with the `underline`, `no-underline`, and `line-through` utilities.
 
-<container>
-  <div class="mx-24">
-    <span class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono dark:pd-text-slate-400">underline</span>
-    <p class="text-t1 mt-0! underline">The quick smart warp scientist</p>
-    <span class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono dark:pd-text-slate-400">line-through</span>
-    <p class="text-t3 mt-0! line-through">The quick smart warp scientist</p>
-    <span class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono dark:pd-text-slate-400">no-underline</span>
-    <p class="text-t4 mt-0! no-underline">The quick smart warp scientist</p>
+<example-container>
+  <div class="ex-inner-box s-text text-body">
+    <strong class="pd-font-mono text-s">underline</strong>
+    <p class="underline">The quick smart warp scientist</p>
+    <strong class="pd-font-mono text-s">line-through</strong>
+    <p class="line-through">The quick smart warp scientist</p>
+    <strong class="pd-font-mono text-s">no-underline</strong>
+    <p class="no-underline">The quick smart warp scientist</p>
   </div>
-</container>
+</example-container>
 
 ```html
 <p class="underline...">The quick smart warp scientist ...</p>
