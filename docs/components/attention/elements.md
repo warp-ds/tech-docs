@@ -1,20 +1,9 @@
 ### Visual options
 
-#### Popover
-
-```js
-<w-attention placement="bottom" popover="">
-  <button id="target" onclick="toggleShow()" slot="target">
-    Click to toggle a popover on bottom
-  </button>
-  <span slot="message">I'm a popover on bottom</span>
-</w-attention>
-```
-
 #### Callout
 
 ```js
-<w-attention placement="right" show="" callout="" class="flex items-center">
+<w-attention placement="right" show callout class="flex items-center">
   <div id="target" slot="target">
     <p>This is a target to callout attention element</p>
   </div>
@@ -25,7 +14,7 @@
 #### Tooltip
 
 ```js
-<w-attention placement="right" tooltip="">
+<w-attention placement="right" tooltip flip>
   <button id="target" slot="target">
     Hover or focus to show a tooltip on right
   </button>
@@ -33,10 +22,32 @@
 </w-attention>
 ```
 
+#### Popover
+
+```js
+<w-attention placement="right" popover flip cross-axis fallback-placements='["left", "bottom", "top"]'>
+  <button id="target" onclick="toggleShow()" slot="target">
+    Click to toggle a popover on bottom
+  </button>
+  <span slot="message">I'm a popover on bottom</span>
+</w-attention>
+```
+
+#### Popover with icon as target element
+
+```js
+<w-attention placement="right-end" popover distance="-8" skidding='27'>
+  <button id="target" quiet variant="utility" onclick="toggleShow()" slot="target">
+    <w-icon-info-16></w-icon-info-16>
+  </button>
+  <span slot="message">I'm a popover on right-end</span>
+</w-attention>
+```
+
 #### Highlight (with optional close button)
 
 ```js
-<w-attention placement="right" highlight id="highlight" can-close="">
+<w-attention placement="right" highlight id="highlight" can-close flip fallback-placements='["top"]'>
   <button
     id="highlightTarget"
     slot="target"
@@ -46,6 +57,38 @@
   <span slot="message">I'm a dismissible highlight on right</span>
 </w-attention>
 ```
+### Flip prop
+The attention component uses the Floating-ui library to calculate its position. By default the `flip` prop is set to `false`, which means that the attention component will not flip its position to the opposite side.
+
+Try to scroll and see how the attention component doesn't move:
+
+<attention-static-example />
+<br>
+<br>
+
+When `flip` is set to `true`, it will instead trigger Floating-ui's flip() function that will make sure that the attention component stays in viewport, by flipping it to the opposite side. <a target="_blank" href="https://floating-ui.com/docs/flip">Read more about Floating-ui's flip() function here</a>.
+
+Try to scroll and see how the attention component moves its position to the opposite side to keep itself in viewport as long as possible:
+<br>
+<br>
+<br>
+<attention-flip-example />
+<br>
+<br>
+
+### Cross-axis prop
+The `cross-axis` prop decides whether to check for cross axis overflow or not when `flip` is set to `true`. By default the `cross-axis` prop is set to `false`, which means that the attention component will ignore cross axis overflow. <a target="_blank" href="https://floating-ui.com/docs/flip#crossaxis">Read more about Floating-ui's crossAxis here</a>.
+
+### Fallback-placements prop
+By default, `fallback-placements` is `undefined`. If `flip`is set to `true`, then you have the option to also use `fallback-placements` prop and pass in an array of preferred placements that you want the attention component to try if there is no longer any space left to position it to the initial `placement`, e.g. `['right', 'top']`. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's fallbackPlacements here</a>.
+
+Try to scroll and see how the attention component's position starts at the `bottom` but then moves to the `right` and then to the `top`: 
+<br>
+<br>
+<br>
+<attention-fallback-placements-example />
+<br>
+<br>
 
 ### Accessibility
 If the Attention element has "left" or "top" position, it should be placed before the target element in the DOM.
@@ -55,7 +98,7 @@ Attention element handles accessibility automatically by wrapping its slotted co
 It is possible to tell assistive technologies to recognize only a part of Attention's text content. To do that set the `role` attribute on the relevant text element nested in `w-attention` and reference it by id through the use of `aria-details`. The `aria-details` attribute is on the target element, not on `w-attention`.
 
 ```js
-<w-attention placement="top" tooltip="">
+<w-attention placement="top" tooltip>
   <div slot="message">
     <p id="aria-content" role="tooltip">This tooltip text is important</p>
     <p>(this text is less relevant)</p>

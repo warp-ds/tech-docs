@@ -1,15 +1,19 @@
 <script setup>
 import { ref } from 'vue'
 import { wAttention, wBox, wButton } from '@warp-ds/vue'
+import IconInfo16 from '@warp-ds/icons/vue/info-16'
 
 const tooltipTarget = ref(null)
 const popoverTarget = ref(null)
 const highlightTarget = ref(null)
+const popoverIconTarget = ref(null)
 
 const tooltipShowing = ref(false)
 const calloutShowing = ref(true)
 const popoverShowing = ref(false)
 const highlightShowing = ref(false)
+const popoverIconTargetShowing = ref(false)
+
 </script>
 
 <template>
@@ -20,7 +24,12 @@ const highlightShowing = ref(false)
         <w-box neutral aria-details="callout-bubbletext">
           I am a box full of info
         </w-box>
-        <w-attention callout right v-model="calloutShowing" class="ml-8">
+        <w-attention
+          callout
+          placement="right"
+          v-model="calloutShowing"
+          class="ml-8"
+        >
           <p id="callout-bubbletext">This is a callout</p>
         </w-attention>
       </div>
@@ -42,7 +51,8 @@ const highlightShowing = ref(false)
       </w-button>
       <w-attention
         tooltip
-        bottom
+        placement="right"
+        flip
         :target-el="tooltipTarget ? tooltipTarget.$el : null"
         v-model="tooltipShowing"
       >
@@ -63,13 +73,40 @@ const highlightShowing = ref(false)
       </w-button>
       <w-attention
         popover
-        bottom
+        placement="right"
+        flip
+        cross-axis
+        :fallback-placements="['left', 'bottom', 'top']"
         :target-el="popoverTarget ? popoverTarget.$el : null"
         v-model="popoverShowing"
         id="popover-example"
       >
         <p id="popover-bubbletext">This is a popover</p>
       </w-attention>
+    </div>
+    <div>
+      <h4>Popover with icon as target element</h4>
+      <w-button
+        :aria-expanded="popoverIconTargetShowing"
+        aria-controls="popover-icon-target-example"
+        type="button"
+        utility
+        quiet
+        ref="popoverIconTarget"
+        @click="() => (popoverIconTargetShowing = !popoverIconTargetShowing)"
+      >
+        <icon-info16 />
+      </w-button>
+        <w-attention
+          popover
+          placement="right-end"
+          :distance="-6"
+          :skidding="15"
+          :target-el="popoverIconTarget ? popoverIconTarget.$el : null"
+          v-model="popoverIconTargetShowing"
+        >
+          <p>Hello Warp!</p>
+        </w-attention>
     </div>
     <div>
       <h4>Highlight (with optional close button)</h4>
@@ -86,8 +123,10 @@ const highlightShowing = ref(false)
       <w-attention
         id="highlight-attention-example"
         highlight
-        bottom
-        canClose
+        placement="bottom"
+        flip
+        :fallback-placements="['top']"
+        can-close
         @dismiss="highlightShowing = false"
         :target-el="highlightTarget ? highlightTarget.$el : null"
         v-model="highlightShowing"

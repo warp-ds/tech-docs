@@ -44,7 +44,8 @@ function Example() {
       </Button>
       <Attention
         tooltip
-        placement='bottom'
+        placement='right'
+        flip={true}
         targetEl={targetEl}
         isShowing={show}
       >
@@ -77,7 +78,10 @@ function Example() {
       </Button>
       <Attention
         popover
-        placement='bottom'
+        placement='right'
+        flip={true}
+        crossAxis={true}
+        fallbackPlacements={['left', 'bottom', 'top']}
         targetEl={targetEl}
         isShowing={show}
         id='popover-attention-example'
@@ -88,6 +92,70 @@ function Example() {
         </ul>
       </Attention>
     </div>
+  )
+}
+```
+
+#### Popover with icon as target element
+
+```js
+function PopoverIconAsTargetEl() {
+  const [show, setShow] = React.useState(false)
+  const containerRef = React.useRef<HTMLDivElement>(null)
+  const targetEl = React.useRef<any>(null);
+
+  React.useEffect(() => {
+    function onBlurHandler(e) {
+      if (containerRef.current && !containerRef.current.contains(e.target)) {
+        setShow(false)
+      }
+    }
+    document.addEventListener('mousedown', onBlurHandler)
+    return () => {
+      document.removeEventListener('mousedown', onBlurHandler)
+    }
+  })
+
+  return (
+  <div className='flex items-center justify-center'>
+    <div ref={containerRef}>
+      <Button
+        small
+        aria-expanded={show}
+        aria-controls='popover-icon-target-el-attention-example'
+        utility
+        quiet
+        onClick={() => setShow(!show)}
+        className='w-max mb-0'
+        ref={targetEl}
+      >
+        <IconInfo16 />
+      </Button>
+      <Attention
+        popover
+        placement='right-end'
+        distance={-8}
+        skidding={27}
+        targetEl={targetEl}
+        isShowing={show}
+      >
+        <ul className='bg-white w-full text-center'>
+          <li
+            tabIndex={0}
+            className='p-2 px-40 hover:bg-blue-200 hover:text-blue-500 cursor-pointer'
+          >
+            Hello
+          </li>
+          <li
+            tabIndex={0}
+            className='p-2 px-40 hover:bg-blue-200 hover:text-blue-500 cursor-pointer'
+          >
+            World
+          </li>
+        </ul>
+      </Attention>
+    </div>
+  </div>
   )
 }
 ```
@@ -121,9 +189,11 @@ function DismissibleHighlight() {
           highlight
           canClose
           onDismiss={() => setShow(false)}
-          placement='top'
+          placement='bottom'
           isShowing={show}
           targetEl={targetEl}
+          flip={true}
+          fallbackPlacements={['top']}
           id='highlight-attention-example'
         >
           <p id='highlight-bubble-text'>
@@ -135,6 +205,38 @@ function DismissibleHighlight() {
   )
 }
 ```
+### Flip prop
+The attention component uses the Floating-ui library to calculate its position. By default the `flip` prop is set to `false`, which means that the attention component will not flip its position to the opposite side.
+
+Try to scroll and see how the attention component doesn't move:
+
+<attention-static-example />
+<br>
+<br>
+
+When `flip` is set to `true`, it will instead trigger Floating-ui's flip() function that will make sure that the attention component stays in viewport, by flipping it to the opposite side. <a target="_blank" href="https://floating-ui.com/docs/flip">Read more about Floating-ui's flip() function here</a>.
+
+Try to scroll and see how the attention component moves its position to the opposite side to keep itself in viewport as long as possible:
+<br>
+<br>
+<br>
+<attention-flip-example />
+<br>
+<br>
+
+### CrossAxis prop
+The `crossAxis` prop decides whether to check for cross axis overflow or not when `flip` is set to `true`. By default the `crossAxis` prop is set to `false`, which means that the attention component will ignore cross axis overflow. <a target="_blank" href="https://floating-ui.com/docs/flip#crossaxis">Read more about Floating-ui's crossAxis here</a>.
+
+### FallbackPlacements prop
+By default, `fallbackPlacements` is `undefined`. If `flip`is set to `true`, then you have the option to also use `fallbackPlacements` prop and pass in an array of preferred placements that you want the attention component to try if there is no longer any space left to position it to the initial `placement`, e.g. `['right', 'top']`. <a target="_blank" href="https://floating-ui.com/docs/flip#fallbackplacements">Read more about Floating-ui's fallbackPlacements here</a>.
+
+Try to scroll and see how the attention component's position starts at the `bottom` but then moves to the `right` and then to the `top`: 
+<br>
+<br>
+<br>
+<attention-fallback-placements-example />
+<br>
+<br>
 
 ### Accessibility
 
@@ -151,7 +253,7 @@ It is possible to override the `role` and `aria-label` attributes:
 </Attention>
 ```
 
-If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>
+If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element. <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details">Read more about `aria-detail` here</a>.
 
 ### Props
 
