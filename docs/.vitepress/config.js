@@ -36,6 +36,7 @@ const docsClasses = [
   's-bg/10','s-bg/20', 's-bg/50', 's-bg-primary/10', 's-bg-positive/10', 's-bg-negative/10',
   's-border/50', 'hover:s-border/100',
   's-border-t-primary/55', 'hover:s-border-t-primary/100',
+  's-icon/60', 'hover:s-icon/100', 's-icon-primary/60', 'hover:s-icon-primary/100',
   's-text/60', 'hover:s-text/100', 's-text-link/50', 'hover:s-text-link/100', 'text-[--w-s-color-text-positive/60]', 'hover:text-[--w-s-color-text-positive/100]', 'text-[var(--w-black)/50]', 'hover:text-[var(--w-black)/100]', 'hover:s-text-positive', 'md:s-text-positive',
   '-space-x-24',
   'text-12', 'text-14',
