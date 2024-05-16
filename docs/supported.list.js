@@ -742,11 +742,15 @@ export const sizing = getValueClasses(
   ['auto', 'full', 'screen', 'min', 'max', '1/2', '1/3', '2/3', '1/4', '3/4', '1/5', '2/5', '3/5', '4/5', '1/6', '5/6', 0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 44, 48, 56, 64, 80, 96, 112, 128, 144]
 );
 
-export const space = getSpacingClasses([
-  'space',
-  'space-x',
-  'space-y',
-]);
+export const space = [
+  'space-x-reverse',
+  'space-y-reverse',
+  ...getSpacingClasses([
+    'space',
+    'space-x',
+    'space-y',
+  ])
+];
 
 export const tableLayout = ['table-auto', 'table-fixed'];
 

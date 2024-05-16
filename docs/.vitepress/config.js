@@ -31,7 +31,7 @@ const docsClasses = [
   'before:inline-block',
   'sm:justify-around',
   'leading-[120]',
-  '-m-1', '-m-[19]', '-ml-48', '-my-32', '-mx-8', '-mt-16',
+  '-m-1', '-m-[19]', '-ml-48', '-my-32', '-mx-8', '-mt-16', '-mb-48',
   'max-w-screen-xl', 'max-w-[300]', 'max-w-[400]',
   'p-0!',
   'right-[26]',
