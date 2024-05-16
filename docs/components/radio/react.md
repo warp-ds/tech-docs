@@ -4,8 +4,15 @@ The toggle component allows you to render radios. All you have to do is specify 
 
 You must keep track of state yourself. The state has to be handled differently depending on whether you want to use single or multiple options. See examples below.
 
+You can import the component like so:
 ```js
 import { Toggle } from '@warp-ds/react';
+```
+
+or import it individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { Toggle } from '@warp-ds/react/components/toggle'
+
 ```
 
 ### Syntax
