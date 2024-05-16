@@ -7,6 +7,20 @@ import { supported } from '../supported.js';
 
 const base = '/tech-docs';
 
+const pdColorClasses = ['blue', 'cyan', 'fuchsia', 'indigo', 'pink', 'purple', 'sky', 'violet'].reduce(
+  (colorResult, color) => [
+    ...colorResult,
+    ...['bg','border'].reduce(
+      (partResult, part) => [
+        ...partResult,
+        [100,200,300,400,500,600,700,800,900].map((value) => `pd-${part}-${color}-${value}`)
+      ],
+      []
+    )
+  ],
+  []
+)
+
 // Classes of documentation-related elements used within Warp component examples
 // These classes are for styling our docs within the shadow DOM
 // if you add a class somewhere in code, and it doesn't work, add that class here (no time to explain)
@@ -59,18 +73,8 @@ const docsClasses = [
 
   // presetDocs:
   'ex-box', 'ex-inner-box', 'ex-font', 'ex-pic-no',
-  'pd-border-indigo-400', 'pd-border-indigo-500/50',
-  'pd-border-pink-300', 'pd-border-pink-500',
-  'pd-border-sky-500',
+  ...pdColorClasses,
   'pd-border-white/50',
-  'pd-bg-blue-400', 'pd-bg-blue-500',
-  'pd-bg-cyan-500',
-  'pd-bg-fuchsia-500',
-  'pd-bg-indigo-100', 'pd-bg-indigo-400', 'pd-bg-indigo-500', 'pd-bg-indigo-600',
-  'pd-bg-pink-400', 'pd-bg-pink-500',
-  'pd-bg-purple-400', 'pd-bg-purple-500', 'pd-bg-purple-600',
-  'pd-bg-sky-100', 'pd-bg-sky-500',
-  'pd-bg-violet-400', 'pd-bg-violet-500', 'pd-bg-violet-600',
   'pd-bg-white',
   'before:pd-bg-pink-500',
   'pd-font-mono',
