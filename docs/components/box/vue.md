@@ -16,7 +16,7 @@ import { wBox } from '@warp-ds/vue';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { wBox } from '@warp-ds/vue/box'
+import { wBox } from '@warp-ds/vue/box';
 
 ```
 

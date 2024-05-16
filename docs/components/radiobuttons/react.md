@@ -11,7 +11,7 @@ import { Toggle } from '@warp-ds/react';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { Toggle } from '@warp-ds/react/components/toggle'
+import { Toggle } from '@warp-ds/react/components/toggle';
 
 ```
 

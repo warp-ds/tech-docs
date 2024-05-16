@@ -16,7 +16,7 @@ import { wSteps, wStep } from '@warp-ds/vue';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { wSteps, wStep } from '@warp-ds/vue/steps'
+import { wSteps, wStep } from '@warp-ds/vue/steps';
 
 ```
 

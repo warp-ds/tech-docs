@@ -7,7 +7,7 @@ import { Switch } from '@warp-ds/react';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { Switch } from '@warp-ds/react/components/switch'
+import { Switch } from '@warp-ds/react/components/switch';
 
 ```
 

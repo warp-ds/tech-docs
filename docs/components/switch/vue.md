@@ -16,7 +16,7 @@ import { wSwitch } from '@warp-ds/vue';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { wSwitch } from '@warp-ds/vue/switch'
+import { wSwitch } from '@warp-ds/vue/switch';
 
 ```
 

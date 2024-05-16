@@ -7,7 +7,7 @@ import { Pill } from '@warp-ds/react';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { Pill } from '@warp-ds/react/components/pill'
+import { Pill } from '@warp-ds/react/components/pill';
 
 ```
 

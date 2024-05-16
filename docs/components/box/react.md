@@ -7,7 +7,7 @@ import { Box } from '@warp-ds/react';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { Box } from '@warp-ds/react/components/box'
+import { Box } from '@warp-ds/react/components/box';
 
 ```
 

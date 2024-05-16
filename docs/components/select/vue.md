@@ -15,7 +15,7 @@ import { wSelect } from '@warp-ds/vue';
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
 ```js
-import { wSelect } from '@warp-ds/vue/select'
+import { wSelect } from '@warp-ds/vue/select';
 
 ```
 
