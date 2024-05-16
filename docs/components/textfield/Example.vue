@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { wTextfield, wAffix } from '@warp-ds/vue';
+import { wTextfield, wAffix } from '@warp-ds/vue/forms';
 
 const inputModel = ref('');
 

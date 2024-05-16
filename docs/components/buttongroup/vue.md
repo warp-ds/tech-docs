@@ -9,8 +9,15 @@ app.use(ButtonGroup);
 
 > Use in one component and special imports
 
+You can import the component like so:
 ```js
 import { wButtonGroup, wButtonGroupItem } from "@warp-ds/vue";
+```
+
+or import it individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { wButtonGroup, wButtonGroupItem } from '@warp-ds/vue/button-group'
+
 ```
 
 ### Syntax

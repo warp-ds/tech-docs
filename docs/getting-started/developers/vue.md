@@ -13,10 +13,6 @@ Since warp components are internationalised, you'd need to either set `NMP_LANGU
 
 ## Using Components
 
-Once installed, components can be imported into your app by name.
-You can find the specific import statement to import each component on that
-component's documentation page. For example, here's the [button page](/components/buttons/)
-
 ### 1. Using in the entire app
 
 ```js
@@ -28,10 +24,22 @@ This code is bringing in **an installer** for the Box component, and any additio
 
 ### 2. Using in one place, or special exports
 
+Once installed, components can be imported into your app by name.
+
 ```js
-import { wBox, wClickable } from '@warp-ds/vue'
+import { wButton } from '@warp-ds/vue';
 ```
-This code is bringing in the Box and Clickable components themselves, rather than an installer - this is denoted by the `w` prefix of the components. Some edge-case components may be available this way that don't make sense to globally install for everyone.
+
+You can also import them individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { wButton } from '@warp-ds/vue/button'
+
+```
+
+This code is bringing in the Button component itself, rather than an installer - this is denoted by the `w` prefix of the component. Some edge-case components may be available this way that don't make sense to globally install for everyone.
+
+You can find the specific import statement to import each component on that
+component's documentation page. For example, here's the [button page](/components/buttons/)
 
 ## Eik support
 We publish `@warp-ds/vue` package to EIK cdn, eg:
