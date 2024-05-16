@@ -13,12 +13,19 @@ Since warp components are internationalised, you'd need to either set `NMP_LANGU
 
 ## Using Components
 
-Once installed, components can be imported into your app.
+Once installed, components can be imported into your app like so:
 
 ```js
 import '@warp-ds/elements';
 ```
 > When importing from NPM you will need to ensure you have build tooling in place. If you are working with Podium podlets or layouts, you likely already have Eik in place with Rollup or Esbuild, in which case no further action should be needed.
+
+You can also import them individually to optimize your JS bundle size by adding only the components you need:
+
+```js
+import '@warp-ds/elements/components/breadcrumbs'
+
+```
 
 Then they can be used in your HTML markup.
 
