@@ -10,7 +10,7 @@ app.use(Forms)
 
 You can import the component like so:
 ```js
-import { wToggle } from "@warp-ds/vue";
+import { wToggle } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

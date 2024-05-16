@@ -3,7 +3,7 @@
 > Use in entire app
 
 ```js
-import { Switch } from "@warp-ds/vue";
+import { Switch } from '@warp-ds/vue';
 app.use(Switch);
 ```
 
@@ -11,7 +11,7 @@ app.use(Switch);
 
 You can import the component like so:
 ```js
-import { wSwitch } from "@warp-ds/vue";
+import { wSwitch } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

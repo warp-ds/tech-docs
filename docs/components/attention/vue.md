@@ -11,7 +11,7 @@ app.use(Attention)
 
 You can import the component like so:
 ```js
-import { wAttention } from "@warp-ds/vue";
+import { wAttention } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

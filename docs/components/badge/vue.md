@@ -3,7 +3,7 @@
 > Use in entire app
 
 ```js
-import { Badge } from "@warp-ds/vue";
+import { Badge } from '@warp-ds/vue';
 app.use(Badge);
 ```
 
@@ -11,7 +11,7 @@ app.use(Badge);
 
 You can import the component like so:
 ```js
-import { wBadge } from "@warp-ds/vue";
+import { wBadge } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

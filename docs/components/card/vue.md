@@ -10,7 +10,7 @@ app.use(Card)
 
 You can import the component like so:
 ```js
-import { wCard } from "@warp-ds/vue";
+import { wCard } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

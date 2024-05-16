@@ -3,7 +3,7 @@
 > Use in entire app
 
 ```js
-import { Breadcrumbs } from "@warp-ds/vue";
+import { Breadcrumbs } from '@warp-ds/vue';
 app.use(Breadcrumbs);
 ```
 
@@ -11,7 +11,7 @@ app.use(Breadcrumbs);
 
 You can import the component like so:
 ```js
-import { wBreadcrumbs } from "@warp-ds/vue";
+import { wBreadcrumbs } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

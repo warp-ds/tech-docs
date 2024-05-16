@@ -3,7 +3,7 @@
 > Use in entire app
 
 ```js
-import { Alert } from "@warp-ds/vue";
+import { Alert } from '@warp-ds/vue';
 app.use(Alert);
 ```
 
@@ -11,7 +11,7 @@ app.use(Alert);
 
 You can import the component like so:
 ```js
-import { wAlert } from "@warp-ds/vue";
+import { wAlert } from '@warp-ds/vue';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:
