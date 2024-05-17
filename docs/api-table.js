@@ -2091,19 +2091,25 @@ export const android = {
         'The subtitle to be displayed in the modal'
       ],
       [
-        'confirmButtonText', 
+        'primaryButtonText', 
         'String', 
         'null', 
         'The text to be displayed on the positive button.'
       ],
       [
-        'dismissButtonText', 
+        'onPrimaryButtonClick', 
+        '() -> Unit', 
+        'null', 
+        'The lambda to be invoked on the positive button click.'
+      ],
+      [
+        'secondaryButtonText', 
         'String', 
         'null', 
         'The text to be displayed on the negative button.'
       ],
       [
-        'onConfirm', 
+        'onSecondaryButtonClick', 
         '() -> Unit', 
         'null', 
         'The lambda to be invoked on the positive button click.'

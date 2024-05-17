@@ -4,24 +4,25 @@
 ```kotlin example
 @Composable
 fun WarpModal(
+    modifier: Modifier = Modifier,
     title: String,
     body: String,
     onDismiss: () -> Unit,
-    modifier: Modifier = Modifier,
-    subtitle: String? = null,
-    confirmButtonText: String? = null,
-    dismissButtonText: String? = null,
-    onConfirm: (() -> Unit)? = null,
-    showCloseIcon: Boolean = false,
-    closeIconContentDescription: String? = null,
     dismissOnClickOutside: Boolean = true,
-    dismissOnBackPress: Boolean = true
+    dismissOnBackPress: Boolean = true,
+    subtitle: String? = null,
+    primaryButtonText: String? = null,
+    onPrimaryButtonClick: (() -> Unit)? = null,
+    secondaryButtonText: String? = null,
+    onSecondaryButtonClick: (() -> Unit)? = null,
+    showCloseIcon: Boolean = false,
+    closeIconContentDescription: String? = null
 )
 ```
 
 ## Visual options
 The default style for the modal requires a title and a body text.
-The buttons displayed are Primary style for the positive button and Secondary style for the negative button.
+The buttons displayed are WarpButtons using Primary and Secondary style.
 
 ### Subtitle
 
@@ -34,33 +35,31 @@ if(openModal) {
         title = "Hello warp!",
         body = "Some important text here, not too long, not too short.",
         subtitle = "Warp",
-        dismissButtonText = "Nope",
-        confirmButtonText = "Meow",
-        onConfirm = { openModal = false },
-        onDismiss = { openModal = false }
+        primaryButtonText = "Meow",
+        onPrimaryButtonClick = { openModal = false },
+        secondaryButtonText = "Nope",
+        onSecondaryButtonClick = { openModal = false }
     )
 }
 ```
 
-### Close icon
+### Single button
 
-There is a optional close icon that can be displayed in the top right corner. Uses the same dismiss function as the dismiss button would. Always remember to provide the icon content description :)
+It's possible to just show one button.
 
 ```kotlin example
 var openModal by remember { mutableStateOf(false) }
 if(openModal) {
     WarpModal(
         title = "Hello warp!",
-        body = "Close icon variant X",  
-        onDismiss = { openModal = false },
-        showCloseIcon = true,
-        closeIconContentDescription = "Close dialog",
-        dismissButtonText = "Nope",
-        confirmButtonText = "Meow",
-        onConfirm = { openModal = false }
+        body = "Wow such button. Much click.",
+        subtitle = "Warp",
+        primaryButtonText = "Meow",
+        onPrimaryButtonClick = { openModal = false }
     )
 }
 ```
+
 
 ### No buttons
 
