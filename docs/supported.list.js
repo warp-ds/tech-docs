@@ -167,6 +167,11 @@ export const backgroundSize = ['bg-auto', 'bg-cover', 'bg-contain'];
 
 export const backgroundImage = ['bg-none', 'bg-[url({url})]', 'bg-[url(var(--any-css-variable))]'];
 
+export const basis = getValueClasses(
+  [ 'basis' ],
+  ['1/2', '1/3', '2/3', '1/4', '3/4', '1/5', '2/5', '3/5', '4/5', '1/6', '5/6', 0, 1, 2, 4, 8, 10, 12, 16, 32, 48, 64]
+);
+
 export const borderCollapse = ['border-collapse', 'border-separate'];
 
 export const borderColor = [
@@ -637,6 +642,13 @@ export const opacity = [
   'opacity-50',
   'opacity-75',
   'opacity-100',
+];
+
+export const order = [
+  ...getValueClasses(['order'], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]),
+  'order-none',
+  'order-first',
+  'order-last',
 ];
 
 export const overscrollBehavior = [
