@@ -2399,18 +2399,6 @@ export const iOS = {
       'The action that will trigger on pill tap'
     ],
     [
-      'onClose', 
-      '(() -> Void)?',
-      'nil', 
-      'If added will show a close button and the action will trigger on pill close'
-    ],
-    [
-      'iconContentDescription', 
-      'String?',
-      'nil', 
-      'The a11y text for the close button'
-    ],
-    [
       'style', 
       'Warp.PillStyle.filter <br />Warp.PillStyle.suggestion ',
       '.filter', 
@@ -2418,6 +2406,24 @@ export const iOS = {
     ],
   ],
     props: [
+      [
+        'icon', 
+        'Image?',
+        'nil', 
+        'Pill icon. If you provide onClose then the Pill will have a close button instead of this icon.'
+      ],
+      [
+        'onClose', 
+        '(() -> Void)?',
+        'nil', 
+        'If added will show a close button and replace any provided icon, and the action will trigger on pill close.'
+      ],
+      [
+        'iconContentDescription', 
+        'String?',
+        'nil', 
+        'The a11y text for the icon'
+      ],
     ],
   },
   Text: {
