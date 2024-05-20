@@ -39,7 +39,7 @@ const docsClasses = [
   'sm:gap-16',
   'sm:grid',
   'sm:grid-cols-3',
-  'grid-cols-minmax-100px', 'grid-cols-[1fr_2.4rem_1fr_2.4rem_1fr]', 'grid-cols-[1fr_1fr_1fr]', 'grid-rows-[1fr_3fr_1fr]',
+  'grid-cols-minmax-100px', 'grid-cols-[1fr_2.4rem_1fr_2.4rem_1fr]', 'grid-cols-[1fr_1fr_1fr]', 'grid-rows-[1fr_3fr_1fr]', 'grid-cols-[repeat(2,64px)]',
   'h-[7]', 'h-[200]', 'h-[240]', 'before:h-14',
   'before:inline-block',
   'sm:justify-around',

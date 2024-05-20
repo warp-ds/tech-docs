@@ -11,13 +11,13 @@ Utilities for controlling how flex and grid items are positioned along a contain
 ### Stretch
 Use `items-stretch` to stretch items to fill the container’s cross axis.
 
-<container>
+<example-container>
   <box striped class="grid grid-cols-3 items-stretch gap-24 rounded-4" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
     <div class="py-16 pd-bg-purple-500 ex-box">01</div>
     <div class="py-64 pd-bg-purple-500 ex-box">02</div>
     <div class="py-32 pd-bg-purple-500 ex-box">03</div>
   </box>
-</container>
+</example-container>
 
 ```html
 <div class="flex items-stretch ...">
@@ -30,13 +30,13 @@ Use `items-stretch` to stretch items to fill the container’s cross axis.
 ### Start
 Use `items-start` to align items to the start of the container’s cross axis.
 
-<container>
-  <box striped class="grid grid-cols-3 items-start gap-24 rounded-4" fg-color="var(--tw-violet-fg)" bg-color="var(--tw-violet-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--violet grid grid-cols-3 items-start gap-24 rounded-4">
     <div class="py-16 pd-bg-violet-500 ex-box">01</div>
     <div class="py-64 pd-bg-violet-500 ex-box">02</div>
     <div class="py-32 pd-bg-violet-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html
 <div class="flex items-start ...">
@@ -49,13 +49,13 @@ Use `items-start` to align items to the start of the container’s cross axis.
 ### Center
 Use `items-center` to align items along the center of the container’s cross axis.
 
-<container>
-  <box striped class="grid grid-cols-3 items-center gap-24 rounded-4" fg-color="var(--tw-pink-fg)" bg-color="var(--tw-pink-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--pink grid grid-cols-3 items-center gap-24 rounded-4">
     <div class="py-16 pd-bg-pink-500 ex-box">01</div>
     <div class="py-64 pd-bg-pink-500 ex-box">02</div>
     <div class="py-32 pd-bg-pink-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html
 <div class="flex items-center ...">
@@ -68,13 +68,13 @@ Use `items-center` to align items along the center of the container’s cross ax
 ### End
 Use `items-end` to align items to the end of the container’s cross axis.
 
-<container>
-  <box striped class="grid grid-cols-3 items-end gap-24 rounded.4" fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--indigo grid grid-cols-3 items-end gap-24 rounded-4">
     <div class="py-16 pd-bg-indigo-500 ex-box">01</div>
     <div class="py-64 pd-bg-indigo-500 ex-box">02</div>
     <div class="py-32 pd-bg-indigo-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html
 <div class="flex items-end ...">
@@ -87,13 +87,13 @@ Use `items-end` to align items to the end of the container’s cross axis.
 ### Baseline
 Use `items-baseline` to align items along the container’s cross axis such that all of their baselines align.
 
-<container>
-  <box striped class="grid grid-cols-3 items-baseline gap-24 rounded-4" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--blue grid grid-cols-3 items-baseline gap-24 rounded-4">
     <div class="pt-8 pb-24 pd-bg-blue-500 ex-box">01</div>
     <div class="pt-32 pb-64 pd-bg-blue-500 ex-box">02</div>
     <div class="pt-48 pb-16 pd-bg-blue-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html
 <div class="flex items-baseline ...">
@@ -103,8 +103,11 @@ Use `items-baseline` to align items along the container’s cross axis such that
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:items-center` to apply the `items-center` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:items-center` to apply the `items-center` utility at only medium screen sizes and above.
 
 ```html
 <div class="flex items-stretch md:items-center">

@@ -8,16 +8,17 @@ Utilities for controlling how flex and grid items are positioned along a contain
 <qr-table />
 
 ## Basic usage
+
 ### Start
 Use `justify-start` to justify items against the start of the container’s main axis:
 
-<container>
-  <box striped class="flex justify-start gap-24 rounded-4" fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--fuchsia flex justify-start gap-24 rounded-4">
     <div class="pd-bg-fuchsia-500 ex-box">01</div>
     <div class="pd-bg-fuchsia-500 ex-box">02</div>
     <div class="pd-bg-fuchsia-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-start ...">
@@ -30,13 +31,13 @@ Use `justify-start` to justify items against the start of the container’s main
 ### Center
 Use `justify-center` to justify items along the center of the container’s main axis.
 
-<container>
-  <box striped class="flex justify-center gap-24 rounded-4" fg-color="var(--tw-blue-fg)" bg-color="var(--tw-blue-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--blue flex justify-center gap-24 rounded-4">
     <div class="pd-bg-blue-500 ex-box">01</div>
     <div class="pd-bg-blue-500 ex-box">02</div>
     <div class="pd-bg-blue-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-center ...">
@@ -49,13 +50,13 @@ Use `justify-center` to justify items along the center of the container’s main
 ### End
 Use `justify-end` to justify items against the end of the container’s main axis
 
-<container>
-  <box striped class="flex justify-end gap-24 rounded-4" fg-color="var(--tw-cyan-fg)" bg-color="var(--tw-cyan-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--cyan flex justify-end gap-24 rounded-4">
     <div class="pd-bg-cyan-500 ex-box">01</div>
     <div class="pd-bg-cyan-500 ex-box">02</div>
     <div class="pd-bg-cyan-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-end ...">
@@ -68,13 +69,13 @@ Use `justify-end` to justify items against the end of the container’s main axi
 ### Space between
 Use `justify-between` to justify items along the container’s main axis such that there is an equal amount of space between each item.
 
-<container>
-  <box striped class="flex justify-between gap-24 rounded-4" fg-color="var(--tw-pink-fg)" bg-color="var(--tw-pink-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--pink flex justify-between gap-24 rounded-4">
     <div class="pd-bg-pink-500 ex-box">01</div>
     <div class="pd-bg-pink-500 ex-box">02</div>
     <div class="pd-bg-pink-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-between ...">
@@ -87,13 +88,13 @@ Use `justify-between` to justify items along the container’s main axis such th
 ### Space around
 Use `justify-around` to justify items along the container’s main axis such that there is an equal amount of space on each side of each item.
 
-<container>
-  <box striped class="flex justify-around gap-24 rounded-4" fg-color="var(--tw-violet-fg)" bg-color="var(--tw-violet-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--violet flex justify-around gap-24 rounded-4">
     <div class="pd-bg-violet-500 ex-box">01</div>
     <div class="pd-bg-violet-500 ex-box">02</div>
     <div class="pd-bg-violet-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-around ...">
@@ -106,13 +107,13 @@ Use `justify-around` to justify items along the container’s main axis such tha
 ### Space evenly
 Use `justify-evenly` to justify items along the container’s main axis such that there is an equal amount of space around each item, but also accounting for the doubling of space you would normally see between each item when using `justify-around`
 
-<container>
-  <box striped class="flex justify-evenly gap-24 rounded-4" fg-color="var(--tw-indigo-fg)" bg-color="var(--tw-indigo-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--indigo flex justify-evenly gap-24 rounded-4">
     <div class="pd-bg-indigo-500 ex-box">01</div>
     <div class="pd-bg-indigo-500 ex-box">02</div>
     <div class="pd-bg-indigo-500 ex-box">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="flex justify-evenly ...">
@@ -122,8 +123,11 @@ Use `justify-evenly` to justify items along the container’s main axis such tha
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:justify-between` to apply the `justify-between` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:justify-between` to apply the `justify-between` utility at only medium screen sizes and above.
 
 ```html
 <div class="flex justify-start md:justify-between">
