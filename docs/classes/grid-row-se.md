@@ -20,13 +20,13 @@ Utilities for controlling how elements are sized and placed across grid rows.
 ### Spanning rows
 Use the `row-span-{n}` utilities to make an element span n rows.
 
-<container>
-  <box striped class="grid grid-rows-3 grid-flow-col gap-24 rounded-4" fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
-    <div class="pd-bg-fuchsia-500 ex-box row-span-3 ">01</div>
-    <div class="pd-bg-fuchsia-300 ex-box col-span-2 ">02</div>
-    <div class="pd-bg-fuchsia-500 ex-box col-span-2 row-span-2 ">03</div>
-  </box>
-</container>
+<example-container>
+  <div class="ex-bg--striped ex-bg--fuchsia grid grid-rows-3 grid-flow-col gap-24 rounded-8">
+    <div class="pd-bg-fuchsia-500 ex-box row-span-3">01</div>
+    <div class="pd-bg-fuchsia-300 ex-box col-span-2">02</div>
+    <div class="pd-bg-fuchsia-500 ex-box col-span-2 row-span-2">03</div>
+  </div>
+</example-container>
 
 ```html{2,4}
 <div class="grid grid-rows-3 grid-flow-col ...">
@@ -43,13 +43,15 @@ Use the `row-start-{n}` and `row-end-{n}` utilities to make an element start or 
 CSS grid lines start at 1, not 0, so a full-height element in a 3-row grid would start at line 1 and end at line 4.
 :::
 
-<container>
-  <box striped class="grid grid-rows-3 grid-flow-col gap-24 rounded-4">
+<example-container>
+  <div class="ex-bg--striped ex-bg--blue grid grid-rows-3 grid-flow-col gap-24 rounded-8">
+    <div class="ex-box"></div>
     <div class="pd-bg-blue-500 ex-box row-start-2 row-span-2">01</div>
     <div class="pd-bg-blue-500 ex-box row-end-3 row-span-2">02</div>
+    <div class="ex-box"></div>
     <div class="pd-bg-blue-500 ex-box row-start-1 row-end-4">03</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{2-4}
 <div class="grid grid-rows-3 grid-flow-col ...">
@@ -59,8 +61,11 @@ CSS grid lines start at 1, not 0, so a full-height element in a 3-row grid would
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:row-span-4` to apply the `row-span-4` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:row-span-4` to apply the `row-span-4` utility at only medium screen sizes and above.
 
 ```html{1}
 <div class="row-span-3 md:row-span-4">

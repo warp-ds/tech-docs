@@ -21,20 +21,22 @@ Use the `auto-rows-{size}` utilities to control the size implicitly-created grid
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:auto-rows-min` to apply the `auto-rows-min` utility at only medium screen sizes and above.
-
-```html
-<div class="grid grid-flow-row auto-rows-max md:auto-rows-min">
-  <!-- ... -->
-</div>
-```
-
 ### Arbitrary values
 If you need to use a one-off `grid-auto-rows` value that doesn't make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.
 
 ```html
 <div class="grid grid-flow-row auto-rows-[minmax(0,_2fr)]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:auto-rows-min` to apply the `auto-rows-min` utility at only medium screen sizes and above.
+
+```html
+<div class="grid grid-flow-row auto-rows-max md:auto-rows-min">
   <!-- ... -->
 </div>
 ```

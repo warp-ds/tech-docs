@@ -21,14 +21,6 @@ Use the `auto-cols-{size}` utilities to control the size of implicitly-created g
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:auto-cols-min` to apply the `auto-cols-min` utility at only medium screen sizes and above.
-
-```html
-<div class="grid grid-flow-col md:grid-flow-row">
-  <!-- ... -->
-</div>
-```
 ### Arbitrary values
 If you need to use a one-off `grid-auto-cols` value that doesn't make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.
 
@@ -38,3 +30,14 @@ If you need to use a one-off `grid-auto-cols` value that doesn't make sense to i
 </div>
 ```
 
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:auto-cols-min` to apply the `auto-cols-min` utility at only medium screen sizes and above.
+
+```html
+<div class="grid grid-flow-col md:grid-flow-row">
+  <!-- ... -->
+</div>
+```

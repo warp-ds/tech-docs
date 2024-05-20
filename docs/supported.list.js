@@ -472,13 +472,15 @@ export const gridAutoRows = [
   'auto-rows-fr',
 ];
 
+export const gridCols = getValueClasses(['grid-cols'], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
 export const gridColSpan = getValueClasses(['col-span'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
 export const gridColStart = getValueClasses(['col-start'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
 export const gridColEnd = getValueClasses(['col-end'], [1,2,3,4,5,6,7,8,9,10,11,12,13]);
 
-export const gridRowSpan = getValueClasses(['col-span'], [1,2,3,4,5,6,7]);
-export const gridRowStart = getValueClasses(['col-start'], [1,2,3,4,5,6,7]);
-export const gridRowEnd = getValueClasses(['col-end'], [1,2,3,4,5,6,7]);
+export const gridRows = getValueClasses(['grid-rows'], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+export const gridRowSpan = getValueClasses(['row-span'], [1,2,3,4,5,6,7]);
+export const gridRowStart = getValueClasses(['row-start'], [1,2,3,4,5,6,7]);
+export const gridRowEnd = getValueClasses(['row-end'], [1,2,3,4,5,6,7]);
 
 
 export const iconColor = [

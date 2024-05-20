@@ -1,12 +1,13 @@
 > Flexbox & Grid
 
 # Grid Template Rows
+
 Utilities for specifying the rows in a grid layout.
 
 ## Quick reference
 
 | Class                    | Description                                       |
-| ------------------------ | ------------------------------------------------- |
+|--------------------------|---------------------------------------------------|
 | `grid-rows-{n}`          | `grid-template-rows: repeat({n} ,minmax(0, 1fr))` |
 | `grid-rows-[{row-spec}]` | `grid-template-rows: {row-spec}`                  |
 
@@ -14,13 +15,13 @@ Utilities for specifying the rows in a grid layout.
 > `{n}`: `1` through `7` <br />
 > `{row-spec}`: _Any valid value for the `grid-template-rows` property - replace spaces with `_`_ <br />
 
-
 ## Basic usage
+
 ### Specifying the rows in a grid
 Use the `grid-rows-{n}` utilities to create grids with n equally sized rows.
 
-<container class="overflow-auto">
-  <box striped class="grid grid-rows-4 grid-flow-col gap-24 rounded-4" fg-color="var(--tw-pink-fg)" bg-color="var(--tw-pink-bg)">
+<example-container class="overflow-auto">
+  <div class="ex-bg--striped ex-bg--pink grid grid-rows-4 grid-flow-col gap-24 rounded-8">
     <div class="pd-bg-pink-500 ex-box">01</div>
     <div class="pd-bg-pink-500 ex-box">02</div>
     <div class="pd-bg-pink-500 ex-box">03</div>
@@ -30,8 +31,8 @@ Use the `grid-rows-{n}` utilities to create grids with n equally sized rows.
     <div class="pd-bg-pink-500 ex-box">07</div>
     <div class="pd-bg-pink-500 ex-box">08</div>
     <div class="pd-bg-pink-500 ex-box">09</div>
-  </box>
-</container>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="grid grid-rows-4 grid-flow-col ...">

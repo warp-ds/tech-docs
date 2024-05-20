@@ -16,15 +16,15 @@ Use the `grid-flow-{keyword}` utilities to control how the auto-placement algori
 ### Grid flow row
 Items are placed by filling each row in turn, adding new rows as necessary.
 
-<container>
-  <box striped class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-24" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--purple grid grid-flow-row grid-cols-3 grid-rows-3 gap-24 rounded-4">
     <div class="pd-bg-purple-800 ex-box col-span-2">01</div>
     <div class="pd-bg-purple-800 ex-box col-span-2">02</div>
-    <div class="pd-bg-purple-500 ex-box ">03</div>
-    <div class="pd-bg-purple-800 ex-box ">04</div>
-    <div class="pd-bg-purple-800 ex-box ">05</div>
-  </box>
-</container>
+    <div class="pd-bg-purple-500 ex-box">03</div>
+    <div class="pd-bg-purple-800 ex-box">04</div>
+    <div class="pd-bg-purple-800 ex-box">05</div>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="grid grid-flow-row grid-cols-3 grid-rows-3 ...">
@@ -39,15 +39,15 @@ Items are placed by filling each row in turn, adding new rows as necessary.
 ### Grid flow column
 Items are placed by filling each column in turn, adding new columns as necessary.
 
-<container>
-  <box striped class="grid grid-flow-col grid-cols-3 grid-rows-3 gap-24" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--purple grid grid-flow-col grid-cols-3 grid-rows-3 gap-24 rounded-4">
     <div class="pd-bg-purple-800 ex-box col-span-2">01</div>
     <div class="pd-bg-purple-800 ex-box col-span-2">02</div>
-    <div class="pd-bg-purple-500 ex-box ">03</div>
-    <div class="pd-bg-purple-800 ex-box ">04</div>
-    <div class="pd-bg-purple-800 ex-box ">05</div>
-  </box>
-</container>
+    <div class="pd-bg-purple-500 ex-box">03</div>
+    <div class="pd-bg-purple-800 ex-box">04</div>
+    <div class="pd-bg-purple-800 ex-box">05</div>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="grid grid-flow-col grid-cols-3 grid-rows-3 ...">
@@ -64,15 +64,15 @@ Items are placed by filling each column in turn, adding new columns as necessary
 
 If it is omitted, a "sparse" algorithm is used, where the placement algorithm only ever moves "forward" in the grid when placing items, never backtracking to fill holes. This ensures that all auto-placed items appear "in order", even if this leaves holes that could have been filled by later items.
 
-<container>
-  <box striped class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-24" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
+<example-container>
+  <div class="ex-bg--striped ex-bg--purple grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-24 rounded-4">
     <div class="pd-bg-purple-800 ex-box col-span-2">01</div>
     <div class="pd-bg-purple-800 ex-box col-span-2">02</div>
-    <div class="pd-bg-purple-500 ex-box ">03</div>
-    <div class="pd-bg-purple-800 ex-box ">04</div>
-    <div class="pd-bg-purple-800 ex-box ">05</div>
-  </box>
-</container>
+    <div class="pd-bg-purple-500 ex-box">03</div>
+    <div class="pd-bg-purple-800 ex-box">04</div>
+    <div class="pd-bg-purple-800 ex-box">05</div>
+  </div>
+</example-container>
 
 ```html{1}
 <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
@@ -84,8 +84,11 @@ If it is omitted, a "sparse" algorithm is used, where the placement algorithm on
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:grid-flow-row` to apply the `grid-flow-row` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:grid-flow-row` to apply the `grid-flow-row` utility at only medium screen sizes and above.
 
 ```html
 <div class="grid grid-flow-col md:grid-flow-row">
