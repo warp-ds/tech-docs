@@ -1,6 +1,7 @@
 > Tables
 
 # Border Collapse
+
 Utilities for controlling whether table borders should collapse or be separated.
 
 ## Quick reference
@@ -8,10 +9,11 @@ Utilities for controlling whether table borders should collapse or be separated.
 <qr-table />
 
 ## Basic usage
+
 ### Collapse
 Use `border-collapse` to combine adjacent cell borders into a single border when possible. Note that this includes collapsing borders on the top-level `<table>` tag.
 
-<container>
+<example-container>
   <table class="table! border-collapse w-full pd-border pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl">
     <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
       <tr>
@@ -38,7 +40,7 @@ Use `border-collapse` to combine adjacent cell borders into a single border when
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html{1}
 <table class="border border-collapse  ...">
@@ -72,7 +74,7 @@ Use `border-collapse` to combine adjacent cell borders into a single border when
 ### Separate
 Use `border-separate` to force each cell to display its own separate borders.
 
-<container>
+<example-container>
   <table class="table! pd-border border-separate! border-spacing-8 w-full  pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl" style="border-collapse: separate;" >
     <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
       <tr>
@@ -99,7 +101,7 @@ Use `border-separate` to force each cell to display its own separate borders.
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html{1}
 <table class="border border-separate border-spacing-8  ...">
@@ -130,8 +132,11 @@ Use `border-separate` to force each cell to display its own separate borders.
 </table>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:border-spacing-4` to apply the `border-spacing-4` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:border-spacing-4` to apply the `border-spacing-4` utility at only medium screen sizes and above.
 
 ```html
 <table class="md:border-spacing-4">

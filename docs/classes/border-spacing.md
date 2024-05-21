@@ -20,7 +20,7 @@ Utilities for controlling the spacing between table borders.
 ### Setting the border spacing
 Use `border-spacing` to control the space between the borders of table cells with [separate borders](/border-collapse.md#separate).
 
-<container>
+<example-container>
   <table class="table! pd-border border-separate! border-spacing-8 w-full  pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl" style="border-collapse: separate;" >
     <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
       <tr>
@@ -47,7 +47,7 @@ Use `border-spacing` to control the space between the borders of table cells wit
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html {1}
 <table class="border border-separate border-spacing-8  ...">
@@ -78,8 +78,11 @@ Use `border-spacing` to control the space between the borders of table cells wit
 </table>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:border-spacing-4` to apply the `border-spacing-4` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:border-spacing-4` to apply the `border-spacing-4` utility at only medium screen sizes and above.
 
 ```html
 <table class="md:border-spacing-4">

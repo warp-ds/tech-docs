@@ -1,6 +1,7 @@
 > Tables
 
 # Table Layout
+
 Utilities for controlling the table layout algorithm.
 
 ## Quick reference
@@ -8,10 +9,11 @@ Utilities for controlling the table layout algorithm.
 <qr-table />
 
 ## Basic usage
+
 ### Auto
 Use `table-auto` to allow the table to automatically size columns to fit the contents of the cell.
 
-<container>
+<example-container>
   <table class="table! table-auto border-collapse w-full pd-border pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl">
     <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
       <tr>
@@ -38,7 +40,7 @@ Use `table-auto` to allow the table to automatically size columns to fit the con
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html{1}
 <table class="table-auto ...">
@@ -74,7 +76,7 @@ Use `table-fixed` to allow the table to ignore the content and use fixed widths 
 
 You can manually set the widths for some columns and the rest of the available width will be divided evenly amongst the columns without explicit width.
 
-<container>
+<example-container>
   <table class="table! table-fixed border-collapse w-full pd-border pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl">
     <thead class="pd-bg-slate-50 dark:pd-bg-slate-700">
       <tr>
@@ -101,7 +103,7 @@ You can manually set the widths for some columns and the rest of the available w
       </tr>
     </tbody>
   </table>
-</container>
+</example-container>
 
 ```html{1}
 <table class="table-fixed ...">
@@ -132,8 +134,11 @@ You can manually set the widths for some columns and the rest of the available w
 </table>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:table-fixed` to apply the `table-fixed` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:table-fixed` to apply the `table-fixed` utility at only medium screen sizes and above.
 
 ```html
 <table class="md:table-fixed">
