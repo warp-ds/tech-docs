@@ -253,6 +253,15 @@ export const columns = getValueClasses(['columns'], [1,2,3,4,5,6,7,8,9,10,11,12]
 
 export const outlineColor = borderColor.map(c => c.replace('border', 'outline'))
 
+export const outline = [
+  ...getValueClasses(['outline', 'outline-offset'], [0,1,2,4,8]),
+  'outline',
+  'outline-dashed',
+  'outline-dotted',
+  'outline-double',
+  'outline-none',
+];
+
 export const divideColor = borderColor.map(c => c.replace('border', 'divide'))
 
 export const divideWidth = getWidthClasses(['divide','divide-x','divide-y']);

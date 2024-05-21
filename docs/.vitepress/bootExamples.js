@@ -67,5 +67,6 @@ buildWc('example-container');
 buildWc('background-color-table', QrColorTable, { dataId: 'backgroundColor' });
 buildWc('border-color-table', QrColorTable, { dataId: 'borderColor' });
 buildWc('divide-color-table', QrColorTable, { dataId: 'divideColor' });
+buildWc('outline-color-table', QrColorTable, { dataId: 'outlineColor' });
 buildWc('icon-color-table', QrColorTable, { dataId: 'iconColor' });
 buildWc('text-color-table', QrColorTable, { dataId: 'textColor' });

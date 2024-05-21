@@ -18,19 +18,17 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 ### Setting the divide color
 Control the border color between elements using the `s-divide-{semantic color}` utilities specified in the table above.
 
-<container>
+<example-container>
   <div class="flex justify-items-stretch rounded-8 divide-x-4 s-divide-primary w-full">
-    <div class="p-24 flex-1 text-center">1</div>
-    <div class="p-24 flex-1 text-center">2</div>
-    <div class="p-24 flex-1 text-center">3</div>
+    <div class="p-24 flex-1 text-center ex-font-dark">01</div>
+    <div class="p-24 flex-1 text-center ex-font-dark">02</div>
+    <div class="p-24 flex-1 text-center ex-font-dark">03</div>
   </div>
-</container>
+</example-container>
 
-```html
+```html{1}
 <div class="divide-x-4 s-divide-primary">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
+  <!-- ... -->
 </div>
 ```
 
@@ -39,19 +37,19 @@ Control the border color between elements using the `s-divide-{semantic color}` 
 Avoid conflicts with potential other borders, on the elements you wish to have dividers between,
 by adding a direction to the utility class: `s-divide-{x|y}-{semantic color}`.
 
-<container>
+<example-container>
   <div class="flex justify-items-stretch rounded-8 divide-x-4 s-divide-x-primary w-full">
-    <div class="p-24 flex-1 text-center border-b-4">1</div>
-    <div class="p-24 flex-1 text-center border-b-4">2</div>
-    <div class="p-24 flex-1 text-center border-b-4">3</div>
+    <div class="p-24 flex-1 text-center border-b-4 ex-font-dark">01</div>
+    <div class="p-24 flex-1 text-center border-b-4 ex-font-dark">02</div>
+    <div class="p-24 flex-1 text-center border-b-4 ex-font-dark">03</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="divide-x-4 s-divide-x-primary">
-  <div class="border-b-4">1</div>
-  <div class="border-b-4">2</div>
-  <div class="border-b-4">3</div>
+  <div class="border-b-4">01</div>
+  <div class="border-b-4">02</div>
+  <div class="border-b-4">03</div>
 </div>
 ```
 
@@ -74,7 +72,7 @@ This works for both semantic and arbitrary classes with any primitive `--w-{colo
 Please be advised that by using primitive variables you will lose theming possibilities, therefor we highly recommend only using semantic classes and tokens.
 :::
 
-<container class="bg-center bg-[url(/50s-scientists.jpg)]">
+<example-container class="bg-center bg-[url(/50s-scientists.jpg)]">
   <div class="flex justify-items-stretch rounded-8 divide-x-8 s-divide-x-primary/50 w-full s-bg/60 backdrop-blur-m mb-24">
     <div class="p-24 flex-1 text-center">1</div>
     <div class="p-24 flex-1 text-center">2</div>
@@ -85,7 +83,7 @@ Please be advised that by using primitive variables you will lose theming possib
     <div class="px-24 py-8 text-center">2</div>
     <div class="px-24 py-8 text-center">3</div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="s-divide-x-primary/60 ..."></div>

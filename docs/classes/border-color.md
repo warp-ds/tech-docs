@@ -1,6 +1,3 @@
-// @unocss-include
-
-
 > Borders
 
 # Border Color
@@ -22,13 +19,11 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 ### Setting the border color
 Control the border color of an element using the `border-{transparent | inherit | current}` or `s-border-{semantic color}` utilities specified in the table above.
 
-<width-controller>
-  <example-container>
-    <div class="grid gap-16 justify-items-center">
-      <div class="h-80 w-80 border-4 rounded-16 s-border-positive"></div>
-    </div>
-  </example-container>
-</width-controller>
+<example-container>
+  <div class="grid gap-16 justify-items-center">
+    <div class="h-80 w-80 border-4 rounded-16 s-border-positive"></div>
+  </div>
+</example-container>
 
 ```html
 <div class="s-border-positive border-4 rounded-16 ..."></div>

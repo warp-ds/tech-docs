@@ -31,7 +31,7 @@ Utilities for controlling the border width of an element.
 ### All sides
 Use the `border-0`, `border`, `border-2`, `border-4`, or `border-8` utilities to set the border width for all sides of an element.
 
-<container>
+<example-container>
   <div class="grid grid-cols-4 gap-16 justify-items-center">
     <div>border</div>
     <div>border-2</div>
@@ -42,7 +42,7 @@ Use the `border-0`, `border`, `border-2`, `border-4`, or `border-8` utilities to
     <div class="pd-bg-violet-100 pd-border-violet-900 h-80 w-80 border-4"></div>
     <div class="pd-bg-violet-100 pd-border-violet-900 h-80 w-80 border-8"></div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="border ..."></div>
@@ -54,7 +54,7 @@ Use the `border-0`, `border`, `border-2`, `border-4`, or `border-8` utilities to
 ### Individual sides
 Use the `border-{side}`, `border-{side}-0`, `border-{side}-2`, `border-{side}-4`, or `border-{side}-8` utilities to set the border width for one side of an element.
 
-<container>
+<example-container>
   <div class="grid grid-cols-4 gap-16 justify-items-center">
     <div>border-t-4</div>
     <div>border-r-4</div>
@@ -65,7 +65,7 @@ Use the `border-{side}`, `border-{side}-0`, `border-{side}-2`, `border-{side}-4`
     <div class="pd-bg-indigo-100 pd-border-indigo-900 h-80 w-80 border-b-4"></div>
     <div class="pd-bg-indigo-100 pd-border-indigo-900 h-80 w-80 border-l-4"></div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="border-t-4 ..."></div>
@@ -77,14 +77,14 @@ Use the `border-{side}`, `border-{side}-0`, `border-{side}-2`, `border-{side}-4`
 ### Horizontal and vertical sides
 Use the `border-{x|y}-{width}` utilities to set the border width on two sides of an element at the same time.
 
-<container>
+<example-container>
   <div class="grid grid-cols-2 gap-16 justify-items-center">
     <div>border-x-4</div>
     <div>border-y-4</div>
     <div class="pd-bg-blue-100 pd-border-blue-900 h-80 w-80 border-x-4"></div>
     <div class="pd-bg-blue-100 pd-border-blue-900 h-80 w-80 border-y-4"></div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="border-x-4 ..."></div>
@@ -97,25 +97,21 @@ This also works with or without an optional side:
 `border-{side}-[{width}] | border-[{width}]`
 
 ```html
-<div class="border-[66]">
-  <!-- ... -->
-</div>
+<div class="border-[66]"></div>
 ```
+
+## Applying conditionally
 
 ### Hover, focus, and other states
 You can conditionally apply utility classes in different states using variant modifiers. For example, use `hover:border-t-4` to only apply the `border-t-4` utility on hover.
 
 ```html
-<div class="border-2 hover:border-t-4">
-  <!-- ... -->
-</div>
+<div class="border-2 hover:border-t-4"></div>
 ```
 
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:border-t-4` to apply the `border-t-4` utility at only medium screen sizes and above.
 
 ```html
-<div class="border-2 md:border-t-4">
-  <!-- ... -->
-</div>
+<div class="border-2 md:border-t-4"></div>
 ```

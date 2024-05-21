@@ -22,7 +22,7 @@ This functionality is not yet supported! If you need this, reach out to us on [#
 ### Set the divide style
 Control the border style between elements using the `divide-{style}` utilities.
 
-<!--container>
+<!--example-container>
   <div class="grid gap-16 justify-items-center">
     <div class="pd-bg-pink-500 rounded-8 divide-y divide-dashed w-full max-w-[300]">
       <div class="p-24 text-center">1</div>
@@ -34,8 +34,6 @@ Control the border style between elements using the `divide-{style}` utilities.
 
 ```html
 <div class="divide-y divide-dashed ...">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
+  <!-- ... -->
 </div>
 ```

@@ -110,32 +110,25 @@ Use `rounded-{tl|tr|br|bl}{-size}` to only round one corner an element.
 <div class="rounded-bl-16 ...">04</div>
 ```
 
+### Arbitrary values
+If you need to use a one-off `border-radius` value, use square brackets to generate a property on the fly using any arbitrary value.
+
+```html
+<div class="rounded-[31]"></div>
+```
+
+## Applying conditionally
+
 ### Hover, focus, and other states
 You can conditionally apply utility classes in different states using variant modifiers. For example, use `hover:rounded-8` to only apply the `rounded-8` utility on hover.
 
 ```html
-<div class="rounded hover:rounded-8">
-  <!-- ... -->
-</div>
+<div class="rounded hover:rounded-8"></div>
 ```
 
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:rounded-16` to apply the `rounded-16` utility at only medium screen sizes and above.
 
 ```html
-<div class="rounded md:rounded-16">
-  <!-- ... -->
-</div>
+<div class="rounded md:rounded-16"></div>
 ```
-
-### Arbitrary values
-If you need to use a one-off `border-radius` value, use square brackets to generate a property on the fly using any arbitrary value.
-
-```html
-<div class="rounded-[31]">
-  <!-- ... -->
-</div>
-```
-
-
-
