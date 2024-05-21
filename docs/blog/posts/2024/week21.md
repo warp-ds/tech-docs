@@ -1,19 +1,20 @@
 ---
 title: 'WARP releases'
-date: 2024-05-15
+date: 2024-05-21
 ---
 
 Lots of bug fixes and features in Warp Elements and React and 1 tiny breaking change in Warp Vue
 
 ---
 
-# Week 20
+# Week 21
 
-## @warp-ds/css@1.9.6
+## @warp-ds/css@1.9.7
 
 ### Bug Fixes
 
 * **cc-input:** avoid style overriding ([#198](https://github.com/warp-ds/css/issues/198)) ([d7b5092](https://github.com/warp-ds/css/commit/d7b509289afa4878e9275330ca3f12eedbc5bfd0))
+* **tokens** Fixed list-checked icon token name for Finn ([#209](https://github.com/warp-ds/css/issues/209)) ([89c0c59](https://github.com/warp-ds/css/commit/89c0c59993cf26b97eb611b6aef784a7a6d4c636))
 * **tokens:** Grayscale modifications ([#196](https://github.com/warp-ds/css/issues/196)) ([4f72ac4](https://github.com/warp-ds/css/commit/4f72ac4df1dd3ef5a8691cb9718b7f2ef5b4ac0a))
 * **tokens:** Add icon tokens for list-checked ([#194](https://github.com/warp-ds/css/issues/194)) ([258e332](https://github.com/warp-ds/css/commit/258e3324ab8e9b72ebb6657700a0caa65b35db90))
 * **tokens:** New semantic icon colors for hover and active states in Tori ([#192](https://github.com/warp-ds/css/issues/192)) ([2a9107c](https://github.com/warp-ds/css/commit/2a9107c4cd2e8a310b37c2182e8b2f1b4932b224))
