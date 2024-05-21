@@ -39,9 +39,9 @@ Use the `basis-{size}` utilities to set the initial size of flex items.
 ### Arbitrary values
 If you need to use a one-off flex-basis value, use square brackets to generate a property on the fly using any arbitrary value.
 
-```html
-<div class="basis-[15%]">
-  <!-- ... -->
+```html{2}
+<div class="flex">
+  <div class="basis-[15%]"></div>
 </div>
 ```
 

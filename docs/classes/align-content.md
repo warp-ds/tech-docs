@@ -51,7 +51,7 @@ Use `content-center` to pack rows in a container in the center of the cross axis
 Use `content-end` to pack rows in a container against the end of the cross axis.
 
 <example-container>
-  <div class="ex-bg--striped ex-bg--pink grid grid-cols-3 gap-24 rounded-4 py-32 content-start">
+  <div class="ex-bg--striped ex-bg--pink grid grid-cols-3 gap-24 rounded-4 pt-64 content-start">
     <div class="pd-bg-pink-500 ex-box">01</div>
     <div class="pd-bg-pink-500 ex-box">02</div>
     <div class="pd-bg-pink-500 ex-box">03</div>

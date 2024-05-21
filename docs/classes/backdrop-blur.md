@@ -9,62 +9,77 @@ Utilities for applying backdrop blur filters to an element.
 <qr-table />
 
 ## Basic usage
+
 ### Blurring behind an element
 Use the `backdrop-blur-{size}` utilities to control an element’s backdrop blur.
 
-<container>
-  <div class="flex flex-wrap gap-16">
-    <div class="w-160 relative">
-      <div>backdrop-blur-none</div>
-      <div class="absolute backdrop-blur-none left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+<example-container>
+  <div class="flex flex-wrap gap-16 justify-items-center justify-around">
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-none</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-none border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur</div>
-      <div class="absolute backdrop-blur left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-s</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-s border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-      <div>backdrop-blur-s</div>
-      <div class="absolute backdrop-blur-s left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-m</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-m border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur-m</div>
-      <div class="absolute backdrop-blur-m left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-l</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-l border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur-l</div>
-      <div class="absolute backdrop-blur-l left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-xl</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-xl border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur-xl</div>
-      <div class="absolute backdrop-blur-xl left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-xxl</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-xxl border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur-xxl</div>
-      <div class="absolute backdrop-blur-xxl left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
-    </div>
-    <div class="w-160 relative">
-    <div>backdrop-blur-xxxl</div>
-      <div class="absolute backdrop-blur-xxxl left-24 right-24 top-48 bottom-24 rounded-8 border border-white"></div>
-      <img class="w-144 rounded-16" src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <div class="text-center">
+      <strong class="ex-font-dark">backdrop-blur-xxxl</strong>
+      <div class="p-16 bg-[url(/tech-docs/classes/20s-scientists.jpg)] bg-contain w-144 h-144 mx-auto mt-8 relative rounded-8 shadow-m">
+        <div class="backdrop-blur-xxxl border pd-border-white absolute inset-16 rounded-8"></div>
+      </div>
     </div>
   </div>
-</container>
+</example-container>
 
-```html
-<div class="backdrop-blur-none ...">
-  <!-- ... -->
+```html{2,5,8,11,14,17,20}
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-none ..."></div>
 </div>
-<div class="backdrop-blur ...">
-  <!-- ... -->
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-s ..."></div>
 </div>
-<div class="backdrop-blur-s ...">
-  <!-- ... -->
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-m ..."></div>
+</div>
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-l ..."></div>
+</div>
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-xl ..."></div>
+</div>
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-xxl ..."></div>
+</div>
+<div class="bg-[...] ...">
+  <div class="backdrop-blur-xxxl ..."></div>
 </div>
 ```

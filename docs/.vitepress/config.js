@@ -77,7 +77,7 @@ const docsClasses = [
   // presetDocs:
   'ex-box', 'ex-inner-box', 'ex-font', 'ex-font-dark', 'ex-pic-no',
   ...pdColorClasses,
-  'pd-border-white/50',
+  'pd-border-white', 'pd-border-white/50',
   'pd-bg-white',
   'before:pd-bg-pink-500',
   'pd-font-mono',
@@ -394,7 +394,7 @@ export default defineConfig({
               text: 'Effects',
               collapsed: true,
               items: [
-                { text: 'Box Shadow', link: '/box-shadow' },
+                { text: 'Box Shadow', link: '/classes/box-shadow' },
                 { text: 'Opacity', link: '/classes/opacity' },
               ],
             },        {
