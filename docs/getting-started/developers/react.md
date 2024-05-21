@@ -18,6 +18,12 @@ Once installed, components can be imported into your app by name.
 import { Box } from '@warp-ds/react';
 ```
 
+You can also import them individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { Box } from '@warp-ds/react/components/box'
+
+```
+
 You can find the specific import statement to import each component on that
 component's documentation page. For example, here's the [button page](/components/buttons/)
 
