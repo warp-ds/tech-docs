@@ -845,10 +845,17 @@ export const transformOrigin = [
   'origin-top-left',
 ];
 
+export const transitionDelay = [
+  ...getValueClasses(['delay'], [50,100,150,200,250,300,400,500,600,700,800,900,1000,1700]),
+];
+export const transitionDuration = [
+  ...getValueClasses(['duration'], [50,100,150,200,250,300,400,500,600,700,800,900,1000]),
+];
+
 export const transitionProperty = [
+  'transition',
   'transition-none',
   'transition-all',
-  'transition',
   'transition-colors',
   'transition-opacity',
   'transition-shadow',
