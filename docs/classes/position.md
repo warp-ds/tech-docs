@@ -278,6 +278,8 @@ Any `offsets` are calculated relative to the element’s normal position and the
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:absolute` to apply the `absolute` utility at only medium screen sizes and above.
 

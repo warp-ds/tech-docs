@@ -1,6 +1,7 @@
 > Layout
 
 # Break Inside
+
 Utilities for controlling how a column or page should break within an element.
 
 ## Quick reference
@@ -8,6 +9,7 @@ Utilities for controlling how a column or page should break within an element.
 <qr-table />
 
 ## Basic usage
+
 ### Setting the break-inside behavior
 Use the `break-inside-{value}` utilities to control how a column or page break should behave within an element. For example, use the `break-inside-avoid-column` utility to avoid a column break within an element.
 
@@ -20,6 +22,7 @@ Use the `break-inside-{value}` utilities to control how a column or page break s
 </div>
 ```
 
+## Applying conditionally
 
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:break-inside-avoid-column` to apply the `break-inside-avoid-column` utility at only medium screen sizes and above.

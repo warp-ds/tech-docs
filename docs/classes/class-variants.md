@@ -19,7 +19,7 @@ For example `!mb-32` would produce `margin-bottom: 3.2rem !important`.
 ### Available breakpoints
 
 | Breakpoint label | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
+|------------------|--------------------------------------------------------------|
 | `sm`             | Targets `480px` to break on most mobile devices              |
 | `md`             | Targets `768px` to break on tablet screen sizes              |
 | `lg`             | Targets `990px` for changes targeting desktop screens        |

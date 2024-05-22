@@ -67,7 +67,6 @@ For example, use `hover:resize` to only apply the `resize` utility on hover.
 <div class="resize-none hover:resize"></div>
 ```
 
-
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
 For example, use `md:resize` to apply the `resize` utility at only medium screen sizes and above.

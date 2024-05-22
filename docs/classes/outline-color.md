@@ -63,6 +63,8 @@ Please be advised that by using primitive variables you will lose theming possib
 <div class="outline-[--w-black/40] hover:outline-[--w-black/100] ..."></div>
 ```
 
+## Applying conditionally
+
 ### Hover, focus and other states
 Conditionally apply utility classes in different states using variant modifiers.
 For example, use `hover:s-outline-active` to only apply the `s-outline-active` utility on hover.

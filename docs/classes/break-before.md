@@ -1,6 +1,7 @@
 > Layout
 
 # Break Before
+
 Utilities for controlling how a column or page should break before an element.
 
 ## Quick reference
@@ -8,6 +9,7 @@ Utilities for controlling how a column or page should break before an element.
 <qr-table />
 
 ## Basic usage
+
 ### Setting the break-before behavior
 Use the `break-before-{value}` utilities to control how a column or page break should behave before an element. For example, use the `break-before-column` utility to force a column break before an element.
 
@@ -19,6 +21,8 @@ Use the `break-before-{value}` utilities to control how a column or page break s
   <p>Look. If you think this is...</p>
 </div>
 ```
+
+## Applying conditionally
 
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:break-before-column` to apply the `break-before-column` utility at only medium screen sizes and above.

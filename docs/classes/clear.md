@@ -78,6 +78,8 @@ Use `clear-none` to reset any clears that are applied to an element. This is the
 <p class="clear-none">Maybe we can live without libraries, people like you and me. ...</p>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:clear-none` to apply the `clear-none` utility at only medium screen sizes and above.
 

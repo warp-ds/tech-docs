@@ -81,7 +81,7 @@ The column width will be automatically adjusted to accommodate that number.
   </div>
 </example-container>
 
-```html{2,4}
+```html{1}
 <div class="columns-3 ...">
   <img class="w-full ..." src="..." />
   <img class="w-full aspect-square ..." src="..." />

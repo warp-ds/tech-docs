@@ -94,6 +94,8 @@ This means a 128px × 128px element with a 2px border and 16px of padding on all
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:box-content` to apply the `box-content` utility at only medium screen sizes and above.
 

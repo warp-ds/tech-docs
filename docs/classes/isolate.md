@@ -19,6 +19,8 @@ Use the `isolate` and `isolation-auto` utilities to control whether an element s
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:isolation-auto` to apply the `isolation-auto` utility at only medium screen sizes and above.
 

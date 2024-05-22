@@ -293,6 +293,8 @@ Use `hidden` to set an element to `display: none` and remove it from the page la
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:inline-flex` to apply the `inline-flex` utility at only medium screen sizes and above.
 

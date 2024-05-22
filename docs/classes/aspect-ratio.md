@@ -62,6 +62,8 @@ Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 </div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:aspect-1/1` to apply the `aspect-16/9` utility at only medium screen sizes and above.
 

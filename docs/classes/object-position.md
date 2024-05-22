@@ -84,6 +84,8 @@ Use the `object-{side}` utilities to specify how a replaced element’s content 
 <img class="object-none object-right-bottom ..." src="..." alt="..." />
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:object-top` to apply the `object-top` utility at only medium screen sizes and above.
 

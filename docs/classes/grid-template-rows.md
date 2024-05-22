@@ -42,21 +42,23 @@ Use the `grid-rows-{n}` utilities to create grids with n equally sized rows.
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:grid-rows-6` to apply the `grid-rows-6` utility at only medium screen sizes and above.
-
-```html{1}
-<div class="grid grid-rows-2 md:grid-rows-6">
-  <!-- ... -->
-</div>
-```
-
 ### Arbitrary values
 
 If you need to use a one-off `grid-template-rows` value, use square brackets to generate a property on the fly. Replace any spaces in the property with underscore.
 
 ```html{1}
 <div class="grid grid-rows-[3.2rem_1fr]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:grid-rows-6` to apply the `grid-rows-6` utility at only medium screen sizes and above.
+
+```html{1}
+<div class="grid grid-rows-2 md:grid-rows-6">
   <!-- ... -->
 </div>
 ```

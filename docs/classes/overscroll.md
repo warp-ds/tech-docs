@@ -55,6 +55,8 @@ Use `overscroll-auto` to make it possible for the user to continue scrolling a p
 <div class="overscroll-auto ...">Well, let me tell you something, ...</div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:overscroll-contain` to apply the `overscroll-contain` utility at only medium screen sizes and above.
 

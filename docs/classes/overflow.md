@@ -177,6 +177,8 @@ Use `overflow-scroll` to add scrollbars to an element. Unlike `overflow-auto`, w
 <div class="overflow-scroll ..."></div>
 ```
 
+## Applying conditionally
+
 ### Breakpoints and media queries
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:overflow-scroll` to apply the `overflow-scroll` utility at only medium screen sizes and above.
 

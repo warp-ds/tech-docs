@@ -100,6 +100,8 @@ Please be advised that by using primitive variables you will lose theming possib
 <div class="border-y-[var(--w-black)/40] hover:border-y-[var(--w-black)/100] ..."></div>
 ```
 
+## Applying conditionally
+
 ### Hover, focus and other states
 Conditionally apply utility classes in different states using variant modifiers.
 For example, use `hover:s-border-active` to only apply the `s-border-active` utility on hover.

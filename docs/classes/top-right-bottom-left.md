@@ -126,6 +126,15 @@ To use a negative top/right/bottom/left value, prefix the class name with a dash
 </div>
 ```
 
+### Arbitrary values
+If you need to use a one-off top/right/bottom/left value, use square brackets to generate a property on the fly using any arbitrary value.
+
+```html
+<div class="top-[160]">
+  <!-- ... -->
+</div>
+```
+
 ## Applying conditionally
 
 ### Hover, focus, and other states
@@ -142,15 +151,6 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="top-8 md:top-10">
-  <!-- ... -->
-</div>
-```
-
-### Arbitrary values
-If you need to use a one-off top/right/bottom/left value, use square brackets to generate a property on the fly using any arbitrary value.
-
-```html
-<div class="top-[160]">
   <!-- ... -->
 </div>
 ```
