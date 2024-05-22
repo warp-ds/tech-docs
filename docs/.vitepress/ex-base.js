@@ -33,6 +33,7 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           border-radius: 8px;
           margin-bottom: 8px;
           background-color: var(--vp-c-bg-soft);
+          color: var(--vp-c-text-2);
         }
         .ex-heading {
           margin-top: 0;

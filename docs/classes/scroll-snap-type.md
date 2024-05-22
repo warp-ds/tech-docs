@@ -8,9 +8,11 @@ This functionality is not yet supported! If you need this, reach out to us on [#
 :::
 
 ## Quick reference
+
 <qr-table />
 
 ## Basic usage
+
 ### Horizontal scroll snapping
 Use the `snap-x` utility to enable horizontal scroll snapping within an element.
 
