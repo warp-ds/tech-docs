@@ -7,7 +7,6 @@ import ComponentQuestions from '../../components/ComponentQuestions.md';
 import ComponentsStatus from '../ComponentsStatus.vue';
 import Do from '../Do.vue';
 import DoDont from '../DoDont.vue';
-import Container from '../Container.vue';
 import QrTable from '../qr-table.vue';
 import QrColorTable from '../qr-color-table.vue';
 import WidthController from '../WidthController.vue';
@@ -31,7 +30,6 @@ export default {
     ctx.app.component('ComponentsStatus', ComponentsStatus);
     ctx.app.component('Do', Do);
     ctx.app.component('DoDont', DoDont);
-    ctx.app.component('Container', Container);
     ctx.app.component('WidthController', WidthController);
     ctx.app.component('QrTable', QrTable);
     ctx.app.component('QrColorTable', QrColorTable);
