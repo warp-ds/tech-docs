@@ -1,8 +1,9 @@
 > Helper Classes
 
-# Useful Warp helper classes
+# Useful Warp Helper Classes
 
-## page container
+## Page Container
+
 The `.page-container` helper class job is to normalize page behavior across the pages/sites, most pages should be set up with this.
 
 - Sets a max-width for the page ( This is dictated by the banner formats )
@@ -12,14 +13,14 @@ The `.page-container` helper class job is to normalize page behavior across the 
 
 Header/Footer also use the same helper class to follow the same pattern.
 
-<container>
+<example-container>
   <div class="flex justify-center">
     <img src="/classes/page-container.png" class="object-cover" alt="example of what page-container does as an overlay on top of finn.no" />
   </div>
-</container>
+</example-container>
 
 ```html
 <main class="page-container">
-  ...
+  <!-- ... -->
 </main>
 ```

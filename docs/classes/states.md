@@ -93,9 +93,7 @@ Warp includes modifiers for just about everything you’ll ever need, including:
 Style elements on hover, focus, and active using the `hover`, `focus`, and `active` modifiers.
 
 ```html
-<div class="s-bg-positive hover:s-bg-positive-hover">
-...
-</div>
+<div class="s-bg-positive hover:s-bg-positive-hover"></div>
 ```
 
 Warp also includes modifiers for other interactive states like `:visited`, `:focus-within`, `:focus-visible`, and more.
@@ -106,10 +104,8 @@ Style an element when it is the first-child or last-child using the `first` and 
 ```html
 <ul role="list" class="p-8 ...">
     <!-- Remove top/bottom padding when first/last child -->
-    <li class="flex py-8 first:pt-0 last:pb-0 ...">
-      ...
-    </li>
-    ...
+    <li class="flex py-8 first:pt-0 last:pb-0 ...">...</li>
+    <!-- ... -->
 </ul>
 ```
 
@@ -125,7 +121,7 @@ You can also style an element when it’s an odd or even child using the `odd` a
         <td>{person.title}</td>
         <td>{person.email}</td>
       </tr>
-      ...
+      <!-- ... -->
   </tbody>
 </table>
 ```
@@ -184,16 +180,18 @@ Style the button in file inputs using the file modifier.
 ### List markers
 Style the counters or bullets in lists using the marker modifier.
 
-<container>
-  <ul class="list-disc! pl-40! my-0!">
-    <li>Default disc</li>
-    <li class="marker:s-text-negative">Negative disc</li>
-    <li class="marker:s-text-positive">Positive disc</li>
-  </ul>
-</container>
+<example-container>
+  <div class="ex-inner-box">
+    <ul class="list-disc list-inside s-text mb-0">
+      <li>Default disc</li>
+      <li class="marker:s-text-negative">Negative disc</li>
+      <li class="marker:s-text-positive">Positive disc</li>
+    </ul>
+  </div>
+</example-container>
 
 ```html
-<ul class="list-disc pl-40">
+<ul class="list-disc list-inside ...">
   <li>Default disc</li>
   <li class="marker:s-text-negative">Negative disc</li>
   <li class="marker:s-text-positive">Positive disc</li>
@@ -203,19 +201,20 @@ Style the counters or bullets in lists using the marker modifier.
 ### Highlighted text
 Style the active text selection using the selection modifier.
 
-<container>
-<div class="selection:s-bg-primary-active">
-  <p>
-    Space and time are two fundamental concepts that have captivated human imagination for centuries. Space is the vast expanse that surrounds us, both on Earth and beyond, including galaxies, stars, and planets. Time, on the other hand, is the dimension that dictates the order and duration of events in the universe. The relationship between space and time is intricately linked through the concept of spacetime, which emerged from Einstein's theory of relativity. Spacetime is a four-dimensional concept that merges the three dimensions of space with the fourth dimension of time to form a space-time continuum. It is a fundamental concept in modern physics and our understanding of the universe.
-  </p>
-</div>
-</container>
+<example-container>
+  <div class="ex-inner-box s-text max-w-full selection:s-bg-positive-selected">
+    Space and time are two fundamental concepts that have captivated human imagination for centuries.
+    Space is the vast expanse that surrounds us, both on Earth and beyond, including galaxies, stars, and planets.
+    Time, on the other hand, is the dimension that dictates the order and duration of events in the universe.
+    The relationship between space and time is intricately linked through the concept of spacetime, which emerged from Einstein's theory of relativity.
+    Spacetime is a four-dimensional concept that merges the three dimensions of space with the fourth dimension of time to form a space-time continuum.
+    It is a fundamental concept in modern physics and our understanding of the universe.
+  </div>
+</example-container>
 
 ```html
-<div class="selection:s-bg-primary-active">
-  <p>
-    Space and time are two fundamental concepts that have captivated human imagination for centuries. Space is the vast expanse that surrounds us, both on Earth and beyond, including galaxies, stars, and planets. Time, on the other hand, is the dimension that dictates the order and duration of events in the universe. The relationship between space and time is intricately linked through the concept of spacetime, which emerged from Einstein's theory of relativity. Spacetime is a four-dimensional concept that merges the three dimensions of space with the fourth dimension of time to form a space-time continuum. It is a fundamental concept in modern physics and our understanding of the universe.
-  </p>
+<div class="selection:s-bg-positive-selected">
+  Space and time are two fundamental concepts...
 </div>
 ```
 

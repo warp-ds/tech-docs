@@ -265,6 +265,12 @@ export const outline = [
 export const divideColor = borderColor.map(c => c.replace('border', 'divide'))
 
 export const divideWidth = getWidthClasses(['divide','divide-x','divide-y']);
+
+export const divideReverse = [
+  'divide-x-reverse',
+  'divide-y-reverse'
+];
+
 export const borderStyle = [
   'border-solid',
   'border-dashed',

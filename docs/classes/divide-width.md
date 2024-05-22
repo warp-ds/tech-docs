@@ -23,15 +23,13 @@ Utilities for controlling the border width between elements.
 ### Add borders between horizontal children
 Add borders between horizontal elements using the `divide-x-{width}` utilities.
 
-<container>
-  <div class="grid gap-16 justify-items-center">
-    <div class="flex justify-items-stretch pd-bg-blue-100 s-divide-primary rounded-8 divide-x-4 w-full">
-      <div class="p-24 flex-1 text-center pd-font-mono">01</div>
-      <div class="p-24 flex-1 text-center pd-font-mono">02</div>
-      <div class="p-24 flex-1 text-center pd-font-mono">03</div>
-    </div>
+<example-container>
+  <div class="flex justify-items-stretch pd-bg-blue-100 s-divide-primary rounded-8 divide-x-4 w-full pd-shadow-lg">
+    <div class="p-24 flex-1 text-center ex-font-dark">01</div>
+    <div class="p-24 flex-1 text-center ex-font-dark">02</div>
+    <div class="p-24 flex-1 text-center ex-font-dark">03</div>
   </div>
-</container>
+</example-container>
 
 ```html {1}
 <div class="divide-x-4 ...">
@@ -44,15 +42,13 @@ Add borders between horizontal elements using the `divide-x-{width}` utilities.
 ### Add borders between stacked children
 Add borders between stacked elements using the `divide-y-{width}` utilities.
 
-<container>
-  <div class="grid gap-16 justify-items-center">
-    <div class="pd-bg-blue-100 s-divide-primary rounded-8 divide-y w-full max-w-[300]">
-      <div class="p-24 text-center pd-font-mono">01</div>
-      <div class="p-24 text-center pd-font-mono">02</div>
-      <div class="p-24 text-center pd-font-mono">03</div>
-    </div>
+<example-container>
+  <div class="pd-bg-blue-100 s-divide-primary rounded-8 divide-y w-full max-w-[300] mx-auto pd-shadow-lg">
+    <div class="p-24 text-center ex-font-dark">01</div>
+    <div class="p-24 text-center ex-font-dark">02</div>
+    <div class="p-24 text-center ex-font-dark">03</div>
   </div>
-</container>
+</example-container>
 
 ```html {1}
 <div class="divide-y ...">
@@ -65,15 +61,13 @@ Add borders between stacked elements using the `divide-y-{width}` utilities.
 ### Reversing children order
 If your elements are in reverse order (using say `flex-row-reverse` or `flex-col-reverse`), use the `divide-x-reverse` or `divide-y-reverse` utilities to ensure the border is added to the correct side of each element.
 
-<container>
-  <div class="grid gap-16 justify-items-center">
-    <div class="flex flex-col-reverse pd-bg-blue-100 s-divide-primary rounded-8 divide-y divide-y-reverse w-full max-w-[300]">
-      <div class="p-24 text-center pd-font-mono">01</div>
-      <div class="p-24 text-center pd-font-mono">02</div>
-      <div class="p-24 text-center pd-font-mono">03</div>
-    </div>
+<example-container>
+  <div class="flex flex-col-reverse pd-bg-blue-100 s-divide-primary rounded-8 divide-y divide-y-reverse w-full max-w-[300] pd-shadow-lg mx-auto">
+    <div class="p-24 text-center ex-font-dark">01</div>
+    <div class="p-24 text-center ex-font-dark">02</div>
+    <div class="p-24 text-center ex-font-dark">03</div>
   </div>
-</container>
+</example-container>
 
 ```html {1}
 <div class="flex flex-col-reverse divide-y divide-y-reverse ...">
@@ -93,6 +87,8 @@ This works with or without an optional, but recommended, direction:
   <!-- ... -->
 </div>
 ```
+
+## Applying conditionally
 
 ### Hover, focus, and other states
 You can conditionally apply utility classes in different states using variant modifiers.

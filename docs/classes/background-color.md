@@ -94,11 +94,11 @@ For example, use `hover:s-bg-hover` to only apply the `s-bg-hover` utility on ho
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
 For example, use `md:s-bg-positive` to apply the `s-bg-positive` utility at only medium screen sizes and above.
 
-<container>
+<example-container>
   <div class="grid gap-16 justify-items-center">
     <div class="h-80 w-80 border rounded-16 s-bg md:s-bg-positive"></div>
   </div>
-</container>
+</example-container>
 
 ```html
 <div class="s-bg md:s-bg-positive ..."></div>
