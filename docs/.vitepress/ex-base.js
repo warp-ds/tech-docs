@@ -148,7 +148,7 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           this.shadow.innerHTML += shadowUnoStyle + tokens;
 
           if (baseVueComponent) {
-            this.shadow.innerHTML += '<div id="app" class="mt-16 s-bg-primary"></div>';
+            this.shadow.innerHTML += '<div id="app" class="mt-16"></div>';
             createApp(baseVueComponent, rootProperties)
               .component('demo-control', Control)
               .component('demo-controls', Controls)

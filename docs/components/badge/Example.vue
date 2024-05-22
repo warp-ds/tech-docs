@@ -13,7 +13,7 @@ const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right',]
     </div>
     <div>
       <h3 class="h4">Variants</h3>
-      <ul class="space-x-8">
+      <ul class="flex flex-wrap gap-16">
         <w-badge v-for="variant in badgeVariants" :key="variant" as="li" :variant="variant">{{ variant }}</w-badge>
       </ul>
     </div>
