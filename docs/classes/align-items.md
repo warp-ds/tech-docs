@@ -1,6 +1,7 @@
 > Flexbox & Grid
 
 # Align Items
+
 Utilities for controlling how flex and grid items are positioned along a container's cross axis.
 
 ## Quick reference
@@ -8,15 +9,16 @@ Utilities for controlling how flex and grid items are positioned along a contain
 <qr-table />
 
 ## Basic usage
+
 ### Stretch
 Use `items-stretch` to stretch items to fill the container’s cross axis.
 
 <example-container>
-  <box striped class="grid grid-cols-3 items-stretch gap-24 rounded-4" fg-color="var(--tw-purple-fg)" bg-color="var(--tw-purple-bg)">
+  <div class="ex-bg--striped ex-bg--purple grid grid-cols-3 items-stretch gap-24 rounded-4">
     <div class="py-16 pd-bg-purple-500 ex-box">01</div>
     <div class="py-64 pd-bg-purple-500 ex-box">02</div>
     <div class="py-32 pd-bg-purple-500 ex-box">03</div>
-  </box>
+  </div>
 </example-container>
 
 ```html

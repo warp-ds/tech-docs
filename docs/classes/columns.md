@@ -1,6 +1,7 @@
 > Layout
 
 # Columns
+
 Utilities for controlling the number of columns within an element.
 
 ## Quick reference
@@ -21,7 +22,7 @@ The column width will be automatically adjusted to accommodate that number.
 
 <example-container>
   <div class="columns-3 gap-x-24">
-    <box striped fg-color="var(--tw-fuchsia-fg)" bg-color="var(--tw-fuchsia-bg)">
+    <div class="ex-bg--striped ex-bg--fuchsia">
       <div class="relative">
         <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists" />
         <div class="ex-pic-no">1</div>
@@ -76,7 +77,7 @@ The column width will be automatically adjusted to accommodate that number.
         </div>
         <div class="ex-pic-no">12</div>
       </div>
-    </box>
+    </div>
   </div>
 </example-container>
 
@@ -124,20 +125,23 @@ To specify the width between columns, you can use the `gap-x` utilities.
 </div>
 ```
 
-### Breakpoints and media queries
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:columns-3` to apply the `columns-3` utility at only medium screen sizes and above.
-
-```html
-<div class="columns-2 md:columns-3">
-  <!-- ... -->
-</div>
-```
-
 ### Arbitrary values
 If you need to use a one-off columns value, use square brackets to generate a property on the fly using any arbitrary value.
 
 ```html
 <div class="columns-[13]">
+  <!-- ... -->
+</div>
+```
+
+## Applying conditionally
+
+### Breakpoints and media queries
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more.
+For example, use `md:columns-3` to apply the `columns-3` utility at only medium screen sizes and above.
+
+```html
+<div class="columns-2 md:columns-3">
   <!-- ... -->
 </div>
 ```

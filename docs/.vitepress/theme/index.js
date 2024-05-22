@@ -10,7 +10,6 @@ import DoDont from '../DoDont.vue';
 import QrTable from '../qr-table.vue';
 import QrColorTable from '../qr-color-table.vue';
 import WidthController from '../WidthController.vue';
-import Box from '../Box.vue';
 import { IconStarFull32 } from '@warp-ds/icons/vue';
 import '../bootExamples.js';
 import './custom.css';
@@ -33,7 +32,6 @@ export default {
     ctx.app.component('WidthController', WidthController);
     ctx.app.component('QrTable', QrTable);
     ctx.app.component('QrColorTable', QrColorTable);
-    ctx.app.component('Box', Box);
     ctx.app.component('IconStarFull32', IconStarFull32);
   },
 };
