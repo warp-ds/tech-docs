@@ -34,6 +34,15 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           margin-bottom: 8px;
           background-color: var(--vp-c-bg-soft);
         }
+        .ex-heading {
+          margin-top: 0;
+          margin-bottom: .8rem;
+          font-weight: 700;
+          color: var(--vp-c-text-1);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-size: 1.4rem;
+          line-height: 2.0rem;        
+        }
         .component {
           padding: 16px;
           border: 2px solid var(--vp-c-gray-1);

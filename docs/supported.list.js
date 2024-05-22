@@ -738,6 +738,14 @@ export const resize = [
   'resize',
 ];
 
+export const rotate = [
+  ...getValueClasses(['rotate'], [0,30,45,90,135,180,225,270,315]),
+];
+
+export const scale = [
+  ...getValueClasses(['scale'], [10,20,25,50,75,100,125,150,175,200]),
+];
+
 export const screenReaders = ['sr-only', 'not-sr-only'];
 
 export const scrollBehavior = ['scroll-auto', 'scroll-smooth'];

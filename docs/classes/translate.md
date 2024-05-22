@@ -19,44 +19,31 @@ Utilities for translating elements with transform.
 ### Translating an element
 Use the `translate-x-{amount}` and `translate-y-{amount}` utilities to translate an element.
 
-<container class="flex items-center justify-around gap-16 sm:gap-4 flex-wrap">
-    <div class="flex flex-col items-center shrink-0 pb-32">
-      <h4 class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono text-center mb-32! mt-0! dark:pd-text-slate-400">translate-y-32</h4>
+<example-container>
+  <div class="flex items-center justify-around gap-16 sm:gap-4 flex-wrap py-32">
+    <div class="flex flex-col items-center shrink-0">
+      <h4 class="ex-heading">translate-y-32</h4>
       <div class="relative">
-        <div class="absolute inset-0">
-          <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        </div>
-        <div class="relative z-10 translate-y-32">
-          <img class="w-128 h-128 object-cover rounded-8 pd-shadow-xl" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
-        </div>
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
-    <div class="flex flex-col items-center shrink-0 pb-32">
-      <h4 class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono text-center mb-32! mt-0! dark:pd-text-slate-400">-translate-y-32</h4>
+    <div class="flex flex-col items-center shrink-0">
       <div class="relative">
-        <div class="absolute inset-0">
-          <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        </div>
-        <div class="relative z-10 -translate-y-32">
-          <img class="w-128 h-128 object-cover rounded-8 pd-shadow-xl" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
-        </div>
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 -translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      </div>
+      <h4 class="ex-heading mb-0 pt-8">-translate-y-32</h4>
+    </div>
+    <div class="flex flex-col items-center shrink-0 pr-16">
+      <h4 class="ex-heading">translate-x-32</h4>
+      <div class="relative">
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 translate-x-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
-    <div class="flex flex-col items-center shrink-0 pb-32">
-      <h4 class="pd-font-medium pd-text-sm pd-text-slate-500 pd-font-mono text-center mb-32! mt-0! dark:pd-text-slate-400">translate-x-32</h4>
-      <div class="relative">
-        <div class="absolute inset-0">
-          <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        </div>
-        <div class="relative z-10 translate-x-32">
-          <img class="w-128 h-128 object-cover rounded-8 pd-shadow-xl" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
-        </div>
-      </div>
-    </div>
-</container>
+  </div>
+</example-container>
 
 ```html
 <img class="translate-y-32 ..." />
@@ -69,6 +56,13 @@ To use a negative translate value, prefix the class name with a dash to convert 
 
 ```html
 <img class="-translate-y-8 ..." />
+```
+
+### Arbitrary values
+If you need to use a one-off translate value, use square brackets to generate a property on the fly using any arbitrary value.
+
+```html
+<div class="translate-y-[75]"></div>
 ```
 
 ### Removing transforms
@@ -88,6 +82,8 @@ Use transform-cpu to force things back to the CPU if you need to undo this condi
 <div class="translate-y-8 transform-gpu"></div>
 ```
 
+## Applying conditionally
+
 ### Hover, focus, and other states
 Warp lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:translate-y-16` to only apply the `translate-y-16` utility on hover.
 
@@ -100,11 +96,4 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="md:translate-y-16"></div>
-```
-
-### Arbitrary values
-If you need to use a one-off translate value, use square brackets to generate a property on the fly using any arbitrary value.
-
-```html
-<div class="translate-y-[75]"></div>
 ```
