@@ -14,8 +14,6 @@ Control the font size of an element using the `text-{size}` utilities.
 These come with built-in line-heights.
 Line-heights can be overridden by the `.leading-{size}` classes, but please only do that as a last resort since that might take them out of the brand theming patterns.
 
-<theme-switcher />
-
 <example-container>
   <div class="ex-inner-box max-w-full s-text">
     <strong class="text-xs">text-xs</strong>
@@ -55,8 +53,6 @@ Control the heading sizes using the `h1` - `h5` utilities. These classes aim to 
 The heading tags should be implemented strictly semantic in a clear tree structure.
 Use the `h1` - `h5` classes to give them the correct visual size and appearance.
 :::
-
-<theme-switcher />
 
 <example-container>
   <div class="ex-inner-box max-w-full s-text">

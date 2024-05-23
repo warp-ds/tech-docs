@@ -11,8 +11,6 @@
 
 ## Examples
 
-<theme-switcher />
-
 <attention-example />
 
 ## Usage

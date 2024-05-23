@@ -12,8 +12,6 @@ Breadcrumbs show the navigation structure for the current location.
 
 ## Example
 
-<theme-switcher />
-
 <breadcrumbs-example />
 
 ## Usage

@@ -1,3 +1,4 @@
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme';
 import ApiTable from '../ApiTable.vue';
 import TabsContent from '../TabsContent.vue';
@@ -13,14 +14,17 @@ import WidthController from '../WidthController.vue';
 import { IconStarFull32 } from '@warp-ds/icons/vue';
 import '../bootExamples.js';
 import './custom.css';
+import warpThemeSwitcher from "../warp-theme-switcher.js";
 
 export default {
   ...DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'nav-bar-content-before': () => h(ThemeSwitcher)
+    })
+  },
   async enhanceApp(ctx) {
-    if (!import.meta.env.SSR) {
-      const themeSwitcherListener = await import('../theme-switcher-listener.js');
-      ctx.app.use(() => themeSwitcherListener);
-    }
+    ctx.app.use(warpThemeSwitcher);
     ctx.app.component('ApiTable', ApiTable);
     ctx.app.component('ThemeSwitcher', ThemeSwitcher);
     ctx.app.component('TabsContent', TabsContent);

@@ -11,8 +11,6 @@ Text is used for showing text in a layout. Pre-defined styles provide a font and
 
 ## Example
 
-<theme-switcher />
-
 <text-example />
 
 ## Usage

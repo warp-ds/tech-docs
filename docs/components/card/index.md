@@ -12,8 +12,6 @@ Card is a layout component used for a traditional card look and feel.
 
 ## Example
 
-<theme-switcher />
-
 <card-example />
 
 ## Usage

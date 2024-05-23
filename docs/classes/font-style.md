@@ -12,8 +12,6 @@ Utilities for controlling the style of text.
 ### Italicizing text
 The `italic` utility can be used to make text italic. Likewise, the `not-italic` utility can be used to display text normally — typically to reset italic text at different breakpoints.
 
-<theme-switcher />
-
 <example-container>
   <div class="ex-inner-box s-text">
     <strong class="italic">italic</strong>

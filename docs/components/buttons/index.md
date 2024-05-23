@@ -13,7 +13,6 @@ Buttons are used to perform actions, with different visuals for different needs.
 <components-status react='released' vue='released' elements='released' android='released' ios='released' />
 
 ## Example
-<theme-switcher />
 
 <button-example />
 

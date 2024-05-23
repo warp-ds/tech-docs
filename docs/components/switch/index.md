@@ -9,8 +9,6 @@ The Switch component allows users to toggle between validity for a condition.
 
 ## Examples
 
-<theme-switcher />
-
 <switch-example />
 
 ## Usage

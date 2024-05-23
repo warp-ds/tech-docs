@@ -11,8 +11,6 @@ A slider is an input where the user selects a value from within a given range. T
 
 ## Examples
 
-<theme-switcher />
-
 <slider-example />
 
 ## Usage

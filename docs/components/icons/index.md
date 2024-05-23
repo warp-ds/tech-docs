@@ -73,8 +73,6 @@ Since warp components are internationalised, you'd need to either set `NMP_LANGU
 
 ## Examples
 
-<theme-switcher />
-
 The following icons are available in the latest version of @warp-ds/icons package. Check the [Deprecated icons](/components/icons/#deprecated-icons) section if you're migrating from previous major versions or from @fabric-ds/icons.
 
 Click any icon tile to open usage modal:

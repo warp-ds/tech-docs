@@ -13,8 +13,6 @@ Utilities for controlling the bullet/number style of a list.
 ### Setting the list style type
 To create bulleted, checked or numeric lists, use the `list-disc`, `list-checked` and `list-decimal` utilities.
 
-<theme-switcher />
-
 <example-container>
   <div class="ex-inner-box max-w-full flex flex-col gap-16">
     <div>

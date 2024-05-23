@@ -12,8 +12,6 @@ Expandable is a layout component used for creating expandable content areas on a
 
 ## Examples
 
-<theme-switcher />
-
 <expandable-example />
 
 ## Usage

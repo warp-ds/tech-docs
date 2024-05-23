@@ -3,7 +3,9 @@ import Control from './Control.vue';
 import Controls from './Controls.vue';
 
 export const buildWc = (elementName, baseVueComponent, rootProperties) => {
-  if (typeof window !== 'undefined' && !customElements.get(elementName))
+  if (typeof window !== 'undefined' && !customElements.get(elementName)) {
+    const currentTheme = localStorage.getItem('warpTheme') || 'finn-no';
+
     customElements.define(
       elementName,
       class extends HTMLElement {
@@ -18,7 +20,7 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           this.unoExampleWrapper.classList = 'example-container ' + newValue;
         }
         connectedCallback() {
-          const tokens =  '<link rel="stylesheet" type="text/css" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css" />';
+          const tokens =  `<link rel="stylesheet" type="text/css" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${currentTheme}.css" />`;
           const shadowUnoStyle = `<style>
         @unocss-placeholder
 
@@ -157,24 +159,11 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
             this.unoExampleWrapper.innerHTML = this.innerHTML;
             this.shadow.appendChild(this.unoExampleWrapper);
           }
-
-          document.addEventListener('change', () => {
-            if (window.theme) {
-              const stylesheets = this.shadow.querySelectorAll('link');
-              stylesheets.forEach((s) => {
-                if (s.getAttribute('href').includes('@warp-ds/css/v1/tokens')) {
-                  s.setAttribute(
-                    'href',
-                    `https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${theme}.css`
-                  );
-                }
-              });
-            }
-          });
         }
         get appEl() {
           return this.shadow.querySelector('#app');
         }
       }
     );
+  }
 };

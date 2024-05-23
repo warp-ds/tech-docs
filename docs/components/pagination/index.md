@@ -10,8 +10,6 @@ Pagination is used on various listing pages. It's typically found at the end of 
 
 ## Example
 
-<theme-switcher />
-
 <pagination-example />
 
 ### Accessibility

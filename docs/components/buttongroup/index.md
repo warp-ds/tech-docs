@@ -10,8 +10,6 @@ Button Group is used to group and align clickable elements, applying different v
 
 ## Example
 
-<theme-switcher />
-
 <buttongroup-example />
 
 ## Usage

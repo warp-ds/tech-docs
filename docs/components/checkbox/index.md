@@ -11,8 +11,6 @@ Checkboxes allow users to select multiple items from a list of individual items,
 
 ## Example
 
-<theme-switcher />
-
 <checkbox-example />
 
 ## Usage

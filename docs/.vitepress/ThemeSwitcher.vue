@@ -1,27 +1,15 @@
 <script setup>
-import { computed } from 'vue';
+import { inject } from 'vue';
 
-const themes = {
-  'Finn': 'finn-no',
-  'Tori': 'tori-fi'
-};
-
-if (typeof window !== 'undefined') {
-  window.theme = themes.Finn;
-}
-
-const selectedTheme = computed({
-  get: () => window.theme,
-  set: (value) => { window.theme = value; }
-});
+const { current: currentTheme, themes: warpThemes  } = inject('warpThemeSwitcher');
 </script>
 
 <template>
   <div class="theme-switcher">
-    <label for="themeSelect">Select theme:</label>
+    <label class="label" for="themeSelect">Example theme:</label>
     <div class="select">
-      <select id="themeSelect" v-model="selectedTheme">
-        <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
+      <select id="themeSelect" v-model="currentTheme">
+        <option v-for="[name, value] in Object.entries(warpThemes)" :key="name" :value="value">{{ name }}</option>
       </select>
     </div>
   </div>
@@ -31,21 +19,21 @@ const selectedTheme = computed({
 .theme-switcher {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 16px;
-  border: 1px solid var(--vp-c-border);
+  padding: 6px 16px;
   border-radius: 8px;
   background-color: var(--vp-c-bg-soft);
+}
+.label {
+  font-size: 14px;
 }
 .select {
   display: grid;
   grid-template-areas: "select";
   align-items: center;
   position: relative;
-  width: 300px;
+  width: 150px;
   margin-left: 8px;
-  margin-bottom: 24px;
-  padding: 3px 8px;
+  padding: 1px 8px;
   background-color: var(--vp-c-bg);
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;
