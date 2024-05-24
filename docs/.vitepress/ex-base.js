@@ -4,8 +4,6 @@ import Controls from './Controls.vue';
 
 export const buildWc = (elementName, baseVueComponent, rootProperties) => {
   if (typeof window !== 'undefined' && !customElements.get(elementName)) {
-    const currentTheme = localStorage.getItem('warpTheme') || 'finn-no';
-
     customElements.define(
       elementName,
       class extends HTMLElement {
@@ -20,6 +18,7 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           this.unoExampleWrapper.classList = 'example-container ' + newValue;
         }
         connectedCallback() {
+          const currentTheme = localStorage.getItem('warpTheme') || 'finn-no';
           const tokens =  `<link rel="stylesheet" type="text/css" href="https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${currentTheme}.css" />`;
           const shadowUnoStyle = `<style>
         @unocss-placeholder
