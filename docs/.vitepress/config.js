@@ -176,10 +176,6 @@ export default defineConfig({
     },
     nav: [
       {
-        text: 'Warp CSS',
-        link: 'https://warp-ds.github.io/css-docs',
-      },
-      {
         text: 'Implementations',
         items: [
           { text: 'React', link: 'https://github.com/warp-ds/react' },

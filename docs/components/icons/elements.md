@@ -26,8 +26,7 @@ Elements icons are using shadow-dom to encapsulate their styles. As a result, yo
 
 ### Colors
 The color of the icon will default to `currentColor`.
-Colors can be changed using [semantic color classes for icons](https://warp-ds.github.io/css-docs/icon-color#icon-color).
+Colors can be changed using [semantic color classes for icons](/classes/icon-color#icon-color).
 
 ### Fabric to WARP
-
 We have changed the naming for these icons, so the old icons in Fabric were `f-icon-bag16` while the new icons in WARP is named as `w-icon-bag-16`

@@ -23,15 +23,15 @@ Don't include Fabric and Warp in the same context, instead use either one of the
 If it is necessary to include both libraries, it is recommended to encapsulate one of them within a shadow DOM to prevent conflicts and ensure proper isolation.
 
 ### Icons
-
-Warp now supports icons, and it is no longer necessary to continue importing the icons from Fabric. See further information and icons usage on our [icons page](https://warp-ds.github.io/tech-docs/components/icons/).
+Warp now supports icons, and it is no longer necessary to continue importing the icons from Fabric.
+See further information and icons usage on our [icons page](/components/icons/).
 
 ### Colours
-
-Warp utilises a system of coloring border, text, background and icons using semantic colour tokens. You will need to manually find the most suitable semantic class (e.g. s-bg-primary) to replace the Fabric colour classes which sets static colours (e.g. blue-600). To find possible replacements refer to our [Colours in WARP](https://warp-ds.github.io/colour-tokens-overview/) page.
+Warp utilises a system of coloring border, text, background and icons using semantic colour tokens.
+You will need to manually find the most suitable semantic class (e.g. s-bg-primary) to replace the Fabric colour classes which sets static colours (e.g. blue-600).
+To find possible replacements refer to our [Colours in WARP](https://warp-ds.github.io/colour-tokens-overview/) page.
 
 ### Migration plugin
-
 The migration plugin is available to use to detect all deprecated CSS classes and provide warnings with useful hints.
 
 #### Install the plugin
@@ -56,10 +56,10 @@ export default defineConfig({
 ```
 
 #### Output
+The output provides a description of the necessary changes or removals required when migrating from Fabric to Warp.
+The process requires to be done manually, so make sure that these modifications are applied to all relevant class names and component names.
 
-The output provides a description of the necessary changes or removals required when migrating from Fabric to Warp. The process requires to be done manually, so make sure that these modifications are applied to all relevant class names and component names.
-
-```js
+```
 [REPLACED] flex-shrink -> use shrink
 [REPLACED] flex-grow -> use grow
 [REPLACED] last-child:mb-0 -> use last:mb-0
@@ -67,12 +67,9 @@ The output provides a description of the necessary changes or removals required 
 [DEPRECATED] s-color-background-primary-default -> use 's-color-background-primary'
 ```
 
-Look in the [CSS docs](https://warp-ds.github.io/css-docs/) to find the correct class names, and in the [Tech docs](https://warp-ds.github.io/tech-docs) for the components.
-
 ## Component changes
 
 ### Validation messages
-
 In Fabric, both hints and errors would be displayed at the same time, and were concatenated with a `,`.
 
 For example, when the hint was "Please fill out your 11-digit SSN"; and the error was "This field must be filled out".
