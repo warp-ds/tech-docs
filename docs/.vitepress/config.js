@@ -26,7 +26,11 @@ const pdColorClasses = ['blue', 'cyan', 'fuchsia', 'indigo', 'pink', 'purple', '
 // if you add a class somewhere in code, and it doesn't work, add that class here (no time to explain)
 const docsClasses = [
   'aspect-square', 'aspect-1/1', 'aspect-2/1',
-  'bg-[url(/tech-docs/classes/50s-scientists.jpg)]', 'bg-[url(/tech-docs/classes/office-warping.png)]', 'bg-[url(/tech-docs/classes/50s-scientists_240.jpg)]', 'bg-[url(/tech-docs/classes/repeatable.png)]', 'bg-[url(/tech-docs/classes/20s-scientists.jpg)]',
+  'bg-[url(./20s-scientists.jpg)]',
+  'bg-[url(./50s-scientists.jpg)]',
+  'bg-[url(./50s-scientists_240.jpg)]',
+  'bg-[url(./office-warping.png)]',
+  'bg-[url(./repeatable.png)]',
   'bg-[--vp-c-bg-soft]', 'bg-[--w-s-color-border]', 'bg-[--tw-pink-fg]',
   'bg-[--w-s-color-background-positive/40]', 'hover:bg-[--w-s-color-background-positive/100]', 'bg-[var(--w-black)/70]', 'hover:bg-[var(--w-black)/100]',
   'border-x-[--w-s-color-background-positive/60]', 'hover:border-x-[--w-s-color-background-positive/100]',

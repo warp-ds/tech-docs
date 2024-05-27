@@ -45,7 +45,7 @@ This works for both semantic and arbitrary classes with any primitive `--w-{colo
 Please be advised that by using primitive variables you will lose theming possibilities, therefor we highly recommend only using semantic classes and tokens.
 :::
 
-<example-container class="bg-center bg-[url(/50s-scientists.jpg)]">
+<example-container class="bg-center bg-[url(./50s-scientists.jpg)]">
   <div class="grid grid-cols-4 gap-16 justify-items-center my-8">
     <div class="s-outline/50 hover:s-outline/100 s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
     <div class="s-outline-focused/50 hover:s-outline-focused/100 s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
