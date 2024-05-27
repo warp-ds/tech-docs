@@ -1,16 +1,7 @@
 ### Import
 
-> Use in entire app
 ```js
-import { Forms } from '@warp-ds/vue'
-app.use(Forms)
-```
-
-> Use in one component and special imports
-
-You can import the component like so:
-```js
-import { wSelect } from '@warp-ds/vue';
+import '@warp-ds/elements/components/select';
 ```
 
 or import it individually to optimize your JS bundle size by adding only the components you need:

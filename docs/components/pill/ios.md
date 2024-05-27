@@ -5,6 +5,7 @@
 ```swift example
 func Warp.Pill(
             text: String,
+            icon: Image? = nil,
             onTap: @escaping () -> Void = {},
             onClose: (() -> Void)?,
             iconContentDescription: String?,

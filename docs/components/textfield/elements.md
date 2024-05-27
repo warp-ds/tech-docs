@@ -1,3 +1,17 @@
+### Import
+
+```js
+import '@warp-ds/elements/components/textfield';
+import '@warp-ds/elements/components/affix';
+
+```
+
+### Syntax
+
+```html
+<w-textfield label="Email"></w-textfield>
+```
+
 ## Textfield Attributes
 <api-table type=elements component="TextField" />
 
@@ -7,7 +21,7 @@ own validation logic in your app and set the `invalid` attribute to display it a
 often paired with `help-text` to provide feedback to the user about the error.
 
 ```html
-<w-textfield label="Email" invalid help-text="Ugyldig e-post"></w-textfield>
+<w-textfield label="Email" invalid help-text="Invalid email"></w-textfield>
 ```
 
 ## Visual Options
@@ -17,7 +31,7 @@ Placeholder text can be used to describe the expected value or formatting for th
 Placeholder text will only appear when the w-textfield is empty, and should not be used as a
 substitute for labeling the element with a visible label.
 ```html
-<w-textfield label="E-post" placeholder="puse@finn.no"></w-textfield>
+<w-textfield label="Email"></w-textfield>
 ```
 
 ### Disabled
@@ -28,8 +42,8 @@ informative alternatives before choosing to use disabled on an element.
 
 ```html
 <div class="flex flex-col space-y-32">
-  <w-textfield label="E-post" disabled value="puse@finn.no"></w-textfield>
-  <w-textfield label="E-post" disabled></w-textfield>
+  <w-textfield label="Email" disabled value="puse@finn.no"></w-textfield>
+  <w-textfield label="Email" disabled></w-textfield>
 </div>
 ```
 
@@ -41,7 +55,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 > Suffix
 
 ```html
-<w-textfield label="Price" placeholder="1 000 000">
+<w-textfield label="Price">
   <w-affix slot="suffix" label="kr"></w-affix>
 </w-textfield>
 ```
@@ -49,7 +63,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 > Prefix
 
 ```html
-<w-textfield label="Price" placeholder="1 000 000">
+<w-textfield label="Price">
   <w-affix slot="prefix" label="kr"></w-affix>
 </w-textfield>
 ```
@@ -66,7 +80,7 @@ You must specify which slot to set the affix into (either prefix or suffix).
 > You can also use both a prefix and suffix
 
 ```html
-<w-textfield label="Price" placeholder="1 000 000">
+<w-textfield label="Price">
   <w-affix slot="prefix" label="kr"></w-affix>
   <w-affix slot="suffix" search aria-label="Search"></w-affix>
 </w-textfield>
@@ -80,7 +94,7 @@ docs for more information.
 
 ```html
 <div class="flex flex-col space-y-32">
-  <w-textfield label="E-post" read-only value="puse@finn.no"></w-textfield>
-  <w-textfield label="E-post" read-only></w-textfield>
+  <w-textfield label="Email" read-only value="puse@finn.no"></w-textfield>
+  <w-textfield label="Email" read-only></w-textfield>
 </div>
 ```

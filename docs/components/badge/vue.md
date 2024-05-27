@@ -3,14 +3,21 @@
 > Use in entire app
 
 ```js
-import { Badge } from "@warp-ds/vue";
+import { Badge } from '@warp-ds/vue';
 app.use(Badge);
 ```
 
 > Use in one component and special imports
 
+You can import the component like so:
 ```js
-import { wBadge } from "@warp-ds/badge";
+import { wBadge } from '@warp-ds/vue';
+```
+
+or import it individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { wBadge } from '@warp-ds/vue/badge';
+
 ```
 
 ### Syntax

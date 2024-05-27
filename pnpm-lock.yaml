@@ -18,8 +18,8 @@ importers:
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.27)
       '@warp-ds/css':
-        specifier: 1.9.6
-        version: 1.9.6
+        specifier: 1.9.7
+        version: 1.9.7
       '@warp-ds/icons':
         specifier: 2.0.1
         version: 2.0.1
@@ -27,8 +27,8 @@ importers:
         specifier: ^0.0.16
         version: 0.0.16(@warp-ds/uno@1.12.0)
       '@warp-ds/react':
-        specifier: 1.4.4
-        version: 1.4.4(react@18.3.1)
+        specifier: 1.5.0
+        version: 1.5.0(@floating-ui/dom@1.6.3)(react@18.3.1)
       '@warp-ds/uno':
         specifier: 1.12.0
         version: 1.12.0
@@ -460,14 +460,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@floating-ui/core@0.7.3':
-    resolution: {integrity: sha512-buc8BXHmG9l82+OQXOFU3Kr2XQx9ys01U/Q9HMIrZ300iLc8HLMgh7dcCqgYzAzf4BkoQvDcXf5Y+CuEZ5JBYg==}
-
   '@floating-ui/core@1.6.1':
     resolution: {integrity: sha512-42UH54oPZHPdRHdw6BgoBD6cg/eVTmVrFcgeRDM3jbO7uxSoipVcmcIGFcA5jmOHO5apcyvBhkSKES3fQJnu7A==}
-
-  '@floating-ui/dom@0.5.4':
-    resolution: {integrity: sha512-419BMceRLq0RrmTSDxn8hf9R3VCJv2K9PUfugh5JyEFmdjzDo+e8U5EdR8nzKq8Yj1htzLm3b6eQEEam3/rrtg==}
 
   '@floating-ui/dom@1.6.3':
     resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
@@ -853,19 +847,16 @@ packages:
   '@vueuse/shared@10.9.0':
     resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
 
-  '@warp-ds/core@1.0.2':
-    resolution: {integrity: sha512-1ww8X7xM7PBs3nyfNcUa0W+Ay1ymbOHORSyheeHVelD+6UjLS+iezLA7JH51z74top1imy4AM29kxIrCvNgKbw==}
-
   '@warp-ds/core@1.1.1':
     resolution: {integrity: sha512-JL7Zzi8djG9NOpZMebn4zuP7zAu8C5nAnplvJuMnWrExg3Kw+ZP9wnJWJJ+wNPASPbqHxshVHbNTBStGGTCeqw==}
     peerDependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@1.9.1':
-    resolution: {integrity: sha512-AlfEwB0ernCxA/TccSElR2sJcTP6crEJthBHBvJyqi+TpUFE8R/8oCdw2Lh4rDCG3b86dtfthi1hzp9JN0LK9w==}
-
   '@warp-ds/css@1.9.6':
     resolution: {integrity: sha512-h1weeukiNcbapcCz4JBt71qes8gaPXG/xdWvL3BVcje3MJ3bqIwyYaer4PKfYJRIzeKCg/EWVrzylsKplI5U6Q==}
+
+  '@warp-ds/css@1.9.7':
+    resolution: {integrity: sha512-JCRVmwndAnQB9FSF09mCMJe1EJyQo6oaJ6txwRFaiJ1zeGtcL1jHHO1gtNvPRznE14LdqoTis78Nd1TeEI/UaA==}
 
   '@warp-ds/icons@2.0.0':
     resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
@@ -878,8 +869,8 @@ packages:
     peerDependencies:
       '@warp-ds/uno': '*'
 
-  '@warp-ds/react@1.4.4':
-    resolution: {integrity: sha512-pGHxj1yMLEkBJSGLrJRmzWOdCrO7A9AxSRHjYHRvLYmNBe6Y2bqNMVVfyIDUbRrlHd+9Sj3/9iYhon8O0jZ4cw==}
+  '@warp-ds/react@1.5.0':
+    resolution: {integrity: sha512-ZIn1pg9mPKpR5De4gDlxty5otRrJGX5ADbJQVIKUF4F8jaJ/XXr4+z/8hro+vWSZIl/C6yh30EUXc2q2glB3vA==}
     peerDependencies:
       react: 18.2.0
 
@@ -888,9 +879,6 @@ packages:
 
   '@warp-ds/uno@1.12.0':
     resolution: {integrity: sha512-PVP74/FW95axmFK94IxXqCvGjcRgHJaOgNuTtkK9IZLaHUJGyipf/1Fn4A4mKjaLUo0EhE4V/7rlhB16hakeZw==}
-
-  '@warp-ds/uno@1.9.0':
-    resolution: {integrity: sha512-DVL43/FHdSmOWgKtORsWDKM8WDOZLQHE6cCLYMxkLgJaYMcJGzZ3NrPPV8nwr3g3CL9RF5ySjp5aEKC+ax40Rg==}
 
   '@warp-ds/vue@2.0.0':
     resolution: {integrity: sha512-sxCzmr/oknwSSznALE8UXByQsynU6KVdS/u1tiTmyyzXORJPjJ+GsYmhcWJFHnHk7cc1ONK7lPNxcib7c6PecQ==}
@@ -2061,15 +2049,9 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@floating-ui/core@0.7.3': {}
-
   '@floating-ui/core@1.6.1':
     dependencies:
       '@floating-ui/utils': 0.2.2
-
-  '@floating-ui/dom@0.5.4':
-    dependencies:
-      '@floating-ui/core': 0.7.3
 
   '@floating-ui/dom@1.6.3':
     dependencies:
@@ -2517,20 +2499,16 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@warp-ds/core@1.0.2':
-    dependencies:
-      '@floating-ui/dom': 0.5.4
-
   '@warp-ds/core@1.1.1(@floating-ui/dom@1.6.3)':
     dependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@1.9.1':
+  '@warp-ds/css@1.9.6':
     dependencies:
       '@warp-ds/tokenizer': 0.0.4
       '@warp-ds/uno': 1.12.0
 
-  '@warp-ds/css@1.9.6':
+  '@warp-ds/css@1.9.7':
     dependencies:
       '@warp-ds/tokenizer': 0.0.4
       '@warp-ds/uno': 1.12.0
@@ -2548,19 +2526,20 @@ snapshots:
       '@unocss/core': 0.50.8
       '@warp-ds/uno': 1.12.0
 
-  '@warp-ds/react@1.4.4(react@18.3.1)':
+  '@warp-ds/react@1.5.0(@floating-ui/dom@1.6.3)(react@18.3.1)':
     dependencies:
       '@chbphone55/classnames': 2.0.0
       '@lingui/core': 4.7.0
-      '@warp-ds/core': 1.0.2
-      '@warp-ds/css': 1.9.1
+      '@warp-ds/core': 1.1.1(@floating-ui/dom@1.6.3)
+      '@warp-ds/css': 1.9.6
       '@warp-ds/icons': 2.0.0
-      '@warp-ds/uno': 1.9.0
+      '@warp-ds/uno': 1.12.0
       react: 18.3.1
       react-focus-lock: 2.9.7(react@18.3.1)
       resize-observer-polyfill: 1.5.1
       scroll-doctor: 2.0.2
     transitivePeerDependencies:
+      - '@floating-ui/dom'
       - '@types/react'
 
   '@warp-ds/tokenizer@0.0.4':
@@ -2569,12 +2548,6 @@ snapshots:
       yaml: 2.4.2
 
   '@warp-ds/uno@1.12.0':
-    dependencies:
-      '@unocss/core': 0.58.9
-      '@unocss/preset-mini': 0.58.9
-      '@unocss/rule-utils': 0.58.9
-
-  '@warp-ds/uno@1.9.0':
     dependencies:
       '@unocss/core': 0.58.9
       '@unocss/preset-mini': 0.58.9

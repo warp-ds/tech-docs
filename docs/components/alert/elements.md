@@ -1,3 +1,10 @@
+### Import
+
+```js
+import '@warp-ds/elements/components/alert';
+
+```
+
 ### Syntax
 
 ```html
