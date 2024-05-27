@@ -2074,6 +2074,90 @@ export const android = {
       ],
     ],
   },
+  Modal: {
+    required: [
+    [
+      'title', 
+      'String', 
+      '', 
+      'The title to be displayed in the modal'
+    ],
+    [
+      'body', 
+      'String', 
+      '', 
+      'The text to be displayed in the modal'
+    ],
+    [
+      'onDismiss', 
+      '() -> Unit', 
+      '', 
+      'The lambda to be invoked when closing the modal'
+    ],
+  ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the modal Card',
+      ],
+      [
+        'subtitle', 
+        'String', 
+        'null', 
+        'The subtitle to be displayed in the modal'
+      ],
+      [
+        'primaryButtonText', 
+        'String', 
+        'null', 
+        'The text to be displayed on the positive button.'
+      ],
+      [
+        'onPrimaryButtonClick', 
+        '() -> Unit', 
+        'null', 
+        'The lambda to be invoked on the positive button click.'
+      ],
+      [
+        'secondaryButtonText', 
+        'String', 
+        'null', 
+        'The text to be displayed on the negative button.'
+      ],
+      [
+        'onSecondaryButtonClick', 
+        '() -> Unit', 
+        'null', 
+        'The lambda to be invoked on the positive button click.'
+      ],
+      [
+        'showCloseIcon', 
+        'Boolean', 
+        'false', 
+        'Whether the close icon (X) should be displayed in the top right corner.'
+      ],
+      [
+        'closeIconContentDescription', 
+        'String', 
+        'null', 
+        'The text to be used by accessibility tools.'
+      ],
+      [
+        'dismissOnClickOutside', 
+        'Boolean', 
+        'true', 
+        'Whether the modal should be closed when clicking outside of its layout.'
+      ],
+      [
+        'dismissOnBackPress', 
+        'Boolean', 
+        'true', 
+        'Whether the modal should be closed when pressing back.'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
@@ -2315,18 +2399,6 @@ export const iOS = {
       'The action that will trigger on pill tap'
     ],
     [
-      'onClose', 
-      '(() -> Void)?',
-      'nil', 
-      'If added will show a close button and the action will trigger on pill close'
-    ],
-    [
-      'iconContentDescription', 
-      'String?',
-      'nil', 
-      'The a11y text for the close button'
-    ],
-    [
       'style', 
       'Warp.PillStyle.filter <br />Warp.PillStyle.suggestion ',
       '.filter', 
@@ -2334,6 +2406,24 @@ export const iOS = {
     ],
   ],
     props: [
+      [
+        'icon', 
+        'Image?',
+        'nil', 
+        'Pill icon. If you provide onClose then the Pill will have a close button instead of this icon.'
+      ],
+      [
+        'onClose', 
+        '(() -> Void)?',
+        'nil', 
+        'If added will show a close button and replace any provided icon, and the action will trigger on pill close.'
+      ],
+      [
+        'iconContentDescription', 
+        'String?',
+        'nil', 
+        'The a11y text for the icon'
+      ],
     ],
   },
   Text: {

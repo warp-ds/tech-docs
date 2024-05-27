@@ -1,7 +1,14 @@
 ### Import
 
+You can import the component like so:
 ```js
 import { Breadcrumbs } from '@warp-ds/react';
+```
+
+or import it individually to optimize your JS bundle size by adding only the components you need:
+```js
+import { Breadcrumbs } from '@warp-ds/react/components/breadcrumbs';
+
 ```
 
 ### Syntax
