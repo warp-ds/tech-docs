@@ -71,19 +71,27 @@ Please be advised that by using primitive variables you will lose theming possib
 :::
 
 <example-container class="bg-center bg-[url(./50s-scientists.jpg)]">
-  <div class="flex justify-items-stretch rounded-8 divide-x-8 s-divide-x-primary/50 w-full s-bg/60 backdrop-blur-m mb-24">
-    <div class="p-24 flex-1 text-center">1</div>
-    <div class="p-24 flex-1 text-center">2</div>
-    <div class="p-24 flex-1 text-center">3</div>
+  <div class="flex justify-items-stretch rounded-8 divide-x-8 s-divide-x-primary-subtle/60 w-full mb-24 overflow-hidden">
+    <div class="flex-1"><div class="p-24 text-center ex-font-dark s-bg/80 backdrop-blur-m">01</div></div>
+    <div class="flex-1"><div class="p-24 text-center ex-font-dark s-bg/80 backdrop-blur-m">02</div></div>
+    <div class="flex-1"><div class="p-24 text-center ex-font-dark s-bg/80 backdrop-blur-m">03</div></div>
   </div>
-  <div class="rounded-8 divide-y-4 divide-y-[--w-black/50] w-full s-bg/60 backdrop-blur-m">
-    <div class="px-24 py-8 text-center">1</div>
-    <div class="px-24 py-8 text-center">2</div>
-    <div class="px-24 py-8 text-center">3</div>
+  <div class="rounded-8 divide-y-8 divide-y-[--w-white/60] overflow-hidden">
+    <div><div class="px-24 py-8 text-center ex-font-dark s-bg/80 backdrop-blur-m">04</div></div>
+    <div><div class="px-24 py-8 text-center ex-font-dark s-bg/80 backdrop-blur-m">05</div></div>
+    <div><div class="px-24 py-8 text-center ex-font-dark s-bg/80 backdrop-blur-m">06</div></div>
   </div>
 </example-container>
 
 ```html
-<div class="s-divide-x-primary/60 ..."></div>
-<div class="divide-y-[--w-s-black/70] ..."></div>
+<div class="divide-x-8 s-divide-x-primary-subtle/60 ...">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+<div class="divide-y-8 divide-y-[--w-white/60] ...">
+  <div>04</div>
+  <div>05</div>
+  <div>06</div>
+</div>
 ```
