@@ -53,6 +53,7 @@ const docsClasses = [
   'p-0!',
   'right-[26]',
   '-rotate-90',
+  'rounded-tl-16',
   's-bg/10', 's-bg/20', 's-bg/50', 's-bg/60', 's-bg/80', 'hover:s-bg/100', 'hover:s-bg-hover', 'active:s-bg-active',
   's-bg-primary/10', 's-bg-primary/50', 'hover:s-bg-primary/100',
   's-bg-positive/10', 'md:s-bg-positive',

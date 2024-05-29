@@ -19,8 +19,8 @@ const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right',]
     </div>
     <div>
       <h3 class="h4">Positioning</h3>
-      <div class="relative border border-0 rounded-8 overflow-hidden h-96">
-        <img class="w-full h-96 object-cover" src="https://source.unsplash.com/random/768x96" />
+      <div class="relative border border-0 rounded overflow-hidden h-96">
+        <img class="w-full h-96 rounded-8 object-cover" src="/classes/profile1.jpg" />
         <w-badge v-for="position in badgePositions" :key="position" variant="price" :position="position">position: {{ position }}</w-badge>
       </div>
     </div>
