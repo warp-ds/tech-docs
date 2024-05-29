@@ -69,9 +69,9 @@ export const react = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
         "'neutral'",
-        'Variant of the badge',
+        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
       ],
       [
         'position',
@@ -842,9 +842,9 @@ export const vue = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
         "'neutral'",
-        'Variant of the badge',
+        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
       ],
       [
         'position',
@@ -1300,9 +1300,9 @@ export const elements = {
     props: [
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
         "'neutral'",
-        'Variant of the badge',
+        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
       ],
       [
         'position',

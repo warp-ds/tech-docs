@@ -1,14 +1,14 @@
 <script setup>
 import { wBadge } from '@warp-ds/vue';
 
-const badgeVariants = ['neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'notification', 'price',];
-const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right',];
+const badgeVariants = ['neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'];
+const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right'];
 </script>
 
 <template>
   <div class="component space-y-24">
     <div>
-      <h3 class="h4">Default</h3>
+      <h3 class="t4">Default</h3>
       <w-badge>Rendered as neutral variant as default</w-badge>
     </div>
     <div>
@@ -18,7 +18,7 @@ const badgePositions = ['top-left', 'top-right', 'bottom-left', 'bottom-right',]
       </ul>
     </div>
     <div>
-      <h3 class="h4">Positioning</h3>
+      <h3 class="t4">Positioning</h3>
       <div class="relative border border-0 rounded overflow-hidden h-96">
         <img class="w-full h-96 rounded-8 object-cover" src="/classes/profile1.jpg" />
         <w-badge v-for="position in badgePositions" :key="position" variant="price" :position="position">position: {{ position }}</w-badge>
