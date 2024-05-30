@@ -1,18 +1,19 @@
 # Class Variants
 
-## Suggested order
+::: tip Suggested order
 
-While Uno usually handles these variants in any order, we do recommend a consistent pattern to maximize readability.
+While Uno usually handles these variants in any order, we do recommend a consistent pattern to maximize readability:
 
 `{Pseudo}{Breakpoint}{Negative}{Class}{Important}`
 
 For example: `focus:sm:-m-16!`
+:::
 
-## Important
+## Pseudo-classes
 
-Any class can be marked as important by prefixing the entire class with an exclamation mark.
+As described in [Pseudo-classes](/classes/states#pseudo-classes).
 
-For example `!mb-32` would produce `margin-bottom: 3.2rem !important`.
+For example: `last:mb-0`
 
 ## Breakpoints and media queries
 
@@ -25,49 +26,50 @@ For example `!mb-32` would produce `margin-bottom: 3.2rem !important`.
 | `lg`             | Targets `990px` for changes targeting desktop screens        |
 
 ### Variants targeting breakpoints
-
 There are three ways of targeting these breakpoints to fit a wide variety of use cases.
 
-#### gt
+- **`gt` - Greater than**
+ 
+  This is the default behavior, and aligns with a "mobile first" approach.
 
-This is the default behavior, likely because it aligns best with responsive design.
+  The example below shows how to increase the padding for every larger screen size:
 
-An example of these variants is below, where for every larger screen size we're increasing padding.
+  ```html{1}
+  <section class="p-8 sm:p-16 md:p-24 lg:p-32">
+    <!-- ... -->
+  </section>
+  ```
 
-```html{1}
-<section class="p-8 sm:p-16 md:p-24 lg:p-32">
-  <!-- ... -->
-</section>
-```
+- **`at` - Only at**
 
-#### at
+  This variant can be used if an exception is needed at only one single breakpoint.
 
-This variant can be used if an exceptional class is needed at only one single breakpoint.
+  The example below would have the same padding for every screen size except tablet sizes:
 
-The example below would have the same padding for every screen size except tablet sizes.
+  ```html{1}
+  <section class="p-8 at-md:p-24">
+    <!-- ... -->
+  </section>
+  ```
 
-```html{1}
-<section class="p-8 at-md:p-24">
-  <!-- ... -->
-</section>
-```
+- **`lt` - Less than**
 
-#### lt
+  The reverse of the default behavior, will select screens smaller than the breakpoint specified - this can be useful to target specific behavior only on smaller devices.
 
-The reverse of the default behavior, will select screens smaller than the breakpoint specified - this can be useful to target specific behavior (f.ex) on mobile/tablets only.
-
-```html{1}
-<section class="lt-md:sticky top-0">
-  <!-- ... -->
-</section>
-```
-
-## Pseudo-classes
-
-`last:mb-0`
+  ```html{1}
+  <section class="lt-md:sticky top-0">
+    <!-- ... -->
+  </section>
+  ```
 
 ## Negative values
 
-This variant is effectively invisible, but many numeric classes can be prefixed with `-` to use negative values.
+Many numeric classes can be prefixed with `-` to use negative values.
 
-Because this is a variant, it does not need to be placed directly on the class itself (e.g. `-top-8`) when being used with multiple variants (e.g. `-sm:top-8`).
+For example `-mb-32` would produce `margin-bottom: -3.2rem`.
+
+## Important
+
+Any class can be marked as important by adding an exclamation mark.
+
+For example `mb-32!` would produce `margin-bottom: 3.2rem !important`.
