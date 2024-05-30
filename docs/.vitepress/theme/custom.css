@@ -23,6 +23,7 @@ html.dark body {
   --vp-c-brand-1: #F6D553;
   --vp-c-brand-2: #F6D553;
   --vp-c-brand-3: #F6D553;
+  --vp-c-brand-soft: var(--vp-c-indigo-soft);
   --vp-home-hero-name-color: #F6D553;
   --vp-c-text-1: #FFFBD5;
   --vp-sidebar-bg-color: #182237;
@@ -31,7 +32,9 @@ html.dark body {
   --vp-c-bg-alt: #0b0f1d;
   --vp-nav-bg-color: #131B2D;
   --vp-code-color: #EFC2BF;
+  --vp-c-tip-1: var(--vp-code-color);
   --vp-code-bg: #0b0f1d;
+  --vp-custom-block-tip-code-bg: var(--vp-code-bg);
   --vp-code-block-bg: #0b0f1d;
 }
 
