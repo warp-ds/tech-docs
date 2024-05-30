@@ -1,5 +1,4 @@
 ### Import
-
 Import Elements icons individually to optimize your JS bundle size by adding only the icons you need:
 
 ```js
@@ -14,11 +13,13 @@ Don't import icons directly from the `@warp-ds/icons/elements` package, since th
 <w-icon-bag-16></w-icon-bag-16>
 ```
 
-Check out exact imports below in our Examples section
+Check out exact imports in the [Examples](#examples) section.
 
 ### Styling
-
-Elements icons are using shadow-dom to encapsulate their styles. As a result, you can’t simply target their internals with the usual CSS selectors. Instead, components expose “parts” that can be targeted with `part-[iconname-part]:classname`. Here's an example that sets the width & height of an icon:
+Elements icons are using shadow-dom to encapsulate their styles.
+As a result, you can’t simply target their internals with the usual CSS selectors.
+Instead, components expose “parts” that can be targeted with `part-[iconname-part]:classname`.
+Here's an example that sets the width and height of an icon:
 
 ```html
 <w-icon-bag-16 class="part-[w-icon-bag-16-part]:w-64 part-[w-icon-bag-16-part]:h-64"></w-icon-bag-16>

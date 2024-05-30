@@ -14,7 +14,7 @@ Don't import icons directly from the `@warp-ds/icons/vue` package, since this wi
 <icon-bag-16 />
 ```
 
-Check out exact imports below in our Examples section
+Check out exact imports in the [Examples](#examples) section.
 
 ### Colors
 The color of the icon will default to `currentColor`. 

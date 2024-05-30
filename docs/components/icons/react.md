@@ -1,5 +1,4 @@
 ### Import
-
 Import React icons individually to optimize your JS bundle size by adding only the icons you need:
 
 ```js
@@ -14,7 +13,7 @@ Don't import icons directly from the `@warp-ds/icons/react` package, since this 
 <IconBag16 />
 ```
 
-Check out exact imports below in our Examples section
+Check out exact imports in the [Examples](#examples) section.
 
 ### Colors
 The color of the icon will default to `currentColor`.
