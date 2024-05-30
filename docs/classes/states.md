@@ -1,6 +1,6 @@
 > Core Concepts
 
-# Handling Hover, Focus, and Other States
+# Handling Hover, Focus and Other States
 
 Using utilities to style elements on hover, focus, and more.
 
@@ -37,7 +37,7 @@ Warp includes modifiers for just about everything you’ll ever need, including:
 | `even:`              | `&:nth-child(even)`                                            |
 | `first-of-type:`     | `&:first-of-type`                                              |
 | `last-of-type:`      | `&:last-of-type`                                               |
-| `only-of-type:`      | (unsupported) `&:only-of-type`                                 |
+| ~~`only-of-type:`~~  | (unsupported) `&:only-of-type`                                 |
 | `empty:`             | `&:empty`                                                      |
 | `disabled:`          | `&:disabled`                                                   |
 | `enabled:`           | `&:enabled`                                                    |
@@ -65,27 +65,26 @@ Warp includes modifiers for just about everything you’ll ever need, including:
 | `md:`                | `@media (min-width: 768px)`                                    |
 | `lg:`                | `@media (min-width: 990px)`                                    |
 | `xl:`                | `@media (min-width: 1330px)`                                   |
-| `dark:`              | (unsupported) `@media (prefers-color-scheme: dark)`            |
-| `portrait:`          | (unsupported) `@media (orientation: portrait)`                 |
-| `landscape:`         | (unsupported) `@media (orientation: landscape)`                |
-| `motion-safe:`       | (unsupported) `@media (prefers-reduced-motion: no-preference)` |
-| `motion-reduce:`     | (unsupported) `@media (prefers-reduced-motion: reduce)`        |
-| `contrast-more:`     | (unsupported) `@media (prefers-contrast: more)`                |
-| `contrast-less:`     | (unsupported) `@media (prefers-contrast: less)`                |
-| `print:`             | (unsupported) `@media print`                                   |
-| `supports-[…]:`      | (unsupported) `@supports (…)`                                  |
-| `aria-checked:`      | (unsupported) `&[aria-checked=“true”]`                         |
-| `aria-disabled:`     | (unsupported) `&[aria-disabled=“true”]`                        |
-| `aria-expanded:`     | (unsupported) `&[aria-expanded=“true”]`                        |
-| `aria-hidden:`       | (unsupported) `&[aria-hidden=“true”]`                          |
-| `aria-pressed:`      | (unsupported) `&[aria-pressed=“true”]`                         |
-| `aria-readonly:`     | (unsupported) `&[aria-readonly=“true”]`                        |
-| `aria-required:`     | (unsupported) `&[aria-required=“true”]`                        |
-| `aria-selected:`     | (unsupported) `&[aria-selected=“true”]`                        |
-| `aria-[…]:`          | (unsupported) `&[aria-…]`                                      |
-| `data-[…]:`          | (unsupported) `&[data-…]`                                      |
+| ~~`dark:`~~          | (unsupported) `@media (prefers-color-scheme: dark)`            |
+| ~~`portrait:`~~      | (unsupported) `@media (orientation: portrait)`                 |
+| ~~`landscape:`~~     | (unsupported) `@media (orientation: landscape)`                |
+| ~~`motion-safe:`~~   | (unsupported) `@media (prefers-reduced-motion: no-preference)` |
+| ~~`motion-reduce:`~~ | (unsupported) `@media (prefers-reduced-motion: reduce)`        |
+| ~~`contrast-more:`~~ | (unsupported) `@media (prefers-contrast: more)`                |
+| ~~`contrast-less:`~~ | (unsupported) `@media (prefers-contrast: less)`                |
+| ~~`print:`~~         | (unsupported) `@media print`                                   |
+| ~~`supports-[…]:`~~  | (unsupported) `@supports (…)`                                  |
+| ~~`aria-checked:`~~  | (unsupported) `&[aria-checked=“true”]`                         |
+| ~~`aria-disabled:`~~ | (unsupported) `&[aria-disabled=“true”]`                        |
+| ~~`aria-expanded:`~~ | (unsupported) `&[aria-expanded=“true”]`                        |
+| ~~`aria-hidden:`~~   | (unsupported) `&[aria-hidden=“true”]`                          |
+| ~~`aria-pressed:`~~  | (unsupported) `&[aria-pressed=“true”]`                         |
+| ~~`aria-readonly:`~~ | (unsupported) `&[aria-readonly=“true”]`                        |
+| ~~`aria-required:`~~ | (unsupported) `&[aria-required=“true”]`                        |
+| ~~`aria-selected:`~~ | (unsupported) `&[aria-selected=“true”]`                        |
+| ~~`aria-[…]:`~~      | (unsupported) `&[aria-…]`                                      |
+| ~~`data-[…]:`~~      | (unsupported) `&[data-…]`                                      |
 | `open:`              | `&[open]`                                                      |
-
 
 ## Pseudo-classes
 
@@ -257,4 +256,5 @@ Use the `motion-reduce` modifier to conditionally add styles when the user has r
 </button>
 ```
 
-Warp also includes a `motion-safe` modifier that only adds styles when the user has not requested reduced motion. This can be useful when using the `motion-reduce` helper would mean having to “undo” a lot of styles.
+Warp also includes a `motion-safe` modifier that only adds styles when the user has not requested reduced motion.
+This can be useful when using the `motion-reduce` helper would mean having to “undo” a lot of styles.
