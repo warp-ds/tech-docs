@@ -58,7 +58,10 @@ const frameworkStatus = computed(() => [
   column-gap: 24px;
   row-gap: 24px;
 
-  @media (min-width: 768px) and (max-width: 959px), (min-width: 1104px) and (max-width: 1279px), (min-width: 1366px) {
+  @media (min-width: 990px) and (max-width: 1103px), (min-width: 1280px) and (max-width: 1365px) {
+    column-gap: 32px;
+  }
+  @media (min-width: 721px) and (max-width: 959px), (min-width: 1080px) and (max-width: 1279px), (min-width: 1366px) {
     column-gap: 48px;
   }
 }
@@ -98,5 +101,6 @@ const frameworkStatus = computed(() => [
 
 .status {
   text-transform: capitalize;
+  font-size: 14px;
 }
 </style>
