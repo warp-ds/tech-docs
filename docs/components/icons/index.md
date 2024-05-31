@@ -72,7 +72,7 @@ Click any icon to open usage modal.
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />

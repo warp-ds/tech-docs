@@ -24,7 +24,6 @@ You can also import them individually to optimize your JS bundle size by adding 
 
 ```js
 import '@warp-ds/elements/components/breadcrumbs'
-
 ```
 
 Then they can be used in your HTML markup.
