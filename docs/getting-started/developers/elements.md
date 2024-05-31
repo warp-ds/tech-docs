@@ -30,11 +30,11 @@ import '@warp-ds/elements/components/breadcrumbs'
 Then they can be used in your HTML markup.
 
 ```html
-<f-breadcrumbs class="mt-10">
-  <a href="#/url/1">Eiendom</a>
-  <a href="#/url/2">Bolig til salgs</a>
-  <a href="#/url/3" aria-current="page"> Oslo </a>
-</f-breadcrumbs>
+<w-breadcrumbs>
+  <a href="/url/1">Page 1</a>
+  <a href="/url/2">Page 2</a>
+  <span aria-current="page">Page 3</span>
+</w-breadcrumbs>
 ```
 
 ## Eik support
