@@ -1,5 +1,4 @@
 ### Import
-
 Import Vue icons individually to optimize your JS bundle size by adding only the icons you need:
 
 ```js
