@@ -13,7 +13,7 @@ const docsClasses = ['text-12', 'font-bold', 'space-y-24', 'space-x-24','mt-16',
 's-bg', 'rounded-4', 'h-56', 'flex', 'items-center', 'justify-center', 'flex-col', 's-icon', 'grid-cols-minmax-100px',
 'last:ml-auto!','[--w-prefix-width:56px]', 'md:block', 'md:hidden', 's-bg-primary', 's-text-inverted', 's-text-link', 'text-display', 
 't1', 't2', 't3', 't4', 't5', 't6', 'text-preamble', 'text-body', 'text-caption', 'text-detail', 's-bg-inverted', 'text-center', 's-text-negative',
-'flex-1'];
+'flex-1', 'animate-spinner', '[--spinner-size:16px]', '[--spinner-size:32px]', 'place-content-center', 'place-items-center'];
 
 export default defineConfig({
   lang: 'en-US',
@@ -224,6 +224,10 @@ export default defineConfig({
                 {
                   text: 'Modal',
                   link: '/components/modal/',
+                },
+                {
+                  text: 'Spinner',
+                  link: '/components/spinner/',
                 },
               ],
             },

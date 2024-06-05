@@ -2540,4 +2540,28 @@ export const iOS = {
     props: [  
     ],
   },
+  Spinner: {
+    required: [
+    [
+      'size', 
+      'Warp.SpinnerSize.small <br />Warp.SpinnerSize.default <br />Warp.SpinnerSize.large <br />Warp.SpinnerSize.custom',
+      'Warp.SpinnerSize.default', 
+      'Size of the spinner'
+    ],
+    [
+      'duration', 
+      'CGFloat',
+      '1', 
+      'Duration of Spinner animation'
+    ],
+    [
+      'lineWidth', 
+      'CGFloat', 
+      '3', 
+      'The thickness of Spinner'
+    ],
+  ],
+    props: [  
+    ],
+  },
 };
