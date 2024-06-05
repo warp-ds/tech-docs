@@ -17,7 +17,7 @@ Text is used for showing text in a layout. Pre-defined styles provide a font and
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Text" link="https://www.figma.com/files/1308388678941179368/project/95472714" />
+<component-design-guidelines name="Warp - Components / Text" link="https://www.figma.com/design/oHBCzDdJxHQ6fmFLYWUltf/WARP---Components-2.0?node-id=11099-1148&t=ZymxezFIu8VQzAW8-0" />
 
 <component-questions />
 
