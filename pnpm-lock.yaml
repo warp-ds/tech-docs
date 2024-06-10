@@ -21,8 +21,8 @@ importers:
         specifier: 1.9.7
         version: 1.9.7
       '@warp-ds/icons':
-        specifier: 2.0.1
-        version: 2.0.1
+        specifier: 2.0.2
+        version: 2.0.2
       '@warp-ds/preset-docs':
         specifier: ^0.0.16
         version: 0.0.16(@warp-ds/uno@1.12.0)
@@ -861,8 +861,8 @@ packages:
   '@warp-ds/icons@2.0.0':
     resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
 
-  '@warp-ds/icons@2.0.1':
-    resolution: {integrity: sha512-GYKgLePU6dVfWcBnfJEschXY0hQxy1ajsEuiJwcKRgN70pk9ZWICBfJbVI4NSlgdWbglgaptyjDj9B6ug4Jy6A==}
+  '@warp-ds/icons@2.0.2':
+    resolution: {integrity: sha512-TxhE5JR459zCpFf132t6MZw2A1/4uC4/B4iq+00UgkJJXOssO7xAxc+Yg9q4D5lvnep4iItO5UR+6oDZA5ZTcA==}
 
   '@warp-ds/preset-docs@0.0.16':
     resolution: {integrity: sha512-R4gsVtPcvYZ0LWGKGzEYuuRo+Iy8HIlSFCUwSt0MEmXtk4pCslDlxX/c2GJarUnAt6h86PUDCyAaUbHfPHAFOg==}
@@ -2517,7 +2517,7 @@ snapshots:
     dependencies:
       '@lingui/core': 4.10.1
 
-  '@warp-ds/icons@2.0.1':
+  '@warp-ds/icons@2.0.2':
     dependencies:
       '@lingui/core': 4.10.1
 
