@@ -226,7 +226,7 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Classes',
+          text: 'CSS',
           collapsed: true,
           items: [
             {
