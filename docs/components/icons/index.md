@@ -87,10 +87,4 @@ Click any icon to open usage modal.
 In `@warp-ds/icons v2.0.0` some icons were renamed or deleted as they had similarly looking equivalents.
 Below you can find a list of icons and their respective replacements.
 
-<other-table :headers="['Old icon', 'New icon']" :data="deprecatedIcons" />
-
-<style>
-  .docs-table p {
-      margin: 0;
-  }
-</style>
+<other-table :headers="['Old icon', 'New icon']" :data="deprecatedIcons" plain-text />

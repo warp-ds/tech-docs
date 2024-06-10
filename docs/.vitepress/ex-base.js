@@ -45,6 +45,18 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           font-size: 1.4rem;
           line-height: 2.0rem;        
         }
+        .ex-deprecated {
+          position: relative;
+        }
+        .ex-deprecated::before {
+          content: '';
+          position: absolute;
+          top:0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(to bottom right, transparent 0%, transparent 47%, rgba(var(--w-s-rgb-border-warning), .2) 48%, rgba(var(--w-s-rgb-border-warning), .2) 52%, transparent 53%, transparent 100%);
+        }
         .component {
           padding: 16px;
           border: 2px solid var(--vp-c-gray-1);
@@ -80,14 +92,43 @@ export const buildWc = (elementName, baseVueComponent, rootProperties) => {
           color: var(--vp-c-text-2);
           background-color: var(--vp-c-bg-soft);
         }
-        .docs-table code {
+        .docs-table code, .docs-modal code {
           border-radius: 4px;
           padding: 3px 6px;
           background-color: var(--vp-code-bg);
           font-size: var(--vp-code-font-size);
           color: var(--vp-code-color);
         }
-
+        .docs-modal code {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          background-color: var(--vp-c-default-soft);
+          color: #BE3830;
+        }
+        .docs-modal code::after {
+          content: "";
+          position: absolute;
+          top: -6px;
+          right: -10px;
+          width: 24px;
+          height: 24px;
+          opacity: 0;
+          border: 1px solid var(--vp-code-copy-code-border-color);
+          border-radius: 4px;
+          background-color: var(--vp-code-copy-code-bg);
+          background-image: var(--vp-icon-copy);
+          background-position: 50%;
+          background-size: 16px;
+          background-repeat: no-repeat;
+          transition: opacity .25s, border-color .25s;
+        }
+        .docs-modal code:hover::after {
+          opacity: 1;
+        }
+        .docs-modal code:active::after {
+          border-color: rgba(0, 0, 0, .5);
+        }
         .ex-bg--purple {
           --ex-bg-el-color: #a855f780;
           --ex-bg-bg-color: #c084fc1a;
