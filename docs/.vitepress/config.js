@@ -130,14 +130,6 @@ export default defineConfig({
         }],
         safelist: [...classes, ...supported, ...docsClasses],
       }),
-      // uno({
-      //   presets: [presetWarp({ skipResets: true }), presetDocs()],
-      //   shortcuts: [{
-      //     'ex-font': 'pd-text-sm font-bold pd-font-mono pd-text-white',
-      //     'ex-box': 'ex-font p-24 rounded-4 pd-shadow-xl flex items-center justify-center',
-      //   }],
-      //   safelist: supported,
-      // }),
     ],
   },
   head: [
