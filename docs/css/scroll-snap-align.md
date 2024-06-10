@@ -27,22 +27,22 @@ Use the `snap-center` utility to snap an element to its center when being scroll
       <!-- Contents -->
       <div class="relative w-full flex gap-16 snap-x snap-mandatory overflow-x-auto px-16 pb-32" style="scroll-snap-type: x mandatory;">
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la09.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la09.jpg">
         </div>
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la06.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la06.jpg">
         </div>
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la10.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la10.jpg">
         </div>
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la01.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la01.jpg">
         </div>
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la11.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la11.jpg">
         </div>
         <div class="snap-center shrink-0" style="scroll-snap-align: center;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la13.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la13.jpg">
         </div>
       </div>
     </div>
@@ -74,22 +74,22 @@ Use the `snap-start` utility to snap an element to its start when being scrolled
           <div class="shrink-0 w-48"></div>
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la09.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la09.jpg">
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la06.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la06.jpg">
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la10.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la10.jpg">
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la01.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la01.jpg">
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la11.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la11.jpg">
         </div>
         <div class="snap-start shrink-0 pl-16" style="scroll-snap-align: start;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/classes/la13.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-xl pd-bg-white" src="/css/la13.jpg">
         </div>
       </div>
     </div>
@@ -119,22 +119,22 @@ Use the `snap-end` utility to snap an element to its end when being scrolled ins
       <!-- Contents -->
       <div class="relative w-full flex snap-x snap-mandatory overflow-x-auto pb-32" style="scroll-snap-type: x mandatory;">
         <div class="snap-end shrink-0 px-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la09.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la09.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la06.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la06.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la10.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la10.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la01.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la01.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la11.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la11.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16" style="scroll-snap-align: end;">
-          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/classes/la13.jpg">
+          <img class="shrink-0 w-[300] rounded-8 pd-shadow-lg" src="/css/la13.jpg">
         </div>
         <div class="snap-end shrink-0 pr-16">
           <div class="shrink-0 w-48"></div>

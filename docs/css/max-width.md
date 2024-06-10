@@ -36,7 +36,7 @@ Set the maximum width of an element using the `max-w-{size}` utilities.
   <example-container>
     <div class="ex-bg--striped ex-bg--blue flex justify-center">
       <section class="ex-box pd-bg-white max-w-[300]">
-        <img src="/classes/20s-scientists.jpg" class="h-128 w-128 rounded-full" alt="AI generated picture of 1920s scientists working on a warp drive" />
+        <img src="/css/20s-scientists.jpg" class="h-128 w-128 rounded-full" alt="AI generated picture of 1920s scientists working on a warp drive" />
         <p class="pd-text-slate-900 pl-16">AI generated picture of warp scientists from the 1920s</p>
       </section>
     </div>

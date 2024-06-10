@@ -10,7 +10,7 @@
   <div class="component">
     <h3 class="t4">Usage of w-clickable in Card</h3>
     <w-card :selected="selected" class="overflow-hidden mb-32">
-      <img class="h-128 w-full object-cover rounded-tl-16" src="/classes/office-warping.png" />
+      <img class="h-128 w-full object-cover rounded-tl-16" src="/css/office-warping.png" />
       <w-badge position="top-left">Ukens bolig</w-badge>
       <div class="p-16">
         <p class="text-12">DNB Eiendom</p>

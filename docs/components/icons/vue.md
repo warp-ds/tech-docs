@@ -17,4 +17,4 @@ Check out exact imports in the [Examples](#examples) section.
 
 ### Colors
 The color of the icon will default to `currentColor`. 
-Colors can be changed using [semantic color classes for icons](/classes/icon-color#icon-color).
+Colors can be changed using [semantic color classes for icons](/css/icon-color#icon-color).

@@ -24,56 +24,56 @@ The column width will be automatically adjusted to accommodate that number.
   <div class="columns-3 gap-x-24">
     <div class="ex-bg--striped ex-bg--fuchsia">
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists" />
+        <img class="w-full mb-24" src="/css/la09.jpg" alt="Ai generated line drawing of warp scientists" />
         <div class="ex-pic-no">1</div>
       </div>
       <div class="relative">
         <div class="aspect-1/1 mb-24">
-          <img class="w-full object-cover" src="/classes/la01.jpg" alt="Ai generated line drawing of warp related scene">
+          <img class="w-full object-cover" src="/css/la01.jpg" alt="Ai generated line drawing of warp related scene">
         </div>
         <div class="ex-pic-no">2</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la02.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la02.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">3</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la06.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la06.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">4</div>
       </div>
       <div class="relative">
         <div class="aspect-1/1 mb-24">
-          <img class="w-full object-cover" src="/classes/la03.jpg" alt="Ai generated line drawing of warp related scene">
+          <img class="w-full object-cover" src="/css/la03.jpg" alt="Ai generated line drawing of warp related scene">
         </div>
         <div class="ex-pic-no">5</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la04.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la04.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">6</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la11.jpg" alt="Ai generated line drawing of warp scientists">
+        <img class="w-full mb-24" src="/css/la11.jpg" alt="Ai generated line drawing of warp scientists">
         <div class="ex-pic-no">7</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la05.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la05.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">8</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la07.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la07.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">9</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la10.jpg" alt="Ai generated line drawing of warp scientists">
+        <img class="w-full mb-24" src="/css/la10.jpg" alt="Ai generated line drawing of warp scientists">
         <div class="ex-pic-no">10</div>
       </div>
       <div class="relative">
-        <img class="w-full mb-24" src="/classes/la08.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full mb-24" src="/css/la08.jpg" alt="Ai generated line drawing of warp related scene">
         <div class="ex-pic-no">11</div>
       </div>
       <div class="relative">
         <div class="aspect-1/1 mb-24">
-          <img class="w-full" src="/classes/la12.jpg" alt="Ai generated line drawing of warp scientists">
+          <img class="w-full" src="/css/la12.jpg" alt="Ai generated line drawing of warp scientists">
         </div>
         <div class="ex-pic-no">12</div>
       </div>
@@ -95,23 +95,23 @@ To specify the width between columns, you can use the `gap-x` utilities.
 <example-container>
   <div class="columns-3 gap-x-24 ex-bg--striped ex-bg--fuchsia">
     <div class="bg-[--vp-c-bg-soft]">
-      <img class="w-full mb-24" src="/classes/la09.jpg" alt="Ai generated line drawing of warp scientists">
+      <img class="w-full mb-24" src="/css/la09.jpg" alt="Ai generated line drawing of warp scientists">
       <div class="aspect-square object-cover mb-24">
-        <img class="w-full" src="/classes/la01.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full" src="/css/la01.jpg" alt="Ai generated line drawing of warp related scene">
       </div>
-      <img class="w-full" src="/classes/la02.jpg" alt="Ai generated line drawing of warp related scene">
+      <img class="w-full" src="/css/la02.jpg" alt="Ai generated line drawing of warp related scene">
     </div>
     <div class="bg-[--vp-c-bg-soft]">
       <div class="aspect-square object-cover mb-24">
-        <img class="w-full" src="/classes/la03.jpg" alt="Ai generated line drawing of warp related scene"></div>
-      <img class="w-full mb-24" src="/classes/la04.jpg" alt="Ai generated line drawing of warp related scene">
-      <img class="w-full" src="/classes/la11.jpg" alt="Ai generated line drawing of warp scientists">
+        <img class="w-full" src="/css/la03.jpg" alt="Ai generated line drawing of warp related scene"></div>
+      <img class="w-full mb-24" src="/css/la04.jpg" alt="Ai generated line drawing of warp related scene">
+      <img class="w-full" src="/css/la11.jpg" alt="Ai generated line drawing of warp scientists">
     </div>
     <div class="bg-[--vp-c-bg-soft]">
-      <img class="w-full mb-24" src="/classes/la07.jpg" alt="Ai generated line drawing of warp related scene">
-      <img class="w-full mb-24" src="/classes/la10.jpg" alt="Ai generated line drawing of warp scientists">
+      <img class="w-full mb-24" src="/css/la07.jpg" alt="Ai generated line drawing of warp related scene">
+      <img class="w-full mb-24" src="/css/la10.jpg" alt="Ai generated line drawing of warp scientists">
       <div class="aspect-square object-cover">
-        <img class="w-full" src="/classes/la08.jpg" alt="Ai generated line drawing of warp related scene">
+        <img class="w-full" src="/css/la08.jpg" alt="Ai generated line drawing of warp related scene">
       </div>
     </div>
   </div>

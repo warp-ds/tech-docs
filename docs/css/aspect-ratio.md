@@ -37,7 +37,7 @@ Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 <width-controller>
   <example-container>
     <div class="flex justify-center aspect-2/1 rounded relative overflow-hidden">
-      <img src="/classes/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
     </div>
   </example-container>
 </width-controller>
@@ -51,7 +51,7 @@ Use the aspect-{ratio} utilities to set the desired aspect ratio of an element.
 <width-controller>
   <example-container>
     <div class="flex justify-center aspect-1/1 rounded-4">
-      <img src="/classes/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/50s-scientists.jpg" class="object-cover" alt="AI generated picture of 1950s scientists working on a warp drive" />
     </div>
   </example-container>
 </width-controller>

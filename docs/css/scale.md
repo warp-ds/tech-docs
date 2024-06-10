@@ -25,17 +25,17 @@ Use the `scale-{percentage}`, `scale-x-{percentage}`, and `scale-y-{percentage}`
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">scale-75</h4>
       <div class="relative mt-16">
-        <img class="absolute w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="relative scale-75 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute w-128 h-128 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="relative scale-75 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">scale-100</h4>
-      <img class="scale-100 mt-16 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      <img class="scale-100 mt-16 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
     </div>
     <div class="flex flex-col items-center shrink-0 pr-16">
       <h4 class="ex-heading">scale-125</h4>
-      <img class="scale-125 mt-16 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      <img class="scale-125 mt-16 w-128 h-128 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
     </div>
   </div>
 </example-container>

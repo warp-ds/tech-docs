@@ -15,8 +15,8 @@ Use `clear-left` to position an element below any preceding left-floated element
 
 <width-controller>
   <example-container>
-    <img class="float-left w-64 mr-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
-    <img class="float-right w-144 ml-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-left w-64 mr-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-right w-144 ml-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
     <p class="clear-left">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
   </example-container>
 </width-controller>
@@ -32,8 +32,8 @@ Use `clear-right` to position an element below any preceding right-floated eleme
 
 <width-controller>
   <example-container>
-    <img class="float-left w-144 mr-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
-    <img class="float-right w-64 ml-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-left w-144 mr-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-right w-64 ml-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
     <p class="clear-right">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
   </example-container>
 </width-controller>
@@ -49,8 +49,8 @@ Use `clear-both` to position an element below all preceding floated elements.
 
 <width-controller>
   <example-container>
-    <img class="float-left w-64 mr-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
-    <img class="float-right w-144 ml-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-left w-64 mr-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-right w-144 ml-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
     <p class="clear-both">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
   </example-container>
 </width-controller>
@@ -66,8 +66,8 @@ Use `clear-none` to reset any clears that are applied to an element. This is the
 
 <width-controller>
   <example-container>
-    <img class="float-left w-64 mr-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
-    <img class="float-right w-144 ml-16 rounded-16 " src="/classes/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-left w-64 mr-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
+    <img class="float-right w-144 ml-16 rounded-16 " src="/css/20s-scientists.jpg" alt="Ai generated picture of warp scientists from the 1920s" />
     <p class="clear-none">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better? Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
   </example-container>
 </width-controller>

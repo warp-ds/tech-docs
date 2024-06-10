@@ -11,7 +11,7 @@ For example: `focus:sm:-m-16!`
 
 ## Pseudo-classes
 
-As described in [Pseudo-classes](/classes/states#pseudo-classes).
+As described in [Pseudo-classes](/css/states#pseudo-classes).
 
 For example: `last:mb-0`
 

@@ -24,22 +24,22 @@ Use the `translate-x-{amount}` and `translate-y-{amount}` utilities to translate
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">translate-y-32</h4>
       <div class="relative">
-        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="absolute inset-0 translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
     <div class="flex flex-col items-center shrink-0">
       <div class="relative">
-        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="absolute inset-0 -translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 -translate-y-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
       <h4 class="ex-heading mb-0 pt-8">-translate-y-32</h4>
     </div>
     <div class="flex flex-col items-center shrink-0 pr-16">
       <h4 class="ex-heading">translate-x-32</h4>
       <div class="relative">
-        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="absolute inset-0 translate-x-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="w-128 h-128 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute inset-0 translate-x-32 w-128 h-128 object-cover ex-box rounded-8 p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
   </div>

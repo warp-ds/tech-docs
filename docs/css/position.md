@@ -124,28 +124,28 @@ Any `offsets` are calculated relative to the viewport and the element will act a
       <h4 class="sticky border-b s-border/50 s-bg/50 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m">Warp Scientists</h4>
       <ul class="divide-y">
         <li class="flex items-center p-16">
-          <img src="/classes/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <img src="/css/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
           <div>
             <div class="font-bold">Justina Matter</div>
             Warp Scientist
           </div>
         </li>
         <li class="flex items-center p-16">
-          <img src="/classes/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <img src="/css/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
           <div>
             <div class="font-bold">Narve Hoops</div>
             Warp Scientist
           </div>
         </li>
         <li class="flex items-center p-16">
-          <img src="/classes/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <img src="/css/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
           <div>
             <div class="font-bold">Dagny Calamity</div>
             Warp Scientist
           </div>
         </li>
         <li class="flex items-center p-16">
-          <img src="/classes/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+          <img src="/css/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
           <div>
             <div class="font-bold">Joar Quack</div>
             Warp Scientist
@@ -185,19 +185,19 @@ Any `offsets` are calculated relative to the element’s normal position and the
         <h4 class="sticky border-b s-border/50 s-bg-primary/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">A - Warp Scientists</h4>
         <ul class="divide-y">
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Ainsley Matter</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Alarik Hoops</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Ambrose Calamity</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile2.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Anders Quack</strong>
           </li>
         </ul>
@@ -206,19 +206,19 @@ Any `offsets` are calculated relative to the element’s normal position and the
         <h4 class="sticky border-b s-border/50 s-bg-positive/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">B - Warp Scientists</h4>
         <ul class="divide-y">
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Bella Matter</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Brayden Hoops</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Bailey Calamity</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Bentley Quack</strong>
           </li>
         </ul>
@@ -227,19 +227,19 @@ Any `offsets` are calculated relative to the element’s normal position and the
         <h4 class="sticky border-b s-border/50 s-bg-negative/10 left-0 right-0 top-0 px-16 py-8 backdrop-blur-m mb-0">C - Warp Scientists</h4>
         <ul class="divide-y">
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/matter.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Charlotte Matter</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Carter Hoops</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile1.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Claire Calamity</strong>
           </li>
           <li class="flex items-center px-12 py-8">
-            <img src="/classes/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+            <img src="/css/profile5.jpg" class="h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
             <strong>Cora Quack</strong>
           </li>
         </ul>

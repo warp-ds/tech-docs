@@ -16,7 +16,7 @@ Use `overflow-visible` to prevent content within an element from being clipped. 
 <example-container>
   <div class="ex-inner-box overflow-visible">
    <div class="flex items-center relative">
-      <img src="/classes/matter.jpg" class="absolute object-cover h-128 -ml-48 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="absolute object-cover h-128 -ml-48 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="pl-112">
         <div class="font-bold">Justina Matter</div>
         <span>Warp Scientist</span>
@@ -35,7 +35,7 @@ Use `overflow-hidden` to clip any content within an element that overflows the b
 <example-container>
   <div class="ex-inner-box overflow-hidden">
     <div class="flex items-center relative">
-      <img src="/classes/matter.jpg" class="absolute object-cover h-128 -ml-48 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="absolute object-cover h-128 -ml-48 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="pl-112">
         <div class="font-bold">Justina Matter</div>
         <span>Warp Scientist</span>
@@ -54,28 +54,28 @@ Use `overflow-auto` to add scrollbars to an element in the event that its conten
 <example-container>
   <div class="ex-inner-box overflow-y-auto p-0 divide-y h-128">
     <div class="flex items-center p-16">
-      <img src="/classes/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Justina Matter</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Narve Hoops</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Dagny Calamity</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Joar Quack</div>
         Warp Scientist
@@ -94,31 +94,31 @@ Use `overflow-x-scroll` to allow horizontal scrolling and always show scrollbars
 <example-container>
   <div class="ex-inner-box overflow-x-scroll max-w-[400] flex gap-24">
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/matter.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Matter</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile1.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile1.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Hoops</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile2.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile2.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Quack</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile3.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile3.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Sparks</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile4.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile4.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Hubble</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile5.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile5.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Calamity</div>
     </div>
     <div class="flex flex-col items-center gap-8 p-12 w-128 shrink-0">
-      <img src="/classes/profile6.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile6.jpg" class="rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div class="font-bold">Glum</div>
     </div>
   </div>
@@ -130,28 +130,28 @@ Use `overflow-y-scroll` to allow vertical scrolling and always show scrollbars u
 <example-container>
   <div class="ex-inner-box overflow-y-scroll p-0 divide-y h-128">
     <div class="flex items-center p-16">
-      <img src="/classes/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Justina Matter</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile1.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Narve Hoops</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile5.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Dagny Calamity</div>
         Warp Scientist
       </div>
     </div>
     <div class="flex items-center p-16">
-      <img src="/classes/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/profile2.jpg" class="object-cover h-48 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Joar Quack</div>
         Warp Scientist
@@ -169,7 +169,7 @@ Use `overflow-scroll` to add scrollbars to an element. Unlike `overflow-auto`, w
 
 <example-container>
   <div class="ex-inner-box overflow-scroll p-0 h-[200] max-w-none">
-    <img src="/classes/50s-scientists.jpg" class="max-w-none" alt="Ai generated picture of warp scientists from the 1950s">
+    <img src="/css/50s-scientists.jpg" class="max-w-none" alt="Ai generated picture of warp scientists from the 1950s">
   </div>
 </example-container>
 

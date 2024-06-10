@@ -82,7 +82,7 @@ Use `flex` to create a block-level flex container.
 <example-container>
   <div class="ex-inner-box">
    <div class="flex items-center">
-      <img src="/classes/matter.jpg" class="h-64 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
+      <img src="/css/matter.jpg" class="h-64 mr-16 rounded-full" alt="AI generated picture of 1950s scientists working on a warp drive" />
       <div>
         <div class="font-bold">Justina Matter</div>
         <span>Warp Scientist</span>
@@ -108,7 +108,7 @@ Use `inline-flex` to create an inline flex container that flows with text.
   <div class="ex-inner-box">
     <p>I spent most of the day researching ways to take advantage of the fact that bottles can be returned for 10 cents in Michigan, but only 5 cents here.
       <span class="inline-flex items-baseline">
-        <img src="/classes/matter.jpg" alt="" class="self-center w-24 h-24 rounded-full mx-4" />
+        <img src="/css/matter.jpg" alt="" class="self-center w-24 h-24 rounded-full mx-4" />
         <span class="font-bold">Justina</span>
       </span>
       keeps telling me there is no way to make it work, that she has run the numbers on every possible approach, but I just have to believe there's a way to make it work, there's simply too much opportunity here.

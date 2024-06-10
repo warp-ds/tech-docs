@@ -18,22 +18,22 @@ Specify an element’s transform origin using the `origin-{keyword}` utilities.
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">origin-center</h4>
       <div class="relative mt-8">
-        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="relative origin-center rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="relative origin-center rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">origin-top-left</h4>
       <div class="relative mt-8">
-        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="relative origin-top-left rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="relative origin-top-left rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">origin-bottom</h4>
       <div class="relative mt-8">
-        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="relative origin-bottom rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute w-96 h-96 object-cover rounded-8 opacity-25" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="relative origin-bottom rotate-30 w-96 h-96 object-cover rounded-8 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
   </div>

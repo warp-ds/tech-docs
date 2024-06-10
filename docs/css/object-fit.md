@@ -17,7 +17,7 @@ Resize an element’s content to cover its container using `.object-cover`.
   <div class="flex justify-center">
     <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
-        <img src="/classes/50s-scientists.jpg" class="object-cover rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists.jpg" class="object-cover rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@ Resize an element’s content to stay contained within its container using `.obj
   <div class="flex justify-center">
     <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
-        <img src="/classes/50s-scientists.jpg" class="object-contain rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists.jpg" class="object-contain rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@ Stretch an element’s content to fit its container using `.object-fill`.
   <div class="flex justify-center">
     <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
-        <img src="/classes/50s-scientists.jpg" class="object-stretch rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists.jpg" class="object-stretch rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@ Display an element’s content at its original size but scale it down to fit its
   <div class="flex justify-center">
     <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
-        <img src="/classes/50s-scientists.jpg" class="object-scale-down rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists.jpg" class="object-scale-down rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>
@@ -94,7 +94,7 @@ Display an element’s content at its original size ignoring the container size 
   <div class="flex justify-center">
     <div class="rounded-8 ex-bg--striped ex-bg--indigo h-[200] w-[400] pd-shadow-xl">
       <div class="aspect-2/1">
-        <img src="/classes/50s-scientists.jpg" class="object-none rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists.jpg" class="object-none rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>

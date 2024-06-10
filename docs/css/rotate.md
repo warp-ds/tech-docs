@@ -22,22 +22,22 @@ Use the `rotate-{angle}` utilities to rotate an element.
   <div class="flex flex-wrap items-center justify-around gap-32 sm:gap-16 ex-font-dark dark:pd-text-slate-400 pb-16">
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">rotate-0</h4>
-      <img class="w-96 h-96 object-cover ex-box p-0 mt-16" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      <img class="w-96 h-96 object-cover ex-box p-0 mt-16" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">rotate-45</h4>
       <div class="relative mt-16">
-        <img class="absolute w-96 h-96 object-cover opacity-25 ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
-        <img class="relative rotate-45 w-96 h-96 object-cover ex-box p-0" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="absolute w-96 h-96 object-cover opacity-25 ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+        <img class="relative rotate-45 w-96 h-96 object-cover ex-box p-0" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
       </div>
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">rotate-90</h4>
-      <img class="w-96 h-96 rotate-90 object-cover ex-box p-0 mt-16" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      <img class="w-96 h-96 rotate-90 object-cover ex-box p-0 mt-16" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
     </div>
     <div class="flex flex-col items-center shrink-0">
       <h4 class="ex-heading">rotate-180</h4>
-      <img class="w-96 h-96 rotate-180 object-cover ex-box p-0 mt-16" src="/classes/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
+      <img class="w-96 h-96 rotate-180 object-cover ex-box p-0 mt-16" src="/css/20s-scientists.jpg" alt="Ai generated image of 1920s scientists working on a warp drive">
     </div>
   </div>
 </example-container>

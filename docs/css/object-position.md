@@ -18,55 +18,55 @@ Use the `object-{side}` utilities to specify how a replaced element’s content 
     <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
       <div class="pb-8">.object-left-top</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-left-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-left-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
       <div class="pb-8">.object-top</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
       <div class="pb-8">.object-right-top</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-right-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-right-top rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
       <div class="pb-8">.object-left</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-left rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-left rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
       <div class="pb-8">.object-center</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-center rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-center rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
       <div class="pb-8">.object-right</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-right rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-right rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
      <div class="w-full flex flex-col justify-self-start place-items-start ex-inner-box p-16">
       <div class="pb-8">.object-left-bottom</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-left-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-left-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-center place-items-center ex-inner-box p-16">
       <div class="pb-8">.object-bottom</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
     <div class="w-full flex flex-col justify-self-end place-items-end ex-inner-box p-16">
       <div class="pb-8">.object-right-bottom</div>
       <div class="h-128 w-128 flex">
-        <img src="/classes/50s-scientists_240.jpg" class="object-none object-right-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
+        <img src="/css/50s-scientists_240.jpg" class="object-none object-right-bottom rounded" alt="AI generated picture of 1950s scientists working on a warp drive" />
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@
 
 UnoCSS optimizes CSS generation by scanning HTML files for used class names and compiling a minimal CSS file that includes only the necessary styles. This approach ensures faster load times and improved performance for web applications. It also supports extensive customization through presets and configurations, making it adaptable to various development needs.
 
-![AI generated picture of warp scientists rocking out in the warp](/classes/unocssmusical.jpeg)
+![AI generated picture of warp scientists rocking out in the warp](/css/unocssmusical.jpeg)
 
 ## UnoCSS vs. Tailwind CSS
 Both UnoCSS and Tailwind CSS are utility-first CSS frameworks, but they approach the concept of atomic CSS differently.

@@ -15,7 +15,7 @@ Header/Footer also use the same helper class to follow the same pattern.
 
 <example-container>
   <div class="flex justify-center">
-    <img src="/classes/page-container.png" class="object-cover" alt="example of what page-container does as an overlay on top of finn.no" />
+    <img src="/css/page-container.png" class="object-cover" alt="example of what page-container does as an overlay on top of finn.no" />
   </div>
 </example-container>
 
