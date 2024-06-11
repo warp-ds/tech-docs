@@ -49,7 +49,7 @@ The modifier accepts any integer percentage value between 0 and 100.
 This works for both semantic and arbitrary classes with any primitive `--w-{color}` or semantic `--w-s-color-{name}` css variable.
 
 ::: warning Warning
-Please be advised that by using primitive variables you will lose theming possibilities, therefor we highly recommend only using semantic classes and tokens.
+Please be advised that by using primitive variables you will lose theming possibilities, therefore we highly recommend only using semantic classes and tokens.
 :::
 
 <example-container class="bg-center bg-[url(./50s-scientists.jpg)]">

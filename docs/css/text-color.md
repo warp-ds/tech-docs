@@ -67,7 +67,7 @@ The modifier accepts any integer percentage value between 0 and 100.
 This works for both semantic and arbitrary classes with any primitive `--w-{color}` or semantic `--w-s-color-{name}` css variable.
 
 ::: warning Warning
-Please be advised that by using primitive variables you will lose theming possibilities, therefor we highly recommend only using semantic classes and tokens.
+Please be advised that by using primitive variables you will lose theming possibilities, therefore we highly recommend only using semantic classes and tokens.
 
 The examples below are inaccessible and purely for technical reference.
 Always make sure any text has sufficient contrast to its background.

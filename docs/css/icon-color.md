@@ -47,7 +47,7 @@ The modifier accepts any integer percentage value between 0 and 100.
 This works for the semantic icon classes, and you can also use the arbitrary text classes with any primitive `--w-{color}` or semantic `--w-s-color-{name}` css variable.
 
 ::: warning Warning
-Please be advised that by using primitive variables you will lose theming possibilities, therefor we highly recommend only using semantic classes and tokens.
+Please be advised that by using primitive variables you will lose theming possibilities, therefore we highly recommend only using semantic classes and tokens.
 
 The examples below are inaccessible and purely for technical reference.
 Always make sure to have sufficient contrast.
