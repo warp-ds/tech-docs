@@ -95,6 +95,10 @@ html.dark body {
   line-height: 1.5;
 }
 
+.line-through {
+  text-decoration-line: line-through;
+}
+
 .VPSidebarItem.has-active.collapsible > .item .caret
 {
   color: var(--vp-c-text-1);
