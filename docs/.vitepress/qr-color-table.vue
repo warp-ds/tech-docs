@@ -24,7 +24,7 @@ const outlineClasses = 'outline outline-4 outline-offset-2 border bg-[--w-gray-2
         <td><code :class="{'line-through': desc === null}">{{ cls }}</code></td>
         <td v-if="desc === null" colspan="2">Unsupported</td>
         <template v-else>
-          <td :class="[/^s-(text|icon|border|outline|divide)-inverted/.test(cls) || /^s-bg$/.test(cls) ? 's-bg-inverted s-text-inverted' : /^(s-)?bg-/.test(cls) ? 's-bg' : '', { 's-bg-notification': /^s-text-notification/.test(cls) }]">
+          <td :class="[/^s-(text|icon|border|outline|divide)-inverted/.test(cls) || /^s-bg$/.test(cls) ? 's-bg-inverted s-text-inverted' : 's-bg', { 's-bg-notification': /^s-text-notification/.test(cls) }]">
             <div v-if="/^(s-)?divide/.test(cls)" class="flex justify-center divide-x-4" :class="cls">
               <div class="text-right pr-6">A</div>
               <div class="pl-6">B</div>
