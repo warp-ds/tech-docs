@@ -165,12 +165,18 @@ Use `visible` to make an element visible. This is mostly useful for undoing the 
 
 <example-container>
   <div class="grid grid-cols-3 gap-16">
-    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">01</div></div>
-    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-800 group overflow-hidden">
-      Hover me
-      <div class="absolute inset-0 flex items-center justify-center pd-bg-indigo-500 pd-text-white invisible group-hover:visible">02</div>
+    <div class="s-bg-subtle rounded">
+      <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">01</div></div>
     </div>
-    <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">03</div></div>
+    <div class="s-bg-subtle rounded">
+      <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-800 group overflow-hidden">
+        Hover me
+        <div class="absolute inset-0 flex items-center justify-center pd-bg-indigo-500 pd-text-white invisible group-hover:visible">02</div>
+      </div>
+    </div>
+    <div class="s-bg-subtle rounded">
+      <div class="ex-box ex-bg--dotted ex-bg--white relative pd-text-slate-500">Invisible <div class="invisible">03</div></div>
+    </div>
   </div>
 </example-container>
 
