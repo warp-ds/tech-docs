@@ -12,7 +12,7 @@ UnoCSS works by searching for the utilities (classes) usages from your codebase 
 The Warp preset contains the utilities UnoCSS will look for.
 Only the used utilities are shipped to your app, ensuring speed and efficiency in any project size.
 
-If you are migrating from Fabric to Warp, please visit the [Migration page](/migration/developers/.
+If you are migrating from Fabric to Warp, please visit the [Migration page](/migration/developers/).
 
 If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04NF2K46LB) channel on Slack!
 
