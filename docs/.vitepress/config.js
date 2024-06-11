@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress';
 import { presetDocs } from '@warp-ds/preset-docs';
 import { presetWarp } from '@warp-ds/uno';
 import uno from 'unocss/vite';
-import { classes } from '@warp-ds/css/component-classes/classes';
-import { supported } from '../supported.js';
+import { classes as componentClasses } from '@warp-ds/css/component-classes/classes';
+import { supported as supportedClasses } from '../supported.js';
 
 const base = '/tech-docs';
 
@@ -128,7 +128,7 @@ export default defineConfig({
           'ex-inner-box': 'p-24 rounded pd-shadow-xl mx-auto pd-bg-white pd-text-slate-500 max-w-[300]',
           'ex-pic-no': 'absolute top-10 left-10 h-32 w-32 text-center pd-bg-white rounded-full pd-text-slate-800 leading-[32]',
         }],
-        safelist: [...classes, ...supported, ...docsClasses],
+        safelist: [...componentClasses, ...supportedClasses, ...docsClasses],
       }),
     ],
   },
