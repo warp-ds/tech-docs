@@ -51,6 +51,29 @@ html.dark body {
   --vp-home-hero-image-filter: blur(32px);
 }
 
+@media (min-width: 768px) {
+  .VPNavBarSearch {
+    order: -1;
+    flex-grow: 0;
+  }
+  .VPNavBar .theme-switcher-container {
+    flex-grow: 1;
+    display: flex;
+    margin-left: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .VPNavBar .theme-switcher-container {
+    display: none;
+  }
+}
+@media (min-width: 768px) AND (max-width: 1023px) {
+  .VPNavBar .theme-switcher label {
+    display: none;
+  }
+}
+
+
 .vp-doc blockquote > p {
   font-size: 1.28rem !important;
 }
