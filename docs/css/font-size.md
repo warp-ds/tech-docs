@@ -48,27 +48,29 @@ Line-heights can be overridden by the `.leading-{size}` classes, but please only
 
 ### Setting the headings
 
-Control the heading sizes using the `h1` - `h5` utilities. These classes aim to contain all the styling needed for each heading-level pr. brand.
+Control the heading sizes using the `t1` - `t5` utilities.
+These classes aim to contain all the styling needed for each heading-level per brand.
+
 ::: warning Note
-The heading tags should be implemented strictly semantic in a clear tree structure.
-Use the `h1` - `h5` classes to give them the correct visual size and appearance.
+The heading tags (`<h1>` - `<h5>`) should be implemented strictly semantic in a clear tree structure.
+Use the `t1` - `t5` classes to give them the correct visual size and appearance.
 :::
 
 <example-container>
   <div class="ex-inner-box max-w-full s-text">
-    <h1 class="h3">Warping</h1>
-    <h2 class="h2">The process</h2>
+    <h1 class="t3">Warping</h1>
+    <h2 class="t2">The process</h2>
     <p>The quick smart warp scientist ...</p>
-    <h2 class="h2">The goal</h2>
+    <h2 class="t2">The goal</h2>
     <p>The quick smart warp scientist ...</p>
   </div>
 </example-container>
 
 ```html
-<h1 class="h3">Warping</h1>
-<h2 class="h2">The process</h2>
+<h1 class="t3">Warping</h1>
+<h2 class="t2">The process</h2>
 <p>The quick smart warp scientist ...</p>
-<h2 class="h2">The goal</h2>
+<h2 class="t2">The goal</h2>
 <p>The quick smart warp scientist ...</p>
 ```
 
