@@ -7,7 +7,7 @@ import { computed, ref } from "vue";
 
 // When an existing icon is deprecated, add { old: "IconOldName16", new: "IconNewName16" } to the deprecatedIcons list.
 // This will display a deprecation message with a suggested replacement.
-const deprecatedIcons = [{old:'IconAds16', new:'IconAirCon16'},{old:'IconHonkDark42'}];
+const deprecatedIcons = [];
 
 const isDeprecated = (iconName) => deprecatedIcons.some((icon) => iconName === icon.old);
 
