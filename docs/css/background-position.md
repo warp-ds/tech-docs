@@ -41,7 +41,7 @@ Use the `bg-{side}` utilities to control the position of an element’s backgrou
     </div>
     <div class="flex flex-col justify-self-center place-items-center">
       <div class="pb-8 pd-font-mono">bg-left-bottom</div>
-      <div class="h-128 w-128 rounded-8 bg-bottom-left bg-auto bg-[url(./50s-scientists.jpg)]" style="background-size:300%"></div>
+      <div class="h-128 w-128 rounded-8 bg-left-bottom bg-auto bg-[url(./50s-scientists.jpg)]" style="background-size:300%"></div>
     </div>
     <div class="flex flex-col justify-self-center place-items-center">
       <div class="pb-8 pd-font-mono">bg-bottom</div>
@@ -49,7 +49,7 @@ Use the `bg-{side}` utilities to control the position of an element’s backgrou
     </div>
     <div class="flex flex-col justify-self-center place-items-center">
       <div class="pb-8 pd-font-mono">bg-right-bottom</div>
-      <div class="h-128 w-128 rounded-8 bg-bottom-right bg-auto bg-[url(./50s-scientists.jpg)]" style="background-size:300%"></div>
+      <div class="h-128 w-128 rounded-8 bg-right-bottom bg-auto bg-[url(./50s-scientists.jpg)]" style="background-size:300%"></div>
     </div>
   </div>
 </example-container>
