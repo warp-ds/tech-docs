@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="component space-x-8 space-y-16 text-center">
+  <div class="component flex flex-wrap gap-16">
     <w-button primary>Primary</w-button>
     <w-button primary loading>Loading</w-button>
     <w-button utility>Utility</w-button>

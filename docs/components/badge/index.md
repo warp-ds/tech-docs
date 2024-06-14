@@ -14,8 +14,6 @@ Badge is used for showing a small amount of non-interactive color-categorized me
 
 ## Example
 
-<theme-switcher />
-
 <badge-example />
 
 ## Usage

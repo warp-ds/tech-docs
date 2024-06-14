@@ -1,28 +1,18 @@
 <script setup>
-import { computed } from 'vue';
+import { inject } from 'vue';
 
-const themes = {
-  'Finn': 'finn-no',
-  'Tori': 'tori-fi'
-};
-
-if (typeof window !== 'undefined') {
-  window.theme = themes.Finn;
-}
-
-const selectedTheme = computed({
-  get: () => window.theme,
-  set: (value) => { window.theme = value; }
-});
+const { current: currentTheme, themes: warpThemes  } = inject('warpThemeSwitcher');
 </script>
 
 <template>
-  <div class="theme-switcher">
-    <label for="themeSelect">Select brand:</label>
-    <div class="select">
-      <select id="themeSelect" v-model="selectedTheme">
-        <option v-for="[name, value] in Object.entries(themes)" :key="name" :value="value">{{ name }}</option>
-      </select>
+  <div class="theme-switcher-container">
+    <div class="theme-switcher">
+      <label class="label" for="themeSelect">Example theme:</label>
+      <div class="select" title="Select theme to be applied to examples">
+        <select id="themeSelect" v-model="currentTheme">
+          <option v-for="[name, value] in Object.entries(warpThemes)" :key="name" :value="value">{{ name }}</option>
+        </select>
+      </div>
     </div>
   </div>
 </template>
@@ -30,24 +20,41 @@ const selectedTheme = computed({
 <style lang="scss" scoped>
 .theme-switcher {
   display: flex;
-  margin-top: 24px;
   align-items: center;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
 }
+.label {
+  font-size: 12px;
+  margin-right: 8px;
+}
+@media (min-width: 768px) {
+  .label {
+    font-size: 14px;
+  }
+}
+
 .select {
   display: grid;
   grid-template-areas: "select";
   align-items: center;
   position: relative;
-  width: 300px;
-  margin-left: 8px;
-  padding: 3px 8px;
+  width: 150px;
+  padding: 1px 8px;
+  background-color: var(--vp-c-bg);
   border: 1px solid var(--vp-c-text-2);
   border-radius: 5px;
-  background-color: transparent;
+  transition: border-color 0.25s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   select {
     grid-area: select;
     background-color: transparent;
+    cursor: pointer;
   }
 
   &::after {
@@ -61,8 +68,12 @@ const selectedTheme = computed({
   }
 
   &:focus-within {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &:hover {
     border: 2px solid var(--vp-c-brand-1);
-    padding: 2px 7px;
+    padding: 0 7px;
   }
 }
 </style>

@@ -12,8 +12,6 @@ The steps component is built to handle user journeys, making it clear to the end
 
 ## Examples
 
-<theme-switcher />
-
 <steps-example />
 
 ## Usage

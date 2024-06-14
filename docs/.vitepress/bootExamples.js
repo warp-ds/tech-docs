@@ -31,6 +31,8 @@ import Toast from '../components/toast/Example.vue';
 import Utilities from '../components/utilities/Example.vue';
 import Text from '../components/text/Example.vue';
 
+import QrColorTable from "./qr-color-table.vue";
+
 buildWc('alert-example', Alert);
 buildWc('attention-example', Attention);
 buildWc('attention-flip-example', AttentionFlip);
@@ -61,3 +63,12 @@ buildWc('textfield-example', TextField);
 buildWc('toast-example', Toast);
 buildWc('utilities-example', Utilities);
 buildWc('text-example', Text);
+
+buildWc('example-container');
+
+buildWc('background-color-table', QrColorTable, { dataId: 'backgroundColor' });
+buildWc('border-color-table', QrColorTable, { dataId: 'borderColor' });
+buildWc('divide-color-table', QrColorTable, { dataId: 'divideColor' });
+buildWc('outline-color-table', QrColorTable, { dataId: 'outlineColor' });
+buildWc('icon-color-table', QrColorTable, { dataId: 'iconColor' });
+buildWc('text-color-table', QrColorTable, { dataId: 'textColor' });

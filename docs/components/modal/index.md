@@ -12,8 +12,6 @@ Modals (or dialogs) display important information that users need to acknowledge
 
 ## Example
 
-<theme-switcher />
-
 <modal-example />
 
 ## Usage

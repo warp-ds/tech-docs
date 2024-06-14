@@ -3,35 +3,23 @@ import decamelize from "decamelize";
 import * as icons from "@warp-ds/icons/vue";
 import * as reactIcons from "@warp-ds/icons/react";
 import { wModal } from "@warp-ds/vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
-// When an existing icon is deprecated, add { old: "OldIconName", new: "NewIconName" } to the deprecatedIcons list.
+// When an existing icon is deprecated, add { old: "IconOldName16", new: "IconNewName16" } to the deprecatedIcons list.
 // This will display a deprecation message with a suggested replacement.
-const deprecatedIcons = []
+const deprecatedIcons = [];
 
-const isDeprecated = (iconName) => deprecatedIcons.find(icon => iconName.includes(icon.old)) ? true : false;
+const isDeprecated = (iconName) => deprecatedIcons.some((icon) => iconName === icon.old);
+
 const getDeprecationMessage = (iconName) => {
-  const newIconName = deprecatedIcons.find(icon => iconName.includes(icon.old)).new;
-  
-  if (newIconName) {
-    return `DEPRECATED - use ${newIconName} icon instead`;
+  const deprecatedIcon = deprecatedIcons.find((icon) => iconName === icon.old);
+  if (deprecatedIcon) {
+    return 'DEPRECATED' + (deprecatedIcon.new ? ` - use ${deprecatedIcon.new } icon instead` : '');
   }
-
-  return "DEPRECATED";
-}
+};
 
 const showModal = ref(false);
-let modalData = ref({
-  iconName: "",
-  icon: "",
-  react: "",
-  reactSyntax: "",
-  vue: "",
-  vueSyntax: "",
-  elements: "",
-  elementsIcon: "",
-  deprecationMessage: ""
-});
+const modalData = ref(null);
 
 const mappedIconsBySize = Object.keys(icons).reduce((acc, current) => {
   const matches = current.match(/\d+$/g);
@@ -43,9 +31,9 @@ const mappedIconsBySize = Object.keys(icons).reduce((acc, current) => {
   return acc;
 }, {});
 
-const getIconName = (icon) => icon.replace(/Icon|\d+/g, "");
+const getIconName = (icon) => icon.replace(/Icon|\d+/g, '');
 
-const setIconData = (icon, fullName, event) => {
+const setIconData = (icon, fullName) => {
   const reactIconName = Object.keys(reactIcons)
     .find((icon) => icon === fullName)
     .replace("Icon", "");
@@ -55,7 +43,7 @@ const setIconData = (icon, fullName, event) => {
     "$1-$2"
   );
 
-  modalData = {
+  modalData.value = {
     iconName: fullName,
     icon: icon,
     react: `import ${fullName} from '@warp-ds/icons/react/${outputString}';`,
@@ -64,103 +52,105 @@ const setIconData = (icon, fullName, event) => {
     vueSyntax: `<icon-${outputString} />`,
     elements: `import '@warp-ds/icons/elements/${outputString}';`,
     elementsSyntax: `<w-icon-${outputString}></w-icon-${outputString}>`,
-    deprecationMessage: isDeprecated(fullName) && getDeprecationMessage(fullName),
+    deprecationMessage: getDeprecationMessage(fullName),
   };
 };
 
-const reset = () => {
-  modalData = {
-    iconName: "",
-    icon: "",
-    react: "",
-    reactSyntax: "",
-    vue: "",
-    vueSyntax: "",
-    elements: "",
-    elementsSyntax: "",
-    deprecationMessage: "",
-  };
+const showIconModal = (icon, fullName) => {
+  setIconData(icon, fullName);
+  showModal.value = true;
+}
+const dismissIconModal = () => {
+  showModal.value = false;
+  modalData.value = null;
+}
+
+const copyCode = (code) => {
+  try {
+    navigator.clipboard.writeText(code);
+    console.log('Code copied to clipboard: ', code);
+  } catch (err) {
+    console.error('Failed to copy code: ', err);
+  }
+}
+
+const getIconExampleStatesClasses = (deprecated, dark) => ({
+  'ex-deprecated': deprecated,
+  's-bg-inverted': dark,
+  [deprecated ? 's-bg-warning-subtle' : 's-bg']: !dark,
+});
+
+const getListIconExampleClasses = (fullName) => {
+  const iconName = getIconName(fullName);
+  const dark = iconName.match(/Dark$/);
+  const deprecated = isDeprecated(fullName);
+  return [
+    'h-56 mb-8 flex flex-col items-center justify-center rounded-4',
+    getIconExampleStatesClasses(deprecated, dark),
+  ];
 };
+
+const modalIconExampleClasses = computed(() => {
+  const dark = modalData.value?.iconName.match(/Dark\d*$/) ?? false;
+  const deprecated = !!modalData.value?.deprecationMessage;
+  console.log(modalIconExampleClasses, dark, deprecated, modalData.value);
+  return [
+    'min-h-56 flex items-center justify-center mx-auto mb-16 p-16 border rounded-4',
+    getIconExampleStatesClasses(deprecated, dark),
+  ]
+});
 </script>
 
 <template>
-  <div>
-    <w-modal
-      v-if="modalData"
-      title="Icon usage"
-      :right="{ 'aria-label': 'Close' }"
-      @dismiss="
-        showModal = false;
-        reset();
-      "
-      v-model="showModal"
-      @right="
-        showModal = false;
-        reset();
-      "
-    >
-      <div>
-        <h2 class="t4 mb-16 text-center">
-          You can use the following import for icon: {{ modalData.iconName }}
-        </h2>
-        <p v-if="modalData.deprecationMessage" class="my-8 text-center s-text-negative">
-          {{ modalData.deprecationMessage }}
-        </p>
-        <div class="mx-auto mb-8 s-bg border rounded-4 h-56 flex items-center justify-center flex-col">
-          <component :is="modalData.icon" class="s-icon"></component>
-        </div>
-        <p>
-          Usage for React:
-          <div class="border rounded-8 my-8 p-8">{{ modalData.react }}</div>
-          <div class="border rounded-8 my-8 p-8">{{ modalData.reactSyntax}}</div>
-        </p>
-        <p>
-          Usage for Vue:
-          <div class="border rounded-8 my-8 p-8">{{ modalData.vue }}</div>
-          <div class="border rounded-8 my-8 p-8">{{ modalData.vueSyntax}}</div>
-        </p>
-        <p>
-          Usage for Elements:
-          <div class="border rounded-8 my-8 p-8">{{ modalData.elements }}</div>
-          <div class="border rounded-8 my-8 p-8">{{ modalData.elementsSyntax}}</div>
-        </p>
-      </div>
-    </w-modal>
-    <section
+  <w-modal
+    v-if="modalData"
+    v-model="showModal"
+    :title="modalData.iconName"
+    :right="{ 'aria-label': 'Close' }"
+    @dismiss="dismissIconModal"
+    @right="dismissIconModal"
+    class="docs-modal"
+  >
+    <p v-if="modalData.deprecationMessage" class="mb-8 text-center p-8 rounded s-bg-warning-subtle s-text-negative">
+      {{ modalData.deprecationMessage }}
+    </p>
+    <div :class="modalIconExampleClasses">
+      <component :is="modalData.icon" class="s-icon" />
+    </div>
+
+    <h2 class="t5 mt-32">Usage for React:</h2>
+    <p><code @click="copyCode(modalData.react)">{{ modalData.react }}</code></p>
+    <p><code @click="copyCode(modalData.reactSyntax)">{{ modalData.reactSyntax}}</code></p>
+
+    <h2 class="t5 mt-16">Usage for Vue:</h2>
+    <p><code @click="copyCode(modalData.vue)">{{ modalData.vue }}</code></p>
+    <p><code @click="copyCode(modalData.vueSyntax)">{{ modalData.vueSyntax}}</code></p>
+
+    <h2 class="t5 mt-16">Usage for Elements:</h2>
+    <p><code @click="copyCode(modalData.elements)">{{ modalData.elements }}</code></p>
+    <p><code @click="copyCode(modalData.elementsSyntax)">{{ modalData.elementsSyntax}}</code></p>
+  </w-modal>
+
+  <section
     v-for="size in Object.keys(mappedIconsBySize)"
     :key="size"
-    style="background-color: var(--vp-c-bg-alt)"
-    class="rounded-8 p-24 mb-24"
+    class="rounded-8 p-24 mb-24 bg-[--vp-c-bg-alt]"
   >
-    <h2 style="color: var(--vp-c-text-1)">{{ size }}</h2>
-    <main class="max-w-screen-xl mx-auto px-32">
-      <div class="grid gap-24 grid-cols-minmax-100px">
-        <button
-          class="bg-transparent flex"
-          @click="
-            showModal = true;
-            setIconData(icon, fullName, event);
-          "
-          v-for="(icon, fullName) in mappedIconsBySize[size]"
-          :key="fullName"
-        >
-          <div class="text-center flex-1">
-            <div
-              :class="{
-                'mx-auto mb-8 s-bg rounded-4 h-56 flex items-center justify-center flex-col': true,
-                's-bg-inverted': fullName.includes('Dark')
-              }"
-            >
-              <component :is="icon" class="s-icon"></component>
-            </div>
-            <p class="text-12" style="color: var(--vp-c-text-1)">
-              {{ getIconName(fullName) }}
-              {{ isDeprecated(fullName) ? 'DEPRECATED' : ''}}
-            </p>
-          </div>
-        </button>
-      </div>
-    </main>
+    <h3 class="t2 text-[--vp-c-text-1]">{{ size }}</h3>
+    <div class="grid gap-24 grid-cols-minmax-100px">
+      <button
+        v-for="(icon, fullName) in mappedIconsBySize[size]"
+        :key="fullName"
+        class="bg-transparent"
+        @click="showIconModal(icon, fullName)"
+      >
+        <span :class="getListIconExampleClasses(fullName)">
+          <component :is="icon" class="s-icon" />
+        </span>
+        <span class="text-detail text-[--vp-c-text-1]">
+          {{ getIconName(fullName) }} <span v-if="isDeprecated(fullName)">(DEPRECATED)</span>
+        </span>
+      </button>
+    </div>
   </section>
-  </div>
 </template>

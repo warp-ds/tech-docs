@@ -42,17 +42,37 @@
 
 # Icons
 
-Warp's icon set is designed to help users understand actions, information and draw attention to elements.
+Warp's icon set is designed to help users understand actions and information, and to draw attention to elements.
 
 <components-status react='released' vue='released' elements='released' />
 
+## Usage
+
+### Typescript support
+Starting from `@warp-ds/icons@1.3.0`, we are fully typescript compliant.
+You'll need to switch to module & moduleResolution as `NodeNext`.
+You can read more about it [here](https://www.typescriptlang.org/docs/handbook/modules/reference.html#node16-nodenext).
+
+### Internationalization
+Since warp components are internationalised, you'd need to either set `NMP_LANGUAGE` for server-side rendering of the component, or set html document lang with a two-letter-code, eg: `<html lang="en">`.
+The server-side variable is read as `process.env.NMP_LANGUAGE` so you could either define this in your `package.json` script, or use `.env` files to leverage [dotenv](https://github.com/motdotla/dotenv).
+
 <component-questions />
+
+## Examples
+
+The following icons are available in the latest version of `@warp-ds/icons` package.
+Check the [Deprecated icons](/components/icons/#deprecated-icons) section if you're migrating from previous major versions or from `@fabric-ds/icons`.
+
+Click any icon to open usage modal.
+
+<icon-example />
 
 ## Frameworks
 
 <tabs-content>
   <template #react>
-   <react />
+    <react />
   </template>
   <template #vue>
     <vue />
@@ -62,32 +82,9 @@ Warp's icon set is designed to help users understand actions, information and dr
   </template>
 </tabs-content>
 
-## Typescript support
-
-Starting from @warp-ds/icons@1.3.0, We are fully typescript compliant. You'll need to switch to module & moduleResolution as `NodeNext`. You can read more about it [here](https://www.typescriptlang.org/docs/handbook/modules/reference.html#node16-nodenext)
-
-
-## Setup
-
-Since warp components are internationalised, you'd need to either set `NMP_LANGUAGE` for server-side rendering of the component, or set html document lang with a two-letter-code, eg: `<html lang="en">`. The server-side variable is read as `process.env.NMP_LANGUAGE` so you could either define this in your package.json script, or use `.env` files to leverage [dotenv](https://github.com/motdotla/dotenv).
-
-## Examples
-
-<theme-switcher />
-
-The following icons are available in the latest version of @warp-ds/icons package. Check the [Deprecated icons](/components/icons/#deprecated-icons) section if you're migrating from previous major versions or from @fabric-ds/icons.
-
-Click any icon tile to open usage modal:
-<icon-example />
-
 ## Deprecated icons
 
-In @warp-ds/icons v2.0.0 some icons were renamed or deleted as they had similarly looking equivalents. Below you can find a list of icons and their respective replacements.
+In `@warp-ds/icons v2.0.0` some icons were renamed or deleted as they had similarly looking equivalents.
+Below you can find a list of icons and their respective replacements.
 
-<other-table :headers="['Old icon', 'New icon']" :data="deprecatedIcons" />
-
-<style>
-  .docs-table p {
-      margin: 0;
-  }
-</style>
+<other-table :headers="['Old icon', 'New icon']" :data="deprecatedIcons" plain-text />

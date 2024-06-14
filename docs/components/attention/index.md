@@ -11,8 +11,6 @@
 
 ## Examples
 
-<theme-switcher />
-
 <attention-example />
 
 ## Usage
@@ -22,6 +20,7 @@
 { name: 'Warp - Components / Tooltip', link:'https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=377-23911&mode=design' },
 { name: 'Warp - Components / Popover', link:'https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=374-22825&mode=design' },
 ]" />
+
 <component-questions />
 
 ## Frameworks
@@ -36,7 +35,7 @@
   <template #elements>
     <elements />
   </template>
-    <template #iOS>
+  <template #iOS>
     <iOS />
   </template>
 </tabs-content>

@@ -14,8 +14,6 @@ A single-line text input component.
 
 ## Example
 
-<theme-switcher />
-
 <textfield-example />
 
 ## Usage
