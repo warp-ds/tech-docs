@@ -4,7 +4,6 @@ import PropsTable from './PropsTable.vue';
 import OtherTable from './OtherTable.vue';
 import { computed } from 'vue';
 
-
 const props = defineProps({
   type: 'vue' | 'react' | 'elements',
   component: String,

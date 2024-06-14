@@ -9,8 +9,6 @@ import React from './react.md';
 
 ## Examples
 
-<theme-switcher />
-
 <tabs-example />
 
 ## Usage

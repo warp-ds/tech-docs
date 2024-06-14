@@ -70,7 +70,6 @@ The `utility` button combined with `quiet` replaces the deprecated button `pill`
 ```
 
 #### Link
-
 Buttons will be rendered as an anchor (a tag) if they use an `href` attribute.
 
 ```jsx example
@@ -87,19 +86,17 @@ However, it is not recommended to use `link` property in combination with the `h
 If there is a need to have an anchor (a tag) that should still look like a link, the recommendation is to instead use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" rel="noopener">`<a>` HTML element</a>. 
 
 #### Disabled
-
 Disabled is an anti-pattern and is not supported. There will always be users who
 don't understand why an element is disabled, or users who can't even see that it
 is disabled because of poor lighting conditions or other reasons.
 
-### Full width
-
+#### Full width
 The fullWidth prop sets the button's width to its parent's width. 
 
 ```jsx example
 <Button fullWidth primary>Full width</Button>
 ```
 
-#### Props
+### Props
 
 <api-table type=react component="Button" />

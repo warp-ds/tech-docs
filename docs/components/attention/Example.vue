@@ -13,13 +13,12 @@ const calloutShowing = ref(true)
 const popoverShowing = ref(false)
 const highlightShowing = ref(false)
 const popoverIconTargetShowing = ref(false)
-
 </script>
 
 <template>
-  <div class="component space-y-16">
+  <div class="component space-y-32">
     <div>
-      <h4>Callout</h4>
+      <h3 class="t4">Callout</h3>
       <div class="flex items-center">
         <w-box neutral aria-details="callout-bubbletext">
           I am a box full of info
@@ -35,7 +34,7 @@ const popoverIconTargetShowing = ref(false)
       </div>
     </div>
     <div>
-      <h4>Tooltip</h4>
+      <h3 class="t4">Tooltip</h3>
       <w-button
         utility
         ref="tooltipTarget"
@@ -60,7 +59,7 @@ const popoverIconTargetShowing = ref(false)
       </w-attention>
     </div>
     <div>
-      <h4>Popover</h4>
+      <h3 class="t4">Popover</h3>
       <w-button
         utility
         :aria-expanded="popoverShowing"
@@ -85,7 +84,7 @@ const popoverIconTargetShowing = ref(false)
       </w-attention>
     </div>
     <div>
-      <h4>Popover with icon as target element</h4>
+      <h3 class="t4">Popover with icon as target element</h3>
       <w-button
         :aria-expanded="popoverIconTargetShowing"
         aria-controls="popover-icon-target-example"
@@ -109,7 +108,7 @@ const popoverIconTargetShowing = ref(false)
         </w-attention>
     </div>
     <div>
-      <h4>Highlight (with optional close button)</h4>
+      <h3 class="t4">Highlight (with optional close button)</h3>
       <w-button
         utility
         :aria-expanded="highlightShowing"

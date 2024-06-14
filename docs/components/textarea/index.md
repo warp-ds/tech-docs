@@ -11,8 +11,6 @@ A multiline text input component.
 
 ## Example
 
-<theme-switcher />
-
 <textarea-example />
 
 ## Usage

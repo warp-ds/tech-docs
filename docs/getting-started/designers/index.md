@@ -51,4 +51,6 @@ As mentioned, we provide detailed usage guidance of all our components in our [W
 
 ## Get in contact with the Warp designers
 
-If you have any questions about the libraries, our tools or anything Warp related you can always reach out to us on Slack. We are here to help in any way we can. Reach out to us in #nmp-warp-design-system to make sure you get fast attention. Let’s all make sure to pitch in and create a great collaborative design system community.
+If you have any questions about the libraries, our tools or anything Warp related you can always reach out to us on Slack. We are here to help in any way we can.
+Reach out to us in [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04NF2K46LB) to make sure you get fast attention.
+Let’s all make sure to pitch in and create a great collaborative design system community.

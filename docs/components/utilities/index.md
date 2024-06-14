@@ -10,8 +10,6 @@ These utility components are available to make some layout components interactiv
 
 ## Example
 
-<theme-switcher />
-
 <utilities-example />
 
 ## Usage

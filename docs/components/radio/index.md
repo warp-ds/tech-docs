@@ -11,8 +11,6 @@ Radios allow users to select a single option from a list of mutually exclusive o
 
 ## Example
 
-<theme-switcher />
-
 <radio-example />
 
 ## Usage

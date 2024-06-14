@@ -14,8 +14,6 @@ Box is a layout component used for separating content areas on a page.
 
 ## Example
 
-<theme-switcher />
-
 <box-example />
 
 ## Usage

@@ -15,11 +15,9 @@ import { Breadcrumbs } from '@warp-ds/react/components/breadcrumbs';
 
 ```js
 <Breadcrumbs>
-  <a href="#/url/1">Page 1</a>
-  <a href="#/url/2">Page 2</a>
-  <span href="#/url/3" aria-current="page">
-   Current Page
-  </span>
+  <a href="/url/1">Page 1</a>
+  <a href="/url/2">Page 2</a>
+  <span aria-current="page">Current Page</span>
 </Breadcrumbs>
 ```
 

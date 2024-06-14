@@ -14,8 +14,6 @@ Pill is a type of button that is often used as a filter, but can also be used as
 
 ## Example
 
-<theme-switcher />
-
 <pill-example />
 
 ## Usage

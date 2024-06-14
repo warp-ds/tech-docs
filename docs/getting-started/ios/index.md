@@ -3,7 +3,7 @@
 
 This page describes how to get started building an application with Warp components.
 
-If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the #nmp-warp-design-system channel on Slack!
+If you have any questions or need clarification, please don't hesitate to reach out to the Warp team on the [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04NF2K46LB) channel on Slack!
 
 
 ## 1. Integrate Warp
@@ -11,7 +11,6 @@ If you have any questions or need clarification, please don't hesitate to reach 
 A guide on how to integrate Warp into your project.
 
 ### Swift Package Manager
-
 You can use the url for Warp on Xcode default package manager or use it like below in your Package.swift file:
 
 ```swift
@@ -51,5 +50,4 @@ Warp.Button.create(
 ```
 
 ### Legacy support
-
 All Warp components will provide a bridge to be able to use with legacy code. Check each component's documentations for more information.
