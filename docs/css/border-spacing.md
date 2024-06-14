@@ -18,7 +18,7 @@ Utilities for controlling the spacing between table borders.
 ## Basic usage
 
 ### Setting the border spacing
-Use `border-spacing` to control the space between the borders of table cells with [separate borders](/border-collapse.md#separate).
+Use `border-spacing` to control the space between the borders of table cells with [separate borders](/css/border-collapse#separate).
 
 <example-container>
   <table class="table! pd-border border-separate! border-spacing-8 w-full  pd-border-slate-400 dark:pd-border-slate-500 pd-bg-white dark:pd-bg-slate-800 pd-text-sm pd-shadow-xl" style="border-collapse: separate;" >

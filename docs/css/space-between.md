@@ -106,5 +106,5 @@ For those situations, it’s better to use the gap utilities when possible, or a
 ```
 
 ### Cannot be paired with divide utilities
-The `space-*` utilities are not designed to work together with the [divide utilities](/divide-width.md).
+The `space-*` utilities are not designed to work together with the [divide utilities](/css/divide-width).
 For those situations, consider adding margin/padding utilities to the children instead.

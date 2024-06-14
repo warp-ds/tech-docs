@@ -30,7 +30,7 @@ Utilities for controlling the placement of positioned elements.
 ## Basic usage
 
 ### Placing a positioned element
-Use the `{top|right|bottom|left|inset}-{size}` utilities to set the horizontal or vertical position of [positioned element](/position).
+Use the `{top|right|bottom|left|inset}-{size}` utilities to set the horizontal or vertical position of [positioned element](/css/position).
 
 <example-container>
   <div class="grid grid-cols-3 gap-16">

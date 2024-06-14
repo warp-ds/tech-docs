@@ -16,5 +16,5 @@ This functionality is not yet supported! If you need this, reach out to us on [#
 ### Horizontal scroll snapping
 Use the `snap-x` utility to enable horizontal scroll snapping within an element.
 
-For scroll snapping to work, you need to also set the [scroll snap alignment](/scroll-snap-align.md) on the children within the element.
+For scroll snapping to work, you need to also set the [scroll snap alignment](/css/scroll-snap-align) on the children within the element.
 
