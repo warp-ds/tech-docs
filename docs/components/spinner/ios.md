@@ -21,14 +21,14 @@ public enum SpinnerSize: Hashable {
     
     var value: Double {
         switch self {
-        case .small:
-            return 16
-        case .default:
-            return 24
-        case .large:
-            return 32
-        case .custom(let size):
-            return size
+          case .small:
+              return 16
+          case .default:
+              return 24
+          case .large:
+              return 32
+          case .custom(let size):
+              return size
         }
     }
 }
