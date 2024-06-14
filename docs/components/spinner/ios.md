@@ -1,43 +1,41 @@
+### Syntax
 
-
-## Syntax
-
-```swift example
+```swift
 func Warp.Spinner(size: SpinnerSize = .default,
-                    duration: CGFloat = 1,
-                    lineWidth: CGFloat = 3)
+                  duration: CGFloat = 1,
+                  lineWidth: CGFloat = 3)
 ```
-```swift example
+```swift
 Warp.Spinner(size: .large)
 ```
-## Visual options
 
+### Visual options
 There are a variety of variants supported for the Spinner component:
 
-```swift example
+```swift
 public enum SpinnerSize: Hashable {        
-        case small
-        case `default`
-        case large
-        case custom(Double)
-        
-        var value: Double {
-            switch self {
-            case .small:
-                return 16
-            case .default:
-                return 24
-            case .large:
-                return 32
-            case .custom(let size):
-                return size
-            }
+    case small
+    case `default`
+    case large
+    case custom(Double)
+    
+    var value: Double {
+        switch self {
+        case .small:
+            return 16
+        case .default:
+            return 24
+        case .large:
+            return 32
+        case .custom(let size):
+            return size
         }
     }
+}
 ```
 
 ### Legacy support
-Coming soon
+Coming soon...
 
 ### Parameters
 

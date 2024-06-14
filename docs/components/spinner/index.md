@@ -6,11 +6,13 @@
 
 A spinner is an animated spinning icon that informs users about the loading of content.
 
+::: warning iOS only
+For the web implementation of a "spinner", see [CSS - Animation - Spinner](/css/animation#spinner).
+:::
+
 <components-status ios='released' />
 
 ## Example
-
-<theme-switcher />
 
 <spinner-example />
 
@@ -20,10 +22,6 @@ A spinner is an animated spinning icon that informs users about the loading of c
 
 <component-questions />
 
-## Frameworks
+## iOS implementation
 
-<tabs-content> 
-  <template #iOS>
-    <iOS />
-  </template>
-</tabs-content>
+<iOS />
