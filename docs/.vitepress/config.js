@@ -25,7 +25,6 @@ const pdColorClasses = ['blue', 'cyan', 'fuchsia', 'indigo', 'pink', 'purple', '
 // These classes are for styling our docs within the shadow DOM
 // if you add a class somewhere in code, and it doesn't work, add that class here (no time to explain)
 const docsClasses = [
-  'animate-spinner', '[--spinner-size:16px]', '[--spinner-size:32px]', 'place-content-center', 'place-items-center',
   'aspect-square', 'aspect-1/1', 'aspect-2/1',
   'bg-[url(./20s-scientists.jpg)]',
   'bg-[url(./50s-scientists.jpg)]',
@@ -49,7 +48,7 @@ const docsClasses = [
   'sm:justify-around',
   'leading-[120]',
   '-m-1', '-m-[19]', '-ml-48', '-my-32', '-mx-8', '-mt-16', '-mb-48',
-  'max-w-screen-xl', 'max-w-[300]', 'max-w-[344]', 'max-w-[400]',
+  'max-w-[300]', 'max-w-[344]', 'max-w-[400]',
   'outline-[--w-s-color-border-focused]', 'outline-[--w-s-color-background-positive/40]', 'hover:outline-[--w-s-color-background-positive/100]', 'outline-[--w-black/40]', 'hover:outline-[--w-black/100]',
   'p-0!',
   'right-[26]',
@@ -76,7 +75,6 @@ const docsClasses = [
   'text-right!',
   'text-[--vp-c-text-1]',
   'group-hover:translate-x-144', 'translate-x-32', 'translate-y-32', '-translate-y-32',
-  'transition-colors',
   'translate-x-1', '-translate-x-1', 'translate-y-1', '-translate-y-1', '-translate-y-[3]', '-translate-x-[3]', 'hover:-translate-y-1',
   'w-[200]', 'w-[300]', 'w-[400]', 'before:w-14',
   '[--w-prefix-width:56px]', '[--spinner-size:16px]', '[--spinner-size:32px]',
