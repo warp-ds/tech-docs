@@ -17,7 +17,7 @@ import '@warp-ds/elements/components/toast';
 Once you have imported the component, import the toast API package like so:
 
 ```js
-import { toast, removeToast, updateToast } from '@warp-ds/elements/components/toast';
+import { toast, removeToast, updateToast } from '@warp-ds/elements/toast';
 ```
 
 ### Syntax
