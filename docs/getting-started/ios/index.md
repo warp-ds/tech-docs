@@ -34,7 +34,7 @@ To start using Warp you must first initialize the theme depending on the selecte
 Warp.Config.warpTheme = .tori
 ```
 
-Right now we support `.finn` and `.tori` with `.finn` as the default one.
+Right now we support `.finn`, `.tori` and `.dba` with `.finn` as the default one.
 
 ## 3. Use Warp components
 
@@ -48,6 +48,37 @@ Warp.Button.create(
     action: {}
 )
 ```
+
+## 4. Use Warp tokens
+
+We hightly recommend using `Warp.Token.SOME_TOKEN` to specify a color.
+To get you started tokens will start with one of the following categories:
+`Surface`
+`Background`
+`Border`
+`Icon`
+`Text`
+
+Avoid using the colors directly since they can be brand specific.
+
+```swift exmaple
+Warp.Text(
+    L10n.ConfirmPersonalData.ConfirmPersonalData.collectioninfo,
+    style: .caption,
+    color: Warp.Token.textSubtle
+)
+```
+
+Still using UIKit? We got you covered with `Warp.UIToken`.
+
+```swift exmaple
+private lazy var myView: UIView = {
+    let view = UIView(withAutoLayout: true)
+    view.backgroundColor = Warp.UIToken.background
+    return view
+}()
+```
+
 
 ### Legacy support
 All Warp components will provide a bridge to be able to use with legacy code. Check each component's documentations for more information.
