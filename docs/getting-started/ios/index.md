@@ -34,7 +34,7 @@ To start using Warp you must first initialize the theme depending on the selecte
 Warp.Config.warpTheme = .tori
 ```
 
-Right now we support `.finn` and `.tori` with `.finn` as the default one.
+Right now we support `.finn`, `.tori` and `.dba` with `.finn` as the default one.
 
 ## 3. Use Warp components
 
