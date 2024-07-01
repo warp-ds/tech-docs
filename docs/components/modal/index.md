@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import React from './react.md';
   import Android from './android.md';
+  import iOS from './ios.md';
 </script>
 
 # Modal
 
 Modals (or dialogs) display important information that users need to acknowledge. They are overlays that prevent users from interacting with the rest of the application until a specific action is taken. They can be disruptive because they require merchants to take an action before they can continue interacting with the rest of the site. It should be used thoughtfully and sparingly.
 
-<components-status react='released' vue='released' android='released' />
+<components-status react='released' vue='released' android='released'  ios='released'/>
 
 ## Example
 
@@ -36,5 +37,8 @@ All dialogs must have a title. Titles appear in bold at the top of the dialog an
   </template>
     <template #android>
     <android />
+  </template>
+    <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
