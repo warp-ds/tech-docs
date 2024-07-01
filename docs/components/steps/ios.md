@@ -12,7 +12,7 @@ Warp.StepIndicator(
 
 Use step indicators to keep the user on track when completing a specific set of tasks or processes.
 
-Horizontal Step Indictor. 
+Horizontal Step Indicator.
 ```swift example
 var steps: [Warp.StepIndicatorItem] = [
         .init(
@@ -41,7 +41,7 @@ do {
     print("Error: \(error)")
 }
 ```
-Vertical Step Indictor.
+Vertical Step Indicator.
 
 ```swift example
 var steps: [Warp.StepIndicatorItem] = [
