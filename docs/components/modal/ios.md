@@ -65,6 +65,8 @@ Warp.Modal(
     )
 ```
 
+### Legacy support
+The bridge will be added soon.
 
 ### Parameters
 

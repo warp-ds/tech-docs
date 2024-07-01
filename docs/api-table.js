@@ -2618,4 +2618,22 @@ export const iOS = {
       ]  
     ],
   },
+  StepIndicator: {
+    required: [
+    [
+      'stepModel', 
+      'Warp.StepIndicatorModel',
+      '', 
+      'An array of Warp.StepIndicatorItems wich contains title, description and progress of the steps, progress can be incomplete, inProgress, complete.'
+    ]
+  ],
+    props: [  
+      [
+        'layoutOrientation', 
+        'LayoutOrientation.vertical <br />LayoutOrientation.horizontal',
+        '.vertical', 
+        'The orientation of the step indicator'
+      ]
+    ],
+  },
 };
