@@ -13,11 +13,11 @@ DBA beta changes are now available on NPM and EIK.
 
 | Package Name       | Version        |
 | ------------------ | -------------- |
-| `@warp-ds/css`     | `2.0.0-next.1` |
-| `@warp-ds/drive`   | `2.0.0`        |
-| `@warp-ds/react`   | `2.0.0-next.0` |
-| `@warp-ds/vue`     | `2.0.0-next.0` |
-| `@warp-ds/elements`| `2.0.0-next.0` |
+| `@warp-ds/css`     | `2.0.0-next.3` |
+| `@warp-ds/uno`     | `2.0.0`        |
+| `@warp-ds/react`   | `2.0.0-next.1` |
+| `@warp-ds/vue`     | `3.0.0-next.1` |
+| `@warp-ds/elements`| `2.0.0-next.1` |
 
 #### Removing Deprecated Tokens
 
