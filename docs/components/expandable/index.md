@@ -2,13 +2,14 @@
   import Vue from './vue.md';
   import Elements from './elements.md';
   import React from './react.md';
+  import iOS from './ios.md';
 </script>
 
 # Expandable
 
 Expandable is a layout component used for creating expandable content areas on a page.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' ios='released'/>
 
 ## Examples
 
@@ -31,5 +32,8 @@ Expandable is a layout component used for creating expandable content areas on a
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
