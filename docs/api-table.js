@@ -2666,7 +2666,7 @@ export const iOS = {
         'isAnimated', 
         'Bool',
         'true', 
-        'Determines if the Expandable with expand and collapse with animation'
+        'Determines if the Expandable will expand and collapse with animation'
       ],
       [
         'isExpanded', 
