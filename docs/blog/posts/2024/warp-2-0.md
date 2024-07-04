@@ -3,7 +3,7 @@ title: '@warp-ds v2 - DBA Changes Are Here!'
 date: 2024-07-02
 ---
 
-DBA beta changes are now available on NPM and EIK.
+DBA beta changes are now available.
 
 ---
 
@@ -13,11 +13,13 @@ DBA beta changes are now available on NPM and EIK.
 
 | Package Name       | Version        |
 | ------------------ | -------------- |
-| `@warp-ds/css`     | `2.0.0-next.3` |
+| `@warp-ds/css`     | `2.0.0-next.4` |
 | `@warp-ds/uno`     | `2.0.0`        |
 | `@warp-ds/react`   | `2.0.0-next.1` |
-| `@warp-ds/vue`     | `3.0.0-next.1` |
+| `@warp-ds/vue`     | `2.1.0-next.1` |
 | `@warp-ds/elements`| `2.0.0-next.1` |
+
+You'll need to disable EIK import mapping for `react`, `vue` & `elements` until we make a stable release of these packages.
 
 #### Removing Deprecated Tokens
 
