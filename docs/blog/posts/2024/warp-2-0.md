@@ -15,9 +15,10 @@ DBA beta changes are now available.
 | ------------------ | -------------- |
 | `@warp-ds/css`     | `2.0.0-next.4` |
 | `@warp-ds/uno`     | `2.0.0`        |
-| `@warp-ds/react`   | `2.0.0-next.1` |
-| `@warp-ds/vue`     | `2.1.0-next.1` |
-| `@warp-ds/elements`| `2.0.0-next.1` |
+| `@warp-ds/react`   | `2.0.0-next.2` |
+| `@warp-ds/vue`     | `2.1.0-next.2` |
+| `@warp-ds/elements`| `2.0.0-next.2` |
+| `@warp-ds/icons`   | `2.0.3-next.1` |
 
 You'll need to disable EIK import mapping for `react`, `vue` & `elements` until we make a stable release of these packages.
 
