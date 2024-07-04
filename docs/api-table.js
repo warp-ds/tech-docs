@@ -2564,4 +2564,76 @@ export const iOS = {
     props: [  
     ],
   },
+  Modal: {
+    required: [
+    [
+      'title', 
+      'String',
+      '', 
+      'The main title text to be displayed.'
+    ],
+    [
+      'bodyText', 
+      'String',
+      '', 
+      'The main body text content of the component.'
+    ],
+    [
+      'isPresented', 
+      'Binding Bool', 
+      '', 
+      'A binding to a Boolean value that controls the visibility of the component.'
+    ],
+  ],
+    props: [
+      [
+        'subtitle', 
+        'String?', 
+        'nil', 
+        'An optional subtitle text to provide additional context or information.'
+      ],
+      [
+        'primaryButton', 
+        '(title: String, action: () -> Void)?',
+        'nil', 
+        'An optional primary button constructor for defining the primary action.'
+      ],
+      [
+        'secondaryButton', 
+        '(title: String, action: () -> Void)?',  
+        'nil', 
+        'An optional secondary button constructor for defining a secondary action.'
+      ],
+      [
+        'hasCloseButton', 
+        'Bool', 
+        'false', 
+        'A Boolean value indicating whether a close button should be shown.'
+      ],
+      [
+        'onDismiss', 
+        '(() -> Void)?', 
+        'nil', 
+        'Action to be executed when the Modal is dismissed, either by pressing the Close button or by clicking outside the Modal.'
+      ]  
+    ],
+  },
+  StepIndicator: {
+    required: [
+    [
+      'stepModel', 
+      'Warp.StepIndicatorModel',
+      '', 
+      'An array of Warp.StepIndicatorItems wich contains title, description and progress of the steps, progress can be incomplete, inProgress, complete.'
+    ]
+  ],
+    props: [  
+      [
+        'layoutOrientation', 
+        'LayoutOrientation.vertical <br />LayoutOrientation.horizontal',
+        '.vertical', 
+        'The orientation of the step indicator'
+      ]
+    ],
+  },
 };
