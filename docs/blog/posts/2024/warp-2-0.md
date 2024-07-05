@@ -1,42 +1,43 @@
 ---
 title: '@warp-ds v2 - DBA Changes Are Here!'
-date: 2024-07-02
+date: 2024-07-04
 ---
 
-DBA beta changes are now available.
+DBA beta changes for web are now available.
 
 ---
 
-### How to Update Your Apps for DBA
+# How to Update Your Web Apps for DBA
 
-#### Packages to Install from NPM
+### Packages to Install from NPM
 
-| Package Name       | Version        |
-| ------------------ | -------------- |
-| `@warp-ds/css`     | `2.0.0-next.4` |
-| `@warp-ds/uno`     | `2.0.0`        |
-| `@warp-ds/react`   | `2.0.0-next.2` |
-| `@warp-ds/vue`     | `2.1.0-next.2` |
-| `@warp-ds/elements`| `2.0.0-next.2` |
-| `@warp-ds/icons`   | `2.0.3-next.1` |
+| Package Name        | Version        |
+|---------------------|----------------|
+| `@warp-ds/css`      | `2.0.0-next.4` |
+| `@warp-ds/uno`      | `2.0.0`        |
+| `@warp-ds/react`    | `2.0.0-next.2` |
+| `@warp-ds/vue`      | `2.1.0-next.2` |
+| `@warp-ds/elements` | `2.0.0-next.2` |
+| `@warp-ds/icons`    | `2.0.3-next.1` |
 
 You'll need to disable EIK import mapping for `react`, `vue` & `elements` until we make a stable release of these packages.
 
-#### Removing Deprecated Tokens
+## Migrating from v1 to v2
 
-To ensure your apps use only the supported tokens, install `@warp-ds/preset-migrate`:
+### Removing Deprecated CSS Tokens and Classes
+To ensure your apps use only the supported tokens and classes in v2, install `@warp-ds/preset-migrate` to get build warnings and helpful hints on how to migrate:
 
 ```bash
 npm install -D @warp-ds/preset-migrate
 ```
 
-Ensure you have version 2.x.x of @warp-ds/preset-migrate.
+Ensure you have version `2.x.x` of `@warp-ds/preset-migrate`.
 
-:::info Reminder
+:::warning Reminder
 Uninstall the plugin and clean up the configuration once the migration is complete.
 :::
 
-Update your uno.config.js as follows:
+Update your `uno.config.js` as follows:
 
 ```js
 import { defineConfig } from 'unocss';
@@ -46,13 +47,13 @@ import { classes } from '@warp-ds/css/component-classes/classes';
 
 export default defineConfig({
   presets: [
-        presetWarp({ externalClasses: classes, skipResets: true }), 
-        presetMigrate()
-    ],
+    presetWarp({ externalClasses: classes, skipResets: true }), 
+    presetMigrate()
+  ],
 });
 ```
 
-If you're using vite.config.js, update it like this:
+If you're using `vite.config.js`, update it like this:
 
 ```js
 import { defineConfig } from 'vite';
@@ -73,30 +74,50 @@ export default defineConfig({
 });
 ```
 
-#### Using Fonts and Themes for DBA
+### Using Fonts and Themes for DBA
 
-Add the DBA font to your app similarly to how the tori font was added:
+#### Fonts
+Add the DBA font to your app similarly to how the Tori font was added:
 
-```js
+```html
 <link
   rel="stylesheet"
   href="https://assets.finn.no/pkg/@warp-ds/fonts/v1/dba-dk.css"
 />
 ```
 
-<h3>Brand CSS updates</h3>
+#### Brand CSS updates
 
-:::info Note
-All tokens should be updated to v2, not just the DBA token.
+New major versions of the brand stylesheets, with removed deprecations from previous versions, is needed for the DBA tokens. 
+
+:::warning Note
+All brand css token files should be updated to v2 (as well as [resets and component classes](#resets-and-component-classes)), not just the DBA tokens.
 :::
 
 - DBA: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/dba-dk.css
 - Finn: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css
 - Tori: https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/tori-fi.css
 
-Also, update the resets and component classes:
+```html
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/dba-dk.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/tori-fi.css"
+/>
+```
 
-```js
+
+#### Resets and component classes
+Make sure to also align the `resets.css` and `components.css` stylesheets to v2:
+
+```html
 <link
   rel="stylesheet"
   href="https://assets.finn.no/pkg/@warp-ds/css/v2/resets.css"
@@ -107,6 +128,8 @@ Also, update the resets and component classes:
 />
 ```
 
-#### What's next
+## What's next
 
-Since most packages are in the next branch, expect some bugs. Report any issues on the `#nmp-warp-design-system` Slack channel. We’re here to help!
+Since most packages are in the next branch, expect some bugs.
+Report any issues on the [#nmp-warp-design-system](https://sch-chat.slack.com/archives/C04P0GYTHPV) Slack channel.
+We’re here to help!
