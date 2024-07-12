@@ -218,7 +218,7 @@ Try to scroll and see how the attention component's position starts at the `bott
 ### Accessibility
 The attention component handles accessibility automatically by wrapping its slotted content with a `div` that has a default `role` attribute (`role="tooltip"` for tooltip and `role="img"` otherwise), and a default localized `aria-label`.
 
-It is possible to override the `role` and `aria-label` attributes:
+It is possible to remove the default `role` and override the `aria-label` attribute:
 
 ```vue
 <w-attention
@@ -234,7 +234,7 @@ It is possible to override the `role` and `aria-label` attributes:
 </w-attention>
 ```
 
-If the user chooses to override the `role` and `aria-label` attributes then it is important to also add `aria-details` on the target element.
+If the user chooses to remove the `role` and/or override the `aria-label` attributes then it is important to also add `aria-details` on the target element.
 
 Read more: [MDN aria-details](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details)
 
