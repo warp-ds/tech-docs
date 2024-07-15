@@ -144,6 +144,13 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/dba-dk.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
         href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css',
       },
     ],
