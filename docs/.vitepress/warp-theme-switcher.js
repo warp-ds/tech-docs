@@ -13,7 +13,7 @@ export default {
         stylesheets.forEach((s) => {
           s.setAttribute(
             'href',
-            `https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${theme}.css`,
+            `https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/${theme}.css`,
           );
         });
       });

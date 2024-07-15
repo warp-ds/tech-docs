@@ -158,7 +158,7 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css',
+        href: 'https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css',
       },
     ],
   ],

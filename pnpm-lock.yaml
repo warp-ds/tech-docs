@@ -18,20 +18,20 @@ importers:
         specifier: 10.11.0
         version: 10.11.0(vue@3.4.31)
       '@warp-ds/css':
-        specifier: 1.10.1
-        version: 1.10.1
+        specifier: 2.0.0-next.4
+        version: 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6))))
       '@warp-ds/icons':
         specifier: 2.0.2
         version: 2.0.2
       '@warp-ds/preset-docs':
         specifier: 0.0.16
-        version: 0.0.16(@warp-ds/uno@1.12.0)
+        version: 0.0.16(@warp-ds/uno@2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6))))
       '@warp-ds/react':
         specifier: 1.6.0
         version: 1.6.0(@floating-ui/dom@1.6.3)(react@18.3.1)
       '@warp-ds/uno':
-        specifier: 1.12.0
-        version: 1.12.0
+        specifier: 2.0.0
+        version: 2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6)))
       '@warp-ds/vue':
         specifier: 2.0.1
         version: 2.0.1(@floating-ui/dom@1.6.3)
@@ -869,11 +869,13 @@ packages:
     peerDependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@1.10.1':
-    resolution: {integrity: sha512-TOaxFBnvnnRJzDoyBPK4rS6bNs32Aulv2H5jzVCPGqNgncaFf4ef1k2Z1bkL4/vrR7HNXBJjfIJ50z0HAyOBAw==}
-
   '@warp-ds/css@1.9.6':
     resolution: {integrity: sha512-h1weeukiNcbapcCz4JBt71qes8gaPXG/xdWvL3BVcje3MJ3bqIwyYaer4PKfYJRIzeKCg/EWVrzylsKplI5U6Q==}
+
+  '@warp-ds/css@2.0.0-next.4':
+    resolution: {integrity: sha512-8DPGjYr+qz7FptHL/e5IPfKWxBTHGBsIi+zZPt8sVIvPAce2aPfIZ5zWjDKEjtVQtKVxrkvgZ4IFsu1K0dZbRQ==}
+    peerDependencies:
+      '@warp-ds/uno': 2.x
 
   '@warp-ds/icons@2.0.0':
     resolution: {integrity: sha512-a6Zi9CEunu5V0ScfaG42j5LoPK/U9uL5Gcv+/4D9FNQjaPuissqflUL3YpYI2PxTMIrHuyYXfUMWu8gBVGoUdg==}
@@ -896,6 +898,11 @@ packages:
 
   '@warp-ds/uno@1.12.0':
     resolution: {integrity: sha512-PVP74/FW95axmFK94IxXqCvGjcRgHJaOgNuTtkK9IZLaHUJGyipf/1Fn4A4mKjaLUo0EhE4V/7rlhB16hakeZw==}
+
+  '@warp-ds/uno@2.0.0':
+    resolution: {integrity: sha512-1X67+dsZS6m1FMlMkRgEIOww0tRzTrG4wgMGJa6rAZ9Zdb+5BZAkxRqeq+3Bix7iDn3548+NEidLF3uZWNW3aA==}
+    peerDependencies:
+      unocss: 0.x
 
   '@warp-ds/vue@2.0.1':
     resolution: {integrity: sha512-qzIUCgNy6wa+M/o3+chsIbWcje+YAsxfjfhMutEuBopN/DdODxQfy2WkAad9KJsFLLdh+TqzTG1H1vKjnlKK1w==}
@@ -2573,15 +2580,14 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@1.10.1':
-    dependencies:
-      '@warp-ds/tokenizer': 0.0.4
-      '@warp-ds/uno': 1.12.0
-
   '@warp-ds/css@1.9.6':
     dependencies:
       '@warp-ds/tokenizer': 0.0.4
       '@warp-ds/uno': 1.12.0
+
+  '@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6))))':
+    dependencies:
+      '@warp-ds/uno': 2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6)))
 
   '@warp-ds/icons@2.0.0':
     dependencies:
@@ -2591,10 +2597,10 @@ snapshots:
     dependencies:
       '@lingui/core': 4.11.1
 
-  '@warp-ds/preset-docs@0.0.16(@warp-ds/uno@1.12.0)':
+  '@warp-ds/preset-docs@0.0.16(@warp-ds/uno@2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6))))':
     dependencies:
       '@unocss/core': 0.50.8
-      '@warp-ds/uno': 1.12.0
+      '@warp-ds/uno': 2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6)))
 
   '@warp-ds/react@1.6.0(@floating-ui/dom@1.6.3)(react@18.3.1)':
     dependencies:
@@ -2622,6 +2628,13 @@ snapshots:
       '@unocss/core': 0.58.9
       '@unocss/preset-mini': 0.58.9
       '@unocss/rule-utils': 0.58.9
+
+  '@warp-ds/uno@2.0.0(unocss@0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6)))':
+    dependencies:
+      '@unocss/core': 0.61.0
+      '@unocss/preset-mini': 0.61.0
+      '@unocss/rule-utils': 0.61.0
+      unocss: 0.61.0(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.3(sass@1.77.6))
 
   '@warp-ds/vue@2.0.1(@floating-ui/dom@1.6.3)':
     dependencies:
