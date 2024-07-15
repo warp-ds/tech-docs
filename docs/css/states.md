@@ -201,7 +201,7 @@ Style the counters or bullets in lists using the marker modifier.
 Style the active text selection using the selection modifier.
 
 <example-container>
-  <div class="ex-inner-box s-text max-w-full selection:s-bg-positive-selected">
+  <div class="ex-inner-box s-text max-w-full selection:s-bg-positive">
     Space and time are two fundamental concepts that have captivated human imagination for centuries.
     Space is the vast expanse that surrounds us, both on Earth and beyond, including galaxies, stars, and planets.
     Time, on the other hand, is the dimension that dictates the order and duration of events in the universe.
@@ -212,7 +212,7 @@ Style the active text selection using the selection modifier.
 </example-container>
 
 ```html
-<div class="selection:s-bg-positive-selected">
+<div class="selection:s-bg-positive">
   Space and time are two fundamental concepts...
 </div>
 ```

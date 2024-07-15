@@ -60,7 +60,7 @@ const docsClasses = [
   's-bg-negative/10',
   's-bg-warning', 'hover:s-bg-warning-hover', 'active:s-bg-warning-active',
   's-bg-info', 'hover:s-bg-info-hover', 'active:s-bg-info-active',
-  'selection:s-bg-positive-selected',
+  'selection:s-bg-positive',
   's-border/50', 'hover:s-border/100',
   's-border-t-primary/55', 'hover:s-border-t-primary/100',
   's-divide-x-primary', 's-divide-x-primary-subtle/60',
