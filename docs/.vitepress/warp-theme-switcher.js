@@ -3,6 +3,7 @@ import { computed } from "vue";
 export default {
   install: (app) => {
     const themes = {
+      'DBA': 'dba-dk',
       'Finn': 'finn-no',
       'Tori': 'tori-fi'
     };
