@@ -49,7 +49,7 @@ const docsClasses = [
   'leading-[120]',
   '-m-1', '-m-[19]', '-ml-48', '-my-32', '-mx-8', '-mt-16', '-mb-48',
   'max-w-[300]', 'max-w-[344]', 'max-w-[400]',
-  'outline-[--w-s-color-border-focused]', 'outline-[--w-s-color-background-positive/40]', 'hover:outline-[--w-s-color-background-positive/100]', 'outline-[--w-black/40]', 'hover:outline-[--w-black/100]',
+  'outline-[--w-s-color-background-positive/40]', 'hover:outline-[--w-s-color-background-positive/100]', 'outline-[--w-black/40]', 'hover:outline-[--w-black/100]',
   'p-0!',
   'right-[26]',
   '-rotate-90',
@@ -65,7 +65,7 @@ const docsClasses = [
   's-border-t-primary/55', 'hover:s-border-t-primary/100',
   's-divide-x-primary', 's-divide-x-primary-subtle/60',
   's-icon/60', 'hover:s-icon/100', 's-icon-primary/60', 'hover:s-icon-primary/100',
-  's-outline/50', 'hover:s-outline/100', 's-outline-focused/50', 'hover:s-outline-focused/100', 'hover:s-outline-hover', 'md:s-outline-positive',
+  's-outline/50', 'hover:s-outline/100', 's-outline-focus/50', 'hover:s-outline-focus/100', 'hover:s-outline-hover', 'md:s-outline-positive',
   's-text/60', 'hover:s-text/100', 's-text-link/50', 'hover:s-text-link/100', 'text-[--w-s-color-text-positive/60]', 'hover:text-[--w-s-color-text-positive/100]', 'text-[var(--w-black)/50]', 'hover:text-[var(--w-black)/100]', 'hover:s-text-positive', 'md:s-text-positive',
   'marker:s-text-negative', 'marker:s-text-positive',
   'hover:scale-110', 'hover:scale-125',
@@ -96,7 +96,7 @@ const docsClasses = [
 ];
 
 export default defineConfig({
-  lang: 'en-US',
+  lang: 'en',
   title: 'Warp Tech',
   description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
