@@ -20,19 +20,19 @@ Use the `outline-offset-{size}` utilities to set the outline offset for an eleme
   <div class="grid grid-cols-2 md:grid-cols-4 gap-16 justify-items-center">
     <div class="text-center">
       <strong class="ex-font-dark">outline-offset-1</strong>
-      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-1 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-1 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark">outline-offset-2</strong>
-      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-2 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-2 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark">outline-offset-4</strong>
-      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark">outline-offset-8</strong>
-      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-8 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-300 h-80 w-80 rounded outline outline-offset-8 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
   </div>
 </example-container>
