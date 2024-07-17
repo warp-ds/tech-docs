@@ -12,6 +12,12 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 
 <text-color-table />
 
+::: tip New in v2
+To cater for upcoming dark mode, we've added two classes.  
+Whenever you have a text that should be "black" in both light and dark mode, use `s-text-static`.  
+If you have a text that should be "white" in both light and dark mode, use `s-text-inverted-static`.
+:::
+
 ## Basic usage
 
 ### Setting the text color
@@ -21,6 +27,8 @@ Control the text color of an element using the `text-{transparent|current}` or `
   <div class="ex-inner-box text-body">
     <strong class="s-text pd-font-mono text-s">s-text</strong>
     <p class="s-text">The quick smart warp scientist</p>
+    <strong class="s-text-static pd-font-mono text-s">s-text-satic</strong>
+    <p class="s-text-static">The quick smart warp scientist</p>
     <strong class="s-text-subtle pd-font-mono text-s">s-text-subtle</strong>
     <p class="s-text-subtle">The quick smart warp scientist</p>
     <strong class="s-text-placeholder pd-font-mono text-s">s-text-placeholder</strong>
@@ -28,6 +36,8 @@ Control the text color of an element using the `text-{transparent|current}` or `
     <div class="s-bg-inverted -mx-8 px-8 py-4 mb-8 rounded">
       <strong class="s-text-inverted pd-font-mono text-s">s-text-inverted</strong>
       <p class="s-text-inverted">The quick smart warp scientist</p>
+      <strong class="s-text-inverted-static pd-font-mono text-s">s-text-inverted-static</strong>
+      <p class="s-text-inverted-static mb-8">The quick smart warp scientist</p>
       <strong class="s-text-inverted-subtle pd-font-mono text-s">s-text-inverted-subtle</strong>
       <p class="s-text-inverted-subtle mb-0">The quick smart warp scientist</p>
     </div>
@@ -44,9 +54,11 @@ Control the text color of an element using the `text-{transparent|current}` or `
 
 ```html
 <p class="s-text">The quick smart warp scientist</p>
+<p class="s-text-static">The quick smart warp scientist</p>
 <p class="s-text-subtle">The quick smart warp scientist</p>
 <p class="s-text-placeholder">The quick smart warp scientist</p>
 <p class="s-text-inverted ...">The quick smart warp scientist</p>
+<p class="s-text-inverted-static ...">The quick smart warp scientist</p>
 <p class="s-text-inverted-subtle ...">The quick smart warp scientist</p>
 <p class="s-text-link">The quick smart warp scientist</p>
 <p class="s-text-link-disabled">The quick smart warp scientist</p>
