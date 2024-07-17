@@ -12,6 +12,12 @@ The `s-` (semantic) prefix signals that the color value of these will change wit
 
 <icon-color-table />
 
+::: tip New in v2
+To cater for upcoming dark mode, we've added two classes.  
+Whenever you have an icon that should be "black" in both light and dark mode, use `s-icon-static`.  
+If you have an icon that should be "white" in both light and dark mode, use `s-icon-inverted-static`.
+:::
+
 ## Basic usage
 
 ### Setting the icon color
