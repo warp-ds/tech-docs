@@ -69,7 +69,7 @@ The process requires to be done manually, so make sure that these modifications 
 [REPLACED] flex-grow -> use grow
 [REPLACED] last-child:mb-0 -> use last:mb-0
 [REMOVED] input -> use Warp button component instead
-[DEPRECATED] s-color-background-primary-default -> use 's-color-background-primary'
+[REPLACED] s-color-background-primary-default -> use 's-color-background-primary'
 ```
 
 ## Component changes
