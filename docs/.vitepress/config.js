@@ -246,7 +246,7 @@ export default defineConfig({
                 { text: 'Break After', link: '/css/break-after' },
                 { text: 'Break Before', link: '/css/break-before' },
                 { text: 'Break Inside', link: '/css/break-inside' },
-                { text: 'Box sizing', link: '/css/box-sizing' },
+                { text: 'Box Sizing', link: '/css/box-sizing' },
                 { text: 'Display', link: '/css/display' },
                 { text: 'Floats', link: '/css/floats' },
                 { text: 'Clear', link: '/css/clear' },

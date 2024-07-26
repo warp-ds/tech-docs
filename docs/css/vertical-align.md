@@ -15,8 +15,8 @@ Use `align-baseline` to align the baseline of an element with the baseline of it
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-baseline text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-baseline text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -35,8 +35,8 @@ Use `align-top` to align the top of an element and its descendants with the top 
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-top text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-top text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -51,8 +51,8 @@ Use `align-middle` to align the middle of an element with the baseline plus half
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-middle text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-middle text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -67,8 +67,8 @@ Use `align-bottom` to align the bottom of an element and its descendants with th
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-bottom text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-bottom text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -83,8 +83,8 @@ Use `align-text-top` to align the top of an element with the top of the parent e
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-text-top text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-text-top text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -99,8 +99,8 @@ Use `align-text-bottom` to align the bottom of an element with the bottom of the
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative" style="line-height: 1">
-      <span class="inline-block align-text-bottom text-xxl mr-10" style="line-height: 1">
+    <div class="relative leading-none">
+      <span class="inline-block align-text-bottom text-xxl mr-10 leading-none">
         <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
         <span class="relative z-20">Warp</span>
@@ -115,12 +115,12 @@ Use `align-sub` to align the bottom of an element with the subscript-baseline of
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative text-xxl" style="line-height: 1">
+    <div class="relative text-xxl leading-none">
       <div class="absolute -mx-8 inset-x-0 top-1 bottom-4">
         <span class="absolute inset-x-0 top-0 bottom-8 pd-border-pink-300 border-y-1 border-dashed"></span>
         <span class="absolute h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
       </div>
-      <span class="inline-block mr-4 relative z-20" style="line-height: 1">Warp</span>
+      <span class="inline-block mr-4 relative z-20 leading-none">Warp</span>
       <span class="align-sub text-body relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>
@@ -131,10 +131,10 @@ Use `align-super` to align the bottom of an element with the superscript-baselin
 
 <example-container>
   <div class="ex-inner-box s-text text-body max-w-full">
-    <div class="relative text-xxl" style="line-height: 1">
+    <div class="relative text-xxl leading-none">
       <span class="absolute -mx-8 inset-x-0 top-1 bottom-4 pd-border-pink-300 border-y-1 border-dashed"></span>
       <span class="absolute -mx-8 top-0 h-16 inset-x-0 pd-border-pink-300 border-b border-dashed"></span>
-      <span class="inline-block mr-4 relative z-20" style="line-height: 1">Warp</span>
+      <span class="inline-block mr-4 relative z-20 leading-none">Warp</span>
       <span class="align-super text-body relative z-20">The quick smart warp scientist drinks the hazy coffee.</span>
     </div>
   </div>

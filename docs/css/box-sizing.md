@@ -22,14 +22,14 @@ Warp makes this the default for all elements in the preflight base styles.
     <div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_3fr_1fr] gap-1 pd-font-mono pd-text-xs font-bold max-w-[300] mx-auto w-full bg-[--w-s-color-border]">
       <div class="col-start-1 row-start-1 pd-bg-white"></div>
       <div class="relative col-start-2 row-start-1 pd-bg-white">
-        <div class="absolute text-center bottom-8 -left-1 -right-1 pd-border-indigo-400 border-x-1" style="line-height:1">
+        <div class="absolute text-center bottom-8 -left-1 -right-1 pd-border-indigo-400 border-x-1 leading-none">
           <div class="absolute left-0 top-1/2 right-0 h-1 pd-bg-indigo-400"></div>
           <div class="inline-block relative pd-bg-white px-4 pd-text-indigo-600">128px</div>
         </div>
       </div>
       <div class="col-start-3 row-start-1 pd-bg-white"></div>
       <div class="relative col-start-1 row-start-2 pd-bg-white">
-        <div class="flex items-center justify-center absolute text-center right-8 w-12 -top-1 -bottom-1 pd-border-indigo-400 border-y-1" style="line-height:1">
+        <div class="flex items-center justify-center absolute text-center right-8 w-12 -top-1 -bottom-1 pd-border-indigo-400 border-y-1 leading-none">
           <div class="absolute top-0 left-1/2 bottom-0 w-1 pd-bg-indigo-400"></div>
           <div class="inline-block pd-bg-white px-4 -rotate-90 pd-text-indigo-600">128px</div>
         </div>
@@ -63,14 +63,14 @@ This means a 128px × 128px element with a 2px border and 16px of padding on all
     <div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_3fr_1fr] gap-1 pd-font-mono pd-text-xs font-bold max-w-[300] mx-auto w-full bg-[--w-s-color-border]">
       <div class="col-start-1 row-start-1 pd-bg-white"></div>
       <div class="relative col-start-2 row-start-1 pd-bg-white">
-        <div class="absolute text-center bottom-[26] -left-1 -right-1 pd-border-indigo-400 border-x-1" style="line-height:1">
+        <div class="absolute text-center bottom-[26] -left-1 -right-1 pd-border-indigo-400 border-x-1 leading-none">
           <div class="absolute left-0 top-1/2 right-0 h-1 pd-bg-indigo-400"></div>
           <div class="inline-block relative pd-bg-white px-4 pd-text-indigo-600">128px</div>
         </div>
       </div>
       <div class="col-start-3 row-start-1 pd-bg-white"></div>
       <div class="relative col-start-1 row-start-2 pd-bg-white">
-        <div class="flex items-center justify-center absolute text-center right-[26] w-12 -top-1 -bottom-1 pd-border-indigo-400 border-y-1" style="line-height:1">
+        <div class="flex items-center justify-center absolute text-center right-[26] w-12 -top-1 -bottom-1 pd-border-indigo-400 border-y-1 leading-none">
           <div class="absolute top-0 left-1/2 bottom-0 w-1 pd-bg-indigo-400"></div>
           <div class="inline-block pd-bg-white px-4 -rotate-90 pd-text-indigo-600">128px</div>
         </div>
