@@ -22,19 +22,19 @@ Use the `outline-{size}` utilities to set the outline width for an element.
   <div class="grid grid-cols-2 md:grid-cols-4 gap-16 justify-items-center">
     <div class="text-center">
       <strong class="ex-font-dark">outline</strong>
-      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-1 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-1 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark whitespace-nowrap">outline-2</strong>
-      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-2 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-2 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark whitespace-nowrap">outline-4</strong>
-      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div class="text-center">
       <strong class="ex-font-dark whitespace-nowrap">outline-8</strong>
-      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-8 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-200 h-80 w-80 rounded-4 outline outline-offset-4 outline-8 s-outline-focus my-16 mx-auto"></div>
     </div>
   </div>
 </example-container>

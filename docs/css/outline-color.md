@@ -19,12 +19,12 @@ Control the outline color of an element using the `s-outline-{semantic color}` u
 
 <example-container>
   <div class="grid gap-16 justify-items-center">
-    <div class="s-outline-focused s-bg h-80 w-80 rounded-4 outline outline-offset-2 outline-4"></div>
+    <div class="s-outline-focus s-bg h-80 w-80 rounded-4 outline outline-offset-2 outline-4"></div>
   </div>
 </example-container>
 
 ```html
-<div class="s-outline-focused outline-4 ..."></div>
+<div class="s-outline-focus outline-4 ..."></div>
 ```
 
 ### Arbitrary values
@@ -48,7 +48,7 @@ Please be advised that by using primitive variables you will lose theming possib
 <example-container class="bg-center bg-[url(./50s-scientists.jpg)]">
   <div class="grid grid-cols-4 gap-16 justify-items-center my-8">
     <div class="s-outline/50 hover:s-outline/100 s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
-    <div class="s-outline-focused/50 hover:s-outline-focused/100 s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
+    <div class="s-outline-focus/50 hover:s-outline-focus/100 s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
     <div class="outline-[--w-s-color-background-positive/40] hover:outline-[--w-s-color-background-positive/100] s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
     <div class="outline-[--w-black/40] hover:outline-[--w-black/100] s-bg backdrop-blur-m h-80 w-80 rounded-4 outline outline-offset-4 outline-8 transition-all ease-in-out duration-700"></div>
   </div>
@@ -56,7 +56,7 @@ Please be advised that by using primitive variables you will lose theming possib
 
 ```html
 <div class="s-outline/50 hover:s-outline/100 ..."></div>
-<div class="s-outline-focused/50 hover:s-outline-focused/100 ..."></div>
+<div class="s-outline-focus/50 hover:s-outline-focus/100 ..."></div>
 <div class="outline-[--w-s-color-background-positive/40] hover:bg-[--w-s-color-background-positive/100] ..."></div>
 <div class="outline-[--w-black/40] hover:outline-[--w-black/100] ..."></div>
 ```

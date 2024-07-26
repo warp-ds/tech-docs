@@ -23,19 +23,19 @@ Use the `outline-{style}` utilities to set the outline style for an element.
   <div class="grid grid-cols-2 md:grid-cols-4 gap-16 justify-items-center">
     <div>
       <strong class="ex-font-dark">outline</strong>
-      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div>
       <strong class="ex-font-dark whitespace-nowrap">outline-dashed</strong>
-      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-dashed outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-dashed outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div>
       <strong class="ex-font-dark whitespace-nowrap">outline-dotted</strong>
-      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-dotted outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-dotted outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
     <div>
       <strong class="ex-font-dark whitespace-nowrap">outline-double</strong>
-      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-double outline-offset-4 outline-4 outline-[--w-s-color-border-focused] my-16 mx-auto"></div>
+      <div class="pd-bg-violet-100 h-80 w-80 rounded-4 outline-double outline-offset-4 outline-4 s-outline-focus my-16 mx-auto"></div>
     </div>
   </div>
 </example-container>

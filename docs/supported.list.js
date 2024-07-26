@@ -185,7 +185,8 @@ export const borderColor = [
   's-border-selected',
   's-border-selected-hover',
   's-border-inverted',
-  's-border-focused',
+  's-border-focus', // Added in v2
+  's-border-focused', // Removed in v2
   's-border-primary',
   's-border-primary-hover',
   's-border-primary-active',
@@ -500,6 +501,7 @@ export const gridRowEnd = getValueClasses(['row-end'], [1,2,3,4,5,6,7]);
 
 export const iconColor = [
   's-icon',
+  's-icon-static',
   's-icon-hover',
   's-icon-active',
   's-icon-selected',
@@ -509,6 +511,7 @@ export const iconColor = [
   's-icon-subtle-hover',
   's-icon-subtle-active',
   's-icon-inverted',
+  's-icon-inverted-static',
   's-icon-inverted-hover',
   's-icon-inverted-active',
   's-icon-primary',
@@ -804,9 +807,11 @@ export const textColor = [
   'text-transparent',
   'text-current',
   's-text',
+  's-text-static',
   's-text-subtle',
   's-text-placeholder',
   's-text-inverted',
+  's-text-inverted-static',
   's-text-inverted-subtle',
   's-text-link',
   's-text-disabled',

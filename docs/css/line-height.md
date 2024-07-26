@@ -15,6 +15,8 @@ Control the Line-height of an element using the `leading-{size}` utilities.
 
 <example-container>
   <div class="ex-inner-box max-w-full s-text">
+    <strong>leading-none</strong>
+    <p class="leading-none ex-bg--striped ex-bg--fuchsia">The quick smart warp scientist</p>
     <strong>leading-xs</strong>
     <p class="leading-xs ex-bg--striped ex-bg--fuchsia">The quick smart warp scientist</p>
     <strong>leading-s</strong>

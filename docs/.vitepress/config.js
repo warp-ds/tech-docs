@@ -49,7 +49,7 @@ const docsClasses = [
   'leading-[120]',
   '-m-1', '-m-[19]', '-ml-48', '-my-32', '-mx-8', '-mt-16', '-mb-48',
   'max-w-[300]', 'max-w-[344]', 'max-w-[400]',
-  'outline-[--w-s-color-border-focused]', 'outline-[--w-s-color-background-positive/40]', 'hover:outline-[--w-s-color-background-positive/100]', 'outline-[--w-black/40]', 'hover:outline-[--w-black/100]',
+  'outline-[--w-s-color-background-positive/40]', 'hover:outline-[--w-s-color-background-positive/100]', 'outline-[--w-black/40]', 'hover:outline-[--w-black/100]',
   'p-0!',
   'right-[26]',
   '-rotate-90',
@@ -60,12 +60,12 @@ const docsClasses = [
   's-bg-negative/10',
   's-bg-warning', 'hover:s-bg-warning-hover', 'active:s-bg-warning-active',
   's-bg-info', 'hover:s-bg-info-hover', 'active:s-bg-info-active',
-  'selection:s-bg-positive-selected',
+  'selection:s-bg-positive',
   's-border/50', 'hover:s-border/100',
   's-border-t-primary/55', 'hover:s-border-t-primary/100',
   's-divide-x-primary', 's-divide-x-primary-subtle/60',
   's-icon/60', 'hover:s-icon/100', 's-icon-primary/60', 'hover:s-icon-primary/100',
-  's-outline/50', 'hover:s-outline/100', 's-outline-focused/50', 'hover:s-outline-focused/100', 'hover:s-outline-hover', 'md:s-outline-positive',
+  's-outline/50', 'hover:s-outline/100', 's-outline-focus/50', 'hover:s-outline-focus/100', 'hover:s-outline-hover', 'md:s-outline-positive',
   's-text/60', 'hover:s-text/100', 's-text-link/50', 'hover:s-text-link/100', 'text-[--w-s-color-text-positive/60]', 'hover:text-[--w-s-color-text-positive/100]', 'text-[var(--w-black)/50]', 'hover:text-[var(--w-black)/100]', 'hover:s-text-positive', 'md:s-text-positive',
   'marker:s-text-negative', 'marker:s-text-positive',
   'hover:scale-110', 'hover:scale-125',
@@ -96,7 +96,7 @@ const docsClasses = [
 ];
 
 export default defineConfig({
-  lang: 'en-US',
+  lang: 'en',
   title: 'Warp Tech',
   description: 'Documentation for Warp Design System technical platform',
   lastUpdated: false,
@@ -144,6 +144,13 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
+        href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/dba-dk.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
         href: 'https://assets.finn.no/pkg/@warp-ds/fonts/v1/finn-no.css',
       },
     ],
@@ -158,7 +165,7 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/finn-no.css',
+        href: 'https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css',
       },
     ],
   ],
@@ -239,7 +246,7 @@ export default defineConfig({
                 { text: 'Break After', link: '/css/break-after' },
                 { text: 'Break Before', link: '/css/break-before' },
                 { text: 'Break Inside', link: '/css/break-inside' },
-                { text: 'Box sizing', link: '/css/box-sizing' },
+                { text: 'Box Sizing', link: '/css/box-sizing' },
                 { text: 'Display', link: '/css/display' },
                 { text: 'Floats', link: '/css/floats' },
                 { text: 'Clear', link: '/css/clear' },

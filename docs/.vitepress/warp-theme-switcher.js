@@ -3,6 +3,7 @@ import { computed } from "vue";
 export default {
   install: (app) => {
     const themes = {
+      'DBA': 'dba-dk',
       'Finn': 'finn-no',
       'Tori': 'tori-fi'
     };
@@ -13,7 +14,7 @@ export default {
         stylesheets.forEach((s) => {
           s.setAttribute(
             'href',
-            `https://assets.finn.no/pkg/@warp-ds/css/v1/tokens/${theme}.css`,
+            `https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/${theme}.css`,
           );
         });
       });
