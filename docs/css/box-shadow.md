@@ -29,6 +29,15 @@ Use the `shadow-s`, `shadow-m`, `shadow-l`, `shadow-xl` utilities to apply diffe
 <div class="shadow-xl ...">xl</div>
 ```
 
+### Arbitrary values
+If you need to use a one-off box-shadow value, use square brackets to generate a property on the fly using any arbitrary value.
+
+```html
+<div class="shadow-[--any-css-var]"></div>
+<div class="shadow-[var(--any-css-var)]"></div>
+<div class="shadow-[10px_5px_5px_red]"></div>
+```
+
 ## Applying conditionally
 
 ### Breakpoints and media queries
