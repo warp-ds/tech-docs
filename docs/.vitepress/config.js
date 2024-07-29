@@ -398,6 +398,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: 'Box Shadow', link: '/css/box-shadow' },
+                { text: 'Drop Shadow', link: '/css/drop-shadow' },
                 { text: 'Opacity', link: '/css/opacity' },
               ],
             },        {

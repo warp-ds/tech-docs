@@ -292,6 +292,13 @@ export const boxShadow = [
   'shadow-xl',
 ];
 
+export const dropShadow = [
+  'drop-shadow-s',
+  'drop-shadow-m',
+  'drop-shadow-l',
+  'drop-shadow-xl',
+];
+
 export const breakAfter = [
   'break-after-auto',
   'break-after-avoid',
