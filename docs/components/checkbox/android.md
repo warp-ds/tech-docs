@@ -31,7 +31,7 @@ WarpCheckboxStyle {
 }
 ```
 
-To display a disbaled checkbox - either set the style to WarpCheckboxStyle.Disabled or set enabled to false
+To display a disabled checkbox - either set the style to WarpCheckboxStyle.Disabled or set enabled to false
 ```kotlin example
 WarpCheckbox(
     text = "Check this!",
