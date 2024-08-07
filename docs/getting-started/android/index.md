@@ -12,14 +12,17 @@ A guide on how to integrate Warp into your project.
 
 ### Gradle
 
-Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently only Finn and Tori are supported.
+Warp is used together with a brand theme and should be installed for a specific flavor of the code. Currently Finn, Tori and DBA are supported.
 
 ```groovy
-implementation("com.schibsted.nmp.warp:warp-android:0.0.20")
+implementation("com.schibsted.nmp.warp:warp-android:0.0.27")
 
-finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.18")
+finnImplementation("com.schibsted.nmp.warp:warp-android-finn:0.0.27")
 
-toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.19")
+toriImplementation("com.schibsted.nmp.warp:warp-android-tori:0.0.27")
+
+dbaImplementation("com.schibsted.nmp.warp:warp-android-dba:0.0.27")
+
 ```
 
 
@@ -31,7 +34,7 @@ To start using Warp you must first initialize the theme depending on the selecte
 
 @Composable
 fun WarpNmpTheme(content: @Composable () -> Unit) {
-    FinnWarpTheme(content) // or ToriWarpTheme(content) depending on the selected flavor
+    FinnWarpTheme(content) // or ToriWarpTheme(content) or DbaWarpTheme(content) depending on the selected flavor
     
 }
 ```

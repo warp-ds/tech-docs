@@ -2158,6 +2158,49 @@ export const android = {
       ],
     ],
   },
+  Checkbox: {
+    required: [
+    [
+      'text', 
+      'String', 
+      '', 
+      'The text to be displayed next to the checkbox'
+    ],
+  ],
+
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the pill',
+      ],
+      [
+        'onCheckedChange',
+          '(Boolean) -> Unit',
+          '',
+          'Lambda to be invoked when checked or unchecked',
+      ],
+      [
+        'style',
+        'WarpCheckboxStyle.Neutral <br />WarpCheckboxStyle.Disabled <br />WarpCheckboxStyle.Neutral',
+        'WarpCheckboxStyle.Neutral',
+        'Sets the appearance of the checkbox',
+      ],
+      [
+        'enabled', 
+        'boolean', 
+        'true', 
+        'Whether the checkbox is enabled or not'
+      ],
+      [
+        'checked', 
+        'boolean', 
+        'false', 
+        'Whether the checkbox is checked or not'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
