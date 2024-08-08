@@ -1,13 +1,14 @@
 <script setup>
   import Vue from './vue.md';
   import React from './react.md';
+  import Android from './android.md';
 </script>
 
 # Checkbox
 
 Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected.
 
-<components-status react='released' vue='released' />
+<components-status react='released' vue='released' android='released' />
 
 ## Example
 
@@ -15,7 +16,7 @@ Checkboxes allow users to select multiple items from a list of individual items,
 
 ## Usage
 
-<component-design-guidelines name="Warp - Components / Checkbox" link="https://www.figma.com/file/nkiRpuVu6XRfvY96BA80H8/Components-overview?type=design&node-id=103-802&mode=design" />
+<component-design-guidelines name="Warp - Components / Checkbox" link="https://www.figma.com/design/oHBCzDdJxHQ6fmFLYWUltf/WARP---Components-2.0?m=auto&node-id=381-40975&t=LAzGLAB7cHRWfpOJ-1" />
 
 <component-questions />
 
@@ -27,5 +28,8 @@ Checkboxes allow users to select multiple items from a list of individual items,
   </template>
   <template #vue>
     <vue />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>
