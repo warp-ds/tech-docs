@@ -58,9 +58,7 @@ aren't enough. You can force the hint text to always display by setting the
 
 ### Validation
 
-Selects can communicate to the user whether the current value is invalid.
-Implement your own validation logic in your app and set the `invalid` prop to
-display it as invalid.
+w-select can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
 
 `invalid` is often paired with `hint` to provide feedback to the user about the
 error.
