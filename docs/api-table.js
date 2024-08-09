@@ -1457,6 +1457,22 @@ export const elements = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
+  Modal: {
+    required: [],
+    props: [
+      ['show', 'boolean', 'false', 'Controls if the modal should show or hide'],
+      ['ignore-backdrop-clicks', 'boolean', 'false', 'Ignores clicks to the backdrop when true'],
+    ],
+  },
+  ModalHeader: {
+    required: [
+      ['title', 'string', '', 'A short but descriptive title for the modal']
+    ],
+    props: [
+      ['back', 'boolean', 'false', 'Whether the modal header should have a back button'],
+      ['no-close', 'boolean', 'false', 'Whether the modal header should have a close button'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
