@@ -13,10 +13,11 @@
   <div class="component">
     <h3 class="t4">Default Card</h3>
     <p>
-      The card can have any content but it needs at least one interactive item.
-      Here using the w-clickable component to give clickable area the same size as the card itself.
+      The card can have any content but it needs to at least have one interactive item.
+      Here we are using the Clickable component to give clickable area the same size as the card itself.
     </p>
 
+    <h5>with box-shadow (default)</h5>
     <div class="grid grid-cols-3 gap-24 mb-32 mt-24">
       <w-card class="full-width">
         <article class="p-16">
@@ -33,6 +34,31 @@
         </article>
       </w-card>
       <w-card class="full-width">
+        <article class="p-16">
+          <h2 class="h4 font-normal">
+            <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+          </h2>
+        </article>
+      </w-card>
+    </div>
+
+    <h5>without box-shadow (using the flat prop)</h5>
+    <div class="grid grid-cols-3 gap-24 mb-32 mt-24">
+      <w-card flat class="full-width">
+        <article class="p-16">
+          <h2 class="h4 font-normal">
+            <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+          </h2>
+        </article>
+      </w-card>
+      <w-card flat class="full-width">
+        <article class="p-16">
+          <h2 class="h4 font-normal">
+            <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
+          </h2>
+        </article>
+      </w-card>
+      <w-card flat class="full-width">
         <article class="p-16">
           <h2 class="h4 font-normal">
             <p><w-clickable @click="console.log('clicked')" class="text-left">Title</w-clickable></p>
@@ -72,7 +98,7 @@
     <p class="mb-32">
       The card component is meant for things like the result list items.
       You are free to use any means of layout and positioning within.
-      The card itself needs an interactive Item for the card, the w-clickable is nice for this.
+      The card itself requires an interactive item, and the Clickable component works great for that.
       If that is supplied with an href it renders as a link, otherwise it renders as a button.
     </p>
 

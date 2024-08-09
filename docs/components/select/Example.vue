@@ -6,6 +6,7 @@
   const selectModel2 = ref('');
   const selectModel3 = ref('');
   const selectModel4 = ref('');
+  const selectModel5 = ref('');
 </script>
 
 <template>
@@ -36,10 +37,16 @@
     </div>
     <div>
       <h3 class="h4">Invalid</h3>
-      <w-select required invalid v-model="selectModel4" label="Invalid">
+      <w-select required invalid v-model="selectModel4" label="Invalid select">
         <option selected value="">Pick something</option>
         <option value="foo">Foo</option>
         <option value="bar">Bar</option>
+      </w-select>
+    </div>
+    <div>
+      <h3 class="h4">Readonly</h3>
+      <w-select read-only v-model="selectModel5" label="Readonly select">
+        <option disabled selected value="">You can't pick anything</option>
       </w-select>
     </div>
   </div>
