@@ -15,10 +15,10 @@ import '@warp-ds/elements/components/select';
 
 #### Labelling
 
-A visual label should be provided for the Select using the `label` prop.
+A visual label should be provided for the w-select using the `label` prop.
 
 #### Auto-focus
-The Select will be focused on render when the `auto-focus` prop is true.
+The select component will be focused on render when the `auto-focus` prop is true.
 ```js
 <w-select label="A label" auto-focus>
   <option value='Foo' selected>Foo</option>
@@ -45,9 +45,7 @@ Add the `optional` prop to indicate that the select is not required.
 ```
 
 #### Hint text
-Selects can provide additional context with `hint` if the label and placeholder
-aren't enough. You can force the hint text to always display by setting the
-`always` prop.
+w-select can provide additional context with `hint` if the label and placeholder aren't enough. You can force the hint text to always display by setting the `always` prop.
 
 ```js
 <w-select label="A label" hint="This is a hint" always>
@@ -57,7 +55,6 @@ aren't enough. You can force the hint text to always display by setting the
 ```
 
 ### Validation
-
 w-select can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
 
 `invalid` is often paired with `hint` to provide feedback to the user about the
