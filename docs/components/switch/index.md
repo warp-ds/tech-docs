@@ -7,6 +7,8 @@
 
 The Switch component allows users to toggle between validity for a condition.
 
+<components-status react='released' vue='released' />
+
 ## Examples
 
 <switch-example />
