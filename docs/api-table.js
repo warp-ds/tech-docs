@@ -300,7 +300,6 @@ export const react = {
     props: [
       ['className', 'string', '', 'Additional classes to include'],
       ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
-      ['~~info~~', 'boolean', 'false', 'Styles the box with a color. @deprecated Do not use.'],
       [
         'expanded',
         'boolean',
@@ -1010,7 +1009,6 @@ export const vue = {
         '',
         'Will make the expandable full-width on sm-size',
       ],
-      ['~~info~~', 'boolean', 'false', 'Styles the box with a color. @deprecated Do not use.'],
       [
         'buttonClass',
         'string',
@@ -1419,7 +1417,6 @@ export const elements = {
         '',
         'Will make the expandable full-width on sm-size',
       ],
-      ['~~info~~', 'boolean', 'false', 'TStyles the box with a color. @deprecated Do not use.'],
       ['box', 'boolean', 'false', 'Will make the expandable a Box'],
       ['animated', 'boolean', 'false', 'Will animate the expansion/collapse'],
       [
