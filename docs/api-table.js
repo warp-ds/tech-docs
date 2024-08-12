@@ -813,12 +813,8 @@ export const vue = {
     ],
     props: [
       [
-        'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position. Replaces props `bottom`, `top`, `left`, `right`',
+        'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position.',
       ],
-      ['~~bottom~~', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['~~top~~', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['~~left~~', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['~~right~~', 'boolean', 'false', '@deprecated use `placement` instead'],
       ['tooltip', 'boolean', 'false', 'Render tooltip'],
       ['callout', 'boolean', 'false', 'Whether Attention component is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention component is rendered as a popover'],
