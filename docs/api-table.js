@@ -255,7 +255,7 @@ export const react = {
         'optional',
         'boolean',
         '',
-        'Whether to show optional text',
+        'Mark label to indicate that this combobox is optional.',
       ],
     ],
     events: [
@@ -418,8 +418,8 @@ export const react = {
       ],
       ['value', 'string', '', 'The current value (controlled).'],
       ['label', 'ReactNode', '', 'The content to display as the label.'],
-      ['optional', 'boolean', '', 'Whether to show optional text.'],
-      ['hint', 'ReactNode', '', 'The content to display as the help text.'],
+      ['optional', 'boolean', '', 'Mark label to indicate that this select is optional.'],
+      ['hint', 'ReactNode', '', 'The content to display as the hint.'],
       ['always', 'boolean', '', 'Whether to always show hint.'],
       [
         'invalid',
@@ -1055,14 +1055,14 @@ export const vue = {
 
       ['label', 'string', '', 'The content to display as the label'],
       ['hint', 'string', '', 'The string can contain HTML.'],
-      ['invalid', 'boolean', '', 'Renders the field in an invalid state. Often paired with `hint`to provide feedback about the error.'],
+      ['invalid', 'boolean', '', 'Renders the field in an invalid state. Often paired with `hint` to provide feedback about the error.'],
       [
         'label-level',
         'number',
         '',
         'Usable on toggles, will make the emitted legend element into a heading for accessibility.',
       ],
-      ['optional', 'string', '', 'Whether to show optional text'],
+      ['optional', 'string', '', 'Mark label to indicate that this input is optional.'],
       ['read-only', 'string', '', 'Whether the input can be selected but not changed by the user.'],
       
       
@@ -1498,10 +1498,10 @@ export const elements = {
         'Renders the field in an invalid state. Often paired together with `hint` to provide feedback about the error.',
       ],
       ['always', 'boolean', '', 'Whether to always show hint.'],
-      ['hint', 'string', '', 'The content to display as the help text.'],
+      ['hint', 'string', '', 'The content to display as the hint.'],
       ['label', 'string', '', 'The content to display as the label.'],
       ['name', 'string', '', 'The name of the select element, used when submitting an HTML form.'],
-      ['optional', 'boolean', '', 'Whether to show optional text.'],
+      ['optional', 'boolean', '', 'Mark label to indicate that this input is optional.'],
       ['disabled', 'boolean', '', 'Whether the input is disabled.'],
       [
         'read-only',
