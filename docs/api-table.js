@@ -69,9 +69,9 @@ export const react = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',
@@ -107,12 +107,6 @@ export const react = {
         'string',
         'region',
         'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
-      ],
-      [
-        '~~clickable~~',
-        'boolean',
-        'false',
-        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
       ],
     ],
   },
@@ -839,9 +833,9 @@ export const vue = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',
@@ -874,12 +868,6 @@ export const vue = {
         'string',
         'region',
         'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
-      ],
-      [
-        '~~clickable~~',
-        'boolean',
-        'false',
-        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
       ],
     ],
   },
@@ -1301,9 +1289,9 @@ export const elements = {
     props: [
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',

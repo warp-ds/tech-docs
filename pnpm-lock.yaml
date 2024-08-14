@@ -18,8 +18,8 @@ importers:
         specifier: 10.11.0
         version: 10.11.0(vue@3.4.34)
       '@warp-ds/css':
-        specifier: 2.0.0-next.4
-        version: 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+        specifier: 2.0.0
+        version: 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/icons':
         specifier: 2.0.2
         version: 2.0.2
@@ -28,13 +28,13 @@ importers:
         version: 0.0.16(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/react':
         specifier: 2.0.0-next.3
-        version: 2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)
+        version: 2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)
       '@warp-ds/uno':
         specifier: 2.0.0
         version: 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       '@warp-ds/vue':
-        specifier: 2.1.0-next.3
-        version: 2.1.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
+        specifier: 2.1.0
+        version: 2.1.0(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       camelcase:
         specifier: 8.0.0
         version: 8.0.0
@@ -882,8 +882,8 @@ packages:
     peerDependencies:
       '@floating-ui/dom': 1.6.x
 
-  '@warp-ds/css@2.0.0-next.4':
-    resolution: {integrity: sha512-8DPGjYr+qz7FptHL/e5IPfKWxBTHGBsIi+zZPt8sVIvPAce2aPfIZ5zWjDKEjtVQtKVxrkvgZ4IFsu1K0dZbRQ==}
+  '@warp-ds/css@2.0.0':
+    resolution: {integrity: sha512-Q+ZKhskE2eLg3EhCDDG+ox73GtZ+47SN3MDudE8muB5ESJ2Bb7ga+hD+KnvrNJxBLzqtQxGgL13XxJyEfYf1ZQ==}
     peerDependencies:
       '@warp-ds/uno': 2.x
 
@@ -906,10 +906,10 @@ packages:
     peerDependencies:
       unocss: 0.x
 
-  '@warp-ds/vue@2.1.0-next.3':
-    resolution: {integrity: sha512-yJo3zBKktc6Cg2fRf+EweOF1g1tI+SMioJkOuv234u7SrIYTcYn/D5hcTYKkZQWF25f38EMsBe/VftHAmXK9Sw==}
+  '@warp-ds/vue@2.1.0':
+    resolution: {integrity: sha512-hoj8D7LP+UnV2DB+dLU7ENjkxYFrPbygK2e1tGIqvXqP1r45RO4oVglj/Fa6s+Jn03nQkc3lKv+h5yNkBG/+IA==}
     peerDependencies:
-      '@warp-ds/css': 2.0.0-next.4
+      '@warp-ds/css': 2.0.0
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
@@ -2510,7 +2510,7 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))':
+  '@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))':
     dependencies:
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
 
@@ -2523,12 +2523,12 @@ snapshots:
       '@unocss/core': 0.50.8
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
 
-  '@warp-ds/react@2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)':
+  '@warp-ds/react@2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)':
     dependencies:
       '@chbphone55/classnames': 2.0.0
       '@lingui/core': 4.11.2
       '@warp-ds/core': 1.1.5(@floating-ui/dom@1.6.3)
-      '@warp-ds/css': 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+      '@warp-ds/css': 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/icons': 2.0.2
       react: 18.3.1
       react-focus-lock: 2.12.1(react@18.3.1)
@@ -2545,11 +2545,11 @@ snapshots:
       '@unocss/rule-utils': 0.61.0
       unocss: 0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))
 
-  '@warp-ds/vue@2.1.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))':
+  '@warp-ds/vue@2.1.0(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))':
     dependencies:
       '@lingui/core': 4.11.2
       '@warp-ds/core': 1.1.5(@floating-ui/dom@1.6.3)
-      '@warp-ds/css': 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+      '@warp-ds/css': 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/icons': 2.0.2
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       create-v-model: 2.2.0
