@@ -13,7 +13,7 @@
     "@warp-ds/css": "2.0.0",
     "@warp-ds/icons": "2.0.2",
     "@warp-ds/preset-docs": "0.0.16",
-    "@warp-ds/react": "2.0.0-next.3",
+    "@warp-ds/react": "2.0.0",
     "@warp-ds/uno": "2.0.0",
     "@warp-ds/vue": "2.1.0",
     "decamelize": "6.0.0",
