@@ -3,11 +3,11 @@ title: '@warp-ds v2 - Stable releases'
 date: 2024-08-15
 ---
 
-We now have stable releases out for web with DBA changes.
+Stable releases with DBA changes for web are now available.
 
 ---
 
-# How to Update Your Web Apps for DBA with stable releases
+# How to Update Your Web Apps for DBA
 
 ### Packages to Install from NPM
 
@@ -22,5 +22,52 @@ We now have stable releases out for web with DBA changes.
 
 If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now re-enable it.
 
+For further instructions on how to migrate from v1 to v2, please follow [these instructions](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0#migrating-from-v1-to-v2).
+
 ## Breaking changes
+### @warp-ds/css 2.0.0
+The following exported objects/classes have been removed:
+
+| Exported object            | Class name(s)                                                            | Note                                                          |
+|----------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------|
+| backwardsCompatibleClasses |                                                                          | Entire exported object has been removed                       |
+| badge                      | `borderedClickable`, `infoClickable`, `neutralClickable`, `notification` | Removed                                                       |
+| card                       | `cardUnselected`                                                         | Removed                                                       |
+| expandable                 | `chevronBox`, `expandableInfo`                                           | Removed                                                       |
+| helpText                   | `helpTextValid`, `helpTextInvalid`                                       | Removed                                                       |
+| label                      | `labelInvalid`                                                           | Removed                                                       |
+| modal                      | `transparentBg`                                                          | Removed                                                       |
+| ribbon                     |                                                                          | Entire exported object has been removed and replaced by badge |
+| switchToggle               | `switch`                                                                 | Removed                                                       |
+
+
+
+### @warp-ds/react 2.0.0
+The following properties have been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Box        | Clickable              | Removed                           |
+| Card       | onClick                | Removed                           |
+| Expandable | Info                   | Removed                           |
+
+
+### @warp-ds/vue 2.1.0
+The following properties/components have been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Badge      | Variant `notification` | Removed                           |
+| Box        | Clickable              | Removed                           |
+| Expandable | Info                   | Removed                           |
+| Suffix     |                        | Entire component has been removed |
+| Tag        |                        | Entire component has been removed |
+
+### @warp-ds/elements 2.0.0
+The following property has been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Expandable | Info                   | Removed                           |
+
 
