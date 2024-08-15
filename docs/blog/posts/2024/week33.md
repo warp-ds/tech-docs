@@ -25,6 +25,42 @@ If you have already followed the [previous instructions for the DBA beta changes
 For further instructions on how to migrate from v1 to v2, please follow [these instructions](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0#migrating-from-v1-to-v2).
 
 ## Breaking changes
+### @warp-ds/react 2.0.1
+[Changelog](https://github.com/warp-ds/react/releases/tag/v2.0.0)
+
+The following properties have been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Badge      | variant `notification` | Removed                           |
+| Box        | clickable              | Removed                           |
+| Card       | onClick                | Removed                           |
+| Expandable | info                   | Removed                           |
+
+
+### @warp-ds/vue 2.1.0
+[Changelog](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
+
+The following properties/components have been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Badge      | variant `notification` | Removed                           |
+| Box        | clickable              | Removed                           |
+| Expandable | info                   | Removed                           |
+| Suffix     |                        | Entire component has been removed |
+| Tag        |                        | Entire component has been removed |
+
+### @warp-ds/elements 2.0.1
+[Changelog](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
+
+The following property has been removed:
+
+| Component  | Property               | Note                              |
+|------------|------------------------|-----------------------------------|
+| Badge      | variant `notification` | Removed                           |
+| Expandable | info                   | Removed                           |
+
 ### @warp-ds/css 2.0.0
 [Changelog](https://github.com/warp-ds/css/releases/tag/v2.0.0)
 
@@ -42,40 +78,5 @@ The following exported objects/classes have been removed:
 | ribbon                     |                                                                          | Entire exported object has been removed and replaced by badge |
 | switchToggle               | `switch`                                                                 | Removed                                                       |
 
-
-
-### @warp-ds/react 2.0.0
-[Changelog](https://github.com/warp-ds/react/releases/tag/v2.0.0)
-
-The following properties have been removed:
-
-| Component  | Property               | Note                              |
-|------------|------------------------|-----------------------------------|
-| Box        | Clickable              | Removed                           |
-| Card       | onClick                | Removed                           |
-| Expandable | Info                   | Removed                           |
-
-
-### @warp-ds/vue 2.1.0
-[Changelog](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
-
-The following properties/components have been removed:
-
-| Component  | Property               | Note                              |
-|------------|------------------------|-----------------------------------|
-| Badge      | Variant `notification` | Removed                           |
-| Box        | Clickable              | Removed                           |
-| Expandable | Info                   | Removed                           |
-| Suffix     |                        | Entire component has been removed |
-| Tag        |                        | Entire component has been removed |
-
-### @warp-ds/elements 2.0.0
-[Changelog](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
-
-The following property has been removed:
-
-| Component  | Property               | Note                              |
-|------------|------------------------|-----------------------------------|
-| Expandable | Info                   | Removed                           |
 
 
