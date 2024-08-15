@@ -15,9 +15,9 @@ Stable releases with DBA changes for web are now available.
 |---------------------|----------------|
 | `@warp-ds/css`      | `2.0.0`        |
 | `@warp-ds/uno`      | `2.0.0`        |
-| `@warp-ds/react`    | `2.0.1`        |
+| `@warp-ds/react`    | `2.0.0`        |
 | `@warp-ds/vue`      | `2.1.1`        |
-| `@warp-ds/elements` | `2.0.1`        |
+| `@warp-ds/elements` | `2.0.0`        |
 | `@warp-ds/icons`    | `2.1.0`        |
 
 If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now re-enable it.
@@ -25,10 +25,10 @@ If you have already followed the [previous instructions for the DBA beta changes
 For further instructions on how to migrate from v1 to v2, please follow [these instructions](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0#migrating-from-v1-to-v2).
 
 ## Breaking changes
-### @warp-ds/react 2.0.1
+### @warp-ds/react 2.0.0
 [Changelog for @warp-ds/react 2.0.0](https://github.com/warp-ds/react/releases/tag/v2.0.0)
 
-[Changelog for @warp-ds/react 2.0.1](https://github.com/warp-ds/react/releases/tag/v2.0.1)
+[Changelog for @warp-ds/react 2.0.1-next.1](https://github.com/warp-ds/react/releases/tag/v2.0.1-next.1)
 
 
 The following properties have been removed:
@@ -57,10 +57,10 @@ The following properties/components have been removed:
 | Suffix     |                        | Entire component has been removed |
 | Tag        |                        | Entire component has been removed |
 
-### @warp-ds/elements 2.0.1
+### @warp-ds/elements 2.0.0
 [Changelog for @warp-ds/elements 2.0.0](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
 
-[Changelog for @warp-ds/elements 2.0.1](https://github.com/warp-ds/elements/releases/tag/v2.0.1)
+[Changelog for @warp-ds/elements 2.0.1-next.2](https://github.com/warp-ds/elements/releases/tag/v2.0.1-next.2)
 
 
 The following properties have been removed:
