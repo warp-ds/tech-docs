@@ -15,10 +15,10 @@ Stable releases with DBA changes for web are now available.
 |---------------------|----------------|
 | `@warp-ds/css`      | `2.0.0`        |
 | `@warp-ds/uno`      | `2.0.0`        |
-| `@warp-ds/react`    | `2.0.0`        |
-| `@warp-ds/vue`      | `2.1.0`        |
-| `@warp-ds/elements` | `2.0.0`        |
-| `@warp-ds/icons`    | `2.1.0-next.2` |
+| `@warp-ds/react`    | `2.0.1`        |
+| `@warp-ds/vue`      | `2.1.1`        |
+| `@warp-ds/elements` | `2.0.1`        |
+| `@warp-ds/icons`    | `2.1.0`        |
 
 If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now re-enable it.
 
@@ -26,7 +26,10 @@ For further instructions on how to migrate from v1 to v2, please follow [these i
 
 ## Breaking changes
 ### @warp-ds/react 2.0.1
-[Changelog](https://github.com/warp-ds/react/releases/tag/v2.0.0)
+[Changelog for @warp-ds/react 2.0.0](https://github.com/warp-ds/react/releases/tag/v2.0.0)
+
+[Changelog for @warp-ds/react 2.0.1](https://github.com/warp-ds/react/releases/tag/v2.0.1)
+
 
 The following properties have been removed:
 
@@ -38,8 +41,11 @@ The following properties have been removed:
 | Expandable | info                   | Removed                           |
 
 
-### @warp-ds/vue 2.1.0
-[Changelog](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
+### @warp-ds/vue 2.1.1
+[Changelog for @warp-ds/vue 2.1.0](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
+
+[Changelog for @warp-ds/vue 2.1.1](https://github.com/warp-ds/vue/releases/tag/v2.1.1)
+
 
 The following properties/components have been removed:
 
@@ -52,9 +58,12 @@ The following properties/components have been removed:
 | Tag        |                        | Entire component has been removed |
 
 ### @warp-ds/elements 2.0.1
-[Changelog](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
+[Changelog for @warp-ds/elements 2.0.0](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
 
-The following property has been removed:
+[Changelog for @warp-ds/elements 2.0.1](https://github.com/warp-ds/elements/releases/tag/v2.0.1)
+
+
+The following properties have been removed:
 
 | Component  | Property               | Note                              |
 |------------|------------------------|-----------------------------------|
