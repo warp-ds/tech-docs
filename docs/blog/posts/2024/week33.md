@@ -26,6 +26,8 @@ For further instructions on how to migrate from v1 to v2, please follow [these i
 
 ## Breaking changes
 ### @warp-ds/css 2.0.0
+[Changelog](https://github.com/warp-ds/css/releases/tag/v2.0.0)
+
 The following exported objects/classes have been removed:
 
 | Exported object            | Class name(s)                                                            | Note                                                          |
@@ -43,6 +45,8 @@ The following exported objects/classes have been removed:
 
 
 ### @warp-ds/react 2.0.0
+[Changelog](https://github.com/warp-ds/react/releases/tag/v2.0.0)
+
 The following properties have been removed:
 
 | Component  | Property               | Note                              |
@@ -53,6 +57,8 @@ The following properties have been removed:
 
 
 ### @warp-ds/vue 2.1.0
+[Changelog](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
+
 The following properties/components have been removed:
 
 | Component  | Property               | Note                              |
@@ -64,6 +70,8 @@ The following properties/components have been removed:
 | Tag        |                        | Entire component has been removed |
 
 ### @warp-ds/elements 2.0.0
+[Changelog](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
+
 The following property has been removed:
 
 | Component  | Property               | Note                              |
