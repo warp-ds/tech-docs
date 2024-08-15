@@ -15,9 +15,9 @@ Stable releases with DBA changes for web are now available.
 |---------------------|----------------|
 | `@warp-ds/css`      | `2.0.0`        |
 | `@warp-ds/uno`      | `2.0.0`        |
-| `@warp-ds/react`    | `2.0.0`        |
+| `@warp-ds/react`    | `2.0.1`        |
 | `@warp-ds/vue`      | `2.1.1`        |
-| `@warp-ds/elements` | `2.0.0`        |
+| `@warp-ds/elements` | `2.0.1`        |
 | `@warp-ds/icons`    | `2.1.0`        |
 
 If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now re-enable it.
@@ -25,10 +25,10 @@ If you have already followed the [previous instructions for the DBA beta changes
 For further instructions on how to migrate from v1 to v2, please follow [these instructions](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0#migrating-from-v1-to-v2).
 
 ## Breaking changes
-### @warp-ds/react 2.0.0
-[Changelog for @warp-ds/react 2.0.0](https://github.com/warp-ds/react/releases/tag/v2.0.0)
+### @warp-ds/react 2.0.1
+[Changelog for @warp-ds/react 2.0.1](https://github.com/warp-ds/react/releases/tag/v2.0.1)
 
-[Changelog for @warp-ds/react 2.0.1-next.1](https://github.com/warp-ds/react/releases/tag/v2.0.1-next.1)
+[Changelog for @warp-ds/react 2.0.0](https://github.com/warp-ds/react/releases/tag/v2.0.0)
 
 
 The following properties have been removed:
@@ -57,10 +57,10 @@ The following properties/components have been removed:
 | Suffix     |                        | Entire component has been removed |
 | Tag        |                        | Entire component has been removed |
 
-### @warp-ds/elements 2.0.0
-[Changelog for @warp-ds/elements 2.0.0](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
+### @warp-ds/elements 2.0.1
+[Changelog for @warp-ds/elements 2.0.1](https://github.com/warp-ds/elements/releases/tag/v2.0.1)
 
-[Changelog for @warp-ds/elements 2.0.1-next.2](https://github.com/warp-ds/elements/releases/tag/v2.0.1-next.2)
+[Changelog for @warp-ds/elements 2.0.0](https://github.com/warp-ds/elements/releases/tag/v2.0.0)
 
 
 The following properties have been removed:
@@ -73,19 +73,31 @@ The following properties have been removed:
 ### @warp-ds/css 2.0.0
 [Changelog](https://github.com/warp-ds/css/releases/tag/v2.0.0)
 
-The following exported objects/classes have been removed:
+The following exported objects/classes have either been removed or renamed:
 
-| Exported object            | Class name(s)                                                            | Note                                                          |
-|----------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------|
-| backwardsCompatibleClasses |                                                                          | Entire exported object has been removed                       |
-| badge                      | `borderedClickable`, `infoClickable`, `neutralClickable`, `notification` | Removed                                                       |
-| card                       | `cardUnselected`                                                         | Removed                                                       |
-| expandable                 | `chevronBox`, `expandableInfo`                                           | Removed                                                       |
-| helpText                   | `helpTextValid`, `helpTextInvalid`                                       | Removed                                                       |
-| label                      | `labelInvalid`                                                           | Removed                                                       |
-| modal                      | `transparentBg`                                                          | Removed                                                       |
-| ribbon                     |                                                                          | Entire exported object has been removed and replaced by badge |
-| switchToggle               | `switch`                                                                 | Removed                                                       |
+| Exported object            | Class name(s)                                                            | Note                                                              |
+|----------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|
+| alert                      | `alert`                                                                  | Renamed to `wrapper`                                              |
+| backwardsCompatibleClasses |                                                                          | Entire exported object has been removed                           |
+| badge                      | `borderedClickable`, `infoClickable`, `neutralClickable`, `notification` | Removed                                                           |
+| box                        | `box`                                                                    | Renamed to `base`                                                 |
+| card                       | `card`, `cardShadow`, `cardSelected`, `cardOutline`, `cardUnselected`, `cardOutlineUnselected`, `cardOutlineSelected`, `cardFlat`, `cardFlatUnselected`, `cardFlatSelected`                                                                                      | Removed; `cardUnselected` <br> Renamed: `card` --> `base`, `cardShadow` --> `shadow`, `cardSelected` --> `selected`, `cardOutline` --> `outline`, `cardOutlineUnselected` --> `outlineUnselected`, `cardOutlineSelected` --> `outlineSelected`, `cardFlat` --> `flat`, `cardFlatUnselected` --> `flatUnselected`, `cardFlatSelected` --> `flatSelected`                                                                                                                 |
+| combobox                   | `combobox`                                                               | Renamed to `base`,                                   |
+| expandable                 | `expandable`, `expandableTitle`, `expandableBox`, `expandableBleed`, `expandableInfo`, `chevronBox`, `elementsTransformChevronDownPart`, `elementsChevronDownExpandPart`, `elementsTransformChevronUpPart`, `elementsChevronUpCollapsePart`, `paddingTop`      | Removed: `expandableTitle`, `expandableInfo`, `chevronBox`, <br> Renamed: `expandable` --> `wrapper`, `expandableBox` --> `box`, `expandableBleed` --> `bleed`, `elementsTransformChevronDownPart` --> `elementsChevronDownTransform`, `elementsChevronDownExpandPart` --> `elementsChevronExpand`, `elementsTransformChevronUpPart` --> `elementsChevronUpTransform`, `elementsChevronUpCollapsePart` --> `elementsChevronCollapse`, `paddingTop` --> `contentWithTitle`                                            |
+| helpText                   | `helpText`, `helpTextColor`, `helpTextColorInvald`, `helpTextValid`, `helpTextInvalid` | Removed: `helpTextValid`, `helpTextInvalid` <br> Renamed: `helpText` --> `base`, `helpTextColor` --> `color`, `helpTextColorInvald` --> `colorInvalid`                                                           |
+| label                      | `label`, `labelInvalid`                                                  | Removed: `labelInvalid`, Renamed: `label` --> `base`              |
+| modal                      | `modal`, `transparentBg`                                                 | Removed: `transparentBg` <br> Renamed: `modal` --> `base`         |
+| pill                       | `pill`                                                                   | Renamed to `wrapper`                                              |
+| ribbon                     |                                                                          | Entire exported object has been removed and replaced by badge     |
+| step                       | `step`, `stepVertical`, `stepVerticalLeft`, `stepVerticalRight`, `stepHorizontal`, `stepDot`, `stepDotVerticalRight`, `stepDotHorizontal`, `stepDotActive`, `stepDotIncomplete`, `stepLine`, `stepLineVertical`, `stepLineVerticalRight`, `stepLineHorizontal`, `stepLineHorizontalRight`, `stepLineHorizontalLeft`, `stepLineIncomplete`, `stepLineComplete`                                                                                      | Renamed: `step` --> `base`, `stepVertical` --> `vertical`, `stepVerticalLeft` --> `alignLeft`, `stepVerticalRight` --> `alignRight`, `stepHorizontal` --> `horizontal`, `stepDot` --> `dot`, `stepDotVerticalRight` --> `dotAlignRight`, `stepDotHorizontal` --> `dotHorizontal`, `stepDotActive` --> `dotActive`, `stepDotIncomplete` --> `dotIncomplete`, `stepLine` --> `line`, `stepLineVertical` --> `lineVertical`, `stepLineVerticalRight` --> `lineAlignRight`, `stepLineHorizontal` --> `lineHorizontal`, `stepLineHorizontalRight` --> `lineHorizontalAlignRight`, `stepLineHorizontalLeft` --> `lineHorizontalAlignLeft`, `stepLineIncomplete` --> `lineIncomplete`, `stepLineComplete` --> `lineComplete`                                                                                                                                       |
+| steps                       | `steps`, `stepsHorizontal`                                              | Renamed: `steps` --> `wrapper`, `stepsHorizontal` --> `horizontal`|
+| switchToggle                | `label`, `labelDisabled`, `switch`                                      | Removed: `switch` <br> Renamed: `label` --> base, `labelDisabled` --> `disabled`                                                                                                                                                                  |
+| tabs                       | `tabContainer`, `wunderbar`, `wrapperUnderlined`                         | Removed: `wrapperUnderlined` <br> Renamed: `tabContainer` --> `wrapper`, `wunderbar` --> `selectionIndicator`                                                                                                                                                        |
+| tab                         | `tab`, `tabActive`, `iconUnderlinedActive`, `contentUnderlinedActive`   | Removed: `inconUnderlinedActive`, `contentUnderlinedActive` <br> Renamed: `tab` --> `base`, `tabActive` --> `active`                |
+| toast                       | `toast`, `icon`                                                         | Renamed: `toast` --> `base`, `icon` --> `iconBase`                |
+| toaster                     | `container`, `toaster`                                                  | Renamed: `container` --> `wrapper`, `toaster` --> `base`          |
+
+
 
 
 
