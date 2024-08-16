@@ -110,9 +110,9 @@ From 2.0.0 @warp-ds/uno expects the newest v2 tokens to be in place
 
 The following rules have been changed/removed:
 
-| Rule       | Token                      | Note                                                                                                      |
-|------------|----------------------------|-----------------------------------------------------------------------------------------------------------|
-| focus-ring | `var(--w-s-color-focused)` | Removed deprecated fallback                                                                               |
+| Rule       | Token                      | Note                                                                                                       |
+|------------|----------------------------|------------------------------------------------------------------------------------------------------------|
+| focus-ring | `var(--w-s-color-focused)` | Removed deprecated fallback                                                                                |
 | internal   |                            | Entire rule has been removed                                                                               |
 | slider     |                            | Entire rule has been removed and replaced with arbitrary box-shadow (`shadow-[--token]`) to handle theming |
 
