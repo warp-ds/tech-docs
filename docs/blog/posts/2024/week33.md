@@ -75,6 +75,10 @@ The following properties have been removed:
 
 The following exported objects/classes have either been removed or renamed:
 
+::: tip Important Note
+If you are using the Warp components correctly, then you should not be affected by the following changes.
+:::
+
 | Exported object            | Class name(s)                                                            | Note                                                              |
 |----------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|
 | alert                      | `alert`                                                                  | Renamed to `wrapper`                                              |
@@ -91,12 +95,26 @@ The following exported objects/classes have either been removed or renamed:
 | ribbon                     |                                                                          | Entire exported object has been removed and replaced by badge     |
 | step                       | `step`, `stepVertical`, `stepVerticalLeft`, `stepVerticalRight`, `stepHorizontal`, `stepDot`, `stepDotVerticalRight`, `stepDotHorizontal`, `stepDotActive`, `stepDotIncomplete`, `stepLine`, `stepLineVertical`, `stepLineVerticalRight`, `stepLineHorizontal`, `stepLineHorizontalRight`, `stepLineHorizontalLeft`, `stepLineIncomplete`, `stepLineComplete`                                                                                      | Renamed: `step` --> `base`, `stepVertical` --> `vertical`, `stepVerticalLeft` --> `alignLeft`, `stepVerticalRight` --> `alignRight`, `stepHorizontal` --> `horizontal`, `stepDot` --> `dot`, `stepDotVerticalRight` --> `dotAlignRight`, `stepDotHorizontal` --> `dotHorizontal`, `stepDotActive` --> `dotActive`, `stepDotIncomplete` --> `dotIncomplete`, `stepLine` --> `line`, `stepLineVertical` --> `lineVertical`, `stepLineVerticalRight` --> `lineAlignRight`, `stepLineHorizontal` --> `lineHorizontal`, `stepLineHorizontalRight` --> `lineHorizontalAlignRight`, `stepLineHorizontalLeft` --> `lineHorizontalAlignLeft`, `stepLineIncomplete` --> `lineIncomplete`, `stepLineComplete` --> `lineComplete`                                                                                                                                       |
 | steps                       | `steps`, `stepsHorizontal`                                              | Renamed: `steps` --> `wrapper`, `stepsHorizontal` --> `horizontal`|
-| switchToggle                | `label`, `labelDisabled`, `switch`                                      | Removed: `switch` <br> Renamed: `label` --> base, `labelDisabled` --> `disabled`                                                                                                                                                                  |
-| tabs                       | `tabContainer`, `wunderbar`, `wrapperUnderlined`                         | Removed: `wrapperUnderlined` <br> Renamed: `tabContainer` --> `wrapper`, `wunderbar` --> `selectionIndicator`                                                                                                                                                        |
+| switchToggle                | `label`, `labelDisabled`, `switch`                                      | Removed: `switch` <br> Renamed: `label` --> `base`, `labelDisabled` --> `disabled`                                                                                                                                                                  |
+| tabs                       | `tabContainer`, `wunderbar`, `wrapperUnderlined`                         | Removed: `wrapperUnderlined` <br> Renamed: <br>`tabContainer` --> `wrapper`, `wunderbar` --> `selectionIndicator`|
 | tab                         | `tab`, `tabActive`, `iconUnderlinedActive`, `contentUnderlinedActive`   | Removed: `inconUnderlinedActive`, `contentUnderlinedActive` <br> Renamed: `tab` --> `base`, `tabActive` --> `active`                |
-| toast                       | `toast`, `icon`                                                         | Renamed: `toast` --> `base`, `icon` --> `iconBase`                |
-| toaster                     | `container`, `toaster`                                                  | Renamed: `container` --> `wrapper`, `toaster` --> `base`          |
+| toast                       | `toast`, `icon`                                                         | Renamed: `toast` --> `base`, <br> `icon` --> `iconBase`           |
+| toaster                     | `container`, `toaster`                                                  | Renamed: `container` --> `wrapper`, `toaster` --> `base`   |
 
+### @warp-ds/drive 2.0.0
+[Changelog](https://github.com/warp-ds/drive/releases/tag/v2.0.0)
+
+::: tip Important Note
+From 2.0.0 @warp-ds/drive expects the newest v2 tokens to be in place
+:::
+
+The following rules have been changed/removed:
+
+| Rule       | Token                      | Note                                                                                                      |
+|------------|----------------------------|-----------------------------------------------------------------------------------------------------------|
+| focus-ring | `var(--w-s-color-focused)` | Removed deprecated fallback                                                                               |
+| internal   |                            | Entire rule as been removed                                                                               |
+| slider     |                            | Entire rule as been removed and replaced with arbitrary box-shadow (`shadow-[--token]`) to handle theming |
 
 
 
