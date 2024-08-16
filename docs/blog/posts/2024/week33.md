@@ -101,11 +101,11 @@ If you are using the Warp components correctly, then you should not be affected 
 | toast                       | `toast`, `icon`                                                         | Renamed: `toast` --> `base`, <br> `icon` --> `iconBase`           |
 | toaster                     | `container`, `toaster`                                                  | Renamed: `container` --> `wrapper`, `toaster` --> `base`   |
 
-### @warp-ds/drive 2.0.0
+### @warp-ds/uno 2.0.0
 [Changelog](https://github.com/warp-ds/drive/releases/tag/v2.0.0)
 
 ::: tip Important Note
-From 2.0.0 @warp-ds/drive expects the newest v2 tokens to be in place
+From 2.0.0 @warp-ds/uno expects the newest v2 tokens to be in place
 :::
 
 The following rules have been changed/removed:
