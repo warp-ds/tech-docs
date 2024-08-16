@@ -113,8 +113,8 @@ The following rules have been changed/removed:
 | Rule       | Token                      | Note                                                                                                      |
 |------------|----------------------------|-----------------------------------------------------------------------------------------------------------|
 | focus-ring | `var(--w-s-color-focused)` | Removed deprecated fallback                                                                               |
-| internal   |                            | Entire rule as been removed                                                                               |
-| slider     |                            | Entire rule as been removed and replaced with arbitrary box-shadow (`shadow-[--token]`) to handle theming |
+| internal   |                            | Entire rule has been removed                                                                               |
+| slider     |                            | Entire rule has been removed and replaced with arbitrary box-shadow (`shadow-[--token]`) to handle theming |
 
 
 
