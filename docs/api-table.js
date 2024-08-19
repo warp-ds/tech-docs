@@ -2173,7 +2173,7 @@ export const android = {
         'modifier',
         'Modifier',
         'Modifier',
-        'Sets the modifier for the pill',
+        'Sets the modifier for the checkbox',
       ],
       [
         'onCheckedChange',
@@ -2198,6 +2198,34 @@ export const android = {
         'boolean', 
         'false', 
         'Whether the checkbox is checked or not'
+      ],
+    ],
+  },
+  Switch: {
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the switch',
+      ],
+      [
+        'onCheckedChange',
+          '(Boolean) -> Unit',
+          '',
+          'Lambda to be invoked when checked or unchecked',
+      ],
+      [
+        'enabled', 
+        'boolean', 
+        'true', 
+        'Whether the switch is enabled or not'
+      ],
+      [
+        'checked', 
+        'boolean', 
+        'false', 
+        'Whether the switch is on or off'
       ],
     ],
   },
