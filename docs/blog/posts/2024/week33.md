@@ -1,6 +1,6 @@
 ---
 title: '@warp-ds v2 - Stable releases'
-date: 2024-08-15
+date: 2024-08-20
 ---
 
 Stable releases with DBA changes for web are now available.
@@ -42,9 +42,9 @@ The following properties have been removed:
 
 
 ### @warp-ds/vue 2.1.1
-[Changelog for @warp-ds/vue 2.1.0](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
-
 [Changelog for @warp-ds/vue 2.1.1](https://github.com/warp-ds/vue/releases/tag/v2.1.1)
+
+[Changelog for @warp-ds/vue 2.1.0](https://github.com/warp-ds/vue/releases/tag/v2.1.0)
 
 
 The following properties/components have been removed:
@@ -54,8 +54,8 @@ The following properties/components have been removed:
 | Badge      | variant `notification` | Removed                           |
 | Box        | clickable              | Removed                           |
 | Expandable | info                   | Removed                           |
-| Suffix     |                        | Entire component has been removed |
-| Tag        |                        | Entire component has been removed |
+| Suffix     |                        | Entire component has been removed - use Affix instead |
+| Tag        |                        | Entire component has been removed - use Badge instead |
 
 ### @warp-ds/elements 2.0.1
 [Changelog for @warp-ds/elements 2.0.1](https://github.com/warp-ds/elements/releases/tag/v2.0.1)
