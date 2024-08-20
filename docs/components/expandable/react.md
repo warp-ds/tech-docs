@@ -42,7 +42,6 @@ import { IconBag16 } from '@fabric-ds/icons/react';
     </div>
   }
   box
-  info
 >
   <p>Expandable contents go here.</p>
 </Expandable>;

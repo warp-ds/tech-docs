@@ -18,23 +18,23 @@ importers:
         specifier: 10.11.0
         version: 10.11.0(vue@3.4.34)
       '@warp-ds/css':
-        specifier: 2.0.0-next.4
-        version: 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+        specifier: 2.0.0
+        version: 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/icons':
-        specifier: 2.0.2
-        version: 2.0.2
+        specifier: 2.1.0
+        version: 2.1.0
       '@warp-ds/preset-docs':
         specifier: 0.0.16
         version: 0.0.16(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
       '@warp-ds/react':
-        specifier: 2.0.0-next.3
-        version: 2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)
+        specifier: 2.0.1
+        version: 2.0.1(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)
       '@warp-ds/uno':
         specifier: 2.0.0
         version: 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       '@warp-ds/vue':
-        specifier: 2.1.0-next.3
-        version: 2.1.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
+        specifier: 2.1.1
+        version: 2.1.1(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       camelcase:
         specifier: 8.0.0
         version: 8.0.0
@@ -527,16 +527,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lingui/core@4.11.1':
-    resolution: {integrity: sha512-iG8Oz46kuYFugWFlCH/SRvnsMqhD2zc3csPUVD7RZN/374v6Djd6EzlQEla307J3qFrhfJDrhhZrIH8v0GANCw==}
-    engines: {node: '>=16.0.0'}
-
   '@lingui/core@4.11.2':
     resolution: {integrity: sha512-5wFmpHeDbLXEqaEUwlayS4SoqrCbDI3/bVRlwhmdNCeUcUYWh+7dTDlQnp4tPek1x1dEppABIkdN/0qLDdKcBQ==}
-    engines: {node: '>=16.0.0'}
-
-  '@lingui/message-utils@4.11.1':
-    resolution: {integrity: sha512-6dufjX9YdGZftgnzmrakvgiE0srp83GhrbK32dz33hASgAbF5vGHkxyOZLmnL3xYO5RgsrCJ5HGyiB/oQKlc9w==}
     engines: {node: '>=16.0.0'}
 
   '@lingui/message-utils@4.11.2':
@@ -882,23 +874,23 @@ packages:
     peerDependencies:
       '@floating-ui/dom': 1.6.x
 
-  '@warp-ds/css@2.0.0-next.4':
-    resolution: {integrity: sha512-8DPGjYr+qz7FptHL/e5IPfKWxBTHGBsIi+zZPt8sVIvPAce2aPfIZ5zWjDKEjtVQtKVxrkvgZ4IFsu1K0dZbRQ==}
+  '@warp-ds/css@2.0.0':
+    resolution: {integrity: sha512-Q+ZKhskE2eLg3EhCDDG+ox73GtZ+47SN3MDudE8muB5ESJ2Bb7ga+hD+KnvrNJxBLzqtQxGgL13XxJyEfYf1ZQ==}
     peerDependencies:
       '@warp-ds/uno': 2.x
 
-  '@warp-ds/icons@2.0.2':
-    resolution: {integrity: sha512-TxhE5JR459zCpFf132t6MZw2A1/4uC4/B4iq+00UgkJJXOssO7xAxc+Yg9q4D5lvnep4iItO5UR+6oDZA5ZTcA==}
+  '@warp-ds/icons@2.1.0':
+    resolution: {integrity: sha512-PpecGJRqOVimnsfh5dfl7+4Ai8D8SqiMVwgSfy4b5KVLtRspN9jR/BaMEcDjDa7011Hucn61wB9LwKVbNfEfdg==}
 
   '@warp-ds/preset-docs@0.0.16':
     resolution: {integrity: sha512-R4gsVtPcvYZ0LWGKGzEYuuRo+Iy8HIlSFCUwSt0MEmXtk4pCslDlxX/c2GJarUnAt6h86PUDCyAaUbHfPHAFOg==}
     peerDependencies:
       '@warp-ds/uno': '*'
 
-  '@warp-ds/react@2.0.0-next.3':
-    resolution: {integrity: sha512-jsFUhOkOvT0S9QR3scpljx+Ft3xvUl7cnCnIqovdq0H7d6ahIOwKIXBrdMuQrMwpd8CqNdwoqAf9CzGetA14GA==}
+  '@warp-ds/react@2.0.1':
+    resolution: {integrity: sha512-Mo08Hfz85ITS8bkhpRAUazMQa1Uug6s11kFOou+Q6/S+VHUmsAm9KyPnG3IJkeoNRpCehYrqnRG3aYnKW8N8LQ==}
     peerDependencies:
-      '@warp-ds/css': 2.0.0-next.4
+      '@warp-ds/css': 2.0.0
       react: 18.x
 
   '@warp-ds/uno@2.0.0':
@@ -906,10 +898,10 @@ packages:
     peerDependencies:
       unocss: 0.x
 
-  '@warp-ds/vue@2.1.0-next.3':
-    resolution: {integrity: sha512-yJo3zBKktc6Cg2fRf+EweOF1g1tI+SMioJkOuv234u7SrIYTcYn/D5hcTYKkZQWF25f38EMsBe/VftHAmXK9Sw==}
+  '@warp-ds/vue@2.1.1':
+    resolution: {integrity: sha512-U4QALUQyAqiDGTNrsTxRgrCfkelHZD49WDOwPzjAKezjZs4PQzqc+ha2J8KY3+irYu0N/pCkEY6qZlVnSM4xWw==}
     peerDependencies:
-      '@warp-ds/css': 2.0.0-next.4
+      '@warp-ds/css': 2.0.0
 
   acorn@8.11.3:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
@@ -2102,22 +2094,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@lingui/core@4.11.1':
-    dependencies:
-      '@babel/runtime': 7.24.7
-      '@lingui/message-utils': 4.11.1
-      unraw: 3.0.0
-
   '@lingui/core@4.11.2':
     dependencies:
       '@babel/runtime': 7.24.7
       '@lingui/message-utils': 4.11.2
       unraw: 3.0.0
-
-  '@lingui/message-utils@4.11.1':
-    dependencies:
-      '@messageformat/parser': 5.1.0
-      js-sha256: 0.10.1
 
   '@lingui/message-utils@4.11.2':
     dependencies:
@@ -2510,26 +2491,24 @@ snapshots:
     dependencies:
       '@floating-ui/dom': 1.6.3
 
-  '@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))':
+  '@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))':
     dependencies:
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
 
-  '@warp-ds/icons@2.0.2':
-    dependencies:
-      '@lingui/core': 4.11.1
+  '@warp-ds/icons@2.1.0': {}
 
   '@warp-ds/preset-docs@0.0.16(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))':
     dependencies:
       '@unocss/core': 0.50.8
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
 
-  '@warp-ds/react@2.0.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)':
+  '@warp-ds/react@2.0.1(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(react@18.3.1)':
     dependencies:
       '@chbphone55/classnames': 2.0.0
       '@lingui/core': 4.11.2
       '@warp-ds/core': 1.1.5(@floating-ui/dom@1.6.3)
-      '@warp-ds/css': 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
-      '@warp-ds/icons': 2.0.2
+      '@warp-ds/css': 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+      '@warp-ds/icons': 2.1.0
       react: 18.3.1
       react-focus-lock: 2.12.1(react@18.3.1)
       resize-observer-polyfill: 1.5.1
@@ -2545,12 +2524,12 @@ snapshots:
       '@unocss/rule-utils': 0.61.0
       unocss: 0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))
 
-  '@warp-ds/vue@2.1.0-next.3(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))':
+  '@warp-ds/vue@2.1.1(@floating-ui/dom@1.6.3)(@warp-ds/css@2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))))(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))':
     dependencies:
       '@lingui/core': 4.11.2
       '@warp-ds/core': 1.1.5(@floating-ui/dom@1.6.3)
-      '@warp-ds/css': 2.0.0-next.4(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
-      '@warp-ds/icons': 2.0.2
+      '@warp-ds/css': 2.0.0(@warp-ds/uno@2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8))))
+      '@warp-ds/icons': 2.1.0
       '@warp-ds/uno': 2.0.0(unocss@0.61.5(postcss@8.4.39)(rollup@4.18.0)(vite@5.3.5(sass@1.77.8)))
       create-v-model: 2.2.0
       dom-focus-lock: 1.1.0
