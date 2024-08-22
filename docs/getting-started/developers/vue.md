@@ -46,3 +46,19 @@ We publish `@warp-ds/vue` package to EIK cdn, eg:
 ```
 https://assets.finn.no/pkg/@warp-ds/vue/v1/warp-vue.eik.js
 ```
+
+### Import mapping
+
+We publish a Warp import map for use with Eik. Be sure to include the Vue import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/vue/v3",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```

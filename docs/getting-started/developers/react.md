@@ -48,3 +48,38 @@ For react 17:
 ```
 https://assets.finn.no/pkg/@warp-ds/react/v1/warp-react-17.js
 ```
+
+### Import mapping
+
+We publish a Warp import map for use with Eik. Be sure to include the React import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/react/v18",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```
+
+#### Legacy React v17 support
+
+While we no longer officially support React v17, in order to buy yourself time to migrate to React v18, you can add the Warp legacy map for interrim support.
+When React v19 is released, React v17 support will be dropped entirely.
+Map order is important.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/react/v17",
+		"https://assets.finn.no/map/warp/v2",
+		"https://assets.finn.no/map/warp-legacy/v2"
+	]
+}
+```
