@@ -2546,6 +2546,24 @@ export const iOS = {
     props: [  
     ],
   },
+  Tooltip: {
+    required: [
+    [
+      'title', 
+      'String', 
+      '', 
+      'The text to be displayed'
+    ],
+  ],
+    props: [
+      [
+        'arrowEdge', 
+        'Edge.top <br />Edge.leading <br />Edge.bottom <br />Edge.trailing ',
+        'Edge.top', 
+        'The direction of the arrow'
+      ],  
+    ],
+  },
   Box: {
     required: [
     [
