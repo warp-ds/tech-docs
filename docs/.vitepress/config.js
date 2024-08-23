@@ -577,12 +577,20 @@ export default defineConfig({
                   link: '/components/attention/'
                 },
                 {
+                  text: 'Callout',
+                  link: '/components/callout/',
+                },
+                {
                   text: 'Modal',
                   link: '/components/modal/',
                 },
                 {
                   text: 'Spinner',
                   link: '/components/spinner/',
+                },
+                {
+                  text: 'Tooltip',
+                  link: '/components/tooltip/',
                 },
               ],
             },
