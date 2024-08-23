@@ -41,3 +41,19 @@ We publish `@warp-ds/elements` package to EIK cdn, eg:
 ```
 https://assets.finn.no/pkg/@warp-ds/elements/v1/index.js
 ```
+
+### Import mapping
+
+We publish a Warp import map for use with Eik. Be sure to include the Lit import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/lit/v3",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```
