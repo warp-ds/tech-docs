@@ -7,7 +7,7 @@
 A tooltip is a message box that is displayed when a user hovers over or gives focus to a UI element. Tooltips should be used sparingly and contain succinct, supplementary information.
 
 ::: warning iOS only
-For the web implementation of a "tooltip", see [Components - Attention - Tooltip](/components/attention#tooltip).
+For the web implementation of a "tooltip", see [Components - Attention - Tooltip](/components/attention/#tooltip).
 :::
 
 <components-status ios='released' />

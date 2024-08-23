@@ -7,7 +7,7 @@
 Callouts are snippets of information, drawing attention to important content.
 
 ::: warning iOS only
-For the web implementation of a "callout", see [Components - Attention - Callout](/components/attention#callout).
+For the web implementation of a "callout", see [Components - Attention - Callout](/components/attention/#callout).
 :::
 
 <components-status ios='released' />
