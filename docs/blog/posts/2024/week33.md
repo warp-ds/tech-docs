@@ -20,7 +20,74 @@ Stable releases with DBA changes for web are now available.
 | `@warp-ds/elements` | `2.0.1`        |
 | `@warp-ds/icons`    | `2.1.0`        |
 
-If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now re-enable it.
+If you have already followed the [previous instructions for the DBA beta changes](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0) and have disabled EIK import mapping for `react`, `vue` & `elements`, you can now enable it the following way:
+
+#### Import mapping
+
+- Elements
+
+Be sure to include the Lit import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/lit/v3",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```
+
+- Vue
+
+Be sure to include the Vue import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/vue/v3",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```
+
+- React
+
+Be sure to include the React import map first.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/react/v18",
+		"https://assets.finn.no/map/warp/v2"
+	]
+}
+```
+
+While we no longer officially support React v17, in order to buy yourself time to migrate to React v18, you can add the Warp legacy map for interrim support.
+When React v19 is released, React v17 support will be dropped entirely.
+Map order is important.
+
+```json
+{
+	"name": "my-app",
+	"version": "1.0.0",
+	"server": "https://assets.finn.no",
+	"import-map": [
+		"https://assets.finn.no/map/react/v17",
+		"https://assets.finn.no/map/warp/v2",
+		"https://assets.finn.no/map/warp-legacy/v2"
+	]
+}
+```
 
 For further instructions on how to migrate from v1 to v2, please follow [these instructions](https://warp-ds.github.io/tech-docs/blog/posts/2024/warp-2-0#migrating-from-v1-to-v2).
 
