@@ -1,17 +1,17 @@
 ---
-title: 'WARP Android release v.0.0.28'
-date: 2024-08-20
+title: 'WARP Android release v.0.0.27'
+date: 2024-08-08
 ---
 
 Checkbox component & Compose update
 
 ---
 
-# Warp Android release 0.0.28
+# Warp Android release 0.0.27
 
-## 2024-08-20
+## 2024-08-08
 
-### WarpSwitch
+### WarpCheckbox
 
 ```kotlin example
 fun WarpCheckbox(
@@ -29,4 +29,6 @@ fun WarpCheckbox(
 * Supports legacy layouts written in XML
 
 
+### Compose update
 
+* Compose BOM has been updated to version 2024.06.00
