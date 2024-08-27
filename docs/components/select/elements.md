@@ -4,55 +4,67 @@
 import '@warp-ds/elements/components/select';
 ```
 
-or import it individually to optimize your JS bundle size by adding only the components you need:
-```js
-import { wSelect } from '@warp-ds/vue/select';
-
-```
-
 ### Syntax
 
-```vue
-<w-select v-model="model" label="A label">
-  <option disabled selected value="">Pick something</option>
-  <option value="foo">Foo</option>
+```js
+<w-select label="A label">
+  <option value='Foo' selected>Foo</option>
+  <option value='Bar'>Bar</option>
 </w-select>
 ```
 
-### Props
-All typical HTML5 attributes are valid props for select.
+#### Labelling
 
-Below are some additional props documented.
+A visual label should be provided for the w-select using the `label` prop.
 
-<api-table type=vue component="Field"/>
+#### Auto-focus
+The select component will be focused on render when the `auto-focus` prop is true.
+```js
+<w-select label="A label" auto-focus>
+  <option value='Foo' selected>Foo</option>
+  <option value='Bar'>Bar</option>
+</w-select>
+```
 
-### Validation
+#### Invalid
+Renders the field in an invalid state.
+```js
+<w-select label="A label" invalid always>
+  <option value='Foo' >Foo</option>
+  <option value='Bar'>Bar</option>
+</w-select>
+```
 
-#### Validating Elements
-Every form element accepts a prop rules which takes an array of functions. These functions will be run in order until one returns an object. If all functions return true the field is considered valid.
+#### Optional
+Add the `optional` prop to indicate that the select is not required.
+```js
+<w-select label="A label" optional always>
+  <option value='Foo' selected>Foo</option>
+  <option value='Bar'>Bar</option>
+</w-select>
+```
+
+#### Hint text
+w-select can provide additional context with `hint` if the label and placeholder aren't enough. You can force the hint text to always display by setting the `always` prop.
 
 ```js
-[v => v.trim().length > 5 || { valid: false, hint: 'This should be longer' }]
+<w-select label="A label" hint="This is a hint" always>
+  <option value="Foo">Foo</option>
+  <option value="Bar">Bar</option>
+</w-select>
 ```
 
-The function has one argument, the current value of the form element — and can either return true or an object with attributes described below
+### Validation
+w-select can communicate to the user whether the current value is invalid. Implement your own validation logic in your app and set the `invalid` prop to display it as invalid.
 
-<api-table type=vue component="InputAttributes"/>
+`invalid` is often paired with `hint` to provide feedback to the user about the
+error.
 
-#### Collecting Validation from wForm
-The wForm component registers element descendants at any level, and provides the aggregate validation status.
-
-<api-table type=vue component="InputValidation"/>
-
-#### Programmatic validation
-The wField component can provide access to programmatic validation beyond what wForm's props can. For information on which methods are available, see the documentation on Field.
-
-```vue
-<w-field #control="{ form }">
-  <button @click="submit(form)">Submit</button>
-</w-field>
+```js
+<w-select label="A label" invalid hint="Wrong choice" always>
+  <option value="Foo">Foo</option>
+  <option value="Bar">Bar</option>
+</w-select>
 ```
 
-#### Validation and required Form Elements
-If the form element is marked `required`, a special rule will be inserted before any user-defined rules.
-The `required` prop can accept a function that will be used as the required-rule.
+<api-table type=elements component="Select" />

@@ -40,7 +40,7 @@ This can be used if more control over styling is needed than the `title` prop al
 #### With expanded prop
 
 ```html
-<w-expandable box info title="I'm expanded by default" expanded>
+<w-expandable box title="I'm expanded by default" expanded>
   <p>content should be visible</p>
 </w-expandable>
 ```

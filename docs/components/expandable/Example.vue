@@ -18,7 +18,7 @@ import { wExpandable } from '@warp-ds/vue';
     </div>
     <div>
       <h3 class="h4">Expandable animated box</h3>
-      <w-expandable title="I am an expandable info box" animated box>
+      <w-expandable title="I am an animated expandable box" animated box>
         <p>Expandable contents go here.</p>
       </w-expandable>
     </div>
