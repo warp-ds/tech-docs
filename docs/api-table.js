@@ -2258,6 +2258,23 @@ export const android = {
       ],
     ],
   },
+  Spinner: {
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the spinner',
+      ],
+    [
+      'size', 
+      'WarpSpinnerSize.Small <br />WarpSpinnerSize.Default <br />WarpSpinnerSize.Large',
+      'WarpSpinnerSize.Default', 
+      'Size of the spinner'
+    ],
+    
+  ]
+  },
 };
 
 export const iOS = {
