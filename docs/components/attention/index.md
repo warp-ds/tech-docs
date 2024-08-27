@@ -2,12 +2,11 @@
   import React from './react.md';
   import Vue from './vue.md';
   import Elements from './elements.md';
-  import iOS from './ios.md';
 </script>
 
 # Attention
 
-<components-status react='released' vue='released' elements='released' ios='released' />
+<components-status react='released' vue='released' elements='released' />
 
 ## Examples
 
@@ -34,8 +33,5 @@
   </template>
   <template #elements>
     <elements />
-  </template>
-  <template #iOS>
-    <iOS />
   </template>
 </tabs-content>

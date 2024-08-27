@@ -69,9 +69,9 @@ export const react = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',
@@ -107,12 +107,6 @@ export const react = {
         'string',
         'region',
         'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
-      ],
-      [
-        '~~clickable~~',
-        'boolean',
-        'false',
-        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
       ],
     ],
   },
@@ -183,7 +177,7 @@ export const react = {
         'Set the button to look like a link. Can be combined with `small`. Should not be combined with `href`',
       ],
       [
-        'pill',
+        '~~pill~~',
         'boolean',
         'false',
         'Set the button to look like a pill style button. @deprecated use `utility` together with `quiet` instead.',
@@ -255,7 +249,7 @@ export const react = {
         'optional',
         'boolean',
         '',
-        'Whether to show optional text',
+        'Mark label to indicate that this combobox is optional.',
       ],
     ],
     events: [
@@ -300,7 +294,6 @@ export const react = {
     props: [
       ['className', 'string', '', 'Additional classes to include'],
       ['style', 'CSSProperties', '', 'CSS styles to inline on the component'],
-      ['info', 'boolean', 'false', 'Styles the box with a color'],
       [
         'expanded',
         'boolean',
@@ -418,8 +411,8 @@ export const react = {
       ],
       ['value', 'string', '', 'The current value (controlled).'],
       ['label', 'ReactNode', '', 'The content to display as the label.'],
-      ['optional', 'boolean', '', 'Whether to show optional text.'],
-      ['hint', 'ReactNode', '', 'The content to display as the help text.'],
+      ['optional', 'boolean', '', 'Mark label to indicate that this select is optional.'],
+      ['hint', 'ReactNode', '', 'The content to display as the hint.'],
       ['always', 'boolean', '', 'Whether to always show hint.'],
       [
         'invalid',
@@ -503,6 +496,8 @@ export const react = {
       ['id', 'string', 'false', 'The unique identifier.'],
       ['aria-label', 'string', 'false', 'Defines a string value that labels the current element. Must be set if aria-labelledby is not defined.'],
       ['aria-labelledby', 'string', '', 'Identifies the element (or elements) that labels the current element. Must be set if aria-label is not defined.'],
+      ['disabled', 'boolean', 'false', 'Whether the switch is disabled.'],
+
     ],
     events: [
       ['onClick', '() => void', '', 'Handler for when the Switch is clicked.'],
@@ -812,12 +807,8 @@ export const vue = {
     ],
     props: [
       [
-        'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position. Replaces props `bottom`, `top`, `left`, `right`',
+        'placement', "'top-start' | 'top' | 'top-end' | 'bottom-start' | 'bottom' | 'bottom-end' | 'left-start' | 'left' | 'left-end' | 'right-start' | 'right' | 'right-end'", "'bottom'", 'Placement according to the target element. The arrow will point to the opposite side of this position.',
       ],
-      ['bottom', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['top', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['left', 'boolean', 'false', '@deprecated use `placement` instead'],
-      ['right', 'boolean', 'false', '@deprecated use `placement` instead'],
       ['tooltip', 'boolean', 'false', 'Render tooltip'],
       ['callout', 'boolean', 'false', 'Whether Attention component is rendered as an inline callout'],
       ['popover', 'boolean', 'false', 'Whether Attention component is rendered as a popover'],
@@ -842,9 +833,9 @@ export const vue = {
       ['as', 'string', 'div', 'The DOM element to emit'],
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',
@@ -877,12 +868,6 @@ export const vue = {
         'string',
         'region',
         'Sets the ARIA `role` attribute to provide semantic meaning. To remove the default role attribute, supply an empty role (`role=""`).',
-      ],
-      [
-        '~~clickable~~',
-        'boolean',
-        'false',
-        'Applies styling to indicate click-ability, does NOT add click-ability to the box itself (see `wClickable` for that). @deprecated For rendering a clickable box, use `Card` component.',
       ],
     ],
   },
@@ -939,7 +924,7 @@ export const vue = {
       ['negative', 'quiet, small, loading', ''],
       ['link', 'small', ''],
       ['utility', 'small, loading, quiet', ''],
-      ['pill', '', '@deprecated use `utility` together with `quiet` instead.'],
+      ['~~pill~~', '', '@deprecated use `utility` together with `quiet` instead.'],
     ]
   },
   ButtonGroup: {
@@ -1008,7 +993,6 @@ export const vue = {
         '',
         'Will make the expandable full-width on sm-size',
       ],
-      ['info', 'boolean', 'false', 'Styles the box with a color'],
       [
         'buttonClass',
         'string',
@@ -1050,15 +1034,20 @@ export const vue = {
   Field: {
     required: [],
     props: [
-      ['label', 'string', '', ''],
+
+      ['label', 'string', '', 'The content to display as the label'],
       ['hint', 'string', '', 'The string can contain HTML.'],
-      ['invalid', 'boolean', '', ''],
+      ['invalid', 'boolean', '', 'Renders the field in an invalid state. Often paired with `hint` to provide feedback about the error.'],
       [
         'label-level',
         'number',
         '',
         'Usable on toggles, will make the emitted legend element into a heading for accessibility.',
       ],
+      ['optional', 'string', '', 'Mark label to indicate that this input is optional.'],
+      ['read-only', 'string', '', 'Whether the input can be selected but not changed by the user.'],
+      
+      
     ],
   },
   InputAttributes: {
@@ -1300,9 +1289,9 @@ export const elements = {
     props: [
       [
         'variant',
-        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', '~~notification~~', 'price'",
+        "'neutral', 'info', 'positive', 'warning', 'negative', 'disabled', 'price'",
         "'neutral'",
-        'Variant of the badge. Variant "notification" is deprecated - Do not use!',
+        '',
       ],
       [
         'position',
@@ -1366,9 +1355,9 @@ export const elements = {
       ],
       [
         'variant',
-        '"primary" | "secondary" | "negative" | "utility" | "link"',
+        '"primary" | "secondary" | "negative" | "utility" | "link" | "~~pill~~"',
         'secondary',
-        '',
+        'Variant of button. `pill` has been @deprecated.  Use `utility` together with `quiet` instead.',
       ],
       ['quiet', 'boolean', 'false', ''],
       ['small', 'boolean', 'false', ''],
@@ -1412,7 +1401,6 @@ export const elements = {
         '',
         'Will make the expandable full-width on sm-size',
       ],
-      ['info', 'boolean', 'false', 'TStyles the box with a color'],
       ['box', 'boolean', 'false', 'Will make the expandable a Box'],
       ['animated', 'boolean', 'false', 'Will animate the expansion/collapse'],
       [
@@ -1450,6 +1438,22 @@ export const elements = {
       ['chevron', 'boolean', 'true', 'Controls chevron visibility'],
     ],
   },
+  Modal: {
+    required: [],
+    props: [
+      ['show', 'boolean', 'false', 'Controls if the modal should show or hide'],
+      ['ignore-backdrop-clicks', 'boolean', 'false', 'Ignores clicks to the backdrop when true'],
+    ],
+  },
+  ModalHeader: {
+    required: [
+      ['title', 'string', '', 'A short but descriptive title for the modal']
+    ],
+    props: [
+      ['back', 'boolean', 'false', 'Whether the modal header should have a back button'],
+      ['no-close', 'boolean', 'false', 'Whether the modal header should have a close button'],
+    ],
+  },
   Pill: {
     required: [],
     props: [
@@ -1461,6 +1465,31 @@ export const elements = {
     events: [
       ['w-pill-click', 'Event to be called when the pill is clicked.'],
       ['w-pill-close', 'Event to be called when the close button is clicked.']
+    ],
+  },
+
+  Select: {
+    required: [],
+    props: [
+      ['auto-focus', 'boolean', 'false', 'Whether the element should receive focus on render.'],
+      [
+        'invalid',
+        'boolean',
+        'false',
+        'Renders the field in an invalid state. Often paired together with `hint` to provide feedback about the error.',
+      ],
+      ['always', 'boolean', '', 'Whether to always show hint.'],
+      ['hint', 'string', '', 'The content to display as the hint.'],
+      ['label', 'string', '', 'The content to display as the label.'],
+      ['name', 'string', '', 'The name of the select element, used when submitting an HTML form.'],
+      ['optional', 'boolean', '', 'Mark label to indicate that this input is optional.'],
+      ['disabled', 'boolean', '', 'Whether the input is disabled.'],
+      [
+        'read-only',
+        'boolean',
+        '',
+        'Whether the input can be selected but not changed by the user.',
+      ],
     ],
   },
 
@@ -2543,6 +2572,24 @@ export const iOS = {
     ],
   ],
     props: [  
+    ],
+  },
+  Tooltip: {
+    required: [
+    [
+      'title', 
+      'String', 
+      '', 
+      'The text to be displayed'
+    ],
+  ],
+    props: [
+      [
+        'arrowEdge', 
+        'Edge.top <br />Edge.leading <br />Edge.bottom <br />Edge.trailing ',
+        'Edge.top', 
+        'The direction of the arrow'
+      ],  
     ],
   },
   Box: {
