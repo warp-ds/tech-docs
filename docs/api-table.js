@@ -2258,6 +2258,108 @@ export const android = {
       ],
     ],
   },
+  Radio: {
+    required: [
+      [
+        'text', 
+        'String', 
+        '', 
+        'The text to be displayed next to the radio'
+      ]
+    ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the radio',
+      ],
+      [
+        'selected', 
+        'boolean', 
+        'false', 
+        'Whether the radio is selected or not'
+      ],
+      [
+        'isError', 
+        'boolean', 
+        'false', 
+        'Shows the radio in error state if true'
+      ],
+      [
+        'enabled', 
+        'boolean', 
+        'true', 
+        'Whether the radio is enabled or not'
+      ],
+      [
+        'onClick', 
+        '() -> Unit', 
+        'null', 
+        'The lambda to be invoked when clicked.'
+      ],
+      [
+        'interactionSource', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource', 
+        'MutableInteractionSource represents a stream of Interactions corresponding to events emitted by a component'
+      ],
+    ],
+  },
+  RadioGroup: {
+    required: [
+      [
+        'options', 
+        'List<String>', 
+        '', 
+        'The list of texts to be displayed next to the radio buttons'
+      ],
+      [
+        'onOptionSelected', 
+        '(String) -> Unit', 
+        '', 
+        'The lambda to be invoked when clicked on a radio.'
+      ],
+    ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the radio group',
+      ],
+      [
+        'title', 
+        'String', 
+        'null', 
+        'The title to be displayed on top of the radio group'
+      ],
+      [
+        'selectedOption', 
+        'String', 
+        'null', 
+        'The selected option in the radio group'
+      ],
+      [
+        'helpText', 
+        'String', 
+        'null', 
+        'The text displayed below the radio group'
+      ],
+      [
+        'enabled', 
+        'boolean', 
+        'true', 
+        'Whether the radio group is enabled or not'
+      ],
+      [
+        'isError', 
+        'boolean', 
+        'false', 
+        'Shows the radio group in error state if true'
+      ],
+    ],
+  },
 };
 
 export const iOS = {
