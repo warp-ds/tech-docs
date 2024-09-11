@@ -2261,7 +2261,7 @@ export const android = {
   Radio: {
     required: [
       [
-        'text', 
+        'label', 
         'String', 
         '', 
         'The text to be displayed next to the radio'
@@ -2291,6 +2291,18 @@ export const android = {
         'boolean', 
         'true', 
         'Whether the radio is enabled or not'
+      ],
+      [
+        'extraText', 
+        'String?', 
+        'null', 
+        'The optioanl text to be displayed next to the label'
+      ],
+      [
+        'slot', 
+        '@Composable (() -> Uni)?', 
+        'null', 
+        'The composable that will be displayed next to the label or extraText if provided'
       ],
       [
         'onClick', 
@@ -2327,6 +2339,12 @@ export const android = {
         'Modifier',
         'Modifier',
         'Sets the modifier for the radio group',
+      ],
+      [
+        'orientation',
+        'Orientation.Vertical <br /> Orientation.Horizontal',
+        'Orientation.Vertical',
+        'Sets the orientation for the radio group. Class is found in the androidx.compose.foundation.gestures package',
       ],
       [
         'title', 
