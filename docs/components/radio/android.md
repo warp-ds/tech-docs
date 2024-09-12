@@ -55,7 +55,7 @@ WarpRadioGroup(
     helpText = "Required"
     )
 ```
-There is support for optional title and help text when using the the radio group. Supported orientations are Orientation.Vertical and Orientation.Horizontal. Vertical is the default.
+There is support for optional title and help text when using the radio group. Supported orientations are Orientation.Vertical and Orientation.Horizontal. Vertical is the default.
 
 
 
