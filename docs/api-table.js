@@ -2230,6 +2230,66 @@ export const android = {
       ],
     ],
   },
+  CheckboxGroup: {
+    required: [
+      [
+        'options', 
+        'List<String>', 
+        '', 
+        'The list of texts to be displayed next to the checkboxes'
+      ],
+      [
+        'onOptionsSelected', 
+        '(MutableList<String>) -> Unit', 
+        '', 
+        'The lambda to be invoked when clicked on a checkbox.'
+      ],
+    ],
+    props: [
+      [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the checkbox group',
+      ],
+      [
+        'orientation',
+        'Orientation.Vertical <br /> Orientation.Horizontal',
+        'Orientation.Vertical',
+        'Sets the orientation for the checkbox group. Class is found in the androidx.compose.foundation.gestures package',
+      ],
+      [
+        'title', 
+        'String', 
+        'null', 
+        'The title to be displayed on top of the checkbox group'
+      ],
+      [
+        'selectedOptions', 
+        'List<String>', 
+        'null', 
+        'The selected options in the checkbox group'
+      ],
+      [
+        'helpText', 
+        'String', 
+        'null', 
+        'The text displayed below the checkbox group'
+      ],
+      [
+        'enabled', 
+        'boolean', 
+        'true', 
+        'Whether the checkbox group is enabled or not'
+      ],
+      [
+        'isError', 
+        'boolean', 
+        'false', 
+        'Shows the checkbox group in error state if true'
+      ],
+    ],
+    },
   Switch: {
     props: [
       [
