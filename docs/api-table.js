@@ -2377,6 +2377,23 @@ export const android = {
         'Shows the radio group in error state if true'
       ],
     ],
+    },
+        Spinner: {
+    props: [
+    [
+        'modifier',
+        'Modifier',
+        'Modifier',
+        'Sets the modifier for the spinner',
+    ],
+    [
+      'size', 
+      'WarpSpinnerSize.Small <br />WarpSpinnerSize.Default <br />WarpSpinnerSize.Large',
+      'WarpSpinnerSize.Default', 
+      'Size of the spinner'
+    ],
+    
+  ]
   },
 };
 
