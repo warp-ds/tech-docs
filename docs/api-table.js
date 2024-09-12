@@ -2296,7 +2296,7 @@ export const android = {
         'extraText', 
         'String?', 
         'null', 
-        'The optioanl text to be displayed next to the label'
+        'The optional text to be displayed next to the label'
       ],
       [
         'slot', 
