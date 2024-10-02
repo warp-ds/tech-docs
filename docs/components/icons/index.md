@@ -3,6 +3,7 @@
   import Elements from './elements.md';
   import React from './react.md';
   import OtherTable from '../../.vitepress/OtherTable.vue';
+  import Android from './android.md';
 
   const deprecatedIcons = [
   { old: 'AlertWarning', new: 'Warning' },
@@ -44,7 +45,7 @@
 
 Warp's icon set is designed to help users understand actions and information, and to draw attention to elements.
 
-<components-status react='released' vue='released' elements='released' />
+<components-status react='released' vue='released' elements='released' android='released' ios='released'/>
 
 ## Usage
 
@@ -79,6 +80,9 @@ Click any icon to open usage modal.
   </template>
   <template #elements>
     <elements />
+  </template>
+  <template #android>
+    <android />
   </template>
 </tabs-content>
 
