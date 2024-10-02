@@ -4,6 +4,7 @@
   import React from './react.md';
   import OtherTable from '../../.vitepress/OtherTable.vue';
   import Android from './android.md';
+  import iOS from './ios.md';
 
   const deprecatedIcons = [
   { old: 'AlertWarning', new: 'Warning' },
@@ -83,6 +84,9 @@ Click any icon to open usage modal.
   </template>
   <template #android>
     <android />
+  </template>
+    <template #iOS>
+    <iOS />
   </template>
 </tabs-content>
 
