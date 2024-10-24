@@ -168,6 +168,13 @@ export default defineConfig({
         href: 'https://assets.finn.no/pkg/@warp-ds/css/v2/tokens/finn-no.css',
       },
     ],
+    [
+      'meta',
+      {
+        'http-equiv': 'refresh',
+        content: '0;url=https://warp-ds.github.io/docs/',
+      }
+    ]
   ],
   themeConfig: {
     search: { provider: 'local' },
