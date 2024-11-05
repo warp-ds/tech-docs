@@ -1,16 +1,17 @@
 <script setup>
   import iOS from './ios.md';
+  import Android from './android.md';
 </script>
 
 # Callout
 
 Callouts are snippets of information, drawing attention to important content.
 
-::: warning iOS only
+::: warning Native only!
 For the web implementation of a "callout", see [Components - Attention - Callout](/components/attention/#callout).
 :::
 
-<components-status ios='released' />
+<components-status ios='released' android='released'/>
 
 ## Example
 
@@ -22,6 +23,13 @@ For the web implementation of a "callout", see [Components - Attention - Callout
 
 <component-questions />
 
-## iOS implementation
+## Frameworks
 
-<iOS />
+<tabs-content>
+<template #iOS>
+    <iOS />
+  </template>
+  <template #android>
+    <android />
+  </template>
+</tabs-content>
